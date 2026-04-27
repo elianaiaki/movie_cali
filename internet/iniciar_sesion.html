@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html5 lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesion</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>MovieCali</h1>
+        <!-- Logo -->
+        <img src="./recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
+
+        <!-- Buscador -->
+        <form>
+            <input type="text" placeholder="Buscar películas, series...">
+            <button>Buscar</button>
+        </form>
+
+        <!-- Navegación -->
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="./internet/catalogo_peliculas.html">Películas</a>
+            <a href="./internet/catalogo_series.html">Series</a>
+        </nav>
+
+        <!-- Usuario -->
+        <div>
+            <a href="#">Iniciar sesión</a>
+            <a href="./crear_cuenta.html">Crear cuenta</a>
+        </div>
+    </header>
+
+    <hr>
+    <!-- FIN DE HEADER-->
+ 
+    <section>
+
+        <h1>INICIO DE SESION</h1>
+
+        <form action="../extranet/mi_perfil.html" method="post">
+
+            <!-- Usuario -->
+            <div>
+                <label>USUARIO / CORREO ELECTRONICO</label><br>
+                <img src="icon-user.png" alt="icono usuario">
+                <input type="text">
+            </div>
+
+            <!-- Contraseña -->
+            <div>
+                <label>CONTRASEÑA</label><br>
+                <img src="icon-lock.png" alt="icono contraseña">
+                <input type="password">
+                <img src="icon-eye.png" alt="mostrar contraseña">
+            </div>
+
+            <!-- Olvidaste contraseña -->
+            <div>
+                <a href="#">¿OLVIDASTE TU CONTRASEÑA?</a>
+            </div>
+
+            <!-- login -->
+            <div>
+                <button type="submit">INICIAR SESION</button>
+            </div>
+
+            <!-- google -->
+            <div>
+                <button type="button">
+                    <img src="icon-google.png" alt="icono google"> CONTINUAR CON GOOGLE
+                </button>
+            </div>
+
+            <!-- Registro -->
+            <div>
+                <a href="./crear_cuenta.html">NO TIENES CUENTA? REGISTRATE</a>
+            </div>
+
+        </form>
+
+    </section>
+
+  <!-- FOOTER -->
+    <footer>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+ 
+</body>
+</html>
