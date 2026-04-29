@@ -41,13 +41,32 @@
 
         <h1>INICIO DE SESION</h1>
 
-        <form action="../extranet/mi_perfil.html" method="post">
+        <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Crear una Cuenta</title>
+</head>
+<body>
+
+    <section>
+
+        <h1>CREAR UNA CUENTA</h1>
+
+        <form action="../extranet/editar_mi_perfil.html" method="post">
 
             <!-- Usuario -->
             <div>
-                <label>USUARIO / CORREO ELECTRONICO</label><br>
+                <label>USUARIO</label><br>
                 <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20">
                 <input type="text">
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div>
+                <label>CORREO ELECTRÓNICO</label><br>
+                <img src="../recursos/imagenes/iconos/correo.png" alt="icono correo" width="20" height="20">
+                <input type="email">
             </div>
 
             <!-- Contraseña -->
@@ -58,26 +77,36 @@
                 <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="mostrar contraseña" width="20" height="20">
             </div>
 
-            <!-- Olvidaste contraseña -->
+            <!-- Confirmar Contraseña -->
             <div>
-                <a href="#">¿OLVIDASTE TU CONTRASEÑA?</a>
+                <label>CONFIRMAR CONTRASEÑA</label><br>
+                <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20">
+                <input type="password">
+                <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="mostrar contraseña" width="20" height="20">
             </div>
 
-            <!-- login -->
+            <!-- Términos y Política -->
             <div>
-                <button type="submit">INICIAR SESION</button>
+                Al registrarte, aceptas nuestros
+                <a href="#">TÉRMINOS</a> y
+                <a href="#">POLÍTICA DE PRIVACIDAD</a>.
             </div>
 
-            <!-- google -->
+            <!-- Registro -->
+            <div>
+                <button type="submit">REGISTRARSE</button>
+            </div>
+
+            <!-- Google -->
             <div>
                 <button type="button">
                     <img src="../recursos/imagenes/iconos/google-icon-1.png" alt="icono google" width="20" height="20"> CONTINUAR CON GOOGLE
                 </button>
             </div>
 
-            <!-- Registro -->
+            <!-- Login -->
             <div>
-                <a href="./crear_cuenta.html">NO TIENES CUENTA? REGISTRATE</a>
+                <a href="./iniciar_sesion.html">¿YA TIENES CUENTA? INICIÁ SESIÓN</a>
             </div>
 
         </form>
