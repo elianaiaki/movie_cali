@@ -39,36 +39,75 @@
  
     <!------------------------------------------------------------------------------------------->
 
-  <h1>Crear una Cuenta</h1>
+<section>
 
-  <form>
-    <p>
-      <input type="text" placeholder="Usuario">
-    </p>
-    <p>
-      <input type="email" placeholder="Correo Electrónico">
-    </p>
-    <p>
-      <input type="password" placeholder="Contraseña">
-    </p>
-    <p>
-      <input type="password" placeholder="Confirmar Contraseña">
-    </p>
+        <h1>CREAR UNA CUENTA</h1>
 
-    <p>
-      Al registrarte, aceptas nuestros <a href="#">Términos</a> y <a href="#">Política de Privacidad</a>.
-    </p>
+        <form action="../extranet/editar_mi_perfil.html" method="post">
 
-    <p>
-      <button type="submit">Registrarse</button>
-    </p>
-  </form>
+            <!-- Usuario -->
+            <div>
+                <label>USUARIO</label><br>
+                <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20">
+                <input type="text">
+            </div>
 
-  <p>
-    <button type="button">G Continuar con Google</button>
-  </p>
+            <!-- Correo Electrónico -->
+            <div>
+                <label>CORREO ELECTRÓNICO</label><br>
+                <img src="../recursos/imagenes/iconos/correo.png" alt="icono correo" width="20" height="20">
+                <input type="email">
+            </div>
 
-  <p>¿Ya tienes cuenta? <a href="./iniciar_sesion.html">Iniciar sesión</a></p>
+            <!-- Contraseña -->
+            <div>
+                <label>CONTRASEÑA</label><br>
+                <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20">
+                <input type="password">
+                <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="mostrar contraseña" width="20" height="20">
+            </div>
 
+            <!-- Confirmar Contraseña -->
+            <div>
+                <label>CONFIRMAR CONTRASEÑA</label><br>
+                <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20">
+                <input type="password">
+                <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="mostrar contraseña" width="20" height="20">
+            </div>
+
+            <!-- Términos y Política -->
+            <div>
+                Al registrarte, aceptas nuestros
+                <a href="#">TÉRMINOS</a> y
+                <a href="#">POLÍTICA DE PRIVACIDAD</a>.
+            </div>
+
+            <!-- Registro -->
+            <div>
+                <button type="submit">REGISTRARSE</button>
+            </div>
+
+            <!-- Google -->
+            <div>
+                <button type="button">
+                    <img src="../recursos/imagenes/iconos/google-icon-1.png" alt="icono google" width="20" height="20"> CONTINUAR CON GOOGLE
+                </button>
+            </div>
+
+            <!-- Login -->
+            <div>
+                <a href="./iniciar_sesion.html">¿YA TIENES CUENTA? INICIÁ SESIÓN</a>
+            </div>
+
+        </form>
+
+    </section>
+
+      <!-- FOOTER -->
+    <footer>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+ 
 </body>
 </html>
