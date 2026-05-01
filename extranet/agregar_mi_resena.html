@@ -43,52 +43,54 @@
     <!-- FIN DE HEADER-->
 
 <!------------------------------------------------------------------------------------------->
-    <!-- INICIO MAIN (contenido principal) -->
-    <main>
+    <!-- CONTENEDOR GENERAL -->
+    <div>
 
-        <!-- Contenedor de la reseña -->
-        <section>
+        <!-- MAIN -->
+        <main>
 
-            <!-- Información de la película -->
-            <article>
-                <img src="../recursos/imagenes/f1-la-pelicula.jpg" alt="F1 The Movie" width="250" height="220">
+            <!-- BLOQUE SUPERIOR (info película + título) -->
+            <section>
 
+                <!-- Información de la película -->
                 <div>
-                    <h3>F1 THE MOVIE</h3>
-                    <p>8 • 2025 • 2h 35min</p>
+                    <img src="../recursos/imagenes/f1-la-pelicula.jpg" alt="F1 The Movie" width="250" height="220">
+
+                    <div>
+                        <h3>F1 THE MOVIE</h3>
+                        <p>8 • 2025 • 2h 35min</p>
+                    </div>
                 </div>
-            </article>
 
-            <!-- Título de sección -->
-            <section>
-                <h2>MI RESEÑA</h2>
-            </section>
-
-            <!-- Puntuación -->
-            <section>
-                <p>Tu puntuación</p>
-
+                <!-- Título sección -->
                 <div>
+                    <h2>MI RESEÑA</h2>
+                </div>
+
+                <!-- Puntuación -->
+                <div>
+                    <p>Tu puntuación</p>
                     <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
                 </div>
+
             </section>
 
-            <!-- Formulario reseña -->
+            <!-- FORMULARIO -->
             <section>
 
                 <form>
 
                     <!-- Título reseña -->
                     <div>
-                        <input type="text" size="50" placeholder="Título de la reseña (opcional)">
+                        <input type="text" size="60" placeholder="Título de la reseña (opcional)">
                     </div>
 
                     <!-- Contenido reseña -->
                     <div>
-                        <textarea rows="10" cols="50" placeholder="Escribe tu reseña..." rows="10"></textarea>
+                        <textarea rows="12" cols="70" placeholder="Escribe tu reseña..."></textarea>
                     </div>
 
-                    <!-- Contador caracteres -->
+                    <!-- Contador -->
                     <p>0/1000</p>
 
                     <!-- Botones -->
@@ -101,65 +103,68 @@
 
             </section>
 
-        </section>
+        </main>
 
-    </main>
-    <!-- FIN MAIN -->
+        <!-- ASIDE (ya lo tenés, lo dejo igual para que encaje) -->
+        <aside>
+
+            <h2>SUGERENCIAS PARA TI</h2>
+
+            <div>
+                <p>ROMANCE</p>
+                <h3>CUMBRES BORRASCOSAS</h3>
+                <img src="../recursos/imagenes/cumbres_borrascosas.jpg" width="80" height="100">
+                <p>Amor tormentoso e inmortal entre personas lejanas</p>
+                <a href="#">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <div>
+                <p>TERROR</p>
+                <h3>WEAPONS</h3>
+                <img src="../recursos/imagenes/weapons.jpg" width="80" height="100">
+                <p>Horror perturbador sobre una familia y rituales desconocidos</p>
+                <a href="#">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <div>
+                <p>COMEDIA</p>
+                <h3>NOVOCAINE</h3>
+                <img src="../recursos/imagenes/novocaine.webp" width="80" height="100">
+                <p>Un tipo bueno se salva que limita su umbral de acción</p>
+                <a href="#">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <div>
+                <p>CIENCIA FICCIÓN</p>
+                <h3>DUNE: PART 2</h3>
+                <img src="../recursos/imagenes/dune_pelicula.jpg" width="80" height="100">
+                <p>Paul Atreides lidera la revolución en el planeta de la arena</p>
+                <a href="#">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <div>
+                <p>ANIMACIÓN</p>
+                <h3>FLOW</h3>
+                <img src="../recursos/imagenes/flow.jpg" width="80" height="100">
+                <p>Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                <a href="#">Ver mas</a>
+            </div>
+
+        </aside>
+
+    </div>
 <!------------------------------------------------------------------------------------------->
-    
-    <!------------------------------------------------------------------------------------------->
-     <!-- INICIO ASIDE (sugerencias) -->
-    <aside>
 
-        <h3>SUGERENCIAS PARA TI</h3>
-
-        <div>
-            <img src="../recursos/imagenes/cumbres_borrascosas.jpg" alt="Cumbres Borrascosas" width="180" height="280">
-            <p>ROMANCE</p>
-            <p>CUMBRES BORRASCOSAS</p>
-            <p>Amor tormentoso e inmortal en los páramos ingleses</p>
-            <button>VER MAS</button>
-        </div>
-
-        <div>
-            <img src="../recursos/imagenes/weapons.jpg" alt="Weapons" width="180" height="280">
-            <p>TERROR</p>
-            <p>WEAPONS</p>
-            <p>Horror perturbador sobre una ola de desapariciones</p>
-            <button>VER MAS</button>
-        </div>
-
-        <div>
-            <img src="../recursos/imagenes/novocaine.webp" alt="Novocaine" width="180" height="280">
-            <p>COMEDIA</p>
-            <p>NOVOCAINE</p>
-            <p>Un hombre que no siente dolor se convierte en héroe</p>
-            <button>VER MAS</button>
-        </div>
-
-        <div>
-            <img src="../recursos/imagenes/dune_pelicula.jpg" alt="Dune Part 2" width="180" height="280">
-            <p>CIENCIA FICCIÓN</p>
-            <p>DUNE: PART 2</p>
-            <p>Paul Atreides lidera la revolución en Arrakis</p>
-            <button>VER MAS</button>
-        </div>
-
-        <div>
-            <img src="../recursos/imagenes/flow.jpg" alt="Flow" width="180" height="280">
-            <p>ANIMACIÓN</p>
-            <p>FLOW</p>
-            <p>Un gato sobrevive en un mundo sin humanos</p>
-            <button>VER MAS</button>
-        </div>
-
-    </aside>
-    <!-- FIN ASIDE -->
-    <!------------------------------------------------------------------------------------------->
-
-
-    <!------------------------------------------------------------------------------------------->
-    <!-- INICIO FOOTER -->
+<!------------------------------------------------------------------------------------------->
+<!-- INICIO FOOTER -->
     <footer>
 
         <p>Desarrollado:</p>
