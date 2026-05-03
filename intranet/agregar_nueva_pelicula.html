@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AGREGAR NUEVA PELICULA</title>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <table border="1" width="100%">
+        <tr> <!-- Logo -->
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75">
+            </td>
+            <!-- Buscador -->
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <!-- Desplegable -->
+            <td width="30%" align="center">
+                <form>
+                    <label for="Desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestion de Peliculas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">
+                                Pelicula pendientes de revision
+                            </option>
+                            <option label="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">
+                                Nuevas solicitudes de alta
+                            </option>
+                        </optgroup> 
+                        <optgroup label="administracion_usuarios">
+                            <option label="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">
+                                Gestion de perfil y roles
+                            </option>
+                            <option label="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">
+                                Crear nuevo perfil
+                            </option>
+                        </optgroup>  
+                        <option>Cerrar Sesion</option>     
+
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
+<!------------------------------------------------------------------------------------------->
+
+    <!-- PANEL -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
+                PANEL
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>+ AGREGAR NUEVA PELICULA</h1>
+
+    <table border="1" width="92%" align="center">
+        <tr>
+            <td width="100%">
+                <p>   </p>
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                <p>Agregar Pelicula</p>
+                <form>
+                    <label for="Titulo_pelicula">Titulo: </label>
+                    <input type="text" placeholder="EL Diablo Viste a la Moda 2">
+                    <label for="Genero_pelicula">Genero: </label>
+                    <input type="text" placeholder="Comedia Dramatica">
+                    <label for="Año_estreno">Año de Estreno: </label>
+                    <input type="text" placeholder="20 de Abril 2026">
+                    <label for="Duracion_pelicula">Duración: </label>
+                    <input type="text" placeholder="1h 59min">
+                    <label for="Director">Director </label>
+                    <input type="text" placeholder="David Frankel">
+                    <label for="Productor_pelicula">Productor: </label>
+                    <input type="text" placeholder="Ingrese nombre y apellido">
+                    <label for="Calificacion_pelicula">Calificacion General: </label>
+                    <input type="text" placeholder="8.5 / 10">
+                    <label for="Plataformas_disponibles">Plataformas: </label>
+                    <input type="text" placeholder="Agregar imagen"><br>
+                    <label for="clasificacion_edad">Clasificacion por Edad: </label>
+                    <input type="text" placeholder="+18">
+                    <label for="Reparto">Reparto: </label>
+                    <select name="reparto">
+                        <optgroup label="Listados">
+                            <option value="Anne_Hathaway"> Anne Hathaway</option>
+                        </optgroup>
+                        <input type="text" placeholder="Agregar nuevos actores">
+                    </select> <br>
+                    <label for="sinopsis_peli">Sinopsis: </label><br>
+                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" cols="100">
+                        Escribe aquí el resumen de la trama..
+                    </textarea> <br>
+                    <label for="video-upload">Trailer:</label>
+                    <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
+                    <button type="submit">Subir Trailer</button><br>              
+                    <label for="Poster">Cargar Poster: </label>
+                    <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                    <button type="submit">Examinar</button><br>
+                    <br>
+                    <button type="submit">Guardar Cambios</button> 
+                    <button type="reset">Cancelar</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+<br>
+<br>
+<br>
+<!------------------------------------------------------------------------------------------->
+      <!-- FOOTER -->
+    <footer>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+</html>
