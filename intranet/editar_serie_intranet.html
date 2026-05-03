@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>AGREGAR NUEVA PELICULA</title>
+    <title>EDITAR SERIE</title>
 </head>
 
 <body>
@@ -63,7 +63,7 @@
 
     <br>
 
-    <h1>+ AGREGAR NUEVA PELICULA</h1>
+    <h1>+ EDITAR SERIE</h1>
 
     <table border="1" width="92%" align="center">
         <tr>
@@ -73,22 +73,30 @@
         </tr>
         <tr>    
             <td>
-                <p>Agregar Pelicula</p>
+                <p>Editar Pelicula</p>
                 <form>
-                    <label for="Titulo_pelicula">Titulo: </label>
-                    <input type="text" placeholder="EL Diablo Viste a la Moda 2">
+                    <label for="Seleccionar_titulo_SERIE">Titulo: </label>
+                    <select name="Seleccionar_titulo_pelicula">
+                        <optgroup label="Listados">
+                            <option value="Wonder Man">Wonder Man</option>
+                            <option velue="La Fiscal">La Fiscal</option>
+                            <option velue="El Robo">El Robo</option>
+                        </optgroup>
+
+                    </select>
+                    <input type="text" placeholder="Wonder Man">
                     <label for="Genero_pelicula">Genero: </label>
-                    <input type="text" placeholder="Comedia Dramatica">
+                    <input type="text" placeholder="Comedia , Aventura">
                     <label for="Año_estreno">Año de Estreno: </label>
-                    <input type="text" placeholder="20 de Abril 2026">
+                    <input type="text" placeholder="27 de Enero 2026">
                     <label for="Duracion_pelicula">Duración: </label>
-                    <input type="text" placeholder="1h 59min">
+                    <input type="text" placeholder="30 min">
                     <label for="Director">Director </label>
-                    <input type="text" placeholder="David Frankel">
+                    <input type="text" placeholder="Ingrese Nombre Y Apellido">
                     <label for="Productor_pelicula">Productor: </label>
                     <input type="text" placeholder="Ingrese nombre y apellido">
                     <label for="Calificacion_pelicula">Calificacion General: </label>
-                    <input type="text" placeholder="8.5 / 10">
+                    <input type="text" placeholder="7.4 / 10">
                     <label for="Plataformas_disponibles">Plataformas: </label>
                     <input type="text" placeholder="Agregar imagen"><br>
                     <label for="clasificacion_edad">Clasificacion por Edad: </label>
@@ -96,7 +104,7 @@
                     <label for="Reparto">Reparto: </label>
                     <select name="reparto">
                         <optgroup label="Listados">
-                            <option value="Anne_Hathaway"> Anne Hathaway</option>
+                            <option value="AYahya Adbul Mateen II"> Yahya Adbul Mateen II</option>
                         </optgroup>
                         <input type="text" placeholder="Agregar nuevos actores">
                     </select> <br>

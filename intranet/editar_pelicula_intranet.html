@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>AGREGAR NUEVA PELICULA</title>
+    <title>EDITAR PELICULA</title>
 </head>
 
 <body>
@@ -63,7 +63,7 @@
 
     <br>
 
-    <h1>+ AGREGAR NUEVA PELICULA</h1>
+    <h1>+ EDITAR PELICULA</h1>
 
     <table border="1" width="92%" align="center">
         <tr>
@@ -73,9 +73,18 @@
         </tr>
         <tr>    
             <td>
-                <p>Agregar Pelicula</p>
+                <p>Editar Pelicula</p>
                 <form>
-                    <label for="Titulo_pelicula">Titulo: </label>
+                    <label for="Seleccionar_titulo_pelicula">Titulo: </label>
+                    <select name="Seleccionar_titulo_pelicula">
+                        <optgroup label="Listados">
+                            <option value="El_Yeti">El Yeti</option>
+                            <option velue="El_sonido_de_la_muerte">El Sonido de la Muerte</option>
+                            <option velue="Michael">Michael</option>
+                            <option velue="F1 La Pelicula">F1 La Pelicula</option>
+                        </optgroup>
+
+                    </select>
                     <input type="text" placeholder="EL Diablo Viste a la Moda 2">
                     <label for="Genero_pelicula">Genero: </label>
                     <input type="text" placeholder="Comedia Dramatica">

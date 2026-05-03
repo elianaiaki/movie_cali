@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>AGREGAR NUEVA PELICULA</title>
+    <title>AGREGAR NUEVOS ACTORES</title>
 </head>
 
 <body>
@@ -62,8 +62,8 @@
     </table>
 
     <br>
-
-    <h1>+ AGREGAR NUEVA PELICULA</h1>
+<!------------------------------------------------------------------------------------------->
+    <h1>+ AGREGAR NUEVOS ACTORES</h1>
 
     <table border="1" width="92%" align="center">
         <tr>
@@ -73,41 +73,31 @@
         </tr>
         <tr>    
             <td>
-                <p>Agregar Pelicula</p>
+                <p>Agregar Actores</p>
                 <form>
-                    <label for="Titulo_pelicula">Titulo: </label>
-                    <input type="text" placeholder="EL Diablo Viste a la Moda 2">
-                    <label for="Genero_pelicula">Genero: </label>
-                    <input type="text" placeholder="Comedia Dramatica">
-                    <label for="Año_estreno">Año de Estreno: </label>
-                    <input type="text" placeholder="20 de Abril 2026">
-                    <label for="Duracion_pelicula">Duración: </label>
-                    <input type="text" placeholder="1h 59min">
-                    <label for="Director">Director </label>
-                    <input type="text" placeholder="David Frankel">
-                    <label for="Productor_pelicula">Productor: </label>
-                    <input type="text" placeholder="Ingrese nombre y apellido">
-                    <label for="Calificacion_pelicula">Calificacion General: </label>
-                    <input type="text" placeholder="8.5 / 10">
-                    <label for="Plataformas_disponibles">Plataformas: </label>
-                    <input type="text" placeholder="Agregar imagen"><br>
-                    <label for="clasificacion_edad">Clasificacion por Edad: </label>
-                    <input type="text" placeholder="+18">
-                    <label for="Reparto">Reparto: </label>
-                    <select name="reparto">
-                        <optgroup label="Listados">
-                            <option value="Anne_Hathaway"> Anne Hathaway</option>
+                    <label for="Nombre_actor">Nombre: </label>
+                    <input type="text" placeholder="Ingrese Nombre Completo">
+                    <label for="Apellido_actor">Apellido: </label>
+                    <input type="text" placeholder="Ingrese Apellido Completo"><br>
+                    <label for="Participo_pelis">Peliculas en las que participó: </label>
+                    <select name="participo_pelis">
+                        <optgroup label="Listados Peliculas">
+                            <option value="Bone Keeper"> Bone Kepper</option>
+                            <option value="Rascacielo en vivo">Rascacielo en vivo</option>
                         </optgroup>
-                        <input type="text" placeholder="Agregar nuevos actores">
+                        <input type="text" placeholder="Agregar nueva participacion">
                     </select> <br>
-                    <label for="sinopsis_peli">Sinopsis: </label><br>
-                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" cols="100">
-                        Escribe aquí el resumen de la trama..
-                    </textarea> <br>
-                    <label for="video-upload">Trailer:</label>
-                    <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
-                    <button type="submit">Subir Trailer</button><br>              
-                    <label for="Poster">Cargar Poster: </label>
+                    <label for="participo_series">Series en la que participó: </label>
+                    <select name="participo_series">
+                        <optgroup label="Listados Series">
+                            <option value="Wonder Man"> Wonder Man </option>
+                            <option value="Un Familiar">Un Familiar</option>
+                            <option value="El Robo">El Robo</option>
+                        </optgroup>
+                        <input type="text" placeholder="Agregar nueva participacion">
+                    </select> <br>
+                             
+                    <label for="Poster">Subir imagen: </label>
                     <input type="file" id="Poster" name="poster_image" accept="image/*" required>
                     <button type="submit">Examinar</button><br>
                     <br>
@@ -117,6 +107,10 @@
             </td>
         </tr>
     </table>
+
+
+
+
 
 <br>
 <br>

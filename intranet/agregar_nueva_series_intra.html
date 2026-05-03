@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>AGREGAR NUEVA PELICULA</title>
+    <title>AGREGAR NUEVA SERIE</title>
 </head>
 
 <body>
@@ -63,7 +63,7 @@
 
     <br>
 
-    <h1>+ AGREGAR NUEVA PELICULA</h1>
+    <h1>+ AGREGAR NUEVA SERIE</h1>
 
     <table border="1" width="92%" align="center">
         <tr>
@@ -73,35 +73,38 @@
         </tr>
         <tr>    
             <td>
-                <p>Agregar Pelicula</p>
+                <p>Agregar Serie</p>
                 <form>
-                    <label for="Titulo_pelicula">Titulo: </label>
-                    <input type="text" placeholder="EL Diablo Viste a la Moda 2">
-                    <label for="Genero_pelicula">Genero: </label>
-                    <input type="text" placeholder="Comedia Dramatica">
+                    <label for="Titulo_serie">Titulo: </label>
+                    <input type="text" placeholder="Vladimir">
+                    <label for="Genero_serie">Genero: </label>
+                    <input type="text" placeholder="Comedia, Drama">
                     <label for="Año_estreno">Año de Estreno: </label>
                     <input type="text" placeholder="20 de Abril 2026">
-                    <label for="Duracion_pelicula">Duración: </label>
-                    <input type="text" placeholder="1h 59min">
+                    <label for="Duracion_serie">Duración: </label>
+                    <input type="text" placeholder="30 min">
                     <label for="Director">Director </label>
-                    <input type="text" placeholder="David Frankel">
-                    <label for="Productor_pelicula">Productor: </label>
+                    <input type="text" placeholder="Shari Springer Berman">
+                    <label for="Productor_serie">Productor: </label>
                     <input type="text" placeholder="Ingrese nombre y apellido">
-                    <label for="Calificacion_pelicula">Calificacion General: </label>
-                    <input type="text" placeholder="8.5 / 10">
-                    <label for="Plataformas_disponibles">Plataformas: </label>
-                    <input type="text" placeholder="Agregar imagen"><br>
+                    <label for="Calificacion_serie">Calificacion General: </label>
+                    <input type="text" placeholder="6.5 / 10">
+                    <label for="icons_plataforma">Plataformas: </label>
+                    <input type="file" id="icons_plataforma" name="icons_plataforma" accept="image/*" required>
+                    <button type="submit">Examinar</button><br>
+                    <label for="Cant_temporadas">Temporadas: </label>
+                    <input type="text" placeholder="Cant_temporadas"><br>
                     <label for="clasificacion_edad">Clasificacion por Edad: </label>
                     <input type="text" placeholder="+18">
                     <label for="Reparto">Reparto: </label>
                     <select name="reparto">
                         <optgroup label="Listados">
-                            <option value="Anne_Hathaway"> Anne Hathaway</option>
+                            <option value="Rachel Weisz"> Rachel Weisz</option>
                         </optgroup>
                         <input type="text" placeholder="Agregar nuevos actores">
                     </select> <br>
-                    <label for="sinopsis_peli">Sinopsis: </label><br>
-                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" cols="100">
+                    <label for="sinopsis_serie">Sinopsis: </label><br>
+                    <textarea id="sinopsis" name="sinopsis_serie" rows="4" cols="100">
                         Escribe aquí el resumen de la trama..
                     </textarea> <br>
                     <label for="video-upload">Trailer:</label>
