@@ -3,37 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Crear Nuevo Perfil</title>
+    <title>Crear Nuevo Perfil - MovieCali</title>
 </head>
 
 <body>
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="/recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
-        </form>
+    <!-- ENCABEZADO  -->
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo MovieCali">
+            </td>
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <td width="30%" align="center">
+                <form>
+                    <label for="desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestión de Películas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
+                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
+                        </optgroup> 
+                        <optgroup label="Administración Usuarios">
+                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
+                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesión</option>     
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
 
-        <!--Desplegable-->
-        <div>
-            <a href="./mi_perfil.html">Mi Perfil</a>
-            <h3>Gestion pelicula y series</h3>
-            <a href="./peliculas_pendientes">Peliculas pendientes de revision</a>
-            <a href="./solicitudes_alta">Nuevas solicitudes de alta</a>
-            <h3>Administracion de usuarios</h3>
-            <a href="./gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
-            <a href="./nuevo_perfil.html">Crear nuevo perfil</a>
-            <a href="#">Cerrar sesion</a> <!--Link a inicio-->
-        </div>
-    </header>
+    <br>
+
+    <!-- INDICADOR DE POSICIÓN -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
+                PANEL
+            </td>
+        </tr>
+    </table>
 
     <main>
         <nav>
-            <p>GESTIÓN DE PERFILES Y ROLES</p>
+            <p>GESTIÓN DE PERFILES Y ROLES ▶</p>
         </nav>
 
         <h2>CREAR NUEVO PERFIL</h2>
@@ -52,12 +73,12 @@
                 </div>
                 <div>
                     <label>Email:</label>
-                    <input type="email" placeholder="ejempli@correo.com">
+                    <input type="email" placeholder="ejemplo@correo.com">
                 </div>
 
                 <!--Fila 2: ID, Rol, Permisos-->
                 <div>
-                    <label>ID</label>
+                    <label>ID:</label>
                     <input type="text" placeholder="ID autogenerado">
                 </div>
                 <div>
@@ -89,7 +110,7 @@
                     <input type="tel" placeholder="+549-2705-869344">
                 </div>
 
-                <!--Botones Guarar y Cancelar-->
+                <!--Botones Guardar y Cancelar-->
                 <div>
                     <button type="submit">Guardar</button>
                     <button type="button">Cancelar</button>
@@ -97,6 +118,15 @@
             </form>
         </section>
     </main>
+
+    <br><br>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER GRUPAL -->
+    <footer>
+        <hr>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>

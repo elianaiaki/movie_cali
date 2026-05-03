@@ -3,39 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mi Perfil</title>
+    <title>Mi Perfil - MovieCali</title>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="/recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
+    <!-- ENCABEZADO  -->
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo MovieCali">
+            </td>
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <td width="30%" align="center">
+                <form>
+                    <label for="desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestión de Películas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
+                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
+                        </optgroup> 
+                        <optgroup label="Administración Usuarios">
+                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
+                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesión</option>     
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
-        </form>
+    <br>
 
-        <!--Desplegable-->
-        <div>
-            <a href="./mi_perfil.html">Mi Perfil</a>
-            <h3>Gestion pelicula y series</h3>
-            <a href="./peliculas_pendientes">Peliculas pendientes de revision</a>
-            <a href="./solicitudes_alta">Nuevas solicitudes de alta</a>
-            <h3>Administracion de usuarios</h3>
-            <a href="./gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
-            <a href="./nuevo_perfil.html">Crear nuevo perfil</a>
-            <a href="#">Cerrar sesion</a> <!--Link a inicio-->
-        </div>
+    <!-- INDICADOR DE POSICIÓN -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
+                PANEL
+            </td>
+        </tr>
+    </table>
 
-    </header>
-    
     <main>
-        <!-- Ubicación en el sitio (Breadcrumb de la imagen) -->
         <nav>
             <p>GESTIÓN DE PERFILES Y ROLES ▶</p>
         </nav>
@@ -44,66 +61,72 @@
 
         <!-- BLOQUE 1: PERFIL ADMIN -->
         <section>
-           <h3>ADMIN - ID: XXXXX</h3><!--Título del bloque--> 
+           <h3>ADMIN - ID: XXXXX</h3>
            <div>
-                <img src="/recursos/imagenes/iconos/perfil.png" alt="Foto de perfil del Administrador">
-            
-                <!--Agrupamos el texto -->
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="80">
                 <div>
                     <p>NOMBRE Y APELLIDO: [NOMBRE DE USUARIO]</p>
-                    <P>CORREO: [CORREO@USUARIO.COM]</P>
-                    <P>CELULAR: 000-0000</P>
-                    <!--ETIQUETA <a> para botones que llevan a otra pagina-->
+                    <p>CORREO: [CORREO@USUARIO.COM]</p>
+                    <p>CELULAR: 000-0000</p>
                     <a href="editar_perfil.html">EDITAR DATOS</a>    
                 </div>    
             </div>       
         </section>
 
-        <!--Segundo Bloque: ADMINISTRACION DE USUARIOS-->
+        <hr>
+
+        <!-- BLOQUE: ADMINISTRACIÓN DE USUARIOS -->
         <section>
             <h3>ADMINISTRACIÓN DE USUARIOS</h3>
-            <P>CANTIDAD DE USUARIOS GESTIONADOS: 3050</P>
-            <P>USUARIOS ACTIVOS EN TOTAL: 930</P>
-            <P>ADMINISTRADORES EN TOTAL: 20</P>
+            <p>CANTIDAD DE USUARIOS GESTIONADOS: 3050</p>
+            <p>USUARIOS ACTIVOS EN TOTAL: 930</p>
+            <p>ADMINISTRADORES EN TOTAL: 20</p>
             <a href="gestion_de_perfil_roles.html">VER TODO</a>
         </section>
 
-        <!--Tercer Bloque: GESTION DE CATALAGOS-->
+        <hr>
+
+        <!-- BLOQUE: GESTIÓN DE CATÁLOGOS -->
         <section>
-            <h3>GESTIÓN DE CATALAGOS</h3>
+            <h3>GESTIÓN DE CATÁLOGOS</h3>
             <div>
-                <img src="/recursos/imagenes/iconos/claqueta.png" alt="Icono de claqueta">
-                <!--Agrupamos el texto -->
+                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono de claqueta" width="50">
                 <div>
-                    <p>CATALAGOS TOTALES: 55321</p>
-                    <P>CANTIDAD DE PELICULAS: 35485</P>
+                    <p>CATÁLOGOS TOTALES: 55321</p>
+                    <p>CANTIDAD DE PELÍCULAS: 35485</p>
                     <p>SERIES: 19836</p>
-                    <P>REVISIONES PENDIENTES: 1853</P>
-                    <a href="gestionar_peliculas.html">GESTIONAR PELICULAS</a> <!--tiene que llevar a la pagina gestionde peliculas-->
-                    <a href="gestionar_series.html">GESTIONAR SERIES</a> <!--LLeva a gestion de series-->
+                    <p>REVISIONES PENDIENTES: 1853</p>
+                    <a href="gestionar_peliculas.html">GESTIONAR PELÍCULAS</a>
+                    <a href="gestionar_series.html">GESTIONAR SERIES</a>
                 </div>
             </div>
         </section>
        
-        <!--Cuarto Bloque: HISTORIAL DE ACTIVIDADES-->
+        <hr>
+
+        <!-- BLOQUE: HISTORIAL DE ACTIVIDADES -->
         <section>
-            <div>
-                <h3>HISTORIAL DE ACTIVIDADES</h3>
-                <img src="/recursos/imagenes/iconos/reloj.png" alt="Icono de historial">
-            </div>
-            <!--Agrupamos el texto -->
-            <!-- Usamos la lista para mostrar las acciones -->
+            <h3>HISTORIAL DE ACTIVIDADES</h3>
+            <img src="../recursos/imagenes/iconos/reloj.png" alt="Icono de historial" width="40">
             <ul>
                 <li>Se actualizó la sinopsis de "Interestelar"</li>
                 <li>Nuevo usuario administrativo dado de alta: Juan Pérez</li>
                 <li>Se eliminó una reseña por spam en la película "Titanic"</li>
                 <li>Cambio de rol: Usuario_123 pasó a ser Moderador</li>
             </ul>
-            
-            <!-- Enlace para ver más movimientos -->
-            <a href="historial_completo.html">VER TODO EL HISTORIAL</a><!--Llevaria al historial de actividades-->
+            <a href="historial_completo.html">VER TODO EL HISTORIAL</a>
         </section>
 
     </main>
+
+    <br><br>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER GRUPAL -->
+    <footer>
+        <hr>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>

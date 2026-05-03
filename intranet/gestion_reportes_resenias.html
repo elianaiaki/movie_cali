@@ -3,50 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Gestión de Reportes y Reseñas</title>
+    <title>Gestión de Reportes y Reseñas - MovieCali</title>
 </head>
 
 <body>
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="/recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
-        </form>
+    <!-- ENCABEZADO  -->
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo MovieCali">
+            </td>
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <td width="30%" align="center">
+                <form>
+                    <label for="desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestión de Películas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
+                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
+                        </optgroup> 
+                        <optgroup label="Administración Usuarios">
+                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
+                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesión</option>     
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
 
-        <!--Desplegable-->
-        <div>
-            <a href="./mi_perfil.html">Mi Perfil</a>
-            <h3>Gestion pelicula y series</h3>
-            <a href="./peliculas_pendientes">Peliculas pendientes de revision</a>
-            <a href="./solicitudes_alta">Nuevas solicitudes de alta</a>
-            <h3>Administracion de usuarios</h3>
-            <a href="./gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
-            <a href="./nuevo_perfil.html">Crear nuevo perfil</a>
-            <a href="#">Cerrar sesion</a> <!--Link a inicio-->
-        </div>
-    </header>
+    <br>
+
+    <!-- INDICADOR DE POSICIÓN -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
+                PANEL
+            </td>
+        </tr>
+    </table>
 
     <main>
         <nav>
             <p>PANEL DE GESTIÓN DE REPORTES DE RESEÑAS ▶</p>
         </nav>
 
-        <!--Bloque de filtros -->
+        <!-- Bloque de filtros -->
         <section>
             <div>
-                <!--En la imagen numero 21 no muestras como un menu con estas opciones pero faltaba-->
                 <label><strong>ORDENAR POR:</strong></label>
                 <select>
                     <option>MÁS RECIENTES</option>
                     <option>MÁS ANTIGUOS</option>
                 </select>
 
-                <label><strong>TIPOS DE REPORTES</strong></label>
+                <label><strong>TIPOS DE REPORTES:</strong></label>
                 <select>
                     <option>Abusos</option>
                     <option>Spoiler</option>
@@ -64,19 +84,21 @@
             </div>
         </section>
 
-        <!--Listado de Reportes(Izquierda de la maqueta)-->
+        <hr>
+
+        <!-- Listado de Reportes -->
         <section>
             <h3>PENDIENTE DE REVISIÓN:</h3>
 
             <article>
-                <img src="/recursos/imagenes/iconos/claqueta.png" alt="Icono pelicula" width="25">
+                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
                 <h4>TÍTULO: SHREK 2</h4>
 
                 <p>
-                    <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Denunciante:</strong> Usuario_123|
-                    <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Reportado</strong> Usuario_2828
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                    <strong>Denunciante:</strong> Usuario_123 |
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                    <strong>Reportado:</strong> Usuario_2828
                 </p>
 
                 <div>
@@ -87,28 +109,29 @@
                 </div>
             </article>
 
-            <hr><!--Para separación-->
+            <hr>
 
             <h3>RESUELTOS:</h3>
             <article>
-                <img src="/recursos/imagenes/iconos/claqueta.png" alt="Icono pelicula" width="25">
+                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
                 <h4>TÍTULO: TOY STORY</h4>
                 <p>
-                    <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Reportado:</strong> Usuario_2828|
-                    <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Denunciante</strong> Usuario_123
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                    <strong>Reportado:</strong> Usuario_2828 |
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                    <strong>Denunciante:</strong> Usuario_123
                 </p>
                 <p><strong>Acción tomada:</strong> RESEÑA ELIMINADA</p>
             </article>
         </section>
 
-        <!--Panel Lateral(aside)-->
+        <!-- Panel Lateral -->
         <aside>
+            <hr>
             <h3>PANEL DE GESTIÓN DE USUARIOS</h3>
 
             <article>
-                <img src="/recursos/imagenes/iconos/perfil.png" alt="Avtar" width="40">
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Avatar" width="40">
                 <p><strong>Usuario_2828</strong></p>
                 <p>Reportes recibidos: 2</p>
                 <p>Sanciones activas: 0</p>
@@ -116,5 +139,15 @@
             </article>
         </aside>
     </main>
+
+    <br><br>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER GRUPAL -->
+    <footer>
+        <hr>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>

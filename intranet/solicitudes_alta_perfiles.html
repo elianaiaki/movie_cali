@@ -3,46 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Panel de Gestion De Altas De Perfiles</title>
+    <title>Gestión de Altas - MovieCali</title>
 </head>
 
 <body>
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="/recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
-        </form>
+    <!-- ENCABEZADO  -->
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo MovieCali">
+            </td>
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <td width="30%" align="center">
+                <form>
+                    <label for="desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestión de Películas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
+                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
+                        </optgroup> 
+                        <optgroup label="Administración Usuarios">
+                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
+                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesión</option>     
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
 
-        <!--Desplegable-->
-        <div>
-            <a href="./mi_perfil.html">Mi Perfil</a>
-            <h3>Gestion pelicula y series</h3>
-            <a href="./peliculas_pendientes">Peliculas pendientes de revision</a>
-            <a href="./solicitudes_alta">Nuevas solicitudes de alta</a>
-            <h3>Administracion de usuarios</h3>
-            <a href="./gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
-            <a href="./nuevo_perfil.html">Crear nuevo perfil</a>
-            <a href="#">Cerrar sesion</a> <!--Link a inicio-->
-        </div>
-    </header>
+    <br>
+
+    <!-- INDICADOR DE POSICIÓN -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
+                PANEL
+            </td>
+        </tr>
+    </table>
 
     <main>
         <nav>
             <p>PANEL DE GESTIÓN DE ALTAS DE PERFILES ▶</p>
         </nav>
         
-        <!--Filtros (fecha y estado)-->
+        <!-- Filtros (fecha y estado) -->
         <section>
             <label><strong>FECHA:</strong></label>
             <select>
-                <option>hace un día</option>
-                <option>hace una semana</option>
-                <option>fecha</option>
+                <option>Hace un día</option>
+                <option>Hace una semana</option>
+                <option>Fecha personalizada</option>
             </select>
 
             <label><strong>ESTADO:</strong></label>
@@ -53,15 +74,17 @@
             </select>
         </section>
 
-        <!--Panel de solicitudes Actuales-->
+        <hr>
+
+        <!-- Panel de solicitudes Actuales -->
         <section>
             <h3>PANEL DE SOLICITUDES ACTUALES</h3>
 
             <article>
-                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
                 <div>
                     <p><strong>USUARIO_12345</strong></p>
-                    <p>email: 123us@gmail.com</p>
+                    <p>Email: 123us@gmail.com</p>
                 </div>
                 <div>
                     <button type="button">Ver Perfil</button>
@@ -71,10 +94,10 @@
             </article>
 
             <article>
-                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
                 <div>
                     <p><strong>USUARIO_6789</strong></p>
-                    <p>email: msicjs@gmail.com</p>
+                    <p>Email: msicjs@gmail.com</p>
                 </div>
                 <div>
                     <button type="button">Ver Perfil</button>
@@ -85,53 +108,49 @@
         </section>
 
         <hr>
-        <!--Panel de Perfiles Aprobados-->
+
+        <!-- Panel de Perfiles Aprobados -->
         <section>
             <h3>PANEL DE PERFIL APROBADOS</h3>
             <article>
-                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
                 <div>
                     <p><strong>USUARIO_12076</strong></p>
-                    <p>email: mjgcos@gmail.com</p>
+                    <p>Email: mjgcos@gmail.com</p>
                 </div>
                 <div>
                     <button type="button">Ver Perfil</button>
-                    <button type="button">Dar Alta</button>
-                    <button type="button">Denegar</button>
+                    <button type="button">Dar Baja</button>
                 </div>
-            </article>
-
-            <article>
-                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
-                <div>
-                    <p><strong>USUARIO_11087</strong></p>
-                    <p>email: sallwer@gmail.com</p>
-                </div>
-                <div>
-                    <button type="button">Ver Perfil</button>
-                    <button type="button">Dar Alta</button>
-                    <button type="button">Denegar</button>
-                </div> 
             </article>
         </section>
 
-        <!--Panel Lateral (aside)-->
+        <!-- Panel Lateral (aside) -->
         <aside>
+            <hr>
             <h3>PANEL DE SOLICITUDES PENDIENTES</h3>
             <article>
-                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="30">
-                <p>Usuario_1212</p>
+                <p><img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="20"> <strong>Usuario_1212</strong></p>
                 <p>qmxxxnd@gmail.com</p>
                 <button type="button">Ver Solicitud</button>
             </article>
 
              <article>
-                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="30">
-                <p>Usuario_1112</p>
+                <p><img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="20"> <strong>Usuario_1112</strong></p>
                 <p>mhtrfvbi@gmail.com</p>
                 <button type="button">Ver Solicitud</button>
             </article>
         </aside>
     </main>
+
+    <br><br>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER GRUPAL -->
+    <footer>
+        <hr>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
