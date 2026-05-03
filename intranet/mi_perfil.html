@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil - MovieCali</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO  -->
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo MovieCali">
+            </td>
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <td width="30%" align="center">
+                <form>
+                    <label for="desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestión de Películas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
+                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
+                        </optgroup> 
+                        <optgroup label="Administración Usuarios">
+                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
+                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesión</option>     
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- INDICADOR DE POSICIÓN -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
+                PANEL
+            </td>
+        </tr>
+    </table>
+
+    <main>
+        <nav>
+            <p>GESTIÓN DE PERFILES Y ROLES ▶</p>
+        </nav>
+
+        <h2>MI PERFIL</h2>
+
+        <!-- BLOQUE 1: PERFIL ADMIN -->
+        <section>
+           <h3>ADMIN - ID: XXXXX</h3>
+           <div>
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="80">
+                <div>
+                    <p>NOMBRE Y APELLIDO: [NOMBRE DE USUARIO]</p>
+                    <p>CORREO: [CORREO@USUARIO.COM]</p>
+                    <p>CELULAR: 000-0000</p>
+                    <a href="editar_perfil.html">EDITAR DATOS</a>    
+                </div>    
+            </div>       
+        </section>
+
+        <hr>
+
+        <!-- BLOQUE: ADMINISTRACIÓN DE USUARIOS -->
+        <section>
+            <h3>ADMINISTRACIÓN DE USUARIOS</h3>
+            <p>CANTIDAD DE USUARIOS GESTIONADOS: 3050</p>
+            <p>USUARIOS ACTIVOS EN TOTAL: 930</p>
+            <p>ADMINISTRADORES EN TOTAL: 20</p>
+            <a href="gestion_de_perfil_roles.html">VER TODO</a>
+        </section>
+
+        <hr>
+
+        <!-- BLOQUE: GESTIÓN DE CATÁLOGOS -->
+        <section>
+            <h3>GESTIÓN DE CATÁLOGOS</h3>
+            <div>
+                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono de claqueta" width="50">
+                <div>
+                    <p>CATÁLOGOS TOTALES: 55321</p>
+                    <p>CANTIDAD DE PELÍCULAS: 35485</p>
+                    <p>SERIES: 19836</p>
+                    <p>REVISIONES PENDIENTES: 1853</p>
+                    <a href="gestionar_peliculas.html">GESTIONAR PELÍCULAS</a>
+                    <a href="gestionar_series.html">GESTIONAR SERIES</a>
+                </div>
+            </div>
+        </section>
+       
+        <hr>
+
+        <!-- BLOQUE: HISTORIAL DE ACTIVIDADES -->
+        <section>
+            <h3>HISTORIAL DE ACTIVIDADES</h3>
+            <img src="../recursos/imagenes/iconos/reloj.png" alt="Icono de historial" width="40">
+            <ul>
+                <li>Se actualizó la sinopsis de "Interestelar"</li>
+                <li>Nuevo usuario administrativo dado de alta: Juan Pérez</li>
+                <li>Se eliminó una reseña por spam en la película "Titanic"</li>
+                <li>Cambio de rol: Usuario_123 pasó a ser Moderador</li>
+            </ul>
+            <a href="historial_completo.html">VER TODO EL HISTORIAL</a>
+        </section>
+
+    </main>
+
+    <br><br>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER GRUPAL -->
+    <footer>
+        <hr>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

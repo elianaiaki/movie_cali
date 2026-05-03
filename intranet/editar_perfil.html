@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Perfil - MovieCali</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO  -->
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo MovieCali">
+            </td>
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <td width="30%" align="center">
+                <form>
+                    <label for="desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestión de Películas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
+                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
+                        </optgroup> 
+                        <optgroup label="Administración Usuarios">
+                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
+                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesión</option>     
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- INDICADOR DE POSICIÓN -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
+                PANEL
+            </td>
+        </tr>
+    </table>
+
+    <main>
+        <nav>
+            <p>GESTIÓN DE PERFILES Y ROLES ▶</p>
+        </nav>
+
+        <h2>EDITAR PERFIL</h2>
+
+        <section>
+            <!-- Imagen del perfil -->
+            <div>
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil actual" width="100">
+                <button type="button">CAMBIAR FOTO</button>
+            </div>
+    
+            <form>
+                <!-- Uso de "value" para datos precargados -->
+                <div>
+                    <label>Nombre:</label>
+                    <input type="text" value="Leon">
+                </div>
+                <div>
+                    <label>Apellido:</label>
+                    <input type="text" value="Kennedy">
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" value="lskennedy@gmail.com">
+                </div>
+
+                <div>
+                    <label>ID:</label>
+                    <input type="text" value="85461" readonly> <!-- 'readonly' protege el ID -->
+                </div>
+
+                <div>
+                    <label>Rol:</label>
+                    <select>
+                        <option selected>ADMINISTRADOR</option>
+                        <option>USUARIO</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Contraseña:</label>
+                    <input type="password" value="**********">
+                </div>
+
+                <div>
+                    <label>Celular:</label>
+                    <input type="tel" value="+549-2705-869344">
+                </div>
+
+                <div>
+                    <button type="submit">GUARDAR CAMBIOS</button>
+                    <button type="button">CANCELAR</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <br><br>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER GRUPAL -->
+    <footer>
+        <hr>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

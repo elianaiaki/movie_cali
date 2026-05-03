@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Intranet - MovieCali</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO  -->
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo">
+            </td>
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <td width="30%" align="center">
+                <form>
+                    <label for="desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestión de Películas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
+                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
+                        </optgroup> 
+                        <optgroup label="Administración Usuarios">
+                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
+                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesión</option>     
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- INDICADOR DE PANEL -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
+                PANEL
+            </td>
+        </tr>
+    </table>
+
+    <main>
+        <h2>PANEL DE CONTROL</h2>
+
+        <!-- BLOQUE: GESTIÓN DE CATÁLOGOS -->
+        <section> 
+            <div>
+                <h3>GESTIÓN DE CATÁLOGOS</h3>
+                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono catálogo" width="50">
+                
+                <h4>ABM DE PELÍCULAS Y SEREIES</h4>
+                <button type="button">DAR DE ALTA</button>
+                <button type="button">MODIFICAR</button>
+                <button type="button">VER TODO</button>
+                
+                <p>CATÁLOGO ACTUAL: 1584</p>
+                <p>A MODIFICAR: 200</p>
+                
+                <h5>Corregir reparto</h5>
+                <h5>Modificar datos</h5>
+                <h5>Actualizar trailer</h5>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- BLOQUE: ADMINISTRACIÓN DE USUARIOS -->
+        <section>
+            <div>
+                <h3>ADMINISTRACIÓN DE USUARIOS</h3>
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Icono usuarios" width="50">
+                
+                <h4>ABM DE USUARIO</h4>
+                <a href="nuevo_perfil.html">CREAR USUARIOS</a>
+                <a href="gestion_de_perfil_roles.html">VER TODO</a>
+                
+                <h5>Asignación de permisos</h5>
+                <h5>Panel de roles</h5>
+                <h5>Historial de actividades</h5>
+                
+                <p>TOTAL DE USUARIOS: 5584</p>
+                <p>ROLES ACTIVOS: 400</p>
+            </div>
+        </section>
+    </main>
+
+    <br><br>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER GRUPAL -->
+    <footer>
+        <hr>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Perfil - MovieCali</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO  -->
+    <table border="1" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo MovieCali">
+            </td>
+            <td width="40%" align="center">
+                <form>
+                    <input type="text" placeholder="Buscar películas, series...">
+                    <button>Buscar</button>
+                </form>
+            </td>
+            <td width="30%" align="center">
+                <form>
+                    <label for="desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestión de Películas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
+                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
+                        </optgroup> 
+                        <optgroup label="Administración Usuarios">
+                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
+                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesión</option>     
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- INDICADOR DE POSICIÓN -->
+    <table border="1">
+        <tr>
+            <td align="center">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
+                PANEL
+            </td>
+        </tr>
+    </table>
+
+    <main>
+        <nav><p>GESTIÓN DE PERFILES Y ROLES ▶</p></nav>
+
+        <h2>ELIMINAR PERFIL</h2>
+
+        <section>
+            <h3>¿Seguro que desea eliminar este Perfil?</h3>
+
+            <div>
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="80">
+
+                <!-- Datos del usuario -->
+                <div>
+                    <p><strong>NOMBRE:</strong> Usuario_123</p>
+                    <p><strong>ID:</strong> 85461</p>
+                    <p><strong>ROL:</strong> ADMINISTRATIVO</p>
+                    <p><strong>EMAIL:</strong> imdonf@gmail.com</p>
+                    <p><strong>PERMISOS:</strong> ADMINISTRADOR</p>
+                </div>
+            </div>
+
+            <div>
+                <button type="button">ELIMINAR</button>
+                <button type="button">CANCELAR</button>
+            </div>
+        </section>
+    </main>
+
+    <br><br>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER GRUPAL -->
+    <footer>
+        <hr>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

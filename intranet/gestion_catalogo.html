@@ -7,6 +7,9 @@
 </head>
 
 <body>
+
+<!------------------------------------------------------------------------------------------->
+
     <!-- ENCABEZADO -->
     <table border="1" width="100%">
         <tr> <!-- Logo -->
@@ -20,19 +23,31 @@
                     <button>Buscar</button>
                 </form>
             </td>
-            <!-- Desplegable -->
-            <td width="30%" align="center">
-                Desplegable
-                <select>
-                    <option><a href="./mi_perfil.html">Mi Perfil</a></option>
-                    <h3>Gestion pelicula y series</h3>
-                    <option><a href="./peliculas_pendientes">Peliculas pendientes de revision</a></option>
-                    <option><a href="./solicitudes_alta">Nuevas solicitudes de alta</a></option>
-                    <h3>Administracion de usuarios</h3>
-                    <option><a href="./gestion_de_perfil_roles">Gestion de perfil y roles</a></option>
-                    <option><a href="./nuevo_perfil">Crear nuevo perfil</a></option>
-                    <option><a href="#">Cerrar sesion</a></option>
-                </select>
+           <td width="30%" align="center">
+                <form>
+                    <label for="Desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
+                        <optgroup label="Gestion de Peliculas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">
+                                Pelicula pendientes de revision
+                            </option>
+                            <option label="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">
+                                Nuevas solicitudes de alta
+                            </option>
+                        </optgroup> 
+                        <optgroup label="administracion_usuarios">
+                            <option label="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">
+                                Gestion de perfil y roles
+                            </option>
+                            <option label="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">
+                                Crear nuevo perfil
+                            </option>
+                        </optgroup>  
+                        <option>Cerrar Sesion</option>     
+
+                    </select>
+                </form>
             </td>
         </tr>
     </table>
@@ -122,4 +137,15 @@
     </table>
 
 </body>
+
+<br>
+<br>
+<br>
+<!------------------------------------------------------------------------------------------->
+      <!-- FOOTER -->
+    <footer>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
 </html>
