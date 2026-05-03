@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Reportes y Reseñas</title>
+</head>
+
+<body>
+    <header>
+        <h1>MovieCali</h1>
+        <!-- Logo -->
+        <img src="/recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
+
+        <!-- Buscador -->
+        <form>
+            <input type="text" placeholder="Buscar películas, series...">
+            <button>Buscar</button>
+        </form>
+
+        <!--Desplegable-->
+        <div>
+            <a href="./mi_perfil.html">Mi Perfil</a>
+            <h3>Gestion pelicula y series</h3>
+            <a href="./peliculas_pendientes">Peliculas pendientes de revision</a>
+            <a href="./solicitudes_alta">Nuevas solicitudes de alta</a>
+            <h3>Administracion de usuarios</h3>
+            <a href="./gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
+            <a href="./nuevo_perfil.html">Crear nuevo perfil</a>
+            <a href="#">Cerrar sesion</a> <!--Link a inicio-->
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <p>PANEL DE GESTIÓN DE REPORTES DE RESEÑAS ▶</p>
+        </nav>
+
+        <!--Bloque de filtros -->
+        <section>
+            <div>
+                <!--En la imagen numero 21 no muestras como un menu con estas opciones pero faltaba-->
+                <label><strong>ORDENAR POR:</strong></label>
+                <select>
+                    <option>MÁS RECIENTES</option>
+                    <option>MÁS ANTIGUOS</option>
+                </select>
+
+                <label><strong>TIPOS DE REPORTES</strong></label>
+                <select>
+                    <option>Abusos</option>
+                    <option>Spoiler</option>
+                    <option>Spam</option>
+                    <option>Contenido Malicioso</option>
+                    <option>Otros</option>
+                </select>
+
+                <label><strong>ESTADOS:</strong></label>
+                <select>
+                    <option>Pendiente</option>
+                    <option>En Revisión</option>
+                    <option>Resuelto</option>
+                </select>
+            </div>
+        </section>
+
+        <!--Listado de Reportes(Izquierda de la maqueta)-->
+        <section>
+            <h3>PENDIENTE DE REVISIÓN:</h3>
+
+            <article>
+                <img src="/recursos/imagenes/iconos/claqueta.png" alt="Icono pelicula" width="25">
+                <h4>TÍTULO: SHREK 2</h4>
+
+                <p>
+                    <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                    <strong>Denunciante:</strong> Usuario_123|
+                    <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                    <strong>Reportado</strong> Usuario_2828
+                </p>
+
+                <div>
+                    <button type="button">Ver Reseña Completa</button>
+                    <button type="button">Ignorar Reporte</button>
+                    <button type="button">Sancionar Usuario</button>
+                    <button type="button">Eliminar Reseña</button>
+                </div>
+            </article>
+
+            <hr><!--Para separación-->
+
+            <h3>RESUELTOS:</h3>
+            <article>
+                <img src="/recursos/imagenes/iconos/claqueta.png" alt="Icono pelicula" width="25">
+                <h4>TÍTULO: TOY STORY</h4>
+                <p>
+                    <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                    <strong>Reportado:</strong> Usuario_2828|
+                    <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                    <strong>Denunciante</strong> Usuario_123
+                </p>
+                <p><strong>Acción tomada:</strong> RESEÑA ELIMINADA</p>
+            </article>
+        </section>
+
+        <!--Panel Lateral(aside)-->
+        <aside>
+            <h3>PANEL DE GESTIÓN DE USUARIOS</h3>
+
+            <article>
+                <img src="/recursos/imagenes/iconos/perfil.png" alt="Avtar" width="40">
+                <p><strong>Usuario_2828</strong></p>
+                <p>Reportes recibidos: 2</p>
+                <p>Sanciones activas: 0</p>
+                <a href="ver_perfil_usuario.html">Ver Perfil Detallado</a>
+            </article>
+        </aside>
+    </main>
+</body>
+</html>

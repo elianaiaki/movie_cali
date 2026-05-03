@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>MovieCali</h1>
+        <!-- Logo -->
+        <img src="/recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
+
+        <!-- Buscador -->
+        <form>
+            <input type="text" placeholder="Buscar películas, series...">
+            <button>Buscar</button>
+        </form>
+
+        <!--Desplegable-->
+        <div>
+            <a href="./mi_perfil.html">Mi Perfil</a>
+            <h3>Gestion pelicula y series</h3>
+            <a href="./peliculas_pendientes">Peliculas pendientes de revision</a>
+            <a href="./solicitudes_alta">Nuevas solicitudes de alta</a>
+            <h3>Administracion de usuarios</h3>
+            <a href="./gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
+            <a href="./nuevo_perfil.html">Crear nuevo perfil</a>
+            <a href="#">Cerrar sesion</a> <!--Link a inicio-->
+        </div>
+
+    </header>
+    
+    <main>
+        <!-- Ubicación en el sitio (Breadcrumb de la imagen) -->
+        <nav>
+            <p>GESTIÓN DE PERFILES Y ROLES ▶</p>
+        </nav>
+
+        <h2>MI PERFIL</h2>
+
+        <!-- BLOQUE 1: PERFIL ADMIN -->
+        <section>
+           <h3>ADMIN - ID: XXXXX</h3><!--Título del bloque--> 
+           <div>
+                <img src="/recursos/imagenes/iconos/perfil.png" alt="Foto de perfil del Administrador">
+            
+                <!--Agrupamos el texto -->
+                <div>
+                    <p>NOMBRE Y APELLIDO: [NOMBRE DE USUARIO]</p>
+                    <P>CORREO: [CORREO@USUARIO.COM]</P>
+                    <P>CELULAR: 000-0000</P>
+                    <!--ETIQUETA <a> para botones que llevan a otra pagina-->
+                    <a href="editar_perfil.html">EDITAR DATOS</a>    
+                </div>    
+            </div>       
+        </section>
+
+        <!--Segundo Bloque: ADMINISTRACION DE USUARIOS-->
+        <section>
+            <h3>ADMINISTRACIÓN DE USUARIOS</h3>
+            <P>CANTIDAD DE USUARIOS GESTIONADOS: 3050</P>
+            <P>USUARIOS ACTIVOS EN TOTAL: 930</P>
+            <P>ADMINISTRADORES EN TOTAL: 20</P>
+            <a href="gestion_de_perfil_roles.html">VER TODO</a>
+        </section>
+
+        <!--Tercer Bloque: GESTION DE CATALAGOS-->
+        <section>
+            <h3>GESTIÓN DE CATALAGOS</h3>
+            <div>
+                <img src="/recursos/imagenes/iconos/claqueta.png" alt="Icono de claqueta">
+                <!--Agrupamos el texto -->
+                <div>
+                    <p>CATALAGOS TOTALES: 55321</p>
+                    <P>CANTIDAD DE PELICULAS: 35485</P>
+                    <p>SERIES: 19836</p>
+                    <P>REVISIONES PENDIENTES: 1853</P>
+                    <a href="gestionar_peliculas.html">GESTIONAR PELICULAS</a> <!--tiene que llevar a la pagina gestionde peliculas-->
+                    <a href="gestionar_series.html">GESTIONAR SERIES</a> <!--LLeva a gestion de series-->
+                </div>
+            </div>
+        </section>
+       
+        <!--Cuarto Bloque: HISTORIAL DE ACTIVIDADES-->
+        <section>
+            <div>
+                <h3>HISTORIAL DE ACTIVIDADES</h3>
+                <img src="/recursos/imagenes/iconos/reloj.png" alt="Icono de historial">
+            </div>
+            <!--Agrupamos el texto -->
+            <!-- Usamos la lista para mostrar las acciones -->
+            <ul>
+                <li>Se actualizó la sinopsis de "Interestelar"</li>
+                <li>Nuevo usuario administrativo dado de alta: Juan Pérez</li>
+                <li>Se eliminó una reseña por spam en la película "Titanic"</li>
+                <li>Cambio de rol: Usuario_123 pasó a ser Moderador</li>
+            </ul>
+            
+            <!-- Enlace para ver más movimientos -->
+            <a href="historial_completo.html">VER TODO EL HISTORIAL</a><!--Llevaria al historial de actividades-->
+        </section>
+
+    </main>
+</body>
+</html>

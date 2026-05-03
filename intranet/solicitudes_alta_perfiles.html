@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Gestion De Altas De Perfiles</title>
+</head>
+
+<body>
+    <header>
+        <h1>MovieCali</h1>
+        <!-- Logo -->
+        <img src="/recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
+
+        <!-- Buscador -->
+        <form>
+            <input type="text" placeholder="Buscar películas, series...">
+            <button>Buscar</button>
+        </form>
+
+        <!--Desplegable-->
+        <div>
+            <a href="./mi_perfil.html">Mi Perfil</a>
+            <h3>Gestion pelicula y series</h3>
+            <a href="./peliculas_pendientes">Peliculas pendientes de revision</a>
+            <a href="./solicitudes_alta">Nuevas solicitudes de alta</a>
+            <h3>Administracion de usuarios</h3>
+            <a href="./gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
+            <a href="./nuevo_perfil.html">Crear nuevo perfil</a>
+            <a href="#">Cerrar sesion</a> <!--Link a inicio-->
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <p>PANEL DE GESTIÓN DE ALTAS DE PERFILES ▶</p>
+        </nav>
+        
+        <!--Filtros (fecha y estado)-->
+        <section>
+            <label><strong>FECHA:</strong></label>
+            <select>
+                <option>hace un día</option>
+                <option>hace una semana</option>
+                <option>fecha</option>
+            </select>
+
+            <label><strong>ESTADO:</strong></label>
+            <select>
+                <option>Pendiente</option>
+                <option>En revisión</option>
+                <option>Resueltos</option>
+            </select>
+        </section>
+
+        <!--Panel de solicitudes Actuales-->
+        <section>
+            <h3>PANEL DE SOLICITUDES ACTUALES</h3>
+
+            <article>
+                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                <div>
+                    <p><strong>USUARIO_12345</strong></p>
+                    <p>email: 123us@gmail.com</p>
+                </div>
+                <div>
+                    <button type="button">Ver Perfil</button>
+                    <button type="button">Dar Alta</button>
+                    <button type="button">Denegar</button>
+                </div>
+            </article>
+
+            <article>
+                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                <div>
+                    <p><strong>USUARIO_6789</strong></p>
+                    <p>email: msicjs@gmail.com</p>
+                </div>
+                <div>
+                    <button type="button">Ver Perfil</button>
+                    <button type="button">Dar Alta</button>
+                    <button type="button">Denegar</button>
+                </div> 
+            </article>
+        </section>
+
+        <hr>
+        <!--Panel de Perfiles Aprobados-->
+        <section>
+            <h3>PANEL DE PERFIL APROBADOS</h3>
+            <article>
+                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                <div>
+                    <p><strong>USUARIO_12076</strong></p>
+                    <p>email: mjgcos@gmail.com</p>
+                </div>
+                <div>
+                    <button type="button">Ver Perfil</button>
+                    <button type="button">Dar Alta</button>
+                    <button type="button">Denegar</button>
+                </div>
+            </article>
+
+            <article>
+                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                <div>
+                    <p><strong>USUARIO_11087</strong></p>
+                    <p>email: sallwer@gmail.com</p>
+                </div>
+                <div>
+                    <button type="button">Ver Perfil</button>
+                    <button type="button">Dar Alta</button>
+                    <button type="button">Denegar</button>
+                </div> 
+            </article>
+        </section>
+
+        <!--Panel Lateral (aside)-->
+        <aside>
+            <h3>PANEL DE SOLICITUDES PENDIENTES</h3>
+            <article>
+                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="30">
+                <p>Usuario_1212</p>
+                <p>qmxxxnd@gmail.com</p>
+                <button type="button">Ver Solicitud</button>
+            </article>
+
+             <article>
+                <img src="/recursos/imagenes/iconos/perfil.png" alt="Usuario" width="30">
+                <p>Usuario_1112</p>
+                <p>mhtrfvbi@gmail.com</p>
+                <button type="button">Ver Solicitud</button>
+            </article>
+        </aside>
+    </main>
+</body>
+</html>

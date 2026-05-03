@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Nuevo Perfil</title>
+</head>
+
+<body>
+    <header>
+        <h1>MovieCali</h1>
+        <!-- Logo -->
+        <img src="/recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
+
+        <!-- Buscador -->
+        <form>
+            <input type="text" placeholder="Buscar películas, series...">
+            <button>Buscar</button>
+        </form>
+
+        <!--Desplegable-->
+        <div>
+            <a href="./mi_perfil.html">Mi Perfil</a>
+            <h3>Gestion pelicula y series</h3>
+            <a href="./peliculas_pendientes">Peliculas pendientes de revision</a>
+            <a href="./solicitudes_alta">Nuevas solicitudes de alta</a>
+            <h3>Administracion de usuarios</h3>
+            <a href="./gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
+            <a href="./nuevo_perfil.html">Crear nuevo perfil</a>
+            <a href="#">Cerrar sesion</a> <!--Link a inicio-->
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <p>GESTIÓN DE PERFILES Y ROLES</p>
+        </nav>
+
+        <h2>CREAR NUEVO PERFIL</h2>
+
+        <section>
+            <!--Formulario-->
+            <form>
+                <!--Fila 1: Nombre, Apellido, Email-->
+                <div>
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="Escribe el nombre">
+                </div>
+                <div>
+                    <label>Apellido:</label>
+                    <input type="text" placeholder="Escribe el apellido">
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" placeholder="ejempli@correo.com">
+                </div>
+
+                <!--Fila 2: ID, Rol, Permisos-->
+                <div>
+                    <label>ID</label>
+                    <input type="text" placeholder="ID autogenerado">
+                </div>
+                <div>
+                    <label>Rol:</label>
+                    <select>
+                        <option>ADMINISTRATIVO</option>
+                        <option>USUARIO</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Permisos:</label>
+                    <select>
+                        <option>ADMINISTRADOR</option>
+                        <option>USUARIO</option>
+                    </select>
+                </div>
+
+                <!--Fila 3: Contraseña, Repetir y Celular-->
+                <div>
+                    <label>Contraseña:</label>
+                    <input type="password">
+                </div>
+                <div>
+                    <label>Repetir Contraseña:</label>
+                    <input type="password">
+                </div>
+                <div>
+                    <label>Celular:</label>
+                    <input type="tel" placeholder="+549-2705-869344">
+                </div>
+
+                <!--Botones Guarar y Cancelar-->
+                <div>
+                    <button type="submit">Guardar</button>
+                    <button type="button">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
