@@ -7,62 +7,52 @@
 </head>
 
 <body>
-    <!-- ENCABEZADO -->
-    <table border="1" width="100%">
-        <tr> <!-- Logo -->
-            <td width="30%" align="center">
-                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75">
-            </td>
-            <!-- Buscador -->
-            <td width="40%" align="center">
-                <form>
-                    <input type="text" placeholder="Buscar películas, series...">
-                    <button>Buscar</button>
-                </form>
-            </td>
-            <!-- Desplegable -->
-            <td width="30%" align="center">
-                <form>
-                    <label for="Desplegable">Desplegable</label>
-                    <select name="desplegable" id="desplegable">
-                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
-                        <optgroup label="Gestion de Peliculas">
-                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">
-                                Pelicula pendientes de revision
-                            </option>
-                            <option label="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">
-                                Nuevas solicitudes de alta
-                            </option>
-                        </optgroup> 
-                        <optgroup label="administracion_usuarios">
-                            <option label="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">
-                                Gestion de perfil y roles
-                            </option>
-                            <option label="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">
-                                Crear nuevo perfil
-                            </option>
-                        </optgroup>  
-                        <option>Cerrar Sesion</option>     
 
-                    </select>
-                </form>
-            </td>
-        </tr>
-    </table>
 <!------------------------------------------------------------------------------------------->
+ <!-- HEADER -->
+    <header>
+        <h1>MovieCali</h1>
+        <!-- Logo -->
+        <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
 
-    <!-- PANEL -->
-    <table border="1">
-        <tr>
-            <td align="center">
-                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
-                PANEL
-            </td>
-        </tr>
-    </table>
+        <!-- Buscador -->
+        <form>
+            <input type="text" placeholder="Buscar películas, series...">
+            <button>Buscar</button>
+        </form>
+
+        <!-- Navegación Desplegable -->
+        <nav>
+            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
+            <!--Gestion de Catalogo-->
+            <a href="../intranet/peliculas_pendientes_de_revision.html">Películas Pendientes de Revision</a>
+            <a href="../intranet/nuevas_solicitudes_de_alta_intra.html">Nuevas Solicitudes de Alta</a>
+            <!--Administracion de Usuarios-->
+            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
+            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
+            <a href="#">Cerrar Sesion</a>
+        </nav>
+
+    </header>
 
     <br>
+<!-- FIN DE HEADER-->
 
+<!------------------------------------------------------------------------------------------->
+    <!-- PANEL -->
+     <div>
+         <table border="1">
+            <tr>
+                <td align="center">
+                    <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
+                    PANEL
+                </td>
+            </tr>
+        </table>
+     </div>
+    <br>
+<!------------------------------------------------------------------------------------------->
+   
     <h1>+ EDITAR SERIE</h1>
 
     <table border="1" width="92%" align="center">
@@ -76,7 +66,7 @@
                 <p>Editar Pelicula</p>
                 <form>
                     <label for="Seleccionar_titulo_SERIE">Titulo: </label>
-                    <select name="Seleccionar_titulo_pelicula">
+                    <select name="Seleccionar_titulo_serie">
                         <optgroup label="Listados">
                             <option value="Wonder Man">Wonder Man</option>
                             <option velue="La Fiscal">La Fiscal</option>
@@ -85,17 +75,17 @@
 
                     </select>
                     <input type="text" placeholder="Wonder Man">
-                    <label for="Genero_pelicula">Genero: </label>
+                    <label for="Genero_serie">Genero: </label>
                     <input type="text" placeholder="Comedia , Aventura">
                     <label for="Año_estreno">Año de Estreno: </label>
                     <input type="text" placeholder="27 de Enero 2026">
-                    <label for="Duracion_pelicula">Duración: </label>
+                    <label for="Duracion_serie">Duración: </label>
                     <input type="text" placeholder="30 min">
                     <label for="Director">Director </label>
                     <input type="text" placeholder="Ingrese Nombre Y Apellido">
-                    <label for="Productor_pelicula">Productor: </label>
+                    <label for="Productor_serie">Productor: </label>
                     <input type="text" placeholder="Ingrese nombre y apellido">
-                    <label for="Calificacion_pelicula">Calificacion General: </label>
+                    <label for="Calificacion_serie">Calificacion General: </label>
                     <input type="text" placeholder="7.4 / 10">
                     <label for="Plataformas_disponibles">Plataformas: </label>
                     <input type="text" placeholder="Agregar imagen"><br>
@@ -125,7 +115,6 @@
             </td>
         </tr>
     </table>
-
 <br>
 <br>
 <br>
@@ -135,4 +124,5 @@
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>
+</body>
 </html>
