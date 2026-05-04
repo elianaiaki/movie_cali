@@ -3,59 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Crear Nuevo Perfil - MovieCali</title>
+    <title>NUEVO PERFIL - MovieCali</title>
 </head>
 
 <body>
 
-    <!-- ENCABEZADO  -->
-    <table border="1" width="100%">
-        <tr>
-            <td width="30%" align="center">
-                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75" alt="Logo MovieCali">
-            </td>
-            <td width="40%" align="center">
-                <form>
-                    <input type="text" placeholder="Buscar películas, series...">
-                    <button>Buscar</button>
-                </form>
-            </td>
-            <td width="30%" align="center">
-                <form>
-                    <label for="desplegable">Desplegable</label>
-                    <select name="desplegable" id="desplegable">
-                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
-                        <optgroup label="Gestión de Películas">
-                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">Películas pendientes de revisión</option>
-                            <option value="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">Nuevas solicitudes de alta</option>
-                        </optgroup> 
-                        <optgroup label="Administración Usuarios">
-                            <option value="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">Gestión de perfil y roles</option>
-                            <option value="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">Crear nuevo perfil</option>
-                        </optgroup>  
-                        <option>Cerrar Sesión</option>     
-                    </select>
-                </form>
-            </td>
-        </tr>
-    </table>
+    <!-- HEADER -->
+    <header>
+        <h1>MovieCali</h1>
+        <!-- Logo -->
+        <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
 
-    <br>
+        <!-- Buscador -->
+        <form>
+            <input type="text" placeholder="Buscar películas, series...">
+            <button>Buscar</button>
+        </form>
 
-    <!-- INDICADOR DE POSICIÓN -->
-    <table border="1">
-        <tr>
-            <td align="center">
-                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Casa">
-                PANEL
-            </td>
-        </tr>
-    </table>
+        <!-- Navegación Desplegable -->
+        <nav>
+            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
+            <!--Gestion de Catalogo-->
+            <a href="../intranet/peliculas_pendientes_de_revision.html">Películas Pendientes de Revision</a>
+            <a href="../intranet/nuevas_solicitudes_de_alta_intra.html">Nuevas Solicitudes de Alta</a>
+            <!--Administracion de Usuarios-->
+            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
+            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
+            <a href="#">Cerrar Sesion</a>
+        </nav>
+
+    </header> 
+    <hr>
 
     <main>
-        <nav>
-            <p>GESTIÓN DE PERFILES Y ROLES ▶</p>
-        </nav>
 
         <h2>CREAR NUEVO PERFIL</h2>
 
