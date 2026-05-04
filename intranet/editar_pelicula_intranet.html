@@ -36,91 +36,94 @@
     </header>
 
     <br>
-<!-- FIN DE HEADER-->
+    <!-- FIN DE HEADER-->
 
-<!------------------------------------------------------------------------------------------->
-    <!-- PANEL -->
-     <div>
-         <table border="1">
-            <tr>
-                <td align="center">
-                    <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
-                    PANEL
-                </td>
-            </tr>
-        </table>
-     </div>
+    <!------------------------------------------------------------------------------------------->
+
+    <main>
+        <!-- PANEL -->
+        <div>
+            <table border="1">
+                <tr>
+                    <td align="center">
+                        <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
+                        PANEL
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <!------------------------------------------------------------------------------------------->
+        
+        <div>
+            <h1>+ EDITAR PELICULA</h1>
+
+            <table border="1" width="92%" align="center">
+                <tr>
+                    <td width="100%">
+                        <p>   </p>
+                    </td>
+                </tr>
+                <tr>    
+                    <td>
+                        <p>Editar Pelicula</p>
+                        <form>
+                            <label for="Seleccionar_titulo_pelicula">Titulo: </label>
+                            <select name="Seleccionar_titulo_pelicula">
+                                <optgroup label="Listados">
+                                    <option value="El_Yeti">El Yeti</option>
+                                    <option velue="El_sonido_de_la_muerte">El Sonido de la Muerte</option>
+                                    <option velue="Michael">Michael</option>
+                                    <option velue="F1 La Pelicula">F1 La Pelicula</option>
+                                </optgroup>
+
+                            </select>
+                            <input type="text" placeholder="EL Diablo Viste a la Moda 2">
+                            <label for="Genero_pelicula">Genero: </label>
+                            <input type="text" placeholder="Comedia Dramatica">
+                            <label for="Año_estreno">Año de Estreno: </label>
+                            <input type="text" placeholder="20 de Abril 2026">
+                            <label for="Duracion_pelicula">Duración: </label>
+                            <input type="text" placeholder="1h 59min">
+                            <label for="Director">Director </label>
+                            <input type="text" placeholder="David Frankel">
+                            <label for="Productor_pelicula">Productor: </label>
+                            <input type="text" placeholder="Ingrese nombre y apellido">
+                            <label for="Calificacion_pelicula">Calificacion General: </label>
+                            <input type="text" placeholder="8.5 / 10">
+                            <label for="Plataformas_disponibles">Plataformas: </label>
+                            <input type="text" placeholder="Agregar imagen"><br>
+                            <label for="clasificacion_edad">Clasificacion por Edad: </label>
+                            <input type="text" placeholder="+18">
+                            <label for="Reparto">Reparto: </label>
+                            <select name="reparto">
+                                <optgroup label="Listados">
+                                    <option value="Anne_Hathaway"> Anne Hathaway</option>
+                                </optgroup>
+                                <input type="text" placeholder="Agregar nuevos actores">
+                            </select> <br>
+                            <label for="sinopsis_peli">Sinopsis: </label><br>
+                            <textarea id="sinopsis" name="sinopsis_peli" rows="4" cols="100">
+                                Escribe aquí el resumen de la trama..
+                            </textarea> <br>
+                            <label for="video-upload">Trailer:</label>
+                            <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
+                            <button type="submit">Subir Trailer</button><br>              
+                            <label for="Poster">Cargar Poster: </label>
+                            <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                            <button type="submit">Examinar</button><br>
+                            <br>
+                            <button type="submit">Guardar Cambios</button> 
+                            <button type="reset">Cancelar</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
     <br>
-<!------------------------------------------------------------------------------------------->
-    
-
-    <h1>+ EDITAR PELICULA</h1>
-
-    <table border="1" width="92%" align="center">
-        <tr>
-            <td width="100%">
-                <p>   </p>
-            </td>
-        </tr>
-        <tr>    
-            <td>
-                <p>Editar Pelicula</p>
-                <form>
-                    <label for="Seleccionar_titulo_pelicula">Titulo: </label>
-                    <select name="Seleccionar_titulo_pelicula">
-                        <optgroup label="Listados">
-                            <option value="El_Yeti">El Yeti</option>
-                            <option velue="El_sonido_de_la_muerte">El Sonido de la Muerte</option>
-                            <option velue="Michael">Michael</option>
-                            <option velue="F1 La Pelicula">F1 La Pelicula</option>
-                        </optgroup>
-
-                    </select>
-                    <input type="text" placeholder="EL Diablo Viste a la Moda 2">
-                    <label for="Genero_pelicula">Genero: </label>
-                    <input type="text" placeholder="Comedia Dramatica">
-                    <label for="Año_estreno">Año de Estreno: </label>
-                    <input type="text" placeholder="20 de Abril 2026">
-                    <label for="Duracion_pelicula">Duración: </label>
-                    <input type="text" placeholder="1h 59min">
-                    <label for="Director">Director </label>
-                    <input type="text" placeholder="David Frankel">
-                    <label for="Productor_pelicula">Productor: </label>
-                    <input type="text" placeholder="Ingrese nombre y apellido">
-                    <label for="Calificacion_pelicula">Calificacion General: </label>
-                    <input type="text" placeholder="8.5 / 10">
-                    <label for="Plataformas_disponibles">Plataformas: </label>
-                    <input type="text" placeholder="Agregar imagen"><br>
-                    <label for="clasificacion_edad">Clasificacion por Edad: </label>
-                    <input type="text" placeholder="+18">
-                    <label for="Reparto">Reparto: </label>
-                    <select name="reparto">
-                        <optgroup label="Listados">
-                            <option value="Anne_Hathaway"> Anne Hathaway</option>
-                        </optgroup>
-                        <input type="text" placeholder="Agregar nuevos actores">
-                    </select> <br>
-                    <label for="sinopsis_peli">Sinopsis: </label><br>
-                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" cols="100">
-                        Escribe aquí el resumen de la trama..
-                    </textarea> <br>
-                    <label for="video-upload">Trailer:</label>
-                    <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
-                    <button type="submit">Subir Trailer</button><br>              
-                    <label for="Poster">Cargar Poster: </label>
-                    <input type="file" id="Poster" name="poster_image" accept="image/*" required>
-                    <button type="submit">Examinar</button><br>
-                    <br>
-                    <button type="submit">Guardar Cambios</button> 
-                    <button type="reset">Cancelar</button>
-                </form>
-            </td>
-        </tr>
-    </table>
-
-<br>
-<br>
-<br>
+    <br>
+    <br>
 <!------------------------------------------------------------------------------------------->
       <!-- FOOTER -->
     <footer>

@@ -36,88 +36,92 @@
     </header>
 
     <br>
-<!-- FIN DE HEADER-->
+    <!-- FIN DE HEADER-->
 
-<!------------------------------------------------------------------------------------------->
-    <!-- PANEL -->
-     <div>
-         <table border="1">
-            <tr>
-                <td align="center">
-                    <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
-                    PANEL
-                </td>
-            </tr>
-        </table>
-     </div>
+    <!------------------------------------------------------------------------------------------->
+
+    <main>
+        <!-- PANEL -->
+        <div>
+            <table border="1">
+                <tr>
+                    <td align="center">
+                        <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
+                        PANEL
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <!------------------------------------------------------------------------------------------->
+        <div>
+            <h1>+ EDITAR SERIE</h1>
+
+            <table border="1" width="92%" align="center">
+                <tr>
+                    <td width="100%">
+                        <p>   </p>
+                    </td>
+                </tr>
+                <tr>    
+                    <td>
+                        <p>Editar Pelicula</p>
+                        <form>
+                            <label for="Seleccionar_titulo_SERIE">Titulo: </label>
+                            <select name="Seleccionar_titulo_serie">
+                                <optgroup label="Listados">
+                                    <option value="Wonder Man">Wonder Man</option>
+                                    <option velue="La Fiscal">La Fiscal</option>
+                                    <option velue="El Robo">El Robo</option>
+                                </optgroup>
+
+                            </select>
+                            <input type="text" placeholder="Wonder Man">
+                            <label for="Genero_serie">Genero: </label>
+                            <input type="text" placeholder="Comedia , Aventura">
+                            <label for="Año_estreno">Año de Estreno: </label>
+                            <input type="text" placeholder="27 de Enero 2026">
+                            <label for="Duracion_serie">Duración: </label>
+                            <input type="text" placeholder="30 min">
+                            <label for="Director">Director </label>
+                            <input type="text" placeholder="Ingrese Nombre Y Apellido">
+                            <label for="Productor_serie">Productor: </label>
+                            <input type="text" placeholder="Ingrese nombre y apellido">
+                            <label for="Calificacion_serie">Calificacion General: </label>
+                            <input type="text" placeholder="7.4 / 10">
+                            <label for="Plataformas_disponibles">Plataformas: </label>
+                            <input type="text" placeholder="Agregar imagen"><br>
+                            <label for="clasificacion_edad">Clasificacion por Edad: </label>
+                            <input type="text" placeholder="+18">
+                            <label for="Reparto">Reparto: </label>
+                            <select name="reparto">
+                                <optgroup label="Listados">
+                                    <option value="AYahya Adbul Mateen II"> Yahya Adbul Mateen II</option>
+                                </optgroup>
+                                <input type="text" placeholder="Agregar nuevos actores">
+                            </select> <br>
+                            <label for="sinopsis_peli">Sinopsis: </label><br>
+                            <textarea id="sinopsis" name="sinopsis_peli" rows="4" cols="100">
+                                Escribe aquí el resumen de la trama..
+                            </textarea> <br>
+                            <label for="video-upload">Trailer:</label>
+                            <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
+                            <button type="submit">Subir Trailer</button><br>              
+                            <label for="Poster">Cargar Poster: </label>
+                            <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                            <button type="submit">Examinar</button><br>
+                            <br>
+                            <button type="submit">Guardar Cambios</button> 
+                            <button type="reset">Cancelar</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
     <br>
-<!------------------------------------------------------------------------------------------->
-   
-    <h1>+ EDITAR SERIE</h1>
-
-    <table border="1" width="92%" align="center">
-        <tr>
-            <td width="100%">
-                <p>   </p>
-            </td>
-        </tr>
-        <tr>    
-            <td>
-                <p>Editar Pelicula</p>
-                <form>
-                    <label for="Seleccionar_titulo_SERIE">Titulo: </label>
-                    <select name="Seleccionar_titulo_serie">
-                        <optgroup label="Listados">
-                            <option value="Wonder Man">Wonder Man</option>
-                            <option velue="La Fiscal">La Fiscal</option>
-                            <option velue="El Robo">El Robo</option>
-                        </optgroup>
-
-                    </select>
-                    <input type="text" placeholder="Wonder Man">
-                    <label for="Genero_serie">Genero: </label>
-                    <input type="text" placeholder="Comedia , Aventura">
-                    <label for="Año_estreno">Año de Estreno: </label>
-                    <input type="text" placeholder="27 de Enero 2026">
-                    <label for="Duracion_serie">Duración: </label>
-                    <input type="text" placeholder="30 min">
-                    <label for="Director">Director </label>
-                    <input type="text" placeholder="Ingrese Nombre Y Apellido">
-                    <label for="Productor_serie">Productor: </label>
-                    <input type="text" placeholder="Ingrese nombre y apellido">
-                    <label for="Calificacion_serie">Calificacion General: </label>
-                    <input type="text" placeholder="7.4 / 10">
-                    <label for="Plataformas_disponibles">Plataformas: </label>
-                    <input type="text" placeholder="Agregar imagen"><br>
-                    <label for="clasificacion_edad">Clasificacion por Edad: </label>
-                    <input type="text" placeholder="+18">
-                    <label for="Reparto">Reparto: </label>
-                    <select name="reparto">
-                        <optgroup label="Listados">
-                            <option value="AYahya Adbul Mateen II"> Yahya Adbul Mateen II</option>
-                        </optgroup>
-                        <input type="text" placeholder="Agregar nuevos actores">
-                    </select> <br>
-                    <label for="sinopsis_peli">Sinopsis: </label><br>
-                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" cols="100">
-                        Escribe aquí el resumen de la trama..
-                    </textarea> <br>
-                    <label for="video-upload">Trailer:</label>
-                    <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
-                    <button type="submit">Subir Trailer</button><br>              
-                    <label for="Poster">Cargar Poster: </label>
-                    <input type="file" id="Poster" name="poster_image" accept="image/*" required>
-                    <button type="submit">Examinar</button><br>
-                    <br>
-                    <button type="submit">Guardar Cambios</button> 
-                    <button type="reset">Cancelar</button>
-                </form>
-            </td>
-        </tr>
-    </table>
-<br>
-<br>
-<br>
+    <br>
+    <br>
 <!------------------------------------------------------------------------------------------->
       <!-- FOOTER -->
     <footer>

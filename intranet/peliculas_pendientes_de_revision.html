@@ -7,126 +7,119 @@
 </head>
 
 <body>
-    <!-- ENCABEZADO -->
-    <table border="1" width="100%">
-        <tr> <!-- Logo -->
-            <td width="30%" align="center">
-                <img src="../recursos/imagenes/logo/logo.png" width="250" height="75">
-            </td>
-            <!-- Buscador -->
-            <td width="40%" align="center">
-                <form>
-                    <input type="text" placeholder="Buscar películas, series...">
-                    <button>Buscar</button>
-                </form>
-            </td>
-            <td width="30%" align="center">
-                <form>
-                    <label for="Desplegable">Desplegable</label>
-                    <select name="desplegable" id="desplegable">
-                        <option href="../intranet/mi_perfil_intranet.html">Mi perfil</option>
-                        <optgroup label="Gestion de Peliculas">
-                            <option value="peliculas_pendientes" href="../intranet/peliculaspendientesderevision.html">
-                                Pelicula pendientes de revision
-                            </option>
-                            <option label="nuevassolicitudesdealta" href="../intranet/nuevassolicitudesdealta.html">
-                                Nuevas solicitudes de alta
-                            </option>
-                        </optgroup> 
-                        <optgroup label="administracion_usuarios">
-                            <option label="gestion_perfiles" href="../intranet/gestion_perfiles_user.html">
-                                Gestion de perfil y roles
-                            </option>
-                            <option label="nuevoperfil_intranet" href="../nuevo_perfil_intranet.html">
-                                Crear nuevo perfil
-                            </option>
-                        </optgroup>  
-                        <option>Cerrar Sesion</option>     
+    
+    <body>
 
+    <!-- HEADER -->
+    <header>
+        <h1>MovieCali</h1>
+        <!-- Logo -->
+        <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+
+        <!-- Buscador -->
+        <form>
+            <input type="text" placeholder="Buscar películas, series...">
+            <button>Buscar</button>
+        </form>
+
+        <!-- Navegación Desplegable -->
+        <nav>
+            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
+            <!--Gestion de Catalogo-->
+            <a href="#">Películas Pendientes de Revision</a>
+            <a href="../intranet/nuevas_solicitudes_de_alta_intra.html">Nuevas Solicitudes de Alta</a>
+            <!--Administracion de Usuarios-->
+            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
+            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
+            <a href="#">Cerrar Sesion</a>
+        </nav>
+
+    </header> 
+    <hr>
+    <!-- FIN DE HEADER-->
+
+    <!------------------------------------------------------------------------------------------->
+    <main>
+        <br>
+        <h1>PELICULAS PENDIENTES DE REVISION</h1>
+        <br>
+        <!-- BOTONES -->
+        <table>
+            <tr>
+                <td width="30%" align="left">
+                    <button> 
+                    <a href="agregar_nueva_pelicula.html">+ AGREGAR NUEVA PELICULA</a>
+                    </button>
+                </td>
+                <td width="30%" align="center">
+                    <select>
+                        <option>FILTROS AVANZADOS</option>
+                        <option>pendientes</option>
+                        <option>aprobados</option>
+                        <option>rechazados</option>
                     </select>
-                </form>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <h1>PELICULAS PENDIENTES DE REVISION</h1>
-    <br>
-     <!-- BOTONES -->
-    <table>
-        <tr>
-            <td width="30%" align="left">
-                <button> 
-                <a href="agregar_nueva_pelicula.html">+ AGREGAR NUEVA PELICULA</a>
-                </button>
-            </td>
-            <td width="30%" align="center">
-                <select>
-                    <option>FILTROS AVANZADOS</option>
-                    <option>pendientes</option>
-                    <option>aprobados</option>
-                    <option>rechazados</option>
-                </select>
-            </td>
-            <td width="30%" align="rigth">
-                <a href="agregarnuevoactor.html"></a>
-                <button> + AGREGAR NUEVO ACTOR</button>
-            </td>
-        </tr>
-    </table>
-<!-----------------------Tarjetas----------------------------------------------->
-    <section class="tarjetas_peliculas_pendientes" width="20%" height="50%" >
-        <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" width="120" height="100" align="center">
-        <h3>Titulo:</h3>
-        <p id="001">El diablo viste a la Moda 2</p>
-        <h3>Sinopsis</h3>
-        <p> Miranda Priestly, leyenda de la moda<br>
-        y directora de Runway, se enfrenta a una<br>
-        nueva amenaza: Emily Charlton, su ambiciosa<br>
-        exasistente ahora convertida en poderosa<br>
-        ejecutiva de una empresa rival.En un panorama<br>
-        donde los medios impresos pierden terreno frente<br>
-        al mundo digital,ambas mujeres se enfrentan<br>
-        en una intensa batalla por los ingresos publicitarios.<br>
-        Mientras Miranda se acerca a la jubilación,<br>
-        lucha por mantener su legado intacto,<br>
-        generando un juego de poder, ingenio y<br>
-        ambición en el difícil mundo de la moda y los medios.
-        </p>
-        <h3>Calificación:</h3>
-            <p>8.5 / 10</p> 
-        <h3>Director:</h3>
-            <p>por David Frankel</p>
-        <h3>Reparto:</h3>
-        <p>Meryl Streep, Anne Hathaway, Emily Blunt</p>
-        <img src="../recursos/imagenes/Reparto/Meryl_streep.jpg" width="50" height="50">
-        <img src="../recursos/imagenes/Reparto/anne_hathaway.jpg" width="50" height="50">
-        <img src="../recursos/imagenes/Reparto/emili_blunt.jpg" width="50" height="50">
-        <h3>Trailer</h3>
-        <video width="320" height="240" controls>
-            <source src="../recursos/Videos/Eldiablovistealamoda2_TRAILER.mp4" type="video/mp4">      
-        </video>
-        <h3>Genero:</h3>
-            <p>Comedia, Drama</p>
-        <h3>Duracion:</h3>
-            <p>1h 59min</p>
-        <h3>Año de Estreno:</h3>
-            <p>30 de Abril 2026</p>
-        <h3>Plataformas:</h3>
-        <img src="../recursos/imagenes/iconos/disney_plus.png " width="30" height="30">
-        <div class="tarjetas_acciones">
-            <div class="guardar_accion">
-                <button type="button">GUARDAR CAMBIOS</button>
-            </div>
-            <div class="tarjetas_modificables">
-                <button><a href="confirmar-eliminacion.html">ELIMINAR PELÍCULA</a></button>
-                <button><a href="editor-pelicula.html">EDITAR</a></button>
-            </div>
-            <div class="tarjeta_accion_publicar">
-                    PUBLICA
-                    <input type="checkbox">
-            </div>
-        </div>    
-    </section> 
+                </td>
+                <td width="30%" align="rigth">
+                    <a href="agregarnuevoactor.html"></a>
+                    <button> + AGREGAR NUEVO ACTOR</button>
+                </td>
+            </tr>
+        </table>
+    <!-----------------------Tarjetas----------------------------------------------->
+        <section class="tarjetas_peliculas_pendientes" width="20%" height="50%" >
+            <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" width="120" height="100" align="center">
+            <h3>Titulo:</h3>
+            <p id="001">El diablo viste a la Moda 2</p>
+            <h3>Sinopsis</h3>
+            <p> Miranda Priestly, leyenda de la moda<br>
+            y directora de Runway, se enfrenta a una<br>
+            nueva amenaza: Emily Charlton, su ambiciosa<br>
+            exasistente ahora convertida en poderosa<br>
+            ejecutiva de una empresa rival.En un panorama<br>
+            donde los medios impresos pierden terreno frente<br>
+            al mundo digital,ambas mujeres se enfrentan<br>
+            en una intensa batalla por los ingresos publicitarios.<br>
+            Mientras Miranda se acerca a la jubilación,<br>
+            lucha por mantener su legado intacto,<br>
+            generando un juego de poder, ingenio y<br>
+            ambición en el difícil mundo de la moda y los medios.
+            </p>
+            <h3>Calificación:</h3>
+                <p>8.5 / 10</p> 
+            <h3>Director:</h3>
+                <p>por David Frankel</p>
+            <h3>Reparto:</h3>
+            <p>Meryl Streep, Anne Hathaway, Emily Blunt</p>
+            <img src="../recursos/imagenes/Reparto/Meryl_streep.jpg" width="50" height="50">
+            <img src="../recursos/imagenes/Reparto/anne_hathaway.jpg" width="50" height="50">
+            <img src="../recursos/imagenes/Reparto/emili_blunt.jpg" width="50" height="50">
+            <h3>Trailer</h3>
+            <video width="320" height="240" controls>
+                <source src="../recursos/Videos/Eldiablovistealamoda2_TRAILER.mp4" type="video/mp4">      
+            </video>
+            <h3>Genero:</h3>
+                <p>Comedia, Drama</p>
+            <h3>Duracion:</h3>
+                <p>1h 59min</p>
+            <h3>Año de Estreno:</h3>
+                <p>30 de Abril 2026</p>
+            <h3>Plataformas:</h3>
+            <img src="../recursos/imagenes/iconos/disney_plus.png " width="30" height="30">
+            <div class="tarjetas_acciones">
+                <div class="guardar_accion">
+                    <button type="button">GUARDAR CAMBIOS</button>
+                </div>
+                <div class="tarjetas_modificables">
+                    <button><a href="confirmar-eliminacion.html">ELIMINAR PELÍCULA</a></button>
+                    <button><a href="editor-pelicula.html">EDITAR</a></button>
+                </div>
+                <div class="tarjeta_accion_publicar">
+                        PUBLICA
+                        <input type="checkbox">
+                </div>
+            </div>    
+        </section> 
+    </main>
     <br>
     <br>
     <br>

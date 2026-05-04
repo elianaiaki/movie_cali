@@ -38,66 +38,72 @@
 <!-- FIN DE HEADER-->
 
 <!------------------------------------------------------------------------------------------->
-    <!-- PANEL -->
-     <div>
-         <table border="1">
-            <tr>
-                <td align="center">
-                    <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
-                    PANEL
-                </td>
-            </tr>
-        </table>
-     </div>
-    <br>
-<!------------------------------------------------------------------------------------------->
-    <h1>+ AGREGAR NUEVOS ACTORES</h1>
 
-    <table border="1" width="92%" align="center">
-        <tr>
-            <td width="100%">
-                <p>   </p>
-            </td>
-        </tr>
-        <tr>    
-            <td>
-                <p>Agregar Actores</p>
-                <form>
-                    <label for="Nombre_actor">Nombre: </label>
-                    <input type="text" placeholder="Ingrese Nombre Completo">
-                    <label for="Apellido_actor">Apellido: </label>
-                    <input type="text" placeholder="Ingrese Apellido Completo"><br>
-                    <label for="Participo_pelis">Peliculas en las que participó: </label>
-                    <select name="participo_pelis">
-                        <optgroup label="Listados Peliculas">
-                            <option value="Bone Keeper"> Bone Kepper</option>
-                            <option value="Rascacielo en vivo">Rascacielo en vivo</option>
-                        </optgroup>
-                        <input type="text" placeholder="Agregar nueva participacion">
-                    </select> <br>
-                    <label for="participo_series">Series en la que participó: </label>
-                    <select name="participo_series">
-                        <optgroup label="Listados Series">
-                            <option value="Wonder Man"> Wonder Man </option>
-                            <option value="Un Familiar">Un Familiar</option>
-                            <option value="El Robo">El Robo</option>
-                        </optgroup>
-                        <input type="text" placeholder="Agregar nueva participacion">
-                    </select> <br>
-                             
-                    <label for="Poster">Subir imagen: </label>
-                    <input type="file" id="Poster" name="poster_image" accept="image/*" required>
-                    <button type="submit">Examinar</button><br>
-                    <br>
-                    <button type="submit">Guardar Cambios</button> 
-                    <button type="reset">Cancelar</button>
-                </form>
-            </td>
-        </tr>
-    </table>
-<br>
-<br>
-<br>
+    <main>
+        <!-- PANEL -->
+        <div>
+            <table border="1">
+                <tr>
+                    <td align="center">
+                        <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
+                        PANEL
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <!------------------------------------------------------------------------------------------->
+        <div>
+            <h1>+ AGREGAR NUEVOS ACTORES</h1>
+
+            <table border="1" width="92%" align="center">
+                <tr>
+                    <td width="100%">
+                        <p>   </p>
+                    </td>
+                </tr>
+                <tr>    
+                    <td>
+                        <p>Agregar Actores</p>
+                        <form>
+                            <label for="Nombre_actor">Nombre: </label>
+                            <input type="text" placeholder="Ingrese Nombre Completo">
+                            <label for="Apellido_actor">Apellido: </label>
+                            <input type="text" placeholder="Ingrese Apellido Completo"><br>
+                            <label for="Participo_pelis">Peliculas en las que participó: </label>
+                            <select name="participo_pelis">
+                                <optgroup label="Listados Peliculas">
+                                    <option value="Bone Keeper"> Bone Kepper</option>
+                                    <option value="Rascacielo en vivo">Rascacielo en vivo</option>
+                                </optgroup>
+                                <input type="text" placeholder="Agregar nueva participacion">
+                            </select> <br>
+                            <label for="participo_series">Series en la que participó: </label>
+                            <select name="participo_series">
+                                <optgroup label="Listados Series">
+                                    <option value="Wonder Man"> Wonder Man </option>
+                                    <option value="Un Familiar">Un Familiar</option>
+                                    <option value="El Robo">El Robo</option>
+                                </optgroup>
+                                <input type="text" placeholder="Agregar nueva participacion">
+                            </select> <br>
+                                    
+                            <label for="Poster">Subir imagen: </label>
+                            <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                            <button type="submit">Examinar</button><br>
+                            <br>
+                            <button type="submit">Guardar Cambios</button> 
+                            <button type="reset">Cancelar</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <br>
+    <br>
+    <br>
 <!------------------------------------------------------------------------------------------->
       <!-- FOOTER -->
     <footer>
