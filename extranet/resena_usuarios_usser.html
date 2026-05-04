@@ -41,455 +41,451 @@
 
     <hr>
     <!-- FIN DE HEADER-->
-
     <!------------------------------------------------------------------------------------------->
-<!-- CONTENEDOR GENERAL -->
-    <div>
-        <!-- MAIN -->
-        <main>
-            <!-- BLOQUE -->
-            <section>
+    <!-- CONTENEDOR GENERAL -->
+    <!-- MAIN -->
+    <main>
+        <!-- BLOQUE -->
+        <section>
+            <div>
+                <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" width="450" height="300">
+                <p> F1 THE MOVIE </p>
+                <h2>Reseñas de usuarios:</h2>
+            </div>
+
+            <!-- FILTROS-->
+            <div>
+                <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
+
+                <label>Ordenar por:</label>
+                <select>
+                    <option>Más reciente</option>
+                    <option>Mejor calificacion</option>
+                    <option>Título</option>
+                </select>
+            </div>
+            <div>
+                <a href="./funcionalidades_resenas/agregar_mi_resena.html">Agregar mi reseña</a>
+            </div>
+            <hr>
+            <div>
+                <a href="#">4.506 opiniones</a>
+            </div>
+        </section>
+
+        
+
+        <section>
+
+            <!-- reseña 1 -->
+            <div>
+                <!-- boton de guardar -->
+                <button> Guardar reseña </button>
+                <!-- Usuario -->
                 <div>
-                    <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" width="450" height="300">
-                    <p> F1 THE MOVIE </p>
-                    <h2>Reseñas de usuarios:</h2>
+                    <p><b>Calificación:</b> 9.0 / 10</p>
+                    <img src="../recursos/imagenes/usuarios/usuario_1.jpg" width="40">
+                    <p><b>George_Allison dice:</b></p>
                 </div>
-
-                <!-- FILTROS-->
+                <!-- contenido -->
+                <h3>BUENISIMA</h3>
+                <p>
+                    “F1 es un espectáculo visual imponente que redefine el cine de automovilismo gracias a una dirección técnica impecable y secuencias de acción filmadas con un realismo visceral. Brad Pitt aporta la veteranía y el peso emocional necesarios para que la historia trascienda más allá de la simple velocidad. Aunque su narrativa sigue senderos familiares, la inmersión sonora y visual compensa cualquier falta de sorpresa en el guion. Es una experiencia diseñada para ser disfrutada en la pantalla más grande posible, logrando transmitir la verdadera adrenalina del circuito. En resumen, 
+                    la película triunfa como un blockbuster emocionante que captura con maestría el alma de la competición.”
+                </p>
+                <!-- ACCIONES -->
                 <div>
-                    <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
+                    <button><b>Me gusta</b> 100</button>
+                    <button><b>No me gusta</b> 18</button>
+                    <p><a href="#comentarios">50 Comentarios</h3></a></p>
+                    <!--contenido desplegable que se mostrara despues-->
 
-                    <label>Ordenar por:</label>
-                    <select>
-                        <option>Más reciente</option>
-                        <option>Mejor calificacion</option>
-                        <option>Título</option>
-                    </select>
-                </div>
-                <div>
-                    <a href="./funcionalidades_resenas/agregar_mi_resena.html">Agregar mi reseña</a>
-                </div>
-                <hr>
-                <div>
-                    <a href="#">4.506 opiniones</a>
-                </div>
-            </section>
-
-            
-
-            <section>
-
-                <!-- reseña 1 -->
-                <div>
-                    <!-- boton de guardar -->
-                    <button> Guardar reseña </button>
-                    <!-- Usuario -->
-                    <div>
-                        <p><b>Calificación:</b> 9.0 / 10</p>
-                        <img src="../recursos/imagenes/usuarios/usuario_1.jpg" width="40">
-                        <p><b>George_Allison dice:</b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>BUENISIMA</h3>
-                    <p>
-                        “F1 es un espectáculo visual imponente que redefine el cine de automovilismo gracias a una dirección técnica impecable y secuencias de acción filmadas con un realismo visceral. Brad Pitt aporta la veteranía y el peso emocional necesarios para que la historia trascienda más allá de la simple velocidad. Aunque su narrativa sigue senderos familiares, la inmersión sonora y visual compensa cualquier falta de sorpresa en el guion. Es una experiencia diseñada para ser disfrutada en la pantalla más grande posible, logrando transmitir la verdadera adrenalina del circuito. En resumen, 
-                        la película triunfa como un blockbuster emocionante que captura con maestría el alma de la competición.”
-                    </p>
-                    <!-- ACCIONES -->
-                    <div>
-                        <button><b>Me gusta</b> 100</button>
-                        <button><b>No me gusta</b> 18</button>
-                        <p><a href="#comentarios">50 Comentarios</h3></a></p>
-                        <!--contenido desplegable que se mostrara despues-->
-
-                        <div id="comentarios">
-                        
-                                <!-- AGREGAR COMENTARIO -->
-                            <!-- <div>
-                                <h3>Escribir comentario</h3>
-                                <form>
-                                    <textarea rows="5" cols="60"
-                                    placeholder="Escribí tu comentario..."></textarea>
-                                    <br><br>
-                                    <button type="submit">Publicar comentario</button>
-                                </form>
-                            </div>
-
-                            <!- LISTA DE COMENTARIOS -->
-                            <!-- COMENTARIO 1 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>Cinefilo88</b></p>
-                                <p>
-                                    Coincido totalmente, las escenas de carrera son una locura visual.
-                                </p>
-                                <h6>Hace 2 horas</h6>
-                            </div>
-
-                            <hr>
-
-                            <!-COMENTARIO 2 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>FilmFan99</b></p>
-                                <p>
-                                    A mí me gustó, aunque esperaba más historia.
-                                </p>
-                                <h6>Hace 5 horas</h6>
-                            </div>
-
-                            <hr>
-
-                            <!- COMENTARIO 3 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>TurboMax</b></p>
-                                <p>
-                                    Brad Pitt la rompe en esta película.
-                                </p>
-                                <h6>Ayer</h6>
-                            </div>
-
-                            <hr>
-
-                            <!- BOTON -->
-                            <!-- <div>
-                                <button>Cargar más comentarios</button>
-                            </div>
-
-                            <a href="#">Cerrar</a>
-                        -->
+                    <div id="comentarios">
+                    
+                            <!-- AGREGAR COMENTARIO -->
+                        <!-- <div>
+                            <h3>Escribir comentario</h3>
+                            <form>
+                                <textarea rows="5" cols="60"
+                                placeholder="Escribí tu comentario..."></textarea>
+                                <br><br>
+                                <button type="submit">Publicar comentario</button>
+                            </form>
                         </div>
-                        <button>Reportar reseña</button>
+
+                        <!- LISTA DE COMENTARIOS -->
+                        <!-- COMENTARIO 1 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>Cinefilo88</b></p>
+                            <p>
+                                Coincido totalmente, las escenas de carrera son una locura visual.
+                            </p>
+                            <h6>Hace 2 horas</h6>
+                        </div>
+
+                        <hr>
+
+                        <!-COMENTARIO 2 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>FilmFan99</b></p>
+                            <p>
+                                A mí me gustó, aunque esperaba más historia.
+                            </p>
+                            <h6>Hace 5 horas</h6>
+                        </div>
+
+                        <hr>
+
+                        <!- COMENTARIO 3 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>TurboMax</b></p>
+                            <p>
+                                Brad Pitt la rompe en esta película.
+                            </p>
+                            <h6>Ayer</h6>
+                        </div>
+
+                        <hr>
+
+                        <!- BOTON -->
+                        <!-- <div>
+                            <button>Cargar más comentarios</button>
+                        </div>
+
+                        <a href="#">Cerrar</a>
+                    -->
                     </div>
-                    <br>
+                    <button>Reportar reseña</button>
                 </div>
                 <br>
-                <hr>
+            </div>
+            <br>
+            <hr>
 
-                <!-- reseña 2 -->
+            <!-- reseña 2 -->
+            <div>
+                <!-- boton de guardar -->
+                <button> Guardar reseña </button>
+                <!-- Usuario -->
                 <div>
-                    <!-- boton de guardar -->
-                    <button> Guardar reseña </button>
-                    <!-- Usuario -->
-                    <div>
-                        <p><b>Calificación:</b> 3.0 / 10</p>
-                        <img src="../recursos/imagenes/usuarios/usuario_2.jpg" width="40">
-                        <p><b>Cinefilo88 dice:</b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>REPETITIVA</h3>
-                    <p>
-                        "Aunque la acción es impecable, la banda sonora de Hans Zimmer se siente algo repetitiva y no logra alcanzar la originalidad de sus trabajos anteriores. Los efectos de sonido 
-                        de los motores son tan potentes que, por momentos, entierran los diálogos clave entre los protagonistas."
-                    </p>
-                    <!-- ACCIONES -->
-                    <div>
-                        <button><b>Me gusta</b> 100</button>
-                        <button><b>No me gusta</b> 18</button>
-                        <p><a href="#comentarios">50 Comentarios</h3></a></p>
-                        <!--contenido desplegable que se mostrara despues-->
-                        <div id="comentarios">
-                        
-                                <!-- AGREGAR COMENTARIO -->
-                            <!-- <div>
-                                <h3>Escribir comentario</h3>
-                                <form>
-                                    <textarea rows="5" cols="60"
-                                    placeholder="Escribí tu comentario..."></textarea>
-                                    <br><br>
-                                    <button type="submit">Publicar comentario</button>
-                                </form>
-                            </div>
-
-                            <!- LISTA DE COMENTARIOS -->
-                            <!-- COMENTARIO 1 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>Cinefilo88</b></p>
-                                <p>
-                                    Coincido totalmente, las escenas de carrera son una locura visual.
-                                </p>
-                                <h6>Hace 2 horas</h6>
-                            </div>
-
-                            <hr>
-
-                            <!-COMENTARIO 2 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>FilmFan99</b></p>
-                                <p>
-                                    A mí me gustó, aunque esperaba más historia.
-                                </p>
-                                <h6>Hace 5 horas</h6>
-                            </div>
-
-                            <hr>
-
-                            <!- COMENTARIO 3 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>TurboMax</b></p>
-                                <p>
-                                    Brad Pitt la rompe en esta película.
-                                </p>
-                                <h6>Ayer</h6>
-                            </div>
-
-                            <hr>
-
-                            <!- BOTON -->
-                            <!-- <div>
-                                <button>Cargar más comentarios</button>
-                            </div>
-
-                            <a href="#">Cerrar</a>
-                        -->
+                    <p><b>Calificación:</b> 3.0 / 10</p>
+                    <img src="../recursos/imagenes/usuarios/usuario_2.jpg" width="40">
+                    <p><b>Cinefilo88 dice:</b></p>
+                </div>
+                <!-- contenido -->
+                <h3>REPETITIVA</h3>
+                <p>
+                    "Aunque la acción es impecable, la banda sonora de Hans Zimmer se siente algo repetitiva y no logra alcanzar la originalidad de sus trabajos anteriores. Los efectos de sonido 
+                    de los motores son tan potentes que, por momentos, entierran los diálogos clave entre los protagonistas."
+                </p>
+                <!-- ACCIONES -->
+                <div>
+                    <button><b>Me gusta</b> 100</button>
+                    <button><b>No me gusta</b> 18</button>
+                    <p><a href="#comentarios">50 Comentarios</h3></a></p>
+                    <!--contenido desplegable que se mostrara despues-->
+                    <div id="comentarios">
+                    
+                            <!-- AGREGAR COMENTARIO -->
+                        <!-- <div>
+                            <h3>Escribir comentario</h3>
+                            <form>
+                                <textarea rows="5" cols="60"
+                                placeholder="Escribí tu comentario..."></textarea>
+                                <br><br>
+                                <button type="submit">Publicar comentario</button>
+                            </form>
                         </div>
-                        <button>Reportar reseña</button>
+
+                        <!- LISTA DE COMENTARIOS -->
+                        <!-- COMENTARIO 1 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>Cinefilo88</b></p>
+                            <p>
+                                Coincido totalmente, las escenas de carrera son una locura visual.
+                            </p>
+                            <h6>Hace 2 horas</h6>
+                        </div>
+
+                        <hr>
+
+                        <!-COMENTARIO 2 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>FilmFan99</b></p>
+                            <p>
+                                A mí me gustó, aunque esperaba más historia.
+                            </p>
+                            <h6>Hace 5 horas</h6>
+                        </div>
+
+                        <hr>
+
+                        <!- COMENTARIO 3 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>TurboMax</b></p>
+                            <p>
+                                Brad Pitt la rompe en esta película.
+                            </p>
+                            <h6>Ayer</h6>
+                        </div>
+
+                        <hr>
+
+                        <!- BOTON -->
+                        <!-- <div>
+                            <button>Cargar más comentarios</button>
+                        </div>
+
+                        <a href="#">Cerrar</a>
+                    -->
                     </div>
-                    <br>
+                    <button>Reportar reseña</button>
                 </div>
                 <br>
-                <hr>
+            </div>
+            <br>
+            <hr>
 
-                <!-- reseña 3 -->
+            <!-- reseña 3 -->
+            <div>
+                <!-- boton de guardar -->
+                <button> Guardar reseña </button>
+                <!-- Usuario -->
                 <div>
-                    <!-- boton de guardar -->
-                    <button> Guardar reseña </button>
-                    <!-- Usuario -->
-                    <div>
-                        <p><b>Calificación:</b> 8.0 / 10</p>
-                        <img src="../recursos/imagenes/usuarios/usuario_3.jpg" width="40">
-                        <p><b>echGuru_VLC dice: </b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>Buena</h3>
-                    <p>
-                        "Lo que realmente destaca no es la historia, sino el despliegue de cámaras IMAX montadas directamente en los monoplazas, algo nunca antes visto. Es un hito tecnológico que hace que cualquier otra película de carreras anterior parezca un videojuego de baja resolución."
-                    </p>
-                    <!-- ACCIONES -->
-                    <div>
-                        <button><b>Me gusta</b> 100</button>
-                        <button><b>No me gusta</b> 18</button>
-                        <p><a href="#comentarios">50 Comentarios</h3></a></p>
-                        <!--contenido desplegable que se mostrara despues-->
+                    <p><b>Calificación:</b> 8.0 / 10</p>
+                    <img src="../recursos/imagenes/usuarios/usuario_3.jpg" width="40">
+                    <p><b>echGuru_VLC dice: </b></p>
+                </div>
+                <!-- contenido -->
+                <h3>Buena</h3>
+                <p>
+                    "Lo que realmente destaca no es la historia, sino el despliegue de cámaras IMAX montadas directamente en los monoplazas, algo nunca antes visto. Es un hito tecnológico que hace que cualquier otra película de carreras anterior parezca un videojuego de baja resolución."
+                </p>
+                <!-- ACCIONES -->
+                <div>
+                    <button><b>Me gusta</b> 100</button>
+                    <button><b>No me gusta</b> 18</button>
+                    <p><a href="#comentarios">50 Comentarios</h3></a></p>
+                    <!--contenido desplegable que se mostrara despues-->
 
-                        <div id="comentarios">
-                        
-                                <!-- AGREGAR COMENTARIO -->
-                            <!-- <div>
-                                <h3>Escribir comentario</h3>
-                                <form>
-                                    <textarea rows="5" cols="60"
-                                    placeholder="Escribí tu comentario..."></textarea>
-                                    <br><br>
-                                    <button type="submit">Publicar comentario</button>
-                                </form>
-                            </div>
-
-                            <!- LISTA DE COMENTARIOS -->
-                            <!-- COMENTARIO 1 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>Cinefilo88</b></p>
-                                <p>
-                                    Coincido totalmente, las escenas de carrera son una locura visual.
-                                </p>
-                                <h6>Hace 2 horas</h6>
-                            </div>
-
-                            <hr>
-
-                            <!-COMENTARIO 2 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>FilmFan99</b></p>
-                                <p>
-                                    A mí me gustó, aunque esperaba más historia.
-                                </p>
-                                <h6>Hace 5 horas</h6>
-                            </div>
-
-                            <hr>
-
-                            <!- COMENTARIO 3 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>TurboMax</b></p>
-                                <p>
-                                    Brad Pitt la rompe en esta película.
-                                </p>
-                                <h6>Ayer</h6>
-                            </div>
-
-                            <hr>
-
-                            <!- BOTON -->
-                            <!-- <div>
-                                <button>Cargar más comentarios</button>
-                            </div>
-
-                            <a href="#">Cerrar</a>
-                        -->
+                    <div id="comentarios">
+                    
+                            <!-- AGREGAR COMENTARIO -->
+                        <!-- <div>
+                            <h3>Escribir comentario</h3>
+                            <form>
+                                <textarea rows="5" cols="60"
+                                placeholder="Escribí tu comentario..."></textarea>
+                                <br><br>
+                                <button type="submit">Publicar comentario</button>
+                            </form>
                         </div>
-                        <button>Reportar reseña</button>
+
+                        <!- LISTA DE COMENTARIOS -->
+                        <!-- COMENTARIO 1 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>Cinefilo88</b></p>
+                            <p>
+                                Coincido totalmente, las escenas de carrera son una locura visual.
+                            </p>
+                            <h6>Hace 2 horas</h6>
+                        </div>
+
+                        <hr>
+
+                        <!-COMENTARIO 2 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>FilmFan99</b></p>
+                            <p>
+                                A mí me gustó, aunque esperaba más historia.
+                            </p>
+                            <h6>Hace 5 horas</h6>
+                        </div>
+
+                        <hr>
+
+                        <!- COMENTARIO 3 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>TurboMax</b></p>
+                            <p>
+                                Brad Pitt la rompe en esta película.
+                            </p>
+                            <h6>Ayer</h6>
+                        </div>
+
+                        <hr>
+
+                        <!- BOTON -->
+                        <!-- <div>
+                            <button>Cargar más comentarios</button>
+                        </div>
+
+                        <a href="#">Cerrar</a>
+                    -->
                     </div>
-                    <br>
+                    <button>Reportar reseña</button>
                 </div>
                 <br>
-                <hr>
+            </div>
+            <br>
+            <hr>
 
-                <!-- reseña 4 -->
+            <!-- reseña 4 -->
+            <div>
+                <!-- boton de guardar -->
+                <button> Guardar reseña </button>
+                <!-- Usuario -->
                 <div>
-                    <!-- boton de guardar -->
-                    <button> Guardar reseña </button>
-                    <!-- Usuario -->
-                    <div>
-                        <p><b>Calificación:</b> 7.0 / 10</p>
-                        <img src="../recursos/imagenes/usuarios/usuario_4.jpg" width="40">
-                        <p><b>NostalgicEditor dice: </b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>Bien</h3>
-                    <p>
-                        "El ritmo de la película sufre en el segundo acto, con una edición que se siente algo lenta y estira la duración innecesariamente hasta pasadas las dos horas. Aun así, el clímax final en la última vuelta está tan bien montado que te mantiene al borde del asiento, olvidando cualquier bache narrativo previo."
-                    </p>
-                    <!-- ACCIONES -->
-                    <div>
-                        <button><b>Me gusta</b> 100</button>
-                        <button><b>No me gusta</b> 18</button>
-                        <p><a href="#comentarios">50 Comentarios</h3></a></p>
-                        <!--contenido desplegable que se mostrara despues-->
+                    <p><b>Calificación:</b> 7.0 / 10</p>
+                    <img src="../recursos/imagenes/usuarios/usuario_4.jpg" width="40">
+                    <p><b>NostalgicEditor dice: </b></p>
+                </div>
+                <!-- contenido -->
+                <h3>Bien</h3>
+                <p>
+                    "El ritmo de la película sufre en el segundo acto, con una edición que se siente algo lenta y estira la duración innecesariamente hasta pasadas las dos horas. Aun así, el clímax final en la última vuelta está tan bien montado que te mantiene al borde del asiento, olvidando cualquier bache narrativo previo."
+                </p>
+                <!-- ACCIONES -->
+                <div>
+                    <button><b>Me gusta</b> 100</button>
+                    <button><b>No me gusta</b> 18</button>
+                    <p><a href="#comentarios">50 Comentarios</h3></a></p>
+                    <!--contenido desplegable que se mostrara despues-->
 
-                        <div id="comentarios">
-                        
-                                <!-- AGREGAR COMENTARIO -->
-                            <!-- <div>
-                                <h3>Escribir comentario</h3>
-                                <form>
-                                    <textarea rows="5" cols="60"
-                                    placeholder="Escribí tu comentario..."></textarea>
-                                    <br><br>
-                                    <button type="submit">Publicar comentario</button>
-                                </form>
-                            </div>
-
-                            <!- LISTA DE COMENTARIOS -->
-                            <!-- COMENTARIO 1 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>Cinefilo88</b></p>
-                                <p>
-                                    Coincido totalmente, las escenas de carrera son una locura visual.
-                                </p>
-                                <h6>Hace 2 horas</h6>
-                            </div>
-
-                            <hr>
-
-                            <!-COMENTARIO 2 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>FilmFan99</b></p>
-                                <p>
-                                    A mí me gustó, aunque esperaba más historia.
-                                </p>
-                                <h6>Hace 5 horas</h6>
-                            </div>
-
-                            <hr>
-
-                            <!- COMENTARIO 3 -->
-                            <!-- <div>
-                                <img src="../recursos/imagenes/iconos/perfil.png" width="40">
-                                <p><b>TurboMax</b></p>
-                                <p>
-                                    Brad Pitt la rompe en esta película.
-                                </p>
-                                <h6>Ayer</h6>
-                            </div>
-
-                            <hr>
-
-                            <!- BOTON -->
-                            <!-- <div>
-                                <button>Cargar más comentarios</button>
-                            </div>
-
-                            <a href="#">Cerrar</a>
-                        -->
+                    <div id="comentarios">
+                    
+                            <!-- AGREGAR COMENTARIO -->
+                        <!-- <div>
+                            <h3>Escribir comentario</h3>
+                            <form>
+                                <textarea rows="5" cols="60"
+                                placeholder="Escribí tu comentario..."></textarea>
+                                <br><br>
+                                <button type="submit">Publicar comentario</button>
+                            </form>
                         </div>
-                        <button>Reportar reseña</button>
+
+                        <!- LISTA DE COMENTARIOS -->
+                        <!-- COMENTARIO 1 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>Cinefilo88</b></p>
+                            <p>
+                                Coincido totalmente, las escenas de carrera son una locura visual.
+                            </p>
+                            <h6>Hace 2 horas</h6>
+                        </div>
+
+                        <hr>
+
+                        <!-COMENTARIO 2 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>FilmFan99</b></p>
+                            <p>
+                                A mí me gustó, aunque esperaba más historia.
+                            </p>
+                            <h6>Hace 5 horas</h6>
+                        </div>
+
+                        <hr>
+
+                        <!- COMENTARIO 3 -->
+                        <!-- <div>
+                            <img src="../recursos/imagenes/iconos/perfil.png" width="40">
+                            <p><b>TurboMax</b></p>
+                            <p>
+                                Brad Pitt la rompe en esta película.
+                            </p>
+                            <h6>Ayer</h6>
+                        </div>
+
+                        <hr>
+
+                        <!- BOTON -->
+                        <!-- <div>
+                            <button>Cargar más comentarios</button>
+                        </div>
+
+                        <a href="#">Cerrar</a>
+                    -->
                     </div>
-                    <br>
+                    <button>Reportar reseña</button>
                 </div>
                 <br>
-                <hr>
-            </section>
-        </main>
-
-        <aside>
-            <h2>SUGERENCIAS PARA TI</h2>
-
-            <!-- ITEM 1 -->
-            <div>
-                <p>ROMANCE</p>
-                <h3>CUMBRES BORRASCOSAS</h3>
-                <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg" width="80" height="100">
-                <p>Amor tormentoso e inmortal entre personas lejanas</p>
-                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
             </div>
-
+            <br>
             <hr>
+        </section>
+    </main>
 
-            <!-- ITEM 2 -->
-            <div>
-                <p>TERROR</p>
-                <h3>WEAPONS</h3>
-                <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
-                <p>Horror perturbador sobre una familia y rituales desconocidos</p>
-                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
-            </div>
+    <aside>
+        <h2>SUGERENCIAS PARA TI</h2>
 
-            <hr>
+        <!-- ITEM 1 -->
+        <div>
+            <p>ROMANCE</p>
+            <h3>CUMBRES BORRASCOSAS</h3>
+            <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg" width="80" height="100">
+            <p>Amor tormentoso e inmortal entre personas lejanas</p>
+            <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+        </div>
 
-            <!-- ITEM 3 -->
-            <div>
-                <p>COMEDIA</p>
-                <h3>NOVOCAINE</h3>
-                <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
-                <p>Un tipo bueno se salva que limita su umbral de acción</p>
-                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
-            </div>
+        <hr>
 
-            <hr>
+        <!-- ITEM 2 -->
+        <div>
+            <p>TERROR</p>
+            <h3>WEAPONS</h3>
+            <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
+            <p>Horror perturbador sobre una familia y rituales desconocidos</p>
+            <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+        </div>
 
-            <!-- ITEM 4 -->
-            <div>
-                <p>CIENCIA FICCIÓN</p>
-                <h3>DUNE: PART 2</h3>
-                <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
-                <p>Paul Atreides lidera la revolución en el planeta de la arena</p>
-                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
-            </div>
+        <hr>
 
-            <hr>
+        <!-- ITEM 3 -->
+        <div>
+            <p>COMEDIA</p>
+            <h3>NOVOCAINE</h3>
+            <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
+            <p>Un tipo bueno se salva que limita su umbral de acción</p>
+            <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+        </div>
 
-            <!-- ITEM 5 -->
-            <div>
-                <p>ANIMACIÓN</p>
-                <h3>FLOW</h3>
-                <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
-                <p>Un gato sobrevive a una inundación en un mundo sin humanos</p>
-                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
-            </div>
-        </aside>
-    </div>
+        <hr>
 
-<!------------------------------------------------------------------------------------------->
-      <!-- FOOTER -->
+        <!-- ITEM 4 -->
+        <div>
+            <p>CIENCIA FICCIÓN</p>
+            <h3>DUNE: PART 2</h3>
+            <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
+            <p>Paul Atreides lidera la revolución en el planeta de la arena</p>
+            <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+        </div>
+
+        <hr>
+
+        <!-- ITEM 5 -->
+        <div>
+            <p>ANIMACIÓN</p>
+            <h3>FLOW</h3>
+            <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
+            <p>Un gato sobrevive a una inundación en un mundo sin humanos</p>
+            <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+        </div>
+    </aside>
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER -->
     <footer>
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
