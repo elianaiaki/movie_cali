@@ -3,48 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>VER PERFIL DE USUARIO - MovieCali</title>
+    <title>VER PERFIL DE USUARIO</title>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!--HEADER-->
     <header>
         <h1>MovieCali</h1>
-        <!-- Logo -->
         <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
 
         <!-- Buscador -->
         <form>
             <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+            <button type="submit">Buscar</button>
         </form>
 
-        <!-- Navegación Desplegable -->
+        <!--Navegación Desplegable-->
         <nav>
-            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
-            <!--Gestion de Catalogo-->
-            <a href="../intranet/peliculas_pendientes_de_revision.html">Películas Pendientes de Revision</a>
-            <a href="../intranet/nuevas_solicitudes_de_alta_intra.html">Nuevas Solicitudes de Alta</a>
-            <!--Administracion de Usuarios-->
-            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
-            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
-            <a href="#">Cerrar Sesion</a>
+            <form>
+                <label for="desplegable">Menú de Navegación:</label>
+                <select name="desplegable" id="desplegable">
+                    <option value="mi_perfil">Mi perfil</option>
+                    <optgroup label="Gestión de Películas">
+                        <option value="peliculas_pendientes">Películas pendientes de revisión</option>
+                        <option value="nuevas_solicitudes">Nuevas solicitudes de alta</option>
+                    </optgroup>
+                    <optgroup label="Administración Usuarios">
+                        <option value="gestion_perfiles">Gestión de perfil y roles</option>
+                        <option value="nuevo_perfil">Crear nuevo perfil</option>
+                    </optgroup>
+                    <option value="cerrar_sesion">Cerrar Sesión</option>
+                </select>
+            </form>
         </nav>
-
     </header> 
-    <hr>
-    <!-- FIN DE HEADER-->
 
-    <!------------------------------------------------------------------------------------------->
+    <hr>
+
     <main>
+        <!-- PANEL DE ACCESO RÁPIDO -->
         <nav>
+            <table border="1">
+                <tr>
+                    <td align="center">
+                        <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Inicio">
+                        <a href="../intranet/panel.html">PANEL</a>
+                    </td>
+                </tr>
+            </table>
             <p><strong>GESTIÓN DE PERFILES Y ROLES ▶</strong></p>
         </nav>
 
         <h2>PERFIL DE USUARIO</h2>
         
-        <!-- Bloque: Datos Personales -->
+        <!--Bloque: Datos Personales-->
         <section>
             <h3>USUARIO - ID: XXXXX</h3>
             <div>
@@ -60,7 +73,7 @@
 
         <hr>
 
-        <!-- Bloque: Administración de Reseñas -->
+        <!--Bloque: Administración de Reseñas-->
         <section>
             <h3>ADMINISTRACIÓN DE RESEÑAS</h3>
             <div>
@@ -79,7 +92,7 @@
 
         <hr>
 
-        <!-- Bloque: Reportes -->
+        <!--Bloque: Reportes-->
         <section>
             <h3>REPORTES</h3>
             <div>
@@ -92,7 +105,7 @@
 
         <hr>
 
-        <!-- Bloque: Historial de Actividades -->
+        <!--Bloque: Historial de Actividades-->
         <section>
             <h3>HISTORIAL DE ACTIVIDADES</h3>
             <img src="../recursos/imagenes/iconos/reloj.png" alt="Reloj" width="40">
@@ -106,12 +119,12 @@
     </main>
 
     <br><br>
-    <!------------------------------------------------------------------------------------------->
-    <!-- FOOTER GRUPAL -->
+
+    <!-- FOOTER-->
     <footer>
         <hr>
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
-        <p>2026 MovieCali. Todos los derechos reservados.</p>
+        <p>&copy; 2026 MovieCali. Todos los derechos reservados.</p>
     </footer>
 
 </body>

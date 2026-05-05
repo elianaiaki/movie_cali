@@ -8,8 +8,6 @@
 
 <body>
     
-    <body>
-
     <!-- HEADER -->
     <header>
         <h1>MovieCali</h1>
@@ -24,18 +22,25 @@
 
         <!-- Navegación Desplegable -->
         <nav>
-            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
-            <!--Gestion de Catalogo-->
-            <a href="#">Películas Pendientes de Revision</a>
-            <a href="../intranet/nuevas_solicitudes_de_alta_intra.html">Nuevas Solicitudes de Alta</a>
-            <!--Administracion de Usuarios-->
-            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
-            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
-            <a href="#">Cerrar Sesion</a>
-        </nav>
+            <form>
+                <label for="Desplegable">Desplegable</label>
+                <select name="desplegable" id="desplegable">
+                    <option>Mi perfil</option>
+                    <optgroup label="Gestion de Peliculas">
+                        <option>Pelicula pendientes de revision</option>                          
+                        <option>Nuevas solicitudes de alta peliculas</option>
+                    </optgroup> 
+                    <optgroup label="administracion_usuarios">
+                        <option>Gestion de perfil y roles </option>
+                        <option>Crear nuevo perfil</option>
+                    </optgroup>  
+                        <option>Cerrar Sesion</option>     
 
+                </select>
+            </form>
+        </nav>
     </header> 
-    <hr>
+    <br><br>
     <!-- FIN DE HEADER-->
 
     <!------------------------------------------------------------------------------------------->
@@ -46,12 +51,12 @@
         <!-- BOTONES -->
         <table>
             <tr>
-                <td width="30%" align="left">
-                    <button> 
-                    <a href="agregar_nueva_pelicula.html">+ AGREGAR NUEVA PELICULA</a>
-                    </button>
+                <td style="width: 33%; text-align: left;">
+                    <a href="../intranet/agregar_nueva_pelicula.html">
+                        + AGREGAR NUEVA PELICULA
+                    </a>
                 </td>
-                <td width="30%" align="center">
+                <td style="width: 33%; text-align: center;">
                     <select>
                         <option>FILTROS AVANZADOS</option>
                         <option>pendientes</option>
@@ -59,12 +64,14 @@
                         <option>rechazados</option>
                     </select>
                 </td>
-                <td width="30%" align="rigth">
-                    <a href="agregarnuevoactor.html"></a>
-                    <button> + AGREGAR NUEVO ACTOR</button>
+                <td style="width: 33%; text-align: right;">
+                    <a href="../intranet/agregar_nuevo_actor.html">
+                        + AGREGAR NUEVO ACTOR
+                    </a>
                 </td>
             </tr>
         </table>
+        <br><br>
     <!-----------------------Tarjetas----------------------------------------------->
         <section class="tarjetas_peliculas_pendientes" width="20%" height="50%" >
             <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" width="120" height="100" align="center">
@@ -110,8 +117,8 @@
                     <button type="button">GUARDAR CAMBIOS</button>
                 </div>
                 <div class="tarjetas_modificables">
-                    <button><a href="confirmar-eliminacion.html">ELIMINAR PELÍCULA</a></button>
-                    <button><a href="editor-pelicula.html">EDITAR</a></button>
+                    <a href="../intranet/Confirmacion_eliminacion_pelicula.html">ELIMINAR PELÍCULA</a> <!--BOTON-->
+                    <a href="../intranet/editar_pelicula_intranet.html">EDITAR</a> <!--BOTON-->
                 </div>
                 <div class="tarjeta_accion_publicar">
                         PUBLICA
@@ -168,8 +175,8 @@
                     <button type="button">GUARDAR CAMBIOS</button>
                 </div>
                 <div class="tarjetas_modificables">
-                    <button><a href="confirmar-eliminacion.html">ELIMINAR PELÍCULA</a></button>
-                    <button><a href="editor-pelicula.html">EDITAR</a></button>
+                    <a href="../intranet/Confirmacion_eliminacion_pelicula.html">ELIMINAR PELÍCULA</a> <!--BOTON-->
+                    <a href="../intranet/editar_pelicula_intranet.html">EDITAR</a> <!--BOTON-->
                 </div>
                 <div class="tarjeta_accion_publicar">
                         PUBLICA
@@ -224,8 +231,8 @@
                     <button type="button">GUARDAR CAMBIOS</button>
                 </div>
                 <div class="tarjetas_modificables">
-                    <button><a href="confirmar-eliminacion.html">ELIMINAR PELÍCULA</a></button>
-                    <button><a href="editor-pelicula.html">EDITAR</a></button>
+                    <a href="../intranet/Confirmacion_eliminacion_pelicula.html">ELIMINAR PELÍCULA</a> <!--BOTON-->
+                    <a href="../intranet/editar_pelicula_intranet.html">EDITAR</a> <!--BOTON-->
                 </div>
                 <div class="tarjeta_accion_publicar">
                         PUBLICA
@@ -246,7 +253,7 @@
         Gisela solicito revisar reseña.<br>
         </p>
     </aside>
-</body>
+
 <br>
 <br>
 <br>
@@ -256,4 +263,5 @@
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>
+</body>
 </html>
