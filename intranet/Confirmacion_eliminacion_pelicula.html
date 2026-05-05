@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>EDITAR PERFIL- MovieCali</title>
+    <title>CONFIRMAR ELIMINACION PELICULA</title>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<!------------------------------------------------------------------------------------------->
+ <!-- HEADER -->
     <header>
         <h1>MovieCali</h1>
         <!-- Logo -->
@@ -47,75 +48,30 @@
                     </select>
             </form>
         </nav>
-    </header> 
-    <hr>
+    </header>
+
+    <br><br>
     <!-- FIN DE HEADER-->
 
     <!------------------------------------------------------------------------------------------->
-
+    <br>
     <main>
-        
-        <h2>EDITAR PERFIL</h2>
+        <div>
+            <h1>ELIMINAR PELICULA</h1>
+            <p>¿Seguro que desea eliminar esta pelicula?</p>
+            <img src="../recursos/imagenes/iconos/claqueta.png" align="left" width="100" height="100">
+            <p>titulo pelicula</p>
+            <button>ELIMINAR</button>
+            <a href="../intranet/peliculas_pendientes_de_revision.html">Cancelar</a>
 
-        <section>
-            <!-- Imagen del perfil -->
-            <div>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil actual" width="100">
-                <button type="button">CAMBIAR FOTO</button>
-            </div>
-    
-            <form>
-                <!-- Uso de "value" para datos precargados -->
-                <div>
-                    <label>Nombre:</label>
-                    <input type="text" value="Leon">
-                </div>
-                <div>
-                    <label>Apellido:</label>
-                    <input type="text" value="Kennedy">
-                </div>
-                <div>
-                    <label>Email:</label>
-                    <input type="email" value="lskennedy@gmail.com">
-                </div>
-
-                <div>
-                    <label>ID:</label>
-                    <input type="text" value="85461" readonly> <!-- 'readonly' protege el ID -->
-                </div>
-
-                <div>
-                    <label>Rol:</label>
-                    <select>
-                        <option selected>ADMINISTRADOR</option>
-                        <option>USUARIO</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label>Contraseña:</label>
-                    <input type="password" value="**********">
-                </div>
-
-                <div>
-                    <label>Celular:</label>
-                    <input type="tel" value="+549-2705-869344">
-                </div>
-
-                <div>
-                    <button type="submit">GUARDAR CAMBIOS</button>
-                    <button type="button">CANCELAR</button>
-                </div>
-            </form>
-        </section>
+        </div>
     </main>
-
-
-    <br><br>
-    <!------------------------------------------------------------------------------------------->
-    <!-- FOOTER GRUPAL -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
-        <hr>
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>

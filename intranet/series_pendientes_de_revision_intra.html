@@ -23,14 +23,30 @@
 
         <!-- Navegación Desplegable -->
         <nav>
-            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
-            <!--Gestion de Catalogo-->
-            <a href="../intranet/peliculas_pendientes_de_revision.html">Películas Pendientes de Revision</a>
-            <a href="../intranet/nuevas_solicitudes_de_alta_intra.html">Nuevas Solicitudes de Alta</a>
-            <!--Administracion de Usuarios-->
-            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
-            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
-            <a href="#">Cerrar Sesion</a>
+            <form>
+                <label for="Desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil.html">Mi perfil</option>
+                        <optgroup label="Gestion de Peliculas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculas_pendientes_de_revision.html">
+                                Pelicula pendientes de revision
+                            </option>
+                            <option label="nuevas_solicitudes_de_alta" href="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
+                                Nuevas solicitudes de alta peliculas
+                            </option>
+                        </optgroup> 
+                        <optgroup label="administracion_usuarios">
+                            <option label="gestion_perfiles" href="../intranet/gestion_de_perfil_roles.html">
+                                Gestion de perfil y roles
+                            </option>
+                            <option label="nuevo_perfil_intranet" href="../intranet/nuevo_perfil.html">
+                                Crear nuevo perfil
+                            </option>
+                        </optgroup>  
+                        <option label="cerrar_sesion" href="../intranet/inicio_de_sesion.html">Cerrar Sesion</option>     
+
+                    </select>
+            </form>
         </nav>
     </header>
 
@@ -44,7 +60,7 @@
             <tr>
                 <td align="center">
                     <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
-                    PANEL
+                    <a href="../intranet/panel.html">PANEL</a>
                 </td>
             </tr>
         </table>
@@ -59,12 +75,12 @@
         <!-- BOTONES -->
         <table>
             <tr>
-                <td width="30%" align="left">
-                    <button> 
-                    <a href="agregar_nueva_series_intra.html">+ AGREGAR NUEVA SERIE</a>
-                    </button>
+                <td style="width: 33%; text-align: left;">
+                    <a href="../intranet/agregar_nueva_series_intra.html">
+                        + AGREGAR NUEVA SERIE
+                    </a>
                 </td>
-                <td width="30%" align="center">
+                <td style="width: 33%; text-align: center;">
                     <select>
                         <option>FILTROS AVANZADOS</option>
                         <option>pendientes</option>
@@ -72,6 +88,7 @@
                         <option>rechazados</option>
                     </select>
                 </td>
+                
             </tr>
         </table>
         <br>
@@ -117,7 +134,7 @@
                 </div>
                 <div class="tarjetas_modificables">
                     <button><a href="confirmar-eliminacion.html">ELIMINAR PELÍCULA</a></button>
-                    <button><a href="editor-pelicula.html">EDITAR</a></button>
+                    <button><a href="../intranet/editar_serie_intranet.html">EDITAR</a></button>
                 </div>
                 <div class="tarjeta_accion_publicar">
                         PUBLICA
@@ -167,7 +184,7 @@
                 </div>
                 <div class="tarjetas_modificables">
                     <button><a href="confirmar-eliminacion.html">ELIMINAR PELÍCULA</a></button>
-                    <button><a href="editor-pelicula.html">EDITAR</a></button>
+                    <button><a href="../intranet/editar_serie_intranet.html">EDITAR</a></button>
                 </div>
                 <div class="tarjeta_accion_publicar">
                         PUBLICA

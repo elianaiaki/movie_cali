@@ -22,16 +22,31 @@
 
         <!-- Navegación Desplegable -->
         <nav>
-            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
-            <!--Gestion de Catalogo-->
-            <a href="../intranet/peliculas_pendientes_de_revision.html">Películas Pendientes de Revision</a>
-            <a href="../intranet/nuevas_solicitudes_de_alta_intra.html">Nuevas Solicitudes de Alta</a>
-            <!--Administracion de Usuarios-->
-            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de perfil y roles</a>
-            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
-            <a href="#">Cerrar Sesion</a>
-        </nav>
+            <form>
+                <label for="Desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option href="../intranet/mi_perfil.html">Mi perfil</option>
+                        <optgroup label="Gestion de Peliculas">
+                            <option value="peliculas_pendientes" href="../intranet/peliculas_pendientes_de_revision.html">
+                                Pelicula pendientes de revision
+                            </option>
+                            <option label="nuevas_solicitudes_de_alta" href="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
+                                Nuevas solicitudes de alta peliculas
+                            </option>
+                        </optgroup> 
+                        <optgroup label="administracion_usuarios">
+                            <option label="gestion_perfiles" href="../intranet/gestion_de_perfil_roles.html">
+                                Gestion de perfil y roles
+                            </option>
+                            <option label="nuevo_perfil_intranet" href="../intranet/nuevo_perfil.html">
+                                Crear nuevo perfil
+                            </option>
+                        </optgroup>  
+                        <option label="cerrar_sesion" href="../intranet/inicio_de_sesion.html">Cerrar Sesion</option>     
 
+                    </select>
+            </form>
+        </nav>
     </header> 
     <hr>
     <!-- FIN DE HEADER-->
