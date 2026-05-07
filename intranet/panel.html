@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PANEL - MovieCali</title>
+    <title>PANEL </title>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<!---------- HEADER ---------->
     <header>
         <h1>MovieCali</h1>
         <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
@@ -21,39 +21,43 @@
 
         <!--Navegación Desplegable-->
         <nav>
-            <form>
-                <label for="desplegable">Menú de Usuario:</label>
-                <select name="desplegable" id="desplegable">
-                    <option value="">Seleccione una opción</option>
-                    <option value="mi_perfil">Mi perfil</option>
-                    <optgroup label="Gestión de Películas">
-                        <option value="peliculas_pendientes">Películas pendientes de revisión</option>
-                        <option value="nuevas_solicitudes">Nuevas solicitudes de alta</option>
-                    </optgroup>
-                    <optgroup label="Administración Usuarios">
-                        <option value="gestion_perfiles">Gestión de perfil y roles</option>
-                        <option value="nuevo_perfil">Crear nuevo perfil</option>
-                    </optgroup>
-                    <option value="cerrar_sesion">Cerrar Sesión</option>
-                </select>
+            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
+            <a href="../intranet/peliculas_pendientes_de_revision.html">Peliculas Pendientes de Revision</a>
+            <a href="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Nuevas Solicitudes de Alta Peliculas</a>
+            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de Perfil y Roles</a>
+            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
+            <a href="../intranet/inicio_de_sesion.html">Cerrar Sesion</a>      
+        </nav>      
+            <!--PARA DESARROLLAR EL DESPLEGABLE SE UTILIZARIA FORM DETALLADO ABAJO CON ONCLICK PARA LA NAVEGACION ENTRE PAGINAS-->
+            <!--<form> 
+                <label for="Desplegable">Desplegable</label>
+                    <select name="desplegable" id="desplegable">
+                        <option>Mi perfil</option>
+                        <optgroup label="Gestion de Peliculas">
+                            <option>Pelicula pendientes de revision</option>
+                            <option>Nuevas solicitudes de alta peliculas</option>
+                        </optgroup> 
+                        <optgroup label="administracion_usuarios">
+                            <option>Gestion de perfil y roles</option>
+                            <option>Crear nuevo perfil</option>
+                        </optgroup>  
+                        <option>Cerrar Sesion</option>     
+                    </select>
             </form>
+            -->
         </nav>
     </header>
-    
+<!-------------FIN DE HEADER----------------->    
     <hr>
-
     <main>
-        
-        <nav>
+        <div>
             <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
             <a href="../intranet/panel.html">PANEL</a>
-        </nav>
-
+        </div>
         <br>
-
         <h2>PANEL DE CONTROL</h2>
 
-        <!--BLOQUE: GESTIÓN DE CATÁLOGOS-->
+        <!------TARJETAS GESTIÓN DE CATÁLOGOS-->
         <section>
             <h3>GESTIÓN DE CATÁLOGOS</h3>
             <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono catálogo" width="50">
@@ -78,7 +82,7 @@
 
         <hr>
 
-        <!--BLOQUE: ADMINISTRACIÓN DE USUARIOS-->
+        <!--TARJETAS ADMINISTRACIÓN DE USUARIOS-->
         <section>
             <h3>ADMINISTRACIÓN DE USUARIOS</h3>
             <img src="../recursos/imagenes/iconos/perfil.png" alt="Icono usuarios" width="50">

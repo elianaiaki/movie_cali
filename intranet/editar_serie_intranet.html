@@ -23,52 +23,25 @@
 
         <!-- Navegación Desplegable -->
         <nav>
-            <form>
-                <label for="Desplegable">Desplegable</label>
-                    <select name="desplegable" id="desplegable">
-                        <option href="../intranet/mi_perfil.html">Mi perfil</option>
-                        <optgroup label="Gestion de Peliculas">
-                            <option value="peliculas_pendientes" href="../intranet/peliculas_pendientes_de_revision.html">
-                                Pelicula pendientes de revision
-                            </option>
-                            <option label="nuevas_solicitudes_de_alta" href="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
-                                Nuevas solicitudes de alta peliculas
-                            </option>
-                        </optgroup> 
-                        <optgroup label="administracion_usuarios">
-                            <option label="gestion_perfiles" href="../intranet/gestion_de_perfil_roles.html">
-                                Gestion de perfil y roles
-                            </option>
-                            <option label="nuevo_perfil_intranet" href="../intranet/nuevo_perfil.html">
-                                Crear nuevo perfil
-                            </option>
-                        </optgroup>  
-                        <option label="cerrar_sesion" href="../intranet/inicio_de_sesion.html">Cerrar Sesion</option>     
-
-                    </select>
-            </form>
-        </nav>
+            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
+            <a href="../intranet/peliculas_pendientes_de_revision.html">Peliculas Pendientes de Revision</a>
+            <a href="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Nuevas Solicitudes de Alta Peliculas</a>
+            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de Perfil y Roles</a>
+            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
+            <a href="../intranet/inicio_de_sesion.html">Cerrar Sesion</a>      
+        </nav>  
     </header>
 
     <br>
-    <!-- FIN DE HEADER-->
-
-    <!------------------------------------------------------------------------------------------->
-
+<!-----FIN DE HEADER-------------------------------------------------------------------------------------->
     <main>
         <!-- PANEL -->
         <div>
-            <table border="1">
-                <tr>
-                    <td align="center">
-                        <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
-                        <a href="../intranet/panel.html">PANEL</a>
-                    </td>
-                </tr>
-            </table>
+            <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
+            <a href="../intranet/panel.html">PANEL</a>
         </div>
         <br>
-        <!------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------->
         <div>
             <h1>+ EDITAR SERIE</h1>
 
@@ -89,7 +62,6 @@
                                     <option velue="La Fiscal">La Fiscal</option>
                                     <option velue="El Robo">El Robo</option>
                                 </optgroup>
-
                             </select>
                             <input type="text" placeholder="Wonder Man">
                             <label for="Genero_serie">Genero: </label>
