@@ -21,43 +21,23 @@
 
         <!--Navegación Desplegable-->
         <nav>
-            <form>
-                <label for="desplegable">Menú de Navegación:</label>
-                <select name="desplegable" id="desplegable">
-                    <option value="mi_perfil">Mi perfil</option>
-                    <optgroup label="Gestión de Películas">
-                        <option value="peliculas_pendientes">Películas pendientes de revisión</option>
-                        <option value="nuevas_solicitudes">Nuevas solicitudes de alta</option>
-                    </optgroup>
-                    <optgroup label="Administración Usuarios">
-                        <option value="gestion_perfiles">Gestión de perfil y roles</option>
-                        <option value="nuevo_perfil">Crear nuevo perfil</option>
-                    </optgroup>
-                    <option value="cerrar_sesion">Cerrar Sesión</option>
-                </select>
-            </form>
-        </nav>
+            <a href="../intranet/mi_perfil.html">Mi Perfil</a>
+            <a href="../intranet/peliculas_pendientes_de_revision.html">Peliculas Pendientes de Revision</a>
+            <a href="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Nuevas Solicitudes de Alta Peliculas</a>
+            <a href="../intranet/gestion_de_perfil_roles.html">Gestion de Perfil y Roles</a>
+            <a href="../intranet/nuevo_perfil.html">Crear Nuevo Perfil</a>
+            <a href="../intranet/inicio_de_sesion.html">Cerrar Sesion</a>      
+        </nav>  
     </header> 
-
+<!------------FIN DE HEADER-------------------------->
     <hr>
-
     <main>
-        <!-- PANEL DE ACCESO RÁPIDO PARA VOLVER -->
-        <nav>
-            <table border="1">
-                <tr>
-                    <td align="center">
-                        <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Inicio">
-                        <a href="../intranet/panel.html">PANEL</a>
-                    </td>
-                </tr>
-            </table>
-            <p><strong>GESTIÓN DE REPORTES DE RESEÑAS ▶</strong></p>
-        </nav>
-
+        <div>
+            <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Inicio">
+            <a href="../intranet/panel.html">PANEL</a>
+        </div>
         <br>
-
-        <!--Bloque de filtros-->
+        <!--filtros-->
         <section>
             <div>
                 <label><strong>ORDENAR POR:</strong></label>
@@ -86,7 +66,7 @@
 
         <hr>
 
-        <!--Listado de Reportes-->
+<!-----------Listado de Reportes-------------->
         <section>
             <h3>PENDIENTE DE REVISIÓN:</h3>
 
@@ -125,7 +105,6 @@
             </article>
         </section>
 
-        <!-- Panel Lateral (dentro de main para mantener estructura) -->
         <aside>
             <hr>
             <h3>PANEL DE GESTIÓN DE USUARIOS</h3>
@@ -135,7 +114,6 @@
                 <p><strong>Usuario_2828</strong></p>
                 <p>Reportes recibidos: 2</p>
                 <p>Sanciones activas: 0</p>
-                <!-- Enlace al perfil corregido -->
                 <a href="ver_perfil_usuario.html">Ver Perfil Detallado</a>
             </article>
         </aside>
@@ -143,7 +121,7 @@
 
     <br><br>
 
-    <!--FOOTER-->
+<!---------------FOOTER--------------------------->
     <footer>
         <hr>
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
