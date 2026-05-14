@@ -11,32 +11,46 @@
 <body>
 
     <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
         </form>
 
-        <!-- Navegación -->
-        <nav>
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
             <a href="./index_usser.html">Inicio</a>
             <a href="./catalogo_peliculas_usser.html">Películas</a>
             <a href="#">Series</a>
         </nav>
 
         <!-- usuario registrado-->
-        <div>
-            <a href="./mi_perfil.html">Mi Perfil</a>
-            <a href="./mis_calificaciones.html">Mis calificaciones</a>
-            <a href="./mis_resenas.html">Mis reseñas</a>
-            <a href="./mis_peliculas_favoritas.html">Mis peliculas favoritas</a>
-            <a href="./resenas_favoritas.html">Reseñas favoritas</a>
-            <a href="../index.html">Cerrar sesion</a>
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>USUARIO - 12345</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="./mi_perfil.html">Mi Perfil</a>
+                <a href="./mis_calificaciones.html">Mis calificaciones</a>
+                <a href="./mis_resenas.html">Mis reseñas</a>
+                <a href="./mis_peliculas_favoritas.html">Mis peliculas favoritas</a>
+                <a href="./resenas_favoritas.html">Reseñas favoritas</a>
+                <a href="../index.html">Cerrar sesion</a>
+            </div>
         </div>
 
     </header>
