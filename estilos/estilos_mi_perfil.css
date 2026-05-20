@@ -1,0 +1,141 @@
+/* SECCION DEL USUARIO  ---------------------------------------------------------------*/
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 60px;
+    color: white;
+}
+
+/* foto de perfil --*/
+.perfil-foto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* informacion de perfil --*/
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.perfil-info h2 {
+    color: #7aafd4;
+    font-size: 13px;
+    margin: 0;
+}
+
+.perfil-info h1 {
+    font-size: 22px;
+    margin: 4px 0;
+    color: white;
+}
+
+/* enlance-boton: Editar perfil--*/
+.perfil-info a {
+    color: white;
+    font-size: 12px;
+    border: 1px solid #4a8abf;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    width: fit-content;
+    background: transparent;
+}
+
+.perfil-info a:hover {
+    background: #2a4f7a;
+}
+
+/* parrafo --*/
+.perfil-info p {
+    font-size: 12px;
+    color: #ccc;
+    margin: 4px 0 0 0;
+}
+
+/* tabla de resumen --*/
+.perfil-resumen {
+    margin-left: auto;
+    border-collapse: collapse;
+    color: white;
+    border: none;
+}
+
+.perfil-resumen td {
+    padding: 6px 20px;
+    text-align: center;
+    border: none;
+}
+
+.perfil-resumen h2 {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+
+.perfil-resumen p {
+    font-size: 15px;
+    color: #ccc;
+    margin: 0;
+}
+
+
+/* fila de main + aside ---------------------------------------------------------------*/
+
+.fila {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* primer fila MAIN */
+main {
+    flex: 1;
+    padding: 16px 70px;
+}
+ 
+/* La sección apila header y carrusel en columna */
+.seccion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* El header va en fila: título | subtítulo | "Ver todas" */
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* titulo mis calificaciones, mis peliculas favoritas, mis resenas, etc*/
+.titulo-seccion h2 {
+    font-size: 30px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 3px solid #4a90d9;
+    color: #e6edf3;
+}
+
+/* subtitulo que va debajo del titulo etc*/
+.titulo-seccion h4 {
+    font-size: 15px;
+    font-weight: normal;
+    color: #4a90d9;
+    margin: 0;
+    flex: 1;
+}
+
+/* boton de enlance "ver mas"*/
+.titulo-seccion a {
+    font-size: 20px;
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.titulo-seccion a:hover {
+    text-decoration: underline;
+}

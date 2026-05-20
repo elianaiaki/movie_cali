@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi perfil</title>
-    <link rel="stylesheet" href="../estilos/estilos_extranet.css">
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/aside_extranet.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/estilos_mi_perfil.css">
     <script src="../scripts/header.js" defer></script>
 </head>
 
@@ -44,12 +48,12 @@
             </div>
 
             <div class="dropdown">
-                <a href="#">Mi Perfil</a>
-                <a href="./mis_calificaciones.html">Mis calificaciones</a>
-                <a href="./mis_resenas.html">Mis reseñas</a>
-                <a href="./mis_peliculas_favoritas.html">Mis peliculas favoritas</a>
-                <a href="./resenas_favoritas.html">Reseñas favoritas</a>
-                <a href="../index.html">Cerrar sesion</a>
+                <a href="#"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                <a href="./mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                <a href="./mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                <a href="./mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                <a href="./resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                <a href="../index.html">CERRAR SESION</a>
             </div>
         </div>
     </header>
@@ -61,19 +65,19 @@
     <br>
 
     <!-- PERFIL -->
-    <section>
-        <div>
+    <section class="perfil">
+        <div class="perfil-foto">
             <img src="../recursos/imagenes/iconos/perfil.png" width="80">
         </div>
 
-        <div>
+        <div class="perfil-info">
             <h2>Mi Perfil ▶</h2>
             <h1>USUARIO - 12345</h1>
             <a href="./funcionalidades_resenas/editar_mi_perfil.html">Editar perfil</a>
             <p>Miembro desde Enero 2023</p>
         </div>
 
-        <table border="1">
+        <table class="perfil-resumen">
             <tr>
                 <td align="center">
                     <h2>8</h2>
@@ -98,52 +102,51 @@
     <hr>
 
 <!-- CONTENEDOR GENERAL -->
-
     <br>
-    <div>
+    <div class="fila">
         <!-- MAIN -->
         <main>
             <!-- MIS CALIFICACIONES-->
-            <section>
-                <div>
+            <section class="seccion">
+                <div class="titulo-seccion">
                     <h2>Mis Calificaciones</h2>
                     <h4>Tus calificaciones son publicas</h4>
                     <a href="./mis_calificaciones.html">Ver todas</a>
                 </div>
 
                 <!-- CARROUSEL: calificaciones-->
-                <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:500px;">
+                <div class="carrusel">>
 
                     <!-- pelicula 1-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/comocabras.jpg" width="150" height="220">
                         <small>COMO CABRAS</small>
                         <small>Calificación: 8.0 / 10 </small>
                     </div>
 
                     <!-- pelicula 2-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/exitProtocol.jpg" width="150" height="220">
                         <small>EXIT PROTOCOL</S
                         <small>Calificación: 8.0 / 10 </small>
                     </div>
 
                     <!-- pelicula 3-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/londonCalling.jpg" width="150" height="220">
                         <small>LONDON CALLING</small> 
                         <small>Calificación: 8.0 / 10 </small>
                     </div>
 
                     <!-- pelicula 4-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" width="150" height="220">
                         <small>SUPER MARIO GALAXY</small> 
                         <small>Calificación: 8.0 / 10 </small>
                     </div>
 
                     <!-- pelicula 5-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" width="150" height="220">
                         <small>NO QUEDAN JUNGLAS</small> 
                         <small>Calificación: 8.0 / 10 </small>
@@ -153,18 +156,18 @@
             <br>
 
             <!-- MIS PELICULAS FAVORITAS -->
-            <section>
-                <div>
+            <section class="seccion">
+                <div class="titulo-seccion">
                     <h2>Mis Películas Favoritas</h2>
                     <h4>Tus peliculas favoritas guardadas y organizadas</h4>
                     <a href="./mis_peliculas_favoritas.html">Ver todas</a>
                 </div>
 
                 <!-- CARROUSEL: peliculas favoritas -->
-                <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:500px;">
+                <div class="carrusel">
 
                     <!-- pelicula 1-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/el_guardian.jpg" width="150" height="220">
                         <small>EL GUARDIAN</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
@@ -173,7 +176,7 @@
                     </div>
 
                     <!-- pelicula 2-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" width="150" height="220">
                         <small>SUPER MARIO GALAXY</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
@@ -182,7 +185,7 @@
                     </div>
 
                     <!-- pelicula 3-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" width="150" height="220">
                         <small>BATMAN INICIA</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
@@ -191,7 +194,7 @@
                     </div>
 
                     <!-- pelicula 4-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/elJuego.jpg" width="150" height="220">
                         <small>JUEGO DE ASESINOS</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
@@ -200,7 +203,7 @@
                     </div>
 
                     <!-- pelicula 5-->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/juegoDeCriminales.jpg" width="150" height="220">
                         <small>JUEGO DE CRIMINALES</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
@@ -213,18 +216,18 @@
             <br>
 
             <!-- MIS RESEÑAS -->
-            <section>
-                <div>
+            <section class="seccion">
+                <div class="titulo-seccion">
                     <h2>Mis Reseñas</h2>
                     <h4>Todo lo que escribiste sobre las películas que viste</h4>
                     <a href="./mis_resenas.html">Ver todas</a>
                 </div>
 
                 <!-- CARROUSEL: mis reseñas -->
-                <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:500px;">
+                <div class="carrusel">
 
                     <!-- reseña 1 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/gladiador.jpg" width="150" height="220">
                         <small>GLADIADOR</small><br>
                         <small>Calificación: 7.3 / 10</small><br>
@@ -233,7 +236,7 @@
                     </div>
 
                     <!-- reseña 2 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/bladdeRunner.jpg" width="150" height="220">
                         <small>BLADE RUNNER</small><br>
                         <small>Calificación: 7.1 / 10</small><br>
@@ -242,7 +245,7 @@
                     </div>
 
                     <!-- reseña 3 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" width="150" height="220">
                         <small>BATMAN</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
@@ -251,7 +254,7 @@
                     </div>
 
                     <!-- reseña 4 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/past_lives.jpg" width="150" height="220">
                         <small>PAST LIVES</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
@@ -260,7 +263,7 @@
                     </div>
 
                     <!-- reseña 5 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/oppenheimerMovie.jpg" width="150" height="220">
                         <small>OPPENHEIMER</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
@@ -274,18 +277,18 @@
             <br>
 
             <!-- RESEÑAS FAVORITAS -->
-            <section>
-                <div>
+            <section class="seccion">
+                <div class="titulo-seccion">
                     <h2>Reseñas Favoritas</h2>
                     <h4>Reseñas de otros usuarios que guardaste como favoritas</h4>
                     <a href="./resenas_favoritas.html">Ver todas</a>
                 </div>
 
                 <!-- CARROUSEL: reseñas favoritas -->
-                <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:500px;">
+                <div class="carrusel">
 
                     <!-- reseña favorita 1 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/bladdeRunner.jpg" width="150" height="220">
                         <small>BLADE RUNNER</small><br>
                         <small>Calificación: 8.7 / 10</small><br>
@@ -294,7 +297,7 @@
                     </div>
 
                     <!-- reseña favorita 2 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/elPadrino.jpg" width="150" height="220">
                         <small>EL PADRINO</small><br>
                         <small>Calificación: 9.5 / 10</small><br>
@@ -303,7 +306,7 @@
                     </div>
 
                     <!-- reseña favorita 3 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" width="150" height="220">
                         <small>THE BATMAN</small><br>
                         <small>Calificación: 8.7 / 10</small><br>
@@ -312,7 +315,7 @@
                     </div>
 
                     <!-- reseña favorita 4 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/inception.jpg" width="150" height="220">
                         <small>INCEPTION</small><br>
                         <small>Calificación: 9.0 / 10</small><br>
@@ -321,7 +324,7 @@
                     </div>
 
                     <!-- reseña favorita 5 -->
-                    <div style="min-width:150px; text-align:center;">
+                    <div class="tarjeta">
                         <img src="../recursos/imagenes/peliculas/past_lives.jpg" width="150" height="220">
                         <small>PAST LIVES</small><br>
                         <small>Calificación: 8.0 / 10</small><br>
