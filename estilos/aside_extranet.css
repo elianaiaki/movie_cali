@@ -1,16 +1,21 @@
-/* aside ---------------------------------------------------------------*/
+/* hace que el aside ocupe toda la altura de la página */
+.fila {
+    display: flex;
+    align-items: stretch; /* cambiás flex-start por stretch */
+}
 
+/* aside ---------------------------------------------------------------*/
 aside {
     background: #1a3a5c;
     padding: 16px;
-    width: 220px;
+    width: 280px; /* subís el ancho, antes era 220px */
 }
 
 aside h2 {
     color: white;
-    font-size: 16px;
+    font-size: 22px;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 60px;
 }
 
 .item-aside {
@@ -36,7 +41,7 @@ aside h2 {
 
 .item-aside h3 {
     color: white;
-    font-size: 13px;
+    font-size: 23px;
     margin: 0;
 }
 

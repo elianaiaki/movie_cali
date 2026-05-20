@@ -95,23 +95,29 @@ main {
     flex: 1;
     padding: 16px 70px;
 }
- 
-/* La sección apila header y carrusel en columna */
+
+/* cada sección apila el header y el carrusel verticalmente */
 .seccion {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-/* El header va en fila: título | subtítulo | "Ver todas" */
+/* titulo de la seccion: (mis calificaciones)(mis peliculas favoritas)(mis reseñas favoritas)(mis reseñas)*/
 .titulo-seccion {
     display: flex;
     align-items: center;
-    gap: 10px;
     margin-bottom: 10px;
 }
 
-/* titulo mis calificaciones, mis peliculas favoritas, mis resenas, etc*/
+/* titulo(mis calificaciones), etc y subtitulo*/
+.titulo-seccion div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* titulo (mis calificaciones)etc*/
 .titulo-seccion h2 {
     font-size: 30px;
     margin: 0;
@@ -120,16 +126,16 @@ main {
     color: #e6edf3;
 }
 
-/* subtitulo que va debajo del titulo etc*/
+/* subtítulo en azul */
 .titulo-seccion h4 {
     font-size: 15px;
     font-weight: normal;
     color: #4a90d9;
     margin: 0;
-    flex: 1;
+    padding-left: 14px;
 }
 
-/* boton de enlance "ver mas"*/
+/* link "Ver todas" */
 .titulo-seccion a {
     font-size: 20px;
     color: #58a6ff;
