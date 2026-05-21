@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 20px 40px;
+    padding: 5px 10px;
 
     background: linear-gradient(
         90deg,
@@ -93,7 +93,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     cursor: pointer;
     color: white;
 }
@@ -106,7 +106,7 @@
 }
 
 .flecha {
-    font-size: 12px;
+    font-size: 8px;
     transition: transform 0.3s ease;
 }
 
