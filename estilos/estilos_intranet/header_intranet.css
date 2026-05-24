@@ -1,0 +1,84 @@
+/* header -------------------------------------------------------------------------------------------------------------------------------*/
+
+.header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 10px;
+
+    background: linear-gradient(
+        90deg,
+        #021c2b,
+        #234f73
+    );
+}
+
+/* LOGO ------------------------------------------------------------*/
+
+.logo img{
+    width: 450px;
+    height: auto;
+}
+
+/* BUSCADOR --------------------------------------------------------*/
+
+.buscador{
+
+    display: flex;
+    align-items: center;
+
+    width: 300px;
+
+    border-radius: 40px;
+    overflow: hidden;
+
+    border: 3px solid #333;
+
+    background-color: #222;
+}
+
+.buscador input{
+
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+    font-size: 18px;
+}
+
+.buscador button{
+
+    padding: 15px 25px;
+
+    border: none;
+
+    cursor: pointer;
+
+    background-color: #b7c8ff;
+}
+
+/*------------------------------------------------------------------------*/
+
+/* PERFIL */
+.perfil {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #4a90d9;
+}
