@@ -27,9 +27,11 @@
 /*----Boton --------*/
 .contenedor-boton {
     margin-bottom: 10px;
+    
 }
 
 .boton-inicio {
+    width: 100%;
     padding: 10px 20px;
     cursor: pointer;
     background-color: #001f3f; 
