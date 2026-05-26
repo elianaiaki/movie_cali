@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>INICIAR SESIÓN - Intranet</title>
-    <link rel="stylesheet" href="../estilos/estilos_intranet/body.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/inicio_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
 </head>
 
-<body>
+<body class="body">
     <!-- HEADER -->
     <header class="header">
         <!--LOGO-->
@@ -22,8 +23,8 @@
    <!-- FIN DE HEADER-->
 <!------------------------------------------------------------------------------------------->
     <hr>
-    <main>
-        <section>
+    <main class="diseno-login"> 
+        <section class="carta-login">
             <h2>INICIO DE SESION</h2>
             <form action="../intranet/panel.html" method="get">
 
@@ -33,7 +34,7 @@
                     <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20" style="vertical-align: middle;">
                     <input type="text" name="usuario" required style="width: 250px;">
                 </div>
-
+                <br>
                 <!-- Contraseña -->
                 <div>
                     <label>CONTRASEÑA</label><br>
@@ -41,15 +42,15 @@
                     <input type="password">
                     <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver" width="20" height="20" style="vertical-align: middle; cursor: pointer;">
                 </div>
-
+                <br>
                 <!-- Olvidaste contraseña -->
-                <div style="margin-bottom: 20px; width: 270px; text-align: right;">
-                    <a href="#">¿OLVIDASTE TU CONTRASEÑA?</a>
+                <div class="contenedor-olvido">
+                    <a href="#" class="enlace-olvido" >¿OLVIDASTE TU CONTRASEÑA?</a>
                 </div>
-
+                <br>
                 <!-- Botón Iniciar Sesión -->
-                <div style="margin-bottom: 10px;">
-                    <button type="submit">INICIAR SESION</button>
+                <div class="contenedor-boton">
+                    <button type="submit" class="boton-inicio">INICIAR SESION</button>
                 </div>
 
             </form>

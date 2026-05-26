@@ -1,0 +1,43 @@
+.diseno-login {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    padding: 40px;
+}
+
+.carta-login {
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+/*---- contendor "¿Olvidaste tu contraseña?" -----*/
+.contenedor-olvido {
+    margin-bottom: 20px;
+    width: 270px;
+    text-align: right;
+}
+
+.enlace-olvido {
+    text-decoration:underline; 
+    color: #063568;        
+    font-size: 0.9em;
+}
+
+/*----Boton --------*/
+.contenedor-boton {
+    margin-bottom: 10px;
+}
+
+.boton-inicio {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #001f3f; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.boton-inicio:hover {
+    background-color: #003366; /* Cambio de color al pasar el mouse */
+}
