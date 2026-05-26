@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>NUEVO PERFIL</title>
-    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
-    <script src="../scripts/header.js" defer></script>
+    <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
 
 <body>
@@ -28,24 +28,37 @@
             <button>🔍</button>
         </form>
 
-        <!-- usuario registrado-->
         <!-- PERFIL -->
         <div class="perfil" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
-
-            <div class="perfil-info">
-                <span>USUARIO - 12345</span>
-                <span class="flecha">▼</span>
-            </div>
-
-            <!-- Navegación Desplegable -->
-            <div class="dropdown">
-                <a href="../intranet/mi_perfil.html"><span class="icono-dropdown">▶</span>Mi Perfil</a> <!-- fijate que cada clase de icono tenga eso-->
-                <a href="../intranet/peliculas_pendientes_de_revision.html"><span class="icono-dropdown">▶</span>Peliculas Pendientes de Revision</a>
-                <a href="../intranet/nuevas_solicitudes_de_alta_peliculas.html"><span class="icono-dropdown">▶</span>Nuevas Solicitudes de Alta Peliculas</a>
-                <a href="../intranet/gestion_de_perfil_roles.html"><span class="icono-dropdown">▶</span>Gestion de Perfil y Roles</a>
-                <a href="../intranet/nuevo_perfil.html"><span class="icono-dropdown">▶</span>Crear Nuevo Perfil</a>
-                <a href="../intranet/inicio_de_sesion.html"><span class="icono-dropdown">▶</span>Cerrar Sesion</a>      
+        <!-- DESPLEGABLE -->
+            <div class="desplegable">
+                <form>
+                    <select name="desplegable" id="desplegable" onchange="navegarMenu(this)">
+                        <option value="" selected disabled>Selecciona una opción...</option>
+                        <option value="../intranet/mi_perfil.html">Mi perfil</option>
+                        <hr>
+                        <optgroup label="Gestión de Películas">
+                            <option value="../intranet/peliculas_pendientes_de_revision.html">
+                                Películas pendientes de revisión
+                            </option>
+                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
+                                Nuevas solicitudes de alta
+                            </option>
+                        </optgroup> 
+                        <hr>
+                        <optgroup label="Administración Usuarios">
+                            <option value="../intranet/gestion_de_perfil_roles.html">
+                                Gestión de perfil y roles
+                            </option>
+                            <option value="../intranet/nuevo_perfil.html">
+                                Crear nuevo perfil
+                            </option>
+                        </optgroup>  
+                        <hr>
+                        <option value="../intranet/inicio_de_sesion.html">Cerrar Sesión</option>     
+                    </select>
+                </form>      
             </div> 
         </div>
     </header>
