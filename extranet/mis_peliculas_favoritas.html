@@ -88,17 +88,19 @@
 
         <!-- Grilla de películas -->
             <section>
-                <table border="0">
-                    <tr>
-                        <!--PELICULA 1-->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/elGuardian.jpg" alt="El Guardián" width="100" height="150">
-                            <h3>EL GUARDIÁN</h3>
-                            <p><b>Calificación:</b> 7.10 / 10</p>
+                <div class="d-flex flex-wrap gap-3">
+
+                    <!-- Película 1 -->
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                        <img src="../recursos/imagenes/peliculas/elGuardian.jpg" class="card-img-top" alt="El Guardián" style="height:220px; object-fit:cover;">
+                        <div class="card-body p-2">
+                            <p class="card-title text-white" style="font-size:0.75rem;">EL GUARDIÁN</p>
+                            <p class="card-title text-white" style="font-size:0.75rem;">Calificación:</b> 7.10 / 10</p>
                             <h5><b>Agregado:</b> 09/2026</h5>
                             <a href="#">Ver más</a>
                             <button>ELIMINAR</button>
-                        </td>
+                        </div>
+                    </div>
 
                         <!--PELICULA 2-->
                         <td align="center">
@@ -200,7 +202,7 @@
                             </a>
                         </td>
                     </tr>
-                </table>
+                </div>
             </section>
 
         </main>

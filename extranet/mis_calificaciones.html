@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
     <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
     <script src="../scripts/header.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 
@@ -63,16 +64,19 @@
     <!-- FIN DE HEADER-->
     <!------------------------------------------------------------------------------------------->
     <!-- CONTENEDOR GENERAL -->
-    <div>
+    <!-- CONTENEDOR GENERAL -->
+    <br>
+    <div class="fila">
         <!-- MAIN -->
         <main>
-            <!-- BLOQUE -->
-            <section>
-                <div>
-                    <h2> Calificaciones ▶</h2>
+            <!-- MIS CALIFICACIONES-->
+            <section class="seccion">
+                <div class="titulo-seccion">
+                    <div>
+                        <h2> Calificaciones ▶</h2>
+                    </div>
                 </div>
 
-            
                 <!-- FILTROS-->
                 <div>
                     <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
@@ -88,93 +92,106 @@
             <!-- EXCELENTES -->
             <section>
                 <h3>EXCELENTES</h3>
-                <table border="0">
-                    <tr>
-                        <!--PELICULA 1-->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/elGuardian.jpg" alt="El Guardián" width="150" height="220">
-                            <p><b>EL GUARDIÁN</b></p>
-                            <p>Calificación: 8.5 / 10</p>
-                        </td>
+                <div class="d-flex flex-wrap gap-3">
 
-                        <!-- Película 2 -->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/theCut.jpg" alt="The Cut" width="150" height="220">
-                            <p><b>THE CUT</b></p>
-                            <p>Calificación: 8.0 / 10</p>
-                        </td>
-                    </tr>
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                    <img src="../recursos/imagenes/peliculas/elGuardian.jpg" class="card-img-top" alt="El Guardián" style="height:220px; object-fit:cover;">
+                    <div class="card-body p-2">
+                        <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL GUARDIÁN</p>
+                        <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                    </div>
+                    </div>
 
-                </table>
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                    <img src="../recursos/imagenes/peliculas/theCut.jpg" class="card-img-top" alt="The Cut" style="height:220px; object-fit:cover;">
+                    <div class="card-body p-2">
+                        <p class="card-title text-white fw-bold" style="font-size:0.75rem;">THE CUT</p>
+                        <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                    </div>
+                    </div>
+                </div>
             </section>
 
             <!-- MUY BUENAS -->
             <section>
                 <h3>MUY BUENAS</h3>
 
-                <table border="0">
-                    <tr>
-                        <!--PELICULA 1-->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/comoCabras.jpg" alt="Como Cabras" width="150" height="220">
-                            <p>COMO CABRAS</p>
-                            <p><b>Calificación:</b> 7.8 / 10</p>
-                        </td>
+                <div class="d-flex flex-wrap gap-3">
 
-                        <!-- Película 2 -->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/exitProtocol.jpg" alt="Exit Protocol" width="150" height="220">
-                            <p>EXIT PROTOCOL</p>
-                            <p><b>Calificación:</b> 7.8 / 10</p>
-                        </td>
+                    <!-- Película 1 -->
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                        <img src="../recursos/imagenes/peliculas/comoCabras.jpg" class="card-img-top" alt="Como Cabras" style="height:220px; object-fit:cover;">
+                        <div class="card-body p-2">
+                            <p class="card-title text-white" style="font-size:0.75rem;">COMO CABRAS</p>
+                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                        </div>
+                    </div>
 
-                        <!-- Película 3 -->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/londonCalling.jpg" alt="London Calling" width="150" height="220">
-                            <p>LONDON CALLING</p>
-                            <p><b>Calificación:</b> 7.8 / 10</p>
-                        </td>
+                    <!-- Película 2 -->
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                        <img src="../recursos/imagenes/peliculas/exitProtocol.jpg" class="card-img-top" alt="Exit Protocol" style="height:220px; object-fit:cover;">
+                        <div class="card-body p-2">
+                            <p class="card-title text-white" style="font-size:0.75rem;">EXIT PROTOCOL</p>
+                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
+                        </div>
+                    </div>
 
-                        <!-- Película 4 -->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" alt="Super Mario Galaxy" width="150" height="220">
-                            <p>SUPER MARIO GALAX</p>
-                            <p><b>Calificación:</b> 7.0 / 10</p>
-                        </td>
+                    <!-- Película 3 -->
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                        <img src="../recursos/imagenes/peliculas/londonCalling.jpg" class="card-img-top" alt="London Calling" style="height:220px; object-fit:cover;">
+                        <div class="card-body p-2">
+                            <p class="card-title text-white" style="font-size:0.75rem;">LONDON CALLING</p>
+                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
+                        </div>
+                    </div>
 
-                        <!-- Película 5 -->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" alt="Ya No Quedan Junglas" width="150" height="220">
-                            <p>YA NO QUEDAN JUNGLAS</p>
-                            <p><b>Calificación:</b> 7.2 / 10</p>
-                        </td>
-                    </tr>
-                </table>
+                    <!-- Película 4 -->
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                        <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" class="card-img-top" alt="Super Mario Galaxy" style="height:220px; object-fit:cover;">
+                        <div class="card-body p-2">
+                            <p class="card-title text-white" style="font-size:0.75rem;">SUPER MARIO GALAX</p>
+                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
+                        </div>
+                    </div>
+
+                    <!-- Película 5 -->
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                        <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" class="card-img-top" alt="Ya No Quedan Junglas" style="height:220px; object-fit:cover;">
+                        <div class="card-body p-2">
+                            <p class="card-title text-white" style="font-size:0.75rem;">YA NO QUEDAN JUNGLAS</p>
+                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- BUENAS -->
             <section>
                 <h3>BUENAS</h3>
 
-                <table border="0">
-                    <tr>
-                        <!--PELICULA 1-->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/losHermanosDemolicion.jpg" alt="Los Hermanos Demolicion" width="150" height="220">
-                            <p>LOS HERMANOS DEMOLICION</p>
-                            <p><b>Calificación:</b> 6.9 / 10</p>
-                        </td>
+                <div class="d-flex flex-wrap gap-3">
+
+                    <!-- Película 1 -->
+                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                        <img src="../recursos/imagenes/peliculas/losHermanosDemolicion.jpg" class="card-img-top" alt="Los Hermanos Demolicion" style="height:220px; object-fit:cover;">
+                        <div class="card-body p-2">
+                            <p class="card-title text-white" style="font-size:0.75rem;">LOS HERMANOS DEMOLICION</p>
+                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                        </div>
+                    </div> 
 
                         <!--PELICULA 2-->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/signing_day.jpg" alt="Signing Day" width="150" height="220">
-                            <p>SIGNING DAY</p>
-                            <p><b>Calificación:</b> 6.9 / 10</p>
-                        </td>
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/signing_day.jpg" class="card-img-top" alt="Signing Day" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">SIGNING DAY</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                            </div>
+                        </div>
 
                         <!--PELICULA 3-->
-                        <td align="center">
-                            <img src="../recursos/imagenes/peliculas/elBotin.jpg" alt="El Botin" width="150" height="220">
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/elBotin.jpg" class="card-img-top" alt="El Botin" style="height:220px; object-fit:cover;">
                             <p>EL BOTÍN</p>
                             <p><b>Calificación:</b> 6.8 / 10</p>
                         </td>
