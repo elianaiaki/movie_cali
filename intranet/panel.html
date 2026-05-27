@@ -6,11 +6,12 @@
     <title>PANEL </title>
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
 
-<body>
+<body class="body">
 
 <!---------- HEADER ---------->
     <!-- HEADER -->
@@ -64,60 +65,58 @@
     </header>
 <!-------------FIN DE HEADER----------------->    
     <hr>
-    <main>
-        <div>
-            <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
-            <a href="../intranet/panel.html">PANEL</a>
+    <main class="main">
+        <div class="contenedor-panel">
+            <div class="Panel">
+                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
+                <a href="../intranet/panel.html">PANEL</a>
+            </div>
         </div>
-        <br>
-        <h2>PANEL DE CONTROL</h2>
-
         <!------TARJETAS GESTIÓN DE CATÁLOGOS-->
-        <section class="Tarjeta1">
-            <h3>GESTIÓN DE CATÁLOGOS</h3>
-            <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono catálogo" width="50">
+        <div class="contenedor-tarjetas">
+            <section class="Tarjeta">
+                <h3>GESTIÓN DE CATÁLOGOS</h3>
+                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono catálogo" width="75">
 
-            <h4>ABM DE PELÍCULAS Y SERIES</h4>
-            <nav>
-                <a href="../intranet/peliculas_pendientes_de_revision.html">PELÍCULAS</a> |
-                <a href="../intranet/series_pendientes_de_revision_intra.html">SERIES</a> |
-                <a href="../intranet/gestion_catalogo.html">VER TODO</a>
-            </nav>
+                <h4>ABM DE PELÍCULAS Y SERIES</h4>
+                <nav >
+                    <a href="../intranet/peliculas_pendientes_de_revision.html">PELÍCULAS</a> |
+                    <a href="../intranet/series_pendientes_de_revision_intra.html">SERIES</a> |
+                    <a href="../intranet/gestion_catalogo.html">VER TODO</a>
+                </nav>
+                <p>CATÁLOGO ACTUAL: 1584</p>
+                <p>A MODIFICAR: 200</p>
+                
+                <h5>Acciones rápidas:</h5>
+                <ul>
+                    <li>Corregir reparto</li>
+                    <li>Modificar datos</li>
+                    <li>Actualizar trailer</li>
+                </ul>
+            </section>
 
-            <p>CATÁLOGO ACTUAL: 1584</p>
-            <p>A MODIFICAR: 200</p>
+            <!--TARJETAS ADMINISTRACIÓN DE USUARIOS-->
+            <section class="Tarjeta">
+                <h3>ADMINISTRACIÓN DE USUARIOS</h3>
+                <img src="../recursos/imagenes/iconos/perfil.png" alt="Icono usuarios" width="75">
 
-            <h5>Acciones rápidas:</h5>
-            <ul>
-                <li>Corregir reparto</li>
-                <li>Modificar datos</li>
-                <li>Actualizar trailer</li>
-            </ul>
-        </section>
+                <h4>ABM DE USUARIO</h4>
+                <nav>
+                    <a href="nuevo_perfil.html">CREAR USUARIOS</a> |
+                    <a href="gestion_de_perfil_roles.html">VER TODO</a>
+                </nav>
 
-        <hr>
+                <h5>Tareas administrativas:</h5>
+                <ul>
+                    <li>Asignación de permisos</li>
+                    <li>Panel de roles</li>
+                    <li>Historial de actividades</li>
+                </ul>
 
-        <!--TARJETAS ADMINISTRACIÓN DE USUARIOS-->
-        <section class="Tarjeta2">
-            <h3>ADMINISTRACIÓN DE USUARIOS</h3>
-            <img src="../recursos/imagenes/iconos/perfil.png" alt="Icono usuarios" width="50">
-
-            <h4>ABM DE USUARIO</h4>
-            <nav>
-                <a href="nuevo_perfil.html">CREAR USUARIOS</a> |
-                <a href="gestion_de_perfil_roles.html">VER TODO</a>
-            </nav>
-
-            <h5>Tareas administrativas:</h5>
-            <ul>
-                <li>Asignación de permisos</li>
-                <li>Panel de roles</li>
-                <li>Historial de actividades</li>
-            </ul>
-
-            <p>TOTAL DE USUARIOS: 5584</p>
-            <p>ROLES ACTIVOS: 400</p>
-        </section>
+                <p>TOTAL DE USUARIOS: 5584</p>
+                <p>ROLES ACTIVOS: 400</p>
+            </section>
+        </div>
     </main> 
 
     <!--FOOTER-->

@@ -1,9 +1,10 @@
+/*MAIN DE LOGIN*/
 .diseno-login {
     justify-content: center; /* Centra horizontalmente */
     align-items: center;     /* Centra verticalmente */
     padding: 40px;
 }
-
+/*CONTENEDOR DE TARJETA LOGIN*/
 .carta-login {
     width: 100%;
     max-width: 350px;
@@ -11,7 +12,7 @@
     padding: 50px;
 }
 
-/*---- contendor "¿Olvidaste tu contraseña?" -----*/
+/*---- contendor "olvidaste tu contraseña" -----*/
 .contenedor-olvido {
     margin-bottom: 20px;
     width: 270px;
@@ -24,7 +25,7 @@
     font-size: 0.9em;
 }
 
-/*----Boton --------*/
+/*----Boton DE INICIAR SESION --------*/
 .contenedor-boton {
     margin-bottom: 10px;
     
