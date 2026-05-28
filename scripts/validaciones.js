@@ -2,7 +2,7 @@ alert("JS conectado");
 function usuarioValido(usuario) {
 
     // Entre 4 y 16 caracteres, letras, números y _
-    const patrones = /^[a-z A-Z 0-9_]{4,16}$/;
+    const patrones = /^[a-zA-Z0-9_]{4,16}$/;
 
     // / / : indica que es una expresión regular (patrones)
     // ^ : inicio del texto
@@ -14,7 +14,7 @@ function usuarioValido(usuario) {
     // $ : final del texto
 
     return patrones.test(usuario);
-}
+} 
 
 function correoValido(correo){
 

@@ -4,34 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Wonder Man</title>
+      <!-- CSS -->
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="../../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                 alt="Logo MovieCali">
+        </div>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+        <!-- MENU -->
+        <ul class="menu">
+
+            <li>
+
+                <a href="#">
+                    Inicio
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../../internet/catalogo_peliculas.html">
+                    Películas
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../../internet/catalogo_series.html">
+                    Series
+                </a>
+
+            </li>
+
+        </ul>
+
+        <!-- BUSCADOR -->
+        <form class="buscador">
+
+            <input
+                type="search"
+                placeholder="Buscar películas, series..."
+            >
+
+            <button>
+                Buscar
+            </button>
+
         </form>
 
-        <!-- Navegación -->
-        <nav>
-            <a href="../../index.html">Inicio</a>
-            <a href="../catalogo_peliculas.html">Películas</a>
-            <a href="../catalogo_series.html">Series</a>
-        </nav>
-
-        <!-- Usuario -->
-        <div>
-            <a href="../iniciar_sesion.html">Iniciar sesión</a>
-            <a href="../crear_cuenta.html">Crear cuenta</a>
-        </div>
     </header>
 
     <hr>
@@ -41,67 +73,114 @@
         <!-- MAIN -->
         <main>
             <!-- TITULO, DETALLES Y TRAILER-->
-            <section>
-                <div>
-                    <img src="../../recursos/imagenes/series/wonderman.jpg" alt="WONDER MAN" width="200"> 
-                    <br>
-                    <h1>Wonder Man</h1>
-                    <p>El aspirante a actor, Simon Williams, lucha por hacer despegar <br> 
-                        su carrera. Durante un encuentro por casualidad con el actor <br>
-                        veterano, Trevor Slattery, Simon se entera de que el legendario <br>
-                        director Von Kovak está por hacer la remake de la película de <br>
-                        súper héroes “Wonder Man”. Estos actores en los extremos <br>
-                        opuestos de sus carreras persiguen roles en esta película que <br>
-                        cambiarían sus vidas, mientras la audiencia puede espiar detrás <br>
-                        del telón de la industria del entretenimiento.
-                    </p>
-                    <ul>
-                        <li><strong>Género:</strong> Comedia</li>
-                        <li><strong>Año:</strong> 2026 </li>
-                        <li><strong>Duración:</strong> 1h 46min</li>
-                        <li><strong>Director:</strong> Chandler Levack</li>
-                        <li><strong>Productores/as:</strong> Natasha Lyonne, Tom Costain y Jimmy Fowlie</li>
-                        <li><strong>Calificación general:</strong> 5.6/10</li>
-                        <li><strong>Clasificación por edad:</strong> +18</li>
-                        <li><strong>Plataformas:</strong> Netflix</li>
-                    </ul>
-                </div>
-                
-                <div>
+           <section class="detalle-principal">
+
+    <!-- IZQUIERDA: IMAGEN -->
+    <div class="poster">
+        <img src="../../recursos/imagenes/series/wonderman.jpg"
+             alt="WONDER MAN">
+    </div>
+
+    <!-- DERECHA: INFO -->
+    <div class="info-serie">
+
+        <h1>Wonder Man</h1>
+
+        <p>
+            El aspirante a actor, Simon Williams, lucha por hacer despegar su carrera.
+            Durante un encuentro por casualidad con el actor veterano, Trevor Slattery...
+            (texto completo)
+        </p>
+
+        <ul>
+            <li><strong>Género:</strong> Comedia</li>
+            <li><strong>Año:</strong> 2026</li>
+            <li><strong>Duración:</strong> 1h 46min</li>
+            <li><strong>Director:</strong> Chandler Levack</li>
+            <li><strong>Productores/as:</strong> Natasha Lyonne, Tom Costain y Jimmy Fowlie</li>
+            <li><strong>Calificación general:</strong> 5.6/10</li>
+            <li><strong>Clasificación por edad:</strong> +18</li>
+            <li><strong>Plataformas:</strong> Netflix</li>
+        </ul>
+    </div>
+
+</section>
+
+        <section class="card-detalle">
+            <!-- TRAILER -->
+                <div class="video-container">
+
                     <h2>Tráiler</h2>
-                    <video width="600" controls>
-                        <source src="../../recursos/videos/wonderMan.webm" type="video/webm">
-                        Tu navegador no soporta el elemento de video.
+
+                    <video controls>
+                        <source src="../../recursos/videos/wonderMan.webm"
+                                type="video/webm">
                     </video>
+
                 </div>
-            </section>
+        </section>
 
          <!-- REPARTO-->
-            <section>
-                <div>
+            <!-- <section class="card-detalle">
+                <div class="actor-card">
                     <h2>REPARTO</h2>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/yahyaAbdulMateenll.jpg" alt="YAHYA ABDUL-MATEEN II" width="100" height="150"><br>
                     <h3>YAHYA ABDUL-MATEEN II</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/benKingsley.jpg" alt="BEN KINGSLY" width="100" height="150"><br>
                     <h3>BEN KINGSLY</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/joshGad.jpg" alt="JOSH GAD" width="100" height="150"><br>
                     <h3>JOSH GAD</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/zlatkoBuric.jpg" alt="ZLATKO BURIĆ" width="100" height="150"><br>
                     <h3>ZLATKO BURIĆ</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/xMayo.jpg" alt="X MAYO" width="100" height="150"><br>
                     <h3>X MAYO</h3>
                 </div>
-            </section>
+            </section> -->
+
+            <section class="card-detalle">
+
+    <h2>REPARTO</h2>
+
+    <div class="reparto-vertical">
+
+        <div class="actor-card">
+            <img src="../../recursos/imagenes/Reparto/yahyaAbdulMateenll.jpg" alt="YAHYA ABDUL-MATEEN II">
+            <h3>YAHYA ABDUL-MATEEN II</h3>
+        </div>
+
+        <div class="actor-card">
+            <img src="../../recursos/imagenes/Reparto/benKingsley.jpg" alt="BEN KINGSLY">
+            <h3>BEN KINGSLY</h3>
+        </div>
+
+        <div class="actor-card">
+            <img src="../../recursos/imagenes/Reparto/joshGad.jpg" alt="JOSH GAD">
+            <h3>JOSH GAD</h3>
+        </div>
+
+        <div class="actor-card">
+            <img src="../../recursos/imagenes/Reparto/zlatkoBuric.jpg" alt="ZLATKO BURIĆ">
+            <h3>ZLATKO BURIĆ</h3>
+        </div>
+
+        <div class="actor-card">
+            <img src="../../recursos/imagenes/Reparto/xMayo.jpg" alt="X MAYO">
+            <h3>X MAYO</h3>
+        </div>
+
+    </div>
+
+</section>
 
             <!--RESEÑA DE USUARIOS-->
             <section>
@@ -218,7 +297,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>

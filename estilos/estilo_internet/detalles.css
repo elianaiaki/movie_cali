@@ -1,0 +1,64 @@
+.detalle-principal{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+    
+}
+
+.poster img{
+    width:300px;
+    border-radius:15px;
+}
+
+.info-serie{
+    max-width:800px;
+    color: white;
+}
+
+.video-container video{
+    width:100%;
+    max-width:600px;
+    border-radius:15px;
+}
+
+.card-detalle{
+    background: #222934;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 40px;
+    color: white;
+}
+
+.actor-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+    width:140px;   /* 👈 clave para consistencia */
+    margin:0 auto; /* centra cada card */
+}
+
+.actor-card img{
+    width:110px;
+    height:110px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #3a6fa0;
+}
+
+.reparto-vertical{
+    display:flex;
+    flex-direction:row;   /* 👈 fila horizontal */
+    gap:25px;
+    margin-top:20px;
+
+    flex-wrap:wrap;       /* 👈 importante para responsive */
+    justify-content:center;
+}
+
+.actor-card h3{
+    margin-top:10px;
+    font-size:14px;
+}
