@@ -31,16 +31,30 @@
     
 }
 
-.boton-inicio {
+.boton-inicio, .boton-cancelar {
+    display: inline-block;/*para que el boton cancelar pueda tomar la misma dimension que guardar*/
+    box-sizing: border-box; /* Evita que el padding deforme el ancho */
     width: 100%;
     padding: 10px 20px;
     cursor: pointer;
+    text-align: center;
     background-color: #001f3f; 
     color: white;
     border: none;
     border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+    
 }
 
-.boton-inicio:hover {
+
+
+.boton-inicio:hover, .boton-cancelar:hover {
     background-color: #003366; /* Cambio de color al pasar el mouse */
+}
+
+/*Agrega espacio entre usuario y contraseña en el inicio*/
+.carta-login div {
+    margin-bottom: 15px;
 }

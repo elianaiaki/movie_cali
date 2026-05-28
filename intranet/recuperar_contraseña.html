@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>INICIAR SESIÓN - Intranet</title>
+    <title>RECUPERAR CONTRASEÑA - Intranet</title>
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/inicio_intranet.css">
@@ -25,32 +25,35 @@
     <hr>
     <main class="diseno-login"> 
         <section class="carta-login">
-            <h2>INICIO DE SESION</h2>
-            <form action="../intranet/panel.html" method="get">
-
+            <h2>RECUPERAR CONTRASEÑA</h2>
+            <form action="../intranet/inicio_de_sesion.html" method="get">
                 <!-- Usuario -->
                 <div>
                     <label>USUARIO / CORREO ELECTRONICO</label><br>
                     <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20" style="vertical-align: middle;">
-                    <input type="text" name="usuario" required style="width: 250px;">
+                    <input type="text" name="usuario" placeholder="Ingrese usuario o correo" required style="width: 250px;">
                 </div>
                 
                 <!-- Contraseña -->
                 <div>
                     <label>CONTRASEÑA</label><br>
                     <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20" style="vertical-align: middle;">
-                    <input type="password" required style="width: 250px;">
+                    <input type="password" name="password" placeholder="Ingrese contraseña" required style="width: 250px;">
                     <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver" width="20" height="20" style="vertical-align: middle; cursor: pointer;">
                 </div>
-                
-                <!-- Olvidaste contraseña -->
-                <div class="contenedor-olvido">
-                    <a href="../intranet/recuperar_contraseña.html" class="enlace-olvido" >¿OLVIDASTE TU CONTRASEÑA?</a>
+                                
+                <div> 
+                    <label>REPETIR CONTRASEÑA</label><br>
+                    <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20" style="vertical-align: middle;">
+                    <input type="password" name="repetir-password" placeholder="Ingrese de nuevo la contraseña" required style="width: 250px;">
+                    <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver" width="20" height="20" style="vertical-align: middle; cursor: pointer;">
                 </div>
-                
-                <!-- Botón Iniciar Sesión -->
+
+                <!-- Botones para guardar contraseña y cancelar-->
                 <div class="contenedor-boton">
-                    <button type="submit" class="boton-inicio">INICIAR SESION</button>
+                    <button type="submit" class="boton-inicio">GUARDAR</button>
+
+                    <a href="../intranet/inicio_de_sesion.html" class = "boton-cancelar">CANCELAR</a>
                 </div>
 
             </form>

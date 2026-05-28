@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>GESTIÓN DE PERFILES Y ROLES</title>
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -61,14 +64,14 @@
             </div> 
         </div>
     </header>
-
+<!------------------------------------------------------------------------------->
     <hr>
-
-    <main>
-<!--PANEL --------------------------------------------->
-        <div>
-            <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Inicio">
-            <a href="../intranet/panel.html">PANEL</a>
+    <main class="main">
+        <div class="contenedor-panel">
+            <div class="Panel">
+                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
+                <a href="../intranet/panel.html">PANEL</a>
+            </div>
         </div>
         
         <h1>GESTIÓN DE PERFILES Y ROLES ▶</h1>
@@ -76,11 +79,11 @@
         <h2>ADMINISTRACIÓN DE USUARIOS</h2>
 
         <!-- BOTONES -->
-        <section>
-            <a href="nuevo_perfil.html">+ NUEVO PERFIL</a> |
-            <a href="solicitudes_alta_perfiles.html">PANEL DE GESTIÓN DE ALTAS</a> |
-            <a href="gestion_reportes_resenias.html">PANEL DE GESTIÓN DE REPORTES</a>
-        </section>
+        <div class="Contenedor-Botones-superior">
+            <a class="boton-superior" href="nuevo_perfil.html">+ NUEVO PERFIL</a> |
+            <a class="boton-superior" href="solicitudes_alta_perfiles.html">PANEL DE GESTIÓN DE ALTAS</a> |
+            <a class="boton-superior" href="gestion_reportes_resenias.html">PANEL DE GESTIÓN DE REPORTES</a>
+        </div>
 
         <hr>
 
