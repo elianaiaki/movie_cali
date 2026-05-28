@@ -43,27 +43,27 @@
 
         <h1>CREAR UNA CUENTA</h1>
 
-        <form action="../extranet/editar_mi_perfil.html" method="post">
+        <form id="crear_cuenta" action="../extranet/funcionalidades_resenas/editar_mi_perfil.html" method="get">
 
             <!-- Usuario -->
             <div>
                 <label>USUARIO</label><br>
                 <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20">
-                <input type="text">
+                <input type="text" id="usuario">
             </div>
 
             <!-- Correo Electrónico -->
             <div>
                 <label>CORREO ELECTRÓNICO</label><br>
                 <img src="../recursos/imagenes/iconos/correo.png" alt="icono correo" width="20" height="20">
-                <input type="email">
+                <input type="email" id="correo">
             </div>
 
             <!-- Contraseña -->
             <div>
                 <label>CONTRASEÑA</label><br>
                 <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20">
-                <input type="password">
+                <input type="password" id="contrasenia">
                 <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="mostrar contraseña" width="20" height="20">
             </div>
 
@@ -82,9 +82,9 @@
                 <a href="#">POLÍTICA DE PRIVACIDAD</a>.
             </div>
 
-            <!-- Registro -->
+             <!-- Registro -->
             <div>
-                <a href="../extranet/funcionalidades_resenas/editar_mi_perfil.html">REGISTRARSE</a>
+                <button type="submit"> REGISTRARSE </button>
             </div>
 
             <!-- Google -->
@@ -108,6 +108,75 @@
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- CONEXION CON JS -->
+    <script src="../scripts/validaciones.js"></script>
+
+    <script>
+
+        // Obtener formulario
+        const formulario = document.getElementById("crear_cuenta");
+
+        // Evento submit
+        formulario.addEventListener("submit", function(event){
+
+            // Frenar envío automático
+            event.preventDefault();
+
+            // Obtener valores
+            const usuario = document.getElementById("usuario").value;
+
+            // Validar usuario o correo
+            if(
+                !usuarioValido(usuario)
+            ){
+
+                alert("Usuario o correo inválido");
+
+                return;
+            }
+
+            // Obtener valores
+            const correo = document.getElementById("correo").value;
+
+            // Validar correo
+            
+            if(
+                !correoValido(correo)
+            ){
+
+                alert("Correo invalido");
+
+                return;
+            }
+
+            // Validar contraseña
+
+            const contrasenia = document.getElementById("contrasenia").value;
+
+            // Validar contraseña
+            if(
+                !contraseniaValida(contrasenia)
+            ){
+
+                alert("Contraseña inválida");
+
+                return;
+            }
+
+            // Si todo está bien
+            alert("Contraseña valida");
+
+            // Enviar formulario manualmente
+            formulario.submit();
+
+
+
+        });
+
+        
+
+    </script>
  
 </body>
 </html>

@@ -1,0 +1,130 @@
+/*------------Botones superiores----------------*/
+
+.Contenedor-Botones-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*------ Estilos de botones -------*/
+.boton-superior {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; 
+    border: 1px solid #000000;
+    background-color: #1565c0;
+    border-radius: 20px;
+    padding: 10px 20px; /* Un poco más de aire a los lados */
+    margin-right: 75px;
+    margin-bottom: 75px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Ayuda a que el padding funcione igual en los <a> */
+}
+
+
+.boton-superior:last-child {
+    margin-right: 0;/* Quita el margen derecho al úultimo boton */
+}
+
+.boton-superior:hover {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+/*---------------------BOTONES INFERIORES----------------------------------------------*/
+
+.botones-inferiores {
+    display: flex;            /* Activa Flexbox */
+    flex-direction: row;      /* coloca uno al lado del otro */
+    align-items: center;      /* Centra verticalmente los botones y el checkbox */
+    justify-content: flex-start; /* Alinea todo a la izq */
+    gap: 15px;                /* La separación */
+    padding: 15px;
+    flex-wrap: wrap;          /* si no entran, se bajan ordenadamente */
+}
+
+/* LOS BOTONES: Ahora más chicos y estilizados */
+.btn-azul {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; 
+    background-color: #1565c0;
+    border: 1px solid #000000;
+    border-radius: 6px; 
+    padding: 6px 14px;        
+    font-size: 14px;          /* Achica la letra*/
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-family: inherit;  /**/       
+    margin: 0; 
+}
+
+.btn-azul:hover {
+    background-color: #003366;
+}
+/*---------INTERRUPTOR PARA LA ACCION PUBLICAR -----------*/
+
+.accion_publicar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* Contenedor del switch (el tamaño total del botón) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+
+/* Escondemos el checkbox original del navegador */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* El fondo del interruptor (cuando está desactivado) */
+.deslizador {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red ;/* azul cuando está apagado */
+    transition: .3s;
+    border-radius: 24px;   
+}
+
+/* bolita blanca que se desplaza */
+.deslizador:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%; /* Esfera */
+}
+
+/* --- ESTADOS CUANDO SE ACTIVA (CHECKED) --- */
+
+/* Cambia el fondo a verde */
+.switch input:checked + .deslizador {
+    background-color: #4caf50; 
+}
+
+/* Desplaza la bolita blanca hacia la derecha */
+.switch input:checked + .deslizador:before {
+    transform: translateX(20px);
+}

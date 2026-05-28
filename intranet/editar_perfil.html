@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>EDITAR PERFIL</title>
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedores_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -64,15 +68,17 @@
     </header>
 <!----------- FIN DE HEADER--------------------------------------->
     <hr>
-    <main>
+    <main class="main">
         <!--PANEL DE ACCESO RÁPIDO-->
-        <div>
-            <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Inicio">
-            <a href="../intranet/panel.html">PANEL</a>
-        </div>        
+        <div class="contenedor-panel">
+            <div class="Panel">
+                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
+                <a href="../intranet/panel.html">PANEL</a>
+            </div>
+        </div>       
         <h2>EDITAR PERFIL</h2>
 
-        <section>
+        <section class="contenedor-general">
             <div>
                 <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil actual" width="100">
                 <button type="button">CAMBIAR FOTO</button>
@@ -114,15 +120,14 @@
                     <input type="tel" value="+549-2705-869344">
                 </div>
 
-                <div>
-                    <button type="submit">GUARDAR CAMBIOS</button>
-                    <a href="../intranet/gestion_de_perfil_roles.html">Cancelar</a>
+                <div class="botones-inferiores">
+                    <button type="submit"class="btn-azul">GUARDAR CAMBIOS</button>
+                    <a href="../intranet/gestion_de_perfil_roles.html" class="btn-azul">Cancelar</a>
                 </div>
             </form>
         </section>
     </main>
 
-    <br><br>
 
     <!-- -------------FOOTER------------------>
     <!-- FOOTER -->

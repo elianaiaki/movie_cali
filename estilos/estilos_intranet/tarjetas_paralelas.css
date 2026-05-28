@@ -1,0 +1,60 @@
+/* --- CONTENEDOR DE TARJETAS --- */
+
+.contenedor-tarjetas {
+    display: flex ;
+    flex-direction: row ;/*para q las tarjetas esten una al lado de la otra*/
+    justify-content: center; /* para que se junten en el centro */
+    align-items: flex-start; /* Alinea sus partes superiores */
+    gap: 50px ;              /* Espacio entre ellas */
+    width: 100%;
+    box-sizing: border-box; /*para q no se desborde si agrego el borde al contenedor*/
+    flex:3;
+}
+
+/* --- ESTILO DE LAS TARJETAS --- */
+
+.Tarjeta {
+    background-color:#e6e6e6;
+    border: 3px solid #000000;
+    border-radius: 20px; /*redondea las esquinas*/
+    padding: 20px;/*espacio entre el texto y borde*/
+    width: 390px; /*limita el ancho de las tarjeta sin importar el tamaño de la pantalla*/
+    min-width: 380px;
+    box-sizing: border-box; 
+    margin: 0 ; 
+    display: flex;/*ordena lo q esta dentro de la tarjeta*/
+    flex-direction: column; /*ordena el contenido en colum*/
+    align-items: center; /* Centra el contenido que vaya suelto dentro */
+}
+
+/* --- CONTENIDO DE C/TARJETAS --- */
+
+.Tarjeta h3,.Tarjeta h4,.Tarjeta p,.Tarjeta nav {
+    text-align: center; 
+    margin-bottom: 15px;/*margen para lo q hay abajo*/
+    width: 100%;
+    padding: 20px;
+}
+.Tarjeta nav a{
+    text-decoration: none;
+    color:#000;
+    border:1px solid #000000;
+    background-color:#1565c0;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 50px;
+}
+.Tarjeta nav a:hover{
+    background-color: #003366; /* Cambio de color al pasar el mouse */
+}
+.Tarjeta ul {
+    padding-left: 20px; 
+    text-align: left; /* Las listas alineadas a la izquierda */
+    margin-top: 5px;
+}
+
+.Tarjeta h5 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    text-align: left;
+}

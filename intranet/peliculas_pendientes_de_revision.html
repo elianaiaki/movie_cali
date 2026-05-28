@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>Peliculas Pendientes de Revision</title>
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/tarjetas_paralelas.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/aside_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -63,113 +68,104 @@
     </header>
     <br><br>
 <!-------- FIN DE HEADER---------------------------------------------------->
-    <main>
-        <div>
-            <a href="../intranet/panel.html">PANEL</a>
-            <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
+    <main class="main">
+        <div class="contenedor-panel">
+            <div class="Panel">
+                <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30">
+                <a href="../intranet/panel.html">PANEL</a>
+            </div>
         </div>
-        <br>
+        
         <h1>PELICULAS PENDIENTES DE REVISION</h1>
-        <br>
+        
         <!-- BOTONES -->
-        <table>
-            <tr>
-                <td style="width: 33%; text-align: left;">
-                    <a href="../intranet/agregar_nueva_pelicula.html">
-                        + AGREGAR NUEVA PELICULA
-                    </a>
-                </td>
-                <td style="width: 33%; text-align: center;">
-                    <select>
-                        <option>FILTROS AVANZADOS</option>
-                        <option>pendientes</option>
-                        <option>aprobados</option>
-                        <option>rechazados</option>
-                    </select>
-                </td>
-                <td style="width: 33%; text-align: right;">
-                    <a href="../intranet/agregar_nuevo_actor.html">
-                        + AGREGAR NUEVO ACTOR
-                    </a>
-                </td>
-            </tr>
-        </table>
-        <br><br>
+        <div class="Contenedor-Botones-superior">
+            <a class="boton-superior" href="../intranet/agregar_nueva_pelicula.html"> + AGREGAR NUEVA PELICULA </a>
+            <select class="boton-superior">
+                <option>FILTROS AVANZADOS</option>
+                <option>pendientes</option>
+                <option>aprobados</option>
+                <option>rechazados</option>
+            </select>
+            <a class="boton-superior" href="../intranet/agregar_nuevo_actor.html"> + AGREGAR NUEVO ACTOR </a>
+        </div>
+        
 <!-----------------------Tarjetas----------------------------------------------->
-        <section class="tarjetas_peliculas_pendientes" width="20%" height="50%" >
-            <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" width="120" height="100" align="center">
-            <h3>Titulo:</h3>
-            <p id="001">El diablo viste a la Moda 2</p>
-            <h3>Sinopsis</h3>
-            <p> Miranda Priestly, leyenda de la moda<br>
-            y directora de Runway, se enfrenta a una<br>
-            nueva amenaza: Emily Charlton, su ambiciosa<br>
-            exasistente ahora convertida en poderosa<br>
-            ejecutiva de una empresa rival.En un panorama<br>
-            donde los medios impresos pierden terreno frente<br>
-            al mundo digital,ambas mujeres se enfrentan<br>
-            en una intensa batalla por los ingresos publicitarios.<br>
-            Mientras Miranda se acerca a la jubilación,<br>
-            lucha por mantener su legado intacto,<br>
-            generando un juego de poder, ingenio y<br>
-            ambición en el difícil mundo de la moda y los medios.
-            </p>
-            <h3>Calificación:</h3>
-                <p>8.5 / 10</p> 
-            <h3>Director:</h3>
-                <p>por David Frankel</p>
-            <h3>Reparto:</h3>
-            <p>Meryl Streep, Anne Hathaway, Emily Blunt</p>
-            <img src="../recursos/imagenes/Reparto/Meryl_streep.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/anne_hathaway.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/emili_blunt.jpg" width="50" height="50">
-            <h3>Trailer</h3>
-            <video width="320" height="240" controls>
-                <source src="../recursos/Videos/Eldiablovistealamoda2_TRAILER.mp4" type="video/mp4">      
-            </video>
-            <h3>Genero:</h3>
-                <p>Comedia, Drama</p>
-            <h3>Duracion:</h3>
-                <p>1h 59min</p>
-            <h3>Año de Estreno:</h3>
-                <p>30 de Abril 2026</p>
-            <h3>Plataformas:</h3>
-            <img src="../recursos/imagenes/iconos/disney_plus.png " width="30" height="30">
-            <div class="tarjetas_acciones">
-                <div class="guardar_accion">
-                    <button type="button">GUARDAR CAMBIOS</button>
+        <div class="contenedor-tarjetas">
+            <section class="Tarjeta" width="20%" height="50%" >
+                <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" width="120" height="100" align="center">
+                <h3>Titulo:</h3>
+                <p id="001">El diablo viste a la Moda 2</p>
+                <h3>Sinopsis</h3>
+                <p> Miranda Priestly, leyenda de la moda
+                y directora de Runway, se enfrenta a una
+                nueva amenaza: Emily Charlton, su ambiciosa
+                exasistente ahora convertida en poderosa
+                ejecutiva de una empresa rival.En un panorama
+                donde los medios impresos pierden terreno frente
+                al mundo digital,ambas mujeres se enfrentan
+                en una intensa batalla por los ingresos publicitarios.
+                Mientras Miranda se acerca a la jubilación,
+                lucha por mantener su legado intacto,
+                generando un juego de poder, ingenio y
+                ambición en el difícil mundo de la moda y los medios.
+                </p>
+                <h3>Calificación:</h3>
+                    <p>8.5 / 10</p> 
+                <h3>Director:</h3>
+                    <p>por David Frankel</p>
+                <h3>Reparto:</h3>
+                <p>Meryl Streep, Anne Hathaway, Emily Blunt</p>
+                <img src="../recursos/imagenes/Reparto/Meryl_streep.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/anne_hathaway.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/emili_blunt.jpg" width="50" height="50">
+                <h3>Trailer</h3>
+                <video width="320" height="240" controls>
+                    <source src="../recursos/Videos/Eldiablovistealamoda2_TRAILER.mp4" type="video/mp4">      
+                </video>
+                <h3>Genero:</h3>
+                    <p>Comedia, Drama</p>
+                <h3>Duracion:</h3>
+                    <p>1h 59min</p>
+                <h3>Año de Estreno:</h3>
+                    <p>30 de Abril 2026</p>
+                <h3>Plataformas:</h3>
+                <img src="../recursos/imagenes/iconos/disney_plus.png " width="30" height="30">
+                <div class="botones-inferiores">
+                    <div class="guardar_accion">
+                        <button type="button" class="btn-azul">GUARDAR CAMBIOS</button>
+                    </div>
+                    <div class="modificables">
+                        <a href="../intranet/Confirmacion_eliminacion_pelicula.html" class="btn-azul">ELIMINAR PELÍCULA</a>
+                        <a href="../intranet/editar_pelicula_intranet.html" class="btn-azul">EDITAR</a>
+                    </div>
+                    <div class="accion_publicar">
+                        <span class="texto-publicar">PUBLICA</span>
+                        <label class="switch">
+                            <input type="checkbox" id="publicar-check">
+                            <span class="deslizador"></span>
+                        </label>
+                    </div>
                 </div>
-                <div class="tarjetas_modificables">
-                    <a href="../intranet/Confirmacion_eliminacion_pelicula.html">ELIMINAR PELÍCULA</a> <!--BOTON-->
-                    <a href="../intranet/editar_pelicula_intranet.html">EDITAR</a> <!--BOTON-->
-                </div>
-                <div class="tarjeta_accion_publicar">
-                        PUBLICA
-                        <input type="checkbox">
-                </div>
-            </div>    
-        </section> 
+            </section> 
     
-        <br>
-        <br>
-        <br>
  <!------------TARJETA 2 ------------------------->
-        <section class="tarjetas_peliculas_pendientes" width="20%" height="50%" >
+            <section class="Tarjeta" width="20%" height="50%" >
                 <img src="../recursos/imagenes/peliculas/Mercy.jpg" width="120" height="100" align="center">
                 <h3>Titulo Original:</h3>
                 <p>Mercy - Sin piedad </p>
                 <h3>Sinopsis</h3>
-                <p> La trama de Mercy se desarrolla en un mundo<br>
-                distópico donde la violencia y los crímenes graves<br>
-                se han vuelto cada vez más comunes, lo que ha llevado<br>
-                a una creciente inseguridad social. En este contexto,<br>
-                el personaje principal, interpretado por Chris Pratt,<br>
-                es un detective que se ve atrapado en una serie de<br>
-                circunstancias que lo colocan en el centro de una <br>
-                investigación por un asesinato violento que no cometió.<br>
-                A medida que intenta limpiar su nombre, se enfrenta<br>
-                a la difícil tarea de desentrañar una red de corrupción<br>
-                y encubrimiento mientras navega por un sistema judicial<br>
+                <p> La trama de Mercy se desarrolla en un mundo
+                distópico donde la violencia y los crímenes graves
+                se han vuelto cada vez más comunes, lo que ha llevado
+                a una creciente inseguridad social. En este contexto,
+                el personaje principal, interpretado por Chris Pratt,
+                es un detective que se ve atrapado en una serie de
+                circunstancias que lo colocan en el centro de una 
+                investigación por un asesinato violento que no cometió.
+                A medida que intenta limpiar su nombre, se enfrenta
+                a la difícil tarea de desentrañar una red de corrupción
+                y encubrimiento mientras navega por un sistema judicial
                 que parece estar cada vez más desbordado y parcial.
                 </p>
                 <h3>Calificación:</h3>
@@ -193,39 +189,40 @@
                     <p>23 de Enero 2026</p>
                 <h3>Plataformas:</h3>
                 <img src="../recursos/imagenes/iconos/amazon-prime-video.png" width="30" height="30">
-                <div class="tarjetas_acciones">
+                <div class="botones-inferiores">
                     <div class="guardar_accion">
-                        <button type="button">GUARDAR CAMBIOS</button>
+                        <button type="button" class="btn-azul">GUARDAR CAMBIOS</button>
                     </div>
-                    <div class="tarjetas_modificables">
-                        <a href="../intranet/Confirmacion_eliminacion_pelicula.html">ELIMINAR PELÍCULA</a> <!--BOTON-->
-                        <a href="../intranet/editar_pelicula_intranet.html">EDITAR</a> <!--BOTON-->
+                    <div class="modificables">
+                        <a href="../intranet/Confirmacion_eliminacion_pelicula.html" class="btn-azul">ELIMINAR PELÍCULA</a>
+                        <a href="../intranet/editar_pelicula_intranet.html" class="btn-azul">EDITAR</a>
                     </div>
-                    <div class="tarjeta_accion_publicar">
-                            PUBLICA
-                            <input type="checkbox">
+                    <div class="accion_publicar">
+                        <span class="texto-publicar">PUBLICA</span>
+                        <label class="switch">
+                            <input type="checkbox" id="publicar-check">
+                            <span class="deslizador"></span>
+                        </label>
                     </div>
-                </div>    
-        </section> 
-        <br>
-        <br>
-        <br>
+                </div>
+            </section> 
+       
 
 <!------------TARJETA 3 ------------------------->
-        <section class="tarjetas_peliculas_pendientes" width="20%" height="50%" >
+            <section class="Tarjeta" width="20%" height="50%" >
                 <img src="../recursos/imagenes/peliculas/Ayuda.jpeg" width="120" height="100" align="center">
                 <h3>Titulo Original:</h3>
                 <p>Send Help - Ayuda </p>
                 <h3>Sinopsis</h3>
-                <p> Dos compañeros de trabajo (jefe y empleada)<br>
-                se convierten en los únicos supervivientes tras<br>
-                un accidente aéreo y quedan varados en una isla<br>
-                desierta. Mientras luchan por sobrevivir, deben<br>
-                dejar de lado los rencores del pasado y aprender<br>
-                a colaborar, enfrentándose a desafíos físicos y mentales.<br>
-                La convivencia forzada y las tensiones acumuladas<br>
-                convierten su supervivencia en una batalla de voluntades,<br>
-                ingenio y resistencia, donde cada decisión puede ser<br>
+                <p> Dos compañeros de trabajo (jefe y empleada)
+                se convierten en los únicos supervivientes tras
+                un accidente aéreo y quedan varados en una isla
+                desierta. Mientras luchan por sobrevivir, deben
+                dejar de lado los rencores del pasado y aprender
+                a colaborar, enfrentándose a desafíos físicos y mentales.
+                La convivencia forzada y las tensiones acumuladas
+                convierten su supervivencia en una batalla de voluntades,
+                ingenio y resistencia, donde cada decisión puede ser
                 la diferencia entre la vida y la muerte en un entorno implacable.
                 </p>
                 <h3>Calificación:</h3>
@@ -249,37 +246,48 @@
                     <p>30 de Enero 2026</p>
                 <h3>Plataformas:</h3>
                 SOLO EN CINES
-                <div class="tarjetas_acciones">
+                <div class="botones-inferiores">
                     <div class="guardar_accion">
-                        <button type="button">GUARDAR CAMBIOS</button>
+                        <button type="button" class="btn-azul">GUARDAR CAMBIOS</button>
                     </div>
-                    <div class="tarjetas_modificables">
-                        <a href="../intranet/Confirmacion_eliminacion_pelicula.html">ELIMINAR PELÍCULA</a> <!--BOTON-->
-                        <a href="../intranet/editar_pelicula_intranet.html">EDITAR</a> <!--BOTON-->
+                    <div class="modificables">
+                        <a href="../intranet/Confirmacion_eliminacion_pelicula.html" class="btn-azul">ELIMINAR PELÍCULA</a>
+                        <a href="../intranet/editar_pelicula_intranet.html" class="btn-azul">EDITAR</a>
                     </div>
-                    <div class="tarjeta_accion_publicar">
-                            PUBLICA
-                            <input type="checkbox">
+                    <div class="accion_publicar">
+                        <span class="texto-publicar">PUBLICA</span>
+                        <label class="switch">
+                            <input type="checkbox" id="publicar-check">
+                            <span class="deslizador"></span>
+                        </label>
                     </div>
-                </div>    
-        </section> 
-        <br>
-        <br>
-        <br>
-        <aside class="Actividades_recientes">
-            <h4> ACTIVIDADES RECIENTES</h4>
-            <p>Alan eliminó Gladiadores.<br>
-            Proyecto salvacion se aprobó correctamente.<br>
-            Como Cabras se publicó correctamente.<br>
-            Gabriel solicitó revision de Parque Lezama.<br>
-            Eliana aprobó Venganza.<br>
-            Gisela solicito revisar reseña.<br>
-            </p>
-        </aside>
+                </div>
+            </section> 
+        
+            <aside>
+                <h2> ACTIVIDADES RECIENTES</h2>
+                <div class="item-aside">
+                    <p class="Rol">Desarrollador</p>
+                    <h3>Usuario_24 Elimino Gladiadores</h3>
+                    <img src="../recursos/imagenes/usuarios/usuario_1.jpg" width="40" height="40">
+                    <p class="descripcion">Lunes 19 de mayo 18:35hs</p>
+                </div>
+                <div class="item-aside">
+                    <p class="Rol">Administrador</p>
+                    <h3>Usuario_92 Aprobo Proyecto Salvacion correctamente</h3>
+                    <img src="../recursos/imagenes/usuarios/usuario_2.jpg" width="40" height="40">
+                    <p class="descripcion">Jueves 21 de mayo 18:35hs</p>
+                </div>
+                <div class="item-aside">
+                    <p class="Rol">Testing</p>
+                    <h3>Usuario_74 solicito revision de Parque Lezama</h3>
+                    <img src="../recursos/imagenes/usuarios/usuario_3.jpg" width="40" height="40">
+                    <p class="descripcion">Miercoles 27 de mayo 18:35hs</p>
+                </div>
+            </aside>
+        </div>
     </main>
-    <br>
-    <br>
-    <br>
+    
 <!---------FOOTER---------------------------------------------------------------------------------->
     <!-- FOOTER -->
     <footer class="footer">

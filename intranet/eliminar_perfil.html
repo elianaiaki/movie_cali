@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>ELIMINAR PERFIL</title>
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedores_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -64,17 +68,18 @@
     </header>
 <!-------------FIN DE HEADER-------------------------->
     <hr>
-    <main>
+    <main class="main">
         <!-- PANEL DE ACCESO RÁPIDO -->
-        <div>
-            <img src="../recursos/imagenes/iconos/Home.png" width="30" height="30" alt="Inicio">
-            <a href="../intranet/panel.html">PANEL</a>
+        <div class="contenedor-panel">
+            <div class="Panel">
+                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
+                <a href="../intranet/panel.html">PANEL</a>
+            </div>
         </div>
-        <br>
 
         <h2>ELIMINAR PERFIL</h2>
 
-        <section>
+        <section class="contenedor-general">
             <h3>¿Seguro que desea eliminar este Perfil?</h3>
 
             <div>
@@ -90,14 +95,12 @@
                 </div>
             </div>
 
-            <div>
-                <button type="button">ELIMINAR</button>
-                <a href="../intranet/gestion_de_perfil_roles.html">Cancelar</a>
+            <div class="botones-inferiores">
+                <button type="button" class="btn-azul">ELIMINAR</button>
+                <a href="../intranet/gestion_de_perfil_roles.html" class="btn-azul">Cancelar</a>
             </div>
         </section>
     </main>
-
-    <br><br>
 
     <!-- FOOTER -->
     <footer class="footer">
