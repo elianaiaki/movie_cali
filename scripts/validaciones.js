@@ -1,4 +1,3 @@
-alert("JS conectado");
 function usuarioValido(usuario) {
 
     // Entre 4 y 16 caracteres, letras, números y _

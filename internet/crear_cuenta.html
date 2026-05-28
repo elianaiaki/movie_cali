@@ -4,9 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <title>Crear cuenta</title>
+      <!-- CONEXION CON JS -->
+    <script src="../scripts/validaciones.js"></script>
+    <!-- <script>
+
+        function asociarValidacion(){
+
+        
+            // Obtener el formulario usando su id
+            const formulario = document.getElementById("crear_cuenta");
+
+            // Escuchar el evento submit (cuando se envía el formulario)
+            formulario.addEventListener("submit", function(event){
+
+                // Evita que el formulario se envíe automáticamente
+                event.preventDefault();
+
+                // =========================
+                // VALIDAR USUARIO
+                // =========================
+                
+                let hayError = false
+                let mensajeError = "se encontraron los siguientes errores:\n"
+
+                // Obtener el valor escrito en el input usuario
+                const usuario = document.getElementById("usuario").value;
+
+                // Verificar si el usuario NO es válido
+                if(
+                    !usuarioValido(usuario)
+                ){
+                    hayError=true
+                    mensajeError = mensajeError + "\nUsuario o correo inválido"
+                }
+
+                // =========================
+                // VALIDAR CORREO
+                // =========================
+
+                // Obtener el valor del correo
+                const correo = document.getElementById("correo").value;
+
+                // Verificar si el correo NO es válido
+                if(
+                    !correoValido(correo)
+                ){
+                    hayError=true
+                    mensajeError = mensajeError + "\ncorreo inválido"
+                }
+
+                // =========================
+                // VALIDAR CONTRASEÑA
+                // =========================
+
+                // Obtener contraseña escrita
+                const contrasenia = document.getElementById("contrasenia").value;
+                const confirmarContrasenia = document.getElementById("confirmarContrasenia").value
+                if (contrasenia == confirmarContrasenia){    
+                    // Verificar si la contraseña NO es válida
+                    if(
+                        !contraseniaValida(contrasenia) && !contraseniaValida(confirmarContrasenia)
+                    ){
+                        hayError=true
+                        mensajeError = mensajeError.concat("\nContraseña inválida")
+                    }
+                    if (hayError){
+                        alert(mensajeError);
+                        return 
+                    }
+                    if (contrasenia = confirmarContrasenia){
+                        return 
+                }
+                
+                // Enviar formulario manualmente
+                formulario.submit();
+
+            });
+         }
+    </script> -->
+
+    <script>
+
+        function asociarValidacion(){
+
+            // Obtener formulario
+            const formulario = document.getElementById("crear_cuenta");
+
+            // Evento submit
+            formulario.addEventListener("submit", function(event){
+
+                // Frenar envío automático
+                event.preventDefault();
+
+                // Variables de control
+                let hayError = false;
+
+                let mensajeError = "Se encontraron los siguientes errores:\n";
+
+                // =========================
+                // VALIDAR USUARIO
+                // =========================
+
+                const usuario = document.getElementById("usuario").value;
+
+                if(!usuarioValido(usuario)){
+                    hayError = true;
+                    mensajeError += "\n- Usuario inválido";
+                }
+                // =========================
+                // VALIDAR CORREO
+                // =========================
+                const correo = document.getElementById("correo").value;
+                if(!correoValido(correo)){
+                    hayError = true;
+                    mensajeError += "\n- Correo inválido";
+                }
+                // =========================
+                // VALIDAR CONTRASEÑA
+                // =========================
+                const contrasenia = document.getElementById("contrasenia").value;
+                const confirmarContrasenia = document.getElementById("confirmarContrasenia").value;
+                // Validar formato contraseña
+                if(!contraseniaValida(contrasenia)){
+                    hayError = true;
+                    mensajeError += "\n- Contraseña inválida";
+                }
+                // Validar que coincidan
+                if(contrasenia !== confirmarContrasenia){
+                    hayError = true;
+                    mensajeError += "\n- Las contraseñas no coinciden";
+                }
+                // =========================
+                // MOSTRAR ERRORES
+                // =========================
+                if(hayError){
+                    alert(mensajeError);
+                    return;
+                }
+                // =========================
+                // TODO CORRECTO
+                // =========================
+                alert("Cuenta creada correctamente");
+                formulario.submit();
+            });
+        }
+    </script>
 </head>
 
-<body>
+<body onload="asociarValidacion()">
 
     <!-- HEADER -->
     <header>
@@ -39,7 +184,7 @@
  
     <!------------------------------------------------------------------------------------------->
 
-<section>
+    <section>
 
         <h1>CREAR UNA CUENTA</h1>
 
@@ -47,14 +192,14 @@
 
             <!-- Usuario -->
             <div>
-                <label>USUARIO</label><br>
+                <label for="usuario">USUARIO</label><br>
                 <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20">
                 <input type="text" id="usuario">
             </div>
 
             <!-- Correo Electrónico -->
             <div>
-                <label>CORREO ELECTRÓNICO</label><br>
+                <label for="correo">CORREO ELECTRÓNICO</label><br>
                 <img src="../recursos/imagenes/iconos/correo.png" alt="icono correo" width="20" height="20">
                 <input type="email" id="correo">
             </div>
@@ -71,7 +216,7 @@
             <div>
                 <label>CONFIRMAR CONTRASEÑA</label><br>
                 <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20">
-                <input type="password">
+                <input type="password" id="confirmarContrasenia">
                 <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="mostrar contraseña" width="20" height="20">
             </div>
 
@@ -109,74 +254,6 @@
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- CONEXION CON JS -->
-    <script src="../scripts/validaciones.js"></script>
-
-    <script>
-
-        // Obtener formulario
-        const formulario = document.getElementById("crear_cuenta");
-
-        // Evento submit
-        formulario.addEventListener("submit", function(event){
-
-            // Frenar envío automático
-            event.preventDefault();
-
-            // Obtener valores
-            const usuario = document.getElementById("usuario").value;
-
-            // Validar usuario o correo
-            if(
-                !usuarioValido(usuario)
-            ){
-
-                alert("Usuario o correo inválido");
-
-                return;
-            }
-
-            // Obtener valores
-            const correo = document.getElementById("correo").value;
-
-            // Validar correo
-            
-            if(
-                !correoValido(correo)
-            ){
-
-                alert("Correo invalido");
-
-                return;
-            }
-
-            // Validar contraseña
-
-            const contrasenia = document.getElementById("contrasenia").value;
-
-            // Validar contraseña
-            if(
-                !contraseniaValida(contrasenia)
-            ){
-
-                alert("Contraseña inválida");
-
-                return;
-            }
-
-            // Si todo está bien
-            alert("Contraseña valida");
-
-            // Enviar formulario manualmente
-            formulario.submit();
-
-
-
-        });
-
-        
-
-    </script>
- 
+  
 </body>
 </html>
