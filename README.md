@@ -1,11 +1,10 @@
 # 🎬 MovieCali
 
-> Plataforma web de reseñas y trailers de películas y series. Explorá fichas técnicas, mirá trailers y leé o escribí opiniones de la comunidad cinéfila.
 
 <div align="center">
   <img width="3780" height="1890" alt="logo" src="https://github.com/user-attachments/assets/ce2322cd-c755-40d8-bd2d-2bb648a47c71" />
 
-  Plataforma web de reseñas y trailers de películas y series. Explorá fichas técnicas, mirá trailers y leé o escribí opiniones de la comunidad cinéfila.
+ > Plataforma web de reseñas y trailers de películas y series. Explorá fichas técnicas, mirá trailers y leé o escribí opiniones de la comunidad cinéfila.
 </div>
 
 
