@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -76,51 +78,61 @@
             </div>
         </div>
 <!------------------------------------------------------------------------------------------->
-        <div>
-            <h1>+ AGREGAR NUEVOS ACTORES</h1>
+        <div class="contenedor-formulario">
+            <h2>+ AGREGAR NUEVOS ACTORES</h2>
+            
+            <form id="form_agregar_actor">
+                
+                <div class="grupo-campo">
+                    <label for="Nombre_actor">Nombre:</label>
+                    <input type="text" id="Nombre_actor" class="input-texto" placeholder="Ingrese Nombre Completo">
+                </div>
 
-            <table border="1" width="92%" align="center">
-                <tr>
-                    <td width="100%">
-                        <p>   </p>
-                    </td>
-                </tr>
-                <tr>    
-                    <td>
-                        <p>Agregar Actores</p>
-                        <form>
-                            <label for="Nombre_actor">Nombre: </label>
-                            <input type="text" placeholder="Ingrese Nombre Completo">
-                            <label for="Apellido_actor">Apellido: </label>
-                            <input type="text" placeholder="Ingrese Apellido Completo"><br>
-                            <label for="Participo_pelis">Peliculas en las que participó: </label>
-                            <select name="participo_pelis">
-                                <optgroup label="Listados Peliculas">
-                                    <option value="Bone Keeper"> Bone Kepper</option>
-                                    <option value="Rascacielo en vivo">Rascacielo en vivo</option>
-                                </optgroup>
-                                <input type="text" placeholder="Agregar nueva participacion">
-                            </select> <br>
-                            <label for="participo_series">Series en la que participó: </label>
-                            <select name="participo_series">
-                                <optgroup label="Listados Series">
-                                    <option value="Wonder Man"> Wonder Man </option>
-                                    <option value="Un Familiar">Un Familiar</option>
-                                    <option value="El Robo">El Robo</option>
-                                </optgroup>
-                                <input type="text" placeholder="Agregar nueva participacion">
-                            </select> <br>
-                                    
-                            <label for="Poster">Subir imagen: </label>
-                            <input type="file" id="Poster" name="poster_image" accept="image/*" required>
-                            <button type="submit">Examinar</button><br>
-                            <br>
-                            <button type="submit">Guardar Cambios</button> 
-                            <a href="../intranet/peliculas_pendientes_de_revision.html">Cancelar</a>
-                        </form>
-                    </td>
-                </tr>
-            </table>
+                <div class="grupo-campo">
+                    <label for="Apellido_actor">Apellido:</label>
+                    <input type="text" id="Apellido_actor" class="input-texto" placeholder="Ingrese Apellido Completo">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Participo_pelis">Películas en las que participó:</label>
+                    <div class="reparto-contenedor">
+                        <select name="participo_pelis" id="Participo_pelis">
+                            <optgroup label="Listado de Películas">
+                                <option value="Bone Keeper">Bone Keeper</option>
+                                <option value="Rascacielo en vivo">Rascacielo en vivo</option>
+                            </optgroup>
+                        </select>
+                        <input type="text" class="input-texto" placeholder="Agregar nueva participación">
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="participo_series">Series en las que participó:</label>
+                    <div class="reparto-contenedor">
+                        <select name="participo_series" id="participo_series">
+                            <optgroup label="Listado de Series">
+                                <option value="Wonder Man">Wonder Man</option>
+                                <option value="Un Familiar">Un Familiar</option>
+                                <option value="El Robo">El Robo</option>
+                            </optgroup>
+                        </select>
+                        <input type="text" class="input-texto" placeholder="Agregar nueva participación">
+                    </div>
+                </div>
+
+                <div class="grupo-campo-archivo">
+                    <label for="Poster">Subir imagen del actor:</label>
+                    <div class="subir-archivo">
+                        <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                    </div>
+                </div>
+
+                <div class="botones-inferiores">
+                    <button type="submit" class="btn-gris">Guardar Cambios</button>
+                    <button type="reset" class="btn-gris">Restablecer</button>
+                    <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
+                </div>
+            </form>
         </div>
     </main>
 

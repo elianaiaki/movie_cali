@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -74,66 +76,103 @@
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
+        <h1>+ AGREGAR NUEVA SERIE</h1>
 <!------------------------------------------------------------------------------------------->
-        <div>
-            <h1>+ AGREGAR NUEVA SERIE</h1>
+       <div class="contenedor-formulario">
+            <h2>Agregar Serie</h2>
+            
+            <form id="form_agregar">
+                
+                <div class="grupo-campo">
+                    <label for="Titulo_serie">Título:</label>
+                    <input type="text" id="Titulo_serie" class="input-texto" placeholder="Vladimir">
+                </div>
 
-            <table border="1" width="92%" align="center">
-                <tr>
-                    <td width="100%">
-                        <p>   </p>
-                    </td>
-                </tr>
-                <tr>    
-                    <td>
-                        <p>Agregar Serie</p>
-                        <form>
-                            <label for="Titulo_serie">Titulo: </label>
-                            <input type="text" placeholder="Vladimir">
-                            <label for="Genero_serie">Genero: </label>
-                            <input type="text" placeholder="Comedia, Drama">
-                            <label for="Año_estreno">Año de Estreno: </label>
-                            <input type="text" placeholder="20 de Abril 2026">
-                            <label for="Duracion_serie">Duración: </label>
-                            <input type="text" placeholder="30 min">
-                            <label for="Director">Director </label>
-                            <input type="text" placeholder="Shari Springer Berman">
-                            <label for="Productor_serie">Productor: </label>
-                            <input type="text" placeholder="Ingrese nombre y apellido">
-                            <label for="Calificacion_serie">Calificacion General: </label>
-                            <input type="text" placeholder="6.5 / 10">
-                            <label for="icons_plataforma">Plataformas: </label>
-                            <input type="file" id="icons_plataforma" name="icons_plataforma" accept="image/*" required>
-                            <button type="submit">Examinar</button><br>
-                            <label for="Cant_temporadas">Temporadas: </label>
-                            <input type="text" placeholder="Cant_temporadas"><br>
-                            <label for="clasificacion_edad">Clasificacion por Edad: </label>
-                            <input type="text" placeholder="+18">
-                            <label for="Reparto">Reparto: </label>
-                            <select name="reparto">
-                                <optgroup label="Listados">
-                                    <option value="Rachel Weisz"> Rachel Weisz</option>
-                                </optgroup>
-                                <input type="text" placeholder="Agregar nuevos actores">
-                            </select> <br>
-                            <label for="sinopsis_serie">Sinopsis: </label><br>
-                            <textarea id="sinopsis" name="sinopsis_serie" rows="4" cols="100">
-                                Escribe aquí el resumen de la trama..
-                            </textarea> <br>
-                            <label for="video-upload">Trailer:</label>
-                            <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
-                            <button type="submit">Subir Trailer</button><br>              
-                            <label for="Poster">Cargar Poster: </label>
-                            <input type="file" id="Poster" name="poster_image" accept="image/*" required>
-                            <button type="submit">Examinar</button><br>
-                            <br>
-                            <button type="submit">Guardar Cambios</button> 
-                            <button type="reset">Cancelar</button>
-                            <a href="../intranet/series_pendientes_de_revision_intra.html">Cancelar</a> <!--BOTON-->
-                        </form>
-                    </td>
-                </tr>
-            </table>
+                <div class="grupo-campo">
+                    <label for="Genero_serie">Género:</label>
+                    <input type="text" id="Genero_serie" class="input-texto" placeholder="Comedia, Drama">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Ano_estreno">Año de Estreno:</label>
+                    <input type="text" id="Ano_estreno" class="input-texto" placeholder="20 de Abril 2026">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Duracion_serie">Duración:</label>
+                    <input type="text" id="Duracion_serie" class="input-texto" placeholder="30 min">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Director">Director:</label>
+                    <input type="text" id="Director" class="input-texto" placeholder="Shari Springer Berman">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Productor_serie">Productor:</label>
+                    <input type="text" id="Productor_serie" class="input-texto" placeholder="Ingrese nombre y apellido">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Calificacion_serie">Calificación General:</label>
+                    <input type="text" id="Calificacion_serie" class="input-texto" placeholder="6.5 / 10">
+                </div>
+
+                <div class="grupo-campo-archivo">
+                    <label for="icons_plataforma">Plataformas (Icono):</label>
+                    <div class="subir-archivo">
+                        <input type="file" id="icons_plataforma" name="icons_plataforma" accept="image/*" required>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Cant_temporadas">Temporadas:</label>
+                    <input type="text" id="Cant_temporadas" class="input-texto" placeholder="Cant_temporadas">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="clasificacion_edad">Clasificación por Edad:</label>
+                    <input type="text" id="clasificacion_edad" class="input-texto" placeholder="+18">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Reparto">Reparto:</label>
+                    <div class="reparto-contenedor">
+                        <select name="reparto" id="Reparto">
+                            <optgroup label="Listados">
+                                <option value="Rachel Weisz">Rachel Weisz</option>
+                            </optgroup>
+                        </select>
+                        <input type="text" class="input-texto" placeholder="Agregar nuevos actores">
+                    </div>
+                </div>
+
+                <div class="grupo-campo-completo">
+                    <label for="sinopsis">Sinopsis:</label>
+                    <textarea id="sinopsis" name="sinopsis_serie" rows="4" placeholder="Escribe aquí el resumen de la trama..."></textarea>
+                </div>
+
+                <div class="grupo-campo-archivo">
+                    <label for="video-upload">Tráiler:</label>
+                    <div class="subir-archivo">
+                        <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
+                    </div>
+                </div>
+
+                <div class="grupo-campo-archivo">
+                    <label for="Poster">Cargar Póster:</label>
+                    <div class="subir-archivo">
+                        <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                    </div>
+                </div>
+
+                <div class="botones-inferiores">
+                    <button type="submit" class="btn-gris">Guardar Cambios</button>
+                    <button type="reset" class="btn-gris">Restablecer</button>
+                    <a href="../intranet/series_pendientes_de_revision_intra.html" class="btn-gris">Volver</a>
+                </div>
+
+            </form>
         </div>
     </main>
 

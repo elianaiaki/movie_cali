@@ -1,0 +1,80 @@
+/* Contenedor Principal */
+.contenedor-formulario {
+    background-color: #1a3a5c; /*color de fondo de tarjetas para todos*/
+    color: #ffffff;
+    width: 75%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Título */
+.contenedor-formulario h2 {
+    color: #fff;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Diseño en cuadrícula */
+#form_agregar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide el formulario en 3 columnas */
+    gap: 20px; /* Espacio entre los campos */
+}
+
+#form_agregar_actor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Campos individuales */
+.grupo-campo, .grupo-campo-archivo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campos que deben ocupar todo el ancho (como la Sinopsis y los Botones) */
+.grupo-campo-completo, .acciones-formulario {
+    grid-column: span 2; /* Ocupa las 2 columnas */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de las etiquetas (Labels) */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #d8d3d3;
+}
+
+/* Entradas de texto, Selects y Textareas */
+.input-texto, select, textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Contenedores juntos para el Reparto (Select + Input juntos) */
+.reparto-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Inputs de tipo archivo */
+input[type="file"] {
+    color: #bbb;
+    font-size: 14px;
+}

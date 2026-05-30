@@ -6,7 +6,10 @@
     <title>Gestion de catalogo</title>
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/titulos_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_vertical.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -64,155 +67,208 @@
             </div> 
         </div>
     </header>
-
-    <hr>
     <!-- FIN DE HEADER-->
 
 <!------------------------------------------------------------------------------------------->
-
-   <main class="main">
+    <main class="main">
         <div class="contenedor-panel">
             <div class="Panel">
                 <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
-<!------------------------------------------------------------------------------------------->
-        <div>
-            <h1>GESTIÓN DE CATÁLOGO</h1>
-            <h2>PELICULAS</h2>
-            <hr>
-<!--------------------------- PELICULAS  -------------------------------------------------------------->
-            <h2>PENDIENTES DE REVISIÓN</h2>
-            <p style="text-align: right;">
-                <a href="../intranet/peliculas_pendientes_de_revision.html">Ver Todo</a>
-            </p>
-            <table border="1" width="80%" align="center">
 
-                <tr>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/Mercy.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/Ayuda.jpeg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/hoppers.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/elDrama.jpg" width="120" height="100"></td>
-                </tr>
+        <div class="contenedor-vertical">
+            <h1 class="titulo-seccion">GESTIÓN DE CATÁLOGO</h1>
 
-                <tr>
-                    <td align="center"><button>VER</button></td>
-                    <td align="center"><button>VER</button></td>
-                    <td align="center"><button>VER</button></td>
-                    <td align="center"><button>VER</button></td>
-                    <td align="center"><button>VER</button></td>
-                </tr>
+            <div class="bloque-medio-catalogo">
+                <h2 class="titulo-medio">PELÍCULAS</h2>
+                <hr class="linea-division">
+                
+                <section class="categoria-bloque">
+                    <div class="fila-header">
+                        <h3 class="titulo-subcategoria">PELÍCULAS PENDIENTES DE REVISIÓN <span>▶</span></h3>
+                        <a href="../intranet/peliculas_pendientes_de_revision.html" class="enlace-ver-todo">Ver Todo</a>
+                    </div>
 
-            </table>
-            <br><br>
+                    <div class="cuadrícula-tarjetas">
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor">
+                                <button class="btn-ver">VER</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/Mercy.jpg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor">
+                                <button class="btn-ver">VER</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/Ayuda.jpeg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor">
+                                <button class="btn-ver">VER</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/hoppers.jpg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor">
+                                <button class="btn-ver">VER</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/elDrama.jpg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor">
+                                <button class="btn-ver">VER</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <h2>NUEVAS SOLICITUDES DE ALTA  </h2>
-            
-            <p style="text-align: right;">
-                <a href="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Ver Todo</a>
-            </p>
-            <table border="1" width="80%" align="center">
+                <section class="categoria-bloque">
+                    <div class="fila-header">
+                        <h3 class="titulo-subcategoria">NUEVAS SOLICITUDES DE ALTA <span>▶</span></h3>
+                        <a href="../intranet/nuevas_solicitudes_de_alta_peliculas.html" class="enlace-ver-todo">Ver Todo</a>
+                    </div>
 
-            
-                <tr>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/53domingos.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/alertaextincion.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/anaconda.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/obex.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/peliculas/avatarfuegoyceniza.jpg" width="120" height="100"></td>
+                    <div class="cuadrícula-tarjetas">
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/53domingos.jpg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor doble-boton">
+                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-revisar">Revisar Alta</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/alertaextincion.jpg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor doble-boton">
+                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-revisar">Revisar Alta</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/anaconda.jpg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor doble-boton">
+                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-revisar">Revisar Alta</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/obex.jpg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor doble-boton">
+                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-revisar">Revisar Alta</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/peliculas/avatarfuegoyceniza.jpg" alt="Película">
+                            </div>
+                            <div class="botones-contenedor doble-boton">
+                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-revisar">Revisar Alta</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-                </tr>
+            <div class="bloque-medio-catalogo" style="margin-top: 50px;">
+                <h2 class="titulo-medio">SERIES</h2>
+                <hr class="linea-division">
 
-                <tr>
-                    <td align="center">
-                        <button>Aprobar Alta</button><br>
-                        <button>Revisar Alta</button>
-                    </td>
+                <section class="categoria-bloque">
+                    <div class="fila-header">
+                        <h3 class="titulo-subcategoria">SERIES PENDIENTES DE REVISIÓN <span>▶</span></h3>
+                        <a href="../intranet/series_pendientes_de_revision_intra.html" class="enlace-ver-todo">Ver Todo</a>
+                    </div>
 
-                    <td align="center">
-                        <button>Aprobar Alta</button><br>
-                        <button>Revisar Alta</button>
-                    </td>
+                    <div class="cuadrícula-tarjetas">
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/series/vladimirr.jpg" alt="Serie">
+                            </div>
+                            <div class="botones-contenedor">
+                                <button class="btn-ver">VER</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/series/memorias_de_un_asesino.jpg" alt="Serie">
+                            </div>
+                            <div class="botones-contenedor">
+                                <button class="btn-ver">VER</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpeg" alt="Serie">
+                            </div>
+                            <div class="botones-contenedor">
+                                <button class="btn-ver">VER</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                    <td align="center">
-                        <button>Aprobar Alta</button><br>
-                        <button>Revisar Alta</button>
-                    </td>
+                <section class="categoria-bloque">
+                    <div class="fila-header">
+                        <h3 class="titulo-subcategoria">NUEVAS SOLICITUDES DE ALTA SERIES <span>▶</span></h3>
+                        <a href="../intranet/nuevas_solicitudes_de_alta_series.html" class="enlace-ver-todo">Ver Todo</a>
+                    </div>
 
-                    <td align="center">
-                        <button>Aprobar Alta</button><br>
-                        <button>Revisar Alta</button>
-                    </td>
+                    <div class="cuadrícula-tarjetas">
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/series/911.jpg" alt="Serie">
+                            </div>
+                            <div class="botones-contenedor doble-boton">
+                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-revisar">Revisar Alta</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/series/bellezaperfecta.jpg" alt="Serie">
+                            </div>
+                            <div class="botones-contenedor doble-boton">
+                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-revisar">Revisar Alta</button>
+                            </div>
+                        </div>
+                        <div class="tarjeta-item">
+                            <div class="imagen-contenedor">
+                                <img src="../recursos/imagenes/series/asesinaasueldo.jpg" alt="Serie">
+                            </div>
+                            <div class="botones-contenedor doble-boton">
+                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-revisar">Revisar Alta</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-                    <td align="center">
-                        <button>Aprobar Alta</button><br>
-                        <button>Revisar Alta</button>
-                    </td>
-
-                </tr>
-            </table>
-            <br><br>
-<!------------------ SERIES ------------------------------------------------------------>
-            <h2>SERIES</h2>
-            <hr>
-            <h2>SERIES PENDIENTES DE REVISIÓN</h2>
-            <p align="right"><a href="../intranet/series_pendientes_de_revision_intra.html">Ver Todo</a></p>
-
-            <table border="1" width="80%" align="center">
-
-                <tr>
-                    <td align="center"><img src="../recursos/imagenes/series/vladimirr.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/series/memorias_de_un_asesino.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpeg" width="120" height="100"></td>
-                </tr>    
-
-                <tr>
-                    <td align="center"><button>VER</button></td>
-                    <td align="center"><button>VER</button></td>
-                    <td align="center"><button>VER</button></td>
-                    
-                </tr>
-
-            </table>
-            <br><br>
-            <!--NUEVAS SOLICITUDES DE ALTA DE SERIES-->
-            <h2>NUEVAS SOLICITUDES DE ALTA SERIES</h2>
-            <p align="right"><a href="../intranet/nuevas_solicitudes_de_alta_series.html">Ver Todo</a></p>
-            <table border="1" width="80%" align="center">
-
-                <tr>
-                    <td align="center"><img src="../recursos/imagenes/series/911.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/series/bellezaperfecta.jpg" width="120" height="100"></td>
-                    <td align="center"><img src="../recursos/imagenes/series/asesinaasueldo.jpg" width="120" height="100"></td>
-                </tr>
-
-                <tr>
-                    <td align="center">
-                        <button>Aprobar Alta</button><br>
-                        <button>Revisar Alta</button>
-                    </td>
-
-                    <td align="center">
-                        <button>Aprobar Alta</button><br>
-                        <button>Revisar Alta</button>
-                    </td>
-
-                    <td align="center">
-                        <button>Aprobar Alta</button><br>
-                        <button>Revisar Alta</button>
-                    </td>
-
-                </tr>
-            </table>
         </div>
-        <br><br>    
     </main>
-
-    <br>
-    <br>
-    <br>
 <!------------------------------------------------------------------------------------------->
     <!-- FOOTER -->
     <footer class="footer">

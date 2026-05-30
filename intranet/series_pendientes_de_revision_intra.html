@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/tarjetas_paralelas.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/aside_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -74,195 +77,204 @@
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
-        <br>
+        
         <h2>SERIES PENDIENTES DE REVISION</h2>
-        <br>
-        <!-- BOTONES -->
-        <table>
-            <tr>
-                <td style="width: 33%; text-align: left;">
-                    <a href="../intranet/agregar_nueva_series_intra.html">
-                        + AGREGAR NUEVA SERIE
-                    </a>
-                </td>
-                <td style="width: 33%; text-align: center;">
-                    <select>
-                        <option>FILTROS AVANZADOS</option>
-                        <option>pendientes</option>
-                        <option>aprobados</option>
-                        <option>rechazados</option>
-                    </select>
-                </td>
-                
-            </tr>
-        </table>
-        <br>
-        <br>
+        
+         <!-- BOTONES -->
+        <div class="Contenedor-Botones-superior">
+            <a class="boton-superior" href="../intranet/agregar_nueva_series_intra.html"> + AGREGAR NUEVA SERIE </a>
+            <select class="boton-superior">
+                <option>FILTROS AVANZADOS</option>
+                <option>pendientes</option>
+                <option>aprobados</option>
+                <option>rechazados</option>
+            </select>
+
+        </div>
+        
 <!-----------------------Tarjetas----------------------------------------------->
-        <section class="tarjetas_series_pendientes" width="20%" height="50%" >
-            <img src="../recursos/imagenes/series/vladimirr.jpg" width="120" height="100" align="center">
-            <h3>Titulo:</h3>
-            <p id="001">Vladimir</p>
-            <h3>Sinopsis</h3>
-            <p>La vida de una mujer se agita a medida<br>
-            que desarrolla una obsesión con su seductora<br>
-            compañera de trabajo. Su determinación por<br>
-            hacer realidad sus fantasías conduce a<br>
-            situaciones oscuras, humorísticas y complicadas.
-            </p>
-            <h3>Calificación:</h3>
-                <p>6.1 / 10</p> 
-            <h3>Director:</h3>
-                <p>por Shari Springer Berman,Francesca Gregorini,Robert Pulcini,Josephine Bornebusch</p>
-            <h3>Reparto:</h3>
-            <p>Rachel Weisz, Leo Woodall,Jessica Henwich</p>
-            <img src="../recursos/imagenes/Reparto/Rachel_Weisz.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/leo_Woodall.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/jessica_henwick.jpg" width="50" height="50">
-            <h3>Trailer</h3>
-            <video width="320" height="240" controls>
-                <source src="../recursos/Videos/vladimir_series.mp4" type="video/mp4">      
-            </video>
-            <h3>Genero:</h3>
-                <p>Comedia, Romance</p>
-            <h3>Duracion:</h3>
-                <p>30 min</p>
-            <h3>Año de Estreno:</h3>
-                <p>05 de Marzo 2026</p>
-            <h3>Temporadas:</h3>
-                <p> 1 Temporada</p>
-            <h3>Plataformas:</h3>
-            <img src="../recursos/imagenes/iconos/netflix.png " width="30" height="30">
-            <div class="tarjetas_acciones">
-                <div class="guardar_accion">
-                    <button type="button">GUARDAR CAMBIOS</button>
-                </div>
-                <div class="tarjetas_modificables">
-                    <button><a href="../intranet/confirmacion_eliminacion_serie.html">ELIMINAR SERIE</a></button>
-                    <button><a href="../intranet/editar_serie_intranet.html">EDITAR</a></button>
-                </div>
-                <div class="tarjeta_accion_publicar">
-                        PUBLICA
-                        <input type="checkbox">
-                </div>
-            </div>    
-        </section> 
-        <br>
-        <br>
-        <br>
+        <div class="contenedor-tarjetas">
+            <section class="Tarjeta" width="20%" height="50%" >
+                <img src="../recursos/imagenes/series/vladimirr.jpg" width="120" height="100" align="center">
+                <h3>Titulo:</h3>
+                <p id="001">Vladimir</p>
+                <h3>Sinopsis</h3>
+                <p>La vida de una mujer se agita a medida<br>
+                que desarrolla una obsesión con su seductora<br>
+                compañera de trabajo. Su determinación por<br>
+                hacer realidad sus fantasías conduce a<br>
+                situaciones oscuras, humorísticas y complicadas.
+                </p>
+                <h3>Calificación:</h3>
+                    <p>6.1 / 10</p> 
+                <h3>Director:</h3>
+                    <p>por Shari Springer Berman,Francesca Gregorini,Robert Pulcini,Josephine Bornebusch</p>
+                <h3>Reparto:</h3>
+                <p>Rachel Weisz, Leo Woodall,Jessica Henwich</p>
+                <img src="../recursos/imagenes/Reparto/Rachel_Weisz.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/leo_Woodall.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/jessica_henwick.jpg" width="50" height="50">
+                <h3>Trailer</h3>
+                <video width="320" height="240" controls>
+                    <source src="../recursos/Videos/vladimir_series.mp4" type="video/mp4">      
+                </video>
+                <h3>Genero:</h3>
+                    <p>Comedia, Romance</p>
+                <h3>Duracion:</h3>
+                    <p>30 min</p>
+                <h3>Año de Estreno:</h3>
+                    <p>05 de Marzo 2026</p>
+                <h3>Temporadas:</h3>
+                    <p> 1 Temporada</p>
+                <h3>Plataformas:</h3>
+                <img src="../recursos/imagenes/iconos/netflix.png " width="30" height="30">
+                <div class="botones-inferiores">
+                    <div class="guardar_accion">
+                        <button type="button" class="btn-gris">GUARDAR CAMBIOS</button>
+                    </div>
+                    <div class="modificables">
+                        <a href="../intranet/Confirmacion_eliminacion_serie.html" class="btn-gris">ELIMINAR SERIE</a>
+                        <a href="../intranet/editar_serie_intranet.html" class="btn-gris">EDITAR</a>
+                    </div>
+                    <div class="accion_publicar">
+                        <span class="texto-publicar">PUBLICA</span>
+                        <label class="switch">
+                            <input type="checkbox" id="publicar-check">
+                            <span class="deslizador"></span>
+                        </label>
+                    </div>
+                </div>    
+            </section> 
+<!-----------------------Tarjetas----------------------------------------------->
+            <section class="Tarjeta" width="20%" height="50%" >
+                <img src="../recursos/imagenes/series/memorias_de_un_asesino.jpg" width="120" height="100" align="center">
+                <h3>Titulo:</h3>
+                <p id="001">Memorias de un Asesino</p>
+                <h3>Sinopsis</h3>
+                <p>Cuando el sicario Angelo es golpeado<br>
+                con Alzheimer de inicio temprano, sus mundos<br>
+                chocan, poniendo en peligro a su familia.
+                </p>
+                <h3>Calificación:</h3>
+                    <p>6.9 / 10</p> 
+                <h3>Director:</h3>
+                    <p>Tracey Malone, Ed Whitmore</p>
+                <h3>Reparto:</h3>
+                <p>Patrick Dempsey, Richard Harmon, Odeya Rush</p>
+                <img src="../recursos/imagenes/Reparto/Rachel_Weisz.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/leo_Woodall.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/jessica_henwick.jpg" width="50" height="50">
+                <h3>Trailer</h3>
+                <video width="320" height="240" controls>
+                    <source src="../recursos/Videos/Memoria_de_un_Asesino_series.mp4" type="video/mp4">      
+                </video>
+                <h3>Genero:</h3>
+                    <p>Crimen, Drama</p>
+                <h3>Duracion:</h3>
+                    <p>45 min</p>
+                <h3>Año de Estreno:</h3>
+                    <p>25 de Enero 2026</p>
+                <h3>Temporadas:</h3>
+                    <p> 1 Temporada</p>
+                <h3>Plataformas:</h3>
+                <img src="../recursos/imagenes/iconos/netflix.png " width="30" height="30">
+                <div class="botones-inferiores">
+                    <div class="guardar_accion">
+                        <button type="button" class="btn-gris">GUARDAR CAMBIOS</button>
+                    </div>
+                    <div class="modificables">
+                        <a href="../intranet/Confirmacion_eliminacion_serie.html" class="btn-gris">ELIMINAR SERIE</a>
+                        <a href="../intranet/editar_serie_intranet.html" class="btn-gris">EDITAR</a>
+                    </div>
+                    <div class="accion_publicar">
+                        <span class="texto-publicar">PUBLICA</span>
+                        <label class="switch">
+                            <input type="checkbox" id="publicar-check">
+                            <span class="deslizador"></span>
+                        </label>
+                    </div>
+                </div>    
+            </section> 
     <!-----------------------Tarjetas----------------------------------------------->
-        <section class="tarjetas_series_pendientes" width="20%" height="50%" >
-            <img src="../recursos/imagenes/series/memorias_de_un_asesino.jpg" width="120" height="100" align="center">
-            <h3>Titulo:</h3>
-            <p id="001">Memorias de un Asesino</p>
-            <h3>Sinopsis</h3>
-            <p>Cuando el sicario Angelo es golpeado<br>
-            con Alzheimer de inicio temprano, sus mundos<br>
-            chocan, poniendo en peligro a su familia.
-            </p>
-            <h3>Calificación:</h3>
-                <p>6.9 / 10</p> 
-            <h3>Director:</h3>
-                <p>Tracey Malone, Ed Whitmore</p>
-            <h3>Reparto:</h3>
-            <p>Patrick Dempsey, Richard Harmon, Odeya Rush</p>
-            <img src="../recursos/imagenes/Reparto/Rachel_Weisz.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/leo_Woodall.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/jessica_henwick.jpg" width="50" height="50">
-            <h3>Trailer</h3>
-            <video width="320" height="240" controls>
-                <source src="../recursos/Videos/Memoria_de_un_Asesino_series.mp4" type="video/mp4">      
-            </video>
-            <h3>Genero:</h3>
-                <p>Crimen, Drama</p>
-            <h3>Duracion:</h3>
-                <p>45 min</p>
-            <h3>Año de Estreno:</h3>
-                <p>25 de Enero 2026</p>
-            <h3>Temporadas:</h3>
-                <p> 1 Temporada</p>
-            <h3>Plataformas:</h3>
-            <img src="../recursos/imagenes/iconos/netflix.png " width="30" height="30">
-            <div class="tarjetas_acciones">
-                <div class="guardar_accion">
-                    <button type="button">GUARDAR CAMBIOS</button>
+            <section class="Tarjeta" width="20%" height="50%" >
+                <img src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpeg" width="120" height="100" align="center">
+                <h3>Titulo:</h3>
+                <p id="001">La Casa de los Espiritus</p>
+                <h3>Sinopsis</h3>
+                <p>La Casa de los Espíritus es una saga<br>
+                familiar de ocho episodios que sigue las<br>
+                vidas de tres mujeres revolucionarias y<br>
+                resilientes - Clara, la abuela; Blanca,<br>
+                la hija; y Alba, la nieta - a lo largo de<br>
+                medio siglo, en un país sudamericano remoto<br>
+                y conservador, marcado por desastres naturales,<br>
+                la lucha de clases y la magia..
+                </p>
+                <h3>Calificación:</h3>
+                    <p>7.5 / 10</p> 
+                <h3>Director:</h3>
+                    <p>Francisca Alegría, Andrés Wood</p>
+                <h3>Reparto:</h3>
+                <p>Alfonso Herrera, Dolores Fonzi, Nicole Wallace, Fernanda Castillo,</p>
+                <img src="../recursos/imagenes/Reparto/alfonso-herrera.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/dolores-fonzi.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/nicole wallace.jpg" width="50" height="50">
+                <img src="../recursos/imagenes/Reparto/fernanda-castillo.jpg" width="50" height="50">
+                <h3>Trailer</h3>
+                <video width="320" height="240" controls>
+                    <source src="../recursos/Videos/#" type="video/mp4">      
+                </video>
+                <h3>Genero:</h3>
+                    <p>Drama, Romance</p>
+                <h3>Duracion:</h3>
+                    <p>46 min</p>
+                <h3>Año de Estreno:</h3>
+                    <p>25 de Enero 2026</p>
+                <h3>Temporadas:</h3>
+                    <p> 1 Temporada</p>
+                <h3>Plataformas:</h3>
+                <img src="../recursos/imagenes/iconos/amazon-prime-video.png " width="30" height="30">
+                <div class="botones-inferiores">
+                    <div class="guardar_accion">
+                        <button type="button" class="btn-gris">GUARDAR CAMBIOS</button>
+                    </div>
+                    <div class="modificables">
+                        <a href="../intranet/Confirmacion_eliminacion_serie.html" class="btn-gris">ELIMINAR SERIE</a>
+                        <a href="../intranet/editar_serie_intranet.html" class="btn-gris">EDITAR</a>
+                    </div>
+                    <div class="accion_publicar">
+                        <span class="texto-publicar">PUBLICA</span>
+                        <label class="switch">
+                            <input type="checkbox" id="publicar-check">
+                            <span class="deslizador"></span>
+                        </label>
+                    </div>
+                    
+                </div>    
+            </section> 
+        
+            <aside>
+                <h2> ACTIVIDADES RECIENTES</h2>
+                <div class="item-aside">
+                    <p class="Rol">Desarrollador</p>
+                    <h3>Usuario_24 Elimino Gladiadores</h3>
+                    <img src="../recursos/imagenes/usuarios/usuario_1.jpg" width="40" height="40">
+                    <p class="descripcion">Lunes 19 de mayo 18:35hs</p>
                 </div>
-                <div class="tarjetas_modificables">
-                    <button><a href="../intranet/confirmacion_eliminacion_serie.html">ELIMINAR SERIE</a></button>
-                    <button><a href="../intranet/editar_serie_intranet.html">EDITAR</a></button>
+                <div class="item-aside">
+                    <p class="Rol">Administrador</p>
+                    <h3>Usuario_92 Aprobo Proyecto Salvacion correctamente</h3>
+                    <img src="../recursos/imagenes/usuarios/usuario_2.jpg" width="40" height="40">
+                    <p class="descripcion">Jueves 21 de mayo 18:35hs</p>
                 </div>
-                <div class="tarjeta_accion_publicar">
-                        PUBLICA
-                        <input type="checkbox">
+                <div class="item-aside">
+                    <p class="Rol">Testing</p>
+                    <h3>Usuario_74 solicito revision de Parque Lezama</h3>
+                    <img src="../recursos/imagenes/usuarios/usuario_3.jpg" width="40" height="40">
+                    <p class="descripcion">Miercoles 27 de mayo 18:35hs</p>
                 </div>
-            </div>    
-        </section> 
-<!-----------------------Tarjetas----------------------------------------------->
-        <section class="tarjetas_series_pendientes" width="20%" height="50%" >
-            <img src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpeg" width="120" height="100" align="center">
-            <h3>Titulo:</h3>
-            <p id="001">La Casa de los Espiritus</p>
-            <h3>Sinopsis</h3>
-            <p>La Casa de los Espíritus es una saga<br>
-            familiar de ocho episodios que sigue las<br>
-            vidas de tres mujeres revolucionarias y<br>
-            resilientes - Clara, la abuela; Blanca,<br>
-            la hija; y Alba, la nieta - a lo largo de<br>
-            medio siglo, en un país sudamericano remoto<br>
-            y conservador, marcado por desastres naturales,<br>
-            la lucha de clases y la magia..
-            </p>
-            <h3>Calificación:</h3>
-                <p>7.5 / 10</p> 
-            <h3>Director:</h3>
-                <p>Francisca Alegría, Andrés Wood</p>
-            <h3>Reparto:</h3>
-            <p>Alfonso Herrera, Dolores Fonzi, Nicole Wallace, Fernanda Castillo,</p>
-            <img src="../recursos/imagenes/Reparto/alfonso-herrera.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/dolores-fonzi.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/nicole wallace.jpg" width="50" height="50">
-            <img src="../recursos/imagenes/Reparto/fernanda-castillo.jpg" width="50" height="50">
-            <h3>Trailer</h3>
-            <video width="320" height="240" controls>
-                <source src="../recursos/Videos/#" type="video/mp4">      
-            </video>
-            <h3>Genero:</h3>
-                <p>Drama, Romance</p>
-            <h3>Duracion:</h3>
-                <p>46 min</p>
-            <h3>Año de Estreno:</h3>
-                <p>25 de Enero 2026</p>
-            <h3>Temporadas:</h3>
-                <p> 1 Temporada</p>
-            <h3>Plataformas:</h3>
-            <img src="../recursos/imagenes/iconos/amazon-prime-video.png " width="30" height="30">
-            <div class="tarjetas_acciones">
-                <div class="guardar_accion">
-                    <button type="button">GUARDAR CAMBIOS</button>
-                </div>
-                <div class="tarjetas_modificables">
-                    <button><a href="../intranet/confirmacion_eliminacion_serie.html">ELIMINAR SERIE</a></button>
-                    <button><a href="../intranet/editar_serie_intranet.html">EDITAR</a></button>
-                </div>
-                <div class="tarjeta_accion_publicar">
-                        PUBLICA
-                        <input type="checkbox">
-                </div>
-            </div>    
-        </section> 
-        <br>
-        <br>
-        <br>
-        <aside class="Actividades_recientes">
-            <h4> ACTIVIDADES RECIENTES</h4>
-            <p>Alan eliminó Gladiadores.<br>
-            Proyecto salvacion se aprobó correctamente.<br>
-            Como Cabras se publicó correctamente.<br>
-            Gabriel solicitó revision de Parque Lezama.<br>
-            Eliana aprobó Venganza.<br>
-            Gisela solicito revisar reseña.<br>
-            </p>
-        </aside>
+            </aside>
+        </div>
     </main>
     <br>
     <br>

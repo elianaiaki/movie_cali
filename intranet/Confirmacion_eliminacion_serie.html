@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>CONFIRMAR ELIMINACION SERIE</title>
-    <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/tarjetas_paralelas.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -65,25 +67,27 @@
         </div>
     </header>
 
-    <br><br>
+    
 <!-------FIN DE HEADER------------------------------------------------------------------------>
-    <br>
+    
     <main class="main">
-        <div>
-            <h1>ELIMINAR SERIE</h1>
-            <p>¿Seguro que desea eliminar esta Serie?</p>
-            <img src="../recursos/imagenes/series/911.jpg" align="left" width="150" height="150">
-            <p>Serie:911</p>
-            <button>ELIMINAR</button>
-            <a href="../intranet/series_pendientes_de_revision_intra.html">Cancelar</a>
-
+        <div class="contenedor-tarjetas">
+            <section class="Tarjeta">
+                <h3>ELIMINAR SERIE</h3>
+                <p>¿Seguro que desea eliminar esta pelicula?</p>
+                <img src="../recursos/imagenes/iconos/claqueta.png" align="left" width="100" height="100">
+                <p> Título: Nombre de la serie</p>
+                <div class="botones-inferiores">
+                    <div class="guardar_accion">
+                        <button type="button" class="btn-gris">ELIMINAR</button>
+                    </div>
+                    <div class="modificables">
+                        <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Cancelar</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 <!------FOOTER---------------------------------------------------------------------->    
     <!-- FOOTER -->
     <footer class="footer">

@@ -17,4 +17,5 @@ main {
     padding: 20px 40px;
     box-sizing: border-box;
     min-height: calc(100vh - 160px); /*Asegura espacio para el footer */
+    margin-bottom: 15px;
 }
