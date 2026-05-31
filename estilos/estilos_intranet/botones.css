@@ -145,7 +145,7 @@
 
 
 /* Estilo de los botones*/
-.botones-contenedor a {
+.botones-contenedor a button{
     background-color: #444;
     border: 1px solid #000000;
     border-radius: 15px;

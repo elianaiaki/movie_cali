@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/titulos_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/columna.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/aside_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -73,84 +77,87 @@
             </div>
         </div>
         <!--filtros-->
-        <section>
-            <div>
-                <label><strong>ORDENAR POR:</strong></label>
-                <select>
-                    <option>MÁS RECIENTES</option>
-                    <option>MÁS ANTIGUOS</option>
-                </select>
+        <div class="Contenedor-Botones-superior">
+                
+            <select class="boton-superior">
+                <option>ORDERNAR POR:</option>
+                <option>MÁS RECIENTES</option>
+                <option>MÁS ANTIGUOS</option>
+            </select>
 
-                <label><strong>TIPOS DE REPORTES:</strong></label>
-                <select>
-                    <option>Abusos</option>
-                    <option>Spoiler</option>
-                    <option>Spam</option>
-                    <option>Contenido Malicioso</option>
-                    <option>Otros</option>
-                </select>
+        
+            <select class="boton-superior">
+                <option>TIPOS DE REPORTES: </option>
+                <option>Abusos</option>
+                <option>Spoiler</option>
+                <option>Spam</option>
+                <option>Contenido Malicioso</option>
+                <option>Otros</option>
+            </select>
 
-                <label><strong>ESTADOS:</strong></label>
-                <select>
-                    <option>Pendiente</option>
-                    <option>En Revisión</option>
-                    <option>Resuelto</option>
-                </select>
-            </div>
-        </section>
+            <select class="boton-superior">
+                <option>ESTADOS:</option>
+                <option>Pendiente</option>
+                <option>En Revisión</option>
+                <option>Resuelto</option>
+            </select>
+            
+        </div>
+        
 
         <hr>
 
 <!-----------Listado de Reportes---------------------------------------------------->
-        <div class="contenedor-vertical">
-            <div class="fila-header">
-                <h3 class="titulo-subcategoria">PENDIENTES DE REVISIÓN <span>▶</span></h3>
-            </div>
-            <div class="cuadrícula-tarjetas">
-                <div class="tarjeta-item">
-                    <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
-                    <h4>TÍTULO: SHREK 2</h4>
-
-                    <p>
-                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                        <strong>Denunciante:</strong> Usuario_123 |
-                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                        <strong>Reportado:</strong> Usuario_2828
-                    </p>
-
-                    <div class="botones-contenedor">
-                        <button type="button">Ver Reseña Completa</button>
-                        <button type="button">Ignorar Reporte</button>
-                        <button type="button">Sancionar Usuario</button>
-                        <button type="button">Eliminar Reseña</button>
-                    </div>    
+        <div class="contenedor-principal">
+            
+            <div class="columna-izquierda">
+                <div class="contenedor-formulario">
+                    <h3 class="titulo-subcategoria">PENDIENTES DE REVISIÓN <span>▶</span></h3>
                 </div>
-            </div>
+                <div class="tarjetas">
+                    <div class="tarjeta-contenido">
+                        <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" class="Icono_pelicula">
+                        <h4>TÍTULO: SHREK 2</h4>
 
-            <hr>
-            <div class="fila-header">
-                <h3 class="titulo-subcategoria">RESUELTOS: <span>▶</span></h3>
-            </div>
-            <div class="cuadrícula-tarjetas">
-                <div class="tarjeta-item">
-                    <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
-                    <h4>TÍTULO: TOY STORY</h4>
-                    <p>
-                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                        <strong>Reportado:</strong> Usuario_2828 |
-                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                        <strong>Denunciante:</strong> Usuario_123
-                    </p>
-                    <p><strong>Acción tomada:</strong> RESEÑA ELIMINADA</p>
+                        <p>
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
+                            <strong>Denunciante:</strong> Usuario_123 |
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
+                            <strong>Reportado:</strong> Usuario_2828
+                        </p>
+
+                        <div class="botones-contenedor">
+                            <button type="button">Ver Reseña Completa</button>
+                            <button type="button">Ignorar Reporte</button>
+                            <button type="button">Sancionar Usuario</button>
+                            <button type="button">Eliminar Reseña</button>
+                        </div>    
+                    </div>
+                </div>
+            
+                <div class="contenedor-formulario">
+                    <h3 class="titulo-subcategoria">RESUELTOS: <span>▶</span></h3>
+                </div>
+        
+                <div class="tarjetas">
+                    <div class="tarjeta-contenido">
+                        <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono_pelicula" class="Icono_pelicula" >
+                        <h4>TÍTULO: TOY STORY</h4>
+                        <p>
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
+                            <strong>Reportado:</strong> Usuario_2828 |
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
+                            <strong>Denunciante:</strong> Usuario_123
+                        </p>
+                        <p><strong>Acción tomada:</strong> RESEÑA ELIMINADA</p>
+                    </div>
                 </div>
             </div>
             
-        
-
             <aside>
                 <h2>PANEL DE GESTIÓN DE USUARIOS</h2>
                 <div class="item-aside">
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Avatar" width="40">
+                    <img src="../recursos/imagenes/iconos/perfil.png">
                     <p class="Rol"><strong>Usuario_2828</strong></p>
                     <p class="descripcion">Reportes recibidos: 2</p>
                     <p class="descripcion">Sanciones activas: 0</p>

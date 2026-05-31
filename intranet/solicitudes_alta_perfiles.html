@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/titulos_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/columna.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/aside_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -74,86 +78,99 @@
             </div>
         </div>
      
-        <br>
-        <section>
-            <label><strong>FECHA:</strong></label>
-            <select>
+        <div class=" Contenedor-Botones-superior">
+            <select class="boton-superior">
+                <option>FECHA: </option>
                 <option>Hace un día</option>
                 <option>Hace una semana</option>
                 <option>Fecha personalizada</option>
             </select>
 
-            <label><strong>ESTADO:</strong></label>
-            <select>
+            <select class="boton-superior">
+                <option>ESTADO: </option>
                 <option>Pendiente</option>
                 <option>En revisión</option>
                 <option>Resueltos</option>
             </select>
-        </section>
+        </div>
 
         <hr>
 
-        <section>
-            <h3>PANEL DE SOLICITUDES ACTUALES</h3>
+        <div class="contenedor-principal">
+                <div class="columna-izquierda">
+                    <div class="contenedor-formulario">
+                        <h3 class="titulo-subcategoria">PANEL DE SOLICITUDES ACTUALES</h3>
+                    </div>
+                
+                    <div class="tarjetas">
+                        <div class="tarjeta-contenido">
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                            <div>
+                                <p><strong>USUARIO_12345</strong></p>
+                                <p>Email: 123us@gmail.com</p>
+                            </div>
+                            <div>
+                                <a href="../intranet/editar_perfil.html"><button type="button">Ver Perfil</button></a>
+                                <button type="button">Dar Alta</button>
+                                <button type="button">Denegar</button>
+                            </div>
+                        </div>
+                    </div>
 
-            <article>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
-                <div>
-                    <p><strong>USUARIO_12345</strong></p>
-                    <p>Email: 123us@gmail.com</p>
-                </div>
-                <div>
-                    <a href="../intranet/editar_perfil.html"><button type="button">Ver Perfil</button></a>
-                    <button type="button">Dar Alta</button>
-                    <button type="button">Denegar</button>
-                </div>
-            </article>
+                    <div class="tarjetas">
+                        <div class="tarjeta-contenido"> 
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                            <div>
+                                <p><strong>USUARIO_6789</strong></p>
+                                <p>Email: msicjs@gmail.com</p>
+                            </div>
+                            <div>
+                                <button type="button">Ver Perfil</button>
+                                <button type="button">Dar Alta</button>
+                                <button type="button">Denegar</button>
+                            </div> 
+                        </div>
+                    </div>
+                
 
-            <article>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
-                <div>
-                    <p><strong>USUARIO_6789</strong></p>
-                    <p>Email: msicjs@gmail.com</p>
+                    <hr>
+                    <div>
+                        <div class="contenedor-formulario">
+                            <h3 class="titulo-subcategoria">PANEL DE PERFIL APROBADOS</h3>
+                        </div>
+                        <div class="tarjetas">
+                            <div class="tarjeta-contenido">
+                                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
+                                <div>
+                                    <p><strong>USUARIO_12076</strong></p>
+                                    <p>Email: mjgcos@gmail.com</p>
+                                </div>
+                                <div class="botones-contenedor">
+                                    <a href="../intranet/mi_perfil.html">Ver Perfil</a>
+                                    <button type="button">Dar Baja</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <button type="button">Ver Perfil</button>
-                    <button type="button">Dar Alta</button>
-                    <button type="button">Denegar</button>
-                </div> 
-            </article>
-        </section>
 
-        <hr>
-        <section>
-            <h3>PANEL DE PERFIL APROBADOS</h3>
-            <article>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="40">
-                <div>
-                    <p><strong>USUARIO_12076</strong></p>
-                    <p>Email: mjgcos@gmail.com</p>
+            <aside>
+                <h3>PANEL DE SOLICITUDES PENDIENTES</h3>
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" > 
+                    <p class="Rol"><strong>Usuario_1212</strong></p>
+                    <p class="descripcion">qmxxxnd@gmail.com</p>
+                    <button type="button">Ver Solicitud</button>
                 </div>
-                <div>
-                    <a href="../intranet/mi_perfil.html">Ver Perfil</a>
-                    <button type="button">Dar Baja</button>
+
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" > 
+                    <p class="Rol"><strong>Usuario_1112</strong></p>
+                    <p class="descripcion">mhtrfvbi@gmail.com</p>
+                    <button type="button">Ver Solicitud</button>
                 </div>
-            </article>
-        </section>
-
-        <aside>
-            <hr>
-            <h3>PANEL DE SOLICITUDES PENDIENTES</h3>
-            <article>
-                <p><img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="20"> <strong>Usuario_1212</strong></p>
-                <p>qmxxxnd@gmail.com</p>
-                <button type="button">Ver Solicitud</button>
-            </article>
-
-            <article>
-                <p><img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="20"> <strong>Usuario_1112</strong></p>
-                <p>mhtrfvbi@gmail.com</p>
-                <button type="button">Ver Solicitud</button>
-            </article>
-        </aside>
+            </aside>
+        </div>
     </main>
     <br><br>
 <!------------- FOOTER------------------------------------------------>
