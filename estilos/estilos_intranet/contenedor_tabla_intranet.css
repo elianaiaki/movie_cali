@@ -9,15 +9,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Título */
-.contenedor-formulario h2 {
-    color: #fff;
-    font-size: 26px;
-    margin-top: 0;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-}
+
 
 /* Diseño en cuadrícula */
 #form_agregar {

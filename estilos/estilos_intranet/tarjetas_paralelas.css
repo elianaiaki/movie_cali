@@ -25,15 +25,16 @@
     display: flex;
     flex-direction: column; /*ordena el contenido en colum*/
     align-items: center; /* Centra el contenido que vaya suelto dentro */
+    border:1px solid #000000;
 }
 
 /* --- CONTENIDO DE C/TARJETAS --- */
 
 .Tarjeta h3,.Tarjeta h4,.Tarjeta p,.Tarjeta nav {
     text-align: center; 
-    margin-bottom: 15px;/*margen para lo q hay abajo*/
+    margin-bottom: 5px;/*margen para lo q hay abajo*/
     width: 100%;
-    padding: 20px;
+    padding: 5px;
 }
 .Tarjeta nav a{
     text-decoration: none;
@@ -57,4 +58,28 @@
     margin: 0 0 5px 0;
     font-size: 1rem;
     text-align: left;
+}
+
+
+/* Área de la imagen */
+.imagen-contenedor {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #000000; /* Línea divisoria interna */
+    min-height: 120px;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.imagen-contenedor img {
+    width: 50px;
+    height: 50px;
+    height: auto;
+    object-fit: cover;
+}
+
+.imagen-contenedor .img-principal {
+    width: 50%;
 }

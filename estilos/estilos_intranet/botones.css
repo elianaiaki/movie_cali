@@ -100,7 +100,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: red ;/* azul cuando está apagado */
+    background-color: red ;
     transition: .3s;
     border-radius: 24px;   
 }
@@ -129,3 +129,36 @@
 .switch input:checked + .deslizador:before {
     transform: translateX(20px);
 }
+
+/*-------------------------------------------------*/
+
+/* Contenedor inferior de botones */
+.botones-contenedor {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+
+/* Estilo de los botones*/
+.botones-contenedor a {
+    background-color: #444;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 4px 15px;
+    font-size: 11px;
+    font-weight: bold;
+    width: 90%;
+    color: #ddd;
+    text-decoration: none;
+   
+}
+
+.botones-contenedor button:hover {
+    background-color: #003366;
+}
+

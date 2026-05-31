@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/tarjetas_paralelas.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/titulos_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -73,27 +75,32 @@
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
-        
-        <h1>GESTIÓN DE PERFILES Y ROLES ▶</h1>
-        <br>
-        <h2>ADMINISTRACIÓN DE USUARIOS</h2>
 
+        <section class="categoria-bloque">
+            <div class="fila-header">
+                <h3 class="titulo-subcategoria">GESTIÓN DE PERFILES Y ROLES <span>▶</span></h3>
+            </div>
+        </section>
+        
         <!-- BOTONES -->
         <div class="Contenedor-Botones-superior">
-            <a class="boton-superior" href="nuevo_perfil.html">+ NUEVO PERFIL</a> |
-            <a class="boton-superior" href="solicitudes_alta_perfiles.html">PANEL DE GESTIÓN DE ALTAS</a> |
+            <a class="boton-superior" href="nuevo_perfil.html">+ NUEVO PERFIL</a> 
+            <a class="boton-superior" href="solicitudes_alta_perfiles.html">PANEL DE GESTIÓN DE ALTAS</a> 
             <a class="boton-superior" href="gestion_reportes_resenias.html">PANEL DE GESTIÓN DE REPORTES</a>
         </div>
 
         <hr>
 
         <!--tarjetas de usuarios-->
-        <section>
-            <h3>LISTADO DE COLABORADORES</h3>
+        <section class="contenedor-tarjetas">
+            
 
             <!--TARJETA DE USUARIO 1-->
-            <article>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="60">
+            <article class="Tarjeta">
+                <div class="imagen-contenedor">
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil">
+                </div>
+                
                 <div>
                     <h4>NOMBRE: USUARIO_12345</h4>
                     <p>ID: 85461</p>
@@ -102,17 +109,21 @@
                         <option value="admin">ADMINISTRATIVO</option>
                         <option value="user">USUARIO</option>
                     </select>
-                    <br><br>
-                    <a href="editar_perfil.html">EDITAR</a> | 
-                    <a href="eliminar_perfil.html">ELIMINAR</a>
+                    
+                    <div class="botones-contenedor">
+                        <a class="btn-ver" href="editar_perfil.html">EDITAR</a>  
+                        <a class="btn-ver" href="eliminar_perfil.html">ELIMINAR</a>
+                    </div>
                 </div>
             </article>
 
             <hr>
 
             <!-- TARJETADE USUARIO 2-->
-            <article>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="60">
+            <article class="Tarjeta">
+                <div class="imagen-contenedor">
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="60">
+                </div>
                 <div>
                     <h4>NOMBRE: USUARIO_2828</h4>
                     <p>ID: 4444</p>
@@ -121,17 +132,22 @@
                         <option value="admin">ADMINISTRATIVO</option>
                         <option value="user">USUARIO</option>
                     </select>
-                    <br><br>
-                    <a href="editar_perfil.html">EDITAR</a> | 
-                    <a href="eliminar_perfil.html">ELIMINAR</a>
+                    
+                    <div class="botones-contenedor">
+                        <a href="editar_perfil.html">EDITAR</a> 
+                        <a href="eliminar_perfil.html">ELIMINAR</a>
+                    </div>
                 </div>
             </article>
 
             <hr>
 
             <!--TARJETA DE USUARIO 3-->
-            <article>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="60">
+            <article class="Tarjeta">
+                <div class="imagen-contenedor">
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" >
+                </div>
+               
                 <div>
                     <h4>NOMBRE: USUARIO_09876</h4>
                     <p>ID: 86840</p>
@@ -140,9 +156,10 @@
                         <option value="admin">ADMINISTRATIVO</option>
                         <option value="user">USUARIO</option>
                     </select>
-                    <br><br>
-                    <a href="editar_perfil.html">EDITAR</a> | 
-                    <a href="eliminar_perfil.html">ELIMINAR</a>
+                    <div class="botones-contenedor">
+                        <a href="editar_perfil.html">EDITAR</a> 
+                        <a href="eliminar_perfil.html">ELIMINAR</a>
+                    </div>
                 </div>
             </article>
         </section>

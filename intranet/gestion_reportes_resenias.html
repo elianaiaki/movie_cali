@@ -101,60 +101,64 @@
 
         <hr>
 
-<!-----------Listado de Reportes-------------->
-        <section>
-            <h3>PENDIENTE DE REVISIÓN:</h3>
+<!-----------Listado de Reportes---------------------------------------------------->
+        <div class="contenedor-vertical">
+            <div class="fila-header">
+                <h3 class="titulo-subcategoria">PENDIENTES DE REVISIÓN <span>▶</span></h3>
+            </div>
+            <div class="cuadrícula-tarjetas">
+                <div class="tarjeta-item">
+                    <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
+                    <h4>TÍTULO: SHREK 2</h4>
 
-            <article>
-                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
-                <h4>TÍTULO: SHREK 2</h4>
+                    <p>
+                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                        <strong>Denunciante:</strong> Usuario_123 |
+                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                        <strong>Reportado:</strong> Usuario_2828
+                    </p>
 
-                <p>
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Denunciante:</strong> Usuario_123 |
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Reportado:</strong> Usuario_2828
-                </p>
-
-                <div>
-                    <button type="button">Ver Reseña Completa</button>
-                    <button type="button">Ignorar Reporte</button>
-                    <button type="button">Sancionar Usuario</button>
-                    <button type="button">Eliminar Reseña</button>
+                    <div class="botones-contenedor">
+                        <button type="button">Ver Reseña Completa</button>
+                        <button type="button">Ignorar Reporte</button>
+                        <button type="button">Sancionar Usuario</button>
+                        <button type="button">Eliminar Reseña</button>
+                    </div>    
                 </div>
-            </article>
+            </div>
 
             <hr>
+            <div class="fila-header">
+                <h3 class="titulo-subcategoria">RESUELTOS: <span>▶</span></h3>
+            </div>
+            <div class="cuadrícula-tarjetas">
+                <div class="tarjeta-item">
+                    <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
+                    <h4>TÍTULO: TOY STORY</h4>
+                    <p>
+                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                        <strong>Reportado:</strong> Usuario_2828 |
+                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
+                        <strong>Denunciante:</strong> Usuario_123
+                    </p>
+                    <p><strong>Acción tomada:</strong> RESEÑA ELIMINADA</p>
+                </div>
+            </div>
+            
+        
 
-            <h3>RESUELTOS:</h3>
-            <article>
-                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
-                <h4>TÍTULO: TOY STORY</h4>
-                <p>
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Reportado:</strong> Usuario_2828 |
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Denunciante:</strong> Usuario_123
-                </p>
-                <p><strong>Acción tomada:</strong> RESEÑA ELIMINADA</p>
-            </article>
-        </section>
-
-        <aside>
-            <hr>
-            <h3>PANEL DE GESTIÓN DE USUARIOS</h3>
-
-            <article>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Avatar" width="40">
-                <p><strong>Usuario_2828</strong></p>
-                <p>Reportes recibidos: 2</p>
-                <p>Sanciones activas: 0</p>
-                <a href="ver_perfil_usuario.html">Ver Perfil Detallado</a>
-            </article>
-        </aside>
+            <aside>
+                <h2>PANEL DE GESTIÓN DE USUARIOS</h2>
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Avatar" width="40">
+                    <p class="Rol"><strong>Usuario_2828</strong></p>
+                    <p class="descripcion">Reportes recibidos: 2</p>
+                    <p class="descripcion">Sanciones activas: 0</p>
+                    <a href="ver_perfil_usuario.html">Ver Perfil Detallado</a>
+                </div>
+            </aside>
+        </div>
     </main>
-
-    <br><br>
 
 <!---------------FOOTER--------------------------->
     <!-- FOOTER -->
