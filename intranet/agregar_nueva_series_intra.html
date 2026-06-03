@@ -11,9 +11,157 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
-</head>
+    <script src="../scripts/validaciones.js"></script>
 
-<body>
+    <script>
+        /*event.preventDefault() evita que el formulario
+         se envíe automáticamente para poder validar
+         los datos antes de continuar.
+         
+         alert() informa al usuario si existe un error
+         o si la serie fue agregada correctamente.
+
+         confirm() solicita una confirmación antes de
+         ejecutar acciones que modifican el formulario.*/
+        function asociarValidacion(){
+
+            const formulario = document.getElementById("form_agregar");
+
+            formulario.addEventListener("submit",function(event){
+
+                event.preventDefault();
+
+                const titulo = document.getElementById("titulo_serie").value;
+
+                const genero = document.getElementById("genero_serie").value;
+
+                const director = document.getElementById("director").value;
+    
+                const productor = document.getElementById("productor_serie").value;
+
+                const sinopsis = document.getElementById("sinopsis").value;
+                /**/
+                const anioEstreno = document.getElementById("anio_estreno").value;
+
+                const duracion = document.getElementById("duracion_serie").value;
+
+                const calificacion = document.getElementById("calificacion_serie").value;
+
+                const clasificacionEdad = document.getElementById("clasificacion_edad").value;
+
+                const nuevosActores = document.getElementById("nuevos_actores").value;
+
+                const cantTemporadas = document.getElementById("cantidad_temporadas").value;
+                    
+                    // Validar título
+                    if(!textoAlfanumericoValido(titulo)){
+                        alert("Título inválido");
+                        return;
+                    }
+
+                    // Validar género
+                    if(!generoValido(genero)){
+                        alert("Género inválido");
+                        return;
+                    }
+
+                    // Validar director
+                    if(!textoAlfabeticoValido(director)){
+                        alert("Director inválido");
+                        return;
+                    }
+
+                    // Validar productor
+                    if(!textoAlfabeticoValido(productor)){
+                        alert("Productor inválido");
+                        return;
+                    }
+
+                    // Validar sinopsis
+                    if(sinopsis.trim() === ""){
+                        alert("Debe ingresar una sinopsis" );
+                        return;
+                    }
+
+                    //Validar año de estreno. Acepta formato: 2026 1998 2010
+                    if(!/^\d{4}$/.test(anioEstreno)){
+                        alert("El año de estreno debe tener 4 dígitos");
+                        return;
+                    }
+
+                    /*Validar duración
+                    Acepta formatos como: 30 min 45 min 60 min
+                    ^ -> inicio del texto.
+                    \d+ -> uno o más números (duración en minutos).
+                    \s* -> cero o más espacios opcionales.
+                    min -> texto "min" obligatorio.
+                    $ -> final del texto.
+                    i -> ignora mayúsculas y minúsculas (min, MIN, Min).*/
+
+                    if(!/^\d+\s*min$/i.test(duracion)){
+                        alert("La duración de la serie debe tener formato 30 min");
+                        return;
+                    }
+
+                    /*Validar calificación
+                     parseFloat() convierte el texto ingresado en un número decimal.
+
+                     isNaN() es una función propia de JavaScript.
+                     Su nombre significa "is Not a Number" (no es un número)
+                     y permite verificar si el valor ingresado puede
+                     interpretarse como un número válido.
+                    
+                     Además se controla que la calificación esté
+                     dentro del rango permitido (0 a 10).*/
+                    
+                    //Acepta calificaciones como: 8, 7.5, 10, 0 
+                    if(!/^\d+(\.\d+)?$/.test(calificacion)){
+                        alert("La calificación general debe ser numérica");
+                        return;
+                    } 
+                    const nota = parseFloat(calificacion);
+
+                    if(isNaN(nota) || nota < 0 || nota > 10){
+                        alert("La calificación general debe ser un número entre 0 y 10");
+                        return;
+                    }
+
+                    // Validar clasificación por edad
+                    if(!/^\+\d+$/.test(clasificacionEdad)){
+                        alert("La clasificación por edad debe tener formato +13, +16 o +18");
+                        return;
+                    }
+
+                    // Validar nuevos actores 
+                    if(nuevosActores !== "" && !textoAlfabeticoValido(nuevosActores)){
+                        alert("Nombre de actor inválido");
+                        return;
+                    }
+
+                    // Valida cantidad de temporadas. Acepta 1 2 3  7 10 
+                    if(!/^\d+$/.test(cantTemporadas)){
+                        alert("La cantidad de temporadas debe ser numérica");
+                        return;
+                    }
+                    
+                    alert("Serie agregada correctamente");
+
+                    formulario.submit();
+
+                }
+            );
+
+        }
+
+        function limpiarFormulario(){
+            if(confirm("¿Desea limpiar todos los campos?")){
+                document.getElementById("form_agregar").reset();
+            }
+        }   
+        
+    </script>
+</head>
+<body onload="asociarValidacion()">
    
 <!------------------------------------------------------------------------------------------->
     <!-- HEADER -->
@@ -78,90 +226,90 @@
         </div>
         <h1>+ AGREGAR NUEVA SERIE</h1>
 <!------------------------------------------------------------------------------------------->
-       <div class="contenedor-formulario">
+       <div class="contenedorFormulario">
             <h2>Agregar Serie</h2>
             
-            <form id="form_agregar">
+            <form id="formAgregar" action="../intranet/series_pendientes_de_revision_intra.html" method="get">
                 
-                <div class="grupo-campo">
-                    <label for="Titulo_serie">Título:</label>
-                    <input type="text" id="Titulo_serie" class="input-texto" placeholder="Vladimir">
+                <div class="grupoCampo" >
+                    <label for="titulo_serie">Título:</label>
+                    <input type="text" id="titulo_serie" class="inputTexto" placeholder="Titulo de la serie" required>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Genero_serie">Género:</label>
-                    <input type="text" id="Genero_serie" class="input-texto" placeholder="Comedia, Drama">
+                    <input type="text" id="Genero_serie" class="inputTexto" placeholder="Comedia, Drama">
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Ano_estreno">Año de Estreno:</label>
-                    <input type="text" id="Ano_estreno" class="input-texto" placeholder="20 de Abril 2026">
+                    <input type="text" id="Ano_estreno" class="inputTexto" placeholder="20 de Abril 2026">
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Duracion_serie">Duración:</label>
-                    <input type="text" id="Duracion_serie" class="input-texto" placeholder="30 min">
+                    <input type="text" id="Duracion_serie" class="inputTexto" placeholder="30 min">
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Director">Director:</label>
-                    <input type="text" id="Director" class="input-texto" placeholder="Shari Springer Berman">
+                    <input type="text" id="Director" class="inputTexto" placeholder="Shari Springer Berman">
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Productor_serie">Productor:</label>
-                    <input type="text" id="Productor_serie" class="input-texto" placeholder="Ingrese nombre y apellido">
+                    <input type="text" id="Productor_serie" class="inputTexto" placeholder="Ingrese nombre y apellido">
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Calificacion_serie">Calificación General:</label>
-                    <input type="text" id="Calificacion_serie" class="input-texto" placeholder="6.5 / 10">
+                    <input type="text" id="Calificacion_serie" class="inputTexto" placeholder="6.5 / 10">
                 </div>
 
-                <div class="grupo-campo-archivo">
+                <div class="grupoCampoArchivo">
                     <label for="icons_plataforma">Plataformas (Icono):</label>
-                    <div class="subir-archivo">
+                    <div class="subirArchivo">
                         <input type="file" id="icons_plataforma" name="icons_plataforma" accept="image/*" required>
                     </div>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Cant_temporadas">Temporadas:</label>
-                    <input type="text" id="Cant_temporadas" class="input-texto" placeholder="Cant_temporadas">
+                    <input type="text" id="Cant_temporadas" class="inputTexto" placeholder="Cant_temporadas">
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="clasificacion_edad">Clasificación por Edad:</label>
-                    <input type="text" id="clasificacion_edad" class="input-texto" placeholder="+18">
+                    <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18">
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Reparto">Reparto:</label>
-                    <div class="reparto-contenedor">
+                    <div class="repartoContenedor">
                         <select name="reparto" id="Reparto">
                             <optgroup label="Listados">
                                 <option value="Rachel Weisz">Rachel Weisz</option>
                             </optgroup>
                         </select>
-                        <input type="text" class="input-texto" placeholder="Agregar nuevos actores">
+                        <input type="text" class="inputTexto" placeholder="Agregar nuevos actores">
                     </div>
                 </div>
 
-                <div class="grupo-campo-completo">
+                <div class="grupoCampoCompleto">
                     <label for="sinopsis">Sinopsis:</label>
                     <textarea id="sinopsis" name="sinopsis_serie" rows="4" placeholder="Escribe aquí el resumen de la trama..."></textarea>
                 </div>
 
-                <div class="grupo-campo-archivo">
+                <div class="grupoCampoArchivo">
                     <label for="video-upload">Tráiler:</label>
-                    <div class="subir-archivo">
+                    <div class="subirArchivo">
                         <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
                     </div>
                 </div>
 
-                <div class="grupo-campo-archivo">
+                <div class="grupoCampoArchivo">
                     <label for="Poster">Cargar Póster:</label>
-                    <div class="subir-archivo">
+                    <div class="subirArchivo">
                         <input type="file" id="Poster" name="poster_image" accept="image/*" required>
                     </div>
                 </div>

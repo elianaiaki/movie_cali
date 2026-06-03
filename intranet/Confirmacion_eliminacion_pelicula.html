@@ -11,9 +11,36 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+    <scrip src="../scripts/validaciones.js"></scrip>
+
+    <script>
+       
+        /*confirm es una funcion de JavaScript Muestra una venta con 2 opciones:
+          una devuelve verdadero y otra devuelve falso. Si se acepta eliminar la pelicula
+          te lleva a la pagina de peliculas pendientes de revision*/
+            
+        function asociarValidacion(){
+
+            const botonEliminar = document.getElementById("btnEliminar");
+
+            botonEliminar.addEventListener("click", function(){
+
+                const confirmar = confirm(
+                    "¿Está seguro que desea eliminar esta pelicula?"
+                );
+
+               if(confirmar){
+                    alert("Película eliminada correctamente");
+                    window.location.href ="../intranet/peliculas_pendientes_de_revision.html";
+                }
+            });
+
+        }
+
+    </script>
 </head>
 
-<body>
+<body onload="asociarValidacion()">
 
 <!----------------------------------INICIO DE HEADER-------------------------------------------------->
     <!-- HEADER -->
@@ -80,7 +107,7 @@
                 <p> Título: Nombre de la película</p>
                 <div class="botones-inferiores">
                     <div class="guardar_accion">
-                        <button type="button" class="btn-gris">ELIMINAR</button>
+                        <button type="button" id="btnEliminar" class="btn-gris">ELIMINAR</button>
                     </div>
                     <div class="modificables">
                         <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Cancelar</a>
