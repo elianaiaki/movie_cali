@@ -76,9 +76,11 @@
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
-        
-        <h1 class="titulo-seccion">PELICULAS PENDIENTES DE REVISION</h1>
-        
+        <section class="categoria-bloque">
+            <div class="fila-header">
+                <h3 class="titulo-subcategoria">PELICULAS PENDIENTES DE REVISION <span>▶</span></h3>
+            </div>
+        </section>
         <!-- BOTONES -->
         <div class="Contenedor-Botones-superior">
             <a class="boton-superior" href="../intranet/agregar_nueva_pelicula.html"> + AGREGAR NUEVA PELICULA </a>
@@ -93,9 +95,11 @@
         
 <!-----------------------Tarjetas----------------------------------------------->
         <div class="contenedor-tarjetas">
-            <section class="Tarjeta" width="20%" height="50%" >
-                <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" width="120" height="100" align="center">
-                <h3>Titulo:</h3>
+            <section class="Tarjeta" >
+                <div class="imagen-contenedor">    
+                    <img class="img-principal" src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" >
+                </div>
+                    <h3>Titulo:</h3>
                 <p id="001">El diablo viste a la Moda 2</p>
                 <h3>Sinopsis</h3>
                 <p> Miranda Priestly, leyenda de la moda
@@ -117,9 +121,11 @@
                     <p>por David Frankel</p>
                 <h3>Reparto:</h3>
                 <p>Meryl Streep, Anne Hathaway, Emily Blunt</p>
-                <img src="../recursos/imagenes/Reparto/Meryl_streep.jpg" width="50" height="50">
-                <img src="../recursos/imagenes/Reparto/anne_hathaway.jpg" width="50" height="50">
-                <img src="../recursos/imagenes/Reparto/emili_blunt.jpg" width="50" height="50">
+                <div class="imagen-contenedor">
+                    <img src="../recursos/imagenes/Reparto/Meryl_streep.jpg" >
+                    <img src="../recursos/imagenes/Reparto/anne_hathaway.jpg" >
+                    <img src="../recursos/imagenes/Reparto/emili_blunt.jpg" >
+                </div>
                 <h3>Trailer</h3>
                 <video width="320" height="240" controls>
                     <source src="../recursos/Videos/Eldiablovistealamoda2_TRAILER.mp4" type="video/mp4">      
@@ -131,7 +137,7 @@
                 <h3>Año de Estreno:</h3>
                     <p>30 de Abril 2026</p>
                 <h3>Plataformas:</h3>
-                <img src="../recursos/imagenes/iconos/disney_plus.png " width="30" height="30">
+                <img src="../recursos/imagenes/iconos/disney_plus.png " width="40" height="40">
                 <div class="botones-inferiores">
                     <div class="guardar_accion">
                         <button type="button" class="btn-gris">GUARDAR CAMBIOS</button>
@@ -151,8 +157,10 @@
             </section> 
     
  <!------------TARJETA 2 ------------------------->
-            <section class="Tarjeta" width="20%" height="50%" >
-                <img src="../recursos/imagenes/peliculas/Mercy.jpg" width="120" height="100" align="center">
+            <section class="Tarjeta" >
+                <div class="imagen-contenedor">
+                    <img class="img-principal" src="../recursos/imagenes/peliculas/Mercy.jpg">
+                </div>
                 <h3>Titulo Original:</h3>
                 <p>Mercy - Sin piedad </p>
                 <h3>Sinopsis</h3>
@@ -175,9 +183,11 @@
                     <p>por Timur Bekmambetov</p>
                 <h3>Reparto:</h3>
                 <p> Chris Pratt, Rebecca Ferguson, Annabelle Wallis</p>
-                <img src="../recursos/imagenes/Reparto/Chris_pratt.jpg" width="50" height="50">
-                <img src="../recursos/imagenes/Reparto/Rebecca_fergurson.jpg" width="50" height="50">
-                <img src="../recursos/imagenes/Reparto/annabelle_wallis.jpg" width="50" height="50">
+                <div class="imagen-contenedor">
+                    <img src="../recursos/imagenes/Reparto/Chris_pratt.jpg" >
+                    <img src="../recursos/imagenes/Reparto/Rebecca_fergurson.jpg" >
+                    <img src="../recursos/imagenes/Reparto/annabelle_wallis.jpg" >
+                </div>
                 <h3>Trailer</h3>
                 <video width="320" height="240" controls>
                     <source src="../recursos/Videos/SIN PIEDAD Trailer (2026) SUBTITULADO _ Mercy Trailer [HD] Chris Pratt.mp4" type="video/mp4">      
@@ -210,8 +220,10 @@
        
 
 <!------------TARJETA 3 ------------------------->
-            <section class="Tarjeta" width="20%" height="50%" >
-                <img src="../recursos/imagenes/peliculas/Ayuda.jpeg" width="120" height="100" align="center">
+            <section class="Tarjeta">
+                <div class="imagen-contenedor">    
+                    <img class="img-principal" src="../recursos/imagenes/peliculas/Ayuda.jpeg">
+                </div>
                 <h3>Titulo Original:</h3>
                 <p>Send Help - Ayuda </p>
                 <h3>Sinopsis</h3>
@@ -232,9 +244,11 @@
                     <p>por Sam Raimi</p>
                 <h3>Reparto:</h3>
                 <p>  Rachel McAdams, Dylan O'Brien, Edyll Ismail</p>
-                <img src="../recursos/imagenes/Reparto/Rachel_mcadams.jpg" width="50" height="50">
-                <img src="../recursos/imagenes/Reparto/Dylan_Obrien.jpg" width="50" height="50">
-                <img src="../recursos/imagenes/Reparto/edyll_ismail.jpg" width="50" height="50">
+                <div class="imagen-contenedor">
+                    <img src="../recursos/imagenes/Reparto/Rachel_mcadams.jpg" >
+                    <img src="../recursos/imagenes/Reparto/Dylan_Obrien.jpg">
+                    <img src="../recursos/imagenes/Reparto/edyll_ismail.jpg" >
+                </div>
                 <h3>Trailer</h3>
                 <video width="320" height="240" controls>
                     <source src="../recursos/Videos/AYUDA.mp4" type="video/mp4">      
@@ -288,7 +302,7 @@
             </aside>
         </div>
     </main>
-    
+
 <!---------FOOTER---------------------------------------------------------------------------------->
     <!-- FOOTER -->
     <footer class="footer">

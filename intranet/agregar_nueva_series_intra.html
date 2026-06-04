@@ -11,31 +11,144 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+    <script src="../scripts/validaciones.js"></script>
+
+    <!-- INYECCIÓN DE ESTILOS LOCALES PARA ADAPTAR EL DISEÑO A LA MAQUETA DE 4 COLUMNAS SIN DAÑO COLATERAL -->
+    <style>
+        /* Forzamos que la cuadrícula de este formulario tenga 4 columnas iguales como tu maqueta */
+        #formAgregar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) !important;
+            gap: 20px;
+        }
+
+        /* Campos anchos o bloques especiales que deben tomar el doble de espacio (2 columnas) */
+        .campoDoble {
+            grid-column: span 2 !important;
+        }
+
+        /* Campos de ancho completo (las 4 columnas enteras) */
+        .campoCompleto, .botones-inferiores {
+            grid-column: span 4 !important;
+        }
+
+        /* Alineamos la botonera horizontalmente al extremo inferior derecho como en tu dibujo */
+        .botones-inferiores {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: flex-end !important;
+            gap: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
+    <script>
+        function asociarValidacion(){
+            const formulario = document.getElementById("formAgregar");
+
+            formulario.addEventListener("submit", function(event){
+                event.preventDefault();
+
+                const titulo = document.getElementById("titulo_serie").value;
+                const genero = document.getElementById("genero_serie").value;
+                const director = document.getElementById("director").value;
+                const productor = document.getElementById("productor_serie").value;
+                const sinopsis = document.getElementById("sinopsis").value;
+                const anioEstreno = document.getElementById("anio_estreno").value;
+                const duracion = document.getElementById("duracion_serie").value;
+                const calificacion = document.getElementById("calificacion_serie").value;
+                const clasificacionEdad = document.getElementById("clasificacion_edad").value;
+                const nuevosActores = document.getElementById("nuevos_actores").value;
+                const cantTemporadas = document.getElementById("cantidad_temporadas").value;
+                    
+                    if(!textoAlfanumericoValido(titulo)){ 
+                        alert("Título inválido"); 
+                        return; 
+                    }
+                    
+                    if(!generoValido(genero)){ 
+                        alert("Género inválido"); 
+                        return; 
+                    }
+                    
+                    if(!textoAlfabeticoValido(director)){ 
+                        alert("Director inválido"); 
+                        return; 
+                    }
+
+                    if(!textoAlfabeticoValido(productor)){ 
+                        alert("Productor inválido"); 
+                        return; 
+                    }
+
+                    if(sinopsis.trim() === ""){ 
+                        alert("Debe ingresar una sinopsis"); 
+                        return; 
+                    }
+
+                    if(!/^\d{4}$/.test(anioEstreno)){ 
+                        alert("El año de estreno debe tener 4 dígitos"); 
+                        return; 
+                    }
+
+                    if(!/^\d+\s*min$/i.test(duracion)){ 
+                        alert("La duración de la serie debe tener formato 30 min"); 
+                        return; 
+                    }
+
+                    if(!/^\d+(\.\d+)?$/.test(calificacion)){ 
+                        alert("La calificación general debe ser numérica"); 
+                        return; 
+                    }
+
+                    const nota = parseFloat(calificacion);
+                    if(isNaN(nota) || nota < 0 || nota > 10){ 
+                        alert("La calificación general debe ser un número entre 0 y 10"); 
+                        return; 
+                    }
+
+                    if(!/^\+\d+$/.test(clasificacionEdad)){ 
+                        alert("La clasificación por edad debe tener formato +13, +16 o +18"); 
+                        return; 
+                    }
+                    
+                    if(nuevosActores !== "" && !textoAlfabeticoValido(nuevosActores)){ 
+                        alert("Nombre de actor inválido"); 
+                        return; 
+                    }
+
+                    if(!/^\d+$/.test(cantTemporadas)){ 
+                        alert("La cantidad de temporadas debe ser numérica"); 
+                        return; 
+                    }
+                    
+                    alert("Serie agregada correctamente");
+                    formulario.submit();
+                }
+            );
+        }
+
+        function limpiarFormulario(){
+            if(confirm("¿Desea limpiar todos los campos?")){
+                document.getElementById("formAgregar").reset();
+            }
+        }   
+    </script>
 </head>
 
-<body>
+<body onload="asociarValidacion()">
    
-<!------------------------------------------------------------------------------------------->
-    <!-- HEADER -->
+    <!-- HEADER COMPARTIDO -->
     <header class="header">
-        <!-- LOGO -->
         <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
-
-        <!-- BUSCADOR -->
         <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
+            <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
-
-        <!-- PERFIL -->
         <div class="perfil" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
-        <!-- DESPLEGABLE -->
             <div class="desplegable">
                 <form>
                     <select name="desplegable" id="desplegable" onchange="navegarMenu(this)">
@@ -43,21 +156,13 @@
                         <option value="../intranet/mi_perfil.html">Mi perfil</option>
                         <hr>
                         <optgroup label="Gestión de Películas">
-                            <option value="../intranet/peliculas_pendientes_de_revision.html">
-                                Películas pendientes de revisión
-                            </option>
-                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
-                                Nuevas solicitudes de alta
-                            </option>
+                            <option value="../intranet/peliculas_pendientes_de_revision.html">Películas pendientes de revisión</option>
+                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Nuevas solicitudes de alta</option>
                         </optgroup> 
                         <hr>
                         <optgroup label="Administración Usuarios">
-                            <option value="../intranet/gestion_de_perfil_roles.html">
-                                Gestión de perfil y roles
-                            </option>
-                            <option value="../intranet/nuevo_perfil.html">
-                                Crear nuevo perfil
-                            </option>
+                            <option value="../intranet/gestion_de_perfil_roles.html">Gestión de perfil y roles</option>
+                            <option value="../intranet/nuevo_perfil.html">Crear nuevo perfil</option>
                         </optgroup>  
                         <hr>
                         <option value="../intranet/inicio_de_sesion.html">Cerrar Sesión</option>     
@@ -68,7 +173,6 @@
     </header>
 
     <br>
-<!------------------FIN DE HEADER------------------------------------------------------------------------->
     <main class="main">
         <div class="contenedor-panel">
             <div class="Panel">
@@ -77,98 +181,104 @@
             </div>
         </div>
         <h1>+ AGREGAR NUEVA SERIE</h1>
-<!------------------------------------------------------------------------------------------->
-       <div class="contenedor-formulario">
+
+        <div class="contenedorFormulario">
             <h2>Agregar Serie</h2>
             
-            <form id="form_agregar">
+            <form id="formAgregar" action="../intranet/series_pendientes_de_revision_intra.html" method="get">
                 
-                <div class="grupo-campo">
-                    <label for="Titulo_serie">Título:</label>
-                    <input type="text" id="Titulo_serie" class="input-texto" placeholder="Vladimir">
+                <!-- FILA 1 DE LA MAQUETA: 4 CAMPOS SIMÉTRICOS -->
+                <div class="grupoCampo">
+                    <label for="titulo_serie">Título:</label>
+                    <input type="text" id="titulo_serie" class="inputTexto" placeholder="Título de la serie" required>
                 </div>
 
-                <div class="grupo-campo">
-                    <label for="Genero_serie">Género:</label>
-                    <input type="text" id="Genero_serie" class="input-texto" placeholder="Comedia, Drama">
+                <div class="grupoCampo">
+                    <label for="genero_serie">Género:</label>
+                    <input type="text" id="genero_serie" class="inputTexto" placeholder="Comedia, Drama" required>
                 </div>
 
-                <div class="grupo-campo">
-                    <label for="Ano_estreno">Año de Estreno:</label>
-                    <input type="text" id="Ano_estreno" class="input-texto" placeholder="20 de Abril 2026">
+                <div class="grupoCampo">
+                    <label for="anio_estreno">Año de Estreno:</label>
+                    <input type="text" id="anio_estreno" class="inputTexto" placeholder="2026" required>
                 </div>
 
-                <div class="grupo-campo">
-                    <label for="Duracion_serie">Duración:</label>
-                    <input type="text" id="Duracion_serie" class="input-texto" placeholder="30 min">
+                <div class="grupoCampo">
+                    <label for="duracion_serie">Duración:</label>
+                    <input type="text" id="duracion_serie" class="inputTexto" placeholder="30 min" required>
                 </div>
 
-                <div class="grupo-campo">
-                    <label for="Director">Director:</label>
-                    <input type="text" id="Director" class="input-texto" placeholder="Shari Springer Berman">
+                <!-- FILA 2 DE LA MAQUETA: 4 CAMPOS SIMÉTRICOS -->
+                <div class="grupoCampo">
+                    <label for="director">Director:</label>
+                    <input type="text" id="director" class="inputTexto" placeholder="Shari Springer Berman" required>
                 </div>
 
-                <div class="grupo-campo">
-                    <label for="Productor_serie">Productor:</label>
-                    <input type="text" id="Productor_serie" class="input-texto" placeholder="Ingrese nombre y apellido">
+                <div class="grupoCampo">
+                    <label for="productor_serie">Productor:</label>
+                    <input type="text" id="productor_serie" class="inputTexto" placeholder="Ingrese nombre y apellido" required>
                 </div>
 
-                <div class="grupo-campo">
-                    <label for="Calificacion_serie">Calificación General:</label>
-                    <input type="text" id="Calificacion_serie" class="input-texto" placeholder="6.5 / 10">
+                <div class="grupoCampo">
+                    <label for="calificacion_serie">Calificación General:</label>
+                    <input type="text" id="calificacion_serie" class="inputTexto" placeholder="10" required>
                 </div>
 
-                <div class="grupo-campo-archivo">
+                <div class="grupoCampo">
+                    <label for="cantidad_temporadas">Temporadas:</label>
+                    <input type="text" id="cantidad_temporadas" class="inputTexto" placeholder="Cant_temporadas" required>
+                </div>
+
+                <!-- FILA 3 DE LA MAQUETA: COMBINACIÓN DE SELECCIÓN DE ARCHIVOS -->
+                <div class="grupoCampo">
+                    <label for="clasificacion_edad">Clasificación por Edad:</label>
+                    <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18" required>
+                </div>
+
+                <div class="grupoCampoArchivo">
                     <label for="icons_plataforma">Plataformas (Icono):</label>
-                    <div class="subir-archivo">
+                    <div class="subirArchivo">
+                        <!-- Saneado: Sin clase inputTexto para evitar que se deforme el botón nativo -->
                         <input type="file" id="icons_plataforma" name="icons_plataforma" accept="image/*" required>
                     </div>
                 </div>
 
-                <div class="grupo-campo">
-                    <label for="Cant_temporadas">Temporadas:</label>
-                    <input type="text" id="Cant_temporadas" class="input-texto" placeholder="Cant_temporadas">
-                </div>
-
-                <div class="grupo-campo">
-                    <label for="clasificacion_edad">Clasificación por Edad:</label>
-                    <input type="text" id="clasificacion_edad" class="input-texto" placeholder="+18">
-                </div>
-
-                <div class="grupo-campo">
+                <div class="grupoCampoMitad campoDoble">
                     <label for="Reparto">Reparto:</label>
-                    <div class="reparto-contenedor">
+                    <div class="repartoContenedor">
                         <select name="reparto" id="Reparto">
                             <optgroup label="Listados">
                                 <option value="Rachel Weisz">Rachel Weisz</option>
                             </optgroup>
                         </select>
-                        <input type="text" class="input-texto" placeholder="Agregar nuevos actores">
+                        <input type="text" id="nuevos_actores" class="inputTexto" placeholder="Agregar nuevos actores">
                     </div>
                 </div>
 
-                <div class="grupo-campo-completo">
+                <!-- FILA 4 DE LA MAQUETA: BLOQUES ANCHOS DE TEXTO Y CARGA MULTIMEDIA -->
+                <div class="grupoCampoCompleto campoCompleto">
                     <label for="sinopsis">Sinopsis:</label>
-                    <textarea id="sinopsis" name="sinopsis_serie" rows="4" placeholder="Escribe aquí el resumen de la trama..."></textarea>
+                    <textarea id="sinopsis" name="sinopsis_serie" rows="4" placeholder="Escribe aquí el resumen de la trama..." required></textarea>
                 </div>
 
-                <div class="grupo-campo-archivo">
+                <div class="grupoCampoArchivo campoDoble">
                     <label for="video-upload">Tráiler:</label>
-                    <div class="subir-archivo">
+                    <div class="subirArchivo">
                         <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
                     </div>
                 </div>
 
-                <div class="grupo-campo-archivo">
-                    <label for="Poster">Cargar Póster:</label>
-                    <div class="subir-archivo">
-                        <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                <div class="grupoCampoArchivo campoDoble">
+                    <label for="poster">Cargar Póster:</label>
+                    <div class="subirArchivo">
+                        <input type="file" id="poster" name="poster_image" accept="image/*" required>
                     </div>
                 </div>
 
+                <!-- BOTONERA INFERIOR EN FILA ALINEADA A LA DERECHA -->
                 <div class="botones-inferiores">
                     <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="reset" class="btn-gris">Restablecer</button>
+                    <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
                     <a href="../intranet/series_pendientes_de_revision_intra.html" class="btn-gris">Volver</a>
                 </div>
 
@@ -179,19 +289,15 @@
     <br>
     <br>
     <br>
-<!------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------->
     <!-- FOOTER -->
     <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
+        <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
-
     </footer>
 </body>
 </html>
+
+

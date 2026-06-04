@@ -4,22 +4,8 @@
     max-width: 75%;
     border-radius: 20px;
     margin: 0 auto;
-}
-
-/* Bloque que contiene el encabezado y el grupo de tarjetas */
-.categoria-bloque {
-    margin-bottom: 40px;
     
 }
-
-/* Encabezados alineados: Título a la izquierda, Ver todo a la derecha */
-.fila-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
 
 .enlace-ver-todo {
     color: #000;
@@ -27,7 +13,7 @@
     text-decoration: underline;
 }
 
-/* El contenedor gris que encierra las 5 tarjetas en fila */
+/* El contenedor  */
 .cuadrícula-tarjetas {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
@@ -38,7 +24,7 @@
     gap: 15px;
 }
 
-/* Cada tarjeta individual (Cuadro con la X y botones) */
+/* Cada tarjeta individual  */
 .tarjeta-item {
     display: flex;
     flex-direction: column;
@@ -75,7 +61,7 @@
     gap: 6px;
 }
 
-/* Estilo de los botones simulando el wireframe */
+/* Estilo de los botones  */
 .botones-contenedor button {
     background-color: #444;
     border: 1px solid #000000;

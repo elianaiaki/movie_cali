@@ -1,0 +1,55 @@
+.contenedor-principal {
+    display: flex;
+    gap: 30px;                 /* Espacio de separacion entre reportes y el aside */
+    align-items: flex-start;    /* Evita que el aside se estire verticalmente de más */
+    width: 100%;
+    max-width: 1400px;         /* Ajusta  el ancho maximo */
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.columna-izquierda {
+    flex: 3;                   /* Ocupa el 75% de la pantalla */
+    display: flex;
+    flex-direction: column;    /* coloca uno abajo del otro */
+    gap: 25px;                 /* Espacio entre tarjetas */
+}
+
+
+.tarjetas {
+    width: 75%;
+}
+
+/* Tarjeta individual */
+.tarjeta-contenido {
+    background-color:#1a3a5c;
+    border: 1px solid #000;
+    border-radius: 12px;       /* Bordes curvos de la maqueta */
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ddd;
+    align-items: center;      /* Centra horizontalmente todo el contenido interno */
+    text-align: center;
+}
+    
+/* ==========================================================================
+   IMAGENES
+   ========================================================================== */
+
+
+.icono_pelicula {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.icono-perfil{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle; /* Alinea perfectamente el ícono con el texto de al lado */
+    margin-right: 4px;
+}
+

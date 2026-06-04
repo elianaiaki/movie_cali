@@ -11,9 +11,153 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+    <!--no se lo usamos el defer en este
+    <script src="../scripts/validaciones.js"defer></script>
+    -->
+    <script src="../scripts/validaciones.js"></script>
+    <script>
+        /*event.preventDefault() evita que el formulario
+         se envíe automáticamente para poder validar
+         los datos antes de continuar.
+         
+         alert() informa al usuario si existe un error
+         o si la película fue agregada correctamente.
+
+         confirm() solicita una confirmación antes de
+         ejecutar acciones que modifican el formulario.*/
+        function asociarValidacion(){
+
+            const formulario = document.getElementById("formAgregar");
+
+            formulario.addEventListener("submit",function(event){
+
+                event.preventDefault();
+
+                const titulo = document.getElementById("titulo_pelicula").value;
+
+                const genero = document.getElementById("genero_pelicula").value;
+
+                const director = document.getElementById("director").value;
+    
+                const productor = document.getElementById("productor_pelicula").value;
+
+                const sinopsis = document.getElementById("sinopsis").value;
+                /**/
+                const anioEstreno = document.getElementById("anio_estreno").value;
+
+                const duracion = document.getElementById("duracion_pelicula").value;
+
+                const calificacion = document.getElementById("calificacion_pelicula").value;
+
+                const clasificacionEdad = document.getElementById("clasificacion_edad").value;
+
+                const nuevosActores = document.getElementById("nuevosActores").value;
+                    
+                    // Validar título
+                    if(!textoAlfanumericoValido(titulo)){
+                        alert("Título inválido");
+                        return;
+                    }
+
+                    // Validar género
+                    if(!generoValido(genero)){
+                        alert("Género inválido");
+                        return;
+                    }
+                    // Validar director
+                    if(!textoAlfabeticoValido(director)){
+                        alert("Director inválido");
+                        return;
+                    }
+
+                    // Validar productor
+                    if(!textoAlfabeticoValido(productor)){
+                        alert("Productor inválido");
+                        return;
+                    }
+
+                    // Validar sinopsis
+                    if(sinopsis.trim() === ""){
+                        alert("Debe ingresar una sinopsis" );
+                        return;
+                    }
+
+                    //Validar año de estreno. Acepta formato: 2026 1998 2010
+                    if(!/^\d{4}$/.test(anioEstreno)){
+                        alert("El año de estreno debe tener 4 dígitos");
+                        return;
+                    }
+
+                    /*Validar duración
+                    Acepta formatos como:1h 59min, 2h 15min, 3 h 20 min, 2h20min
+                    ^ -> inicio del texto.
+                    \d+ -> uno o más números (horas).
+                    \s* -> cero o más espacios.
+                    h -> letra h.
+                    \d+ -> uno o más números (minutos).
+                    min -> texto min.
+                    $ -> final del texto.
+                    i -> ignora mayúsculas y minúsculas (min, MIN, Min).*/
+
+                    if(!/^\d+\s*h\s*\d+\s*min$/i.test(duracion)){
+                        alert("La duración de la pelicula debe tener formato 1h 59min");
+                        return;
+                    }
+
+                    /*Validar calificación
+                     parseFloat() convierte el texto ingresado en un número decimal.
+
+                     isNaN() es una función propia de JavaScript.
+                     Su nombre significa "is Not a Number" (no es un número)
+                     y permite verificar si el valor ingresado puede
+                     interpretarse como un número válido.
+                    
+                     Además se controla que la calificación esté
+                     dentro del rango permitido (0 a 10).*/
+                    
+                    //Acepta calificaciones como: 8, 7.5, 10, 0 
+                    if(!/^\d+(\.\d+)?$/.test(calificacion)){
+                        alert("La calificación general debe ser numérica");
+                        return;
+                    } 
+                    const nota = parseFloat(calificacion);
+
+                    if(isNaN(nota) || nota < 0 || nota > 10){
+                        alert("La calificación general debe ser un número entre 0 y 10");
+                        return;
+                    }
+
+                    // Validar clasificación por edad
+                    if(!/^\+\d+$/.test(clasificacionEdad)){
+                        alert("La clasificación por edad debe tener formato +13, +16 o +18");
+                        return;
+                    }
+
+                    // Validar nuevos actores 
+                    if(nuevosActores !== "" && !textoAlfabeticoValido(nuevosActores)){
+                        alert("Nombre de actor inválido");
+                        return;
+                    }
+
+                    alert("Película editada correctamente");
+
+                    formulario.submit();
+
+                }
+            );
+
+        }
+
+        function limpiarFormulario(){
+            if(confirm("¿Desea limpiar todos los campos?")){
+                document.getElementById("forAgregar").reset();
+            }
+        }
+    </script>
+
 </head>
 
-<body>
+<body onload="asociarValidacion()">
  
 <!------------------------------------------------------------------------------------------->
     <!-- HEADER -->
@@ -68,7 +212,6 @@
         </div>
     </header>
 
-    <br>
 <!-----------------------FIN DE HEADER--------------------------------------------------------->
     <main class="main">
         <div class="contenedor-panel">
@@ -78,14 +221,14 @@
             </div>
         </div>
 <!------------------------------------------------------------------------------------------->
-        <div class="contenedor-formulario">
+        <div class="contenedorFormulario">
             <h2>+ EDITAR PELÍCULA</h2>
             
-            <form id="form_agregar">
+            <form id="formAgregar" action="../intranet/peliculas_pendientes_de_revision.html" method="get">
                 
-                <div class="grupo-campo">
+                <div class="grupoCampo" action="../intranet/peliculas_pendientes_de_revision.html" method="get">
                     <label for="Seleccionar_titulo_pelicula">Título a Editar:</label>
-                    <div class="reparto-contenedor">
+                    <div class="repartoContenedor">
                         <select name="Seleccionar_titulo_pelicula" id="Seleccionar_titulo_pelicula">
                             <optgroup label="Listado de Películas">
                                 <option value="El_Yeti">El Yeti</option>
@@ -94,93 +237,92 @@
                                 <option value="F1_La_Pelicula">F1 La Película</option>
                             </optgroup>
                         </select>
-                        <input type="text" class="input-texto" placeholder="Nuevo título (ej: El Diablo Viste a la Moda 2)">
+                        <input type="text" id="titulo_pelicula" class="inputTexto" placeholder="Nuevo título (ej: El Diablo Viste a la Moda 2)" required>
                     </div>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Genero_pelicula">Género:</label>
-                    <input type="text" id="Genero_pelicula" class="input-texto" placeholder="Comedia Dramática">
+                    <input type="text" id="genero_pelicula" class="inputTexto" placeholder="Comedia Dramática" required>
                 </div>
 
-                <div class="grupo-campo">
-                    <label for="Ano_estreno">Año de Estreno:</label>
-                    <input type="text" id="Ano_estreno" class="input-texto" placeholder="20 de Abril 2026">
+                <div class="grupoCampo">
+                    <label for="Anio_estreno">Año de Estreno:</label>
+                    <input type="text" id="anio_estreno" class="inputTexto" placeholder="2026" required>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Duracion_pelicula">Duración:</label>
-                    <input type="text" id="Duracion_pelicula" class="input-texto" placeholder="1h 59min">
+                    <input type="text" id="duracion_pelicula" class="inputTexto" placeholder="1h 59min" required>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Director">Director:</label>
-                    <input type="text" id="Director" class="input-texto" placeholder="David Frankel">
+                    <input type="text" id="director" class="inputTexto" placeholder="Ingrese nombre y apellido" required>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Productor_pelicula">Productor:</label>
-                    <input type="text" id="Productor_pelicula" class="input-texto" placeholder="Ingrese nombre y apellido">
+                    <input type="text" id="productor_pelicula" class="inputTexto" placeholder="Ingrese nombre y apellido" required>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Calificacion_pelicula">Calificación General:</label>
-                    <input type="text" id="Calificacion_pelicula" class="input-texto" placeholder="8.5 / 10">
+                    <input type="text" id="calificacion_pelicula" class="inputTexto" placeholder="8.5">
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Plataformas_disponibles">Plataformas:</label>
-                    <input type="text" id="Plataformas_disponibles" class="input-texto" placeholder="Agregar imagen">
+                    <div class="subir-archivo">
+                        <input type="file" id="plataformas_disponibles" class="inputTexto" name="plataformas_disponibles" accept="image/*" required>
+                    </div>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="clasificacion_edad">Clasificación por Edad:</label>
-                    <input type="text" id="clasificacion_edad" class="input-texto" placeholder="+18">
+                    <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18" required>
                 </div>
 
-                <div class="grupo-campo">
+                <div class="grupoCampo">
                     <label for="Reparto">Reparto:</label>
-                    <div class="reparto-contenedor">
+                    <div class="repartoContenedor">
                         <select name="reparto" id="Reparto">
                             <optgroup label="Listados">
                                 <option value="Anne_Hathaway">Anne Hathaway</option>
                             </optgroup>
                         </select>
-                        <input type="text" class="input-texto" placeholder="Agregar nuevos actores">
+                        <input type="text" id="nuevosActores" class="inputTexto" placeholder="Agregar nuevos actores">
                     </div>
                 </div>
 
-                <div class="grupo-campo-completo">
+                <div class="grupoCampoCompleto">
                     <label for="sinopsis">Sinopsis:</label>
-                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" placeholder="Escribe aquí el resumen de la trama..."></textarea>
+                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" placeholder="Escribe aquí el resumen de la trama..." required></textarea>
                 </div>
 
-                <div class="grupo-campo-archivo">
+                <div class="grupoCampoArchivo">
                     <label for="video-upload">Tráiler:</label>
                     <div class="subir-archivo">
                         <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
                     </div>
                 </div>
 
-                <div class="grupo-campo-archivo">
+                <div class="grupoCampoArchivo">
                     <label for="Poster">Cargar Póster:</label>
                     <div class="subir-archivo">
-                        <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                        <input type="file" id="poster" name="poster_image" accept="image/*" required>
                     </div>
                 </div>
 
                 <div class="botones-inferiores">
                     <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="reset" class="btn-gris">Restablecer</button>
+                    <button type="reset" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
                     <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
                 </div>
 
             </form>
         </div>
     </main>
-    <br>
-    <br>
-    <br>
 <!------------------------------------------------------------------------------------------->
     <!-- FOOTER -->
     <footer class="footer">
@@ -190,8 +332,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>
