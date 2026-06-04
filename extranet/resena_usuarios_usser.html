@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../estilos/header.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
+    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_resena_usuarios.css">
     <script src="../scripts/header.js" defer></script>
 </head>
 
@@ -63,7 +63,7 @@
     <!-- FIN DE HEADER-->
     <!------------------------------------------------------------------------------------------->
     <!-- CONTENEDOR GENERAL -->
-    <div>
+    <div class="fila">
         <!-- MAIN -->
         <main>
             <!-- BLOQUE -->
@@ -277,6 +277,37 @@
         </p>
 
     </footer>
+
+    <!-- AGREGAR RESEÑA---->
+    <div id="modalResena" class="overlay activo">
+        <div class="modal">
+
+            <div class="modal-header">
+            <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" alt="F1 The Movie">
+            <div class="info">
+                <h3>F1 THE MOVIE</h3>
+                <p class="meta">8 · 2025 · 2h 35min</p>
+                <p class="subtitulo">MI RESEÑA</p>
+                <p class="puntuacion-label">Tu puntuación</p>
+                <span class="estrellas">
+                ★ ★ ★ ★ ★ ★ ★
+                <span class="vacia">★ ★ ★</span>
+                </span>
+            </div>
+
+            <button class="boton-cerrar" onclick="cerrarModal()">X</button>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Título de la reseña (opcional)">
+                <textarea rows="10" placeholder="Escribe tu reseña..."></textarea>
+                <p class="contador">0/1000</p>
+                <button type="submit" class="boton-publicar">Publicar Reseña</button>
+                <button type="button" class="boton-cancelar">Cancelar</button>
+            </form>
+
+        </div>
+    </div>
  
 </body>
 </html>

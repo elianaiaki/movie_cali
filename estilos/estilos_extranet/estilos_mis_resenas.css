@@ -1,0 +1,222 @@
+/* ===================== OVERLAY ===================== */
+/* fondo oscuro detrás de cualquier modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+/* ===================== MODAL DETALLE ===================== */
+/* caja del modal ver detalle */
+.modal-detalle {
+    background: #0f1e35;
+    border: 1px solid #1e3a5f;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 95vw;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* estrellas amarillas */
+.estrellas {
+    color: #f5c518;
+    font-size: 1.3rem;
+}
+
+/* botón editar - azul, flota a la derecha */
+.btn-editar {
+    background: #1a56c4;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    float: right;
+}
+
+/* fila con avatar y nombre de usuario */
+.fila-usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+    clear: both;
+}
+
+.fila-usuario img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.fila-usuario h3 {
+    margin: 0;
+    color: #8ab4f8;
+    font-size: 0.9rem;
+}
+
+/* título de la reseña */
+.titulo-resena {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* texto de la reseña */
+.texto-resena {
+    color: #cdd8ea;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+/* fila me gusta, no me gusta, comentarios */
+.acciones {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid #1e3a5f;
+    border-bottom: 1px solid #1e3a5f;
+    color: #8ab4f8;
+    font-size: 0.85rem;
+    margin: 16px 0;
+}
+
+.acciones a {
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+
+/* ===================== MODAL EDITAR ===================== */
+/* caja del modal editar reseña */
+.modal-editar {
+    background: #0f1e35;
+    border: 1px solid #1e3a5f;
+    border-radius: 6px;
+    width: 400px;
+    padding: 20px;
+    position: relative;
+    color: white;
+}
+
+/* header con imagen + info de la película */
+.modal-header-info {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #1e3a5f;
+}
+
+.modal-header-info img {
+    width: 55px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.modal-header-info h4,
+.modal-header-info p {
+    margin: 3px 0;
+    font-size: 0.8rem;
+    color: #8ab4f8;
+}
+
+/* label "Tu puntuación" */
+.label-puntuacion {
+    font-size: 0.8rem;
+    color: #8ab4f8;
+    margin-bottom: 6px;
+}
+
+/* estrellas del modal editar */
+.estrellas-container span {
+    color: #f5c518;
+    font-size: 1.2rem;
+}
+
+/* inputs y textarea */
+.modal-editar input,
+.modal-editar textarea {
+    width: 100%;
+    background: #0a1628;
+    border: 1px solid #1e3a5f;
+    border-radius: 4px;
+    color: #ccc;
+    padding: 10px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.modal-editar textarea { height: 100px; }
+
+/* contador 0/1000 */
+.char-counter {
+    text-align: right;
+    font-size: 0.72rem;
+    color: #4a6080;
+    margin-bottom: 12px;
+}
+
+
+/* ===================== BOTONES COMPARTIDOS ===================== */
+/* X cerrar - esquina superior derecha */
+.btn-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* botón guardar - azul ancho */
+.btn-guardar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #1a56c4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* fila cancelar + eliminar */
+.acciones-inferiores {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* cancelar - texto azul */
+.btn-cancelar {
+    color: #8ab4f8;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* eliminar - texto rojo */
+.btn-eliminar {
+    color: #e05555;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
