@@ -13,23 +13,49 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/aside_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+
+    <script>
+        /*confirm() muestra una ventana de confirmación con las opciones
+         "Aceptar" y "Cancelar".
+         
+         alert() se utiliza para mostrar un mensaje emergente al usuario.
+         En este caso informa que la acción solicitada fue realizada correctamente.
+         También sirve para simular la respuesta del sistema en esta maqueta,
+         ya que el proyecto no cuenta con una base de datos ni backend.*/
+
+        function ignorarReporte(){
+            if(confirm("¿Está seguro de ignorar este reporte?")){
+                alert("Reporte ignorado correctamente");
+            }
+        }
+
+        function sancionarUsuario(){
+            if(confirm("¿Desea sancionar al usuario reportado?")){
+                alert("Usuario sancionado correctamente");
+            }
+        }
+
+        function eliminarResenia(){
+            if(confirm("¿Está seguro de eliminar esta reseña?")){
+                alert("Reseña eliminada correctamente");
+            }
+        }
+       
+    </script>
 </head>
 
-<body>
+<body class="body">
 
     <!-- HEADER -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
 
         <!-- BUSCADOR -->
         <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
+            <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
 
@@ -85,7 +111,6 @@
                 <option>MÁS ANTIGUOS</option>
             </select>
 
-        
             <select class="boton-superior">
                 <option>TIPOS DE REPORTES: </option>
                 <option>Abusos</option>
@@ -104,7 +129,6 @@
             
         </div>
         
-
         <hr>
 
 <!-----------Listado de Reportes---------------------------------------------------->
@@ -116,7 +140,8 @@
                 </div>
                 <div class="tarjetas">
                     <div class="tarjeta-contenido">
-                        <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" class="Icono_pelicula">
+                        <!-- CORRECCIÓN: Se cambió "Icono_pelicula" a minúsculas para enlazar correctamente tu CSS columna.css -->
+                        <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" class="icono_pelicula">
                         <h4>TÍTULO: SHREK 2</h4>
 
                         <p>
@@ -128,9 +153,9 @@
 
                         <div class="botones-contenedor">
                             <button type="button">Ver Reseña Completa</button>
-                            <button type="button">Ignorar Reporte</button>
-                            <button type="button">Sancionar Usuario</button>
-                            <button type="button">Eliminar Reseña</button>
+                            <button type="button" onclick="ignorarReporte()">Ignorar Reporte</button>
+                            <button type="button" onclick="sancionarUsuario()">Sancionar Usuario</button>
+                            <button type="button" onclick="eliminarResenia()">Eliminar Reseña</button>
                         </div>    
                     </div>
                 </div>
@@ -141,7 +166,8 @@
         
                 <div class="tarjetas">
                     <div class="tarjeta-contenido">
-                        <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono_pelicula" class="Icono_pelicula" >
+                        <!-- CORRECCIÓN: Ajuste de clase a minúsculas para visualización correcta -->
+                        <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono_pelicula" class="icono_pelicula" >
                         <h4>TÍTULO: TOY STORY</h4>
                         <p>
                             <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
@@ -170,18 +196,11 @@
 <!---------------FOOTER--------------------------->
     <!-- FOOTER -->
     <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
+        <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
-
     </footer>
 
 </body>
 </html>
-

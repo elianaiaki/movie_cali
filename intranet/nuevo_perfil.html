@@ -8,25 +8,94 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+
+    <script src="../scripts/validaciones.js"></script><!-- CONEXION CON JS -->
+
+    <script>
+        function asociarValidacion(){
+            // Obtener formulario
+            const formulario = document.getElementById("nuevo_perfil");
+
+            // Evento submit
+            formulario.addEventListener("submit", function(event){
+                // Frenar envío automático
+                event.preventDefault();
+
+                // Obtener valores
+                const nombre = document.getElementById("nombre").value;
+                const apellido = document.getElementById("apellido").value;
+                const correo = document.getElementById("correo").value;
+                const identificador = document.getElementById("identificador").value;
+                const contrasenia = document.getElementById("contrasenia").value;
+                const repetirContrasenia = document.getElementById("repetirContrasenia").value;
+                const celular = document.getElementById("celular").value;
+
+                // Validar nombre
+                if(!textoAlfabeticoValido(nombre)){
+                    alert("Nombre inválido");
+                    return;
+                }
+
+                // Validar apellido
+                if(!textoAlfabeticoValido(apellido)){
+                    alert("Apellido inválido");
+                    return;
+                }
+
+                // Validar correo
+                if(!correoValido(correo)){
+                    alert("Correo inválido");
+                    return;
+                }
+
+                // Validar ID
+                if(!textoAlfanumericoValido(identificador)){
+                    alert("ID inválido");
+                    return;
+                }
+
+                // Validar contraseña
+                if(!contraseniaValida(contrasenia)){
+                    alert("Contraseña inválida");
+                    return;
+                }
+
+                // Validar coincidencia
+                if(contrasenia !== repetirContrasenia){
+                    alert("Las contraseñas no coinciden");
+                    return;
+                }
+
+                // Validar celular
+                if(!numeroTelefonoValido(celular)){
+                    alert("Número de celular inválido");
+                    return;
+                }
+
+                // Todo correcto
+                alert("Perfil creado correctamente");
+
+                // Enviar formulario
+                formulario.submit();
+            });
+        }
+    </script>
 </head>
 
-<body>
-
+<body class="body" onload="asociarValidacion()">
 <!---------- INICIO DE HEADER----------------------->
     <!-- HEADER -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
 
         <!-- BUSCADOR -->
         <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
+            <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
 
@@ -77,22 +146,22 @@
         <h2>CREAR NUEVO PERFIL</h2>
 
         <section>
-            <form>
+            <form id="nuevo_perfil" action="../intranet/gestion_de_perfil_roles.html" method="get">
                 <div>
                     <label>Nombre:</label>
-                    <input type="text" placeholder="Escribe el nombre">
+                    <input type="text" id="nombre" placeholder="Escribe el nombre" required>
                 </div>
                 <div>
                     <label>Apellido:</label>
-                    <input type="text" placeholder="Escribe el apellido">
+                    <input type="text" id="apellido" placeholder="Escribe el apellido" required>
                 </div>
                 <div>
                     <label>Email:</label>
-                    <input type="email" placeholder="ejemplo@correo.com">
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
                 </div>
                 <div>
                     <label>ID:</label>
-                    <input type="text" placeholder="12586-id">
+                    <input type="text" id="identificador" placeholder="12586-id">
                 </div>
                 <div>
                     <label>Rol:</label>
@@ -110,44 +179,39 @@
                 </div>
                 <div>
                     <label>Contraseña:</label>
-                    <input type="password">
+                    <input type="password" id="contrasenia" required>
                 </div>
                 <div>
                     <label>Repetir Contraseña:</label>
-                    <input type="password">
+                    <input type="password" id="repetirContrasenia" required>
                 </div>
                 <div>
                     <label>Celular:</label>
-                    <input type="tel" placeholder="+549-2705-869344">
+                    <input type="tel" id="celular" placeholder="+549-2705-869344" required>
                 </div>
 
-                <!--Botones-->
                 <div>
                     <button type="submit">Guardar</button>
-                    
-                    <!-- Enlace para volver al Panel -->
                     <a href="../intranet/gestion_de_perfil_roles.html">Cancelar</a>
+                </div>
             </form>
         </section>
     </main>
 
     <br><br>
-<!---------------footer---------------------------------------------------------------------------->
-    
+
+<!---------------FOOTER--------------------------->
     <!-- FOOTER -->
     <footer class="footer">
-
         <p class="titulo-footer">
             Desarrollado por:
         </p>
-
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
-
     </footer>
 
 </body>
 </html>
+
 

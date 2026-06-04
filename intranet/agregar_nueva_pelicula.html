@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+
     <script src="../scripts/validaciones.js"></script>
-        <script>
+
+    <script>
         /*event.preventDefault() evita que el formulario
          se envíe automáticamente para poder validar
          los datos antes de continuar.
@@ -21,12 +23,10 @@
          o si la película fue agregada correctamente.
 
          confirm() solicita una confirmación antes de
-         ejecutar acciones que modifican el formulario.
-        */
-
+         ejecutar acciones que modifican el formulario.*/
         function asociarValidacion(){
 
-            const formulario = document.getElementById("form_agregar");
+            const formulario = document.getElementById("formAgregar");
 
             formulario.addEventListener("submit",function(event){
 
@@ -149,10 +149,10 @@
 
         function limpiarFormulario(){
             if(confirm("¿Desea limpiar todos los campos?")){
-                document.getElementById("form_agregar").reset();
+                document.getElementById("formAgregar").reset();
             }
         }
-    </script>"
+    </script>
 </head>
 
 <body onload="asociarValidacion()">
@@ -226,49 +226,49 @@
                 
                 <div class="grupoCampo">
                     <label for="Titulo_pelicula">Título:</label>
-                    <input type="text" id="Titulo_pelicula" class="inputTexto" placeholder="El Diablo Viste a la Moda 2">
+                    <input type="text" id="titulo_pelicula" class="inputTexto" placeholder="Titulo de la pelicula" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Genero_pelicula">Género:</label>
-                    <input type="text" id="Genero_pelicula" class="inputTexto" placeholder="Comedia Dramática">
+                    <input type="text" id="genero_pelicula" class="inputTexto" placeholder="Comedia Dramática" required>
                 </div>
 
                 <div class="grupoCampo">
-                    <label for="Ano_estreno">Año de Estreno:</label>
-                    <input type="text" id="Ano_estreno" class="inputTexto" placeholder="20 de Abril 2026">
+                    <label for="Anio_estreno">Año de Estreno:</label>
+                    <input type="text" id="anio_estreno" class="inputTexto" placeholder="2026" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Duracion_pelicula">Duración:</label>
-                    <input type="text" id="Duracion_pelicula" class="inputTexto" placeholder="1h 59min">
+                    <input type="text" id="duracion_pelicula" class="inputTexto" placeholder="1h 59min" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Director">Director:</label>
-                    <input type="text" id="Director" class="inputTexto" placeholder="David Frankel">
+                    <input type="text" id="director" class="inputTexto" placeholder="David Frankel" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Productor_pelicula">Productor:</label>
-                    <input type="text" id="Productor_pelicula" class="inputTexto" placeholder="Ingrese nombre y apellido">
+                    <input type="text" id="productor_pelicula" class="inputTexto" placeholder="Ingrese nombre y apellido" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Calificacion_pelicula">Calificación General:</label>
-                    <input type="text" id="Calificacion_pelicula" class="inputTexto" placeholder="8.5 / 10">
+                    <input type="text" id="calificacion_pelicula" class="inputTexto" placeholder="8.5" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Plataformas_disponibles">Plataformas:</label>
                     <div class="subir-archivo">
-                        <input type="file" id="plataformas_disponibles" name="plataformas_disponibles" accept="image/* "required>
+                        <input type="file" id="plataformas_disponibles" name="plataformas_disponibles" class="inputTexto" accept="image/* " required>
                     </div>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="clasificacion_edad">Clasificación por Edad:</label>
-                    <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18">
+                    <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18" required>
                 </div>
 
                 <div class="grupoCampo">
@@ -304,7 +304,7 @@
 
                 <div class="botones-inferiores">
                     <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="reset" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
+                    <button type="button" class="btn-gris"  onclick="limpiarFormulario()">Restablecer</button>
                     <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
                 </div>
 
@@ -320,8 +320,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>

@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
-    <script src="../scripts/validaciones.js" ></script>
+    
+    <script src="../scripts/validaciones.js"></script>
+    
     <script>
         function asociarValidacion(){
 
-            const formulario = document.getElementById("form_agregar");
+            const formulario = document.getElementById("formAgregarActor");
 
             formulario.addEventListener("submit", function(event){
 
@@ -58,7 +60,7 @@
         
         function limpiarFormulario(){
             if(confirm("¿Desea limpiar todos los campos?")){
-                document.getElementById("form_agregar").reset();
+                document.getElementById("formAgregarActor").reset();
             }
         }
 
@@ -134,28 +136,28 @@
         <div class="contenedorFormulario">
             <h2>+ AGREGAR NUEVOS ACTORES</h2>
             
-            <form id="formAgregarActor">
+            <form id="formAgregarActor" action="../intranet/peliculas_pendientes_de_revision.html" method="get">
                 
                 <div class="grupoCampo">
                     <label for="Nombre_actor">Nombre:</label>
-                    <input type="text" id="Nombre_actor" class="inputTexto" placeholder="Ingrese Nombre Completo">
+                    <input type="text" id="nombre_actor" class="inputTexto" placeholder="Ingrese Nombre Completo" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Apellido_actor">Apellido:</label>
-                    <input type="text" id="Apellido_actor" class="inputTexto" placeholder="Ingrese Apellido Completo">
+                    <input type="text" id="apellido_actor" class="inputTexto" placeholder="Ingrese Apellido Completo" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Participo_pelis">Películas en las que participó:</label>
                     <div class="repartoContenedor">
-                        <select name="participo_pelis" id="Participo_pelis">
+                        <select name="participo_pelis" id="participo_pelis">
                             <optgroup label="Listado de Películas">
                                 <option value="Bone Keeper">Bone Keeper</option>
                                 <option value="Rascacielo en vivo">Rascacielo en vivo</option>
                             </optgroup>
                         </select>
-                        <input type="text" class="inputTexto" placeholder="Agregar nueva participación">
+                        <input type="text" id="nueva_participacion_pelicula" class="inputTexto" placeholder="Agregar nueva participación">
                     </div>
                 </div>
 
@@ -169,20 +171,20 @@
                                 <option value="El Robo">El Robo</option>
                             </optgroup>
                         </select>
-                        <input type="text" class="inputTexto" placeholder="Agregar nueva participación">
+                        <input type="text" id="nueva_participacion_serie" class="inputTexto" placeholder="Agregar nueva participación">
                     </div>
                 </div>
 
                 <div class="grupoCampoArchivo">
                     <label for="Poster">Subir imagen del actor:</label>
                     <div class="subir-archivo">
-                        <input type="file" id="Poster" name="poster_image" accept="image/*" required>
+                        <input type="file" id="poster" name="poster_image" accept="image/*" required>
                     </div>
                 </div>
 
                 <div class="botones-inferiores">
                     <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="reset" class="btn-gris">Restablecer</button>
+                    <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
                     <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
                 </div>
             </form>
@@ -201,8 +203,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>

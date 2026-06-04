@@ -13,6 +13,30 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/aside_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+
+    <script>
+
+        // alert() muestra un mensaje informando que la acción
+        // fue realizada correctamente.
+        function darAlta(){
+            if(confirm("¿Desea aprobar esta solicitud de alta?")){
+                alert("Solicitud aprobada correctamente");
+            }
+        }
+
+        function denegarSolicitud(){
+            if(confirm("¿Desea denegar esta solicitud?")){
+                alert("Solicitud denegada correctamente");
+            }
+        }
+
+        function darBaja(){
+            if(confirm("¿Está seguro de dar de baja este perfil?")){
+                alert("Perfil dado de baja correctamente");
+            }
+        }
+        
+    </script>
 </head>
 
 <body>
@@ -111,8 +135,8 @@
                             </div>
                             <div>
                                 <a href="../intranet/editar_perfil.html"><button type="button">Ver Perfil</button></a>
-                                <button type="button">Dar Alta</button>
-                                <button type="button">Denegar</button>
+                                <button type="button" onclick="darAlta()">Dar Alta</button>
+                                <button type="button" onclick="denegarSolicitud()">Denegar</button>
                             </div>
                         </div>
                     </div>
@@ -125,9 +149,9 @@
                                 <p>Email: msicjs@gmail.com</p>
                             </div>
                             <div>
-                                <button type="button">Ver Perfil</button>
-                                <button type="button">Dar Alta</button>
-                                <button type="button">Denegar</button>
+                                <a href="../intranet/editar_perfil.html"><button type="button">Ver Perfil</button></a>
+                                <button type="button" onclick="darAlta()"> Dar Alta </button>
+                                <button type="button" onclick="denegarSolicitud()"> Denegar </button>
                             </div> 
                         </div>
                     </div>
@@ -147,7 +171,7 @@
                                 </div>
                                 <div class="botones-contenedor">
                                     <a href="../intranet/mi_perfil.html">Ver Perfil</a>
-                                    <button type="button">Dar Baja</button>
+                                    <button type="button" onclick="darBaja()">Dar Baja</button>
                                 </div>
                             </div>
                         </div>
@@ -181,8 +205,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>

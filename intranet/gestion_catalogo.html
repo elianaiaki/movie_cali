@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_vertical.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+
+    <script>
+        // alert() muestra un mensaje informando que la acción
+        // fue realizada correctamente.
+        function darAlta(){
+            if(confirm("¿Desea aprobar esta solicitud de alta?")){
+                alert("Solicitud aprobada correctamente");
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -146,7 +156,7 @@
                                 <img src="../recursos/imagenes/peliculas/53domingos.jpg" alt="Película">
                             </div>
                             <div class="botones-contenedor doble-boton">
-                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-aprobar" onclick="darAlta()">Aprobar Alta</button>
                                 <button class="btn-revisar">Revisar Alta</button>
                             </div>
                         </div>
@@ -155,7 +165,7 @@
                                 <img src="../recursos/imagenes/peliculas/alertaextincion.jpg" alt="Película">
                             </div>
                             <div class="botones-contenedor doble-boton">
-                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-aprobar" onclick="darAlta()">Aprobar Alta</button>
                                 <button class="btn-revisar">Revisar Alta</button>
                             </div>
                         </div>
@@ -164,7 +174,7 @@
                                 <img src="../recursos/imagenes/peliculas/anaconda.jpg" alt="Película">
                             </div>
                             <div class="botones-contenedor doble-boton">
-                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-aprobar" onclick="darAlta()">Aprobar Alta</button>
                                 <button class="btn-revisar">Revisar Alta</button>
                             </div>
                         </div>
@@ -173,7 +183,7 @@
                                 <img src="../recursos/imagenes/peliculas/obex.jpg" alt="Película">
                             </div>
                             <div class="botones-contenedor doble-boton">
-                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-aprobar" onclick="darAlta()">Aprobar Alta</button>
                                 <button class="btn-revisar">Revisar Alta</button>
                             </div>
                         </div>
@@ -182,7 +192,7 @@
                                 <img src="../recursos/imagenes/peliculas/avatarfuegoyceniza.jpg" alt="Película">
                             </div>
                             <div class="botones-contenedor doble-boton">
-                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-aprobar" onclick="darAlta()">Aprobar Alta</button>
                                 <button class="btn-revisar">Revisar Alta</button>
                             </div>
                         </div>
@@ -219,7 +229,7 @@
                         </div>
                         <div class="tarjeta-item">
                             <div class="imagen-contenedor">
-                                <img src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpeg" alt="Serie">
+                                <img src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpg" alt="Serie">
                             </div>
                             <div class="botones-contenedor">
                                 <button class="btn-ver">VER</button>
@@ -240,7 +250,7 @@
                                 <img src="../recursos/imagenes/series/911.jpg" alt="Serie">
                             </div>
                             <div class="botones-contenedor doble-boton">
-                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-aprobar" onclick="darAlta()">Aprobar Alta</button>
                                 <button class="btn-revisar">Revisar Alta</button>
                             </div>
                         </div>
@@ -249,7 +259,7 @@
                                 <img src="../recursos/imagenes/series/bellezaperfecta.jpg" alt="Serie">
                             </div>
                             <div class="botones-contenedor doble-boton">
-                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-aprobar" onclick="darAlta()">Aprobar Alta</button>
                                 <button class="btn-revisar">Revisar Alta</button>
                             </div>
                         </div>
@@ -258,7 +268,7 @@
                                 <img src="../recursos/imagenes/series/asesinaasueldo.jpg" alt="Serie">
                             </div>
                             <div class="botones-contenedor doble-boton">
-                                <button class="btn-aprobar">Aprobar Alta</button>
+                                <button class="btn-aprobar" onclick="darAlta()">Aprobar Alta</button>
                                 <button class="btn-revisar">Revisar Alta</button>
                             </div>
                         </div>
@@ -277,8 +287,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>

@@ -11,51 +11,33 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
-    <scrip src="../scripts/validaciones.js"></scrip>
 
     <script>
-       
-        /*confirm es una funcion de JavaScript Muestra una venta con 2 opciones:
-          una devuelve verdadero y otra devuelve falso. Si se acepta eliminar la pelicula
-          te lleva a la pagina de peliculas pendientes de revision*/
+        
+        function confirmarEliminacion(){
+            const confirmar = confirm("¿Está seguro que desea eliminar esta pelicula?");
             
-        function asociarValidacion(){
-
-            const botonEliminar = document.getElementById("btnEliminar");
-
-            botonEliminar.addEventListener("click", function(){
-
-                const confirmar = confirm(
-                    "¿Está seguro que desea eliminar esta pelicula?"
-                );
-
-               if(confirmar){
-                    alert("Película eliminada correctamente");
-                    window.location.href ="../intranet/peliculas_pendientes_de_revision.html";
-                }
-            });
-
+            if(confirmar){
+                alert("Película eliminada correctamente");
+                window.location.href = "../intranet/peliculas_pendientes_de_revision.html";
+            }
         }
-
     </script>
 </head>
 
-<body onload="asociarValidacion()">
+<body>
 
 <!----------------------------------INICIO DE HEADER-------------------------------------------------->
-    <!-- HEADER -->
+    <!-- HEADER COMPARTIDO -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
 
         <!-- BUSCADOR -->
         <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
+            <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
 
@@ -94,20 +76,23 @@
         </div>
     </header>
 
-    
-
 <!------FIN DE HEADER------------------------------------------------------------------------------------->
     
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="main">
         <div class="contenedor-tarjetas">
             <section class="Tarjeta">
                 <h3>ELIMINAR PELICULA</h3>
                 <p>¿Seguro que desea eliminar esta pelicula?</p>
-                <img src="../recursos/imagenes/iconos/claqueta.png" align="left" width="100" height="100">
+                
+                <!-- Corregido: Se eliminó el atributo align="left" obsoleto en HTML5 para evitar fallas semánticas -->
+                <img src="../recursos/imagenes/iconos/claqueta.png" width="100" height="100" alt="Icono Película">
+                
                 <p> Título: Nombre de la película</p>
                 <div class="botones-inferiores">
                     <div class="guardar_accion">
-                        <button type="button" id="btnEliminar" class="btn-gris">ELIMINAR</button>
+                        <!-- Corregido: Método pedagógico inyectado mediante onclick sin alterar la clase btn-gris de tu compañera -->
+                        <button type="button" class="btn-gris" onclick="confirmarEliminacion()">ELIMINAR</button>
                     </div>
                     <div class="modificables">
                         <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Cancelar</a>
@@ -117,18 +102,13 @@
         </div>
     </main>
    
+  <!-- -------------FOOTER------------------>
     <!-- FOOTER -->
     <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
+        <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
-
     </footer>
 
 </body>

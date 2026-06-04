@@ -8,9 +8,61 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/inicio_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+
+    <script src="../scripts/validaciones.js"></script><!-- CONEXION CON JS -->  
+
+    <script>
+
+        function asociarValidacion(){
+
+            // Obtener formulario
+            const formulario = document.getElementById("recuperar_contrasenia");
+
+            // Evento submit
+            formulario.addEventListener("submit", function(event){
+
+                // Frenar envío automático
+                event.preventDefault();
+
+                // Obtener valores
+                const usuario = document.getElementById("usuario").value;
+
+                const contrasenia = document.getElementById("contrasenia").value;
+
+                const repetirContrasenia = document.getElementById("repetirContrasenia").value;
+
+                // Validar usuario o correo
+                if(!usuarioValido(usuario) && !correoValido(usuario)){
+                    alert("Usuario o correo inválido");
+                    return;
+                }
+
+                // Validar contraseña
+                if(!contraseniaValida(contrasenia)){
+                    alert("Contraseña inválida");
+                    return;
+                }
+
+                // Validar coincidencia
+                if(contrasenia !== repetirContrasenia){
+                    alert("Las contraseñas no coinciden");
+                    return;
+                }
+
+                // Todo correcto
+                alert("Contraseña actualizada correctamente");
+
+                // Enviar formulario
+                formulario.submit();
+
+            });
+
+        }
+
+</script>
 </head>
 
-<body class="body">
+<body class="body" onload="asociarValidacion()">
     <!-- HEADER -->
     <header class="header">
         <!--LOGO-->
@@ -26,33 +78,32 @@
     <main class="diseno-login"> 
         <section class="carta-login">
             <h2>RECUPERAR CONTRASEÑA</h2>
-            <form action="../intranet/inicio_de_sesion.html" method="get">
+            <form id="recuperar_contrasenia" action="../intranet/inicio_de_sesion.html" method="get">
                 <!-- Usuario -->
                 <div>
                     <label>USUARIO / CORREO ELECTRONICO</label><br>
                     <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20" style="vertical-align: middle;">
-                    <input type="text" name="usuario" placeholder="Ingrese usuario o correo" required style="width: 250px;">
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingrese usuario o correo" required style="width: 250px;">
                 </div>
                 
                 <!-- Contraseña -->
                 <div>
                     <label>CONTRASEÑA</label><br>
                     <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20" style="vertical-align: middle;">
-                    <input type="password" name="password" placeholder="Ingrese contraseña" required style="width: 250px;">
+                    <input type="password" id="contrasenia" name="password" placeholder="Ingrese contraseña" required style="width: 250px;">
                     <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver" width="20" height="20" style="vertical-align: middle; cursor: pointer;">
                 </div>
                                 
                 <div> 
                     <label>REPETIR CONTRASEÑA</label><br>
                     <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20" style="vertical-align: middle;">
-                    <input type="password" name="repetir-password" placeholder="Ingrese de nuevo la contraseña" required style="width: 250px;">
+                    <input type="password" id="repetirContrasenia" name="repetir-password" placeholder="Ingrese de nuevo la contraseña" required style="width: 250px;">
                     <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver" width="20" height="20" style="vertical-align: middle; cursor: pointer;">
                 </div>
 
                 <!-- Botones para guardar contraseña y cancelar-->
                 <div class="contenedor-boton">
                     <button type="submit" class="boton-inicio">GUARDAR</button>
-
                     <a href="../intranet/inicio_de_sesion.html" class = "boton-cancelar">CANCELAR</a>
                 </div>
 
@@ -68,8 +119,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>

@@ -26,7 +26,7 @@
          ejecutar acciones que modifican el formulario.*/
         function asociarValidacion(){
 
-            const formulario = document.getElementById("form_agregar");
+            const formulario = document.getElementById("formAgregar");
 
             formulario.addEventListener("submit",function(event){
 
@@ -156,7 +156,7 @@
 
         function limpiarFormulario(){
             if(confirm("¿Desea limpiar todos los campos?")){
-                document.getElementById("form_agregar").reset();
+                document.getElementById("formAgregar").reset();
             }
         }   
         
@@ -231,7 +231,7 @@
         <div class="contenedorFormulario">
             <h2>+ EDITAR SERIE</h2>
             
-            <form id="formAgregar">
+            <form id="formAgregar" action="../intranet/series_pendientes_de_revision_intra.html" method="get">
                 
                 <div class="grupoCampo" action="../intranet/series_pendientes_de_revision_intra.html" method="get">
                     <label for="Seleccionar_titulo_SERIE">Título a Editar:</label>
@@ -243,38 +243,38 @@
                                 <option value="El_Robo">El Robo</option>
                             </optgroup>
                         </select>
-                        <input type="text" class="inputTexto" placeholder="Nuevo título (ej: Wonder Man)">
+                        <input type="text" id="titulo_serie" class="inputTexto" placeholder="Nuevo título (ej: Wonder Man)" required>
                     </div>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Genero_serie">Género:</label>
-                    <input type="text" id="Genero_serie" class="inputTexto" placeholder="Comedia , Aventura">
+                    <input type="text" id="genero_serie" class="inputTexto" placeholder="Comedia , Aventura" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Anio_estreno">Año de Estreno:</label>
-                    <input type="text" id="Anio_estreno" class="inputTexto" placeholder="27 de Enero 2026">
+                    <input type="text" id="anio_estreno" class="inputTexto" placeholder="2026" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Duracion_serie">Duración:</label>
-                    <input type="text" id="Duracion_serie" class="inputTexto" placeholder="30 min">
+                    <input type="text" id="duracion_serie" class="inputTexto" placeholder="30 min" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Director">Director:</label>
-                    <input type="text" id="Director" class="inputTexto" placeholder="Ingrese Nombre Y Apellido">
+                    <input type="text" id="director" class="inputTexto" placeholder="Ingrese Nombre Y Apellido" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Productor_serie">Productor:</label>
-                    <input type="text" id="Productor_serie" class="inputTexto" placeholder="Ingrese nombre y apellido">
+                    <input type="text" id="productor_serie" class="inputTexto" placeholder="Ingrese nombre y apellido" required>
                 </div>
 
                 <div class="grupoCampo">
                     <label for="Calificacion_serie">Calificación General:</label>
-                    <input type="text" id="Calificacion_serie" class="inputTexto" placeholder="7.4 / 10">
+                    <input type="text" id="calificacion_serie" class="inputTexto" placeholder="7.4" required>
                 </div>
 
                 <div class="grupoCampo">
@@ -292,7 +292,7 @@
 
                 <div class="grupoCampo">
                     <label for="clasificacion_edad">Clasificación por Edad:</label>
-                    <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18">
+                    <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18" required>
                 </div>
 
                 <div class="grupoCampo">
@@ -309,7 +309,7 @@
 
                 <div class="grupoCampoCompleto">
                     <label for="sinopsis">Sinopsis:</label>
-                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" placeholder="Escribe aquí el resumen de la trama..."></textarea>
+                    <textarea id="sinopsis" name="sinopsis_peli" rows="4" placeholder="Escribe aquí el resumen de la trama..." required></textarea>
                 </div>
 
                 <div class="grupoCampoArchivo">
@@ -327,7 +327,7 @@
                 </div>
                  <div class="botones-inferiores">
                     <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="reset" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
+                    <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
                     <a href="../intranet/series_pendientes_de_revision_intra.html" class="btn-gris">Volver</a>
                 </div>
 
@@ -344,8 +344,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>
