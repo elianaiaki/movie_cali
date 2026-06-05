@@ -1,29 +1,49 @@
-// Abrir modal al click en "VER DETALLES"
-document.querySelectorAll(".boton-ver-detalles").forEach(function(btn) {
-    btn.addEventListener("click", function() {
-        document.getElementById("modalDetalle").style.display = "flex";
-    });
-});
+/* ==========================
+   ASOCIAR EVENTOS
+========================== */
+function asociarEventos() {
 
-// Cerrar modal al click en "X Cerrar"
-document.getElementById("botonCerrarDetalle").addEventListener("click", function() {
+    document.getElementById("botonVerDetalles").addEventListener("click", abrirDetalle);
+    document.getElementById("botonCerrarDetalle").addEventListener("click", cerrarDetalle);
+    document.getElementById("botonAbrirEditar").addEventListener("click", abrirEditar);
+    document.getElementById("botonCerrarEditar").addEventListener("click", cerrarEditar);
+    document.getElementById("botonCancelarEditar").addEventListener("click", cerrarEditar);
+
+}
+
+/* ==========================
+   ABRIR MODAL DETALLE
+========================== */
+function abrirDetalle(evento) {
+    evento.preventDefault();
+    document.getElementById("modalDetalle").style.display = "flex";
+
+}
+
+/* ==========================
+   CERRAR MODAL DETALLE
+========================== */
+function cerrarDetalle(evento) {
+    evento.preventDefault();
     document.getElementById("modalDetalle").style.display = "none";
-});
 
-// Abrir modal editar desde el botón dentro del modal detalle
-document.getElementById("botonAbrirEditar").addEventListener("click", function(e) {
-    e.preventDefault();
+}
+
+/* ==========================
+   ABRIR MODAL EDITAR
+========================== */
+function abrirEditar(evento) {
+
+    evento.preventDefault();
     document.getElementById("modalDetalle").style.display = "none";
     document.getElementById("modalEditar").style.display = "flex";
-});
 
-// Cerrar modal editar con X
-document.getElementById("botonCerrarEditar").addEventListener("click", function(e) {
-    e.preventDefault();
-    document.getElementById("modalEditar").style.display = "none";
-});
+}
 
-// Cancelar también cierra
-document.getElementById("botonCancelarEditar").addEventListener("click", function() {
+/* ==========================
+   CERRAR MODAL EDITAR
+========================== */
+function cerrarEditar() {
     document.getElementById("modalEditar").style.display = "none";
-});
+
+}

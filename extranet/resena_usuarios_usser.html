@@ -1,313 +1,362 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Reseña de usuarios</title>
-    <link rel="stylesheet" href="../estilos/body.css">
-    <link rel="stylesheet" href="../estilos/header.css">
-    <link rel="stylesheet" href="../estilos/footer.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_resena_usuarios.css">
-    <script src="../scripts/header.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reseña de usuarios</title>
+        <link rel="stylesheet" href="../estilos/body.css">
+        <link rel="stylesheet" href="../estilos/header.css">
+        <link rel="stylesheet" href="../estilos/footer.css">
+        <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
+        <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_resena_usuarios.css">
+
+        <script src="../scripts/header.js" defer></script>
+
+        <script src="../scripts/extranet_scripts/comentarios_usuarios.js" defer></script>
+
+    </head>
 
 
-<body>
+    <body class="body" onload="asociarEventos()">
 
-    <!-- HEADER -->
-    <header class="header">
-        <!-- LOGO -->
-        <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
-        </div>
-
-        <!-- BUSCADOR -->
-        <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
-            <button>🔍</button>
-        </form>
-
-        <!-- NAVEGACIÓN -->
-        <nav class="menu">
-            <a href="./index_usser.html">Inicio</a>
-            <a href="./catalogo_peliculas_usser.html">Películas</a>
-            <a href="./catalogo_series_usser.html">Series</a>
-        </nav>
-
-        <!-- usuario registrado-->
-        <!-- PERFIL -->
-        <div class="perfil" id="perfilBtn">
-            <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
-
-            <div class="perfil-info">
-                <span>USUARIO - 12345</span>
-                <span class="flecha">▼</span>
+        <!-- HEADER -->
+        <header class="header">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="../recursos/imagenes/logo/logo.png"
+                    alt="Logo MovieCali">
             </div>
 
-            <div class="dropdown">
-                <a href="./mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
-                <a href="./mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
-                <a href="./mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
-                <a href="./mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
-                <a href="./resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
-                <a href="../index.html">CERRAR SESION</a>
-            </div>
-        </div>
-    </header>
+            <!-- BUSCADOR -->
+            <form class="buscador">
+                <input type="text"
+                    placeholder="Buscar películas, series...">
 
-    <hr>
-    <!-- FIN DE HEADER-->
-    <!------------------------------------------------------------------------------------------->
-    <!-- CONTENEDOR GENERAL -->
-    <div class="fila">
-        <!-- MAIN -->
-        <main>
-            <!-- BLOQUE -->
-            <section>
-                <div>
-                    <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" width="450" height="300">
-                    <p> F1 THE MOVIE </p>
-                    <h2>Reseñas de usuarios:</h2>
-                </div>
-
-                <!-- FILTROS-->
-                <div>
-                    <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
-
-                    <label>Ordenar por:</label>
-                    <select>
-                        <option>Más reciente</option>
-                        <option>Mejor calificacion</option>
-                        <option>Título</option>
-                    </select>
-                </div>
-                <div>
-                    <a href="./funcionalidades_resenas/agregar_mi_resena.html">Agregar mi reseña</a>
-                </div>
-                <hr>
-                <div>
-                    <a href="#">4.506 opiniones</a>
-                </div>
-            </section>
-
-            
-
-            <section>
-
-                <!-- reseña 1 -->
-                <div>
-                    <!-- boton de guardar -->
-                    <button> Guardar reseña </button>
-                    <!-- Usuario -->
-                    <div>
-                        <p><b>Calificación:</b> 9.0 / 10</p>
-                        <img src="../recursos/imagenes/usuarios/usuario_1.jpg" width="40">
-                        <p><b>George_Allison dice:</b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>BUENISIMA</h3>
-                    <p>
-                        “F1 es un espectáculo visual imponente que redefine el cine de automovilismo gracias a una dirección técnica impecable y secuencias de acción filmadas con un realismo visceral. Brad Pitt aporta la veteranía y el peso emocional necesarios para que la historia trascienda más allá de la simple velocidad. Aunque su narrativa sigue senderos familiares, la inmersión sonora y visual compensa cualquier falta de sorpresa en el guion. Es una experiencia diseñada para ser disfrutada en la pantalla más grande posible, logrando transmitir la verdadera adrenalina del circuito. En resumen, 
-                        la película triunfa como un blockbuster emocionante que captura con maestría el alma de la competición.”
-                    </p>
-                    <!-- ACCIONES -->
-                    <div>
-                        <button><b>Me gusta</b> 100</button>
-                        <button><b>No me gusta</b> 18</button>
-                        <p><a href="#comentarios">50 Comentarios</h3></a></p>
-                        <button>Reportar reseña</button>
-                    </div>
-                    <br>
-                </div>
-                <br>
-                <hr>
-
-                <!-- reseña 2 -->
-                <div>
-                    <!-- boton de guardar -->
-                    <button> Guardar reseña </button>
-                    <!-- Usuario -->
-                    <div>
-                        <p><b>Calificación:</b> 3.0 / 10</p>
-                        <img src="../recursos/imagenes/usuarios/usuario_2.jpg" width="40">
-                        <p><b>Cinefilo88 dice:</b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>REPETITIVA</h3>
-                    <p>
-                        "Aunque la acción es impecable, la banda sonora de Hans Zimmer se siente algo repetitiva y no logra alcanzar la originalidad de sus trabajos anteriores. Los efectos de sonido 
-                        de los motores son tan potentes que, por momentos, entierran los diálogos clave entre los protagonistas."
-                    </p>
-                    <!-- ACCIONES -->
-                    <div>
-                        <button><b>Me gusta</b> 100</button>
-                        <button><b>No me gusta</b> 18</button>
-                        <p><a href="#comentarios">50 Comentarios</h3></a></p>
-                    <br>
-                </div>
-                <br>
-                <hr>
-
-                <!-- reseña 3 -->
-                <div>
-                    <!-- boton de guardar -->
-                    <button> Guardar reseña </button>
-                    <!-- Usuario -->
-                    <div>
-                        <p><b>Calificación:</b> 8.0 / 10</p>
-                        <img src="../recursos/imagenes/usuarios/usuario_3.jpg" width="40">
-                        <p><b>echGuru_VLC dice: </b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>Buena</h3>
-                    <p>
-                        "Lo que realmente destaca no es la historia, sino el despliegue de cámaras IMAX montadas directamente en los monoplazas, algo nunca antes visto. Es un hito tecnológico que hace que cualquier otra película de carreras anterior parezca un videojuego de baja resolución."
-                    </p>
-                    <!-- ACCIONES -->
-                    <div>
-                        <button><b>Me gusta</b> 100</button>
-                        <button><b>No me gusta</b> 18</button>
-                        <p><a href="#comentarios">50 Comentarios</h3></a></p>
-                    <br>
-                </div>
-                <br>
-                <hr>
-
-                <!-- reseña 4 -->
-                <div>
-                    <!-- boton de guardar -->
-                    <button> Guardar reseña </button>
-                    <!-- Usuario -->
-                    <div>
-                        <p><b>Calificación:</b> 7.0 / 10</p>
-                        <img src="../recursos/imagenes/usuarios/usuario_4.jpg" width="40">
-                        <p><b>NostalgicEditor dice: </b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>Bien</h3>
-                    <p>
-                        "El ritmo de la película sufre en el segundo acto, con una edición que se siente algo lenta y estira la duración innecesariamente hasta pasadas las dos horas. Aun así, el clímax final en la última vuelta está tan bien montado que te mantiene al borde del asiento, olvidando cualquier bache narrativo previo."
-                    </p>
-                    <!-- ACCIONES -->
-                    <div>
-                        <button><b>Me gusta</b> 100</button>
-                        <button><b>No me gusta</b> 18</button>
-                        <p><a href="#comentarios">50 Comentarios</h3></a></p>
-                        <button>Reportar reseña</button>
-                    </div>
-                    <br>
-                </div>
-                <br>
-                <hr>
-            </section>
-        </main>
-
-        <aside>
-            <h2>SUGERENCIAS PARA TI</h2>
-
-            <!-- ITEM 1 -->
-            <div class="item-aside">
-                <p class="genero">ROMANCE</p>
-                <h3>CUMBRES BORRASCOSAS</h3>
-                <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
-                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
-                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 2 -->
-            <div class="item-aside">
-                <p class="genero">TERROR</p>
-                <h3>WEAPONS</h3>
-                <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
-                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
-                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 3 -->
-            <div class="item-aside">
-                <p class="genero">COMEDIA</p>
-                <h3>NOVOCAINE</h3>
-                <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
-                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
-                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 4 -->
-            <div class="item-aside">
-                <p class="genero">CIENCIA FICCIÓN</p>
-                <h3>DUNE: PART 2</h3>
-                <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
-                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
-                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 5 -->
-            <div class="item-aside">
-                <p class="genero">ANIMACIÓN</p>
-                <h3>FLOW</h3>
-                <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
-                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
-                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
-            </div>
-        </aside>
-    </div>
-    <!------------------------------------------------------------------------------------------->
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
-        <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
-        </p>
-
-    </footer>
-
-    <!-- AGREGAR RESEÑA---->
-    <div id="modalResena" class="overlay activo">
-        <div class="modal">
-
-            <div class="modal-header">
-            <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" alt="F1 The Movie">
-            <div class="info">
-                <h3>F1 THE MOVIE</h3>
-                <p class="meta">8 · 2025 · 2h 35min</p>
-                <p class="subtitulo">MI RESEÑA</p>
-                <p class="puntuacion-label">Tu puntuación</p>
-                <span class="estrellas">
-                ★ ★ ★ ★ ★ ★ ★
-                <span class="vacia">★ ★ ★</span>
-                </span>
-            </div>
-
-            <button class="boton-cerrar" onclick="cerrarModal()">X</button>
-            </div>
-
-            <form>
-                <input type="text" placeholder="Título de la reseña (opcional)">
-                <textarea rows="10" placeholder="Escribe tu reseña..."></textarea>
-                <p class="contador">0/1000</p>
-                <button type="submit" class="boton-publicar">Publicar Reseña</button>
-                <button type="button" class="boton-cancelar">Cancelar</button>
+                <button>🔍</button>
             </form>
 
+            <!-- NAVEGACIÓN -->
+            <nav class="menu">
+                <a href="./index_usser.html">Inicio</a>
+                <a href="./catalogo_peliculas_usser.html">Películas</a>
+                <a href="./catalogo_series_usser.html">Series</a>
+            </nav>
+
+            <!-- usuario registrado-->
+            <!-- PERFIL -->
+            <div class="perfil" id="perfilBtn">
+                <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+                <div class="perfil-info">
+                    <span>USUARIO - 12345</span>
+                    <span class="flecha">▼</span>
+                </div>
+
+                <div class="dropdown">
+                    <a href="./mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                    <a href="./mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                    <a href="./mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                    <a href="./mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                    <a href="./resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                    <a href="../index.html">CERRAR SESION</a>
+                </div>
+            </div>
+        </header>
+
+        <hr>
+        <!-- FIN DE HEADER-->
+        <!------------------------------------------------------------------------------------------->
+        <!-- CONTENEDOR GENERAL -->
+        <div class="fila">
+            <!-- MAIN -->
+            <main>
+                <!-- BLOQUE -->
+                <section>
+                    <div>
+                        <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" width="450" height="300">
+                        <p> F1 THE MOVIE </p>
+                        <h2>Reseñas de usuarios:</h2>
+                    </div>
+
+                    <!-- FILTROS-->
+                    <div>
+                        <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
+
+                        <label>Ordenar por:</label>
+                        <select>
+                            <option>Más reciente</option>
+                            <option>Mejor calificacion</option>
+                            <option>Título</option>
+                        </select>
+                    </div>
+                    <div>
+                        <a href="#" id="abrirModalResena">Agregar mi reseña</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <a href="#">4.506 opiniones</a>
+                    </div>
+                </section>
+
+                
+
+                <section>
+
+                    <!-- reseña 1 -->
+                    <div>
+                        <!-- boton de guardar -->
+                        <button> Guardar reseña </button>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 9.0 / 10</p>
+                            <img src="../recursos/imagenes/usuarios/usuario_1.jpg" width="40">
+                            <p><b>George_Allison dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>BUENISIMA</h3>
+                        <p>
+                            “F1 es un espectáculo visual imponente que redefine el cine de automovilismo gracias a una dirección técnica impecable y secuencias de acción filmadas con un realismo visceral. Brad Pitt aporta la veteranía y el peso emocional necesarios para que la historia trascienda más allá de la simple velocidad. Aunque su narrativa sigue senderos familiares, la inmersión sonora y visual compensa cualquier falta de sorpresa en el guion. Es una experiencia diseñada para ser disfrutada en la pantalla más grande posible, logrando transmitir la verdadera adrenalina del circuito. En resumen, 
+                            la película triunfa como un blockbuster emocionante que captura con maestría el alma de la competición.”
+                        </p>
+                        <!-- ACCIONES -->
+                        <div>
+                            <button><b>Me gusta</b> 100</button>
+                            <button><b>No me gusta</b> 18</button>
+                            <a href="#" class="abrir-comentarios">50 Comentarios</a>
+                            <button>Reportar reseña</button>
+                        </div>
+                        <!-- CAJA DE COMENTARIOS (oculta al inicio) -->
+                        <div class="comentarios" style="display:none;">
+                            <input type="text"
+                                placeholder="Escribe un comentario...">
+
+                            <button class="cancelar" onclick="cerrarComentarios()">
+                                Cancelar
+                            </button>
+                            <button class="comentar">Comentar</button>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <hr>
+
+                    <!-- reseña 2 -->
+                    <div>
+                        <!-- boton de guardar -->
+                        <button> Guardar reseña </button>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 3.0 / 10</p>
+                            <img src="../recursos/imagenes/usuarios/usuario_2.jpg" width="40">
+                            <p><b>Cinefilo88 dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>REPETITIVA</h3>
+                        <p>
+                            "Aunque la acción es impecable, la banda sonora de Hans Zimmer se siente algo repetitiva y no logra alcanzar la originalidad de sus trabajos anteriores. Los efectos de sonido 
+                            de los motores son tan potentes que, por momentos, entierran los diálogos clave entre los protagonistas."
+                        </p>
+                        <!-- ACCIONES -->
+                        <div>
+                            <button><b>Me gusta</b> 100</button>
+                            <button><b>No me gusta</b> 18</button>
+                            <a href="#" class="abrir-comentarios">50 Comentarios</a>
+                            <button>Reportar reseña</button>
+                        </div>
+                        <!-- CAJA DE COMENTARIOS (oculta al inicio) -->
+                        <div class="comentarios" style="display:none;">
+                            <input type="text"
+                                placeholder="Escribe un comentario...">
+
+                            <button class="cancelar" onclick="cerrarComentarios()">
+                                Cancelar
+                            </button>
+                            <button class="comentar">Comentar</button>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+
+                    <!-- reseña 3 -->
+                    <div>
+                        <!-- boton de guardar -->
+                        <button> Guardar reseña </button>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 8.0 / 10</p>
+                            <img src="../recursos/imagenes/usuarios/usuario_3.jpg" width="40">
+                            <p><b>echGuru_VLC dice: </b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Buena</h3>
+                        <p>
+                            "Lo que realmente destaca no es la historia, sino el despliegue de cámaras IMAX montadas directamente en los monoplazas, algo nunca antes visto. Es un hito tecnológico que hace que cualquier otra película de carreras anterior parezca un videojuego de baja resolución."
+                        </p>
+                        <!-- ACCIONES -->
+                        <div>
+                            <button><b>Me gusta</b> 100</button>
+                            <button><b>No me gusta</b> 18</button>
+                            <a href="#" class="abrir-comentarios">50 Comentarios</a>
+                            <button>Reportar reseña</button>
+                        </div>
+                        <!-- CAJA DE COMENTARIOS (oculta al inicio) -->
+                        <div class="comentarios" style="display:none;">
+                            <input type="text"
+                                placeholder="Escribe un comentario...">
+
+                            <button class="cancelar" onclick="cerrarComentarios()">
+                                Cancelar
+                            </button>
+                            <button class="comentar">Comentar</button>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+
+                    <!-- reseña 4 -->
+                    <div>
+                        <!-- boton de guardar -->
+                        <button> Guardar reseña </button>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 7.0 / 10</p>
+                            <img src="../recursos/imagenes/usuarios/usuario_4.jpg" width="40">
+                            <p><b>NostalgicEditor dice: </b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Bien</h3>
+                        <p>
+                            "El ritmo de la película sufre en el segundo acto, con una edición que se siente algo lenta y estira la duración innecesariamente hasta pasadas las dos horas. Aun así, el clímax final en la última vuelta está tan bien montado que te mantiene al borde del asiento, olvidando cualquier bache narrativo previo."
+                        </p>
+                        <!-- ACCIONES -->
+                        <div>
+                            <button><b>Me gusta</b> 100</button>
+                            <button><b>No me gusta</b> 18</button>
+                            <a href="#" class="abrir-comentarios">50 Comentarios</a>
+                            <button>Reportar reseña</button>
+                        </div>
+                        <!-- CAJA DE COMENTARIOS (oculta al inicio) -->
+                        <div class="comentarios" style="display:none;">
+                            <input type="text"
+                                placeholder="Escribe un comentario...">
+
+                            <button class="cancelar" onclick="cerrarComentarios()">
+                                Cancelar
+                            </button>
+                            <button class="comentar">Comentar</button>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                </section>
+            </main>
+
+            <aside>
+                <h2>SUGERENCIAS PARA TI</h2>
+
+                <!-- ITEM 1 -->
+                <div class="item-aside">
+                    <p class="genero">ROMANCE</p>
+                    <h3>CUMBRES BORRASCOSAS</h3>
+                    <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                    <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 2 -->
+                <div class="item-aside">
+                    <p class="genero">TERROR</p>
+                    <h3>WEAPONS</h3>
+                    <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
+                    <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                    <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 3 -->
+                <div class="item-aside">
+                    <p class="genero">COMEDIA</p>
+                    <h3>NOVOCAINE</h3>
+                    <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
+                    <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                    <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 4 -->
+                <div class="item-aside">
+                    <p class="genero">CIENCIA FICCIÓN</p>
+                    <h3>DUNE: PART 2</h3>
+                    <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
+                    <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                    <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 5 -->
+                <div class="item-aside">
+                    <p class="genero">ANIMACIÓN</p>
+                    <h3>FLOW</h3>
+                    <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
+                    <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                    <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+                </div>
+            </aside>
         </div>
-    </div>
- 
-</body>
+        <!------------------------------------------------------------------------------------------->
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <p class="titulo-footer">
+                Desarrollado por:
+            </p>
+
+            <p class="nombres-footer">
+                Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+                Alan Walker - Gisella Jara - Brenda Pavez
+            </p>
+
+        </footer>
+
+        <!-- AGREGAR RESEÑA---->
+        <div id="modalResena" class="overlay" style="display:none;">
+            <div class="modal">
+
+                <div class="modal-header">
+                <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" alt="F1 The Movie">
+                <div class="info">
+                    <h3>F1 THE MOVIE</h3>
+                    <p class="meta">8 · 2025 · 2h 35min</p>
+                    <p class="subtitulo">MI RESEÑA</p>
+                    <p class="puntuacion-label">Tu puntuación</p>
+                    <span class="estrellas">
+                    ★ ★ ★ ★ ★ ★ ★
+                    <span class="vacia">★ ★ ★</span>
+                    </span>
+                </div>
+
+                <button class="boton-cerrar" onclick="cerrarModal()">X</button>
+                </div>
+
+                <form>
+                    <input type="text" placeholder="Título de la reseña (opcional)">
+                    <textarea rows="10" placeholder="Escribe tu reseña..."></textarea>
+                    <p class="contador">0/1000</p>
+                    <button type="submit" class="boton-publicar">Publicar Reseña</button>
+                    <button type="button"
+                            class="boton-cancelar"
+                            onclick="cerrarModal()">
+                        Cancelar
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    
+    </body>
 </html>

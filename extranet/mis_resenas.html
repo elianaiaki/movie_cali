@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../estilos/footer.css">
         <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
         <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
-        <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_funcionalidades.css">
+        <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mis_resenas.css">
 
         <script src="../scripts/header.js" defer></script>
         <script src="../scripts/extranet_scripts/mis_resenas.js" defer></script>
@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     </head>
 
-    <body>
+    <body class="body" onload="asociarEventos()">
 
         <!-- HEADER -->
         <header class="header">
@@ -139,7 +139,7 @@
                                 <p class="text-white" style="font-size:0.72rem;">"Un clásico absoluto. Cada escena es perfecta, imposible no quedar hipnotizado desde..."</p>
                                 <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
                                 <!--<a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>-->
-                                <a class="boton-ver-detalles">VER DETALLES</a>
+                                <a class="boton-ver-detalles" id="botonVerDetalles">VER DETALLES</a>
                             </div>
                         </div>
 
@@ -169,7 +169,7 @@
                                 <p class="text-white" style="font-size:0.72rem;">"Interesante pero sobrevalorada. La última escena te queda grabada de todas formas..."</p>
                                 <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
                                 <!--<a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>-->
-                                <a class="boton-ver-detalles">VER DETALLES</a>
+                                <<a class="boton-ver-detalles" id="botonVerDetalles">VER DETALLES</a>
                             </div>
                         </div>
 
@@ -184,7 +184,7 @@
                                 <p class="text-white" style="font-size:0.72rem;">"Nolan en su máximo esplendor. Actuaciones impecables y una narrativa increíble..."</p>
                                 <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
                                 <!--<a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>-->
-                                <a class="boton-ver-detalles">VER DETALLES</a>
+                                <a class="boton-ver-detalles" id="botonVerDetalles">VER DETALLES</a>
                             </div>
                         </div>
                     </div>
@@ -266,85 +266,91 @@
 
         </footer>
 
-    </body>
-
     <!--------------------------------------------------------------------------------------------------
 
-    <!-- FUNCIONALIDAD DE VER MAS DE LAS RESEÑAS-->
-    <div class="modal-overlay" id="modalDetalle" style="display:none;">
+        <!-- FUNCIONALIDAD DE VER MAS DE LAS RESEÑAS-->
+        <div class="overlay" id="modalDetalle" style="display:none;">
 
-        <div class="modal-detalle">
+            <div class="modal-detalle">
 
-            <a class="boton-cerrar" id="botonCerrarDetalle">X Cerrar</a>
+                <a class="boton-cerrar" id="botonCerrarDetalle">X Cerrar</a>
 
-            <!-- Puntuación + botón editar -->
-            <div>
-                <p>Tu puntuación</p>
-                <span class="estrellas">★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                <a class="boton-editar" href="#" id="botonAbrirEditar">Editar reseña</a>
-            </div>
-
-            <!-- Usuario -->
-            <div class="fila-usuario">
-                <img src="../recursos/imagenes/iconos/perfil.png">
-                <h3>USUARIO - 12345 (TU)</h3>
-            </div>
-
-            <!-- Contenido -->
-            <div>
-                <h1 class="titulo-resena">LA MEJOR SIEMPRE</h1>
-                <p class="texto-resena">
-                    "Un clásico absoluto. Cada escena es perfecta..."
-                </p>
-            </div>
-
-            <!-- Acciones -->
-            <div class="acciones">
-                <b>Me gusta</b> 100
-                <b>No me gusta</b> 18
-                <a href="./resena_comentarios_comentar.html">50 Comentarios</a>
-            </div>
-
-            <button class="boton-eliminar">ELIMINAR RESEÑA</button>
-
-        </div>
-    </div>
-
-    <!-- FUNCIONALIDAD DE EDITAR RESEÑA  -->
-    <div class="modal-overlay" id="modalEditar" style="display:none;">
-
-        <div class="modal-editar">
-
-            <!-- Header: imagen + info + cerrar -->
-            <div class="modal-header-info">
-                <img src="../recursos/imagenes/peliculas/el_padrino.webp">
+                <!-- Puntuación + botón editar -->
                 <div>
-                    <h4>EL PADRINO</h4>
-                    <p>1972 · 2h 53min</p>
-                    <p>MI RESEÑA</p>
+                    <p>Tu puntuación</p>
+                    <span class="estrellas">★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                    <a class="boton-editar" href="#" id="botonAbrirEditar">Editar reseña</a>
                 </div>
-                <a href="#" id="botonCerrarEditar" class="boton-cerrar">✕</a>
-            </div>
 
-            <!-- Puntuación -->
-            <p class="label-puntuacion">Tu puntuación</p>
-            <div class="estrellas-container">
-                <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-            </div>
+                <!-- Usuario -->
+                <div class="fila-usuario">
+                    <img src="../recursos/imagenes/iconos/perfil.png">
+                    <h3>USUARIO - 12345 (TU)</h3>
+                </div>
 
-            <!-- Inputs -->
-            <input type="text" placeholder="Título de la reseña (opcional)">
-            <textarea placeholder="Escribí tu nueva reseña"></textarea>
-            <div class="char-counter">0/1000</div>
+                <!-- Contenido -->
+                <div>
+                    <h1 class="titulo-resena">LA MEJOR SIEMPRE</h1>
+                    <p class="texto-resena">
+                        "Un clásico absoluto. Cada escena es perfecta, imposible no quedar hipnotizado desde el primer minuto. 
+                        La historia está contada con una maestría increíble, combinando actuaciones memorables, 
+                        una dirección impecable y una atmósfera que permanece en la mente mucho tiempo después de terminar la película. 
+                        Cada detalle tiene un propósito y contribuye a construir una experiencia única que sigue vigente a 
+                        pesar del paso de los años. Es una de esas obras que merece ser vista más de una vez, porque siempre 
+                        se descubre algo nuevo. 
+                        Sin duda, una película imprescindible para cualquier amante del cine..."
+                    </p>
+                </div>
 
-            <!-- Botones -->
-            <button class="boton-guardar">GUARDAR CAMBIOS</button>
-            <div class="acciones-inferiores">
-                <button class="boton-cancelar" id="botonCancelarEditar">Cancelar</button>
+                <!-- Acciones -->
+                <div class="acciones">
+                    <b>Me gusta</b> 100
+                    <b>No me gusta</b> 18
+                    <a href="./resena_comentarios_comentar.html">50 Comentarios</a>
+                </div>
+
                 <button class="boton-eliminar">ELIMINAR RESEÑA</button>
-            </div>
 
+            </div>
         </div>
-    </div>
+
+        <!-- el padrino -->
+        <!-- FUNCIONALIDAD DE EDITAR RESEÑA  -->
+        <div class="modal-overlay" id="modalEditar" style="display:none;">
+
+            <div class="modal-editar">
+
+                <!-- Header: imagen + info + cerrar -->
+                <div class="modal-header-info">
+                    <img src="../recursos/imagenes/peliculas/el_padrino.webp">
+                    <div>
+                        <h4>EL PADRINO</h4>
+                        <p>1972 · 2h 53min</p>
+                        <p>MI RESEÑA</p>
+                    </div>
+                    <a href="#" id="botonCerrarEditar" class="boton-cerrar">✕</a>
+                </div>
+
+                <!-- Puntuación -->
+                <p class="label-puntuacion">Tu puntuación</p>
+                <div class="estrellas-container">
+                    <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                </div>
+
+                <!-- Inputs -->
+                <input type="text" placeholder="Título de la reseña (opcional)">
+                <textarea placeholder="Escribí tu nueva reseña"></textarea>
+                <div class="char-counter">0/1000</div>
+
+                <!-- Botones -->
+                <button class="boton-guardar">GUARDAR CAMBIOS</button>
+                <div class="acciones-inferiores">
+                    <button class="boton-cancelar" id="botonCancelarEditar">Cancelar</button>
+                    <button class="boton-eliminar">ELIMINAR RESEÑA</button>
+                </div>
+
+            </div>
+        </div>
+    </body>
 
 </html>

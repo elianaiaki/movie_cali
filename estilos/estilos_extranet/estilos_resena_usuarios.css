@@ -1,167 +1,178 @@
 
 
-
-/* ── MODIFICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR ── *//* ── OVERLAY ── *//* ── OVERLAY ── *//* ── OVERLAY ── */
-
-/* ── agregar reseñaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa── */
-.overlay {
-    display: none;
+/* ----------MODAL - AGREGAR RESEÑA */
+.overlay{
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 100;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.modal{
+    width: 800px;
+    padding: 20px;
+
+    background-color: #041626;
+    color: white;
+
+    border-radius: 10px;
 }
 
-.overlay.activo {
-    display: block;
-}
-
-/* ── MODAL ── */
-.modal {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    background: #1a2035;
-    border: 1px solid #2e3a55;
-    border-radius: 12px;
-    padding: 1.5rem;
-    width: 420px;
-    color: #ffffff;
-}
-
-/* ── HEADER: imagen + datos película ── */
-.modal-header {
+/* ==========================
+(imagen + información)
+========================== */
+.modal-header{
     display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    margin-bottom: 1rem;
+    gap: 15px;
+
     position: relative;
+    margin-bottom: 20px;
 }
 
-.modal-header img {
-    width: 90px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 6px;
+/* Imagen de la película */
+.modal-header img{
+    width: 80px;
+    border-radius: 8px;
 }
 
-.modal-header .info h3 {
-    font-size: 14px;
+/* Título */
+.info h3{
+    margin: 0;
+}
+
+/* Información de año y duración */
+.meta{
+    margin: 5px 0;
+    color: lightgray;
+}
+
+/* Texto "MI RESEÑA" */
+.subtitulo{
+    color: #4f6cff;
     font-weight: bold;
-    margin: 0 0 4px;
-    color: #ffffff;
 }
 
-.modal-header .info .meta {
-    font-size: 12px;
-    color: #8899aa;
-    margin: 0 0 6px;
+/* Texto "Tu puntuación" */
+.puntuacion-label{
+    margin-bottom: 5px;
 }
 
-.modal-header .info .subtitulo {
-    font-size: 13px;
-    font-weight: bold;
-    color: #6b7fff;
-    margin: 0 0 6px;
+/* Estrellas */
+.estrellas{
+    color: #4f6cff;
+    font-size: 25px;
 }
 
-.modal-header .info .puntuacion-label {
-    font-size: 12px;
-    color: #cccccc;
-    margin: 0 0 4px;
+/* Estrellas vacías */
+.vacia{
+    color: #34495e;
 }
 
-.modal-header .info .estrellas {
-    font-size: 20px;
-    color: #6b7fff;
-    letter-spacing: 2px;
-}
+/* ==========================
+   BOTÓN CERRAR
+========================== */
+.boton-cerrar{
+     width: 35px;
+    height: 35px;
 
-.modal-header .info .estrellas .vacia {
-    color: #3a4a60;
-}
-
-/* ── BOTÓN CERRAR ── */
-.btn-cerrar {
-    position: absolute;
-    top: 0; right: 0;
-    background: #2e3a55;
     border: none;
-    color: #ffffff;
-    width: 28px; height: 28px;
-    border-radius: 6px;
+    border-radius: 50%;
+
+    background-color: #1c3147;
+    color: white;
+
     cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
 }
 
-/* ── FORMULARIO ── */
-.modal form {
+/* ==========================
+   FORMULARIO
+========================== */
+form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
-.modal input[type="text"],
-.modal textarea {
-    width: 100%;
-    background: #0f1726;
-    border: 1px solid #2e3a55;
-    border-radius: 8px;
-    color: #ffffff;
-    padding: 10px 12px;
-    font-size: 13px;
-    box-sizing: border-box;
-    outline: none;
-    resize: none;
+/* Campo del título */
+form input{
+    padding: 10px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: #102a45;
+    color: white;
 }
 
-.modal input[type="text"]::placeholder,
-.modal textarea::placeholder {
-    color: #4a5a70;
+/* Área de texto */
+form textarea{
+    height: 250px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 15px;
+
+    background-color: #102a45;
+    color: white;
 }
 
-.modal input[type="text"]:focus,
-.modal textarea:focus {
-    border-color: #6b7fff;
-}
-
-/* ── CONTADOR ── */
-.contador {
+/* Contador de caracteres */
+.contador{
     text-align: right;
-    font-size: 12px;
-    color: #4a5a70;
-    margin: -6px 0 0;
+    color: gray;
+    margin: 0;
 }
 
-/* ── BOTONES ── */
-.btn-publicar {
-    background: #6b7fff;
-    color: #ffffff;
+/* ==========================
+   BOTÓN PUBLICAR
+========================== */
+.boton-publicar{
+    padding: 10px;
+
     border: none;
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 14px;
-    font-weight: bold;
+    border-radius: 20px;
+
+    background-color: #5b6dff;
+    color: white;
+
     cursor: pointer;
-    width: 100%;
 }
 
-.btn-publicar:hover {
-    background: #5a6dee;
-}
+/* ==========================
+   BOTÓN CANCELAR
+========================== */
+.boton-cancelar{
+    padding: 10px;
 
-.btn-cancelar {
-    background: transparent;
-    color: #8899aa;
     border: none;
-    padding: 8px;
-    font-size: 13px;
+    border-radius: 20px;
+
+    background-color: #102a45;
+    color: lightgray;
+
     cursor: pointer;
-    width: 100%;
 }
 
-.btn-cancelar:hover {
-    color: #ffffff;
+
+/* modal de comentarios----------------------------------------------------------------------*/
+
+.comentarios {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #132946;
+}
+
+.comentarios input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.cancelar,
+.comentar {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
 }
