@@ -1,0 +1,8 @@
+/* RESEÑAS -------------------------------------------------------------- */
+
+.reseña {
+    height: 120px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+}
