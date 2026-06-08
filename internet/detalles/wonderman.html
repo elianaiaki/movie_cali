@@ -9,71 +9,57 @@
     <link rel="stylesheet" href="../../estilos/header.css">
     <link rel="stylesheet" href="../../estilos/footer.css">
     <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+    <script src="../../scripts/header.js" defer></script>
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
             <img src="../../recursos/imagenes/logo/logo.png"
-                 alt="Logo MovieCali">
+                alt="Logo MovieCali">
         </div>
-
-        <!-- MENU -->
-        <ul class="menu">
-
-            <li>
-
-                <a href="#">
-                    Inicio
-                </a>
-
-            </li>
-
-            <li>
-
-                <a href="../../internet/catalogo_peliculas.html">
-                    Películas
-                </a>
-
-            </li>
-
-            <li>
-
-                <a href="../../internet/catalogo_series.html">
-                    Series
-                </a>
-
-            </li>
-
-        </ul>
 
         <!-- BUSCADOR -->
         <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
 
-            <input
-                type="search"
-                placeholder="Buscar películas, series..."
-            >
-
-            <button>
-                Buscar
-            </button>
-
+            <button>🔍</button>
         </form>
 
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
+            <a href="../../index.html">Inicio</a>
+            <a href="../../internet/catalogo_peliculas.html">Películas</a>
+            <a href="../../internet/catalogo_series.html">Series</a>
+        </nav>
+
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>MENU</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../../internet/iniciar_sesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+            </div>
+        </div>
     </header>
 
     <hr>
     <!-- FIN DE HEADER-->
 
-    <div>
         <!-- MAIN -->
         <main>
             <!-- TITULO, DETALLES Y TRAILER-->
-           <section class="detalle-principal">
+    <section class="detalle-principal">
 
     <!-- IZQUIERDA: IMAGEN -->
     <div class="poster">
@@ -147,7 +133,7 @@
                 </div>
             </section> -->
 
-            <section class="card-detalle">
+    <section class="card-detalle">
 
     <h2>REPARTO</h2>
 
@@ -183,118 +169,130 @@
 </section>
 
             <!--RESEÑA DE USUARIOS-->
-            <section>
-                <h2>RESEÑAS DESTACADAS</h2>
-                
-                <!--USUARIO 1-->
-                <div>
-                    <div>
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                        <p><b>Calificación:</b> 9.0 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>MarvelFan92 dice:</b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>Excelente inicio</h3>
-                    <p>
-                        "La serie logra darle frescura al MCU con un tono diferente. <br>
-                        Yahya Abdul-Mateen II brilla como Simon Williams y la química <br>
-                        con Ben Kingsley es uno de los puntos más fuertes."
-                    </p>
-                    <br>
-                </div>
-                <br>
+ <section class="card-detalle">
 
-                <!-- USUARIO 2-->
-                <div>
-                    <div>
-                        <span>★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ ☆</span>
-                        <p><b>Calificación:</b> 3.0 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>Cinefilo88 dice:</b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>Floja</h3>
-                    <p>
-                        "Aunque la propuesta es interesante, algunos episodios se sienten <br>
-                        repetitivos y con poca acción. El ritmo narrativo no logra enganchar <br>
-                        en todo momento."
-                    </p>
-                    <br>
-                </div>
+    <h2>RESEÑAS DESTACADAS</h2>
 
-                <!-- USUARIO 3-->
-                <div>
-                    <div>
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                        <p><b>Calificación:</b> 8.0 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>TechGuru_VLC dice:</b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>Muy buena</h3>
-                    <p>
-                        "Lo que realmente destaca es el enfoque en los personajes y <br>
-                        las relaciones más que en la acción. Se siente distinta a otras <br>
-                        series de Marvel y eso la hace especial."
-                    </p>
-                    <br>
-                </div>
+    <div class="resenas-container">
 
-                <!-- USUARIO 4-->
-                <div>
-                    <div>
-                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
-                        <p><b>Calificación:</b> 7.0 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>NostalgicEditor dice:</b></p>
-                    </div>
-                    <!-- contenido -->
-                    <h3>Correcta</h3>
-                    <p>
-                        "El ritmo decae en algunos capítulos, pero el final de temporada <br>
-                        compensa con un clímax emocionante. Una propuesta diferente <br>
-                        dentro del MCU."
-                    </p>
-                    <br>
-                </div>
+        <div class="resena-card">
+            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+            <p><b>Calificación:</b> 9.0 / 10</p>
 
-                <a href="#">Ver todas las reseñas</a>
-            </section>
-        
-            <!-- RELACIONADOS-->
-            <section>
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
 
-                <div>
-                    <h2>RELACIONADOS</h2>
-                    <div>
-                        <img src="../../recursos/imagenes/series/marvelZombie.jpg" alt="MARVEL ZOMBIE" width="100" height="150"><br>
-                        <h3>MARVEL ZOMBIE</h3>
-                        <h3>Calificación: 7.0/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
-                    <div>
-                        <img src="../../recursos/imagenes/series/ironHeart.jpg" alt="IRON HEART" width="100" height="150"><br>
-                        <h3>IRON HEART</h3>
-                        <h3>Calificación: 4.5/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
-                    <div>
-                        <img src="../../recursos/imagenes/series/hawkeye.jpg" alt="HAWKEYE" width="100" height="150"><br>
-                        <h3>HAWKEYE</h3>
-                        <h3>Calificación: 4.5/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
-                    <div>
-                        <img src="../../recursos/imagenes/series/agathaEnTodasPartes.jpg" alt="AGATHA EN TODAS PARTES" width="100" height="150"><br>
-                        <h3>AGATHA EN TODAS PARTES</h3>
-                        <h3>Calificación: 7.2/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
-                </div>
-            </section>
-        </main>
+            <p><b>MarvelFan92 dice:</b></p>
+
+            <h3>Excelente inicio</h3>
+
+            <p>
+                La serie logra darle frescura al MCU con un tono diferente.
+                Yahya Abdul-Mateen II brilla como Simon Williams y la química
+                con Ben Kingsley es uno de los puntos más fuertes.
+            </p>
+        </div>
+
+        <div class="resena-card">
+            <span>★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ ☆</span>
+            <p><b>Calificación:</b> 3.0 / 10</p>
+
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
+
+            <p><b>Cinefilo88 dice:</b></p>
+
+            <h3>Floja</h3>
+
+            <p>
+                Aunque la propuesta es interesante, algunos episodios se sienten
+                repetitivos y con poca acción. El ritmo narrativo no logra
+                enganchar en todo momento.
+            </p>
+        </div>
+
+        <div class="resena-card">
+            <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+            <p><b>Calificación:</b> 8.0 / 10</p>
+
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
+
+            <p><b>TechGuru_VLC dice:</b></p>
+
+            <h3>Muy buena</h3>
+
+            <p>
+                Lo que realmente destaca es el enfoque en los personajes y las
+                relaciones más que en la acción. Se siente distinta a otras
+                series de Marvel y eso la hace especial.
+            </p>
+        </div>
+
+        <div class="resena-card">
+            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+            <p><b>Calificación:</b> 7.0 / 10</p>
+
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
+
+            <p><b>NostalgicEditor dice:</b></p>
+
+            <h3>Correcta</h3>
+
+            <p>
+                El ritmo decae en algunos capítulos, pero el final de temporada
+                compensa con un clímax emocionante. Una propuesta diferente
+                dentro del MCU.
+            </p>
+        </div>
+
     </div>
+
+    <a href="#">Ver todas las reseñas</a>
+
+</section>
+            <!-- RELACIONADOS-->
+ <section class="card-detalle">
+
+    <h2>RELACIONADOS</h2>
+
+    <div class="relacionados-container">
+
+        <div class="relacionado-card">
+            <img src="../../recursos/imagenes/series/marvelZombie.jpg" alt="MARVEL ZOMBIE">
+            <h3>MARVEL ZOMBIE</h3>
+            <p>Calificación: 7.0/10</p>
+            <p>Duración: 1 Temporada</p>
+        </div>
+
+        <div class="relacionado-card">
+            <img src="../../recursos/imagenes/series/ironHeart.jpg" alt="IRON HEART">
+            <h3>IRON HEART</h3>
+            <p>Calificación: 4.5/10</p>
+            <p>Duración: 1 Temporada</p>
+        </div>
+
+        <div class="relacionado-card">
+            <img src="../../recursos/imagenes/series/hawkeye.jpg" alt="HAWKEYE">
+            <h3>HAWKEYE</h3>
+            <p>Calificación: 4.5/10</p>
+            <p>Duración: 1 Temporada</p>
+        </div>
+
+        <div class="relacionado-card">
+            <img src="../../recursos/imagenes/series/agathaEnTodasPartes.jpg" alt="AGATHA EN TODAS PARTES">
+            <h3>AGATHA EN TODAS PARTES</h3>
+            <p>Calificación: 7.2/10</p>
+            <p>Duración: 1 Temporada</p>
+        </div>
+
+         <div class="relacionado-card">
+            <img src="../../recursos/imagenes/series/loki.png" alt="LOKI">
+            <h3>LOKI</h3>
+            <p>Calificación: 8.5/10</p>
+            <p>Duración: 1 Temporada</p>
+        </div>
+
+    </div>
+
+</section>
 
     <!-- FOOTER -->
     <footer class="footer">

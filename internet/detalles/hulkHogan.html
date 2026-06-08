@@ -4,36 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <title>HULK HOGAN</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+    <script src="../../scripts/header.js" defer></script>
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="../../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+   <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
         </form>
 
-        <!-- Navegación -->
-        <nav>
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
             <a href="../../index.html">Inicio</a>
-            <a href="../catalogo_peliculas.html">Películas</a>
-            <a href="../catalogo_series.html">Series</a>
+            <a href="../../internet/catalogo_peliculas.html">Películas</a>
+            <a href="../../internet/catalogo_series.html">Series</a>
         </nav>
 
-        <!-- Usuario -->
-        <div>
-            <a href="../iniciar_sesion.html">Iniciar sesión</a>
-            <a href="../crear_cuenta.html">Crear cuenta</a>
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>MENU</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../../internet/iniciar_sesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+            </div>
         </div>
     </header>
-
     <hr>
     <!-- FIN DE HEADER-->
 
@@ -41,11 +59,12 @@
         <!-- MAIN -->
         <main>
             <!-- TITULO, DETALLES Y TRAILER-->
-            <section>
-                <div>
-
+            <section class="detalle-principal">
+                
+                <div class="poster">
                     <img src="../../recursos/imagenes/series/hulkHogan.jpg" alt="HULK HOGAN" width="200">
-                    <br>
+                </div>
+                <div class="info-serie">  
                     <h1>HULK HOGAN</h1>
                     <p>Terry Bollea se convirtió en Hulk Hogan. Este documental sin filtros revela <br>
                         al hombre detrás de la leyenda a través de su entrevista final.
@@ -61,8 +80,9 @@
                         <li><strong>Plataformas:</strong> Netflix</li>
                     </ul>
                 </div>
-                
-                <div>
+            </section>
+            <section class="card-detalle">
+                <div class="video-conteiner">
                     <h2>Tráiler</h2>
                     <video width="600" controls>
                         <source src="../../recursos/videos/HulkHogan.webm" type="video/webm">
@@ -72,36 +92,38 @@
             </section>
 
             <!-- REPARTO-->
-            <section>
-                    <h2>REPARTO</h2>
-                <div>
+            <section class="card-detalle">
+                <h2>REPARTO</h2>
+            <div class="reparto-vertical"> 
+
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/hulkHogan.jpg" alt="HULK HOGAN" width="100" height="150"><br>
                     <h3>HULK HOGAN</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/lindaHogan.jpg" alt="LINDA HOGAN" width="100" height="150"><br>
                     <h3>LINDA HOGAN</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/vinceMacmahon.jpg" alt="VINCE MACMAHON" width="100" height="150"><br>
                     <h3>VINCE MACMAHON</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/paulWight.jpg" alt="PAUL WIGHT" width="100" height="150"><br>
                     <h3>PAUL WIGHT</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/paulLevesque.jpg" alt="PAUL LEVESQUE" width="100" height="150"><br>
                     <h3>PAUL LEVESQUE</h3>
                 </div>
             </section>
 
             <!--RESEÑA DE USUARIOS-->
-            <section>
+              <section class="card-detalle">
                 <h2>RESEÑAS DESTACADAS</h2>
-                
+            <div class="resenas-container">
                 <!--USUARIO 1-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -121,7 +143,7 @@
                 <br>
 
                 <!--USUARIO 2-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -141,7 +163,7 @@
                 <br>
 
                 <!--USUARIO 3-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -161,7 +183,7 @@
                 <br>
 
                 <!--USUARIO 4-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -181,7 +203,7 @@
                 <br>
 
                 <!--USUARIO 5-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -200,38 +222,39 @@
                 </div>
 
                 <a href="#">Ver todas las reseñas</a>
+            </div>
             </section>
 
 
             <!-- RELACIONADOS-->
-            <section>
-                <div>
-                    <h2>RELACIONADOS</h2>
-                    <div>
+            <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class="relacionados-container">
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/peliculas/rockylll.jpg" alt="ROCKY III" width="100" height="150"><br>
                         <h3>ROCKY III</h3>
                         <h3>Calificación: 6.8/10</h3>
                         <h3>DURACION: 1h 39min </h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/peliculas/noHoldsBarred.jpg" alt="NO HOLDS BARRED" width="100" height="150"><br>
                         <h3>NO HOLDS BARRED</h3>
                         <h3>Calificación: 4.4/10</h3>
                         <h3>DURACION: 1h 33min</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/peliculas/theWrestler.jpg" alt="THE WRESTLER" width="100" height="150"><br>
                         <h3>THE WRESTLER</h3>
                         <h3>Calificación: 7.9/10</h3>
                         <h3>DURACION: 1h 49min</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/wweLegends.jpg" alt="WWE LEGENDS (SERIE)" width="100" height="150"><br>
                         <h3>WWE LEGENDS (SERIE)</h3>
                         <h3>Calificación: 7.5/10</h3>
                         <h3>DURACION: 2 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/peliculas/andreTheGiant.jpg" alt="ANDRÉ THE GIANT (DOCUMENTAL)" width="100" height="150"><br>
                         <h3>ANDRÉ THE GIANT (DOCUMENTAL)</h3>
                         <h3>Calificación: 8.0/10</h3>
@@ -244,7 +267,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>

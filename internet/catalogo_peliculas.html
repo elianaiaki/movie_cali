@@ -4,33 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Catalogo de peliculas</title>
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/estilo_internet/catalogo.css">
+    <script src="../scripts/header.js" defer></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+   <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
         </form>
-        <!-- Navegación -->
-        <nav>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
             <a href="../index.html">Inicio</a>
-            <a href="#">Películas</a>
-            <a href="./catalogo_series.html">Series</a>
+            <a href="../internet/catalogo_peliculas.html">Películas</a>
+            <a href="../internet/catalogo_series.html">Series</a>
         </nav>
 
-        <!-- Usuario -->
-        <div>
-            <a href="./iniciar_sesion.html">Iniciar sesión</a>
-            <a href="./crear_cuenta.html">Crear cuenta</a>
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>MENU</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../internet/iniciar_sesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                <a href="./crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+            </div>
         </div>
+
     </header>
 
     <hr>
@@ -45,867 +66,1134 @@
         <main>
             <!-- MIS CALIFICACIONES-->
             <section>
-                <h1>CATÁLOGO DE PELÍCULAS</h1>
-                <!-- ESTRENO-->
-                <div>
+                
+                <div class="card-detalle">
                     <h2>ESTRENO</h2>
 
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
+                    <div class="catalogo-container">
                         <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/elguardian.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/elGuardian.html">EL GUARDIAN</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/elguardian.jpg" alt="EL GUARDIAN">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/elGuardian.html">
+                                    EL GUARDIAN
+                                </a>
+                                <p>CALIFICACIÓN: 7.0 / 10</p>
+                                <p>DURACIÓN: 1h 48m</p>
+                            </div>
                         </div>
-
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/supermario.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/superMarioBros.html">SUPER MARIO BROS</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/supermario.jpg" alt="SUPER MARIO BROS">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/superMarioBros.html">
+                                    SUPER MARIO BROS
+                                </a>
+                                <p>CALIFICACIÓN: 6.8 / 10</p>
+                                <p>DURACIÓN: 1h 38m</p>
+                            </div>
                         </div>
-
+                        
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/parquelezama.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/parquelezama.html">PARQUE LEZAMA</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/parquelezama.jpg" alt="PARQUE LEZAMA">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/parquelezama.html">
+                                    PARQUE LEZAMA
+                                </a>
+                                <p>CALIFICACIÓN: 6.7 / 10</p>
+                                <p>DURACIÓN: 1h 55m</p>
+                            </div>
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/hermanosdemolicion.jpg" width="150" height="220"><br>
-                            <a href="#">HERMANOS DEMOLICIÓN</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/hermanosdemolicion.jpg" alt="HERMANOS DEMOLICIÓN">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/hermanosdemolicion.html">
+                                    HERMANOS DEMOLICIÓN
+                                </a>
+                                <p>CALIFICACIÓN: 6.7 / 10</p>
+                                <p>DURACIÓN: 1h 55m</p>
+                            </div>
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/comocabras.jpg" width="150" height="220"><br>
-                            <a href="#">COMO CABRAS</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/comocabras.jpg" alt="COMO CABRAS">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/comocabras.html">
+                                    COMO CABRAS
+                                </a>
+                                <p>CALIFICACIÓN: 7.6 / 10</p>
+                                <p>DURACIÓN: 1h 40m</p>
+                            </div>
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpg" width="150" height="220"><br>
-                            <a href="#">EL DIABLO VISTE A LA MODA</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpg" alt="EL DIABLO VISTE A LA MODA">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/eldiablovistealamoda.html">
+                                    EL DIABLO VISTE A LA MODA
+                                </a>
+                                <p>CALIFICACIÓN: 6.9 / 10</p>
+                                <p>DURACIÓN: 1h 59m</p>
+                            </div>
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/torrentePresidente.jpg" width="150" height="220"><br>
-                            <a href="#">TORRENTE PRESIDENTE</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/torrentePresidente.jpg" alt="TORRENTE PRESIDENTE">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/torrentepresidente.html">
+                                    TORRENTE PRESIDENTE
+                                </a>
+                                <p>CALIFICACIÓN: 6.1 / 10</p>
+                                <p>DURACIÓN: 1h 42m</p>
+                            </div>
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/cajaAzul.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/cajaazul.html">CAJA AZUL</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/cajaAzul.jpg" alt="CAJA AZUL">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/cajaazul.html">
+                                    CAJA AZUL
+                                </a>
+                                <p>CALIFICACIÓN: 5.7 / 10</p>
+                                <p>DURACIÓN: 1h 23m</p>
+                            </div>
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/idolos.jpg" width="150" height="220"><br>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/idolos.jpg" alt="IDOLOS">
                             <a href="#">IDOLOS</a><br>
                             <small>CALIFICACIÓN: 5.6/10</small><br>
                             <small>DURACIÓN: 2h 06min</small>
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/swapped.jpg" width="150" height="220"><br>
-                            <a href="#">SWAPPED</a><br>
-                            <small>CALIFICACIÓN: 6.5/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/swapped.jpg" alt="SWAPPED">
+                            <div class="pelicula-info">
+                                <a href="../internet/detalles/swapped.html">
+                                    SWAPPED
+                                </a>
+                                <p>CALIFICACIÓN: 6.5 / 10</p>
+                                <p>DURACIÓN: 1h 38m</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-            <div>
+
+                    
+                
+             <div class="card-detalle">
                     <h2>AVENTURAS</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/proyectosalvacion.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/proyectosalvacion.html">PROYECTO SALVACIÓN</a><br>
-                            <small>CALIFICACIÓN: 8.2/10</small>
-                            <small>DURACIÓN: 2h 36min</small>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/proyectosalvacion.jpg" alt="PROYECTO SALVACIÓN"><br>
+                                <a href="../internet/detalles/proyectosalvacion.html">PROYECTO SALVACIÓN</a><br>
+                                <small>CALIFICACIÓN: 8.2/10</small>
+                                <small>DURACIÓN: 2h 36min</small> 
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/bonekeeper.jpg" width="150" height="220"><br>
-                            <a href="#">BONEKEEPER</a><br>
-                            <small>CALIFICACIÓN: 5.1/10</small><br>
-                            <small>DURACIÓN: 1h 30min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/bonekeeper.jpg"  alt="BONEKEEPER"><br>
+                                <a href="#">BONEKEEPER</a><br>
+                                <small>CALIFICACIÓN: 5.1/10</small><br>
+                                <small>DURACIÓN: 1h 30min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/rascacieloenvivo.jpg" width="150" height="220"><br>
-                            <a href="#">RASCACIELO EN VIVO</a><br>
-                            <small>CALIFICACIÓN: 7.4/10</small><br>
-                            <small>DURACIÓN: 1h 57min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/rascacieloenvivo.jpg"  alt="RASCACIELO EN VIVO"><br>
+                                <a href="#">RASCACIELO EN VIVO</a><br>
+                                <small>CALIFICACIÓN: 7.4/10</small><br>
+                                <small>DURACIÓN: 1h 57min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/anaconda.jpg" width="150" height="220"><br>
-                            <a href="#">ANACONDA</a><br>
-                            <small>CALIFICACIÓN: 5.8/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/anaconda.jpg"  alt="ANACONDA"><br>
+                                <a href="#">ANACONDA</a><br>
+                                <small>CALIFICACIÓN: 5.8/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/obex.jpg" width="150" height="220"><br>
-                            <a href="#">OBEX</a><br>
-                            <small>CALIFICACIÓN: 5.8/10</small><br>
-                            <small>DURACIÓN: 1h 31min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/obex.jpg"  alt="OBEX"><br>
+                                <a href="#">OBEX</a><br>
+                                <small>CALIFICACIÓN: 5.8/10</small><br>
+                                <small>DURACIÓN: 1h 31min</small> 
+                            </div>
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/AangElUltimoMaestroAire.jpg" width="150" height="220"><br>
-                            <a href="#">AANG: EL ÚLTIMO MAESTRO DE AIRE</a><br>
-                            <small>CALIFICACIÓN: 7.2/10</small>
-                            <small>DURACIÓN: 1h 39min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/AangElUltimoMaestroAire.jpg"  alt="AANG: EL ÚLTIMO MAESTRO DE AIRE"><br>
+                                <a href="#">AANG: EL ÚLTIMO MAESTRO DE AIRE</a><br>
+                                <small>CALIFICACIÓN: 7.2/10</small>
+                                <small>DURACIÓN: 1h 39min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/swapped.jpg" width="150" height="220"><br>
-                            <a href="#">SWAPPED</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/swapped.jpg"  alt="SWAPPED"><br>
+                                <a href="#">SWAPPED</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/pizzaMovie.jpg" width="150" height="220"><br>
-                            <a href="#">PIZZA MOVIE</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small><br>
-                            <small>DURACIÓN: 1h 37min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/pizzaMovie.jpg"  alt="PIZZA MOVIE"><br>
+                                <a href="#">PIZZA MOVIE</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small><br>
+                                <small>DURACIÓN: 1h 37min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/starbright.jpg" width="150" height="220"><br>
-                            <a href="#">STARBRIGHT</a><br>
-                            <small>CALIFICACIÓN: 3.8/10</small><br>
-                            <small>DURACIÓN: 2h 28min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/starbright.jpg"  alt="STARBRIGHT"><br>
+                                <a href="#">STARBRIGHT</a><br>
+                                <small>CALIFICACIÓN: 3.8/10</small><br>
+                                <small>DURACIÓN: 2h 28min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/arco.jpg" width="150" height="220"><br>
-                            <a href="#">ARCO</a><br>
-                            <small>CALIFICACIÓN: 4.6/10</small><br>
-                            <small>DURACIÓN: 1h 22min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/arco.jpg"  alt="ARCO"><br>
+                                <a href="#">ARCO</a><br>
+                                <small>CALIFICACIÓN: 4.6/10</small><br>
+                                <small>DURACIÓN: 1h 22min</small>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div>
+                 <div class="card-detalle">
                     <h2>ACCION</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/elguardian.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/elGuardian.html">EL GUARDIAN</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/elguardian.jpg"  alt="EL GUARDIAN"><br>
+                                <a href="../internet/detalles/elGuardian.html">EL GUARDIAN</a><br>
+                                <small>CALIFICACIÓN: 7/10</small>
+                                <small>DURACIÓN: 1h 48min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/elBotin.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/elBotin.html">EL BOTÍN</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/elBotin.jpg"  alt="EL BOTÍN"><br>
+                                <a href="../internet/detalles/elBotin.html">EL BOTÍN</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 38min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/f1LaPelicula.html">F1 LA PELICULA</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg"  alt="F1 LA PELICULA"><br>
+                                <a href="../internet/detalles/f1LaPelicula.html">F1 LA PELICULA</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/hermanosdemolicion.jpg" width="150" height="220"><br>
-                            <a href="#">HERMANOS DEMOLICIÓN</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/hermanosdemolicion.jpg"  alt="HERMANOS DEMOLICION"><br>
+                                <a href="#">HERMANOS DEMOLICIÓN</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/instintoImplacable.jpg" width="150" height="220"><br>
-                            <a href="#">INSTINTO IMPLACABLE</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/instintoImplacable.jpg"  alt="INSTINTO IMPLACABLE"><br>
+                                <a href="#">INSTINTO IMPLACABLE</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/patrullanocturna.jpg" width="150" height="220"><br>
-                            <a href="#">PATRULLA NOCTURNA</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/patrullanocturna.jpg"  alt="PATRULLA NOCTURNA"><br>
+                                <a href="#">PATRULLA NOCTURNA</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small>
+                                <small>DURACIÓN: 1h 59min</small> 
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/hellfire.jpg" width="150" height="220"><br>
-                            <a href="#">HELLFIRE</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/hellfire.jpg"  alt="HELLFIRE"><br>
+                                <a href="#">HELLFIRE</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/maquinaDeGuerra.jpg" width="150" height="220"><br>
-                            <a href="#">MÁQUINA DE GUERRA</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/maquinaDeGuerra.jpg"  alt="MAQUINA DE GUERRA"><br>
+                                <a href="#">MÁQUINA DE GUERRA</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/beast.jpg" width="150" height="220"><br>
-                            <a href="#">BEAST</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/beast.jpg"  alt="BEAST"><br>
+                                <a href="#">BEAST</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
 
-                <div>
+                <div class="card-detalle">
                     <h2>CIENCIA FICCIÓN</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/alertaextincion.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/alertaDeExtincion.html">ALERTA DE EXTINCIÓN</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/alertaextincion.jpg"  alt="ALERTA DE EXTINCION"><br>
+                                <a href="../internet/detalles/alertaDeExtincion.html">ALERTA DE EXTINCIÓN</a><br>
+                                <small>CALIFICACIÓN: 7/10</small>
+                                <small>DURACIÓN: 1h 48min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/lanovia.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/lanovia.html">LA NOVIA</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/lanovia.jpg"  alt="LA NOVIA"><br>
+                                <a href="../internet/detalles/lanovia.html">LA NOVIA</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 38min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/finDelMundo.jpg" width="150" height="220"><br>
-                            <a href="#">FIN DEL MUNDO</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/finDelMundo.jpg"  alt="FIN DEL MUNDO"><br>
+                                <a href="#">FIN DEL MUNDO</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/reduxRedux.jpg" width="150" height="220"><br>
-                            <a href="#">REDUX REDUX</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/reduxRedux.jpg"  alt="REDUX REDUX"><br>
+                                <a href="#">REDUX REDUX</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/sinPiedad.jpg" width="150" height="220"><br>
-                            <a href="#">SIN PIEDAD</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/sinPiedad.jpg"  alt="SIN PIEDAD"><br>
+                                <a href="#">SIN PIEDAD</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/elHombreMenguante.jpg" width="150" height="220"><br>
-                            <a href="#">EL HOMBRE MENGUANTE</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/elHombreMenguante.jpg"  alt="EL HOMBRE MENGUANTE"><br>
+                                <a href="#">EL HOMBRE MENGUANTE</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small>
+                                <small>DURACIÓN: 1h 59min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/alterlight.jpg" width="150" height="220"><br>
-                            <a href="#">ALTERLIGHT</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/alterlight.jpg"  alt="ALTERLIGHT"><br>
+                                <a href="#">ALTERLIGHT</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/maquinaDeGuerra.jpg" width="150" height="220"><br>
+                        <div class="pelicula-card">
+                            <img src="../recursos/imagenes/peliculas/maquinaDeGuerra.jpg"  alt="MÁQUINA DE GUERRA"><br>
                             <a href="#">MÁQUINA DE GUERRA</a><br>
                             <small>CALIFICACIÓN: 5.7/10</small><br>
                             <small>DURACIÓN: 1h 23min</small>
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/somnium.jpg" width="150" height="220"><br>
-                            <a href="#">SOMNIUM</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/somnium.jpg"  alt="SOMNIUM"><br>
+                                <a href="#">SOMNIUM</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/elSenderoAzul.jpg" width="150" height="220"><br>
-                            <a href="#">EL SENDERO AZUL</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/elSenderoAzul.jpg"  alt="EL SENDERO AZUL"><br>
+                                <a href="#">EL SENDERO AZUL</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 
-                 <div>
-                    <h2>ANIMACIÓN</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/supermario.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/superMarioBros.html">SUPER MARIO</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                <div class="card-detalle">
+                    <h2>ANIMACION</h2>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/supermario.jpg"  alt="SUPER MARIO"><br>
+                                <a href="../internet/detalles/superMarioBros.html">SUPER MARIO</a><br>
+                                <small>CALIFICACIÓN: 7/10</small>
+                                <small>DURACIÓN: 1h 48min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/hoppers.jpg" width="150" height="220"><br>
-                            <a href="#">HOPPERS</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/hoppers.jpg"  alt="HOPPERS"><br>
+                                <a href="#">HOPPERS</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 38min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/david.jpg" width="150" height="220"><br>
-                            <a href="#">DAVID</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/david.jpg"  alt="DAVID"><br>
+                                <a href="#">DAVID</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/pawpatrolespecialdenavidad.jpg" width="150" height="220"><br>
-                            <a href="#">PAW PATROLE SPECIAL DE NAVIDAD</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/pawpatrolespecialdenavidad.jpg"  alt="PAW PATROLE SPECIAL DE NAVIDAD"><br>
+                                <a href="#">PAW PATROLE SPECIAL DE NAVIDAD</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/zootopia2.jpg" width="150" height="220"><br>
-                            <a href="#">ZOOTOPIA 2</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/zootopia2.jpg"  alt="ZOOTOPIA 2"><br>
+                                <a href="#">ZOOTOPIA 2</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/losCretinos.jpg" width="150" height="220"><br>
-                            <a href="#">LOS CRETINOS</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/losCretinos.jpg"  alt="LOS CRETINOS"><br>
+                                <a href="#">LOS CRETINOS</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small>
+                                <small>DURACIÓN: 1h 59min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/enSueños.jpg" width="150" height="220"><br>
-                            <a href="#">EN SUEÑOS</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/enSueños.jpg"  alt="EN SUEÑOS"><br>
+                                <a href="#">EN SUEÑOS</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/mascotasAlRescates.jpg" width="150" height="220"><br>
-                            <a href="#">MÁQUINA DE GUERRA</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/mascotasAlRescates.jpg"  alt="MASCOTAS AL RESCATE"><br>
+                                <a href="#">MASCOTAS AL RESCATE</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/despelote.jpg" width="150" height="220"><br>
-                            <a href="#">DESPELOTE</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/despelote.jpg"  alt="DESPELOTE"><br>
+                                <a href="#">DESPELOTE</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/lostiposMalos2.jpg" width="150" height="220"><br>
-                            <a href="#">LOS TIPOS MALOS 2</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/lostiposMalos2.jpg"  alt="LOS TIPOS MALOS 2"><br>
+                                <a href="#">LOS TIPOS MALOS 2</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
 
                                 
-                 <div>
+                <div class="card-detalle">
                     <h2>TERROR</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/elyeti.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/elyeti.html">EL YETI</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/elyeti.jpg"  alt="EL YETI"><br>
+                                <a href="../internet/detalles/elyeti.html">EL YETI</a><br>
+                                <small>CALIFICACIÓN: 7/10</small>
+                                <small>DURACIÓN: 1h 48min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/laposesiondelamomia.jpg" width="150" height="220"><br>
-                            <a href="#">LA POSESION DE LA MOMIA</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/laposesiondelamomia.jpg"  alt="LA POSESION DE LA MOMIA"><br>
+                                <a href="#">LA POSESION DE LA MOMIA</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 38min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/elsonidodelamuerte.jpg" width="150" height="220"><br>
-                            <a href="#">EL SONIDO DE LA MUERTE</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/elsonidodelamuerte.jpg"  alt="EL SONIDO DE LA MUERTE"><br>
+                                <a href="#">EL SONIDO DE LA MUERTE</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                         
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/tevanamatar.jpg" width="150" height="220"><br>
-                            <a href="#">TE VAN A MATAR</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/tevanamatar.jpg"  alt="TE VAN A MATAR"><br>
+                                <a href="#">TE VAN A MATAR</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/embestida.jpg" width="150" height="220"><br>
-                            <a href="#">EMBESTIDA</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/embestida.jpg"  alt="EMBESTIDA"><br>
+                                <a href="#">EMBESTIDA</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/dolly.jpg" width="150" height="220"><br>
-                            <a href="#">DOLLY</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/dolly.jpg"  alt="DOLLY"><br>
+                                <a href="#">DOLLY</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small>
+                                <small>DURACIÓN: 1h 59min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/psychoKiller.jpg" width="150" height="220"><br>
-                            <a href="#">PSYCHO KILLER</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/psychoKiller.jpg"  alt="PSYCHO KILLER"><br>
+                                <a href="#">PSYCHO KILLER</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small> 
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/scream7.jpg" width="150" height="220"><br>
-                            <a href="#">SCREAM 7</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/scream7.jpg"  alt="SCREAM 7"><br>
+                                <a href="#">SCREAM 7</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/despelote.jpg" width="150" height="220"><br>
-                            <a href="#">DESPELOTE</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/despelote.jpg"  alt="DESPELOTE"><br>
+                                <a href="#">DESPELOTE</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/grizzlyNight.jpg" width="150" height="220"><br>
-                            <a href="#">GRIZZLY NIGHT</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/grizzlyNight.jpg"  alt="GRIZZLY NIGHT"><br>
+                                <a href="#">GRIZZLY NIGHT</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 
-                <div>
+                 <div class="card-detalle">
                     <h2>COMEDIA</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/compañeradecuarto.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/compañeradecuarto.html">COMPÀNERA DE CUARTO</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/compañeradecuarto.jpg"  alt="COMPAÑERA DE CUARTO"><br>
+                                <a href="../internet/detalles/compañeradecuarto.html">COMPÀNERA DE CUARTO</a><br>
+                                <small>CALIFICACIÓN: 7/10</small>
+                                <small>DURACIÓN: 1h 48min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/drama.jpg" width="150" height="220"><br>
-                            <a href="#">DRAMA</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/drama.jpg"  alt="DRAMA"><br>
+                                <a href="#">DRAMA</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 38min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/outcome.jpg" width="150" height="220"><br>
-                            <a href="#">OUTCOME</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/outcome.jpg"  alt="OUTCOME"><br>
+                                <a href="#">OUTCOME</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/53domingos.jpg" width="150" height="220"><br>
-                            <a href="#">53 DOMINGOS</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/53domingos.jpg"  alt="53 DOMINGOS"><br>
+                                <a href="#">53 DOMINGOS</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/jugadaMaestra.jpg" width="150" height="220"><br>
-                            <a href="#">JUGADA MAESTRA</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/jugadaMaestra.jpg"  alt="JUGADA MAESTRA"><br>
+                                <a href="#">JUGADA MAESTRA</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/preschool.jpg" width="150" height="220"><br>
-                            <a href="#">PRESCHOOL</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/preschool.jpg"  alt="PRESCHOOL"><br>
+                                <a href="#">PRESCHOOL</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small>
+                                <small>DURACIÓN: 1h 59min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/soloAmigos.jpg" width="150" height="220"><br>
-                            <a href="#">SOLO AMIGOS</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/soloAmigos.jpg"  alt="SOLO AMIGOS"><br>
+                                <a href="#">SOLO AMIGOS</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="#" width="150" height="220"><br>
-                            <a href="../internet/detalles/solo_mio.html">SOLO MIO</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/soloMio.jpg"  alt="SOLO MIO"><br>
+                                <a href="../internet/detalles/solo_mio.html">SOLO MIO</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="#" width="150" height="220"><br>
-                            <a href="../internet/detalles/torrente_presidente.html">TORRENTE PRESIDENTE</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/torrentePresidente.jpg"  alt="TORRENTE PRESIDENTE"><br>
+                                <a href="../internet/detalles/torrente_presidente.html">TORRENTE PRESIDENTE</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="#" width="150" height="220"><br>
-                            <a href="../internet/detalles/pizza_movie.html">PIZZA MOVIE</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 35min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/pizzaMovie.jpg"  alt="PIZZA MOVIE"><br>
+                                <a href="../internet/detalles/pizza_movie.html">PIZZA MOVIE</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 35min</small>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
             
-                <div>
+                 <div class="card-detalle">
                     <h2>ROMANCE</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/cajaAzul.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/cajaazul.html">CAJA AZUL</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/cajaAzul.jpg"  alt="CAJA AZUL"><br>
+                                <a href="../internet/detalles/cajaazul.html">CAJA AZUL</a><br>
+                                <small>CALIFICACIÓN: 7/10</small>
+                                <small>DURACIÓN: 1h 48min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/lametaeselamor.jpg" width="150" height="220"><br>
-                            <a href="#">LA META ES EL AMOR</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/lametaeselamor.jpg"  alt="LA META ES EL AMOR"><br>
+                                <a href="#">LA META ES EL AMOR</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 38min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/noteolvide.jpg" width="150" height="220"><br>
-                            <a href="#">NO TE OLVIDES</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/noteolvide.jpg"  alt="NO TE OLVIDES"><br>
+                                <a href="#">NO TE OLVIDES</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/apesardeti.jpg" width="150" height="220"><br>
-                            <a href="#">APESAR DE TI</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/apesardeti.jpg"  alt="APESAR DE TI"><br>
+                                <a href="#">APESAR DE TI</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/dimelobajito.jpg" width="150" height="220"><br>
-                            <a href="#">DIMO LO BAJITO</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/dimelobajito.jpg"  alt="DIMO LO BAJITO"><br>
+                                <a href="#">DIMO LO BAJITO</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/18rosas.jpg" width="150" height="220"><br>
-                            <a href="#">18 ROSAS</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/18rosas.jpg"  alt="18 ROSAS"><br>
+                                <a href="#">18 ROSAS</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small>
+                                <small>DURACIÓN: 1h 59min</small>
+                            </div>
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/cumbres_borrascosas.html">CUMBRES BORRASCOSAS</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg"  alt="CUMBRES BORRASCOSAS"><br>
+                                <a href="../internet/detalles/cumbres_borrascosas.html">CUMBRES BORRASCOSAS</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/loveMeLoveMe.jpg" width="150" height="220"><br>
-                            <a href="#">LOVE ME, LOVE ME</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/loveMeLoveMe.jpg"  alt="LOVE ME, LOVE ME"><br>
+                                <a href="#">LOVE ME, LOVE ME</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/pillion.jpg" width="150" height="220"><br>
-                            <a href="#">PILLION</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/pillion.jpg"  alt="PILLION"><br>
+                                <a href="#">PILLION</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small> 
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/miAmigaEva.jpg" width="150" height="220"><br>
-                            <a href="#">MI AMIGA EVA</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 35min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/miAmigaEva.jpg"  alt="MI AMIGA EVA"><br>
+                                <a href="#">MI AMIGA EVA</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 35min</small>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
         
-                   <div>
+                <div class="card-detalle">
                     <h2>FANTASIA</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/avatarfuegoyceniza.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/avatarFuegoYCeniza.html">AVATAR: FUEGO Y CENIZA</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info"> 
+                                <img src="../recursos/imagenes/peliculas/avatarfuegoyceniza.jpg"  alt="AVATAR: FUEGO Y CENIZA"><br>
+                                <a href="../internet/detalles/avatarFuegoYCeniza.html">AVATAR: FUEGO Y CENIZA</a><br>
+                                <small>CALIFICACIÓN: 7/10</small>
+                                <small>DURACIÓN: 1h 48min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/swapped.jpg" width="150" height="220"><br>
-                            <a href="#">SWAPPED</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/swapped.jpg"  alt="SWAPPED"><br>
+                                <a href="#">SWAPPED</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 38min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/lafuentedelajuventud.jpg" width="150" height="220"><br>
-                            <a href="#">LA FUENTE DE LA JUVENTUD</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/lafuentedelajuventud.jpg"  alt="LA FUENTE DE LA JUVENTUD"><br>
+                                <a href="#">LA FUENTE DE LA JUVENTUD</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/wickedPorSiempre.jpg" width="150" height="220"><br>
-                            <a href="#">WICKED: POR SIEMPRE</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/wickedPorSiempre.jpg"  alt="WICKED: POR SIEMPRE"><br>
+                                <a href="#">WICKED: POR SIEMPRE</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small> 
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/eternity.jpg" width="150" height="220"><br>
-                            <a href="#">ETERNITY</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/eternity.jpg"  alt="ETERNITY"><br>
+                                <a href="#">ETERNITY</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/frankenstein.jpg" width="150" height="220"><br>
-                            <a href="#">FRANKENSTEIN</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/frankenstein.jpg"  alt="FRANKENSTEIN"><br>
+                                <a href="#">FRANKENSTEIN</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small>
+                                <small>DURACIÓN: 1h 59min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/cuandoElCieloSeEquivoca.jpg" width="150" height="220"><br>
-                            <a href="#">CUANDO EL CIELO SE EQUIVÓCA</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/cuandoElCieloSeEquivoca.jpg"  alt="CUANDO EL CIELO SE EQUIVOCO"><br>
+                                <a href="#">CUANDO EL CIELO SE EQUIVÓCA</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/mrK.jpg" width="150" height="220"><br>
-                            <a href="#">MR. K</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/mrK.jpg"  alt="MR.K"><br>
+                                <a href="#">MR. K</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                          
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/dracula.jpg" width="150" height="220"><br>
-                            <a href="#">DRACULA</a><br>
-                            <small>CALIFICACIÓN: 7.1/10</small><br>
-                            <small>DURACIÓN: 2h 09min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/dracula.jpg"  alt="DRACULA"><br>
+                                <a href="#">DRACULA</a><br>
+                                <small>CALIFICACIÓN: 7.1/10</small><br>
+                                <small>DURACIÓN: 2h 09min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/pitufos.jpg" width="150" height="220"><br>
-                            <a href="#">PITUFOS</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 35min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/pitufos.jpg"  alt="PITUFOS"><br>
+                                <a href="#">PITUFOS</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 35min</small>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
         
-                 <div>
+                 <div class="card-detalle">
                     <h2>CRIMEN</h2>
-
-                    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px; width:840px;">
-
-                        <!-- pelicula 1-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/PeakyBlindersTheImmortalManLaPelicula.jpg" width="150" height="220"><br>
-                            <a href="../internet/detalles/PeakyBlinders.html">PEAKY BLINDERS: THE IMMORTAL MAN</a><br>
-                            <small>CALIFICACIÓN: 7/10</small>
-                            <small>DURACIÓN: 1h 48min</small>
+                    <div class="catalogo-container">   
+                     <!-- pelicula 1-->
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/PeakyBlindersTheImmortalManLaPelicula.jpg"  alt="PEAKY BLINDERS: THE IMMORTAL MAN"><br>
+                                <a href="../internet/detalles/PeakyBlinders.html">PEAKY BLINDERS: THE IMMORTAL MAN</a><br>
+                                <small>CALIFICACIÓN: 7/10</small>
+                                <small>DURACIÓN: 1h 48min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 2-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/oscarshaw.jpg" width="150" height="220"><br>
-                            <a href="#">OSCAR SHAW</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 38min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/oscarshaw.jpg"  alt="OSCAR SHAW"><br>
+                                <a href="#">OSCAR SHAW</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 38min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 3-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/caminosDelCrimen.jpg" width="150" height="220"><br>
-                            <a href="#">CAMINOS DEL CRIMEN</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/caminosDelCrimen.jpg"  alt="CAMINOS DEL CRIMEN"><br>
+                                <a href="#">CAMINOS DEL CRIMEN</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                        
                         </div>
 
                         <!-- pelicula 4-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/golpes.jpg" width="150" height="220"><br>
-                            <a href="#">GOLPES</a><br>
-                            <small>CALIFICACIÓN: 6.7/10</small><br>
-                            <small>DURACIÓN: 1h 55min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/golpes.jpg"  alt="GOLPES"><br>
+                                <a href="#">GOLPES</a><br>
+                                <small>CALIFICACIÓN: 6.7/10</small><br>
+                                <small>DURACIÓN: 1h 55min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 5-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/hierarchy.jpg" width="150" height="220"><br>
-                            <a href="#">HIERARCHY</a><br>
-                            <small>CALIFICACIÓN: 7.6/10</small><br>
-                            <small>DURACIÓN: 1h 40min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/hierarchy.jpg"  alt="HIERARCHY"><br>
+                                <a href="#">HIERARCHY</a><br>
+                                <small>CALIFICACIÓN: 7.6/10</small><br>
+                                <small>DURACIÓN: 1h 40min</small>
+                            </div>
+                           
                         </div>
 
                         <!-- pelicula 6-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/losTigres.jpg" width="150" height="220"><br>
-                            <a href="#">LOS TIGRES</a><br>
-                            <small>CALIFICACIÓN: 6.9/10</small>
-                            <small>DURACIÓN: 1h 59min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/losTigres.jpg"  alt="LOS TIGRES"><br>
+                                <a href="#">LOS TIGRES</a><br>
+                                <small>CALIFICACIÓN: 6.9/10</small>
+                                <small>DURACIÓN: 1h 59min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 7-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/elFalsificador.jpg" width="150" height="220"><br>
-                            <a href="#">EL FALSIFICADOR</a><br>
-                            <small>CALIFICACIÓN: 6.1/10</small><br>
-                            <small>DURACIÓN: 1h 42min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/elFalsificador.jpg" alt="EL FALSIFICADOR"><br>
+                                <a href="#">EL FALSIFICADOR</a><br>
+                                <small>CALIFICACIÓN: 6.1/10</small><br>
+                                <small>DURACIÓN: 1h 42min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 8-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/icefall.jpg" width="150" height="220"><br>
-                            <a href="#">ICEFALL</a><br>
-                            <small>CALIFICACIÓN: 5.7/10</small><br>
-                            <small>DURACIÓN: 1h 23min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/icefall.jpg" alt="ICEFALL"><br>
+                                <a href="#">ICEFALL</a><br>
+                                <small>CALIFICACIÓN: 5.7/10</small><br>
+                                <small>DURACIÓN: 1h 23min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 9-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/instintossalvaje.jpg" width="150" height="220"><br>
-                            <a href="#">INSTINTOS SALVAJES</a><br>
-                            <small>CALIFICACIÓN: 6.2/10</small><br>
-                            <small>DURACIÓN: 1h 39min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/instintossalvaje.jpg" alt="INSTINTOS SALVAJES"><br>
+                                <a href="#">INSTINTOS SALVAJES</a><br>
+                                <small>CALIFICACIÓN: 6.2/10</small><br>
+                                <small>DURACIÓN: 1h 39min</small>
+                            </div>
+                            
                         </div>
 
                         <!-- pelicula 10-->
-                        <div style="min-width:150px; text-align:center;">
-                            <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" width="150" height="220"><br>
-                            <a href="#">YA NO QUEDAN JUNGAS</a><br>
-                            <small>CALIFICACIÓN: 6.8/10</small><br>
-                            <small>DURACIÓN: 1h 35min</small>
+                        <div class="pelicula-card">
+                            <div class="pelicula-info">
+                                <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" alt="YA NO QUEDAN JUNGAS"><br>
+                                <a href="#">YA NO QUEDAN JUNGAS</a><br>
+                                <small>CALIFICACIÓN: 6.8/10</small><br>
+                                <small>DURACIÓN: 1h 35min</small>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -914,7 +1202,7 @@
     </div>
 
   <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>

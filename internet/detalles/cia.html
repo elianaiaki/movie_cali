@@ -4,36 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <title>CIA</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+    <script src="../../scripts/header.js" defer></script>
 </head>
 
 <body>
-
     <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="../../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
         </form>
 
-        <!-- Navegación -->
-        <nav>
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
             <a href="../../index.html">Inicio</a>
-            <a href="../catalogo_peliculas.html">Películas</a>
-            <a href="../catalogo_series.html">Series</a>
+            <a href="../../internet/catalogo_peliculas.html">Películas</a>
+            <a href="../../internet/catalogo_series.html">Series</a>
         </nav>
 
-        <!-- Usuario -->
-        <div>
-            <a href="../iniciar_sesion.html">Iniciar sesión</a>
-            <a href="../crear_cuenta.html">Crear cuenta</a>
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>MENU</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../../internet/iniciar_sesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+            </div>
         </div>
     </header>
-
     <hr>
     <!-- FIN DE HEADER-->
 
@@ -41,11 +58,14 @@
         <!-- MAIN -->
         <main>
             <!-- TITULO, DETALLES Y TRAILER-->
-            <section>
-                <div>
-
+            <section class="detalle-principal">
+                
+                <div class="poster">
                     <img src="../../recursos/imagenes/series/CIA.jpg" alt="CIA" width="200">
-                    <br>
+                </div>
+                    
+            
+                <div class="info-serie">   
                     <h1>CIA</h1>
                     <p>Sigue una asociación entre un agente del FBI y un agente de la CIA <br>
                     que trabajan juntos en un equipo de trabajo clandestino para prevenir el <br>
@@ -62,8 +82,9 @@
                         <li><strong>Plataformas:</strong> CBS studio </li>
                     </ul>
                 </div>
-                
-                <div>
+            </section>
+            <section class="card-detalle">
+                <div class="video-conteiner">
                     <h2>Tráiler</h2>
                     <video width="600" controls>
                         <source src="../../recursos/videos/cia.webm" type="video/webm">
@@ -73,36 +94,38 @@
             </section>
 
             <!-- REPARTO-->
-            <section>
-                    <h2>REPARTO</h2>
-                <div>
+            <section class="card-detalle">
+                <h2>REPARTO</h2>
+            <div class="reparto-vertical"> 
+
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/nickGehlfuss.jpg" alt="NICK GEHLFUSS" width="100" height="150"><br>
                     <h3>NICK GEHLFUSS</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/tomEllis.jpg" alt="TOM ELLIS" width="100" height="150"><br>
                     <h3>TOM ELLIS</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/nataleeLinez.jpg" alt="NATALEE LINEZ" width="100" height="150"><br>
                     <h3>NATALEE LINEZ</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/necarZadegan.jpg" alt="NECAR ZADEGAN" width="100" height="150"><br>
                     <h3>NECAR ZADEGAN</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/jeremySisto.jpg" alt="JEREMY SISTO" width="100" height="150"><br>
                     <h3>JEREMY SISTO</h3>
                 </div>
             </section>
 
             <!--RESEÑA DE USUARIOS-->
-            <section>
+            <section class="card-detalle">
                 <h2>RESEÑAS DESTACADAS</h2>
-                
+            <div class="resenas-container">
                 <!--USUARIO 1-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -122,7 +145,7 @@
                 <br>
 
                 <!--USUARIO 2-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -142,7 +165,7 @@
                 <br>
 
                 <!--USUARIO 3-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -162,7 +185,7 @@
                 <br>
 
                 <!--USUARIO 4-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -181,7 +204,7 @@
                 <br>
 
                 <!--USUARIO 5-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -200,38 +223,38 @@
                 </div>
 
                 <a href="#">Ver todas las reseñas</a>
+            </div>
             </section>
 
-
             <!-- RELACIONADOS-->
-            <section>
-                <div>
-                    <h2>RELACIONADOS</h2>
-                    <div>
+                <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class="relacionados-container">
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/fbi.jpg" alt="FBI" width="100" height="150"><br>
                         <h3>FBI (SERIE)</h3>
                         <h3>Calificación: 7.1/10</h3>
                         <h3>DURACION: 6 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/ncisOrigins.jpg" alt="NCIS: ORIGINS" width="100" height="150"><br>
                         <h3>NCIS: ORIGINS</h3>
                         <h3>Calificación: 7.5/10</h3>
                         <h3>DURACION: 1 temporada</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/tracker.jpg" alt="TRACKER" width="100" height="150"><br>
                         <h3>TRACKER</h3>
                         <h3>Calificación: 7.1/10</h3>
                         <h3>DURACION: 1 temporada</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/personOfInterest.jpg" alt="PERSON OF INTEREST" width="100" height="150"><br>
                         <h3>PERSON OF INTEREST</h3>
                         <h3>Calificación: 8.4/10</h3>
                         <h3>DURACION: 5 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/peliculas/skyfall.jpg" alt="SKYFALL" width="100" height="150"><br>
                         <h3>SKYFALL</h3>
                         <h3>Calificación: 7.8/10</h3>
@@ -245,7 +268,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>

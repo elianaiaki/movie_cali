@@ -21,61 +21,46 @@
 
 <body>
 
-    <!-- HEADER -->
+     <!-- HEADER -->
     <header class="header">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="./recursos/imagenes/logo/logo.png"
+                    alt="Logo MovieCali">
+            </div>
 
-        <!-- LOGO -->
-        <div class="logo">
+            <!-- BUSCADOR -->
+            <form class="buscador">
+                <input type="text"
+                    placeholder="Buscar películas, series...">
 
-            <img src="./recursos/imagenes/logo/logo.png"
-                 alt="Logo MovieCali">
+                <button>🔍</button>
+            </form>
 
-        </div>
+            <!-- NAVEGACIÓN -->
+            <nav class="menu">
+                <a href="./index.html">Inicio</a>
+                <a href="./internet/catalogo_peliculas.html">Películas</a>
+                <a href="./internet/catalogo_series.html">Series</a>
+            </nav>
 
-        <!-- MENU -->
-        <ul class="menu">
+            <!-- usuario registrado-->
+            <!-- PERFIL -->
+            <div class="perfil" id="perfilBtn">
+                <img src="./recursos/imagenes/iconos/usuario.png" alt="usuario">
 
-            <li>
+                <div class="perfil-info">
+                    <span>MENU</span>
+                    <span class="flecha">▼</span>
+                </div>
 
-                <a href="#">
-                    Inicio
-                </a>
+                <div class="dropdown">
+                    <a href="./internet/iniciar_sesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                    <a href="./internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+                </div>
+            </div>
+        </header>
 
-            </li>
-
-            <li>
-
-                <a href="./internet/catalogo_peliculas.html">
-                    Películas
-                </a>
-
-            </li>
-
-            <li>
-
-                <a href="./internet/catalogo_series.html">
-                    Series
-                </a>
-
-            </li>
-
-        </ul>
-
-        <!-- BUSCADOR -->
-        <form class="buscador">
-
-            <input
-                type="search"
-                placeholder="Buscar películas, series..."
-            >
-
-            <button>
-                Buscar
-            </button>
-
-        </form>
-
-    </header>
 
     <!-- CAROUSEL -->
     <main>

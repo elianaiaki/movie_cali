@@ -1,13 +1,21 @@
-.detalle-principal{
+/* .detalle-principal{
     display:flex;
     gap:40px;
     align-items:flex-start;
     
+} */
+
+.detalle-principal{
+    display:flex; 
+    gap:40px;
+    align-items:flex-start;
+    padding:20px;
 }
 
 .poster img{
     width:300px;
     border-radius:15px;
+    margin:20px;
 }
 
 .info-serie{
@@ -61,4 +69,84 @@
 .actor-card h3{
     margin-top:10px;
     font-size:14px;
+}
+
+/* _______________ */
+
+.resenas-container{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+
+    overflow-x:auto;
+    padding-bottom:10px;
+}
+
+.resenas-container::-webkit-scrollbar{
+    display:none;
+}
+
+.resena-card{
+    background:#1b1b1b;
+    border-radius:15px;
+    padding:20px;
+
+    min-width:300px;
+    max-width:300px;
+
+    color:white;
+}
+
+.resena-card img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin:10px 0;
+}
+
+.resena-card h3{
+    margin:10px 0;
+}
+
+.resena-card span{
+    color:gold;
+    font-size:18px;
+}
+
+/* ________________________ */
+
+.relacionados-container{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+
+    overflow-x:auto;
+    padding-bottom:10px;
+}
+
+.relacionados-container::-webkit-scrollbar{
+    display:none;
+}
+
+.relacionado-card{
+    min-width:220px;
+    text-align:center;
+    color:white;
+}
+
+.relacionado-card img{
+    width:220px;
+    height:320px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.relacionado-card h3{
+    margin-top:12px;
+    font-size:16px;
+}
+
+.relacionado-card p{
+    margin:5px 0;
+    color:#ccc;
 }

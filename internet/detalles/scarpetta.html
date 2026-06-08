@@ -4,33 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <title>SCARPETTA</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+    <script src="../../scripts/header.js" defer></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="../../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+   <!-- HEADER -->
+   <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
         </form>
 
-        <!-- Navegación -->
-        <nav>
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
             <a href="../../index.html">Inicio</a>
-            <a href="../catalogo_peliculas.html">Películas</a>
-            <a href="../catalogo_series.html">Series</a>
+            <a href="../../internet/catalogo_peliculas.html">Películas</a>
+            <a href="../../internet/catalogo_series.html">Series</a>
         </nav>
 
-        <!-- Usuario -->
-        <div>
-            <a href="../iniciar_sesion.html">Iniciar sesión</a>
-            <a href="../crear_cuenta.html">Crear cuenta</a>
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>MENU</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../../internet/iniciar_sesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+            </div>
         </div>
     </header>
 
@@ -41,11 +60,11 @@
         <!-- MAIN -->
         <main>
             <!-- TITULO, DETALLES Y TRAILER-->
-            <section>
-                <div>
-
+            <section class="detalle-principal">
+                <div class="poster">
                     <img src="../../recursos/imagenes/series/scarpetta.jpg" alt="SCARPETTA" width="200">
-                    <br>
+                </div>
+                <div class="info-serie">
                     <h1>SCARPETTA</h1>
                     <p>La prestigiosa patóloga Kay Scarpetta vuelve a su cargo de jefa médica forense <br>
                         de Virginia para investigar un inquietante asesinato que le recuerda a su primer <br>
@@ -62,8 +81,9 @@
                         <li><strong>Plataformas:</strong>Prime Video</li>
                     </ul>
                 </div>
-                
-                <div>
+            </section>
+            <section class="card-detalle">
+                <div class="video-conteiner">
                     <h2>Tráiler</h2>
                     <video width="600" controls>
                         <source src="../../recursos/videos/Scarpetta.webm" type="video/webm">
@@ -71,38 +91,40 @@
                     </video>
                 </div>
             </section>
-
+               
             <!-- REPARTO-->
-            <section>
+           <section class="card-detalle">
                     <h2>REPARTO</h2>
-                <div>
+            <div class="reparto-vertical"> 
+
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/nicoleKidman.jpg" alt="NICOLE KIDMAN" width="100" height="150"><br>
                     <h3>NICOLE KIDMAN</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/simonBaker.jpg" alt="SIMON BAKER" width="100" height="150"><br>
                     <h3>SIMON BAKER</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/jamieLeeCurtis.jpg" alt="JAMIE LEE CURTIS" width="100" height="150"><br>
                     <h3>JAMIE LEE CURTIS</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/bobbyCannavale.jpg" alt="BOBBY CANNAVALE" width="100" height="150"><br>
                     <h3>BOBBY CANNAVALE</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/rosyMcEwen.jpg" alt="ROSY MCEWEN" width="100" height="150"><br>
                     <h3>ROSY MCEWEN</h3>
                 </div>
             </section>
 
           <!--RESEÑA DE USUARIOS-->
-            <section>
+            <section class="card-detalle">
                 <h2>RESEÑAS DESTACADAS</h2>
-                
+            <div class="resenas-container">
                 <!--USUARIO 1-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -122,7 +144,7 @@
                 <br>
 
                 <!--USUARIO 2-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -142,7 +164,7 @@
                 <br>
 
                 <!--USUARIO 3-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -162,7 +184,7 @@
                 <br>
 
                 <!--USUARIO 4-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -182,7 +204,7 @@
                 <br>
 
                 <!--USUARIO 5-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -201,38 +223,40 @@
                 </div>
 
                 <a href="#">Ver todas las reseñas</a>
+            </div>
+                
             </section>
 
 
             <!-- RELACIONADOS-->
-            <section>
-                <div>
-                    <h2>RELACIONADOS</h2>
-                    <div>
+            <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class="relacionados-container">
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/bones.jpg" alt="BONES" width="100" height="150"><br>
                         <h3>BONES</h3>
                         <h3>Calificación: 7.8/10</h3>
                         <h3>DURACION: 12 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/csi.jpg" alt="CSI: CRIME SCENE INVESTIGATION" width="100" height="150"><br>
                         <h3>CSI: CRIME SCENE INVESTIGATION</h3>
                         <h3>Calificación: 7.7/10</h3>
                         <h3>DURACION: 15 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/mindhunter.jpg" alt="MINDHUNTER" width="100" height="150"><br>
                         <h3>MINDHUNTER</h3>
                         <h3>Calificación: 8.6/10</h3>
                         <h3>DURACION: 2 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/hannibal.jpg" alt="HANNIBAL" width="100" height="150"><br>
                         <h3>HANNIBAL</h3>
                         <h3>Calificación: 8.5/10</h3>
                         <h3>DURACION: 3 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/theFall.jpg" alt="THE FALL" width="100" height="150"><br>
                         <h3>THE FALL</h3>
                         <h3>Calificación: 8.1/10</h3>
@@ -246,7 +270,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>

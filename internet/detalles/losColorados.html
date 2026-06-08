@@ -4,48 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <title>LOS COLORADOS</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+    <script src="../../scripts/header.js" defer></script>
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="../../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
         </form>
 
-        <!-- Navegación -->
-        <nav>
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
             <a href="../../index.html">Inicio</a>
-            <a href="../catalogo_peliculas.html">Películas</a>
-            <a href="../catalogo_series.html">Series</a>
+            <a href="../../internet/catalogo_peliculas.html">Películas</a>
+            <a href="../../internet/catalogo_series.html">Series</a>
         </nav>
 
-        <!-- Usuario -->
-        <div>
-            <a href="../iniciar_sesion.html">Iniciar sesión</a>
-            <a href="../crear_cuenta.html">Crear cuenta</a>
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>MENU</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../../internet/iniciar_sesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+            </div>
         </div>
     </header>
 
     <hr>
-    <!-- FIN DE HEADER-->
 
     <div>
         <!-- MAIN -->
         <main>
             <!-- TITULO, DETALLES Y TRAILER-->
-            <section>
-                <div>
-
+            <section class="detalle-principal">
+                <div class="poster">
                     <img src="../../recursos/imagenes/series/loscolorados.jpg" alt="LOS COLORADOS" width="200">
-                    <br>
+                </div>
+                <div class="info-serie">
                     <h1>LOS COLORADOS</h1>
                     <p>Chapulín Colorado y su familia abordan a los villanos y las tareas diarias con humor y corazón, <br>
                         demostrando cómo el ingenio y la compasión pueden superar cualquier desafío.
@@ -61,8 +79,9 @@
                         <li><strong>Plataformas:</strong> HBO MAX </li>
                     </ul>
                 </div>
-                
-                <div>
+            </section>
+            <section class="card-detalle">
+                <div class="video-conteiner">
                     <h2>Tráiler</h2>
                     <video width="600" controls>
                         <source src="../../recursos/videos/LosColorado.webm" type="video/webm">
@@ -72,36 +91,40 @@
             </section>
 
             <!-- REPARTO-->
-            <section>
-                    <h2>REPARTO</h2>
-                <div>
+            <section class="card-detalle">
+                <h2>REPARTO</h2>
+            <div class="reparto-vertical">
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/jesusGuzman.jpg" alt="JESUS GUZMAN" width="100" height="150"><br>
                     <h3>JESUS GUZMAN</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/veronicaBravo.jpg" alt="VERONICA BRAVO" width="100" height="150"><br>
                     <h3>VERONICA BRAVO</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/reginaCarrillo.jpg" alt= "REGINA CARRILLO" width="100" height="150"><br>
                     <h3>REGINA CARRILLO</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/jorgeLemus.jpg" alt="JORGE LEMUS" width="100" height="150"><br>
                     <h3>JORGE LEMUS</h3>
                 </div>
-                <div>
+                <div class="actor-card">
                     <img src="../../recursos/imagenes/Reparto/gabrielRiva.jpg" alt="GABRIEL RIVA" width="100" height="150"><br>
                     <h3>GABRIEL RIVA</h3>
                 </div>
+             </div>
             </section>
 
            <!--RESEÑA DE USUARIOS-->
-            <section>
+            <section class="card-detalle">
                 <h2>RESEÑAS DESTACADAS</h2>
-                
+            <div class="resenas-container">
+
+            
                 <!--USUARIO 1-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -121,7 +144,7 @@
                 <br>
 
                 <!--USUARIO 2-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -140,7 +163,7 @@
                 <br>
 
                 <!--USUARIO 3-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -160,7 +183,7 @@
                 <br>
 
                 <!--USUARIO 4-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -180,7 +203,7 @@
                 <br>
 
                 <!--USUARIO 5-->
-                <div>
+                <div class="resena-card">
                     <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
                     <!-- Usuario -->
                     <div>
@@ -198,38 +221,39 @@
                 </div>
 
                 <a href="#">Ver todas las reseñas</a>
+            </div>
             </section>
 
 
             <!-- RELACIONADOS-->
-            <section>
-                <div>
-                    <h2>RELACIONADOS</h2>
-                    <div>
+            <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class="relacionados-container">
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/elChapulinColorado.jpg" alt="EL CHAPULIN COLORADO" width="100" height="150"><br>
                         <h3>EL CHAPULÍN COLORADO</h3>
                         <h3>Calificación: 8.2/10</h3>
                         <h3>DURACION: 8 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/elChavo.jpg" alt="EL CHAVO DEL 8" width="100" height="150"><br>
                         <h3>EL CHAVO DEL 8</h3>
                         <h3>Calificación: 8.5/10</h3>
                         <h3>DURACION: 9 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/laFamiliaPeluche.jpg" alt="LA FAMILIA PELUCHE" width="100" height="150"><br>
                         <h3>LA FAMILIA PELUCHE</h3>
                         <h3>Calificación: 7.9/10</h3>
                         <h3>DURACION: 3 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/vecinos.jpg" alt="VECINOS" width="100" height="150"><br>
                         <h3>VECINOS</h3>
                         <h3>Calificación: 7.4/10</h3>
                         <h3>DURACION: 10 temporadas</h3>
                     </div>
-                    <div>
+                    <div class="relacionado-card">
                         <img src="../../recursos/imagenes/series/elChanfle.jpg" alt="EL CHANFLE" width="100" height="150"><br>
                         <h3>EL CHANFLE</h3>
                         <h3>Calificación: 7.0/10</h3>
@@ -241,7 +265,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>
