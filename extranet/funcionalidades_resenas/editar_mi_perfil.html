@@ -1,82 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Editar mi perfil</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Editar mi perfil</title>
 
-<body>
+        <link rel="stylesheet" href="../../estilos/body.css">
+        <link rel="stylesheet" href="../../estilos/header.css">
+        <link rel="stylesheet" href="../../estilos/footer.css">
+        <link rel="stylesheet" href="../../estilos/estilos_extranet/estilo_editar_perfil.css">
 
-    <section>
+        <script src="../../scripts/validaciones.js" defer></script>
+        <script src="../../scripts/editar_perfil.js" defer></script>
+    </head>
 
-        <!-- Título -->
-        <h1>Editar mi perfil</h1>
+    <body>
 
-        <!-- Volver -->
-        <a href="../mi_perfil.html">Volver</a>
-
-        <!-- Imagen de perfil -->
-        <div>
-            <img src="../../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="150">
-            <button type="button">Cambiar foto</button>
+        <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
         </div>
 
-        <!-- Formulario -->
-        <form>
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
 
-            <h2>Información personal</h2>
-
-            <!-- Usuario -->
-            <div>
-                <label>Nombre de usuario</label><br>
-                <input type="text">
-            </div>
-
-            <!-- Email -->
-            <div>
-                <label>Email</label><br>
-                <input type="email">
-            </div>
-
-            <!-- Contraseña -->
-            <div>
-                <label>Contraseña</label><br>
-                <input type="password">
-            </div>
-
-            <!-- Confirmar contraseña -->
-            <div>
-                <label>Confirmar contraseña</label><br>
-                <input type="password">
-            </div>
-
-            <!-- Biografía -->
-            <div>
-                <label>Biografía</label><br>
-                <textarea></textarea>
-            </div>
-
-            <!-- Géneros favoritos -->
-            <div>
-                <label>Géneros favoritos</label><br>
-
-                <input type="checkbox"> Acción
-                <input type="checkbox"> Comedia
-                <input type="checkbox"> Drama
-                <input type="checkbox"> Terror
-                <input type="checkbox"> Ciencia ficción
-            </div>
-
-            <!-- Botones -->
-            <div>
-                <button type="submit">Guardar cambios</button>
-                <a href="../mi_perfil.html">Cancelar</a>
-            </div>
-
+            <button>🔍</button>
         </form>
 
-    </section>
- 
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
+            <a href="../../index.html">Inicio</a>
+            <a href="../catalogo_peliculas_usser.html">Películas</a>
+            <a href="../catalogo_series_usser.html">Series</a>
+        </nav>
+
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>USUARIO - 12345</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="#"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                <a href="./mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                <a href="./mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                <a href="./mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                <a href="./resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                <a href="../index.html">CERRAR SESION</a>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    <!-- FIN DE HEADER-->
+
+<!------------------------------------------------------------------------------------------->
+
+    <main class="diseno-login">
+
+        <section class="carta-login">
+
+            <!-- Título -->
+            <h2>Editar mi perfil</h2>
+
+            <!-- Volver -->
+            <a href="../mi_perfil.html">Volver</a>
+
+            <!-- Imagen de perfil -->
+            <div>
+                <img src="../../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="150">
+                <button type="button">Cambiar foto</button>
+            </div>
+
+            <!-- Formulario -->
+            <form id="formEditarPerfil">
+
+                <h2>Información personal</h2>
+
+                <!-- Usuario -->
+                <div>
+                    <label>Nombre de usuario</label><br>
+                    <input type="text" id="usuario">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label>Email</label><br>
+                    <input type="email" id="email">
+                </div>
+
+                <!-- Contraseña -->
+                <div>
+                    <label>Contraseña</label><br>
+                    <input type="password" id="contrasenia">
+                </div>
+
+                <!-- Confirmar contraseña -->
+                <div>
+                    <label>Confirmar contraseña</label><br>
+                    <input type="password" id="confirmarContrasenia">
+                </div>
+
+                <!-- Biografía -->
+                <div>
+                    <label>Biografía</label><br>
+                    <textarea id="biografia"></textarea>
+                </div>
+
+                <!-- Géneros favoritos -->
+                <div>
+                    <label>Géneros favoritos</label><br>
+
+                    <input type="checkbox"> Acción
+                    <input type="checkbox"> Comedia
+                    <input type="checkbox"> Drama
+                    <input type="checkbox"> Terror
+                    <input type="checkbox"> Ciencia ficción
+                </div>
+
+                <!-- Botones -->
+                <div class="contenedor-boton">
+                    <button type="submit" class="boton-inicio">Guardar cambios</button>
+                </div>
+
+                <div class="contenedor-boton">
+                    <a href="../mi_perfil.html" class="boton-inicio">Cancelar</a>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!------------------------------------------------------------------------------------------->
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p class="titulo-footer">
+            Desarrollado por:
+        </p>
+
+        <p class="nombres-footer">
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+            Alan Walker - Gisella Jara - Brenda Pavez
+        </p>
+
+    </footer>
+
 </body>
 </html>

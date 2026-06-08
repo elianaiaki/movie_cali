@@ -1,0 +1,82 @@
+/* Contenedor General del Contenido */
+.contenedor-vertical {
+    padding: 30px;
+    max-width: 75%;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+}
+
+.enlace-ver-todo {
+    color: #000;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* El contenedor  */
+.cuadrícula-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+    background-color: #1a3a5c; /*color de fondo de tarjetas para todos*/
+    
+    border-radius: 20px;
+    padding: 20px;
+    gap: 15px;
+}
+
+/* Cada tarjeta individual  */
+.tarjeta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Área de la imagen */
+.imagen-contenedor {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #000000; /* Línea divisoria interna */
+    min-height: 120px;
+}
+
+.imagen-contenedor img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Contenedor inferior de botones */
+.botones-contenedor {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Variación para cuando hay dos botones (uno arriba del otro) */
+.botones-contenedor.doble-boton {
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Estilo de los botones  */
+.botones-contenedor button {
+    background-color: #444;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 4px 15px;
+    font-size: 11px;
+    font-weight: bold;
+    width: 90%;
+   
+}
+
+.botones-contenedor button:hover {
+    background-color: #003366;
+}
+
+.btn-ver, .btn-aprobar, .btn-revisar {
+    color: #ddd;
+}

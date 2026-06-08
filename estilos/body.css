@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
 
     background: linear-gradient(
         90deg,
@@ -10,21 +10,25 @@ body {
 
     font-family: Arial, sans-serif;
 
-    .btn{
-
+    .btn {
         background: #2a4f7a;
         color: white;
         border: none;
         text-decoration: none;
-        }
+    }
 
-        .btn:hover{
+    .btn:hover {
         background: #3a6fa0;
     }
 }
-/* 
-body {
-font-family: Arial, sans-serif;
-} */
-  
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 160px); /*Asegura espacio para el footer */
+    margin-bottom: 15px;
+}
+
        

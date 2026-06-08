@@ -1,0 +1,248 @@
+/* ===================================
+   FONDO OSCURO DEL MODAL
+=================================== */
+
+/* ==========================
+   MODAL
+========================== */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+   MODAL DE DETALLE DE RESEÑAS */
+
+.modal-detalle{
+    width: 600px;
+    max-width: 95vw;
+
+    padding: 20px;
+
+    background-color: #0f1e35;
+    border: 1px solid #1e3a5f;
+    border-radius: 8px;
+
+    color: white;
+}
+
+/* Estrellas de puntuación */
+.estrellas{
+    color: #f5c518;
+    font-size: 1.3rem;
+}
+
+/* Botón editar */
+.btn-editar{
+    float: right;
+
+    padding: 7px 14px;
+
+    background-color: #1a56c4;
+    color: white;
+
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Usuario que escribió la reseña */
+.fila-usuario{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: 16px 0;
+    clear: both;
+}
+
+.fila-usuario img{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.fila-usuario h3{
+    margin: 0;
+    color: #8ab4f8;
+}
+
+/* Título de la reseña */
+.titulo-resena{
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Texto de la reseña */
+.texto-resena{
+    color: #cdd8ea;
+    line-height: 1.6;
+}
+
+/* Acciones de la reseña */
+.acciones{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin: 16px 0;
+    padding: 12px 0;
+
+    color: #8ab4f8;
+
+    border-top: 1px solid #1e3a5f;
+    border-bottom: 1px solid #1e3a5f;
+}
+
+.acciones a{
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+   MODAL EDITAR RESEÑA */
+
+.modal-editar{
+    width: 400px;
+    padding: 20px;
+
+    position: relative;
+
+    background-color: #0f1e35;
+    border: 1px solid #1e3a5f;
+    border-radius: 6px;
+
+    color: white;
+}
+
+/* Información de la película */
+.modal-header-info{
+    display: flex;
+    gap: 12px;
+
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #1e3a5f;
+}
+
+.modal-header-info img{
+    width: 55px;
+    height: 80px;
+
+    border-radius: 4px;
+}
+
+.modal-header-info h4,
+.modal-header-info p{
+    margin: 3px 0;
+
+    color: #8ab4f8;
+}
+
+/* Texto "Tu puntuación" */
+.label-puntuacion{
+    margin-bottom: 6px;
+
+    color: #8ab4f8;
+}
+
+/* Estrellas */
+.estrellas-container span{
+    color: #f5c518;
+}
+
+/* Campos del formulario */
+.modal-editar input,
+.modal-editar textarea{
+    width: 100%;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    background-color: #0a1628;
+    color: #ccc;
+
+    border: 1px solid #1e3a5f;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+}
+
+.modal-editar textarea{
+    height: 100px;
+    resize: none;
+}
+
+/* Contador de caracteres */
+.char-counter{
+    text-align: right;
+    color: #4a6080;
+}
+
+
+/* ===================================
+   BOTONES
+=================================== */
+
+/* Botón cerrar */
+.btn-cerrar{
+    position: absolute;
+    top: 10px;
+    right: 14px;
+
+    background: none;
+    border: none;
+
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Botón guardar */
+.btn-guardar{
+    width: 100%;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    background-color: #1a56c4;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Contenedor de cancelar y eliminar */
+.acciones-inferiores{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Botón cancelar */
+.btn-cancelar{
+    background: none;
+    border: none;
+
+    color: #8ab4f8;
+    cursor: pointer;
+}
+
+/* Botón eliminar */
+.btn-eliminar{
+    background: none;
+    border: none;
+
+    color: #e05555;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,193 @@
+/*----------login internet-----------*/
+
+/* CONTENEDOR PRINCIPAL ---------------------------------------------------*/
+
+.diseno-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+
+/* CARTA LOGIN ------------------------------------------------------------*/
+
+.carta-login{
+    background: #111827;
+    border: 1px solid #22304a;
+    border-radius: 18px;
+
+    width: 850px;
+    max-width: 95%;
+
+    padding: 40px;
+
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+}
+
+
+/* TITULO -----------------------------------------------------------------*/
+
+.carta-login h2{
+    color: #e6edf3;
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    border-left: 4px solid #4a90d9;
+    padding-left: 12px;
+}
+
+
+/* LABELS -----------------------------------------------------------------*/
+
+.carta-login label{
+    color: #7aafd4;
+    font-size: 13px;
+    font-weight: bold;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+
+/* INPUTS -----------------------------------------------------------------*/
+
+.carta-login input:not([type="checkbox"]){
+    background: #0b1220;
+    border: 1px solid #2d4d74;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    width: 100%;
+    outline: none;
+    transition: 0.2s;
+}
+
+.carta-login input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+}
+
+
+/* EFECTO HOVER INPUT -----------------------------------------------------*/
+
+.carta-login input:focus{
+    border: 1px solid #58a6ff;
+
+    box-shadow: 0px 0px 10px rgba(88,166,255,0.3);
+}
+
+
+/* CONTENEDORES DE CAMPOS -------------------------------------------------*/
+
+.carta-login form div{
+    margin-bottom: 10px;
+}
+
+
+/* ICONOS -----------------------------------------------------------------*/
+
+.carta-login img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* OLVIDASTE CONTRASEÑA ---------------------------------------------------*/
+
+.contenedor-olvido{
+    text-align: center;
+
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.enlace-olvido{
+    color: #58a6ff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.enlace-olvido:hover{
+    text-decoration: underline;
+}
+
+
+/* BOTON ------------------------------------------------------------------*/
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.boton-inicio{
+    background: #1d4f91;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* HOVER BOTON ------------------------------------------------------------*/
+
+.boton-inicio:hover{
+    background: #3472c2;
+
+    transform: scale(1.03);
+}
+
+
+/* RESPONSIVE -------------------------------------------------------------*/
+
+@media(max-width: 500px){
+
+    .carta-login{
+        width: 100%;
+        padding: 25px;
+    }
+
+    .carta-login h2{
+        font-size: 24px;
+    }
+
+}
+
+/* TEXTAREA --------------------------------------------------------------*/
+
+.carta-login textarea{
+    background: #0b1220;
+    border: 1px solid #2d4d74;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* CENTRAR BOTON -------------------------------------------------------- */
+
+.carta-login button[type="button"]{
+    display: block;
+    margin: 15px auto 35px auto;
+}

@@ -11,11 +11,11 @@
 .boton-superior {
     box-sizing: border-box;
     text-decoration: none;
-    color: #ffffff; 
+    background-color: #444;
+    color: #ddd;
     border: 1px solid #000000;
-    background-color: #1565c0;
-    border-radius: 20px;
-    padding: 10px 20px; /* Un poco más de aire a los lados */
+    border-radius: 4px;
+    padding: 12px 24px; 
     margin-right: 75px;
     margin-bottom: 75px;
     font-weight: bold;
@@ -25,7 +25,7 @@
 
 
 .boton-superior:last-child {
-    margin-right: 0;/* Quita el margen derecho al úultimo boton */
+    margin-right: 0;/* Quita el margen derecho al ultimo boton */
 }
 
 .boton-superior:hover {
@@ -39,35 +39,36 @@
     display: flex;            /* Activa Flexbox */
     flex-direction: row;      /* coloca uno al lado del otro */
     align-items: center;      /* Centra verticalmente los botones y el checkbox */
-    justify-content: flex-start; /* Alinea todo a la izq */
-    gap: 15px;                /* La separación */
-    padding: 15px;
-    flex-wrap: wrap;          /* si no entran, se bajan ordenadamente */
+    margin-top: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+
 }
 
-/* LOS BOTONES: Ahora más chicos y estilizados */
-.btn-azul {
+/* -------LOS BOTONES:-----------------*/
+.btn-gris {
     box-sizing: border-box;
     text-decoration: none;
-    color: #ffffff; 
-    background-color: #1565c0;
-    border: 1px solid #000000;
-    border-radius: 6px; 
-    padding: 6px 14px;        
-    font-size: 14px;          /* Achica la letra*/
+    background-color: #444;
+    color: #ddd;
+    border-radius: 4px; 
+    padding: 12px 24px;       
+    font-size: 14px;          
     font-weight: bold;
-    text-align: center;
-    display: inline-block;
-    font-family: inherit;  /**/       
-    margin: 0; 
+    display: inline-block;   
+    margin-right: 15px;
 }
 
-.btn-azul:hover {
+.btn-gris:hover {
     background-color: #003366;
 }
 /*---------INTERRUPTOR PARA LA ACCION PUBLICAR -----------*/
 
 .accion_publicar {
+    background-color: #444;
+    padding: 12px 24px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -99,7 +100,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: red ;/* azul cuando está apagado */
+    background-color: red ;
     transition: .3s;
     border-radius: 24px;   
 }
@@ -127,4 +128,36 @@
 /* Desplaza la bolita blanca hacia la derecha */
 .switch input:checked + .deslizador:before {
     transform: translateX(20px);
+}
+
+/*-------------------------------------------------*/
+
+/* Contenedor inferior de botones */
+.botones-contenedor {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+.btn {
+    display: inline-block; /*  etiquetas <a> actuan como botones */
+    background-color: #444;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 4px 15px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ddd;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box; /* Evita que el padding deforme el tamaño */
+}
+
+
+.btn:hover {
+    background-color: #003366;
 }

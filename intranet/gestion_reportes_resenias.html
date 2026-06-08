@@ -7,25 +7,55 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/titulos_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/columna.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/aside_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+
+    <script>
+        /*confirm() muestra una ventana de confirmación con las opciones
+         "Aceptar" y "Cancelar".
+         
+         alert() se utiliza para mostrar un mensaje emergente al usuario.
+         En este caso informa que la acción solicitada fue realizada correctamente.
+         También sirve para simular la respuesta del sistema en esta maqueta,
+         ya que el proyecto no cuenta con una base de datos ni backend.*/
+
+        function ignorarReporte(){
+            if(confirm("¿Está seguro de ignorar este reporte?")){
+                alert("Reporte ignorado correctamente");
+            }
+        }
+
+        function sancionarUsuario(){
+            if(confirm("¿Desea sancionar al usuario reportado?")){
+                alert("Usuario sancionado correctamente");
+            }
+        }
+
+        function eliminarResenia(){
+            if(confirm("¿Está seguro de eliminar esta reseña?")){
+                alert("Reseña eliminada correctamente");
+            }
+        }
+       
+    </script>
 </head>
 
-<body>
+<body class="body">
 
     <!-- HEADER -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
 
         <!-- BUSCADOR -->
         <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
+            <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
 
@@ -73,104 +103,104 @@
             </div>
         </div>
         <!--filtros-->
-        <section>
-            <div>
-                <label><strong>ORDENAR POR:</strong></label>
-                <select>
-                    <option>MÁS RECIENTES</option>
-                    <option>MÁS ANTIGUOS</option>
-                </select>
+        <div class="Contenedor-Botones-superior">
+                
+            <select class="boton-superior">
+                <option>ORDERNAR POR:</option>
+                <option>MÁS RECIENTES</option>
+                <option>MÁS ANTIGUOS</option>
+            </select>
 
-                <label><strong>TIPOS DE REPORTES:</strong></label>
-                <select>
-                    <option>Abusos</option>
-                    <option>Spoiler</option>
-                    <option>Spam</option>
-                    <option>Contenido Malicioso</option>
-                    <option>Otros</option>
-                </select>
+            <select class="boton-superior">
+                <option>TIPOS DE REPORTES: </option>
+                <option>Abusos</option>
+                <option>Spoiler</option>
+                <option>Spam</option>
+                <option>Contenido Malicioso</option>
+                <option>Otros</option>
+            </select>
 
-                <label><strong>ESTADOS:</strong></label>
-                <select>
-                    <option>Pendiente</option>
-                    <option>En Revisión</option>
-                    <option>Resuelto</option>
-                </select>
-            </div>
-        </section>
-
+            <select class="boton-superior">
+                <option>ESTADOS:</option>
+                <option>Pendiente</option>
+                <option>En Revisión</option>
+                <option>Resuelto</option>
+            </select>
+            
+        </div>
+        
         <hr>
 
-<!-----------Listado de Reportes-------------->
-        <section>
-            <h3>PENDIENTE DE REVISIÓN:</h3>
-
-            <article>
-                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
-                <h4>TÍTULO: SHREK 2</h4>
-
-                <p>
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Denunciante:</strong> Usuario_123 |
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Reportado:</strong> Usuario_2828
-                </p>
-
-                <div>
-                    <button type="button">Ver Reseña Completa</button>
-                    <button type="button">Ignorar Reporte</button>
-                    <button type="button">Sancionar Usuario</button>
-                    <button type="button">Eliminar Reseña</button>
+<!-----------Listado de Reportes---------------------------------------------------->
+        <div class="contenedor-principal">
+            
+            <div class="columna-izquierda">
+                <div class="contenedor-formulario">
+                    <h3 class="titulo-subcategoria">PENDIENTES DE REVISIÓN <span>▶</span></h3>
                 </div>
-            </article>
+                <div class="tarjetas">
+                    <div class="tarjeta-contenido">
+                        <!-- CORRECCIÓN: Se cambió "Icono_pelicula" a minúsculas para enlazar correctamente tu CSS columna.css -->
+                        <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" class="icono_pelicula">
+                        <h4>TÍTULO: SHREK 2</h4>
 
-            <hr>
+                        <p>
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
+                            <strong>Denunciante:</strong> Usuario_123 |
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
+                            <strong>Reportado:</strong> Usuario_2828
+                        </p>
 
-            <h3>RESUELTOS:</h3>
-            <article>
-                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono película" width="25">
-                <h4>TÍTULO: TOY STORY</h4>
-                <p>
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Reportado:</strong> Usuario_2828 |
-                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" width="15">
-                    <strong>Denunciante:</strong> Usuario_123
-                </p>
-                <p><strong>Acción tomada:</strong> RESEÑA ELIMINADA</p>
-            </article>
-        </section>
-
-        <aside>
-            <hr>
-            <h3>PANEL DE GESTIÓN DE USUARIOS</h3>
-
-            <article>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Avatar" width="40">
-                <p><strong>Usuario_2828</strong></p>
-                <p>Reportes recibidos: 2</p>
-                <p>Sanciones activas: 0</p>
-                <a href="ver_perfil_usuario.html">Ver Perfil Detallado</a>
-            </article>
-        </aside>
+                        <div class="botones-contenedor">
+                            <button type="button">Ver Reseña Completa</button>
+                            <button type="button" onclick="ignorarReporte()">Ignorar Reporte</button>
+                            <button type="button" onclick="sancionarUsuario()">Sancionar Usuario</button>
+                            <button type="button" onclick="eliminarResenia()">Eliminar Reseña</button>
+                        </div>    
+                    </div>
+                </div>
+            
+                <div class="contenedor-formulario">
+                    <h3 class="titulo-subcategoria">RESUELTOS: <span>▶</span></h3>
+                </div>
+        
+                <div class="tarjetas">
+                    <div class="tarjeta-contenido">
+                        <!-- CORRECCIÓN: Ajuste de clase a minúsculas para visualización correcta -->
+                        <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono_pelicula" class="icono_pelicula" >
+                        <h4>TÍTULO: TOY STORY</h4>
+                        <p>
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
+                            <strong>Reportado:</strong> Usuario_2828 |
+                            <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="icono-perfil">
+                            <strong>Denunciante:</strong> Usuario_123
+                        </p>
+                        <p><strong>Acción tomada:</strong> RESEÑA ELIMINADA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <aside>
+                <h2>PANEL DE GESTIÓN DE USUARIOS</h2>
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/iconos/perfil.png">
+                    <p class="Rol"><strong>Usuario_2828</strong></p>
+                    <p class="descripcion">Reportes recibidos: 2</p>
+                    <p class="descripcion">Sanciones activas: 0</p>
+                    <a href="ver_perfil_usuario.html">Ver Perfil Detallado</a>
+                </div>
+            </aside>
+        </div>
     </main>
-
-    <br><br>
 
 <!---------------FOOTER--------------------------->
     <!-- FOOTER -->
     <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
+        <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
-
     </footer>
 
 </body>
 </html>
-

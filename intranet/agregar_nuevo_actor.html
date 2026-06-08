@@ -7,11 +7,90 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+    
+    <script src="../scripts/validaciones.js"></script>
+    
+    <script>
+
+    function asociarValidacion(){
+
+        // Obtener formulario
+        const formulario = document.getElementById("formAgregarActor");
+
+        // Evento submit
+        formulario.addEventListener("submit", function(event){
+
+                // Frenar envío automático
+                event.preventDefault();
+
+                // Obtener valores
+                const nombreActor = document.getElementById("nombre_actor").value;
+
+                const apellidoActor = document.getElementById("apellido_actor").value;
+
+                const nuevaParticipacionPelicula = document.getElementById("nueva_participacion_pelicula").value;
+
+                const nuevaParticipacionSerie = document.getElementById("nueva_participacion_serie").value;
+
+                let errores = "";
+
+                // Validar nombre
+                if(!textoAlfabeticoValido(nombreActor)){
+                    errores += "- Nombre inválido\n";
+                }
+
+                // Validar apellido
+                if(!textoAlfabeticoValido(apellidoActor)){
+                    errores += "- Apellido inválido\n";
+                }
+
+                // Validar participación en película
+                if(nuevaParticipacionPelicula !== "" &&
+                !textoAlfanumericoValido(nuevaParticipacionPelicula)){
+                    errores += "- Participación en película inválida\n";
+                }
+
+                // Validar participación en serie
+                if(nuevaParticipacionSerie !== "" &&
+                !textoAlfanumericoValido(nuevaParticipacionSerie)){
+                    errores += "- Participación en serie inválida\n";
+                }
+
+                // Mostrar todos los errores juntos
+                if(errores !== ""){
+                    alert("Se encontraron los siguientes errores:\n\n" + errores);
+                    return;
+                }
+
+                // Todo correcto
+                alert("Actor agregado correctamente");
+
+                // Enviar formulario
+                formulario.submit();
+
+            });
+
+        }
+
+        function limpiarFormulario(){
+
+            if(confirm("¿Desea limpiar todos los campos?")){
+
+                document.getElementById("formAgregarActor").reset();
+
+            }
+
+    }
+
+</script>
+
 </head>
 
-<body>
+<body onload="asociarValidacion()">
     
 <!------------------------------------------------------------------------------------------->
     <!-- HEADER -->
@@ -76,51 +155,61 @@
             </div>
         </div>
 <!------------------------------------------------------------------------------------------->
-        <div>
-            <h1>+ AGREGAR NUEVOS ACTORES</h1>
+        <div class="contenedorFormulario">
+            <h2>+ AGREGAR NUEVOS ACTORES</h2>
+            
+            <form id="formAgregarActor" action="../intranet/peliculas_pendientes_de_revision.html" method="get">
+                
+                <div class="grupoCampo">
+                    <label for="Nombre_actor">Nombre:</label>
+                    <input type="text" id="nombre_actor" class="inputTexto" placeholder="Ingrese Nombre Completo" required>
+                </div>
 
-            <table border="1" width="92%" align="center">
-                <tr>
-                    <td width="100%">
-                        <p>   </p>
-                    </td>
-                </tr>
-                <tr>    
-                    <td>
-                        <p>Agregar Actores</p>
-                        <form>
-                            <label for="Nombre_actor">Nombre: </label>
-                            <input type="text" placeholder="Ingrese Nombre Completo">
-                            <label for="Apellido_actor">Apellido: </label>
-                            <input type="text" placeholder="Ingrese Apellido Completo"><br>
-                            <label for="Participo_pelis">Peliculas en las que participó: </label>
-                            <select name="participo_pelis">
-                                <optgroup label="Listados Peliculas">
-                                    <option value="Bone Keeper"> Bone Kepper</option>
-                                    <option value="Rascacielo en vivo">Rascacielo en vivo</option>
-                                </optgroup>
-                                <input type="text" placeholder="Agregar nueva participacion">
-                            </select> <br>
-                            <label for="participo_series">Series en la que participó: </label>
-                            <select name="participo_series">
-                                <optgroup label="Listados Series">
-                                    <option value="Wonder Man"> Wonder Man </option>
-                                    <option value="Un Familiar">Un Familiar</option>
-                                    <option value="El Robo">El Robo</option>
-                                </optgroup>
-                                <input type="text" placeholder="Agregar nueva participacion">
-                            </select> <br>
-                                    
-                            <label for="Poster">Subir imagen: </label>
-                            <input type="file" id="Poster" name="poster_image" accept="image/*" required>
-                            <button type="submit">Examinar</button><br>
-                            <br>
-                            <button type="submit">Guardar Cambios</button> 
-                            <a href="../intranet/peliculas_pendientes_de_revision.html">Cancelar</a>
-                        </form>
-                    </td>
-                </tr>
-            </table>
+                <div class="grupoCampo">
+                    <label for="Apellido_actor">Apellido:</label>
+                    <input type="text" id="apellido_actor" class="inputTexto" placeholder="Ingrese Apellido Completo" required>
+                </div>
+
+                <div class="grupoCampo">
+                    <label for="Participo_pelis">Películas en las que participó:</label>
+                    <div class="repartoContenedor">
+                        <select name="participo_pelis" id="participo_pelis">
+                            <optgroup label="Listado de Películas">
+                                <option value="Bone Keeper">Bone Keeper</option>
+                                <option value="Rascacielo en vivo">Rascacielo en vivo</option>
+                            </optgroup>
+                        </select>
+                        <input type="text" id="nueva_participacion_pelicula" class="inputTexto" placeholder="Agregar nueva participación">
+                    </div>
+                </div>
+
+                <div class="grupoCampo">
+                    <label for="participo_series">Series en las que participó:</label>
+                    <div class="repartoContenedor">
+                        <select name="participo_series" id="participo_series">
+                            <optgroup label="Listado de Series">
+                                <option value="Wonder Man">Wonder Man</option>
+                                <option value="Un Familiar">Un Familiar</option>
+                                <option value="El Robo">El Robo</option>
+                            </optgroup>
+                        </select>
+                        <input type="text" id="nueva_participacion_serie" class="inputTexto" placeholder="Agregar nueva participación">
+                    </div>
+                </div>
+
+                <div class="grupoCampoArchivo">
+                    <label for="Poster">Subir imagen del actor:</label>
+                    <div class="subir-archivo">
+                        <input type="file" id="poster" name="poster_image" accept="image/*" required>
+                    </div>
+                </div>
+
+                <div class="botones-inferiores">
+                    <button type="submit" class="btn-gris">Guardar Cambios</button>
+                    <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
+                    <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
+                </div>
+            </form>
         </div>
     </main>
 
@@ -136,8 +225,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>

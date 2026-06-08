@@ -96,3 +96,40 @@ function numeroTelefonoValido(numero){
 
     return patrones.test(numero);
 }
+
+/* Valida géneros de series o películas.
+
+   Permite:
+   - Letras mayúsculas y minúsculas.
+   - Letras con tilde y la letra ñ.
+   - Espacios.
+   - Comas para separar géneros.
+   - Guiones y barras para géneros compuestos.
+
+   Ejemplos válidos:
+   Comedia
+   Comedia, Drama
+   Acción / Aventura
+   Ciencia-Ficción
+*/
+function generoValido(texto){
+
+    const patron =
+    /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s,\-\/]+$/;
+
+    /* Valida géneros de series o películas.
+
+   Expresión regular:
+   ^ : inicio del texto
+   [A-Za-z] : letras mayúsculas y minúsculas
+   ÁÉÍÓÚáéíóúÑñ : letras acentuadas y ñ
+   \s : espacios
+   , : comas
+   \- : guiones
+   \/ : barras
+   + : uno o más caracteres
+   $ : final del texto
+*/
+
+    return patron.test(texto);
+} 

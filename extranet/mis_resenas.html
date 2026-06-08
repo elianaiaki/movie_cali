@@ -1,264 +1,357 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Mis reseñas</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mis reseñas</title>
 
-    <link rel="stylesheet" href="../estilos/body.css">
-    <link rel="stylesheet" href="../estilos/header.css">
-    <link rel="stylesheet" href="../estilos/footer.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
+        <link rel="stylesheet" href="../estilos/body.css">
+        <link rel="stylesheet" href="../estilos/header.css">
+        <link rel="stylesheet" href="../estilos/footer.css">
+        <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
+        <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
+        <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mis_resenas.css">
 
-    <script src="../scripts/header.js" defer></script>
+        <script src="../scripts/header.js" defer></script>
+        <script src="../scripts/extranet_scripts/mis_resenas.js" defer></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    </head>
 
-<body>
+    <body class="body" onload="asociarEventos()">
 
-    <!-- HEADER -->
-    <header class="header">
+        <!-- HEADER -->
+        <header class="header">
 
-        <!-- LOGO -->
-        <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
-        </div>
-
-        <!-- BUSCADOR -->
-        <form class="buscador">
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>🔍</button>
-        </form>
-
-        <!-- NAVEGACIÓN -->
-        <nav class="menu">
-            <a href="./index_usser.html">Inicio</a>
-            <a href="./catalogo_peliculas_usser.html">Películas</a>
-            <a href="./catalogo_series_usser.html">Series</a>
-        </nav>
-
-        <!-- PERFIL -->
-        <div class="perfil" id="perfilBtn">
-
-            <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
-
-            <div class="perfil-info">
-                <span>USUARIO - 12345</span>
-                <span class="flecha">▼</span>
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
             </div>
 
-            <div class="dropdown">
-                <a href="./mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
-                <a href="./mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
-                <a href="#"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
-                <a href="./mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
-                <a href="./resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
-                <a href="../index.html">CERRAR SESION</a>
+            <!-- BUSCADOR -->
+            <form class="buscador">
+                <input type="text" placeholder="Buscar películas, series...">
+                <button>🔍</button>
+            </form>
+
+            <!-- NAVEGACIÓN -->
+            <nav class="menu">
+                <a href="./index_usser.html">Inicio</a>
+                <a href="./catalogo_peliculas_usser.html">Películas</a>
+                <a href="./catalogo_series_usser.html">Series</a>
+            </nav>
+
+            <!-- PERFIL -->
+            <div class="perfil" id="perfilBtn">
+
+                <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+                <div class="perfil-info">
+                    <span>USUARIO - 12345</span>
+                    <span class="flecha">▼</span>
+                </div>
+
+                <div class="dropdown">
+                    <a href="./mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                    <a href="./mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                    <a href="#"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                    <a href="./mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                    <a href="./resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                    <a href="../index.html">CERRAR SESION</a>
+                </div>
             </div>
-        </div>
-    </header>
-    <hr>
+        </header>
+        <hr>
 
-    <!-- CONTENEDOR GENERAL -->
-    <br>
-    <div class="fila">
+        <!-- CONTENEDOR GENERAL -->
+        <br>
+        <div class="fila">
 
-        <!-- MAIN -->
-        <main>
+            <!-- MAIN -->
+            <main>
 
-            <!-- BLOQUE PRINCIPAL -->
-            <section class="seccion">
+                <!-- BLOQUE PRINCIPAL -->
+                <section class="seccion">
 
-                <div class="titulo-seccion">
-                    <div><h2>Mis reseñas ▶</h2></div>
+                    <div class="titulo-seccion">
+                        <div><h2>Mis reseñas ▶</h2></div>
+                    </div>
+
+                    <!-- ESTADÍSTICAS -->
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+
+                        <div class="card text-center" style="width: 150px; background:#1e3060; border:none;">
+                            <div class="card-body">
+                                <h2 class="text-white">8</h2>
+                                <p style="color:#8ab4f8;">Reseñas</p>
+                            </div>
+                        </div>
+
+                        <div class="card text-center" style="width: 150px; background:#1e3060; border:none;">
+                            <div class="card-body">
+                                <h2 class="text-white">8.2</h2>
+                                <p style="color:#8ab4f8;">Promedio</p>
+                            </div>
+                        </div>
+
+                        <div class="card text-center" style="width: 150px; background:#1e3060; border:none;">
+                            <div class="card-body">
+                                <h5 class="text-white">EL PADRINO</h5>
+                                <p style="color:#8ab4f8;">Mejor nota</p>
+                            </div>
+                        </div>
+
+                        <div class="card text-center" style="width: 150px; background:#1e3060; border:none;">
+                            <div class="card-body">
+                                <h2 class="text-white">3</h2>
+                                <p style="color:#8ab4f8;">Este año</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FILTROS -->
+                    <div>
+                        <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
+                        <label>Ordenar por:</label>
+                        <select>
+                            <option>Más reciente</option>
+                            <option>Mejor calificacion</option>
+                            <option>Título</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                </section>
+
+                <!-- RESEÑAS -->
+                <section>
+
+                    <div class="d-flex flex-wrap gap-4">
+
+                        <!-- RESEÑA 1 -->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/el_padrino.webp" class="card-img-top" alt="El Padrino" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-3">
+                                <h5 class="text-white fw-bold">EL PADRINO</h5>
+                                <p class="card-text" style="font-size:0.8rem; color:#8ab4f8;">Calificación: 9.5 / 10</p>
+                                <p class="text-white" style="font-size:0.75rem;"><b>Título:</b> LA MEJOR SIEMPRE</p>
+                                <p class="text-white" style="font-size:0.72rem;">"Un clásico absoluto. Cada escena es perfecta, imposible no quedar hipnotizado desde..."</p>
+                                <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
+                                <!--<a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>-->
+                                <a class="boton-ver-detalles" id="botonVerDetalles">VER DETALLES</a>
+                            </div>
+                        </div>
+
+                        <!-- RESEÑA 2 -->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/inception.jpg" class="card-img-top" alt="Inception" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-3">
+                                <h5 class="text-white fw-bold">INCEPTION</h5>
+                                <p class="card-text" style="font-size:0.8rem; color:#8ab4f8;">Calificación: 9.5 / 10</p>
+                                <p class="text-white" style="font-size:0.75rem;"><b>Título:</b> LA MEJOR SIEMPRE</p>
+                                <p class="text-white" style="font-size:0.72rem;">"La segunda vez que la vi entendí el 80% que no entendí la primera. Genial igual."</p>
+                                <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
+                                <!--<a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>-->
+                                <a class="boton-ver-detalles">VER DETALLES</a>
+                            </div>
+                        </div>
+
+                        <!-- RESEÑA 3 -->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/saltburnPelicula.jpg" class="card-img-top" alt="Saltburn" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-3">
+                                <h5 class="text-white fw-bold">SALTBURN</h5>
+                                <p class="card-text" style="font-size:0.8rem; color:#8ab4f8;">Calificación: 8.8 / 10</p>
+                                <p class="text-white" style="font-size:0.75rem;"><b>Título:</b> LA MEJOR SIEMPRE</p>
+                                <p class="text-white" style="font-size:0.72rem;">"Interesante pero sobrevalorada. La última escena te queda grabada de todas formas..."</p>
+                                <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
+                                <!--<a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>-->
+                                <<a class="boton-ver-detalles" id="botonVerDetalles">VER DETALLES</a>
+                            </div>
+                        </div>
+
+                        <!-- RESEÑA 4 -->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/oppenheimerMovie.jpg" class="card-img-top" alt="Halloween" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-3">
+                                <h5 class="text-white fw-bold">OPPENHEIMER</h5>
+                                <p class="card-text" style="font-size:0.8rem; color:#8ab4f8;">Calificación: 8.7 / 10</p>
+                                <p class="text-white" style="font-size:0.75rem;"><b>Título:</b> LA MEJOR SIEMPRE</p>
+                                <p class="text-white" style="font-size:0.72rem;">"Nolan en su máximo esplendor. Actuaciones impecables y una narrativa increíble..."</p>
+                                <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
+                                <!--<a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>-->
+                                <a class="boton-ver-detalles" id="botonVerDetalles">VER DETALLES</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- FIN MAIN -->
+            <!-------------------------------------------------------------------------------------------
+            <!-------------------------------------------------------------------------------------------->
+            <!-- INICIO ASIDE (sugerencias) -->
+            <aside>
+
+                <h2>SUGERENCIAS PARA TI</h2>
+
+                <!-- ITEM 1 -->
+                <div class="item-aside">
+                    <p class="genero">ROMANCE</p>
+                    <h3>CUMBRES BORRASCOSAS</h3>
+                    <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                    <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
                 </div>
 
-                <!-- ESTADÍSTICAS -->
-                <div class="d-flex flex-wrap gap-3 mb-4">
-
-                    <div class="card text-center" style="width: 150px; background:#1e3060; border:none;">
-                        <div class="card-body">
-                            <h2 class="text-white">8</h2>
-                            <p style="color:#8ab4f8;">Reseñas</p>
-                        </div>
-                    </div>
-
-                    <div class="card text-center" style="width: 150px; background:#1e3060; border:none;">
-                        <div class="card-body">
-                            <h2 class="text-white">8.2</h2>
-                            <p style="color:#8ab4f8;">Promedio</p>
-                        </div>
-                    </div>
-
-                    <div class="card text-center" style="width: 150px; background:#1e3060; border:none;">
-                        <div class="card-body">
-                            <h5 class="text-white">EL PADRINO</h5>
-                            <p style="color:#8ab4f8;">Mejor nota</p>
-                        </div>
-                    </div>
-
-                    <div class="card text-center" style="width: 150px; background:#1e3060; border:none;">
-                        <div class="card-body">
-                            <h2 class="text-white">3</h2>
-                            <p style="color:#8ab4f8;">Este año</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FILTROS -->
-                <div>
-                    <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
-                    <label>Ordenar por:</label>
-                    <select>
-                        <option>Más reciente</option>
-                        <option>Mejor calificacion</option>
-                        <option>Título</option>
-                    </select>
-                </div>
                 <hr>
 
-            </section>
-
-            <!-- RESEÑAS -->
-            <section>
-
-                <div class="d-flex flex-wrap gap-4">
-
-                    <!-- RESEÑA 1 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/el_padrino.webp" class="card-img-top" alt="El Padrino" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-3">
-                            <h5 class="text-white fw-bold">EL PADRINO</h5>
-                            <p class="card-text" style="font-size:0.8rem; color:#8ab4f8;">Calificación: 9.5 / 10</p>
-                            <p class="text-white" style="font-size:0.75rem;"><b>Título:</b> LA MEJOR SIEMPRE</p>
-                            <p class="text-white" style="font-size:0.72rem;">"Un clásico absoluto. Cada escena es perfecta, imposible no quedar hipnotizado desde..."</p>
-                            <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
-                            <a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>
-                        </div>
-                    </div>
-
-                    <!-- RESEÑA 2 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/inception.jpg" class="card-img-top" alt="Inception" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-3">
-                            <h5 class="text-white fw-bold">INCEPTION</h5>
-                            <p class="card-text" style="font-size:0.8rem; color:#8ab4f8;">Calificación: 9.5 / 10</p>
-                            <p class="text-white" style="font-size:0.75rem;"><b>Título:</b> LA MEJOR SIEMPRE</p>
-                            <p class="text-white" style="font-size:0.72rem;">"La segunda vez que la vi entendí el 80% que no entendí la primera. Genial igual."</p>
-                            <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
-                            <a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>
-                        </div>
-                    </div>
-
-                    <!-- RESEÑA 3 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/saltburnPelicula.jpg" class="card-img-top" alt="Saltburn" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-3">
-                            <h5 class="text-white fw-bold">SALTBURN</h5>
-                            <p class="card-text" style="font-size:0.8rem; color:#8ab4f8;">Calificación: 8.8 / 10</p>
-                            <p class="text-white" style="font-size:0.75rem;"><b>Título:</b> LA MEJOR SIEMPRE</p>
-                            <p class="text-white" style="font-size:0.72rem;">"Interesante pero sobrevalorada. La última escena te queda grabada de todas formas..."</p>
-                            <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
-                            <a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>
-                        </div>
-                    </div>
-
-                    <!-- RESEÑA 4 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/oppenheimerMovie.jpg" class="card-img-top" alt="Halloween" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-3">
-                            <h5 class="text-white fw-bold">OPPENHEIMER</h5>
-                            <p class="card-text" style="font-size:0.8rem; color:#8ab4f8;">Calificación: 8.7 / 10</p>
-                            <p class="text-white" style="font-size:0.75rem;"><b>Título:</b> LA MEJOR SIEMPRE</p>
-                            <p class="text-white" style="font-size:0.72rem;">"Nolan en su máximo esplendor. Actuaciones impecables y una narrativa increíble..."</p>
-                            <p class="text-white" style="font-size:0.7rem;"><b>RESEÑADO:</b> 11/2023</p>
-                            <a href="./funcionalidades_resenas/mis_resenas_detalles.html">VER DETALLES</a>
-                        </div>
-                    </div>
+                <!-- ITEM 2 -->
+                <div class="item-aside">
+                    <p class="genero">TERROR</p>
+                    <h3>WEAPONS</h3>
+                    <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
+                    <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                    <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
                 </div>
-            </section>
-        </main>
 
-        <!-- FIN MAIN -->
-        <!-------------------------------------------------------------------------------------------
-        <!-------------------------------------------------------------------------------------------->
-        <!-- INICIO ASIDE (sugerencias) -->
-        <aside>
+                <hr>
 
-            <h2>SUGERENCIAS PARA TI</h2>
+                <!-- ITEM 3 -->
+                <div class="item-aside">
+                    <p class="genero">COMEDIA</p>
+                    <h3>NOVOCAINE</h3>
+                    <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
+                    <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                    <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+                </div>
 
-            <!-- ITEM 1 -->
-            <div class="item-aside">
-                <p class="genero">ROMANCE</p>
-                <h3>CUMBRES BORRASCOSAS</h3>
-                <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
-                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
-                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+                <hr>
+
+                <!-- ITEM 4 -->
+                <div class="item-aside">
+                    <p class="genero">CIENCIA FICCIÓN</p>
+                    <h3>DUNE: PART 2</h3>
+                    <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
+                    <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                    <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 5 -->
+                <div class="item-aside">
+                    <p class="genero">ANIMACIÓN</p>
+                    <h3>FLOW</h3>
+                    <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
+                    <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                    <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <p class="titulo-footer">Desarrollado por:</p>
+
+            <p class="nombres-footer">
+                Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+                Alan Walker - Gisella Jara - Brenda Pavez
+            </p>
+
+        </footer>
+
+    <!--------------------------------------------------------------------------------------------------
+
+        <!-- FUNCIONALIDAD DE VER MAS DE LAS RESEÑAS-->
+        <div class="overlay" id="modalDetalle" style="display:none;">
+
+            <div class="modal-detalle">
+                 <a class="boton-ver-detalles" id="botonVerDetalles">VER DETALLES</a>
+
+                <a class="boton-cerrar" id="botonCerrarDetalle">X Cerrar</a>
+
+                <!-- Puntuación + botón editar -->
+                <div>
+                    <p>Tu puntuación</p>
+                    <span class="estrellas">★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                    <a class="boton-editar" href="#" id="botonAbrirEditar">Editar reseña</a>
+                </div>
+
+                <!-- Usuario -->
+                <div class="fila-usuario">
+                    <img src="../recursos/imagenes/iconos/perfil.png">
+                    <h3>USUARIO - 12345 (TU)</h3>
+                </div>
+
+                <!-- Contenido -->
+                <div>
+                    <h1 class="titulo-resena">LA MEJOR SIEMPRE</h1>
+                    <p class="texto-resena">
+                        "Un clásico absoluto. Cada escena es perfecta, imposible no quedar hipnotizado desde el primer minuto. 
+                        La historia está contada con una maestría increíble, combinando actuaciones memorables, 
+                        una dirección impecable y una atmósfera que permanece en la mente mucho tiempo después de terminar la película. 
+                        Cada detalle tiene un propósito y contribuye a construir una experiencia única que sigue vigente a 
+                        pesar del paso de los años. Es una de esas obras que merece ser vista más de una vez, porque siempre 
+                        se descubre algo nuevo. 
+                        Sin duda, una película imprescindible para cualquier amante del cine..."
+                    </p>
+                </div>
+
+                <!-- Acciones -->
+                <div class="acciones">
+                    <b>Me gusta</b> 100
+                    <b>No me gusta</b> 18
+                    <a href="./resena_comentarios_comentar.html">50 Comentarios</a>
+                </div>
+
+                <button class="boton-eliminar">ELIMINAR RESEÑA</button>
+
             </div>
+        </div>
 
-            <hr>
+        <!-- el padrino -->
+        <!-- FUNCIONALIDAD DE EDITAR RESEÑA  -->
+        <div class="overlay" id="modalEditar" style="display:none;">
 
-            <!-- ITEM 2 -->
-            <div class="item-aside">
-                <p class="genero">TERROR</p>
-                <h3>WEAPONS</h3>
-                <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
-                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
-                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+            <div class="modal-editar">
+
+                <!-- Header: imagen + info + cerrar -->
+                <div class="modal-header-info">
+                    <img src="../recursos/imagenes/peliculas/el_padrino.webp">
+                    <div>
+                        <h4>EL PADRINO</h4>
+                        <p>1972 · 2h 53min</p>
+                        <p>MI RESEÑA</p>
+                    </div>
+                    <a href="#" id="botonCerrarEditar" class="boton-cerrar">✕</a>
+                </div>
+
+                <!-- Puntuación -->
+                <p class="label-puntuacion">Tu puntuación</p>
+                <div class="estrellas-container">
+                    <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                </div>
+
+                <!-- Inputs -->
+                <input type="text" placeholder="Título de la reseña (opcional)">
+                <textarea placeholder="Escribí tu nueva reseña"></textarea>
+                <div class="char-counter">0/1000</div>
+
+                <!-- Botones -->
+                <button class="boton-guardar">GUARDAR CAMBIOS</button>
+                <div class="acciones-inferiores">
+                    <button class="boton-cancelar" id="botonCancelarEditar">Cancelar</button>
+                    <button class="boton-eliminar">ELIMINAR RESEÑA</button>
+                </div>
+
             </div>
+        </div>
+    </body>
 
-            <hr>
-
-            <!-- ITEM 3 -->
-            <div class="item-aside">
-                <p class="genero">COMEDIA</p>
-                <h3>NOVOCAINE</h3>
-                <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
-                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
-                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 4 -->
-            <div class="item-aside">
-                <p class="genero">CIENCIA FICCIÓN</p>
-                <h3>DUNE: PART 2</h3>
-                <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
-                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
-                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 5 -->
-            <div class="item-aside">
-                <p class="genero">ANIMACIÓN</p>
-                <h3>FLOW</h3>
-                <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
-                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
-                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
-            </div>
-        </aside>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <p class="titulo-footer">Desarrollado por:</p>
-
-        <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
-        </p>
-
-    </footer>
-
-</body>
 </html>
