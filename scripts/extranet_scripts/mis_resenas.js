@@ -1,3 +1,5 @@
+alert("JS conectado");
+
 /* ==========================
    ASOCIAR EVENTOS
 ========================== */
@@ -33,6 +35,8 @@ function cerrarDetalle(evento) {
    ABRIR MODAL EDITAR
 ========================== */
 function abrirEditar(evento) {
+
+    alert("Editar funciona");
 
     evento.preventDefault();
     document.getElementById("modalDetalle").style.display = "none";
