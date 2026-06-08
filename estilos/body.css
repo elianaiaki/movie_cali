@@ -10,21 +10,16 @@ body {
 
     font-family: Arial, sans-serif;
 
-    .btn{
-
+    .btn {
         background: #2a4f7a;
         color: white;
         border: none;
         text-decoration: none;
-        }
+    }
 
-        .btn:hover{
+    .btn:hover {
         background: #3a6fa0;
     }
 }
-/* 
-body {
-font-family: Arial, sans-serif;
-} */
-  
+
        

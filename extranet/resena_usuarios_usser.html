@@ -57,7 +57,7 @@
                     <a href="./mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
                     <a href="./mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
                     <a href="./mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
-                    <a href="./resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                    <a href="#" class="especial">⭐ RESEÑAS FAVORITAS</a>
                     <a href="../index.html">CERRAR SESION</a>
                 </div>
             </div>
@@ -71,17 +71,22 @@
             <!-- MAIN -->
             <main>
                 <!-- BLOQUE -->
-                <section>
-                    <div>
-                        <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg" width="450" height="300">
-                        <p> F1 THE MOVIE </p>
-                        <h2>Reseñas de usuarios:</h2>
+                <section class="cabecera">
+                    <div class="cabecera-pelicula">
+                        <img src="../recursos/imagenes/peliculas/f1laPelicula.jpg">
+
+                        <div class="info-pelicula">
+                            <p>F1 THE MOVIE</p>
+                            <h2>Reseñas de usuarios:</h2>
+                        </div>
                     </div>
+                </section>
 
-                    <!-- FILTROS-->
-                    <div>
+                <!-- FILTROS-->
+                <section class="barra-filtros">
+
                         <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
-
+                    <div>
                         <label>Ordenar por:</label>
                         <select>
                             <option>Más reciente</option>
@@ -89,13 +94,11 @@
                             <option>Título</option>
                         </select>
                     </div>
-                    <div>
-                        <a href="#" id="abrirModalResena">Agregar mi reseña</a>
-                    </div>
-                    <hr>
-                    <div>
-                        <a href="#">4.506 opiniones</a>
-                    </div>
+
+                    <a href="#" id="abrirModalResena">Agregar mi reseña</a>
+
+                    <span>4.506 opiniones</span>
+
                 </section>
 
                 
@@ -103,7 +106,7 @@
                 <section>
 
                     <!-- reseña 1 -->
-                    <div>
+                    <div class="resena">
                         <!-- boton de guardar -->
                         <button> Guardar reseña </button>
                         <!-- Usuario -->
@@ -119,7 +122,7 @@
                             la película triunfa como un blockbuster emocionante que captura con maestría el alma de la competición.”
                         </p>
                         <!-- ACCIONES -->
-                        <div>
+                        <div class="acciones">
                             <button><b>Me gusta</b> 100</button>
                             <button><b>No me gusta</b> 18</button>
                             <a href="#" class="abrir-comentarios">50 Comentarios</a>
@@ -141,7 +144,7 @@
                     <hr>
 
                     <!-- reseña 2 -->
-                    <div>
+                    <div class="resena">
                         <!-- boton de guardar -->
                         <button> Guardar reseña </button>
                         <!-- Usuario -->
@@ -157,7 +160,7 @@
                             de los motores son tan potentes que, por momentos, entierran los diálogos clave entre los protagonistas."
                         </p>
                         <!-- ACCIONES -->
-                        <div>
+                        <div class="acciones">
                             <button><b>Me gusta</b> 100</button>
                             <button><b>No me gusta</b> 18</button>
                             <a href="#" class="abrir-comentarios">50 Comentarios</a>
@@ -178,7 +181,7 @@
                     <hr>
 
                     <!-- reseña 3 -->
-                    <div>
+                    <div class="resena">
                         <!-- boton de guardar -->
                         <button> Guardar reseña </button>
                         <!-- Usuario -->
@@ -193,7 +196,7 @@
                             "Lo que realmente destaca no es la historia, sino el despliegue de cámaras IMAX montadas directamente en los monoplazas, algo nunca antes visto. Es un hito tecnológico que hace que cualquier otra película de carreras anterior parezca un videojuego de baja resolución."
                         </p>
                         <!-- ACCIONES -->
-                        <div>
+                        <div class="acciones">
                             <button><b>Me gusta</b> 100</button>
                             <button><b>No me gusta</b> 18</button>
                             <a href="#" class="abrir-comentarios">50 Comentarios</a>
@@ -214,7 +217,7 @@
                     <hr>
 
                     <!-- reseña 4 -->
-                    <div>
+                    <div class="resena">
                         <!-- boton de guardar -->
                         <button> Guardar reseña </button>
                         <!-- Usuario -->
@@ -222,7 +225,7 @@
                             <p><b>Calificación:</b> 7.0 / 10</p>
                             <img src="../recursos/imagenes/usuarios/usuario_4.jpg" width="40">
                             <p><b>NostalgicEditor dice: </b></p>
-                        </div>
+                        <div class="acciones">
                         <!-- contenido -->
                         <h3>Bien</h3>
                         <p>
