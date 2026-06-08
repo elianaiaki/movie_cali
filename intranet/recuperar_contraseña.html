@@ -12,57 +12,52 @@
     <script src="../scripts/validaciones.js"></script><!-- CONEXION CON JS -->  
 
     <script>
-
         function asociarValidacion(){
 
-            // Obtener formulario
-            const formulario = document.getElementById("recuperar_contrasenia");
+        const formulario = document.getElementById("recuperar_contrasenia");
 
-            // Evento submit
             formulario.addEventListener("submit", function(event){
 
-                // Frenar envío automático
                 event.preventDefault();
 
-                // Obtener valores
                 const usuario = document.getElementById("usuario").value;
 
                 const contrasenia = document.getElementById("contrasenia").value;
 
                 const repetirContrasenia = document.getElementById("repetirContrasenia").value;
 
-                // Validar usuario o correo
+                let errores = "";
+
                 if(!usuarioValido(usuario) && !correoValido(usuario)){
-                    alert("Usuario o correo inválido");
-                    return;
+                    errores += "- Usuario o correo inválido\n";
                 }
 
-                // Validar contraseña
                 if(!contraseniaValida(contrasenia)){
-                    alert("Contraseña inválida");
-                    return;
+                    errores += "- Contraseña inválida\n";
                 }
 
-                // Validar coincidencia
                 if(contrasenia !== repetirContrasenia){
-                    alert("Las contraseñas no coinciden");
+                    errores += "- Las contraseñas no coinciden\n";
+                }
+
+                if(errores !== ""){
+                    alert("Se encontraron los siguientes errores:\n\n" + errores);
                     return;
                 }
 
-                // Todo correcto
                 alert("Contraseña actualizada correctamente");
 
-                // Enviar formulario
                 formulario.submit();
 
             });
 
         }
 
-</script>
+        window.addEventListener("load", asociarValidacion);
+    </script>
 </head>
 
-<body class="body" onload="asociarValidacion()">
+<body class="body">
     <!-- HEADER -->
     <header class="header">
         <!--LOGO-->

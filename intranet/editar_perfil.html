@@ -16,54 +16,80 @@
 
     <script>
         function asociarValidacion(){
+
+            // Obtener formulario
             const formulario = document.getElementById("editar_perfil");
 
+            // Evento submit
             formulario.addEventListener("submit", function(event){
+
+                // Frenar envío automático
                 event.preventDefault();
 
+                // Obtener valores
                 const nombre = document.getElementById("nombre").value;
+
                 const apellido = document.getElementById("apellido").value;
+
                 const correo = document.getElementById("correo").value;
+
                 const identificador = document.getElementById("identificador").value;
+
                 const contrasenia = document.getElementById("contrasenia").value;
+
                 const celular = document.getElementById("celular").value;
 
+                let errores = "";
+
+                // Validar nombre
                 if(!textoAlfabeticoValido(nombre)){
-                    alert("Nombre inválido");
-                    return;
+                    errores += "- Nombre inválido\n";
                 }
 
+                // Validar apellido
                 if(!textoAlfabeticoValido(apellido)){
-                    alert("Apellido inválido");
-                    return;
+                    errores += "- Apellido inválido\n";
                 }
 
+                // Validar correo
                 if(!correoValido(correo)){
-                    alert("Correo inválido");
-                    return;
+                    errores += "- Correo inválido\n";
                 }
 
+                // Validar identificador
                 if(!textoAlfanumericoValido(identificador)){
-                    alert("ID inválido");
-                    return;
+                    errores += "- ID inválido\n";
                 }
 
+                // Validar contraseña
                 if(!contraseniaValida(contrasenia)){
-                    alert("Contraseña inválida");
-                    return;
+                    errores += "- Contraseña inválida\n";
                 }
 
+                // Validar celular
                 if(!numeroTelefonoValido(celular)){
-                    alert("Número de celular inválido");
+                    errores += "- Número de celular inválido\n";
+                }
+
+                // Mostrar errores
+                if(errores !== ""){
+                    alert("Se encontraron los siguientes errores:\n\n" + errores);
                     return;
                 }
 
+                // Confirmación
                 if(confirm("¿Desea guardar los cambios realizados?")){
+
                     alert("Perfil actualizado correctamente");
-                    window.location.href = "../intranet/gestion_de_perfil_roles.html";
+
+                    formulario.submit();
+
                 }
+
             });
+
         }
+
     </script>
 </head>
 

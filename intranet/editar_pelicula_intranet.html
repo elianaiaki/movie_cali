@@ -11,38 +11,32 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
-    <!--no se lo usamos el defer en este
-    <script src="../scripts/validaciones.js"defer></script>
-    -->
+
     <script src="../scripts/validaciones.js"></script>
     <script>
-        /*event.preventDefault() evita que el formulario
-         se envíe automáticamente para poder validar
-         los datos antes de continuar.
-         
-         alert() informa al usuario si existe un error
-         o si la película fue agregada correctamente.
 
-         confirm() solicita una confirmación antes de
-         ejecutar acciones que modifican el formulario.*/
-        function asociarValidacion(){
+    function asociarValidacion(){
 
-            const formulario = document.getElementById("formAgregar");
+        // Obtener formulario
+        const formulario = document.getElementById("formAgregar");
 
-            formulario.addEventListener("submit",function(event){
+            // Evento submit
+            formulario.addEventListener("submit", function(event){
 
+                // Frenar envío automático
                 event.preventDefault();
 
-                const titulo = document.getElementById("titulo_pelicula").value;
+                // Obtener valores
+                const titulo = document.getElementById("formAgregar").value;
 
                 const genero = document.getElementById("genero_pelicula").value;
 
                 const director = document.getElementById("director").value;
-    
+
                 const productor = document.getElementById("productor_pelicula").value;
 
                 const sinopsis = document.getElementById("sinopsis").value;
-                /**/
+
                 const anioEstreno = document.getElementById("anio_estreno").value;
 
                 const duracion = document.getElementById("duracion_pelicula").value;
@@ -52,107 +46,93 @@
                 const clasificacionEdad = document.getElementById("clasificacion_edad").value;
 
                 const nuevosActores = document.getElementById("nuevosActores").value;
-                    
-                    // Validar título
-                    if(!textoAlfanumericoValido(titulo)){
-                        alert("Título inválido");
-                        return;
-                    }
 
-                    // Validar género
-                    if(!generoValido(genero)){
-                        alert("Género inválido");
-                        return;
-                    }
-                    // Validar director
-                    if(!textoAlfabeticoValido(director)){
-                        alert("Director inválido");
-                        return;
-                    }
+                let errores = "";
 
-                    // Validar productor
-                    if(!textoAlfabeticoValido(productor)){
-                        alert("Productor inválido");
-                        return;
-                    }
+                // Validar título
+                if(!textoAlfanumericoValido(titulo)){
+                    errores += "- Título inválido\n";
+                }
 
-                    // Validar sinopsis
-                    if(sinopsis.trim() === ""){
-                        alert("Debe ingresar una sinopsis" );
-                        return;
-                    }
+                // Validar género
+                if(!generoValido(genero)){
+                    errores += "- Género inválido\n";
+                }
 
-                    //Validar año de estreno. Acepta formato: 2026 1998 2010
-                    if(!/^\d{4}$/.test(anioEstreno)){
-                        alert("El año de estreno debe tener 4 dígitos");
-                        return;
-                    }
+                // Validar director
+                if(!textoAlfabeticoValido(director)){
+                    errores += "- Director inválido\n";
+                }
 
-                    /*Validar duración
-                    Acepta formatos como:1h 59min, 2h 15min, 3 h 20 min, 2h20min
-                    ^ -> inicio del texto.
-                    \d+ -> uno o más números (horas).
-                    \s* -> cero o más espacios.
-                    h -> letra h.
-                    \d+ -> uno o más números (minutos).
-                    min -> texto min.
-                    $ -> final del texto.
-                    i -> ignora mayúsculas y minúsculas (min, MIN, Min).*/
+                // Validar productor
+                if(!textoAlfabeticoValido(productor)){
+                    errores += "- Productor inválido\n";
+                }
 
-                    if(!/^\d+\s*h\s*\d+\s*min$/i.test(duracion)){
-                        alert("La duración de la pelicula debe tener formato 1h 59min");
-                        return;
-                    }
+                // Validar sinopsis
+                if(sinopsis.trim() === ""){
+                    errores += "- Debe ingresar una sinopsis\n";
+                }
 
-                    /*Validar calificación
-                     parseFloat() convierte el texto ingresado en un número decimal.
+                // Validar año de estreno
+                if(!/^\d{4}$/.test(anioEstreno)){
+                    errores += "- El año de estreno debe tener 4 dígitos\n";
+                }
 
-                     isNaN() es una función propia de JavaScript.
-                     Su nombre significa "is Not a Number" (no es un número)
-                     y permite verificar si el valor ingresado puede
-                     interpretarse como un número válido.
-                    
-                     Además se controla que la calificación esté
-                     dentro del rango permitido (0 a 10).*/
-                    
-                    //Acepta calificaciones como: 8, 7.5, 10, 0 
-                    if(!/^\d+(\.\d+)?$/.test(calificacion)){
-                        alert("La calificación general debe ser numérica");
-                        return;
-                    } 
+                // Validar duración
+                if(!/^\d+\s*h\s*\d+\s*min$/i.test(duracion)){
+                    errores += "- La duración debe tener formato 1h 59min\n";
+                }
+
+                // Validar calificación
+                if(!/^\d+(\.\d+)?$/.test(calificacion)){
+                    errores += "- La calificación general debe ser numérica\n";
+                }else{
+
                     const nota = parseFloat(calificacion);
 
                     if(isNaN(nota) || nota < 0 || nota > 10){
-                        alert("La calificación general debe ser un número entre 0 y 10");
-                        return;
+                        errores += "- La calificación debe estar entre 0 y 10\n";
                     }
-
-                    // Validar clasificación por edad
-                    if(!/^\+\d+$/.test(clasificacionEdad)){
-                        alert("La clasificación por edad debe tener formato +13, +16 o +18");
-                        return;
-                    }
-
-                    // Validar nuevos actores 
-                    if(nuevosActores !== "" && !textoAlfabeticoValido(nuevosActores)){
-                        alert("Nombre de actor inválido");
-                        return;
-                    }
-
-                    alert("Película editada correctamente");
-
-                    formulario.submit();
 
                 }
-            );
+
+                // Validar clasificación por edad
+                if(!/^\+\d+$/.test(clasificacionEdad)){
+                    errores += "- La clasificación por edad debe tener formato +13, +16 o +18\n";
+                }
+
+                // Validar nuevos actores
+                if(nuevosActores !== "" && !textoAlfabeticoValido(nuevosActores)){
+                    errores += "- Nombre de actor inválido\n";
+                }
+
+                // Mostrar todos los errores juntos
+                if(errores !== ""){
+                    alert("Se encontraron los siguientes errores:\n\n" + errores);
+                    return;
+                }
+
+                // Todo correcto
+                alert("Película editada correctamente");
+
+                // Enviar formulario
+                formulario.submit();
+
+            });
 
         }
 
         function limpiarFormulario(){
+
             if(confirm("¿Desea limpiar todos los campos?")){
-                document.getElementById("forAgregar").reset();
+
+                document.getElementById("formAgregar").reset();
+
             }
+
         }
+
     </script>
 
 </head>

@@ -14,16 +14,15 @@
     <script src="../scripts/validaciones.js"></script><!-- CONEXION CON JS -->
 
     <script>
+        
         function asociarValidacion(){
-            // Obtener formulario
+
             const formulario = document.getElementById("nuevo_perfil");
 
-            // Evento submit
             formulario.addEventListener("submit", function(event){
-                // Frenar envío automático
+
                 event.preventDefault();
 
-                // Obtener valores
                 const nombre = document.getElementById("nombre").value;
                 const apellido = document.getElementById("apellido").value;
                 const correo = document.getElementById("correo").value;
@@ -32,55 +31,49 @@
                 const repetirContrasenia = document.getElementById("repetirContrasenia").value;
                 const celular = document.getElementById("celular").value;
 
-                // Validar nombre
+                let errores = "";
+
                 if(!textoAlfabeticoValido(nombre)){
-                    alert("Nombre inválido");
-                    return;
+                    errores += "- Nombre inválido\n";
                 }
 
-                // Validar apellido
                 if(!textoAlfabeticoValido(apellido)){
-                    alert("Apellido inválido");
-                    return;
+                    errores += "- Apellido inválido\n";
                 }
 
-                // Validar correo
                 if(!correoValido(correo)){
-                    alert("Correo inválido");
-                    return;
+                    errores += "- Correo inválido\n";
                 }
 
-                // Validar ID
                 if(!textoAlfanumericoValido(identificador)){
-                    alert("ID inválido");
-                    return;
+                    errores += "- ID inválido\n";
                 }
 
-                // Validar contraseña
                 if(!contraseniaValida(contrasenia)){
-                    alert("Contraseña inválida");
-                    return;
+                    errores += "- Contraseña inválida\n";
                 }
 
-                // Validar coincidencia
                 if(contrasenia !== repetirContrasenia){
-                    alert("Las contraseñas no coinciden");
-                    return;
+                    errores += "- Las contraseñas no coinciden\n";
                 }
 
-                // Validar celular
                 if(!numeroTelefonoValido(celular)){
-                    alert("Número de celular inválido");
+                    errores += "- Número de celular inválido\n";
+                }
+
+                if(errores !== ""){
+                    alert("Se encontraron los siguientes errores:\n\n" + errores);
                     return;
                 }
 
-                // Todo correcto
                 alert("Perfil creado correctamente");
 
-                // Enviar formulario
                 formulario.submit();
+
             });
+
         }
+
     </script>
 </head>
 
@@ -149,19 +142,19 @@
             <form id="nuevo_perfil" action="../intranet/gestion_de_perfil_roles.html" method="get">
                 <div>
                     <label>Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Escribe el nombre" required>
+                    <input id="nombre" name="nombre" type="text" placeholder="Escribe el nombre" required>
                 </div>
                 <div>
                     <label>Apellido:</label>
-                    <input type="text" id="apellido" placeholder="Escribe el apellido" required>
+                    <input id="apellido" name="apellido" type="text" placeholder="Escribe el apellido" required>
                 </div>
                 <div>
                     <label>Email:</label>
-                    <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+                    <input id="correo" name="correo" type="email" placeholder="ejemplo@correo.com" required>
                 </div>
                 <div>
                     <label>ID:</label>
-                    <input type="text" id="identificador" placeholder="12586-id">
+                    <input id="identificador" name="identificador" type="text" placeholder="12586-id">
                 </div>
                 <div>
                     <label>Rol:</label>
@@ -179,15 +172,15 @@
                 </div>
                 <div>
                     <label>Contraseña:</label>
-                    <input type="password" id="contrasenia" required>
+                    <input id="contrasenia" name="contrasenia" type="password" required>
                 </div>
                 <div>
                     <label>Repetir Contraseña:</label>
-                    <input type="password" id="repetirContrasenia" required>
+                    <input  id="repetirContrasenia" name="repetirContrasenia" type="password" required>
                 </div>
                 <div>
                     <label>Celular:</label>
-                    <input type="tel" id="celular" placeholder="+549-2705-869344" required>
+                    <input id="celular" name="celular" type="tel" placeholder="+549-2705-869344" required>
                 </div>
 
                 <div>

@@ -43,96 +43,135 @@
     </style>
 
     <script>
+
         function asociarValidacion(){
+
+            // Obtener formulario
             const formulario = document.getElementById("formAgregar");
 
+            // Evento submit
             formulario.addEventListener("submit", function(event){
+
+                // Frenar envío automático
                 event.preventDefault();
 
+                // Obtener valores
                 const titulo = document.getElementById("titulo_serie").value;
+
                 const genero = document.getElementById("genero_serie").value;
+
                 const director = document.getElementById("director").value;
+
                 const productor = document.getElementById("productor_serie").value;
+
                 const sinopsis = document.getElementById("sinopsis").value;
+
                 const anioEstreno = document.getElementById("anio_estreno").value;
+
                 const duracion = document.getElementById("duracion_serie").value;
+
                 const calificacion = document.getElementById("calificacion_serie").value;
+
                 const clasificacionEdad = document.getElementById("clasificacion_edad").value;
+
                 const nuevosActores = document.getElementById("nuevos_actores").value;
+
                 const cantTemporadas = document.getElementById("cantidad_temporadas").value;
-                    
-                    if(!textoAlfanumericoValido(titulo)){ 
-                        alert("Título inválido"); 
-                        return; 
-                    }
-                    
-                    if(!generoValido(genero)){ 
-                        alert("Género inválido"); 
-                        return; 
-                    }
-                    
-                    if(!textoAlfabeticoValido(director)){ 
-                        alert("Director inválido"); 
-                        return; 
-                    }
 
-                    if(!textoAlfabeticoValido(productor)){ 
-                        alert("Productor inválido"); 
-                        return; 
-                    }
+                let errores = "";
 
-                    if(sinopsis.trim() === ""){ 
-                        alert("Debe ingresar una sinopsis"); 
-                        return; 
-                    }
+                // Validar título
+                if(!textoAlfanumericoValido(titulo)){
+                    errores += "- Título inválido\n";
+                }
 
-                    if(!/^\d{4}$/.test(anioEstreno)){ 
-                        alert("El año de estreno debe tener 4 dígitos"); 
-                        return; 
-                    }
+                // Validar género
+                if(!generoValido(genero)){
+                    errores += "- Género inválido\n";
+                }
 
-                    if(!/^\d+\s*min$/i.test(duracion)){ 
-                        alert("La duración de la serie debe tener formato 30 min"); 
-                        return; 
-                    }
+                // Validar director
+                if(!textoAlfabeticoValido(director)){
+                    errores += "- Director inválido\n";
+                }
 
-                    if(!/^\d+(\.\d+)?$/.test(calificacion)){ 
-                        alert("La calificación general debe ser numérica"); 
-                        return; 
-                    }
+                // Validar productor
+                if(!textoAlfabeticoValido(productor)){
+                    errores += "- Productor inválido\n";
+                }
+
+                // Validar sinopsis
+                if(sinopsis.trim() === ""){
+                    errores += "- Debe ingresar una sinopsis\n";
+                }
+
+                // Validar año de estreno
+                if(!/^\d{4}$/.test(anioEstreno)){
+                    errores += "- El año de estreno debe tener 4 dígitos\n";
+                }
+
+                // Validar duración
+                if(!/^\d+\s*min$/i.test(duracion)){
+                    errores += "- La duración debe tener formato 30 min\n";
+                }
+
+                // Validar calificación
+                if(!/^\d+(\.\d+)?$/.test(calificacion)){
+
+                    errores += "- La calificación general debe ser numérica\n";
+
+                }else{
 
                     const nota = parseFloat(calificacion);
-                    if(isNaN(nota) || nota < 0 || nota > 10){ 
-                        alert("La calificación general debe ser un número entre 0 y 10"); 
-                        return; 
+
+                    if(isNaN(nota) || nota < 0 || nota > 10){
+                        errores += "- La calificación debe estar entre 0 y 10\n";
                     }
 
-                    if(!/^\+\d+$/.test(clasificacionEdad)){ 
-                        alert("La clasificación por edad debe tener formato +13, +16 o +18"); 
-                        return; 
-                    }
-                    
-                    if(nuevosActores !== "" && !textoAlfabeticoValido(nuevosActores)){ 
-                        alert("Nombre de actor inválido"); 
-                        return; 
-                    }
-
-                    if(!/^\d+$/.test(cantTemporadas)){ 
-                        alert("La cantidad de temporadas debe ser numérica"); 
-                        return; 
-                    }
-                    
-                    alert("Serie agregada correctamente");
-                    formulario.submit();
                 }
-            );
+
+                // Validar clasificación por edad
+                if(!/^\+\d+$/.test(clasificacionEdad)){
+                    errores += "- La clasificación por edad debe tener formato +13, +16 o +18\n";
+                }
+
+                // Validar actores
+                if(nuevosActores !== "" &&
+                !textoAlfabeticoValido(nuevosActores)){
+                    errores += "- Nombre de actor inválido\n";
+                }
+
+                // Validar cantidad de temporadas
+                if(!/^\d+$/.test(cantTemporadas)){
+                    errores += "- La cantidad de temporadas debe ser numérica\n";
+                }
+
+                // Mostrar todos los errores juntos
+                if(errores !== ""){
+                    alert("Se encontraron los siguientes errores:\n\n" + errores);
+                    return;
+                }
+
+                // Todo correcto
+                alert("Serie agregada correctamente");
+
+                // Enviar formulario
+                formulario.submit();
+
+            });
+
         }
 
         function limpiarFormulario(){
+
             if(confirm("¿Desea limpiar todos los campos?")){
+
                 document.getElementById("formAgregar").reset();
+
             }
-        }   
+
+        }
+
     </script>
 </head>
 

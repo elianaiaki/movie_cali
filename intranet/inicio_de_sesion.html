@@ -15,42 +15,38 @@
     <script>
 
         function asociarValidacion(){
-            // Obtener formulario
-            const formulario = document.getElementById("inicio_de_sesion");
 
-            // Evento submit
+        const formulario = document.getElementById("inicio_de_sesion");
+
             formulario.addEventListener("submit", function(event){
 
-                // Frenar envío automático
                 event.preventDefault();
 
-                // Obtener valores
                 const usuario = document.getElementById("usuario").value;
-
                 const contrasenia = document.getElementById("contrasenia").value;
 
-                // Validar usuario o correo
+                let errores = "";
+
                 if(!usuarioValido(usuario) && !correoValido(usuario)){
-                    alert("Usuario o correo inválido");
-                    return;
+                    errores += "- Usuario o correo inválido\n";
                 }
 
-                // Validar contraseña
                 if(!contraseniaValida(contrasenia)){
-                    alert("Contraseña inválida");
+                    errores += "- Contraseña inválida\n";
+                }
+
+                if(errores !== ""){
+                    alert("Se encontraron los siguientes errores:\n\n" + errores);
                     return;
                 }
 
-                // Si todo está bien
                 alert("Inicio de sesión correcto");
 
-                // Enviar formulario manualmente
                 formulario.submit();
 
             });
 
-            }
-
+        }
     </script>
 </head>
 
@@ -76,14 +72,14 @@
                 <div>
                     <label>USUARIO / CORREO ELECTRONICO</label><br>
                     <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20" style="vertical-align: middle;">
-                    <input id="usuario" type="text" name="usuario" required style="width: 250px;">
+                    <input id="usuario" name="usuario" type="text" required style="width: 250px;">
                 </div>
                 
                 <!-- Contraseña -->
                 <div>
                     <label>CONTRASEÑA</label><br>
                     <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" width="20" height="20" style="vertical-align: middle;">
-                    <input id="contrasenia" type="password" required style="width: 250px;">
+                    <input id="contrasenia" name="contrasenia" type="password" required style="width: 250px;">
                     <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver" width="20" height="20" style="vertical-align: middle; cursor: pointer;">
                 </div>
                 
