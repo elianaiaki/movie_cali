@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
 
     background: linear-gradient(
         90deg,
@@ -20,6 +20,15 @@ body {
     .btn:hover {
         background: #3a6fa0;
     }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 160px); /*Asegura espacio para el footer */
+    margin-bottom: 15px;
 }
 
        

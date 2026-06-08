@@ -1,74 +1,138 @@
-/* hace que el aside ocupe toda la altura de la página */
+/* Hace que el aside y el contenido principal
+   tengan la misma altura dentro de la fila */
 .fila {
     display: flex;
-    align-items: stretch; /* cambiás flex-start por stretch */
+    align-items: stretch;
 }
 
-/* aside ---------------------------------------------------------------*/
+/* ==========================================================
+   ASIDE
+   ========================================================== */
+
+/* Barra lateral */
 aside {
+
+    /* Color de fondo del aside */
     background: #1a3a5c;
+
+    /* Espacio interno entre el borde y el contenido */
     padding: 16px;
-    width: 280px; /* subís el ancho, antes era 220px */
+
+    /* Ancho fijo del aside */
+    width: 280px;
+
+    /* Evita que Flexbox reduzca el ancho */
+    flex-shrink: 0;
+
+    /* Mantiene exactamente el mismo ancho */
+    min-width: 280px;
+    max-width: 280px;
 }
 
+/* Título principal del aside */
 aside h2 {
+
+    /* Color del texto */
     color: white;
+
+    /* Tamaño de la fuente */
     font-size: 22px;
+
+    /* Centra el texto */
     text-align: center;
+
+    /* Separación inferior */
     margin-bottom: 60px;
 }
 
+/* Contenedor de cada película */
 .item-aside {
+
+    /* Organiza los elementos en una grilla */
     display: grid;
+
+    /* Primera columna para la imagen
+       Segunda columna para la información */
     grid-template-columns: 80px 1fr;
+
+    /* Espaciado entre filas y columnas */
     gap: 4px 10px;
 }
 
+/* Imagen de la película */
 .item-aside img {
+
+    /* Hace que la imagen ocupe varias filas */
     grid-row: 1 / 5;
+
+    /* Tamaño fijo */
     width: 80px;
     height: 100px;
+
+    /* Ajusta la imagen sin deformarla */
     object-fit: cover;
+
+    /* Bordes redondeados */
     border-radius: 4px;
 }
 
+/* Género de la película */
 .genero {
+
     color: #e05a5a;
     font-size: 11px;
     font-weight: bold;
     margin: 0;
 }
 
+/* Título de la película */
 .item-aside h3 {
+
     color: white;
     font-size: 23px;
     margin: 0;
 }
 
+/* Descripción de la película */
 .descripcion {
+
     color: #ccc;
     font-size: 11px;
     margin: 0;
 }
 
+/* Botón "Ver detalles" */
 .item-aside a {
+
+    /* Hace que el botón ocupe ambas columnas */
     grid-column: 1 / 3;
+
     text-align: center;
+
     background: #2a4f7a;
     color: white;
+
     text-decoration: none;
+
     padding: 6px;
+
     border-radius: 4px;
+
     font-size: 12px;
 }
 
+/* Efecto al pasar el mouse sobre el botón */
 .item-aside a:hover {
+
     background: #3a6fa0;
 }
 
+/* Línea entre películas */
 aside hr {
+
     border: none;
+
     border-top: 1px solid #2a4f7a;
+
     margin: 12px 0;
 }
-/* fin aside ---------------------------------------------------------------*/
