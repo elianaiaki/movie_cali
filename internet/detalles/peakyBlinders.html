@@ -4,33 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <title>PEAKY BLINDERS: EL HOMBRE INMORTAL</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+    <script src="../../scripts/header.js" defer></script>
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
-        <h1>MovieCali</h1>
-        <!-- Logo -->
-        <img src="../../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" width="500" height="260">
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
 
-        <!-- Buscador -->
-        <form>
-            <input type="text" placeholder="Buscar películas, series...">
-            <button>Buscar</button>
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
         </form>
 
-        <!-- Navegación -->
-        <nav>
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
             <a href="../../index.html">Inicio</a>
-            <a href="../catalogo_peliculas.html">Películas</a>
-            <a href="../catalogo_series.html">Series</a>
+            <a href="../../internet/catalogo_peliculas.html">Películas</a>
+            <a href="../../internet/catalogo_series.html">Series</a>
         </nav>
 
-        <!-- Usuario -->
-        <div>
-            <a href="../iniciar_sesion.html">Iniciar sesión</a>
-            <a href="../crear_cuenta.html">Crear cuenta</a>
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>MENU</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../../internet/iniciar_sesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+            </div>
         </div>
     </header>
 
@@ -41,201 +60,210 @@
         <!-- MAIN -->
         <main>
             <!-- TITULO, DETALLES Y TRAILER-->
-            <section>
-                <div>
-                    <img src="../../recursos/imagenes/peliculas/peakyBlinders.jpg" alt="PEAKY BLINDERS" width="200">
-                    <br>
-                    <h1>PEAKY BLINDERS: EL HOMBRE INMORTAL</h1>
-                    <p>Durante la Segunda Guerra Mundial, Tommy Shelby regresa a Birmingham devastada por los bombardeos, <br>
-                       enfrentando misiones secretas y los fantasmas de su pasado. La película funciona como epílogo <br>
-                       de la serie, cerrando la historia del personaje con un tono épico y bélico.
-                    </p>
-                    <ul>
-                        <li><strong>Género:</strong> Drama histórico, crimen</li>
-                        <li><strong>Año:</strong> 2026</li>
-                        <li><strong>Duración:</strong> 1h 52min</li>
-                        <li><strong>Director:</strong> Tom Harper</li>
-                        <li><strong>Productores/as:</strong> Steven Knight, Caryn Mandabach, Guy Heeley, Jamie Glazebrook, David Kosse, Cillian Murphy</li>
-                        <li><strong>Calificación general:</strong> 6.5/10</li>
-                        <li><strong>Clasificación por edad:</strong> +16 </li>
-                        <li><strong>Plataformas:</strong> Netflix</li>
-                    </ul>
-                </div>
+               <section class="detalle-principal">
+                    <div class="poster">
+                        <img src="../../recursos/imagenes/peliculas/peakyBlinders.jpg" alt="PEAKY BLINDERS: EL HOMBRE INMORTAL"> 
+                    </div>
                 
-                <div>
-                    <h2>Tráiler</h2>
-                    <video width="600" controls>
-                        <source src="../../recursos/videos/peakyBlinders.webm" type="video/webm">
-                        Tu navegador no soporta este video. Probá con otro navegador.
-                    </video>
-                </div>
-            </section>
+                    <div class="info-serie">
+                        <h1>PEAKY BLINDERS: EL HOMBRE INMORTAL</h1>
+                        <p>Durante la Segunda Guerra Mundial, Tommy Shelby regresa a Birmingham devastada por los bombardeos,  
+                        enfrentando misiones secretas y los fantasmas de su pasado. La película funciona como epílogo  
+                        de la serie, cerrando la historia del personaje con un tono épico y bélico.
+                        </p>
+                        <ul>
+                            <li><strong>Género:</strong> Drama histórico, crimen</li>
+                            <li><strong>Año:</strong> 2026</li>
+                            <li><strong>Duración:</strong> 1h 52min</li>
+                            <li><strong>Director:</strong> Tom Harper</li>
+                            <li><strong>Productores/as:</strong> Steven Knight, Caryn Mandabach, Guy Heeley, Jamie Glazebrook, David Kosse, Cillian Murphy</li>
+                            <li><strong>Calificación general:</strong> 6.5/10</li>
+                            <li><strong>Clasificación por edad:</strong> +16 </li>
+                            <li><strong>Plataformas:</strong> Netflix</li>
+                        </ul>
+                    </div>
+               </section>
+               
+                <section class="card-detalle">
+                    <!-- TRAILER -->
+                        <div class="video-container">
+                            <h2>Tráiler</h2>
+                            <video width="600" controls>
+                                <source src="../../recursos/videos/peakyBlinders.webm" type="video/webm">
+                                Tu navegador no soporta este video. Probá con otro navegador.
+                            </video>
+                        </div> 
+                </section>
 
             
             <!-- REPARTO-->
-            <section>
+            <section class="card-detalle">
                 <h2>REPARTO</h2>
-                <div>
-                    <img src="../../recursos/imagenes/Reparto/cillianMurphy.jpg" alt="CILLIAN MURPHY" width="100" height="150"><br>
-                    <h3>CILLIAN MURPHY</h3>
-                </div>
-                <div>
-                    <img src="../../recursos/imagenes/Reparto/rebeccaFerguson.jpg" alt="REBECCA FERGUSON" width="100" height="150"><br>
-                    <h3>REBECCA FERGUSON</h3>
-                </div>
-                <div>
-                    <img src="../../recursos/imagenes/Reparto/timRoth.jpg" alt="TIM ROTH" width="100" height="150"><br>
-                    <h3>TIM ROTH</h3>
-                </div>
-                <div>
-                    <img src="../../recursos/imagenes/Reparto/sophieRundle.jpg" alt="SOPHIE RUNDLE" width="100" height="150"><br>
-                    <h3>SOPHIE RUNDLE</h3>
-                </div>
-                <div>
-                    <img src="../../recursos/imagenes/Reparto/barryKeoghan.jpg" alt="BARRY KEOGHAN" width="100" height="150"><br>
-                    <h3>BARRY KEOGHAN</h3>
-                </div>
+                    <div class="reparto-vertical"> 
+                            <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/cillianMurphy.jpg" alt="CILLIAN MURPHY" width="100" height="150"> 
+                            <h3>CILLIAN MURPHY</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/rebeccaFerguson.jpg" alt="REBECCA FERGUSON" width="100" height="150"> 
+                            <h3>REBECCA FERGUSON</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/timRoth.jpg" alt="TIM ROTH" width="100" height="150"> 
+                            <h3>TIM ROTH</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/sophieRundle.jpg" alt="SOPHIE RUNDLE" width="100" height="150"> 
+                            <h3>SOPHIE RUNDLE</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/barryKeoghan.jpg" alt="BARRY KEOGHAN" width="100" height="150"> 
+                            <h3>BARRY KEOGHAN</h3>
+                        </div>
+                    </div>
             </section>
 
             
 
             <!--RESEÑA DE USUARIOS-->
-            
-            <section>
+            <section class="card-detalle">
                 <h2>RESEÑAS DESTACADAS</h2>
-                
-                <!--USUARIO 1-->
-                <div>
-                    <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                    <div>
-                        <p><b>Calificación:</b> 8.0 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>FanDeShelby dice:</b></p>
-                    </div>
-                    <h3>Un cierre digno.</h3>
-                    <p>
-                        "Cillian Murphy vuelve a brillar como Tommy Shelby. La ambientación bélica <br>
-                        es impresionante y el tono épico le da un gran final a la saga."
-                    </p>
-                    <br>
-                </div>
-                <br>
+                    <div class="resenas-container">
+                        <!--USUARIO 1-->
+                        <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                        <div>
+                            <p><b>Calificación:</b> 8.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                            <p><b>FanDeShelby dice:</b></p>
+                        </div>
+                        <h3>Un cierre digno.</h3>
+                        <p>
+                            "Cillian Murphy vuelve a brillar como Tommy Shelby. La ambientación bélica  
+                            es impresionante y el tono épico le da un gran final a la saga."
+                        </p>
+                         
+                        </div>
+                        
 
-                <!--USUARIO 2-->
-                <div>
-                    <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
-                    <div>
-                        <p><b>Calificación:</b> 7.0 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>CriticoTV dice:</b></p>
-                    </div>
-                    <h3>Entretenida, pero irregular.</h3>
-                    <p>
-                        "La película es buena, aunque algunos pasajes se sienten apresurados. <br>
-                        No alcanza la fuerza narrativa de la serie, pero cumple como epílogo."
-                    </p>
-                    <br>
-                </div>
-                <br>
+                        <!--USUARIO 2-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 7.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                <p><b>CriticoTV dice:</b></p>
+                            </div>
+                            <h3>Entretenida, pero irregular.</h3>
+                            <p>
+                                "La película es buena, aunque algunos pasajes se sienten apresurados.  
+                                No alcanza la fuerza narrativa de la serie, pero cumple como epílogo."
+                            </p>
+                            
+                        </div>
+                        
 
-                <!--USUARIO 3-->
-                <div>
-                    <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                    <div>
-                        <p><b>Calificación:</b> 9.0 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>DramaLover dice:</b></p>
-                    </div>
-                    <h3>Emocionante y nostálgica.</h3>
-                    <p>
-                        "El regreso de Tommy Shelby es un viaje lleno de emociones. <br>
-                        La mezcla de acción y drama histórico logra mantener la esencia <br>
-                        de la serie y darle un cierre memorable."
-                    </p>
-                    <br>
-                </div>
-                <br>
+                        <!--USUARIO 3-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 9.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                <p><b>DramaLover dice:</b></p>
+                            </div>
+                            <h3>Emocionante y nostálgica.</h3>
+                            <p>
+                                "El regreso de Tommy Shelby es un viaje lleno de emociones.  
+                                La mezcla de acción y drama histórico logra mantener la esencia  
+                                de la serie y darle un cierre memorable."
+                            </p>
+                            
+                        </div>
+                        
 
-                <!--USUARIO 4-->
-                <div>
-                    <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
-                    <div>
-                        <p><b>Calificación:</b> 7.5 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>CineGeek dice:</b></p>
-                    </div>
-                    <h3>Gran ambientación, pero ritmo irregular.</h3>
-                    <p>
-                        "La atmósfera de guerra está muy bien lograda, transmitiendo tensión <br>
-                        y realismo. Sin embargo, el ritmo narrativo decae en algunos momentos. <br>
-                        El final compensa con un clímax emocionante."
-                    </p>
-                    <br>
-                </div>
-                <br>
+                        <!--USUARIO 4-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 7.5 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                <p><b>CineGeek dice:</b></p>
+                            </div>
+                            <h3>Gran ambientación, pero ritmo irregular.</h3>
+                            <p>
+                                "La atmósfera de guerra está muy bien lograda, transmitiendo tensión  
+                                y realismo. Sin embargo, el ritmo narrativo decae en algunos momentos.  
+                                El final compensa con un clímax emocionante."
+                            </p>
+                            
+                        </div>
+                        
 
-                <!--USUARIO 5-->
-                <div>
-                    <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
-                    <div>
-                        <p><b>Calificación:</b> 6.5 / 10</p>
-                        <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                        <p><b>FilmFan dice:</b></p>
-                    </div>
-                    <h3>Un epílogo que pudo ser mejor.</h3>
-                    <p>
-                        "Aunque es agradable ver de nuevo a los Shelby, la trama principal <br>
-                        se siente algo floja y repetitiva. El carisma de Cillian Murphy <br>
-                        sostiene la película, pero esperaba un guion más sólido."
-                    </p>
-                    <br>
-                </div>
-
-                <a href="#">Ver todas las reseñas</a>
+                        <!--USUARIO 5-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 6.5 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                <p><b>FilmFan dice:</b></p>
+                            </div>
+                            <h3>Un epílogo que pudo ser mejor.</h3>
+                            <p>
+                                "Aunque es agradable ver de nuevo a los Shelby, la trama principal  
+                                se siente algo floja y repetitiva. El carisma de Cillian Murphy  
+                                sostiene la película, pero esperaba un guion más sólido."
+                            </p>
+                            
+                        </div>
+                       <div class="contenedor-boton">
+                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                        </div>
+                    </div> 
+                    
+                       
             </section>
 
 
             <!-- RELACIONADOS-->
-            <section>
-                <div>
+            <section class="card-detalle">
                     <h2>RELACIONADOS</h2>
-                    <div>
-                        <img src="../../recursos/imagenes/series/peakyBlinders.jpg" alt="PEAKY BLINDERS" width="100" height="150"><br>
-                        <h3>PEAKY BLINDERS (SERIE)</h3>
-                        <h3>Calificación: 8.8/10</h3>
-                        <h3>DURACION: 6 temporadas</h3>
+                    <div class="relacionados-container">
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/peakyBlinders.jpg" alt="PEAKY BLINDERS" width="100" height="150"> 
+                            <h3>PEAKY BLINDERS (SERIE)</h3>
+                            <h3>Calificación: 8.8/10</h3>
+                            <h3>DURACION: 6 temporadas</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/houseOfTheDragon.jpg" alt="HOUSE OF THE DRAGON" width="100" height="150"> 
+                            <h3>HOUSE OF THE DRAGON</h3>
+                            <h3>Calificación: 8.5/10</h3>
+                            <h3>DURACION: 2 temporadas</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/emboscadaFinal.jpg" alt="EMBOSCADA FINAL" width="100" height="150"> 
+                            <h3>EMBOSCADA FINAL</h3>
+                            <h3>Calificación: 7.8/10</h3>
+                            <h3>DURACION: 2h 12min</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/losCaballeros.jpg" alt="LOS CABALLEROS" width="100" height="150"> 
+                            <h3>LOS CABALLEROS</h3>
+                            <h3>Calificación: 7.5/10</h3>
+                            <h3>DURACION: 1h 53min</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/breakingBad.jpg" alt="BREAKING BAD" width="100" height="150"> 
+                            <h3>BREAKING BAD</h3>
+                            <h3>Calificación: 8/10</h3>
+                            <h3>DURACION: 5 temporadas</h3>
+                        </div>
                     </div>
-                    <div>
-                        <img src="../../recursos/imagenes/series/houseOfTheDragon.jpg" alt="HOUSE OF THE DRAGON" width="100" height="150"><br>
-                        <h3>HOUSE OF THE DRAGON</h3>
-                        <h3>Calificación: 8.5/10</h3>
-                        <h3>DURACION: 2 temporadas</h3>
-                    </div>
-                    <div>
-                        <img src="../../recursos/imagenes/peliculas/emboscadaFinal.jpg" alt="EMBOSCADA FINAL" width="100" height="150"><br>
-                        <h3>EMBOSCADA FINAL</h3>
-                        <h3>Calificación: 7.8/10</h3>
-                        <h3>DURACION: 2h 12min</h3>
-                    </div>
-                    <div>
-                        <img src="../../recursos/imagenes/peliculas/losCaballeros.jpg" alt="LOS CABALLEROS" width="100" height="150"><br>
-                        <h3>LOS CABALLEROS</h3>
-                        <h3>Calificación: 7.5/10</h3>
-                        <h3>DURACION: 1h 53min</h3>
-                    </div>
-                     <div>
-                        <img src="../../recursos/imagenes/series/breakingBad.jpg" alt="BREAKING BAD" width="100" height="150"><br>
-                        <h3>BREAKING BAD</h3>
-                        <h3>Calificación: 8/10</h3>
-                        <h3>DURACION: 5 temporadas</h3>
-                    </div>
-                </div>
             </section>
-
         </main>
     </div>
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
         <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>

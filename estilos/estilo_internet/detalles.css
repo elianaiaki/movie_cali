@@ -73,7 +73,7 @@
 
 /* _______________ */
 
-.resenas-container{
+/* .resenas-container{
     display:flex;
     gap:20px;
     margin-top:20px;
@@ -84,9 +84,41 @@
 
 .resenas-container::-webkit-scrollbar{
     display:none;
+} */
+
+.resenas-container,
+.relacionados-container{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+    padding-bottom:15px;
+}
+.resenas-container::-webkit-scrollbar,
+.relacionados-container::-webkit-scrollbar{
+    height:8px;
 }
 
-.resena-card{
+.resenas-container::-webkit-scrollbar-track,
+.relacionados-container::-webkit-scrollbar-track{
+    background:#1b1b1b;
+}
+
+.resenas-container::-webkit-scrollbar-thumb,
+.relacionados-container::-webkit-scrollbar-thumb{
+    background:#555;
+    border-radius:10px;
+}
+
+.resenas-container::-webkit-scrollbar-thumb:hover,
+.relacionados-container::-webkit-scrollbar-thumb:hover{
+    background:#777;
+}
+/* .resena-card{
     background:#1b1b1b;
     border-radius:15px;
     padding:20px;
@@ -95,6 +127,12 @@
     max-width:300px;
 
     color:white;
+} */
+.resena-card{
+    background:#1b1b1b;
+    border-radius:15px;
+    padding:20px;
+    flex:0 0 300px;
 }
 
 .resena-card img{
@@ -115,7 +153,7 @@
 
 /* ________________________ */
 
-.relacionados-container{
+/* .relacionados-container{
     display:flex;
     gap:20px;
     margin-top:20px;
@@ -126,17 +164,24 @@
 
 .relacionados-container::-webkit-scrollbar{
     display:none;
-}
+} */
 
-.relacionado-card{
+/* .relacionado-card{
     min-width:220px;
     text-align:center;
     color:white;
+} */
+
+.relacionado-card{
+    flex:0 0 220px;
+    text-align:center;
+    color:white;
+
 }
 
 .relacionado-card img{
-    width:220px;
-    height:320px;
+    width:200px;
+    height:300px;
     object-fit:cover;
     border-radius:15px;
 }
@@ -149,4 +194,55 @@
 .relacionado-card p{
     margin:5px 0;
     color:#ccc;
+}
+
+/* .btn-resenia {
+    display: inline-block;
+    background: #0178ff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-resenia:hover {
+    background: #3a6fa0;
+} */
+
+/* .btn-resenia {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    background: #0178ff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-resenia:hover {
+    background: #3a6fa0;
+}
+
+.contenedor-boton{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:20px;
+} */
+
+.contenedor-boton{
+    flex: 0 0 180px; /* ancho fijo */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.btn-resenia{
+    background:#0178ff;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:5px;
+    white-space:nowrap;
 }
