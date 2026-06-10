@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedores_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+
+   
 
     <script src="../scripts/validaciones.js"></script>  <!-- CONEXION CON JS-->
 
@@ -37,7 +39,7 @@
 
                 const contrasenia = document.getElementById("contrasenia").value;
 
-                const celular = document.getElementById("celular").value;
+                const repetirContrasenia = document.getElementById("repetirContrasenia").value;
 
                 let errores = "";
 
@@ -66,11 +68,9 @@
                     errores += "- Contraseña inválida\n";
                 }
 
-                // Validar celular
-                if(!numeroTelefonoValido(celular)){
-                    errores += "- Número de celular inválido\n";
+                if(contrasenia !== repetirContrasenia){
+                    errores += "- Las contraseñas no coinciden\n";
                 }
-
                 // Mostrar errores
                 if(errores !== ""){
                     alert("Se encontraron los siguientes errores:\n\n" + errores);
@@ -146,6 +146,7 @@
 <!----------- FIN DE HEADER--------------------------------------->
     <hr>
     <main class="main">
+
         <!--PANEL DE ACCESO RÁPIDO-->
         <div class="contenedor-panel">
             <div class="Panel">
@@ -153,56 +154,78 @@
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>       
-        <h2>EDITAR PERFIL</h2>
+        
+        <section class="contenedorFormulario">
 
-        <section class="contenedor-general">
-            <div>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil actual" width="100">
-                <button type="button">CAMBIAR FOTO</button>
-            </div>
-            <form id="editar_perfil">
-                <div>
-                    <label>Nombre:</label>
-                    <input type="text" id="nombre" value="Leon">
-                </div>
-                <div>
-                    <label>Apellido:</label>
-                    <input type="text" id="apellido" value="Kennedy">
-                </div>
-                <div>
-                    <label>Email:</label>
-                    <input type="email" id="correo" value="lskennedy@gmail.com">
-                </div>
+            <h2>EDITAR PERFIL</h2>
 
-                <div>
-                    <label>ID:</label>
-                    <input type="text" id="identificador" value="85461" readonly>
-                </div>
+            <div style="display:flex; gap:50px; align-items:flex-start;">
+                <!--FOTO-->
+                <div style="text-align:center; min-width:280px;">
+                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil actual" width="250">
+                    <br><br>
+                    <input type="file" id="fotoPerfil" accept="image/*" hidden></input>
+                    <button type="button" class="btn-gris" onclick="document.getElementById('fotoPerfil').click();">CAMBIAR FOTO</button>
+                </div>   
 
-                <div>
-                    <label>Rol:</label>
-                    <select>
-                        <option selected>ADMINISTRADOR</option>
-                        <option>USUARIO</option>
-                    </select>
-                </div>
+                <!--FORMULARIO-->
+                <form id="editar_perfil" style="display:grid; grid-template-columns:320px 320px; gap:20px 40px;">
 
-                <div>
-                    <label>Contraseña:</label>
-                    <input type="password" id="contrasenia" value="**********">
-                </div>
+                    <div class="grupoCampo">
+                        <label>Nombre:</label>
+                        <input type="text" id="nombre" class="inputTexto" value="Leon">
+                    </div>
 
-                <div>
-                    <label>Celular:</label>
-                    <input type="tel" id="celular" value="+549-2705-869344">
-                </div>
+                    <div class="grupoCampo">
+                        <label>Apellido:</label>
+                        <input type="text" id="apellido" class="inputTexto" value="Kennedy">
+                    </div>
 
-                <div class="botones-inferiores">
-                    <button type="submit" class="btn-azul">GUARDAR CAMBIOS</button>
-                    <a href="../intranet/gestion_de_perfil_roles.html" class="btn-azul">Cancelar</a>
-                </div>
-            </form>
-        </section>
+                    <div class="grupoCampo">
+                        <label>ID:</label>
+                        <input type="text" id="identificador" class="inputTexto" value="85461" readonly>
+                    </div>
+
+                    <div class="grupoCampo">
+                        <label>Rol:</label>
+                        <select>
+                            <option selected>ADMINISTRADOR</option>
+                            <option>USUARIO</option>
+                        </select>
+                    </div>
+
+                    <div class="grupoCampo">
+                        <label>Email:</label>
+                        <input type="email" id="correo" class="inputTexto" value="lskennedy@gmail.com">
+                    </div>
+
+                    <div class="grupoCampo">
+                        <label>Permisos:</label>
+                        <select>
+                            <option selected>ADMINISTRADOR</option>
+                            <option>USUARIO</option>
+                        </select>
+                    </div>
+
+                    <div class="grupoCampo">
+                        <label>Contraseña:</label>
+                        <input type="password" id="contrasenia" class="inputTexto" placeholder="Ingrese la contraseña">
+                    </div>
+
+                    <div class="grupoCampo">
+                        <label>Repetir Contraseña:</label>
+                        <input type="password" id="repetirContrasenia" class="inputTexto" placeholder="Ingrese nuevamente la contraseña">
+                    </div>
+                    <div style="grid-column:1 / -1; display:flex; justify-content:flex-end;">
+                        <div class="botones-inferiores">
+                            <button type="submit" class="btn-gris">GUARDAR CAMBIOS</button>
+                            <a href="../intranet/gestion_de_perfil_roles.html" class="btn-gris">Cancelar</a>
+                        </div>
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
     </main>
 
     <!-- -------------FOOTER------------------>

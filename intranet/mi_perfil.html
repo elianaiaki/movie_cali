@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botone.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/mi_perfil_intranet.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
 
@@ -65,6 +67,7 @@
 <!-----------FIN DE HEADER----------------------------------> 
     <hr>
    <main class="main">
+
         <div class="contenedor-panel">
             <div class="Panel">
                 <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
@@ -73,61 +76,82 @@
         </div>
 
         <h2>MI PERFIL</h2>
-        <section>
-           <h3>ADMIN - ID: XXXXX</h3>
-           <div>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="80">
-                <div>
-                    <p>NOMBRE Y APELLIDO: [NOMBRE DE USUARIO]</p>
-                    <p>CORREO: [CORREO@USUARIO.COM]</p>
-                    <p>CELULAR: 000-0000</p>
-                    <a href="../intranet/editar_perfil.html">EDITAR DATOS</a>    
-                </div>    
-            </div>       
-        </section>
-        <hr>
-        <!--ADMINISTRACIÓN DE USUARIOS-->
-        <section>
-            <h3>ADMINISTRACIÓN DE USUARIOS</h3>
-            <p>CANTIDAD DE USUARIOS GESTIONADOS: 3050</p>
-            <p>USUARIOS ACTIVOS EN TOTAL: 930</p>
-            <p>ADMINISTRADORES EN TOTAL: 20</p>
-            <a href="gestion_de_perfil_roles.html">VER TODO</a>
-        </section>
 
-        <hr>
+        <div class="contenedor-perfil">
+            <!-- PERFIL -->
+            <section class="tarjeta-perfil">
+                <h3>ADMIN - ID: XXXXX</h3>
 
-        <!--GESTIÓN DE CATÁLOGOS-->
-        <section>
-            <h3>GESTIÓN DE CATÁLOGOS</h3>
-            <div>
-                <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono de claqueta" width="50">
-                <div>
-                    <p>CATÁLOGOS TOTALES: 55321</p>
-                    <p>CANTIDAD DE PELÍCULAS: 35485</p>
-                    <p>SERIES: 19836</p>
-                    <p>REVISIONES PENDIENTES: 1853</p>
-                    <a href="../intranet/peliculas_pendientes_de_revision.html">GESTIONAR PELÍCULAS</a> |
-                    <a href="../intranet/series_pendientes_de_revision_intra.html">GESTIONAR SERIES</a>
+                <div class="usuario-info">
+                    <div class="perfil-columna">
+                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="90">
+                        <a href="../intranet/editar_perfil.html" class="btn">EDITAR DATOS</a>
+                    </div>
+                    <div class="datos-usuario">
+                        <p>NOMBRE Y APELLIDO: [NOMBRE DE USUARIO]</p>
+                        <p>CORREO: [CORREO@USUARIO.COM]</p>
+                        <p>CELULAR: 000-0000</p>
+                    </div>
+
                 </div>
-            </div>
-        </section>
-       
-        <hr>
+            </section>
+            
+            <!--ADMINISTRACIÓN DE USUARIOS-->
+             <section class="tarjeta-perfil">
+                <h3>ADMINISTRACIÓN DE USUARIOS</h3>
 
-        <!--BLOQUE: HISTORIAL DE ACTIVIDADES-->
-        <section>
-            <h3>HISTORIAL DE ACTIVIDADES</h3>
-            <img src="../recursos/imagenes/iconos/reloj.png" alt="Icono de historial" width="40">
-            <ul>
-                <li>Se actualizó la sinopsis de "Interestelar"</li>
-                <li>Nuevo usuario administrativo dado de alta: Juan Pérez</li>
-                <li>Se eliminó una reseña por spam en la película "Titanic"</li>
-                <li>Cambio de rol: Usuario_123 pasó a ser Moderador</li>
-            </ul>
-            <a href="#">VER TODO EL HISTORIAL</a>
-        </section>
+                <div class="admin-usuarios">
+                    <p>CANTIDAD DE USUARIOS GESTIONADOS: 3050</p>
+                    <p>USUARIOS ACTIVOS EN TOTAL: 930</p>
+                    <p>ADMINISTRADORES EN TOTAL: 20</p>
 
+                    <br>
+                    <a href="gestion_de_perfil_roles.html" class="btn">VER TODO</a>
+
+                </div>
+             </section>
+
+             <!--GESTIÓN DE CATÁLOGOS-->
+             <section class="tarjeta-perfil">
+                <h3>GESTIÓN DE CATÁLOGOS</h3>
+
+                <div class="catalogos-contenido">
+                    <img src="../recursos/imagenes/iconos/claqueta.png" alt="Icono de claqueta" width="90">
+
+                    <div>
+                        <p>CATÁLOGOS TOTALES: 55321</p>
+                        <p>CANTIDAD DE PELÍCULAS: 35485</p>
+                        <p>SERIES: 19836</p>
+                        <p>REVISIONES PENDIENTES: 1853</p>
+                    </div>    
+                </div>
+
+                <div class="catalogos-botones">
+                    <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn">GESTIONAR PELÍCULAS</a> 
+                    <a href="../intranet/series_pendientes_de_revision_intra.html" class="btn">GESTIONAR SERIES</a>
+                </div>
+             </section>
+
+             <!-- HISTORIAL DE ACTIVIDADES-->
+             <section class="tarjeta-perfil historial">
+
+                <h3>HISTORIAL DE ACTIVIDADES</h3>
+
+                <div class="contenido-historial">
+                    <img src="../recursos/imagenes/iconos/reloj.png" alt="Icono de historial" width="40">
+                    <ul>
+                        <li>Se actualizó la sinopsis de "Interestelar"</li>
+                        <li>Nuevo usuario administrativo dado de alta: Juan Pérez</li>
+                        <li>Se eliminó una reseña por spam en la película "Titanic"</li>
+                        <li>Cambio de rol: Usuario_123 pasó a ser Moderador</li>
+                    </ul>
+                </div>
+                <div class="historial-boton">
+                    <a href="#" class="btn"> VER TODO EL HISTORIAL</a>
+                </div>
+
+            </section>
+        </div>
     </main> 
 
     <br><br>
@@ -141,8 +165,7 @@
         </p>
 
         <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
 
     </footer>

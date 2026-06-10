@@ -1,0 +1,175 @@
+/* ======================================
+   GRID PRINCIPAL
+====================================== */
+
+.contenedor-perfil{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:25px;
+    margin-top:20px;
+}
+
+/* ======================================
+   TARJETAS
+====================================== */
+
+.tarjeta-perfil{
+    background-color:#1a3a5c;
+    border:1px solid #000;
+    border-radius:12px;
+    padding:20px;
+    color:#ddd;
+}
+
+.tarjeta-perfil h3{
+    text-align:center;
+    margin-top:0;
+}
+
+/* ======================================
+   PERFIL
+====================================== */
+.usuario-info{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-top:20px;
+}
+
+.usuario-info img{
+    flex-shrink:0;
+}
+
+.datos-usuario{
+    text-align:left;
+}
+
+.perfil-columna{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+.perfil-columna .btn{
+    padding: 5px 12px;
+}
+/* ======================================
+   RESEÑAS Y REPORTES
+====================================== */
+
+.info-doble{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.info-doble div{
+    text-align:center;
+}
+
+/* ======================================
+   HISTORIAL
+====================================== */
+
+.historial{
+    text-align:center;
+}
+
+.historial ul{
+    text-align:left;
+}
+
+/* ======================================
+   HISTORIAL
+====================================== */
+
+.contenido-historial{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    height:60%;
+}
+
+.contenido-historial img{
+    width:90px;
+    height:auto;
+}
+
+.contenido-historial ul{
+    margin:0;
+    text-align:left;
+}
+
+/* ======================================
+   ADMINISTRACIÓN DE USUARIOS
+====================================== */
+
+.admin-usuarios{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:50;
+    margin-top:30px;
+}
+.admin-usuarios .btn{
+    margin-top:15px;
+}
+
+/* ======================================
+   GESTIÓN DE CATÁLOGOS
+====================================== */
+
+.catalogos-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.catalogos-contenido img{
+    flex-shrink:0;
+}
+
+.catalogos-botones{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+/* ======================================
+   BOTÓN HISTORIAL
+====================================== */
+
+.historial-boton{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+/* ======================================
+   BOTONES MI PERFIL
+====================================== */
+
+.btn{
+    display:inline-block;
+    background-color:#444;
+    border:1px solid #000;
+    border-radius:15px;
+    padding:8px 16px;
+    color:#ddd;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+.btn:hover{
+    background-color:#003366;
+    color:#fff;
+}

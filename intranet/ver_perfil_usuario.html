@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/ver_perfil_usuario_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 </head>
@@ -77,60 +79,85 @@
         <br>
         <h2>PERFIL DE USUARIO</h2>
         
-        <section>
-            <h3>USUARIO - ID: XXXXX</h3>
-            <div>
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Avatar" width="80">
-                <div>
-                    <p>NOMBRE Y APELLIDO: [NOMBRE DE USUARIO]</p>
-                    <p>CORREO: [CORREO@GMAIL.COM]</p>
-                    <p>CELULAR: 00000-0000</p>
-                    <a href="editar_perfil.html">EDITAR DATOS</a>
+        <div class="contenedor-perfil">
+            <!--PERFIL-->
+            <section class="tarjeta-perfil">
+                <h3>USUARIO - ID: XXXXX</h3>
+                <div class="usuario-info">
+
+                    <div class="perfil-columna">
+                        <img src="../recursos/imagenes/iconos/perfil.png" alt="Avatar" width="120">
+                        <a href="editar_perfil.html" class="btn">EDITAR DATOS</a>
+                    </div>
+                    
+                    <div class="datos-usuario">
+                        <p>NOMBRE Y APELLIDO: [NOMBRE DE USUARIO]</p>
+                        <p>CORREO: [CORREO@GMAIL.COM]</p>
+                        <p>CELULAR: 00000-0000</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <hr>
+            <!-- RESEÑAS -->
+            <section class="tarjeta-perfil">
+                <h3>ADMINISTRACIÓN DE RESEÑAS</h3>
 
-        <section>
-            <h3>ADMINISTRACIÓN DE RESEÑAS</h3>
-            <div>
-                <h4>PELÍCULAS:</h4>
-                <p>Favoritos: 93</p>
-                <p>Reseñas: 3</p>
-                <button type="button">VER RESEÑAS</button> 
-            </div>
-            <div>
-                <h4>SERIES:</h4>
-                <p>Favoritos: 80</p>
-                <p>Reseñas: 10</p>
-                <button type="button">VER RESEÑAS</button> 
-            </div>
-        </section>
+                <div class="info-doble">
+                    <div>
+                        <h4>PELÍCULAS</h4>
+                        <p>Favoritos: 93</p>
+                        <p>Reseñas: 3</p>
+                        <a href="#" class="btn">VER RESEÑAS</a>
+                    </div>
 
-        <hr>
-        <section>
-            <h3>REPORTES</h3>
-            <div>
-                <h4>PELÍCULAS:</h4>
-                <p>REPORTES HECHOS: 2</p>
-                <p>REPORTES RECIBIDOS: 1</p>
-                <button type="button">VER REPORTE</button>
-            </div>
-        </section>
+                    <div>
+                        <h4>SERIES</h4>
+                        <p>Favoritos: 80</p>
+                        <p>Reseñas: 10</p>
+                        <a href="#" class="btn">VER RESEÑAS</a>
+                    </div>
+                </div>
+            </section>
 
-        <hr>
+             <!-- REPORTES -->
+            <section class="tarjeta-perfil">
+                <h3>REPORTES</h3>
 
-        <section>
-            <h3>HISTORIAL DE ACTIVIDADES</h3>
-            <img src="../recursos/imagenes/iconos/reloj.png" alt="Reloj" width="40">
-            <ul>
-                <li>Línea de actividad 1.....</li>
-                <li>Línea de actividad 2.....</li>
-                <li>Línea de actividad 3.....</li>
-            </ul>
-        </section>
+                <div class="info-doble">
+                    <div>
+                        <h4>PELÍCULAS</h4>
+                        <p>REPORTES HECHOS: 2</p>
+                        <p>REPORTES RECIBIDOS: 1</p>
+                        <a href="#" class="btn">VER REPORTE</a>
 
+                    </div>
+
+                    <div>
+                        <h4>SERIES</h4>
+                        <p>REPORTES HECHOS: 4</p>
+                        <p>REPORTES RECIBIDOS: 0</p>
+                        <a href="#" class="btn">VER REPORTE</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HISTORIAL -->
+            <section class="tarjeta-perfil historial">
+                <h3>HISTORIAL DE ACTIVIDADES</h3>
+
+                 <div class="contenido-historial">
+                    <img src="../recursos/imagenes/iconos/reloj.png" alt="Reloj" width="60">
+                    <ul>
+                        <li>Línea de actividad 1.....</li>
+                        <li>Línea de actividad 2.....</li>
+                        <li>Línea de actividad 3.....</li>
+                    </ul>
+                 </div>
+                
+            </section>
+
+        </div>
+       
     </main>
 
     <br><br>

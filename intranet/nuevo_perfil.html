@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     
+    <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
+
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
 
     <script src="../scripts/validaciones.js"></script><!-- CONEXION CON JS -->
@@ -17,7 +20,7 @@
         
         function asociarValidacion(){
 
-            const formulario = document.getElementById("nuevo_perfil");
+            const formulario = document.getElementById("formAgregar");
 
             formulario.addEventListener("submit", function(event){
 
@@ -136,56 +139,59 @@
             </div>
         </div>  
         <br>
-        <h2>CREAR NUEVO PERFIL</h2>
-
-        <section>
-            <form id="nuevo_perfil" action="../intranet/gestion_de_perfil_roles.html" method="get">
-                <div>
+        
+        <section class="contenedorFormulario">
+            <h2>CREAR NUEVO PERFIL</h2>
+            <form id="formAgregar" action="../intranet/gestion_de_perfil_roles.html" method="get">
+                <div class="grupoCampo">
                     <label>Nombre:</label>
-                    <input id="nombre" name="nombre" type="text" placeholder="Escribe el nombre" required>
+                    <input type="text" id="nombre" name="nombre" class="inputTexto" placeholder="Escribe el nombre" required>
                 </div>
-                <div>
+                <div class="grupoCampo">
                     <label>Apellido:</label>
-                    <input id="apellido" name="apellido" type="text" placeholder="Escribe el apellido" required>
+                    <input type="text" id="apellido" name="apellido" class="inputTexto" placeholder="Escribe el apellido" required>
                 </div>
-                <div>
+                <div class="grupoCampo">
                     <label>Email:</label>
-                    <input id="correo" name="correo" type="email" placeholder="ejemplo@correo.com" required>
+                    <input type="email" id="correo" name="correo" class="inputTexto" placeholder="ejemplo@correo.com" required>
                 </div>
-                <div>
+                <div class="grupoCampo">
                     <label>ID:</label>
-                    <input id="identificador" name="identificador" type="text" placeholder="12586-id">
+                    <input  type="text" id="identificador" name="identificador" class="inputTexto" placeholder="12586-id">
                 </div>
-                <div>
+                <div class="grupoCampo">
                     <label>Rol:</label>
-                    <select>
+                    <select class="inputTexto">
                         <option>ADMINISTRATIVO</option>
                         <option>USUARIO</option>
                     </select>
                 </div>
-                <div>
+                <div class="grupoCampo">
                     <label>Permisos:</label>
-                    <select>
+                    <select class="inputTexto">
                         <option>ADMINISTRADOR</option>
                         <option>USUARIO</option>
                     </select>
                 </div>
-                <div>
+                <div class="grupoCampo">
                     <label>Contraseña:</label>
-                    <input id="contrasenia" name="contrasenia" type="password" required>
+                    <input type="password" id="contrasenia" name="contrasenia" class="inputTexto" required>
                 </div>
-                <div>
+                <div class="grupoCampo">
                     <label>Repetir Contraseña:</label>
-                    <input  id="repetirContrasenia" name="repetirContrasenia" type="password" required>
+                    <input  id="repetirContrasenia" name="repetirContrasenia" class="inputTexto" type="password" required>
                 </div>
-                <div>
+                <div class="grupoCampo">
                     <label>Celular:</label>
-                    <input id="celular" name="celular" type="tel" placeholder="+549-2705-869344" required>
+                    <input type="tel" id="celular" name="celular" class="inputTexto" placeholder="+549-2705-869344" required>
                 </div>
 
-                <div>
-                    <button type="submit">Guardar</button>
-                    <a href="../intranet/gestion_de_perfil_roles.html">Cancelar</a>
+                <div class="accionesFormulario" style="grid-column: 1 / -1; display:flex; justify-content:flex-end;">
+                    <div class="botones-inferiores" style="justify-content:flex-end;">
+                        <button type="submit" class="btn-gris">GUARDAR</button>
+
+                        <a href="../intranet/gestion_de_perfil_roles.html"  class="btn-gris">Cancelar</a>
+                    </div>
                 </div>
             </form>
         </section>
