@@ -1,0 +1,53 @@
+.contenedorGeneral{
+    background-color: #1a3a5c; /*color de fondo de tarjetas para todos*/
+    color: #ffffff;
+    width: 75%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.contenedorEditarPerfil {
+    display:flex;
+    gap:50px;
+    align-items:flex-start;
+}
+
+.contenedorImg {
+    text-align: center;
+    min-width: 280px;
+}
+
+.contenedorImg img{
+    width: 250px;
+}
+
+.contenedorForm{
+    display:grid;
+    grid-template-columns:320px 320px;
+    gap:20px 40px;
+}
+.grupoCampo {
+    display: flex;
+    flex-direction: column;
+}
+.inputTexto {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.contenedorBtn {
+    grid-column:1 / -1;
+    display:flex;
+    justify-content:flex-end;
+}

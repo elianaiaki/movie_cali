@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/tarjetas_paralelas.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <!---Script-->
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
     <script src="../scripts/intranet_scripts/confirmarEliminacionSerie.js"></script>
 </head>
-
+<!---------------------------------------------------------------------->
 <body>
     <header class="header">
         <div class="logo">
@@ -49,13 +50,11 @@
             </div> 
         </div>
     </header>
-
-    <!-- CONTENIDO PRINCIPAL -->
+<!------------------------------------------------------------------->
     <main class="main">
         <div class="contenedor-tarjetas">
             <section class="Tarjeta">
                 <h3>ELIMINAR SERIE</h3>
-                <!-- Saneado: Cambiado "pelicula" por "serie" para corregir el texto copiado de Main -->
                 <p>¿Seguro que desea eliminar esta serie?</p>
                 
                 <!-- Saneado: Removido el atributo align="left" obsoleto en HTML5 -->
@@ -64,19 +63,17 @@
                 <p> Título: Nombre de la serie</p>
                 <div class="botones-inferiores">
                     <div class="guardar_accion">
-                        <!-- Saneado: Activado el método pedagógico directo con onclick e igualado el ancho a 120px -->
-                        <button type="button" class="btn-gris" style="width: 120px;" onclick="confirmarEliminacionSerie()">ELIMINAR</button>
+                        <button type="button" class="btn-gris" onclick="confirmarEliminacionSerie()">ELIMINAR</button>
                     </div>
                     <div class="modificables">
-                        <!-- Saneado: Enlace corregido para retornar al listado de series con ancho simétrico de 120px -->
-                        <a href="../intranet/series_pendientes_de_revision_intra.html" class="btn-gris" style="width: 120px;">Cancelar</a>
+                        <a href="../intranet/series_pendientes_de_revision_intra.html" class="btn-gris" >Cancelar</a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
    
-<!-- -------------FOOTER------------------>
+<!-- -------------FOOTER-------------------------------------------------------------------->
     
     <footer class="footer">
         <p class="titulo-footer">Desarrollado por:</p>

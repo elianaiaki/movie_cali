@@ -58,6 +58,7 @@
     font-weight: bold;
     display: inline-block;   
     margin-right: 15px;
+    width: 120px;
 }
 
 .btn-gris:hover {
