@@ -10,33 +10,24 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <!--script-->
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
-    
     <script src="../scripts/validaciones.js"></script>
-    
     <script src="../scripts/intranet_scripts/validacionActor.js"></script>
-
 </head>
-
-<body onload="asociarValidacion()">
-    
 <!------------------------------------------------------------------------------------------->
-    <!-- HEADER -->
+<body onload="asociarValidacion()">
+    <!--- HEADER -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
-
         <!-- BUSCADOR -->
         <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
+            <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
-
         <!-- PERFIL -->
         <div class="perfil" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
@@ -48,21 +39,13 @@
                         <option value="../intranet/mi_perfil.html">Mi perfil</option>
                         <hr>
                         <optgroup label="Gestión de Películas">
-                            <option value="../intranet/peliculas_pendientes_de_revision.html">
-                                Películas pendientes de revisión
-                            </option>
-                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
-                                Nuevas solicitudes de alta
-                            </option>
+                            <option value="../intranet/peliculas_pendientes_de_revision.html"> Películas pendientes de revisión </option>
+                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Nuevas solicitudes de alta </option>
                         </optgroup> 
                         <hr>
                         <optgroup label="Administración Usuarios">
-                            <option value="../intranet/gestion_de_perfil_roles.html">
-                                Gestión de perfil y roles
-                            </option>
-                            <option value="../intranet/nuevo_perfil.html">
-                                Crear nuevo perfil
-                            </option>
+                            <option value="../intranet/gestion_de_perfil_roles.html">Gestión de perfil y roles</option>
+                            <option value="../intranet/nuevo_perfil.html">Crear nuevo perfil</option>
                         </optgroup>  
                         <hr>
                         <option value="../intranet/inicio_de_sesion.html">Cerrar Sesión</option>     
@@ -71,9 +54,7 @@
             </div> 
         </div>
     </header>
-
-    <br>
-<!--------FIN DE HEADER----------------------------------------------------------------------------------->
+<!------------------------FIN DE HEADER----------------------------------------------------------------------------------->
 
     <main class="main">
         <div class="contenedor-panel">
@@ -133,29 +114,22 @@
                 </div>
 
                 <div class="botones-inferiores">
-                    <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
-                    <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
+                    <div class="modificables">
+                        <button type="submit" class="btn-gris">Guardar Cambios</button>
+                        <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
+                        <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
+                    </div>
                 </div>
             </form>
         </div>
     </main>
 
-    <br>
-    <br>
-    <br>
-<!----------------FOOTER--------------------------------------------------------------------------->
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
+<!-------------FOOTER------------------------------------------------------------------------------>
+   <footer class="footer">
+        <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
             Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
-
     </footer>
 </body>
 </html>

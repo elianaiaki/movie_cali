@@ -10,25 +10,23 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/tarjetas_paralelas.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <!--script-->
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
     <script src="../scripts/intranet_scripts/confirmarEliminacionPeliculas.js" ></script>
 </head>
-
+<!--------------------------------------------------------------------------->
 <body>
-
-<!----------------------------------INICIO DE HEADER-------------------------------------------------->
+    <!--HEADER-->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
             <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
-
         <!-- BUSCADOR -->
         <form class="buscador">
             <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
-
         <!-- PERFIL -->
         <div class="perfil" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
@@ -40,64 +38,46 @@
                         <option value="../intranet/mi_perfil.html">Mi perfil</option>
                         <hr>
                         <optgroup label="Gestión de Películas">
-                            <option value="../intranet/peliculas_pendientes_de_revision.html">
-                                Películas pendientes de revisión
-                            </option>
-                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
-                                Nuevas solicitudes de alta
-                            </option>
+                            <option value="../intranet/peliculas_pendientes_de_revision.html"> Películas pendientes de revisión </option>
+                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Nuevas solicitudes de alta </option>
                         </optgroup> 
                         <hr>
                         <optgroup label="Administración Usuarios">
-                            <option value="../intranet/gestion_de_perfil_roles.html">
-                                Gestión de perfil y roles
-                            </option>
-                            <option value="../intranet/nuevo_perfil.html">
-                                Crear nuevo perfil
-                            </option>
+                            <option value="../intranet/gestion_de_perfil_roles.html">Gestión de perfil y roles</option>
+                            <option value="../intranet/nuevo_perfil.html">Crear nuevo perfil</option>
                         </optgroup>  
                         <hr>
                         <option value="../intranet/inicio_de_sesion.html">Cerrar Sesión</option>     
                     </select>
-                </form>      
+                </form>    
             </div> 
         </div>
     </header>
-
-<!------FIN DE HEADER------------------------------------------------------------------------------------->
-    
-    <!-- CONTENIDO PRINCIPAL -->
+<!-----------------------FIN DE HEADER------------------------------------------------------------------------------------->
     <main class="main">
+<!------------------------------------------------------------------------------------------->
         <div class="contenedor-tarjetas">
             <section class="Tarjeta">
                 <h3>ELIMINAR PELICULA</h3>
                 <p>¿Seguro que desea eliminar esta pelicula?</p>
-                
-                <!-- Corregido: Se eliminó el atributo align="left" obsoleto en HTML5 para evitar fallas semánticas -->
-                <img src="../recursos/imagenes/iconos/claqueta.png" width="100" height="100" alt="Icono Película">
+                <img class="claqueta" src="../recursos/imagenes/iconos/claqueta.png"  alt="Icono Película">
                 
                 <p> Título: Nombre de la película</p>
                 <div class="botones-inferiores">
-                    <div class="guardar_accion">
-                        <!-- Corregido: Método pedagógico inyectado mediante onclick sin alterar la clase btn-gris de tu compañera -->
-                        <button type="button" class="btn-gris" onclick="confirmarEliminacion()">ELIMINAR</button>
-                    </div>
                     <div class="modificables">
-                        <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Cancelar</a>
+                        <button type="button" class="btn-gris" onclick="confirmarEliminacion()">ELIMINAR</button>
+                        <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">CANCELAR</a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-   
-  <!-- -------------FOOTER------------------>
-
-    <footer class="footer">
+<!-------------FOOTER------------------------------------------------------------------------------>
+   <footer class="footer">
         <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
             Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
     </footer>
-
 </body>
 </html>

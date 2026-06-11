@@ -114,7 +114,7 @@
                     <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18" required>
                 </div>
 
-                <div class="grupoCampo">
+                <div class="campoDoble">
                     <label for="Reparto">Reparto:</label>
                     <div class="repartoContenedor">
                         <select name="reparto" id="Reparto">
@@ -131,14 +131,14 @@
                     <textarea id="sinopsis" name="sinopsis_peli" rows="4" placeholder="Escribe aquí el resumen de la trama..."></textarea>
                 </div>
 
-                <div class="grupoCampoArchivo">
+                <div class="campoDoble">
                     <label for="video-upload">Tráiler:</label>
                     <div class="subir-archivo">
                         <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
                     </div>
                 </div>
 
-                <div class="grupoCampoArchivo">
+                <div class="campoDoble">
                     <label for="Poster">Cargar Póster:</label>
                     <div class="subir-archivo">
                         <input type="file" id="poster" name="poster_image" accept="image/*" required>
@@ -146,25 +146,21 @@
                 </div>
 
                 <div class="botones-inferiores">
-                    <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="button" class="btn-gris"  onclick="limpiarFormulario()">Restablecer</button>
-                    <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
+                    <div class="modificables">
+                        <button type="submit" class="btn-gris">Guardar Cambios</button>
+                        <button type="button" class="btn-gris"  onclick="limpiarFormulario()">Restablecer</button>
+                        <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
+                    </div>
                 </div>
-
             </form>
         </div>
     </main>
 <!-------------FOOTER------------------------------------------------------------------------------>
-    <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
+   <footer class="footer">
+        <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
             Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
-
     </footer>
 </body>
 </html>

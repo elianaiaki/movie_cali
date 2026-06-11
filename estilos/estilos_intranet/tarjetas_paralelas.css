@@ -79,7 +79,10 @@
     
     object-fit: cover;
 }
-
+.claqueta {
+    width: 100px;
+    height: 100px;
+}
 .imagen-contenedor .img-principal {
     width: 75%;
 }

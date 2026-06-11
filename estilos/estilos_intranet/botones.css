@@ -37,13 +37,20 @@
 
 .botones-inferiores {
     display: flex;            /* Activa Flexbox */
-    flex-direction: row;      /* coloca uno al lado del otro */
+    flex-direction: column;      /* coloca uno al lado del otro */
     align-items: center;      /* Centra verticalmente los botones y el checkbox */
     margin-top: 20px;
     padding-top: 20px;
-    flex-wrap: wrap;
     gap: 15px;
 
+}
+.guardar_accion, 
+.modificables, 
+.accion_publicar {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Centra el contenido de cada fila */
+    gap: 15px;                /* Espacio de separación entre botones de la misma fila */
 }
 
 /* -------LOS BOTONES:-----------------*/
@@ -52,13 +59,16 @@
     text-decoration: none;
     background-color: #444;
     color: #ddd;
+    border: 1px solid #000000;
     border-radius: 4px; 
     padding: 12px 24px;       
     font-size: 14px;          
     font-weight: bold;
-    display: inline-block;   
+    display: inline-block;  
+    text-align: center; 
     margin-right: 15px;
     width: 120px;
+    border: none;
 }
 
 .btn-gris:hover {

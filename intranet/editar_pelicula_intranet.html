@@ -10,31 +10,24 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <!--Script-->
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
-
     <script src="../scripts/validaciones.js"></script>
     <script src="../scripts/intranet_scripts/validacionesEditarPelicula.js"></script>
 </head>
-
-<body onload="asociarValidacion()">
- 
 <!------------------------------------------------------------------------------------------->
+<body onload="asociarValidacion()">
     <!-- HEADER -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
-
         <!-- BUSCADOR -->
         <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
+            <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
-
         <!-- PERFIL -->
         <div class="perfil" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
@@ -46,31 +39,21 @@
                         <option value="../intranet/mi_perfil.html">Mi perfil</option>
                         <hr>
                         <optgroup label="Gestión de Películas">
-                            <option value="../intranet/peliculas_pendientes_de_revision.html">
-                                Películas pendientes de revisión
-                            </option>
-                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
-                                Nuevas solicitudes de alta
-                            </option>
+                            <option value="../intranet/peliculas_pendientes_de_revision.html">Películas pendientes de revisión</option>
+                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Nuevas solicitudes de alta</option>
                         </optgroup> 
                         <hr>
                         <optgroup label="Administración Usuarios">
-                            <option value="../intranet/gestion_de_perfil_roles.html">
-                                Gestión de perfil y roles
-                            </option>
-                            <option value="../intranet/nuevo_perfil.html">
-                                Crear nuevo perfil
-                            </option>
+                            <option value="../intranet/gestion_de_perfil_roles.html">Gestión de perfil y roles</option>
+                            <option value="../intranet/nuevo_perfil.html">Crear nuevo perfil</option>
                         </optgroup>  
                         <hr>
                         <option value="../intranet/inicio_de_sesion.html">Cerrar Sesión</option>     
                     </select>
-                </form>      
+                </form>  
             </div> 
         </div>
-        </div>
     </header>
-
 <!-----------------------FIN DE HEADER--------------------------------------------------------->
     <main class="main">
         <div class="contenedor-panel">
@@ -130,7 +113,7 @@
                     <input type="text" id="calificacion_pelicula" class="inputTexto" placeholder="8.5">
                 </div>
 
-                <div class="grupoCampo">
+                <div class="grupoCampoArchivo">
                     <label for="Plataformas_disponibles">Plataformas:</label>
                     <div class="subir-archivo">
                         <input type="file" id="plataformas_disponibles" class="inputTexto" name="plataformas_disponibles" accept="image/*" required>
@@ -142,7 +125,7 @@
                     <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18" required>
                 </div>
 
-                <div class="grupoCampo">
+                <div class="campoDoble">
                     <label for="Reparto">Reparto:</label>
                     <div class="repartoContenedor">
                         <select name="reparto" id="Reparto">
@@ -159,14 +142,14 @@
                     <textarea id="sinopsis" name="sinopsis_peli" rows="4" placeholder="Escribe aquí el resumen de la trama..." required></textarea>
                 </div>
 
-                <div class="grupoCampoArchivo">
+                <div class="campoDoble">
                     <label for="video-upload">Tráiler:</label>
                     <div class="subir-archivo">
                         <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
                     </div>
                 </div>
 
-                <div class="grupoCampoArchivo">
+                <div class="campoDoble">
                     <label for="Poster">Cargar Póster:</label>
                     <div class="subir-archivo">
                         <input type="file" id="poster" name="poster_image" accept="image/*" required>
@@ -174,9 +157,11 @@
                 </div>
 
                 <div class="botones-inferiores">
-                    <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="reset" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
-                    <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
+                    <div class="modificables">
+                        <button type="submit" class="btn-gris">Guardar Cambios</button>
+                        <button type="reset" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
+                        <a href="../intranet/peliculas_pendientes_de_revision.html" class="btn-gris">Volver</a>
+                    </div>
                 </div>
 
             </form>

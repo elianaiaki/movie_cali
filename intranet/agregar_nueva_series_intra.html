@@ -10,25 +10,28 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
-    <!--SCRIPT-->
+    <!--Script-->
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
     <script src="../scripts/validaciones.js"></script>
-    <script src="../scripts/intranet_scripts/validacionSeries.js"></script>
-
-    
+    <script src="../scripts/intranet_scripts/validacionSeries.js"></script> 
 </head>
-
+<!-------------------------------------------------------------------------------------->
 <body onload="asociarValidacion()">
+    <!-- HEADER -->
     <header class="header">
+        <!-- LOGO -->
         <div class="logo">
             <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
+         <!-- BUSCADOR -->
         <form class="buscador">
             <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
+        <!-- PERFIL -->
         <div class="perfil" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+            <!-- DESPLEGABLE -->
             <div class="desplegable">
                 <form>
                     <select name="desplegable" id="desplegable" onchange="navegarMenu(this)">
@@ -51,15 +54,15 @@
             </div> 
         </div>
     </header>
-<!----------------- PANEL ---------------------->
+<!---------------------FIN DE HEADER-------------------------------->
     <main class="main">
         <div class="contenedor-panel">
             <div class="Panel">
-                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
+                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio">
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
-<!---------------FIN PANEL ---------------------->
+<!------------------------------------------------------------------>
         <h1>+ AGREGAR NUEVA SERIE</h1>
 
         <div class="contenedorFormulario">
@@ -119,7 +122,7 @@
                     </div>
                 </div>
 
-                <div class="grupoCampoMitad campoDoble">
+                <div class="campoDoble">
                     <label for="Reparto">Reparto:</label>
                     <div class="repartoContenedor">
                         <select name="reparto" id="Reparto">
@@ -131,19 +134,19 @@
                     </div>
                 </div>
 
-                <div class="grupoCampoCompleto campoCompleto">
+                <div class="grupoCampoCompleto">
                     <label for="sinopsis">Sinopsis:</label>
                     <textarea id="sinopsis" name="sinopsis_serie" rows="4" placeholder="Escribe aquí el resumen de la trama..." required></textarea>
                 </div>
 
-                <div class="grupoCampoArchivo campoDoble">
+                <div class="campoDoble">
                     <label for="video-upload">Tráiler:</label>
                     <div class="subirArchivo">
                         <input type="file" id="video-upload" name="video_numero" accept="video/*" required>
                     </div>
                 </div>
 
-                <div class="grupoCampoArchivo campoDoble">
+                <div class="campoDoble">
                     <label for="poster">Cargar Póster:</label>
                     <div class="subirArchivo">
                         <input type="file" id="poster" name="poster_image" accept="image/*" required>
@@ -151,20 +154,17 @@
                 </div>
 
                 <div class="botones-inferiores">
-                    <button type="submit" class="btn-gris">Guardar Cambios</button>
-                    <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
-                    <a href="../intranet/series_pendientes_de_revision_intra.html" class="btn-gris">Volver</a>
+                    <div class="modificables">
+                        <button type="submit" class="btn-gris">Guardar Cambios</button>
+                        <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>
+                        <a href="../intranet/series_pendientes_de_revision_intra.html" class="btn-gris">Volver</a>
+                    </div>
                 </div>
 
             </form>
         </div>
     </main>
-
-    <br>
-    <br>
-    <br>
-    <!------------------------------------------------------------------------------------------->
-    <!-- FOOTER -->
+<!---------------FOOTER---------------------------------------------------------------------------->
     <footer class="footer">
         <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
