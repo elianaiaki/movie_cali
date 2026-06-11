@@ -10,45 +10,15 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/contenedor_tabla_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <!--SCRIPT-->
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
     <script src="../scripts/validaciones.js"></script>
     <script src="../scripts/intranet_scripts/validacionSeries.js"></script>
-
-    <!-- INYECCIÓN DE ESTILOS LOCALES PARA ADAPTAR EL DISEÑO A LA MAQUETA DE 4 COLUMNAS SIN DAÑO COLATERAL -->
-    <style>
-        /* Forzamos que la cuadrícula de este formulario tenga 4 columnas iguales como tu maqueta */
-        #formAgregar {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr) !important;
-            gap: 20px;
-        }
-
-        /* Campos anchos o bloques especiales que deben tomar el doble de espacio (2 columnas) */
-        .campoDoble {
-            grid-column: span 2 !important;
-        }
-
-        /* Campos de ancho completo (las 4 columnas enteras) */
-        .campoCompleto, .botones-inferiores {
-            grid-column: span 4 !important;
-        }
-
-        /* Alineamos la botonera horizontalmente al extremo inferior derecho como en tu dibujo */
-        .botones-inferiores {
-            display: flex !important;
-            flex-direction: row !important;
-            justify-content: flex-end !important;
-            gap: 15px;
-            margin-top: 20px;
-        }
-    </style>
 
     
 </head>
 
 <body onload="asociarValidacion()">
-   
-    <!-- HEADER COMPARTIDO -->
     <header class="header">
         <div class="logo">
             <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
@@ -81,8 +51,7 @@
             </div> 
         </div>
     </header>
-
-    <br>
+<!----------------- PANEL ---------------------->
     <main class="main">
         <div class="contenedor-panel">
             <div class="Panel">
@@ -90,6 +59,7 @@
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
+<!---------------FIN PANEL ---------------------->
         <h1>+ AGREGAR NUEVA SERIE</h1>
 
         <div class="contenedorFormulario">
@@ -97,7 +67,6 @@
             
             <form id="formAgregar" action="../intranet/series_pendientes_de_revision_intra.html" method="get">
                 
-                <!-- FILA 1 DE LA MAQUETA: 4 CAMPOS SIMÉTRICOS -->
                 <div class="grupoCampo">
                     <label for="titulo_serie">Título:</label>
                     <input type="text" id="titulo_serie" class="inputTexto" placeholder="Título de la serie" required>
@@ -118,7 +87,6 @@
                     <input type="text" id="duracion_serie" class="inputTexto" placeholder="30 min" required>
                 </div>
 
-                <!-- FILA 2 DE LA MAQUETA: 4 CAMPOS SIMÉTRICOS -->
                 <div class="grupoCampo">
                     <label for="director">Director:</label>
                     <input type="text" id="director" class="inputTexto" placeholder="Shari Springer Berman" required>
@@ -139,7 +107,6 @@
                     <input type="text" id="cantidad_temporadas" class="inputTexto" placeholder="Cant_temporadas" required>
                 </div>
 
-                <!-- FILA 3 DE LA MAQUETA: COMBINACIÓN DE SELECCIÓN DE ARCHIVOS -->
                 <div class="grupoCampo">
                     <label for="clasificacion_edad">Clasificación por Edad:</label>
                     <input type="text" id="clasificacion_edad" class="inputTexto" placeholder="+18" required>
@@ -148,7 +115,6 @@
                 <div class="grupoCampoArchivo">
                     <label for="icons_plataforma">Plataformas (Icono):</label>
                     <div class="subirArchivo">
-                        <!-- Saneado: Sin clase inputTexto para evitar que se deforme el botón nativo -->
                         <input type="file" id="icons_plataforma" name="icons_plataforma" accept="image/*" required>
                     </div>
                 </div>
@@ -165,7 +131,6 @@
                     </div>
                 </div>
 
-                <!-- FILA 4 DE LA MAQUETA: BLOQUES ANCHOS DE TEXTO Y CARGA MULTIMEDIA -->
                 <div class="grupoCampoCompleto campoCompleto">
                     <label for="sinopsis">Sinopsis:</label>
                     <textarea id="sinopsis" name="sinopsis_serie" rows="4" placeholder="Escribe aquí el resumen de la trama..." required></textarea>
@@ -185,7 +150,6 @@
                     </div>
                 </div>
 
-                <!-- BOTONERA INFERIOR EN FILA ALINEADA A LA DERECHA -->
                 <div class="botones-inferiores">
                     <button type="submit" class="btn-gris">Guardar Cambios</button>
                     <button type="button" class="btn-gris" onclick="limpiarFormulario()">Restablecer</button>

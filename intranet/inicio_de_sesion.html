@@ -11,45 +11,10 @@
     
     <!-- CONEXION CON JS -->
     <script src="../scripts/validaciones.js"></script>
+    <script src="../scripts/intranet_scripts/asociarValidacionInicio.js"></script>
 
-    <script>
-
-        function asociarValidacion(){
-
-        const formulario = document.getElementById("inicio_de_sesion");
-
-            formulario.addEventListener("submit", function(event){
-
-                event.preventDefault();
-
-                const usuario = document.getElementById("usuario").value;
-                const contrasenia = document.getElementById("contrasenia").value;
-
-                let errores = "";
-
-                if(!usuarioValido(usuario) && !correoValido(usuario)){
-                    errores += "- Usuario o correo inválido\n";
-                }
-
-                if(!contraseniaValida(contrasenia)){
-                    errores += "- Contraseña inválida\n";
-                }
-
-                if(errores !== ""){
-                    alert("Se encontraron los siguientes errores:\n\n" + errores);
-                    return;
-                }
-
-                alert("Inicio de sesión correcto");
-
-                formulario.submit();
-
-            });
-
-        }
-    </script>
 </head>
-
+<!------------------------------------------------------------------------------------------->
 <body class="body" onload="asociarValidacion()">
     <!-- HEADER -->
     <header class="header">
@@ -60,9 +25,9 @@
         
     </header>
 
-   <!-- FIN DE HEADER-->
+   
 <!------------------------------------------------------------------------------------------->
-    <hr>
+    
     <main class="diseno-login"> 
         <section class="carta-login">
             <h2>INICIO DE SESION</h2>
@@ -70,7 +35,7 @@
 
                 <!-- Usuario -->
                 <div>
-                    <label>USUARIO / CORREO ELECTRONICO</label><br>
+                    <label>USUARIO / CORREO ELECTRONICO</label>
                     <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" width="20" height="20" style="vertical-align: middle;">
                     <input id="usuario" name="usuario" type="text" required style="width: 250px;">
                 </div>

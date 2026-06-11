@@ -9,55 +9,11 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/inicio_intranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
 
-    <script src="../scripts/validaciones.js"></script><!-- CONEXION CON JS -->  
-
-    <script>
-        function asociarValidacion(){
-
-        const formulario = document.getElementById("recuperar_contrasenia");
-
-            formulario.addEventListener("submit", function(event){
-
-                event.preventDefault();
-
-                const usuario = document.getElementById("usuario").value;
-
-                const contrasenia = document.getElementById("contrasenia").value;
-
-                const repetirContrasenia = document.getElementById("repetirContrasenia").value;
-
-                let errores = "";
-
-                if(!usuarioValido(usuario) && !correoValido(usuario)){
-                    errores += "- Usuario o correo inválido\n";
-                }
-
-                if(!contraseniaValida(contrasenia)){
-                    errores += "- Contraseña inválida\n";
-                }
-
-                if(contrasenia !== repetirContrasenia){
-                    errores += "- Las contraseñas no coinciden\n";
-                }
-
-                if(errores !== ""){
-                    alert("Se encontraron los siguientes errores:\n\n" + errores);
-                    return;
-                }
-
-                alert("Contraseña actualizada correctamente");
-
-                formulario.submit();
-
-            });
-
-        }
-
-        window.addEventListener("load", asociarValidacion);
-    </script>
+    <script src="../scripts/validaciones.js"></script>
+    <script src="../scripts/intranet_scripts/recuperarContraseña.js"></script>
 </head>
 
-<body class="body">
+<body onload="asociarValidacion()">
     <!-- HEADER -->
     <header class="header">
         <!--LOGO-->
@@ -67,9 +23,6 @@
         
     </header>
 
-   <!-- FIN DE HEADER-->
-<!------------------------------------------------------------------------------------------->
-    <hr>
     <main class="diseno-login"> 
         <section class="carta-login">
             <h2>RECUPERAR CONTRASEÑA</h2>
