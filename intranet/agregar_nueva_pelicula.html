@@ -11,30 +11,23 @@
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <!-- script -->
-     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+    <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
     <script src="../scripts/validaciones.js"></script>
     <script src="../scripts/intranet_scripts/validacionPelicula.js"></script>
 </head>
-
+<!-------------------------------------------------------------------------------------->
 <body onload="asociarValidacion()">
-  
-<!------------------------------------------------------------------------------------------->
     <!-- HEADER -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png"
-                alt="Logo MovieCali">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
-
         <!-- BUSCADOR -->
         <form class="buscador">
-            <input type="text"
-                placeholder="Buscar películas, series...">
-
+            <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
-
         <!-- PERFIL -->
         <div class="perfil" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
@@ -46,21 +39,13 @@
                         <option value="../intranet/mi_perfil.html">Mi perfil</option>
                         <hr>
                         <optgroup label="Gestión de Películas">
-                            <option value="../intranet/peliculas_pendientes_de_revision.html">
-                                Películas pendientes de revisión
-                            </option>
-                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">
-                                Nuevas solicitudes de alta
-                            </option>
+                            <option value="../intranet/peliculas_pendientes_de_revision.html"> Películas pendientes de revisión </option>
+                            <option value="../intranet/nuevas_solicitudes_de_alta_peliculas.html">Nuevas solicitudes de alta </option>
                         </optgroup> 
                         <hr>
                         <optgroup label="Administración Usuarios">
-                            <option value="../intranet/gestion_de_perfil_roles.html">
-                                Gestión de perfil y roles
-                            </option>
-                            <option value="../intranet/nuevo_perfil.html">
-                                Crear nuevo perfil
-                            </option>
+                            <option value="../intranet/gestion_de_perfil_roles.html">Gestión de perfil y roles</option>
+                            <option value="../intranet/nuevo_perfil.html">Crear nuevo perfil</option>
                         </optgroup>  
                         <hr>
                         <option value="../intranet/inicio_de_sesion.html">Cerrar Sesión</option>     
@@ -69,20 +54,17 @@
             </div> 
         </div>
     </header>
-
-    <br>
 <!---------------------FIN DE HEADER-------------------------------->
-  <main class="main">
+    <main class="main">
         <div class="contenedor-panel">
             <div class="Panel">
-                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
+                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio">
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
 <!------------------------------------------------------------------------------------------->
         <div class="contenedorFormulario">
             <h2>Agregar Pelicula</h2>
-            
             <form id="formAgregar" action="../intranet/peliculas_pendientes_de_revision.html" method="get">
                 
                 <div class="grupoCampo">
@@ -173,7 +155,6 @@
         </div>
     </main>
 <!-------------FOOTER------------------------------------------------------------------------------>
-    <!-- FOOTER -->
     <footer class="footer">
 
         <p class="titulo-footer">
