@@ -26,18 +26,20 @@
 .tarjeta-contenido {
     background-color:#1a3a5c;
     border: 1px solid #000;
-    border-radius: 12px;       /* Bordes curvos de la maqueta */
+    border-radius: 12px;       /* Bordes */
     padding: 20px;
     box-sizing: border-box;
     color: #ddd;
     align-items: center;      /* Centra horizontalmente todo el contenido interno */
     text-align: center;
-}
-    
+} 
 /* ==========================================================================
    IMAGENES
    ========================================================================== */
-
+.tarjeta-contenido img {
+    width: 70px;
+    height: auto;
+}   
 
 .icono_pelicula {
     width: 50px;

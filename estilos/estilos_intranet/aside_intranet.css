@@ -30,7 +30,10 @@ aside h2 {
     object-fit: cover;
     border-radius: 4px;
 }
-
+.item-aside .iconPerfil {
+    width: 70px;
+    height: 70px;
+}
 .Rol {
     color: #e05a5a;
     font-size: 11px;

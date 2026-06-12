@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>ELIMINAR PERFIL</title>
-    <!-- Mantenemos tus estilos locales e incorporamos la hoja de tarjetas de tu compañera -->
     <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panel_intranet.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/tarjetas_paralelas.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botones.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <!--Script-->
     <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
     <script src="../scripts/intranet_scripts/confirmarEliminacionPerfil.js"></script>
 </head>
-
+<!------------------------------------------------------------------------------------------->
 <body>
-
-    <!-- HEADER COMPARTIDO -->
+    <!-- HEADER -->
     <header class="header">
+        <!-- LOGO -->
         <div class="logo">
             <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
         </div>
-
+        <!-- BUSCADOR -->
         <form class="buscador">
             <input type="text" placeholder="Buscar películas, series...">
             <button>🔍</button>
         </form>
-
+        <!-- PERFIL -->
         <div class="perfil" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+            <!-- DESPLEGABLE -->
             <div class="desplegable">
                 <form>
                     <select name="desplegable" id="desplegable" onchange="navegarMenu(this)">
@@ -52,29 +53,21 @@
             </div> 
         </div>
     </header>
-
-    <!-- CONTENIDO PRINCIPAL -->
+<!-----------------------FIN DE HEADER--------------------------------------------------------->
     <main class="main">
         <div class="contenedor-panel">
             <div class="Panel">
-                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" width="30" height="30">
+                <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio">
                 <a href="../intranet/panel.html">PANEL</a>
             </div>
         </div>
-
-        <!-- Contenedor para centrar la tarjeta flotante en la pantalla -->
+<!------------------------------------------------------------------------------------------->
         <div class="contenedor-tarjetas">
-            
-            <!-- Adoptamos la clase Tarjeta para heredar el fondo azul y el sombreado de la captura -->
             <section class="Tarjeta">
                 <h3>ELIMINAR PERFIL</h3>
                 <p>¿Seguro que desea eliminar este Perfil?</p>
-
-                <!-- Imagen del usuario centrada como el icono de la claqueta -->
-                <img src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil" width="100" height="100">
-
-                <!-- Bloque de datos -->
-                <div style="text-align: left; margin: 20px auto; width: fit-content; line-height: 1.6; font-size: 0.95rem;">
+                <img class="claqueta" src="../recursos/imagenes/iconos/perfil.png" alt="Foto de perfil">
+                <div>
                     <p><strong>NOMBRE:</strong> Usuario_123</p>
                     <p><strong>ID:</strong> 85461</p>
                     <p><strong>ROL:</strong> ADMINISTRATIVO</p>
@@ -83,27 +76,21 @@
                 </div>
 
                 <div class="botones-inferiores">
-                    <div class="guardar_accion">
-                        <button type="button" class="btn-gris" style="width: 120px;" onclick="confirmarEliminacionPerfil()">ELIMINAR</button>
-                    </div>
                     <div class="modificables">
-                        <a href="../intranet/gestion_de_perfil_roles.html" class="btn-gris" style="width: 120px;">CANCELAR</a>
+                        <button type="button" class="btn-gris" onclick="confirmarEliminacionPerfil()">ELIMINAR</button>
+                        <a href="../intranet/gestion_de_perfil_roles.html" class="btn-gris">CANCELAR</a>
                     </div>
                 </div>
             </section>
-            
         </div>
     </main>
-
-  <!-- -------------FOOTER------------------>
-    <!-- FOOTER -->
-    <footer class="footer">
+<!-------------FOOTER------------------------------------------------------------------------------>
+   <footer class="footer">
         <p class="titulo-footer">Desarrollado por:</p>
         <p class="nombres-footer">
             Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez
         </p>
     </footer>
-
 </body>
 </html>
 

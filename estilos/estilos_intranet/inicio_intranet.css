@@ -10,10 +10,9 @@
     max-width: 350px;
     border: 1px solid black;
     padding: 50px;
-    
 }
 
-/*---- contendor "olvidaste tu contraseña" -----*/
+/*---- CONTENEDOR "olvidaste tu contraseña" -----*/
 .contenedor-olvido {
     margin-bottom: 20px;
     width: 270px;
@@ -49,8 +48,6 @@
     
 }
 
-
-
 .boton-inicio:hover, .boton-cancelar:hover {
     background-color: #003366; /* Cambio de color al pasar el mouse */
 }
@@ -58,4 +55,10 @@
 /*Agrega espacio entre usuario y contraseña en el inicio*/
 .carta-login div {
     margin-bottom: 15px;
+}
+
+.iconosVarios {
+    width:20px;
+    height:20px;
+    vertical-align: middle;
 }
