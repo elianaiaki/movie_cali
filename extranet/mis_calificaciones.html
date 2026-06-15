@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis calificaciones</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="../estilos/body.css">
     <link rel="stylesheet" href="../estilos/header.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
+    <link rel="stylesheet"href="../estilos/estilos_extranet/estilos_comunes_extranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mis_calificaciones.css">
     <script src="../scripts/header.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 
@@ -41,7 +44,7 @@
 
         <!-- usuario registrado-->
         <!-- PERFIL -->
-        <div class="perfil" id="perfilBtn">
+        <div class="perfil-usuario" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
 
             <div class="perfil-info">
@@ -60,286 +63,282 @@
         </div>
     </header>
 
-    <hr>
     <!-- FIN DE HEADER-->
     <!------------------------------------------------------------------------------------------->
     <!-- CONTENEDOR GENERAL -->
-    <!-- CONTENEDOR GENERAL -->
     <br>
-    <div class="fila">
-        <!-- MAIN -->
-        <main>
-            <!-- MIS CALIFICACIONES-->
-            <section class="seccion">
-                <div class="titulo-seccion">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MAIN -->
+            <main class="col-12 col-lg-9">
+                <!-- MIS CALIFICACIONES-->
+                <section class="seccion">
+                    <div class="titulo-seccion">
+                        <div>
+                            <h2> Mis Calificaciones ▶</h2>
+                        </div>
+                    </div>
+
+                    <!-- FILTROS-->
                     <div>
-                        <h2> Calificaciones ▶</h2>
+                        <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
+                        <label>Ordenar por:</label>
+                        <select>
+                            <option>Más reciente</option>
+                            <option>Mejor calificacion</option>
+                            <option>Título</option>
+                        </select>
                     </div>
-                </div>
+                </section>
 
-                <!-- FILTROS-->
-                <div>
-                    <a href="./catalogo_peliculas_usser.html">Explorar mas peliculas</a>
-                    <label>Ordenar por:</label>
-                    <select>
-                        <option>Más reciente</option>
-                        <option>Mejor calificacion</option>
-                        <option>Título</option>
-                    </select>
-                </div>
-            </section>
+                <!-- EXCELENTES -->
+                <section>
+                    <h3>EXCELENTES</h3>
+                    <div class="d-flex flex-wrap gap-3">
 
-            <!-- EXCELENTES -->
-            <section>
-                <h3>EXCELENTES</h3>
-                <div class="d-flex flex-wrap gap-3">
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/elGuardian.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL GUARDIÁN</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                            </div>
+                        </div>
 
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                    <img src="../recursos/imagenes/peliculas/elGuardian.jpg" class="card-img-top" alt="El Guardián" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL GUARDIÁN</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/theCut.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">THE CUT</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                    <img src="../recursos/imagenes/peliculas/theCut.jpg" class="card-img-top" alt="The Cut" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">THE CUT</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                <!-- MUY BUENAS -->
+                <section>
+                    <h3>MUY BUENAS</h3>
+
+                    <div class="d-flex flex-wrap gap-3">
+
+                        <!-- Película 1 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/comoCabras.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">COMO CABRAS</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                            </div>
+                        </div>
+
+                        <!-- Película 2 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/exitProtocol.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">EXIT PROTOCOL</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
+                            </div>
+                        </div>
+
+                        <!-- Película 3 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/londonCalling.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">LONDON CALLING</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
+                            </div>
+                        </div>
+
+                        <!-- Película 4 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">SUPER MARIO GALAX</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
+                            </div>
+                        </div>
+
+                        <!-- Película 5 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">YA NO QUEDAN JUNGLAS</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- MUY BUENAS -->
-            <section>
-                <h3>MUY BUENAS</h3>
+                <!-- BUENAS -->
+                <section>
+                    <h3>BUENAS</h3>
 
-                <div class="d-flex flex-wrap gap-3">
-
-                    <!-- Película 1 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/comoCabras.jpg" class="card-img-top" alt="Como Cabras" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">COMO CABRAS</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
-                        </div>
-                    </div>
-
-                    <!-- Película 2 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/exitProtocol.jpg" class="card-img-top" alt="Exit Protocol" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">EXIT PROTOCOL</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
-                        </div>
-                    </div>
-
-                    <!-- Película 3 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/londonCalling.jpg" class="card-img-top" alt="London Calling" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">LONDON CALLING</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
-                        </div>
-                    </div>
-
-                    <!-- Película 4 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" class="card-img-top" alt="Super Mario Galaxy" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">SUPER MARIO GALAX</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
-                        </div>
-                    </div>
-
-                    <!-- Película 5 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" class="card-img-top" alt="Ya No Quedan Junglas" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">YA NO QUEDAN JUNGLAS</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación:</b> 7.8 / 10</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- BUENAS -->
-            <section>
-                <h3>BUENAS</h3>
-
-                <div class="d-flex flex-wrap gap-3">
-
-                    <!-- Película 1 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/losHermanosDemolicion.jpg" class="card-img-top" alt="Los Hermanos Demolicion" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">LOS HERMANOS DEMOLICION</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
-                        </div>
-                    </div> 
-
-                    <!--PELICULA 2-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/signing_day.jpg" class="card-img-top" alt="Signing Day" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">SIGNING DAY</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
-                        </div>
-                    </div>
-
-                    <!--PELICULA 3-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/elBotin.jpg" class="card-img-top" alt="El Botin" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">EL BOTÍN</p>
-                            <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
-                        </div>
-                    </div>
-
-                    <!--PELICULA 4-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/parqueLezama.jpg" class="card-img-top" alt="Parque Lezama" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">PARQUE LEZAMA</p>
-                            <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
-                        </div>
-                    </div>
-
-                    <!--PELICULA 5-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/paradiseBrothers.jpg" class="card-img-top" alt="Paradise Brothers" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">PARADISE BROTHERS</p>
-                            <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
-                        </div>
-                    </div>
-
-                    <!--PELICULA 6-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/engaño.jpg" class="card-img-top" alt="Engaño" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">ENGAÑO</p>
-                            <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
-                        </div>
-                    </div>
-
-                    <!--PELICULA 7-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/soloMio.jpg" class="card-img-top" alt="Solo Mio" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">SOLO MÍO</p>
-                            <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
-                        </div>
-                    </div>
-
-                    <!--PELICULA 8-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <div class="card-body p-2">
-                            <img src="../recursos/imagenes/peliculas/giantsFall.jpg" class="card-img-top" alt="The Giant Falls"style="height:220px; object-fit:cover;">
-                            <p class="card-title text-white" style="font-size:0.75rem;">THE GIANT FALLS</p>
-                            <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- REGULAR O MENOS -->
-            <section>
-                <h3>REGULAR O MENOS</h3>
-
-                <div class="d-flex flex-wrap gap-3">
-                    
-                    <!-- Película 1 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/cortafuego.jpg" class="card-img-top" alt="Cortafuego" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">CORTAFUEGO</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
-                        </div>
-                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                        <!-- Película 1 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/losHermanosDemolicion.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">LOS HERMANOS DEMOLICION</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                            </div>
+                        </div> 
 
                         <!--PELICULA 2-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/cortaFuegoFirewall.jpg" class="card-img-top" alt="Cortafuego II" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">CORTAFUEGO II</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/signing_day.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">SIGNING DAY</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!--PELICULA 3-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/zeta.jpg" alt="Zeta" width="150" height="220">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white" style="font-size:0.75rem;">ZETA</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                        <!--PELICULA 3-->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/elBotin.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">EL BOTÍN</p>
+                                <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
+                            </div>
+                        </div>
+
+                        <!--PELICULA 4-->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/parqueLezama.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">PARQUE LEZAMA</p>
+                                <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
+                            </div>
+                        </div>
+
+                        <!--PELICULA 5-->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/paradiseBrothers.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">PARADISE BROTHERS </p>
+                                <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10 </p>
+                            </div>
+                        </div>
+
+                        <!--PELICULA 6-->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/engaño.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">ENGAÑO</p>
+                                <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
+                            </div>
+                        </div>
+
+                        <!--PELICULA 7-->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/soloMio.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">SOLO MÍO</p>
+                                <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
+                            </div>
+                        </div>
+
+                        <!--PELICULA 8-->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/giantsFall.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">THE GIANT FALLS</p>
+                                <p class="card-title text-white" style="font-size:0.75rem;">Calificación: 6.7 / 10</p>
+                            </div>
                         </div>
                     </div>
+                </section>
+
+                <!-- REGULAR O MENOS -->
+                <section>
+                    <h3>REGULAR O MENOS</h3>
+                    <div class="d-flex flex-wrap gap-3">
+                        
+                        <!-- Película 1 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/cortafuego.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">CORTAFUEGO</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                            </div>
+                        </div>
+
+                            <!--PELICULA 2-->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/cortaFuegoFirewall.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">CORTAFUEGO II</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                            </div>
+                        </div>
+
+                        <!--PELICULA 3-->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/zeta.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white" style="font-size:0.75rem;">ZETA</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.8 / 10</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-------------------------------------------------------------------------------------------->
+            <!-- INICIO ASIDE (sugerencias) -->
+            <aside class="col-12 col-lg-3">
+                <h2>SUGERENCIAS PARA TI</h2>
+
+                <!-- ITEM 1 -->
+                <div class="item-aside">
+                    <p class="genero">ROMANCE</p>
+                    <h3>CUMBRES BORRASCOSAS</h3>
+                    <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                    <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
                 </div>
-            </section>
-        </main>
-        <!-- FIN MAIN -->
-        <!-------------------------------------------------------------------------------------------
-        <!-------------------------------------------------------------------------------------------->
-        <!-- INICIO ASIDE (sugerencias) -->
-        <aside>
-            <h2>SUGERENCIAS PARA TI</h2>
 
-            <!-- ITEM 1 -->
-            <div class="item-aside">
-                <p class="genero">ROMANCE</p>
-                <h3>CUMBRES BORRASCOSAS</h3>
-                <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
-                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
-                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
-            </div>
+                <hr>
 
-            <hr>
+                <!-- ITEM 2 -->
+                <div class="item-aside">
+                    <p class="genero">TERROR</p>
+                    <h3>WEAPONS</h3>
+                    <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
+                    <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                    <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+                </div>
 
-            <!-- ITEM 2 -->
-            <div class="item-aside">
-                <p class="genero">TERROR</p>
-                <h3>WEAPONS</h3>
-                <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
-                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
-                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
-            </div>
+                <hr>
 
-            <hr>
+                <!-- ITEM 3 -->
+                <div class="item-aside">
+                    <p class="genero">COMEDIA</p>
+                    <h3>NOVOCAINE</h3>
+                    <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
+                    <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                    <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+                </div>
 
-            <!-- ITEM 3 -->
-            <div class="item-aside">
-                <p class="genero">COMEDIA</p>
-                <h3>NOVOCAINE</h3>
-                <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
-                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
-                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
-            </div>
+                <hr>
 
-            <hr>
+                <!-- ITEM 4 -->
+                <div class="item-aside">
+                    <p class="genero">CIENCIA FICCIÓN</p>
+                    <h3>DUNE: PART 2</h3>
+                    <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
+                    <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                    <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+                </div>
 
-            <!-- ITEM 4 -->
-            <div class="item-aside">
-                <p class="genero">CIENCIA FICCIÓN</p>
-                <h3>DUNE: PART 2</h3>
-                <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
-                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
-                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
-            </div>
+                <hr>
 
-            <hr>
-
-            <!-- ITEM 5 -->
-            <div class="item-aside">
-                <p class="genero">ANIMACIÓN</p>
-                <h3>FLOW</h3>
-                <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
-                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
-                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
-            </div>
-        </aside>
+                <!-- ITEM 5 -->
+                <div class="item-aside">
+                    <p class="genero">ANIMACIÓN</p>
+                    <h3>FLOW</h3>
+                    <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
+                    <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                    <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+                </div>
+            </aside>
+        </div>
     </div>
     <!------------------------------------------------------------------------------------------->
     <!-- FOOTER -->

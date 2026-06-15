@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi perfil</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/body.css">
     <link rel="stylesheet" href="../estilos/header.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_comunes_extranet.css">
     <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="../scripts/header.js" defer></script>
 </head>
 
@@ -41,7 +44,7 @@
 
         <!-- usuario registrado-->
         <!-- PERFIL -->
-        <div class="perfil" id="perfilBtn">
+        <div class="perfil-usuario" id="perfilBtn">
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
 
             <div class="perfil-info">
@@ -67,19 +70,19 @@
     <br>
 
     <!-- PERFIL -->
-    <section class="perfil">
-        <div class="perfil-foto">
-            <img src="../recursos/imagenes/iconos/perfil.png" width="80">
+    <section class="miperfil-usuario">
+        <div class="miperfil-foto">
+            <img src="../recursos/imagenes/iconos/perfil.png">
         </div>
 
-        <div class="perfil-info">
+        <div class="miperfil-info">
             <h2>Mi Perfil ▶</h2>
             <h1>USUARIO - 12345</h1>
             <a href="./funcionalidades_resenas/editar_mi_perfil.html">Editar perfil</a>
             <p>Miembro desde Enero 2023</p>
         </div>
 
-        <table class="perfil-resumen">
+        <table class="miperfil-resumen">
             <tr>
                 <td align="center">
                     <h2>8</h2>
@@ -105,345 +108,348 @@
 
 <!-- CONTENEDOR GENERAL -->
     <br>
-    <div class="fila">
-        <!-- MAIN -->
-        <main>
-            <!-- MIS CALIFICACIONES-->
-            <section class="seccion">
-                <div class="titulo-seccion">
-                    <div>
-                        <h2>Mis Calificaciones</h2>
-                        <h4>Tus calificaciones son publicas</h4>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MAIN -->
+            <main class="col-12 col-lg-9">
+                <!-- MIS CALIFICACIONES-->
+                <section class="seccion">
+                    <div class="titulo-seccion">
+                        <div>
+                            <h2>Mis Calificaciones</h2>
+                            <h4>Tus calificaciones son publicas</h4>
+                        </div>
+                        <a href="./mis_calificaciones.html">Ver todas</a>
                     </div>
-                    <a href="./mis_calificaciones.html">Ver todas</a>
-                </div>
-            </section>
+                </section>
 
-            <section>
+                <section>
 
-                <div class="d-flex flex-wrap gap-3">   
-                    <!-- pelicula 1-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/comocabras.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">COMO CABRAS</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                    <div class="d-flex flex-wrap gap-3">   
+                        <!-- pelicula 1-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/comocabras.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">COMO CABRAS</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                            </div>
+                        </div>
+
+                        <!-- pelicula 2-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/exitProtocol.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EXIT PROTOCOL</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                            </div>
+                        </div>
+
+                        <!-- pelicula 3-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/londonCalling.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">LONDON CALLING</p> 
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                            </div>
+                        </div>
+
+                        <!-- pelicula 4-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">SUPER MARIO GALAXY</p> 
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                            </div>
+                        </div>
+
+                        <!-- pelicula 5-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">NO QUEDAN JUNGLAS</p> 
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                            </div>
                         </div>
                     </div>
+                </section>
+                <br>
 
-                    <!-- pelicula 2-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/exitProtocol.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EXIT PROTOCOL</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                <!-- MIS PELICULAS FAVORITAS -->
+                <section class="seccion">
+                    <div class="titulo-seccion">
+                        <div>
+                            <h2>Mis Películas Favoritas</h2>
+                            <h4>Tus peliculas favoritas guardadas y organizadas</h4>
+                        </div>
+                        <a href="./mis_peliculas_favoritas.html">Ver todas</a>
+                    </div>
+
+                    <!-- CARROUSEL: peliculas favoritas -->
+                    <div class="d-flex flex-wrap gap-3">   
+                        <!-- pelicula 1-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/el_guardian.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL GUARDIAN</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+
+                        <!-- pelicula 2-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">SUPER MARIO GALAXY</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+
+                        <!-- pelicula 3-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BATMAN INICIA</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+
+                        <!-- pelicula 4-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/elJuego.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">JUEGO DE ASESINOS</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+
+                        <!-- pelicula 5-->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/juegoDeCriminales.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">JUEGO DE CRIMINALES</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
+                                <a href="#">Ver más</a>
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <!-- pelicula 3-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/londonCalling.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">LONDON CALLING</p> 
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
+                <br>
+
+                <!-- MIS RESEÑAS -->
+                <section class="seccion">
+                    <div class="titulo-seccion">
+                        <div>
+                            <h2>Mis Reseñas</h2>
+                            <h4>Todo lo que escribiste sobre las películas que viste</h4>
                         </div>
+                        <a href="./mis_resenas.html">Ver todas</a>
                     </div>
 
-                    <!-- pelicula 4-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">SUPER MARIO GALAXY</p> 
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
-                        </div>
-                    </div>
-
-                    <!-- pelicula 5-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/yaNoQuedanJunglas.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">NO QUEDAN JUNGLAS</p> 
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br>
-
-            <!-- MIS PELICULAS FAVORITAS -->
-            <section class="seccion">
-                <div class="titulo-seccion">
-                    <div>
-                        <h2>Mis Películas Favoritas</h2>
-                        <h4>Tus peliculas favoritas guardadas y organizadas</h4>
-                    </div>
-                    <a href="./mis_peliculas_favoritas.html">Ver todas</a>
-                </div>
-
-                <!-- CARROUSEL: peliculas favoritas -->
-                <div class="d-flex flex-wrap gap-3">   
-                    <!-- pelicula 1-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/el_guardian.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL GUARDIAN</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.5 / 10</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
-                            <a href="#">Ver más</a>
-                        </div>
-                    </div>
-
-                    <!-- pelicula 2-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/superMarioPelicula.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">SUPER MARIO GALAXY</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
-                            <a href="#">Ver más</a>
-                        </div>
-                    </div>
-
-                    <!-- pelicula 3-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BATMAN INICIA</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
-                            <a href="#">Ver más</a>
-                        </div>
-                    </div>
-
-                    <!-- pelicula 4-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/elJuego.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">JUEGO DE ASESINOS</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
-                            <a href="#">Ver más</a>
-                        </div>
-                    </div>
-
-                    <!-- pelicula 5-->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/juegoDeCriminales.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">JUEGO DE CRIMINALES</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Agregado: 02/03/2026</p>
-                            <a href="#">Ver más</a>
-                        </div>
-                    </div>
-
-            </section>
-
-            <br>
-
-            <!-- MIS RESEÑAS -->
-            <section class="seccion">
-                <div class="titulo-seccion">
-                    <div>
-                        <h2>Mis Reseñas</h2>
-                        <h4>Todo lo que escribiste sobre las películas que viste</h4>
-                    </div>
-                    <a href="./mis_resenas.html">Ver todas</a>
-                </div>
-
-                <!-- CARROUSEL: mis reseñas -->
-                <!-- <div class="carrusel"> -->
-                <div class="d-flex flex-wrap gap-3">
-
-                    <!-- reseña 1 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/gladiador.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">GLADIADOR</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.3 / 10</p>
-                            <p class="text-white" style="font-size:0.7rem;">"Épica en todo sentido..."</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
-                        </div>
-                    </div>
-
-                    <!-- reseña 2 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/bladdeRunner.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BLADE RUNNER</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.1 / 10</p>
-                            <p class="text-white" style="font-size:0.7rem;">"Visualmente impresionante..."</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
-                        </div>
-                    </div>
-
-                    <!-- reseña 3 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BATMAN</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
-                            <p class="text-white" style="font-size:0.7rem;">"Oscura y visceral..."</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
-                        </div>
-                    </div>
-
-                    <!-- reseña 4 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/past_lives.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">PAST LIVES</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
-                            <p class="text-white" style="font-size:0.7rem;">"Una historia de amor..."</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
-                        </div>
-                    </div>
-
-                    <!-- reseña 5 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/oppenheimerMovie.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">OPPENHEIMER</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
-                            <p class="text-white" style="font-size:0.7rem;">"Nolan en su máximo esplendor..."</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <br>
-
-            <!-- RESEÑAS FAVORITAS -->
-            <section class="seccion">
-                <div class="titulo-seccion">
-                    <div>
-                        <h2>Reseñas Favoritas</h2>
-                        <h4>Reseñas de otros usuarios que guardaste como favoritas</h4>
-                    </div>
-                    <a href="./resenas_favoritas.html">Ver todas</a>
-                </div>
-
-                <!-- CARROUSEL: reseñas favoritas -->
-                <!-- <div class="carrusel"> -->
+                    <!-- CARROUSEL: mis reseñas -->
+                    <!-- <div class="carrusel"> -->
                     <div class="d-flex flex-wrap gap-3">
 
-                        <!-- reseña favorita 1 -->
+                        <!-- reseña 1 -->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/gladiador.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">GLADIADOR</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.3 / 10</p>
+                                <p class="text-white" style="font-size:0.7rem;">"Épica en todo sentido..."</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
+                            </div>
+                        </div>
+
+                        <!-- reseña 2 -->
                         <div class="card" style="width: 150px; background:#1e3060; border:none;">
                             <img src="../recursos/imagenes/peliculas/bladdeRunner.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
                             <div class="card-body p-2">
                                 <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BLADE RUNNER</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.7 / 10</p>
-                                <p class="text-white" style="font-size:0.7rem;">"La lluvia, las luces de neón..."</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: ScifiLover</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.1 / 10</p>
+                                <p class="text-white" style="font-size:0.7rem;">"Visualmente impresionante..."</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
                             </div>
                         </div>
 
-                        <!-- reseña favorita 2 -->
-                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                            <img src="../recursos/imagenes/peliculas/elPadrino.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                            <div class="card-body p-2">
-                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL PADRINO</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 9.5 / 10</p>
-                                <p class="text-white" style="font-size:0.7rem;">"La película más importante..."</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: CineClasico</p>
-                            </div>
-                        </div>
-
-                        <!-- reseña favorita 3 -->
+                        <!-- reseña 3 -->
                         <div class="card" style="width: 150px; background:#1e3060; border:none;">
                             <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
                             <div class="card-body p-2">
-                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">THE BATMAN</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.7 / 10</p>
-                                <p class="text-white" style="font-size:0.7rem;">"Finalmente una película..."</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: DarkNight88</p>
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BATMAN</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                                <p class="text-white" style="font-size:0.7rem;">"Oscura y visceral..."</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
                             </div>
                         </div>
 
-                        <!-- reseña favorita 4 -->
-                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                            <img src="../recursos/imagenes/peliculas/inception.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
-                            <div class="card-body p-2">
-                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">INCEPTION</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 9.0 / 10</p>
-                                <p class="text-white" style="font-size:0.7rem;">"Cada capa del sueño es..."</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: NostalgicEditor</p>
-                            </div>
-                        </div>
-
-                        <!-- reseña favorita 5 -->
+                        <!-- reseña 4 -->
                         <div class="card" style="width: 150px; background:#1e3060; border:none;">
                             <img src="../recursos/imagenes/peliculas/past_lives.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
                             <div class="card-body p-2">
                                 <p class="card-title text-white fw-bold" style="font-size:0.75rem;">PAST LIVES</p>
                                 <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
-                                <p class="text-white" style="font-size:0.7rem;">"No pasa nada y pasan..."</p>
-                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: CineSutil</p>
+                                <p class="text-white" style="font-size:0.7rem;">"Una historia de amor..."</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
+                            </div>
+                        </div>
+
+                        <!-- reseña 5 -->
+                        <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/oppenheimerMovie.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">OPPENHEIMER</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                                <p class="text-white" style="font-size:0.7rem;">"Nolan en su máximo esplendor..."</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Reseñado: 13/01/2025</p>
                             </div>
                         </div>
 
                     </div>
-            </section>
-        </main>
+                </section>
 
-        <aside>
-            <h2>SUGERENCIAS PARA TI</h2>
+                <br>
 
-            <!-- ITEM 1 -->
-            <div class="item-aside">
-                <p class="genero">ROMANCE</p>
-                <h3>CUMBRES BORRASCOSAS</h3>
-                <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
-                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
-                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
-            </div>
+                <!-- RESEÑAS FAVORITAS -->
+                <section class="seccion">
+                    <div class="titulo-seccion">
+                        <div>
+                            <h2>Reseñas Favoritas</h2>
+                            <h4>Reseñas de otros usuarios que guardaste como favoritas</h4>
+                        </div>
+                        <a href="./resenas_favoritas.html">Ver todas</a>
+                    </div>
 
-            <hr>
+                    <!-- CARROUSEL: reseñas favoritas -->
+                    <!-- <div class="carrusel"> -->
+                        <div class="d-flex flex-wrap gap-3">
 
-            <!-- ITEM 2 -->
-            <div class="item-aside">
-                <p class="genero">TERROR</p>
-                <h3>WEAPONS</h3>
-                <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
-                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
-                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
-            </div>
+                            <!-- reseña favorita 1 -->
+                            <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                                <img src="../recursos/imagenes/peliculas/bladdeRunner.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                                <div class="card-body p-2">
+                                    <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BLADE RUNNER</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.7 / 10</p>
+                                    <p class="text-white" style="font-size:0.7rem;">"La lluvia, las luces de neón..."</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: ScifiLover</p>
+                                </div>
+                            </div>
 
-            <hr>
+                            <!-- reseña favorita 2 -->
+                            <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                                <img src="../recursos/imagenes/peliculas/elPadrino.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                                <div class="card-body p-2">
+                                    <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL PADRINO</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 9.5 / 10</p>
+                                    <p class="text-white" style="font-size:0.7rem;">"La película más importante..."</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: CineClasico</p>
+                                </div>
+                            </div>
 
-            <!-- ITEM 3 -->
-            <div class="item-aside">
-                <p class="genero">COMEDIA</p>
-                <h3>NOVOCAINE</h3>
-                <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
-                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
-                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
-            </div>
+                            <!-- reseña favorita 3 -->
+                            <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                                <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                                <div class="card-body p-2">
+                                    <p class="card-title text-white fw-bold" style="font-size:0.75rem;">THE BATMAN</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.7 / 10</p>
+                                    <p class="text-white" style="font-size:0.7rem;">"Finalmente una película..."</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: DarkNight88</p>
+                                </div>
+                            </div>
 
-            <hr>
+                            <!-- reseña favorita 4 -->
+                            <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                                <img src="../recursos/imagenes/peliculas/inception.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                                <div class="card-body p-2">
+                                    <p class="card-title text-white fw-bold" style="font-size:0.75rem;">INCEPTION</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 9.0 / 10</p>
+                                    <p class="text-white" style="font-size:0.7rem;">"Cada capa del sueño es..."</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: NostalgicEditor</p>
+                                </div>
+                            </div>
 
-            <!-- ITEM 4 -->
-            <div class="item-aside">
-                <p class="genero">CIENCIA FICCIÓN</p>
-                <h3>DUNE: PART 2</h3>
-                <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
-                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
-                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
-            </div>
+                            <!-- reseña favorita 5 -->
+                            <div class="card" style="width: 150px; background:#1e3060; border:none;">
+                                <img src="../recursos/imagenes/peliculas/past_lives.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+                                <div class="card-body p-2">
+                                    <p class="card-title text-white fw-bold" style="font-size:0.75rem;">PAST LIVES</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 8.0 / 10</p>
+                                    <p class="text-white" style="font-size:0.7rem;">"No pasa nada y pasan..."</p>
+                                    <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Por: CineSutil</p>
+                                </div>
+                            </div>
 
-            <hr>
+                        </div>
+                </section>
+            </main>
 
-            <!-- ITEM 5 -->
-            <div class="item-aside">
-                <p class="genero">ANIMACIÓN</p>
-                <h3>FLOW</h3>
-                <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
-                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
-                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
-            </div>
-        </aside>
+            <aside class="col-12 col-lg-3">
+                <h2>SUGERENCIAS PARA TI</h2>
+
+                <!-- ITEM 1 -->
+
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg" width="80" height="100">
+                    <p class="genero">ROMANCE</p>
+                    <h3>CUMBRES BORRASCOSAS</h3>
+                    <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 2 -->
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/peliculas/weapons.jpg" width="80" height="100">
+                    <p class="genero">TERROR</p>
+                    <h3>WEAPONS</h3>
+                    <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                    <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 3 -->
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/peliculas/novocaine.jpg" width="80" height="100">
+                    <p class="genero">COMEDIA</p>
+                    <h3>NOVOCAINE</h3>
+                    <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                    <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 4 -->
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/peliculas/dune.jpg" width="80" height="100">
+                    <p class="genero">CIENCIA FICCIÓN</p>
+                    <h3>DUNE: PART 2</h3>
+                    <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                    <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+                </div>
+
+                <hr>
+
+                <!-- ITEM 5 -->
+                <div class="item-aside">
+                    <img src="../recursos/imagenes/peliculas/flow.jpg" width="80" height="100">
+                    <p class="genero">ANIMACIÓN</p>
+                    <h3>FLOW</h3>
+                    <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                    <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+                </div>
+            </aside>
+        </div>
     </div>
 <!------------------------------------------------------------------------------------------->
     <!-- FOOTER -->
