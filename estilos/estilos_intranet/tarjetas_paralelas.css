@@ -1,5 +1,6 @@
-/* --- CONTENEDOR DE TARJETAS --- */
-
+/* ======================================
+   CONTENEDOR DE TARJETAS
+====================================== */
 .contenedor-tarjetas {
     display: flex ;
     flex-direction: row ;/*para q las tarjetas esten una al lado de la otra*/
@@ -10,9 +11,9 @@
     box-sizing: border-box; /*para q no se desborde si agrego el borde al contenedor*/
     flex:3;
 }
-
-/* --- ESTILO DE LAS TARJETAS --- */
-
+/* ======================================
+   ESTILOS DE LAS TARJETAS
+====================================== */
 .Tarjeta {
     background-color: #1a3a5c;
     color: #ffffff;
@@ -27,8 +28,9 @@
     align-items: center; /* Centra el contenido que vaya suelto dentro */
     border:1px solid #000000;
 }
-
-/* --- CONTENIDO DE C/TARJETAS --- */
+/* ======================================
+   CONTENIDO DE CADA TARJETAS
+====================================== */
 
 .Tarjeta h3,.Tarjeta h4,.Tarjeta p,.Tarjeta nav {
     text-align: center; 
@@ -60,8 +62,10 @@
     text-align: left;
 }
 
+/* ======================================
+   IMAGENES
+====================================== */
 
-/* Área de la imagen */
 .imagen-contenedor {
     padding: 10px;
     display: flex;
@@ -91,8 +95,10 @@
     width:50px;
     height: 50px;
 }
+/* ======================================
+   ESTRUCTURA PARA TRAILERS
+====================================== */
 
-/*------ TRAILERS--------------*/
 .trailers {
     width: 320px;
     height: 240px;
