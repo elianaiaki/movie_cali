@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de peliculas</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
+    <script src="../../scripts/header.js" defer></script>
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
+
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
+        </form>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
+            <a href="../index_usser.html">Inicio</a>
+            <a href="../catalogo_peliculas_usser.html">Películas</a>
+            <a href="../catalogo_series_usser.html">Series</a>
+        </nav>
+
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>USUARIO - 12345</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                <a href="../resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                <a href="../index.html">CERRAR SESION</a>
+            </div>
+        </div>
+
+    </header>
+
+    <hr>
+    <!-- FIN DE HEADER-->
+
+<!------------------------------------------------------------------------------------------->
+
+<!-- CONTENEDOR GENERAL -->
+     <div class="fila">
+        <!-- MAIN -->
+        <main>
+            <!-- TITULO, DETALLES Y TRAILER-->
+            <section class="detalle-principal">
+                <div class="poster">
+                    <img src="../../recursos/imagenes/series/wonderman.jpg" alt="WONDER MAN">
+                </div>
+                <div class="info-serie">
+                    <h1>Wonder Man</h1>
+                    <p>
+                        El aspirante a actor, Simon Williams, lucha por hacer despegar su carrera.
+                        Durante un encuentro por casualidad con el actor veterano, Trevor Slattery...
+                        (texto completo)
+                    </p>
+                    <ul>
+                        <li><strong>Género:</strong> Comedia</li>
+                        <li><strong>Año:</strong> 2026</li>
+                        <li><strong>Duración:</strong> 1h 46min</li>
+                        <li><strong>Director:</strong> Chandler Levack</li>
+                        <li><strong>Productores/as:</strong> Natasha Lyonne, Tom Costain y Jimmy Fowlie</li>
+                        <li><strong>Calificación general:</strong> 5.6/10</li>
+                        <li><strong>Clasificación por edad:</strong> +18</li>
+                        <li><strong>Plataformas:</strong> Netflix</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card-detalle">
+                <div class="video-conteiner">
+                    <h2>Tráiler</h2>
+                    <video controls>
+                        <source src="../../recursos/videos/wonderMan.webm" type="video/webm">
+                    </video>
+                </div>
+            </section>
+            <!-- REPARTO-->
+            <section class="card-detalle">
+                <h2>REPARTO</h2>
+                <div class="reparto-vertical">
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/yahyaAbdulMateenll.jpg" alt="YAHYA ABDUL-MATEEN II">
+                        <h3>YAHYA ABDUL-MATEEN II</h3>
+                    </div>
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/benKingsley.jpg" alt="BEN KINGSLY">
+                        <h3>BEN KINGSLY</h3>
+                    </div>
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/joshGad.jpg" alt="JOSH GAD">
+                        <h3>JOSH GAD</h3>
+                    </div>
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/zlatkoBuric.jpg" alt="ZLATKO BURIĆ">
+                        <h3>ZLATKO BURIĆ</h3>
+                    </div>
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/xMayo.jpg" alt="X MAYO">
+                        <h3>X MAYO</h3>
+                    </div>
+                </div>
+            </section>
+            
+            <!--RESEÑA DE USUARIOS-->
+            <section class="card-detalle">
+                <h2>RESEÑAS DESTACADAS</h2>
+                <div class="resenas-container">
+                    <!--USUARIO 1-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                        <p><b>Calificación:</b> 9.0 / 10</p>
+                        <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
+                        <p><b>MarvelFan92 dice:</b></p>
+                        <h3>Excelente inicio</h3>
+                        <p>
+                            La serie logra darle frescura al MCU con un tono diferente.
+                            Yahya Abdul-Mateen II brilla como Simon Williams y la química
+                            con Ben Kingsley es uno de los puntos más fuertes.
+                        </p>
+                    </div>
+                    <!--USUARIO 2-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ ☆</span>
+                        <p><b>Calificación:</b> 3.0 / 10</p>
+                        <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
+                        <p><b>Cinefilo88 dice:</b></p>
+                        <h3>Floja</h3>
+                        <p>
+                            Aunque la propuesta es interesante, algunos episodios se sienten
+                            repetitivos y con poca acción. El ritmo narrativo no logra
+                            enganchar en todo momento.
+                        </p>
+                    </div>
+                    <!--USUARIO 3-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                        <p><b>Calificación:</b> 8.0 / 10</p>
+                        <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
+                        <p><b>TechGuru_VLC dice:</b></p>
+                        <h3>Muy buena</h3>
+                        <p>
+                            Lo que realmente destaca es el enfoque en los personajes y las
+                            relaciones más que en la acción. Se siente distinta a otras
+                            series de Marvel y eso la hace especial.
+                        </p>
+                    </div>
+                    <!--USUARIO 4-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                        <p><b>Calificación:</b> 7.0 / 10</p>
+                        <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
+                        <p><b>NostalgicEditor dice:</b></p>
+                        <h3>Correcta</h3>
+                        <p>
+                            El ritmo decae en algunos capítulos, pero el final de temporada
+                            compensa con un clímax emocionante. Una propuesta diferente
+                            dentro del MCU.
+                        </p>
+                    </div>
+                    <!--USUARIO 5-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                        <p><b>Calificación:</b> 7.0 / 10</p>
+                        <img src="../../recursos/imagenes/iconos/usuario.png" alt="Usuario">
+                        <p><b>MiloMarvel dice:</b></p>
+                        <h3>No es la tipica maravilla</h3>
+                        <p>
+                            Esta serie tenía un mejor desarrollo de personajes que muchos superhéroes del MCU 
+                            posteriores a Endgame. Bueno, técnicamente, no es una serie de superhéroes. Es la 
+                            historia de un actor con dificultades en Hollywood. Lo que más me gustó fue la duración 
+                            de cada episodio. Sin contar los créditos, cada episodio dura menos de 30 minutos, y uno de
+                            ellos dura solo 20 minutos. Esto evitó que fuera aburrida y, de hecho, la hizo entretenida.
+                        </p>
+                    </div>
+
+                    <div class="contenedor-boton">
+                        <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                    </div>
+                </div>
+            </section>
+
+                <!-- RELACIONADOS-->
+            <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class="relacionados-container">
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/series/marvelZombie.jpg" alt="MARVEL ZOMBIE">
+                        <h3>MARVEL ZOMBIE</h3>
+                        <p>Calificación: 7.0/10</p>
+                        <p>Duración: 1 Temporada</p>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/series/ironHeart.jpg" alt="IRON HEART">
+                        <h3>IRON HEART</h3>
+                        <p>Calificación: 4.5/10</p>
+                        <p>Duración: 1 Temporada</p>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/series/hawkeye.jpg" alt="HAWKEYE">
+                        <h3>HAWKEYE</h3>
+                        <p>Calificación: 4.5/10</p>
+                        <p>Duración: 1 Temporada</p>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/series/agathaEnTodasPartes.jpg" alt="AGATHA EN TODAS PARTES">
+                        <h3>AGATHA EN TODAS PARTES</h3>
+                        <p>Calificación: 7.2/10</p>
+                        <p>Duración: 1 Temporada</p>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/series/loki.png" alt="LOKI">
+                        <h3>LOKI</h3>
+                        <p>Calificación: 8.5/10</p>
+                        <p>Duración: 1 Temporada</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <h2>SUGERENCIAS PARA TI</h2>
+
+            <!-- ITEM 1 -->
+            <div class="item-aside">
+                <p class="genero">ROMANCE</p>
+                <h3>CUMBRES BORRASCOSAS</h3>
+                <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 2 -->
+            <div class="item-aside">
+                <p class="genero">TERROR</p>
+                <h3>WEAPONS</h3>
+                <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 3 -->
+            <div class="item-aside">
+                <p class="genero">COMEDIA</p>
+                <h3>NOVOCAINE</h3>
+                <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 4 -->
+            <div class="item-aside">
+                <p class="genero">CIENCIA FICCIÓN</p>
+                <h3>DUNE: PART 2</h3>
+                <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 5 -->
+            <div class="item-aside">
+                <p class="genero">ANIMACIÓN</p>
+                <h3>FLOW</h3>
+                <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+            </div>
+        </aside>
+
+    </div>
+  <!-- FOOTER -->
+    <footer class="footer">
+
+        <p class="titulo-footer">
+            Desarrollado por:
+        </p>
+
+        <p class="nombres-footer">
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+            Alan Walker - Gisella Jara - Brenda Pavez
+        </p>
+
+    </footer>
+ 
+</body>
+</html>
+
+

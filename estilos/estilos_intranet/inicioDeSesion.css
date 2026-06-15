@@ -1,0 +1,125 @@
+/* ---- CONTENEDOR PRINCIPAL (MAIN) ---- */
+.diseno-login {
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    min-height: 70vh;        
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* ---- TARJETA DE INICIO DE SESIÓN ---- */
+.card-inicio {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+     border: 2px solid black;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.card-inicio h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ---- CAMPOS DE ENTRADA (Form Grupos) ---- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 0.85em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Alineación de iconos e inputs */
+.input-contenedor {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.input-contenedor img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input-contenedor input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+}
+
+/* ---- ENLACES ---- */
+.contenedor-enlace {
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.contenedor-enlace.registro {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.enlace {
+    text-decoration: underline; 
+    color: #063568;        
+    font-size: 0.85em;
+}
+
+/* ---- BOTONES ---- */
+.contenedor-boton {
+    margin-bottom: 10px;
+}
+
+.boton-inicio, .boton-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;               /* Espacio entre el icono de Google y el texto */
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+/* Botón Normal */
+.boton-inicio {
+    background-color: #001f3f; 
+    color: white;
+}
+
+.boton-inicio:hover {
+    background-color: #003366; 
+}
+
+/* Botón Google */
+.boton-google {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.boton-google:hover {
+    background-color: #e3e3e3;
+}
+
+.boton-google img {
+    width: 18px;
+    height: 18px;
+}

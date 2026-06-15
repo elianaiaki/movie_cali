@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de peliculas</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
+    <script src="../../scripts/header.js" defer></script>
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
+
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
+        </form>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
+            <a href="../index_usser.html">Inicio</a>
+            <a href="../catalogo_peliculas_usser.html">Películas</a>
+            <a href="../catalogo_series_usser.html">Series</a>
+        </nav>
+
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>USUARIO - 12345</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                <a href="../resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                <a href="../index.html">CERRAR SESION</a>
+            </div>
+        </div>
+
+    </header>
+
+    <hr>
+    <!-- FIN DE HEADER-->
+
+<!------------------------------------------------------------------------------------------->
+
+<!-- CONTENEDOR GENERAL -->
+     <div class="fila">
+               <!-- MAIN -->
+        <main>
+            <!-- TITULO, DETALLES Y TRAILER-->
+            <section class="detalle-principal">
+                <div class="poster">
+                    <img src="../../recursos/imagenes/peliculas/compañeradecuarto.jpg"
+                        alt="COMPAÑERA DE CUARTO">
+                </div>
+                <div class="info-serie">
+                    <h1>COMPAÑERA DE CUARTO</h1>
+                    <p>Cuando una estudiante universitaria esperanzada e ingenua, Devon,   
+                        le pide a la fría y segura Celeste que sea su compañera de cuarto,   
+                        una amistad floreciente se convierte en una guerra pasivo agresiva.
+                    </p>
+                    <ul>
+                        <li><strong>Género:</strong> Comedia</li>
+                        <li><strong>Año:</strong> 2026 </li>
+                        <li><strong>Duración:</strong> 1h 46min</li>
+                        <li><strong>Director:</strong> Chandler Levack</li>
+                        <li><strong>Productores/as:</strong> Natasha Lyonne, Tom Costain y Jimmy Fowlie</li>
+                        <li><strong>Calificación general:</strong> 5.6/10</li>
+                        <li><strong>Clasificación por edad:</strong> +18</li>
+                        <li><strong>Plataformas:</strong> Netflix</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card-detalle">
+            <!-- TRAILER -->
+                <div class="video-conteiner">
+                    <h2>Tráiler</h2>
+                    <video controls>
+                        <source src="../../recursos/videos/CompañerasDeCuarto.webm" type="video/webm">
+                        Tu navegador no soporta este video. Probá con otro navegador.
+                    </video>
+                </div>
+            </section>
+            
+
+            <!-- REPARTO-->
+            <section class="card-detalle">
+                <h2>REPARTO</h2>
+                <div class="reparto-vertical"> 
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/SadieSandler.jpg" alt="SADIE SANDLER">  
+                        <h3>SADIE SANDLER</h3>
+                    </div>
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/ChloeEast.jpg" alt="CHLOE EAST">  
+                        <h3>CHLOE EAST</h3>
+                    </div>
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/AidanLangford.jpg" alt="AIDAN LANGFORD">  
+                        <h3>AIDAN LANGFORD</h3>
+                    </div>
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/NatashaLyonne.jpg" alt="NATASHA LYONNE">  
+                        <h3>NATASHA LYONNE</h3>
+                    </div>
+                    <div class="actor-card">
+                        <img src="../../recursos/imagenes/Reparto/nickKroll.jpg" alt="NICK KROLL">  
+                        <h3>NICK KROLL</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!--RESEÑA DE USUARIOS-->
+            <section class="card-detalle">
+                <h2>RESEÑAS DESTACADAS</h2>
+                    <div class="resenas-container">
+                        <!--USUARIO 1-->
+                        <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 9.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png" >
+                            <p><b>CineFan92 dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Un drama íntimo y conmovedor.</h3>
+                        <p>
+                            "La película logra transmitir la complejidad de la convivencia entre jóvenes universitarias.   
+                            Las actuaciones son naturales y la dirección consigue un tono cercano y realista.   
+                            Una propuesta que emociona y conecta con experiencias cotidianas."
+                        </p>
+                    </div>
+                  
+
+                    <!--USUARIO 2-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 7.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png" >
+                            <p><b>Critico21 dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Entretenida, pero algo predecible.</h3>
+                        <p>
+                            "La historia es atractiva, aunque algunos conflictos caen en clichés típicos de dramas juveniles.   
+                            Aun así, la química entre las protagonistas mantiene el interés y aporta frescura."
+                        </p>
+                    </div>
+                    
+                    <!--USUARIO 3-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 8.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png" >
+                            <p><b>DramaLover dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Un retrato juvenil con estilo.</h3>
+                        <p>
+                            "Lo que más me gustó fue cómo la película muestra la amistad y los conflictos   
+                            con autenticidad. La tensión se mantiene y el desarrollo de los personajes es convincente."
+                        </p>    
+                    </div>
+
+                    <!--USUARIO 4-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 7.5 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>CineGeek dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Gran ambientación, pero ritmo irregular.</h3>
+                        <p>
+                            "La atmósfera universitaria está muy bien lograda, transmitiendo cercanía y realismo.   
+                            Sin embargo, el ritmo narrativo decae en algunos capítulos. El final compensa con un clímax emotivo."
+                        </p>
+                    </div>
+                    
+                    <!--USUARIO 5-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 6.5 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>FilmFan dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Un inicio interesante, pero irregular.</h3>
+                        <p>
+                            "El carisma de las protagonistas sostiene la película, pero la trama principal   
+                            se siente algo floja y repetitiva. Aun así, es disfrutable para quienes buscan un drama juvenil."
+                        </p>    
+                    </div>
+                    <div class="contenedor-boton">
+                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RELACIONADOS-->
+            <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class=" relacionados-container">
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/noEstasInvitadaAMiBatmizva.jpg" alt="NO ESTAS INVITADA A MI BATMITZVAH">  
+                        <h3>¡No estás invitada a mi batmitzvah!</h3>
+                        <h3>Calificación: 6.0/10</h3>
+                        <h3>DURACION: 1h 43min </h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/happyGilmore2.jpg" alt="HAPPY GILMORE 2">  
+                        <h3>Happy Gilmore 2</h3>
+                        <h3>Calificación: 7.2/10</h3>
+                        <h3>DURACION: 1h 40min </h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/sonComoNiños.jpg" alt="SON COMO NIÑOS">  
+                        <h3>Son como niños</h3>
+                        <h3>Calificación: 6.9/10</h3>
+                        <h3>DURACION: 1h 42min </h3>
+                    </div>
+                    <div class="relacionado-card" >
+                        <img src="../../recursos/imagenes/peliculas/UnaEsposaDeMentira.jpg" alt="UNA ESPOSA DE MENTIRA">  
+                        <h3>Una esposa de mentira</h3>
+                        <h3>Calificación: 6.4/10</h3>
+                        <h3>DURACION: 1h 57min </h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/lunaDeMielEnFamilia.jpg" alt="LUNA DE MIEL EN FAMILIA">  
+                        <h3>Luna de miel en familia</h3>
+                        <h3>Calificación: 6.5/10</h3>
+                        <h3>DURACION: 1h 57min </h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/hotelTransylvania.jpg" alt="HOTEL TRANSYLVANIA">  
+                        <h3>Hotel Transylvania</h3>
+                        <h3>Calificación: 7.0/10</h3>
+                        <h3>DURACION: 1h 31min </h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+     
+        <aside>
+            <h2>SUGERENCIAS PARA TI</h2>
+
+            <!-- ITEM 1 -->
+            <div class="item-aside">
+                <p class="genero">ROMANCE</p>
+                <h3>CUMBRES BORRASCOSAS</h3>
+                <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 2 -->
+            <div class="item-aside">
+                <p class="genero">TERROR</p>
+                <h3>WEAPONS</h3>
+                <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 3 -->
+            <div class="item-aside">
+                <p class="genero">COMEDIA</p>
+                <h3>NOVOCAINE</h3>
+                <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 4 -->
+            <div class="item-aside">
+                <p class="genero">CIENCIA FICCIÓN</p>
+                <h3>DUNE: PART 2</h3>
+                <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 5 -->
+            <div class="item-aside">
+                <p class="genero">ANIMACIÓN</p>
+                <h3>FLOW</h3>
+                <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+            </div>
+        </aside>
+
+    </div>
+  <!-- FOOTER -->
+    <footer class="footer">
+
+        <p class="titulo-footer">
+            Desarrollado por:
+        </p>
+
+        <p class="nombres-footer">
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+            Alan Walker - Gisella Jara - Brenda Pavez
+        </p>
+
+    </footer>
+</body>
+</html>
+
+

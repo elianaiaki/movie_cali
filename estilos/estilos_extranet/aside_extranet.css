@@ -1,8 +1,13 @@
 /* Hace que el aside y el contenido principal
    tengan la misma altura dentro de la fila */
-.fila {
+/* .fila {
     display: flex;
     align-items: stretch;
+} */
+
+.fila{
+    display:flex;
+    align-items:flex-start;
 }
 
 /* ==========================================================

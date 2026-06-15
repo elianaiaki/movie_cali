@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de peliculas</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
+    <script src="../../scripts/header.js" defer></script>
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
+
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
+        </form>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
+            <a href="../index_usser.html">Inicio</a>
+            <a href="../catalogo_peliculas_usser.html">Películas</a>
+            <a href="../catalogo_series_usser.html">Series</a>
+        </nav>
+
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>USUARIO - 12345</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                <a href="../resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                <a href="../index.html">CERRAR SESION</a>
+            </div>
+        </div>
+
+    </header>
+
+    <hr>
+    <!-- FIN DE HEADER-->
+
+<!------------------------------------------------------------------------------------------->
+
+<!-- CONTENEDOR GENERAL -->
+     <div class="fila">
+            <main>
+            <!-- TITULO, DETALLES Y TRAILER-->
+            <section class="detalle-principal">
+               
+                <div class="poster">
+                    <img src="../../recursos/imagenes/peliculas/supermario.jpg" alt="SUPERMARIO">
+                </div>
+                <div class="info-serie">
+                    <h1>SUPER MARIO BROS: GALAXY</h1>
+                    <p>
+                        Luego de vencer a Bowser y salvar Brooklyn, Mario y amigos enfrentan una nueva amenaza: Wario, con Bowser Jr.,  
+                        conspira para dominar el mundo. Deben aliarse con Yoshi para detener a este dúo malvado
+                    </p>
+                    <ul>
+                        <li><strong>Género:</strong> Animacion, Aventura, Comedia, Familiar y fantasia</li>
+                        <li><strong>Año:</strong> 2026</li>
+                        <li><strong>Duración:</strong> 1h 38min</li>
+                        <li><strong>Director:</strong> Aaron Horvath</li>
+                        <li><strong>Productores/as:</strong> Yusuke Beppu, Brice Colinet, Brett Hoffman, Kelly Lake, Christopher Meledandri, Shigeru Miyamoto y Bill Ryan</li>
+                        <li><strong>Calificación general:</strong> 7.0/10</li>
+                        <li><strong>Clasificación por edad:</strong> +10</li>
+                        <li><strong>Plataformas:</strong> Peacock</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card-detalle">
+                <div class="video-conteiner">
+                    <h2>Tráiler</h2>
+                    <video controls>
+                        <source src="../../recursos/videos/SuperMario.webm" type="video/webm">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </section>
+
+            <!-- REPARTO-->
+             <section class="card-detalle">
+                <h2>REPARTO</h2>
+                    <div class="reparto-vertical"> 
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/Chris_pratt.jpg" alt="CHRIS PRATT"> 
+                                <h3>CHRIS PRATT</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/anyaTaylorJoy.jpg" alt="ANYA TAYLOR-JOY"> 
+                                <h3>ANYA TAYLOR-JOY</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/charlieDay.jpg" alt="CHARLIE DAY"> 
+                                <h3>CHARLIE DAY</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/jackBlack.jpg" alt="JACK BLACK"> 
+                                <h3>JACK BLACK</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/KeeganMichaelKey.jpg" alt="KEEGAN MICHAEL KEY"> 
+                                <h3>KEEGAN MICHAEL KEY</h3>
+                            </div>
+                    </div>
+            </section>
+
+             <!--RESEÑA DE USUARIOS-->
+             <section class="card-detalle">
+                <h2>RESEÑAS DESTACADAS</h2>
+                    <div class="resenas-container">
+                        <!--USUARIO 1-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                            <!-- Usuario -->
+                            <div>
+                                <p><b>Calificación:</b> 9.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>GalaxyFan88 dice:</b></p>
+                            </div>
+                            <!-- contenido -->
+                            <h3>Una aventura estelar inolvidable.</h3>
+                            <p>
+                                "La película logra capturar la magia del videojuego original.  
+                                Los efectos visuales son impresionantes y la banda sonora  
+                                acompaña perfectamente cada momento épico."
+                            </p>
+                             
+                     </div>
+                 
+
+                <!--USUARIO 2-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 8.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>LumaLover dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Encantadora, aunque algo predecible.</h3>
+                        <p>
+                            "La historia es tierna y divertida, pero algunos giros  
+                            se sienten demasiado familiares. Aun así, la relación  
+                            entre Mario y los Lumas es entrañable."
+                        </p>
+                        
+                    </div>
+                    
+
+                    <!--USUARIO 3-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 7.5 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>StarCollector dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Visualmente deslumbrante, narrativamente simple.</h3>
+                        <p>
+                            "Los escenarios galácticos son un espectáculo visual,  
+                            pero la trama principal carece de profundidad. Ideal  
+                            para quienes buscan pura diversión."
+                        </p>
+                        
+                    </div>
+                    
+
+                    <!--USUARIO 4-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ★</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 10 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>CosmosKid dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>La mejor adaptación de Mario.</h3>
+                        <p>
+                            "Nunca pensé que una película pudiera transmitir tan bien  
+                            la esencia del universo de Mario Galaxy. Es emocionante,  
+                            divertida y con un final que emociona."
+                        </p>
+                        
+                    </div>
+                    
+
+                    <!--USUARIO 5-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                        <!-- Usuario -->
+                        <div>
+                            <p><b>Calificación:</b> 7.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>RetroPlayer dice:</b></p>
+                        </div>
+                        <!-- contenido -->
+                        <h3>Entre nostalgia y modernidad.</h3>
+                        <p>
+                            "La película mezcla elementos clásicos con nuevas ideas.  
+                            Aunque no todo funciona, la nostalgia por el juego  
+                            hace que valga la pena verla."
+                        </p>
+                        
+                    </div>
+
+                     <div class="contenedor-boton">
+                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class=" relacionados-container">
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/Metegol.jpg" alt="METEGOL"> 
+                            <h3>METEGOL</h3>
+                            <h3>Calificación: 8.5/10</h3>
+                            <h3>DURACION: 1h 40min </h3>
+                        </div>
+                        <div  class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/supermario1.jpg" alt="SUPER MARIO BROS: LA PELÍCULA"> 
+                            <h3>SUPER MARIO BROS: LA PELÍCULA</h3>
+                            <h3>Calificación: 7.0/10</h3>
+                            <h3>DURACION: 1h 32min </h3>
+                        </div>
+                        <div  class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/sonic.jpg" alt="SONIC: LA PELÍCULA"> 
+                            <h3>SONIC: LA PELÍCULA</h3>
+                            <h3>Calificación: 6.9/10</h3>
+                            <h3>DURACION: 1h 39min </h3>
+                        </div>
+                        <div  class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/pokemonDetectivePikachu.jpg" alt="POKEMON: DETECTIVE PIKACHU"> 
+                            <h3>POKEMON: DETECTIVE PIKACHU</h3>
+                            <h3>Calificación: 7.2/10</h3>
+                            <h3>DURACION: 1h 44min </h3>
+                        </div>
+                        <div  class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/laGranAventura.jpg" alt="LA GRAN AVENTURA LEGO"> 
+                            <h3>LA GRAN AVENTURA LEGO</h3>
+                            <h3>Calificación: 7.7/10</h3>
+                            <h3>DURACION: 1h 40min </h3>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <aside>
+            <h2>SUGERENCIAS PARA TI</h2>
+
+            <!-- ITEM 1 -->
+            <div class="item-aside">
+                <p class="genero">ROMANCE</p>
+                <h3>CUMBRES BORRASCOSAS</h3>
+                <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 2 -->
+            <div class="item-aside">
+                <p class="genero">TERROR</p>
+                <h3>WEAPONS</h3>
+                <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 3 -->
+            <div class="item-aside">
+                <p class="genero">COMEDIA</p>
+                <h3>NOVOCAINE</h3>
+                <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 4 -->
+            <div class="item-aside">
+                <p class="genero">CIENCIA FICCIÓN</p>
+                <h3>DUNE: PART 2</h3>
+                <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 5 -->
+            <div class="item-aside">
+                <p class="genero">ANIMACIÓN</p>
+                <h3>FLOW</h3>
+                <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+            </div>
+        </aside>
+
+    </div>
+  <!-- FOOTER -->
+    <footer class="footer">
+
+        <p class="titulo-footer">
+            Desarrollado por:
+        </p>
+
+        <p class="nombres-footer">
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+            Alan Walker - Gisella Jara - Brenda Pavez
+        </p>
+
+    </footer>
+ 
+</body>
+</html>
+
+

@@ -1,124 +1,81 @@
 /* ==========================================================
-   ASIDE
+   ASIDE (Adaptado para Bootstrap 5)
    ========================================================== */
 
-/* aside{
-    width:280px;
-    min-width:280px;
-    flex-shrink:0;
-
-    background:#222934;
-    border-radius:20px;
-
-    padding:20px;
-    margin:40px 40px 40px 0;
-
-    color:white;
-
-    height:fit-content;
-} */
-/* 
-aside{
-    width:240px;
-    min-width:240px;
-    background:#222934;
-    border-radius:20px;
-
-    padding:20px;
-    margin:40px 40px 40px 0;
-
-    color:white;
-
-    height:fit-content;
-} */
-
-aside{
-    width:220px;
-    min-width:220px;
-
-    background:#222934;
-    border-radius:20px;
-
-    padding:15px;
-
-    margin:35px 20px 20px 0; /* antes 40px arriba */
-    
-    color:white;
-    height:fit-content;
+aside {
+    /* ELIMINADO: width, min-width y margins para no romper el responsive de Bootstrap */
+    background: #222934;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    height: fit-content;
 }
 
-aside h2{
-    text-align:center;
-    font-size:22px;
-    margin-bottom:25px;
-    color:white;
+aside h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: white;
 }
 
 /* Tarjeta de sugerencia */
-.item-aside{
-    display:grid;
-    grid-template-columns:80px 1fr;
-    gap:8px 12px;
+.item-aside {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 8px 12px;
 }
 
-.item-aside img{
-    grid-row:1 / 4;
-
-    width:80px;
-    height:110px;
-
-    object-fit:cover;
-    border-radius:8px;
+.item-aside img {
+    grid-row: 1 / 4;
+    width: 80px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.genero{
-    color:#6fb1ff;
-    font-size:11px;
-    font-weight:bold;
-    margin:0;
+.genero {
+    color: #6fb1ff;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
 }
 
-.item-aside h3{
-    margin:0;
-    font-size:16px;
-    color:white;
+.item-aside h3 {
+    margin: 0;
+    font-size: 16px;
+    color: white;
 }
 
-.descripcion{
-    margin:0;
-    font-size:12px;
-    color:#d9e6ff;
+.descripcion {
+    margin: 0;
+    font-size: 12px;
+    color: #d9e6ff;
 }
 
-.item-aside a{
-    grid-column:1 / 3;
-
-    text-align:center;
-    text-decoration:none;
-
-    background:#0f5db8;
-    color:white;
-
-    padding:8px;
-    border-radius:8px;
-
-    font-size:13px;
-    font-weight:bold;
-
-    transition:0.3s;
+/* Botón "Ver más" de la sugerencia */
+.item-aside a {
+    grid-column: 1 / 3;
+    text-align: center;
+    text-decoration: none;
+    background: #0f5db8;
+    color: white !important; /* !important evita que Bootstrap lo vuelva azul transparente */
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.item-aside a:hover{
-    background:#3a6fa0;
+.item-aside a:hover {
+    background: #3a6fa0;
+    color: white !important;
 }
 
-aside hr{
-    border:none;
-    border-top:1px solid #3a6fa0;
-    margin:20px 0;
+aside hr {
+    border: none;
+    border-top: 1px solid #3a6fa0;
+    margin: 20px 0;
+    opacity: 1; /* Bootstrap 5 apaga los hr por defecto, esto asegura que se vea */
 }
 
-.fila{
-    display:flex;
-    gap:0;
-}
+

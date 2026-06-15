@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de peliculas</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
+    <script src="../../scripts/header.js" defer></script>
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
+
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
+        </form>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
+            <a href="../index_usser.html">Inicio</a>
+            <a href="../catalogo_peliculas_usser.html">Películas</a>
+            <a href="../catalogo_series_usser.html">Series</a>
+        </nav>
+
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>USUARIO - 12345</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                <a href="../resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                <a href="../index.html">CERRAR SESION</a>
+            </div>
+        </div>
+
+    </header>
+
+    <hr>
+    <!-- FIN DE HEADER-->
+
+<!------------------------------------------------------------------------------------------->
+
+<!-- CONTENEDOR GENERAL -->
+     <div class="fila">
+          <main>
+            <!-- TITULO, DETALLES Y TRAILER-->
+            <section class="detalle-principal">
+                <div class="poster">
+                    <img src="../../recursos/imagenes/peliculas/alertaextincion.jpg" alt="ALERTA DE EXTINCIÓN">
+                </div>
+                <div class="info-serie">
+                    <h1>ALERTA DE EXTINCIÓN</h1>
+                    <p>Un hongo almacenado en una instalación gubernamental sale al exterior y causa 
+                        estragos en el mundo.
+                    </p>
+                    <ul>
+                        <li><strong>Género:</strong> Ciencia Ficción</li>
+                        <li><strong>Año:</strong> 2026</li>
+                        <li><strong>Duración:</strong> 1h 48min</li>
+                        <li><strong>Director:</strong> Jonny Campbell</li>
+                        <li><strong>Productores/as:</strong> Derek Ambrosi, Angelo Barbagallo, Raphaël Benoliel</li>
+                        <li><strong>Calificación general:</strong> 7.0/10</li>
+                        <li><strong>Clasificación por edad:</strong> +18</li>
+                        <li><strong>Plataformas:</strong> Apple TV</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card-detalle">
+                <div class="video-conteiner">
+                    <h2>Tráiler</h2>
+                    <video controls>
+                        <source src="../../recursos/videos/alertaExtincion.webm" type="video/webm">
+                        Tu navegador no soporta este video. Probá con otro navegador.
+                    </video>
+                </div>
+            </section>
+
+            <!-- REPARTO-->
+            <section class="card-detalle">
+                <h2>REPARTO</h2>
+                    <div class="reparto-vertical"> 
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/RobCollins.jpg" alt="ROB COLLINS">
+                                <h3>ROB COLLINS</h3>
+                            </div>
+                            <div  class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/SosieBacon.jpg" alt="SOSIE BACON">
+                                <h3>SOSIE BACON</h3>
+                            </div>
+                            <div  class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/LiamNeeson.jpg" alt="LIAM NEESON">
+                                <h3>LIAM NEESON</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/LesleyManville.jpg" alt="LESLEY MANVILLE">
+                                <h3>LESLEY MANVILLE</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/JoeKeery.jpg" alt="JOE KEERY">
+                                <h3>JOE KEERY</h3>
+                            </div>
+                    </div>
+            </section>
+            <!--RESEÑA DE USUARIOS-->
+            <section class="card-detalle">
+                <h2>RESEÑAS DESTACADAS</h2>
+                    <div class="resenas-container">
+                        <!--USUARIO 1-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
+                            <!-- Usuario -->
+                            <div>
+                                <p><b>Calificación:</b> 6.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>Keikoyoshikawa dice:</b></p>
+                            </div>
+                            <!-- contenido -->
+                            <h3>Sorprendentemente bueno</h3>
+                            <p>
+                                Debo admitirlo: me cansé de ver a Liam Neeson en películas de acción de viejos
+                                años. Así que fue una agradable y bienvenida sorpresa verlo en esta película de
+                                ciencia ficción, terror y comedia.
+                                Historia ajustada, buena acción, buena actuación. Los personajes no hacían
+                                (en su mayoría) tonterías. Las acciones y reacciones creíbles son lo que genera la
+                                inmersión. En general, fue una película corta y divertida de ver.
+                                Un agradecimiento a Joe Keery y Georgina Campbell como Travis y Naomi
+                                por sus interpretaciones, que realmente ayudaron a vender la historia. 
+                            </p>
+                        </div>
+                        <!--USUARIO 2-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
+                            <!-- Usuario -->
+                            <div>
+                                <p><b>Calificación:</b> 6.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>FiftyTwo_52 dice:</b></p>
+                            </div>
+                            <!-- contenido -->
+                            <h3>Hongos entre nosotros: mohosos pero muy divertidos</h3>
+                            <p>
+                            Cold Storage es exactamente lo que promete: una comedia de terror ligera y algo
+                            absurda que no se alarga demasiado.
+                            Si estás sintonizando el encanto combativo de Joe Keery o la valentía constante
+                            de Georgina Campbell, no te decepcionará... Llevan el caos con facilidad. Liam
+                            Neeson aparece principalmente por gravedad, lo cual está bien, aunque
+                            desearías que tuviera más que hacer.
+                            La premisa impulsada por hongos es terreno familiar, y sí, puedes anticipar la
+                            mayoría de los momentos. Pero está bien. Esto no intenta reinventar la rueda;
+                            Solo busca una atracción divertida y amigable para palomitas. El tono equilibra
+                            risas y saltos sin inclinarse demasiado hacia un lado o otro.
+                            Perfecto para una noche relajada en casa cuando quieras emociones con las
+                            criaturas sin el esfuerzo mental.
+                            6,5/10: No revolucionaria, pero sí muy disfrutable.
+                            </p>
+                           
+                        </div>
+                       
+
+                        <!--USUARIO 3-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                            <!-- Usuario -->
+                            <div>
+                                <p><b>Calificación:</b> 7.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>HardyReviews_ dice: </b></p>
+                            </div>
+                            <!-- contenido -->
+                            <h3>Disfrutable y relajante</h3>
+                            <p>
+                                "Cold Storage es una comedia relajante con momentos memorables. Esta
+                                película tiene algunos efectos visuales aproximados, pero los efectos prácticos 
+                                son realmente impresionantes. Todos los implicados hicieron de esta película
+                                una gran película de ver y es una película que puedes ver con familia y amigos, y 
+                                todos lo pasaremos genial."
+                            </p>
+                           
+                        </div>
+                       
+
+                        <!--USUARIO 4-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                            <!-- Usuario -->
+                            <div>
+                                <p><b>Calificación:</b> 7.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>Cahidi dice: </b></p>
+                            </div>
+                            <!-- contenido -->
+                            <h3>Almacenamiento en caliente</h3>
+                            <p>
+                                "Desde The Last Of Us, la idea del apocalipsis zombi basado en hongos se ha 
+                                extendido como la pólvora. Todo el mundo está haciendo películas similares,
+                                añadiendo sus propios giros. Este no es diferente. Y la particularidad de este es 
+                                que el hongo se propagó muy rápido. Como mil veces más rápido que un hongo
+                                normal. Bien. Personalmente, creo que es una comedia de terror decente.
+                                Algunas personas se quejan de esto y aquello. Pero sinceramente, no tengo ni 
+                                idea de qué están hablando. Deberías verla y formar tu propia opinión."
+                            </p>
+                           
+                        </div>
+                       
+
+                        <!--USUARIO 5-->
+                        <div class="resena-card">
+                            <span>★ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆</span>
+                            <!-- Usuario -->
+                            <div>
+                                <p><b>Calificación:</b> 1.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>Luv2Spooge dice: </b></p>
+                            </div>
+                            <!-- contenido -->
+                            <h3>No es nada que disfrutara de esto.</h3>
+                            <p>
+                                "Cuando tienes una comedia americana y empiezas con gente hablando mucho 
+                                sin motivo, sabes que esto es una completa tontería. Y... Lo es.
+                                Déjame decirlo así: se tarda 50 minutos en descubrir la exposición al hongo. 50 
+                                minutos en una película que dura 1 hora y 30 minutos. Y no es un spoiler, ya que
+                                la escena de introducción ya reveló que el elemento de terror es el hongo.
+                                Así que literalmente el resto de esta película es CGI barato y totalmente inútil.
+                                1/10."
+                            </p>
+                           
+                        </div>
+                        <div class="contenedor-boton">
+                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- RELACIONADOS-->
+            <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class=" relacionados-container">
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/BuenasuerteDiviérteteNomueras.jpg" alt="BUENA SUERTE, DIVIERTETE, NO MUERAS">
+                        <h3>BUENA SUERTE, DIVIÉRTETE, NO MUERAS</h3>
+                        <h3>Calificación: 7.0/10</h3>
+                        <h3>DURACION: 2h 14min </h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/Primate.jpg" alt="PRIMATE">
+                        <h3>PRIMATE</h3>
+                        <h3>Calificación: 5.8/10</h3>
+                        <h3>DURACION: 1h 32min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/GoodBoy.jpg" alt="GOOD BOY">
+                        <h3>GOOD BOY</h3>
+                        <h3>Calificación: 6.8/10</h3>
+                        <h3>DURACION: 1h 50min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/WeBurytheDead.jpg" alt="WE BURY THE DEAD">
+                        <h3>WE BURY THE DEAD</h3>
+                        <h3>Calificación: 5.6/10</h3>
+                        <h3>DURACION: 1h 34min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/PrettyLethal.jpg" alt="PRETTY LETHAL">
+                        <h3>PRETTY LETHAL</h3>
+                        <h3>Calificación: 5.8/10</h3>
+                        <h3>DURACION: 1h 28min</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+     
+        <aside>
+            <h2>SUGERENCIAS PARA TI</h2>
+
+            <!-- ITEM 1 -->
+            <div class="item-aside">
+                <p class="genero">ROMANCE</p>
+                <h3>CUMBRES BORRASCOSAS</h3>
+                <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 2 -->
+            <div class="item-aside">
+                <p class="genero">TERROR</p>
+                <h3>WEAPONS</h3>
+                <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 3 -->
+            <div class="item-aside">
+                <p class="genero">COMEDIA</p>
+                <h3>NOVOCAINE</h3>
+                <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 4 -->
+            <div class="item-aside">
+                <p class="genero">CIENCIA FICCIÓN</p>
+                <h3>DUNE: PART 2</h3>
+                <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 5 -->
+            <div class="item-aside">
+                <p class="genero">ANIMACIÓN</p>
+                <h3>FLOW</h3>
+                <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+            </div>
+        </aside>
+
+    </div>
+  <!-- FOOTER -->
+    <footer class="footer">
+
+        <p class="titulo-footer">
+            Desarrollado por:
+        </p>
+
+        <p class="nombres-footer">
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+            Alan Walker - Gisella Jara - Brenda Pavez
+        </p>
+
+    </footer>
+ 
+</body>
+</html>
+
+

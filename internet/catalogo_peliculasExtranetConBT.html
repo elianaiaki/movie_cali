@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de peliculas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/estilo_internet/catalogo.css">
+    <link rel="stylesheet" href="../estilos/estilos_extranet/aside_catalogo.css">
+
+    <script src="../scripts/header.js" defer></script>
+</head>
+
+<body class="bg-dark text-white">
+
+   <header class="header d-flex justify-content-between align-items-center p-3 bg-secondary bg-opacity-10 shadow-sm">
+        <div class="logo">
+            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" height="40">
+        </div>
+
+        <form class="buscador d-flex gap-2 m-0">
+            <input type="text" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="Buscar películas, series...">
+            <button class="btn btn-sm btn-outline-light">🔍</button>
+        </form>
+
+        <nav class="menu d-flex gap-3">
+            <a href="../index.html" class="text-white text-decoration-none hover-link">Inicio</a>
+            <a href="../internet/catalogo_peliculas.html" class="text-white text-decoration-none hover-link">Películas</a>
+            <a href="../internet/catalogo_series.html" class="text-white text-decoration-none hover-link">Series</a>
+        </nav>
+
+        <div class="perfil d-flex align-items-center gap-2 position-relative cursor-pointer" id="perfilBtn">
+            <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario" width="30" height="30" class="rounded-circle">
+
+            <div class="perfil-info d-none d-md-block text-start">
+                <span class="small fw-bold d-block">MENU</span>
+                <span class="flecha small">▼</span>
+            </div>
+
+            <div class="dropdown shadow">
+                <a href="../internet/iniciar_sesion.html" class="dropdown-item text-white bg-dark"><span class="icono-dropdown text-primary me-2">▶</span>INICIAR SESION</a>
+                <a href="./crear_cuenta.html" class="dropdown-item text-white bg-dark"><span class="icono-dropdown text-primary me-2">▶</span> CREAR CUENTA</a>
+            </div>
+        </div>
+
+    </header>
+
+    <hr class="m-0 border-secondary">
+
+
+<div class="container-fluid py-4">
+        <!-- 1. Añadimos la fila de Bootstrap -->
+        <div class="row g-4 align-items-start" > 
+            
+            <!-- 2. El main ocupará 9 columnas en pantallas medianas o más grandes (col-md-9) -->
+            <main class="col-lg-9 col-md-8">
+                <section>
+                    
+                    <div class="card-detalle p-4 mb-4 rounded-4 shadow">
+                        <h2 class="h4 mb-3 border-bottom border-secondary pb-2">ESTRENO</h2>
+                        <div class="catalogo-container d-flex gap-3 overflow-x-auto pb-2">
+                            <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/elguardian.jpg" class="card-img-top object-fit-cover" alt="EL GUARDIAN" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="../internet/detalles/elGuardian.html" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    EL GUARDIAN
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 7.0 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 48m</p>
+                            </div>
+                        </div>
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/supermario.jpg" class="card-img-top object-fit-cover" alt="SUPER MARIO BROS" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="../internet/detalles/superMarioBros.html" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    SUPER MARIO BROS
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 6.8 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 38m</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/parquelezama.jpg" class="card-img-top object-fit-cover" alt="PARQUE LEZAMA" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="../internet/detalles/parquelezama.html" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    PARQUE LEZAMA
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 6.7 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 55m</p>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/hermanosdemolicion.jpg" class="card-img-top object-fit-cover" alt="HERMANOS DEMOLICIÓN" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    HERMANOS DEMOLICIÓN
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 6.7 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 55m</p>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/comocabras.jpg" class="card-img-top object-fit-cover" alt="COMO CABRAS" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    COMO CABRAS
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 7.6 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 40m</p>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpg" class="card-img-top object-fit-cover" alt="EL DIABLO VISTE A LA MODA" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="../internet/detalles/eldiablovistealamoda.html" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    EL DIABLO VISTE A LA MODA
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 6.9 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 59m</p>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/torrentePresidente.jpg" class="card-img-top object-fit-cover" alt="TORRENTE PRESIDENTE" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="../internet/detalles/torrentepresidente.html" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    TORRENTE PRESIDENTE
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 6.1 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 42m</p>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/cajaAzul.jpg" class="card-img-top object-fit-cover" alt="CAJA AZUL" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="../internet/detalles/cajaazul.html" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    CAJA AZUL
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 5.7 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 23m</p>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/idolos.jpg" class="card-img-top object-fit-cover" alt="IDOLOS" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">IDOLOS</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 5.6/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 2h 06min</small>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <img src="../recursos/imagenes/peliculas/swapped.jpg" class="card-img-top object-fit-cover" alt="SWAPPED" height="300">
+                            <div class="pelicula-info card-body p-3">
+                                <a href="../internet/detalles/swapped.html" class="text-white text-decoration-none fw-bold d-block mb-2">
+                                    SWAPPED
+                                </a>
+                                <p class="card-text small mb-1 opacity-75">CALIFICACIÓN: 6.5 / 10</p>
+                                <p class="card-text small mb-0 opacity-75">DURACIÓN: 1h 38m</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                 <div class="card-detalle p-4 mb-4 rounded-4 shadow">
+                        <h2 class="h4 mb-3 border-bottom border-secondary pb-2">AVENTURAS</h2>
+                        <div class="catalogo-container d-flex gap-3 overflow-x-auto pb-2">
+                            
+                            <!-- CORREGIDO: Añadimos la tarjeta contenedora que faltaba aquí -->
+                            <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                                <div class="pelicula-info card-body p-3">
+                                    <img src="../recursos/imagenes/peliculas/proyectosalvacion.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="PROYECTO SALVACIÓN" style="height: 260px; width: 100%;">
+                                    <a href="../internet/detalles/proyectosalvacion.html" class="text-white text-decoration-none fw-bold d-block mb-1">PROYECTO SALVACIÓN</a>
+                                    <small class="d-block opacity-75">CALIFICACIÓN: 8.2/10</small>
+                                    <small class="d-block opacity-75">DURACIÓN: 2h 36min</small> 
+                                </div>
+                            </div>
+
+                            <!-- Las demás películas de abajo ya están perfectas -->
+                            <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                                <div class="pelicula-info card-body p-3">
+                                    <img src="../recursos/imagenes/peliculas/bonekeeper.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="BONEKEEPER" style="height: 260px; width: 100%;">
+                                    <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">BONEKEEPER</a>
+                                    <small class="d-block opacity-75">CALIFICACIÓN: 5.1/10</small>
+                                    <small class="d-block opacity-75">DURACIÓN: 1h 30min</small>
+                                </div>
+                            </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <div class="pelicula-info card-body p-3">
+                                <img src="../recursos/imagenes/peliculas/rascacieloenvivo.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="RASCACIELO EN VIVO" style="height: 260px; width: 100%;">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">RASCACIELO EN VIVO</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 7.4/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 1h 57min</small>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <div class="pelicula-info card-body p-3">
+                                <img src="../recursos/imagenes/peliculas/anaconda.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="ANACONDA" style="height: 260px; width: 100%;">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">ANACONDA</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 5.8/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 1h 40min</small>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <div class="pelicula-info card-body p-3">
+                                <img src="../recursos/imagenes/peliculas/obex.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="OBEX" style="height: 260px; width: 100%;">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">OBEX</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 5.8/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 1h 31min</small> 
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <div class="pelicula-info card-body p-3">
+                                <img src="../recursos/imagenes/peliculas/AangElUltimoMaestroAire.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="AANG: EL ÚLTIMO MAESTRO DE AIRE" style="height: 260px; width: 100%;">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">AANG: EL ÚLTIMO MAESTRO DE AIRE</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 7.2/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 1h 39min</small>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <div class="pelicula-info card-body p-3">
+                                <img src="../recursos/imagenes/peliculas/swapped.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="SWAPPED" style="height: 260px; width: 100%;">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">SWAPPED</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 6.1/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 1h 42min</small>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <div class="pelicula-info card-body p-3">
+                                <img src="../recursos/imagenes/peliculas/pizzaMovie.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="PIZZA MOVIE" style="height: 260px; width: 100%;">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">PIZZA MOVIE</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 6.9/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 1h 37min</small>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <div class="pelicula-info card-body p-3">
+                                <img src="../recursos/imagenes/peliculas/starbright.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="STARBRIGHT" style="height: 260px; width: 100%;">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">STARBRIGHT</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 3.8/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 2h 28min</small>
+                            </div>
+                        </div>
+
+                        <div class="pelicula-card card bg-primary border-0 text-white flex-shrink-0">
+                            <div class="pelicula-info card-body p-3">
+                                <img src="../recursos/imagenes/peliculas/arco.jpg" class="img-fluid object-fit-cover rounded mb-2" alt="ARCO" style="height: 260px; width: 100%;">
+                                <a href="#" class="text-white text-decoration-none fw-bold d-block mb-1">ARCO</a>
+                                <small class="d-block opacity-75">CALIFICACIÓN: 4.6/10</small>
+                                <small class="d-block opacity-75">DURACIÓN: 1h 22min</small>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+
+            <!-- 3. El aside ocupará 3 columnas en pantallas grandes y 4 en medianas -->
+           <aside class="col-lg-3 col-md-4">
+                <h2 class="h4 mb-3 border-bottom border-secondary pb-2">SUGERENCIAS PARA TI</h2>
+
+                <!-- ITEM 1 -->
+                <div class="item-aside mb-3">
+                    <p class="genero small text-warning mb-1">ROMANCE</p>
+                    <h3 class="h6 text-white">CUMBRES BORRASCOSAS</h3>
+                    <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg" class="img-fluid rounded mb-2" style="max-height: 150px;">
+                    <p class="descripcion small opacity-75">Amor tormentoso e inmortal entre personas lejanas</p>
+                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html" class="btn btn-sm btn-link text-primary p-0">Ver más</a>
+                </div>
+
+                <hr class="border-secondary">          
+            </aside>
+        </div> <!-- Fin del row -->
+    </div>
+
+  <footer class="footer">
+        <p class="mb-1">Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p class="mb-0">2026 MovieCali. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

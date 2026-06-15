@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de peliculas</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
+    <script src="../../scripts/header.js" defer></script>
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
+
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
+        </form>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
+            <a href="../index_usser.html">Inicio</a>
+            <a href="../catalogo_peliculas_usser.html">Películas</a>
+            <a href="../catalogo_series_usser.html">Series</a>
+        </nav>
+
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>USUARIO - 12345</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                <a href="../resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                <a href="../index.html">CERRAR SESION</a>
+            </div>
+        </div>
+
+    </header>
+
+    <hr>
+    <!-- FIN DE HEADER-->
+
+<!------------------------------------------------------------------------------------------->
+
+<!-- CONTENEDOR GENERAL -->
+     <div class="fila">
+                <!-- MAIN -->
+        <main>
+            <!-- TITULO, DETALLES Y TRAILER-->
+            <section class="detalle-principal">
+                <div class="poster">
+                    <img src="../../recursos/imagenes/peliculas/avatarfuegoyceniza.jpg" alt="AVATAR: FUEGO Y CENIZA"> 
+                </div>
+                <div class="info-serie">
+                    <h1>AVATAR: FUEGO Y CENIZA</h1>
+                    <p>
+                        Jake Sully y Neytiri enfrentan una nueva amenaza en Pandora: el clan de fuego, una facción Na'vi   
+                        más agresiva y destructiva. Mientras la guerra se intensifica, la familia Sully deberá adaptarse   
+                        a nuevos territorios y peligros, poniendo a prueba sus vínculos, su resistencia y su lugar en el mundo.
+                    </p>
+                    <ul>
+                        <li><strong>Género:</strong> Ciencia Ficción / Aventura</li>
+                        <li><strong>Año:</strong> 2025</li>
+                        <li><strong>Duración:</strong> 3h 10min</li>
+                        <li><strong>Director:</strong> James Cameron</li>
+                        <li><strong>Productores/as:</strong> James Cameron, Jon Landau</li>
+                        <li><strong>Calificación general:</strong> 8.5/10</li>
+                        <li><strong>Clasificación por edad:</strong> +13</li>
+                        <li><strong>Plataformas:</strong> Cine</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card-detalle">
+                <!-- TRAILER -->
+                <div class="video-container">
+                    <h2>Tráiler</h2>
+                    <video width="600" controls>
+                        <source src="../../recursos/videos/AvatarFuegoyCenizas.mp4" type="video/mp4"> 
+                            <!-- DEBI PONER .MP4, ya que .webs era muy pesado en este caso para github -->
+                            Tu navegador no soporta este video. Probá con otro navegador.
+                    </video>
+                </div>
+            </section>
+            <!-- REPARTO-->
+            <section class="card-detalle">
+                <h2>REPARTO</h2>
+                    <div class="reparto-vertical"> 
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/SamWorthington.jpg" alt="SAM WORTHINGTON" >  
+                            <h3>SAM WORTHINGTON</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/ZoeSaldana.jpg" alt="ZOE SALDAÑA" >  
+                            <h3>ZOE SALDAÑA</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/SigourneyWeaver.jpg" alt="SIGOURNEY WEAVER" >  
+                            <h3>SIGOURNEY WEAVER</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/StephenLang.jpg" alt="STEPHEN LANG" >  
+                            <h3>STEPHEN LANG</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/KateWinslet.jpg" alt="KATE WINSLET" >  
+                            <h3>KATE WINSLET</h3>
+                        </div>
+                    </div>
+            </section>
+
+            <!--RESEÑA DE USUARIOS-->
+            <section class="card-detalle">
+                <h2>RESEÑAS DESTACADAS</h2>
+                    <div class="resenas-container">
+                        <!--USUARIO 1-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 9.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" alt="USUARIO">
+                                <p><b>PandoraFan dice:</b></p>
+                            </div>
+                                <h3>Visualmente impresionante</h3>
+                                <p>
+                                    Cameron vuelve a subir la vara.   
+                                    Pandora nunca se vio tan viva y peligrosa.   
+                                    La introducción del clan de fuego le da un giro más oscuro y épico a la saga.
+                                </p> 
+                        </div>
+
+                        <!--USUARIO 2-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 8.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" alt="USUARIO">
+                                <p><b>CineTotal dice:</b></p>
+                            </div>
+                                <h3>Más intensa que las anteriores</h3>
+                                <p>
+                                La historia es más oscura y emocional.   
+                                La acción está muy bien lograda, aunque su duración puede sentirse un poco extensa.
+                                </p> 
+                        </div>
+
+                        <!--USUARIO 3-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 8.5 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" alt="USUARIO">
+                                <p><b>EpicViewer dice: </b></p>
+                            </div>
+                                <h3>Un espectáculo total</h3>
+                                <p>
+                                    Es cine espectáculo en su máxima expresión.   
+                                    Los efectos visuales y el sonido son de otro nivel.   
+                                    Ideal para verla en pantalla grande.
+                                </p>
+                        </div>
+
+                        <!--USUARIO 4-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 7.5 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" alt="USUARIO">
+                                <p><b>CriticoReal dice: </b></p>
+                            </div>
+                                <h3>Buena, pero larga</h3>
+                                <p>
+                                    Muy buena película, pero necesita un poco más de ritmo en el segundo acto.   
+                                    Aun así, cumple como secuela.
+                                </p>
+                        </div>
+
+                        <!--USUARIO 5-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 6.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png" alt="USUARIO">
+                                <p><b>CasualViewer dice: </b></p>
+                            </div>
+                                <h3>Mucho espectáculo, poca novedad</h3>
+                                <p>
+                                    Visualmente increíble, pero la historia se siente familiar.   
+                                    Aún así, es entretenida.
+                                </p>  
+                        </div>
+                        <div class="contenedor-boton">
+                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                        </div>
+                    </div>
+            </section>
+            <!-- RELACIONADOS-->
+            <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class="relacionados-container">
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/Avatar.jpg" alt="AVATAR">  
+                        <h3>AVATAR</h3>
+                        <h3>Calificación: 7.8/10</h3>
+                        <h3>DURACION: 2h 42min </h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/AvatarElCaminoDelAgua.jpg" alt="AVATAR: EL CAMINO DEL AGUA">  
+                        <h3>AVATAR: EL CAMINO DEL AGUA</h3>
+                        <h3>Calificación: 8.0/10</h3>
+                        <h3>DURACION: 3h 12min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/dune1.jpg" alt="DUNE">  
+                        <h3>DUNE</h3>
+                        <h3>Calificación: 8.1/10</h3>
+                        <h3>DURACION: 2h 35min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/interstellar.jpg" alt="INTERESTELAR">  
+                        <h3>INTERESTELAR</h3>
+                        <h3>Calificación: 8.6/10</h3>
+                        <h3>DURACION: 2h 49min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/GuardianesDeLaGalaxia.jpg" alt="GUARDIANES DE LA GALAXIA">  
+                        <h3>GUARDIANES DE LA GALAXIA</h3>
+                        <h3>Calificación: 8.0/10</h3>
+                        <h3>DURACION: 2h 1min</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+     
+        <aside>
+            <h2>SUGERENCIAS PARA TI</h2>
+
+            <!-- ITEM 1 -->
+            <div class="item-aside">
+                <p class="genero">ROMANCE</p>
+                <h3>CUMBRES BORRASCOSAS</h3>
+                <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 2 -->
+            <div class="item-aside">
+                <p class="genero">TERROR</p>
+                <h3>WEAPONS</h3>
+                <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 3 -->
+            <div class="item-aside">
+                <p class="genero">COMEDIA</p>
+                <h3>NOVOCAINE</h3>
+                <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 4 -->
+            <div class="item-aside">
+                <p class="genero">CIENCIA FICCIÓN</p>
+                <h3>DUNE: PART 2</h3>
+                <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 5 -->
+            <div class="item-aside">
+                <p class="genero">ANIMACIÓN</p>
+                <h3>FLOW</h3>
+                <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+            </div>
+        </aside>
+
+    </div>
+  <!-- FOOTER -->
+    <footer class="footer">
+
+        <p class="titulo-footer">
+            Desarrollado por:
+        </p>
+
+        <p class="nombres-footer">
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+            Alan Walker - Gisella Jara - Brenda Pavez
+        </p>
+
+    </footer>
+ 
+</body>
+</html>
+
+

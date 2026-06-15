@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Movie Cali</title>
-    <link rel="stylesheet" href="../estilos/body.css">
-    <link rel="stylesheet" href="../estilos/header.css">
-    <link rel="stylesheet" href="../estilos/footer.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
-    <link rel="stylesheet" href="../estilos/estilo_internet/carrusel.css">
-    <script src="../scripts/header.js" defer></script>
 
-    
+    <title>MovieCali</title>
+
     <!-- Bootstrap SOLO para carousel -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap JS SOLO para carousel -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/estilo_internet/carrusel.css">
+     <script src="../scripts/header.js" defer></script>
+
 </head>
 
-
 <body>
-
-    <!-- HEADER -->
+     <!-- HEADER -->
     <header class="header">
         <!-- LOGO -->
         <div class="logo">
@@ -41,9 +39,9 @@
 
         <!-- NAVEGACIÓN -->
         <nav class="menu">
-            <a href="#">Inicio</a>
+            <a href="./index_usser.html">Inicio</a>
             <a href="./catalogo_peliculas_usser.html">Películas</a>
-            <a href="./catalogo_series_usser.html">Series</a>
+            <a href="#">Series</a>
         </nav>
 
         <!-- usuario registrado-->
@@ -65,161 +63,84 @@
                 <a href="../index.html">CERRAR SESION</a>
             </div>
         </div>
+
     </header>
-
-    <hr>
-
 
     <!-- CAROUSEL -->
     <main>
 
-        <div id="carouselMovieCali"
-             class="carousel slide carousel-fade"
-             data-bs-ride="carousel">
+        <div id="carouselMovieCali" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-            <!-- INDICADORES -->
+        <!-- INDICADORES -->
             <div class="carousel-indicators">
-
-                <button type="button"
-                        data-bs-target="#carouselMovieCali"
-                        data-bs-slide-to="0"
-                        class="active">
-                </button>
-
-                <button type="button"
-                        data-bs-target="#carouselMovieCali"
-                        data-bs-slide-to="1">
-                </button>
-
-                <button type="button"
-                        data-bs-target="#carouselMovieCali"
-                        data-bs-slide-to="2">
-                </button>
-
+                <button type="button" data-bs-target="#carouselMovieCali" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselMovieCali" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselMovieCali" data-bs-slide-to="2"></button>
             </div>
 
             <!-- SLIDES -->
             <div class="carousel-inner">
-
                 <!-- SLIDE 1 -->
                 <div class="carousel-item active">
-
-                    <img src="../recursos/imagenes/peliculas/f1Poster.jpg"
-                         class="carousel-img"
-                         alt="F1 La Película">
-
+                    <img src="../recursos/imagenes/peliculas/f1Poster.jpg" class="carousel-img" alt="F1 La Película">
                     <div class="carousel-caption">
-
                         <h2>F1 La Película</h2>
-
                         <p>
                             La leyenda de las carreras Sonny Hayes se ve obligado
                             a liderar un equipo de Fórmula 1 en dificultades y
                             entrenar a un joven prometedor.
                         </p>
-
-                        <a href="../internet/detalles/f1LaPelicula.html"
-                           class="btn trailer-btn">
-
-                            Ver trailer
-
-                        </a>
-
+                        <a href="../extranet/detalles_aside/f1LaPelicula.html" class="btn trailer-btn"> Ver trailer</a>
                     </div>
-
                 </div>
 
                 <!-- SLIDE 2 -->
                 <div class="carousel-item">
-
-                    <img src="../recursos/imagenes/peliculas/PeakyBlindersTheImmortalMan.jpg"
-                         class="carousel-img"
-                         alt="Peaky Blinders">
-
+                    <img src="../recursos/imagenes/peliculas/PeakyBlindersTheImmortalMan.jpg" class="carousel-img" alt="Peaky Blinders">
                     <div class="carousel-caption">
-
                         <h2>Peaky Blinders: The Immortal Man</h2>
-
                         <p>
                             Tommy Shelby deberá salvar a su familia y a su país
                             enfrentando nuevos enemigos y secretos del pasado.
                         </p>
 
-                        <a href="../internet/detalles/peakyBlinders.html"
-                           class="btn trailer-btn">
-
-                            Ver trailer
-
-                        </a>
-
+                        <a href="../extranet/detalles_aside/peakyBlinders.html" class="btn trailer-btn"> Ver trailer</a>
                     </div>
-
                 </div>
 
                 <!-- SLIDE 3 -->
                 <div class="carousel-item">
-
-                    <img src="../recursos/imagenes/peliculas/superMarioGalaxyPoster.jpg"
-                         class="carousel-img"
-                         alt="Super Mario Galaxy">
-
+                    <img src="../recursos/imagenes/peliculas/superMarioGalaxyPoster.jpg" class="carousel-img" alt="Super Mario Galaxy">
                     <div class="carousel-caption">
-
                         <h2>SUPER MARIO GALAXY</h2>
-
                         <p>
                             Mario y Luigi viajan por el espacio junto a Yoshi
                             y Rosalina para detener a Bowser Jr.
                         </p>
-
-                        <a href="../internet/detalles/superMarioBros.html"
-                           class="btn trailer-btn">
-
-                            Ver trailer
-
-                        </a>
-
+                        <a href="../extranet/detalles_aside/superMario.html" class="btn trailer-btn">Ver trailer</a>
                     </div>
-
                 </div>
-
             </div>
 
             <!-- BOTONES -->
-            <button class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselMovieCali"
-                    data-bs-slide="prev">
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMovieCali" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
-
             </button>
-
-            <button class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselMovieCali"
-                    data-bs-slide="next">
-
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMovieCali" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
-
             </button>
-
         </div>
-
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-
         <p>
             Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce ·
             Alan Walker · Gisella Jara · Brenda Pavez
         </p>
-
         <p>
             2026 MovieCali. Todos los derechos reservados.
         </p>
-
     </footer>
 </body>
 </html>

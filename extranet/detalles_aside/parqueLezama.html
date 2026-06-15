@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de peliculas</title>
+    <link rel="stylesheet" href="../../estilos/body.css">
+    <link rel="stylesheet" href="../../estilos/header.css">
+    <link rel="stylesheet" href="../../estilos/footer.css">
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
+    <script src="../../scripts/header.js" defer></script>
+    <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="../../recursos/imagenes/logo/logo.png"
+                alt="Logo MovieCali">
+        </div>
+
+        <!-- BUSCADOR -->
+        <form class="buscador">
+            <input type="text"
+                placeholder="Buscar películas, series...">
+
+            <button>🔍</button>
+        </form>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="menu">
+            <a href="../index_usser.html">Inicio</a>
+            <a href="../catalogo_peliculas_usser.html">Películas</a>
+            <a href="../catalogo_series_usser.html">Series</a>
+        </nav>
+
+        <!-- usuario registrado-->
+        <!-- PERFIL -->
+        <div class="perfil" id="perfilBtn">
+            <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+
+            <div class="perfil-info">
+                <span>USUARIO - 12345</span>
+                <span class="flecha">▼</span>
+            </div>
+
+            <div class="dropdown">
+                <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span> MI PERFIL</a>
+                <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span> MIS CALIFICACIONES</a>
+                <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span> MIS RESEÑAS</a>
+                <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span> MIS PELICULAS FAVORITAS</a>
+                <a href="../resenas_favoritas.html" class="especial">⭐ RESEÑAS FAVORITAS</a>
+                <a href="../index.html">CERRAR SESION</a>
+            </div>
+        </div>
+
+    </header>
+
+    <hr>
+    <!-- FIN DE HEADER-->
+
+<!------------------------------------------------------------------------------------------->
+
+<!-- CONTENEDOR GENERAL -->
+     <div class="fila">
+         <!-- MAIN -->
+        <main>
+            <!-- TITULO, DETALLES Y TRAILER-->
+            <section class="detalle-principal">
+                
+                <div class="poster">
+                    <img src="../../recursos/imagenes/peliculas/parquelezama.jpg" alt="PARQUE LEZAMA">
+                </div>
+                <div class="info-serie"> 
+                    <h1>PARQUE LEZAMA</h1>
+                    <p>
+                        Dos hombres mayores, con visiones opuestas de la vida, se encuentran a diario en un banco de Parque Lezama. 
+                        Entre discusiones, humor y reflexiones, construyen una inesperada amistad que explora temas como la soledad, 
+                        la memoria, la identidad y el paso del tiempo.
+                    </p>
+                    <ul>
+                        <li><strong>Género:</strong> Drama / Comedia</li>
+                        <li><strong>Año:</strong> 2023</li>
+                        <li><strong>Duración:</strong> 1h 20min</li>
+                        <li><strong>Director:</strong> Juan José Campanella</li>
+                        <li><strong>Productores/as:</strong> Juan José Campanella, 100 Bares Producciones</li>
+                        <li><strong>Calificación general:</strong> 8.2/10</li>
+                        <li><strong>Clasificación por edad:</strong> +13</li>
+                        <li><strong>Plataformas:</strong> Cine / Streaming local</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card-detalle">
+                <div class="video-conteiner">
+                    <h2>Tráiler</h2>
+                    <video controls>
+                        <source src="../../recursos/videos/ParqueLezama.mp4" type="video/mp4">
+                        Tu navegador no soporta este video. Probá con otro navegador.
+                         <!-- DEBI PONER .MP4, ya que .webs era muy pesado en este caso para github -->
+                    </video>
+                </div>
+            </section>
+
+            <!-- REPARTO-->
+             <section class="card-detalle">
+                <h2>REPARTO</h2>
+                <div class="reparto-vertical"> 
+                    <div class="actor-card">
+                    <img src="../../recursos/imagenes/Reparto/LuisBrandoni.jpg" alt="LUIS BRANDONI"> 
+                    <h3>LUIS BRANDONI</h3>
+                </div>
+                <div class="actor-card">
+                    <img src="../../recursos/imagenes/Reparto/EduardoBlanco.jpg" alt="EDUARDO BLANCO"> 
+                    <h3>EDUARDO BLANCO</h3>
+                </div>
+                <div class="actor-card">
+                    <img src="../../recursos/imagenes/Reparto/veronicaPelaccini.jpg" alt="VERÓNICA PELACCINI"> 
+                    <h3>VERÓNICA PELACCINI</h3>
+                </div>
+                <div class="actor-card">
+                    <img src="../../recursos/imagenes/Reparto/agustinAristaran.jpg" alt="AGUSTÍN ARISTARÁN"> 
+                    <h3>AGUSTÍN ARISTARÁN</h3>
+                </div>
+                <div class="actor-card">
+                    <img src="../../recursos/imagenes/Reparto/manuelaMenendez.jpg" alt="MANUELA MENÉNDEZ"> 
+                    <h3>MANUELA MENÉNDEZ</h3>
+                </div>
+            </section>
+
+            <!--RESEÑA DE USUARIOS-->
+             <section class="card-detalle">
+                <h2>RESEÑAS DESTACADAS</h2>
+                <div class="resenas-container">
+                    <!--USUARIO 1-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                        <div>
+                            <p><b>Calificación:</b> 8.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>CineArgento dice:</b></p>
+                        </div>
+                        <h3>Simple pero poderosa</h3>
+                        <p>
+                            Una película que demuestra que no hacen falta grandes efectos para emocionar.  
+                            Dos actores brillantes sostienen toda la historia con diálogos profundos y  
+                            momentos muy humanos.  
+                            Es cercana, íntima y muy bien actuada.
+                        </p>
+                    </div>
+                    <!--USUARIO 2-->
+                    <div  class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                        <div>
+                            <p><b>Calificación:</b> 7.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>Mateo_Reviews dice:</b></p>
+                        </div>
+                        <h3>Te hace pensar</h3>
+                        <p>
+                        No es una película para todos, pero si te gustan los diálogos y las historias  
+                        centradas en personajes, la vas a disfrutar.  
+                        Tiene momentos muy reflexivos sobre la vida y la vejez.
+                        </p>
+                    </div>
+                    <!--USUARIO 3-->
+                    <div  class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                        <div>
+                            <p><b>Calificación:</b> 8.5 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>DramaLover dice: </b></p>
+                        </div>
+                        <h3>Actuaciones impecables</h3>
+                        <p>
+                            Brandoni y Blanco tienen una química increíble.  
+                            Cada conversación se siente real y cargada de significado.  
+                            Una joya del cine argentino.
+                        </p>
+                        
+                    </div>
+                    <!--USUARIO 4-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                        <div>
+                            <p><b>Calificación:</b> 7.5 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>LectorUrbano dice: </b></p>
+                        </div>
+                        <h3>Reflexiva y tranquila</h3>
+                        <p>
+                            Una historia pausada pero muy significativa.  
+                            Ideal para quienes disfrutan del cine más introspectivo.
+                        </p>
+                    </div>
+                    <!--USUARIO 5-->
+                    <div class="resena-card">
+                        <span>★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆</span>
+                        <div>
+                            <p><b>Calificación:</b> 5.0 / 10</p>
+                            <img src="../../recursos/imagenes/iconos/usuario.png">
+                            <p><b>AccionFan dice: </b></p>
+                        </div>
+                        <h3>Demasiado lenta</h3>
+                        <p>
+                            Buenas actuaciones, pero me resultó lenta.  
+                            Si buscás algo dinámico, probablemente no sea tu tipo de película.
+                        </p>
+                    </div>
+                    <div class="contenedor-boton">
+                        <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RELACIONADOS-->
+            <section class="card-detalle">
+                <h2>RELACIONADOS</h2>
+                <div class="relacionados-container">
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/ElCuentoDeLasComadrejas.jpg" alt="EL CUENTO DE LAS COMADREJAS"> 
+                        <h3>EL CUENTO DE LAS COMADREJAS</h3>
+                        <h3>Calificación: 7.3/10</h3>
+                        <h3>DURACION: 2h 9min </h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/Metegol.jpg" alt="METEGOL"> 
+                        <h3>METEGOL</h3>
+                        <h3>Calificación: 6.5/10</h3>
+                        <h3>DURACION: 1h 46min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/ElHijoDeLaNovia.jpg" alt="EL HIJO DE LA NOVIA"> 
+                        <h3>EL HIJO DE LA NOVIA</h3>
+                        <h3>Calificación: 8.1/10</h3>
+                        <h3>DURACION: 2h 3min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/LunaDeAvellaneda.jpg" alt="LUNA DE AVELLANEDA"> 
+                        <h3>LUNA DE AVELLANEDA</h3>
+                        <h3>Calificación: 7.5/10</h3>
+                        <h3>DURACION: 2h 23min</h3>
+                    </div>
+                    <div class="relacionado-card">
+                        <img src="../../recursos/imagenes/peliculas/EsperandoLaCarroza.jpg" alt="ESPERANDO LA CARROZA"> 
+                        <h3>ESPERANDO LA CARROZA</h3>
+                        <h3>Calificación: 8.0/10</h3>
+                        <h3>DURACION: 1h 35min</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <h2>SUGERENCIAS PARA TI</h2>
+
+            <!-- ITEM 1 -->
+            <div class="item-aside">
+                <p class="genero">ROMANCE</p>
+                <h3>CUMBRES BORRASCOSAS</h3>
+                <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 2 -->
+            <div class="item-aside">
+                <p class="genero">TERROR</p>
+                <h3>WEAPONS</h3>
+                <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 3 -->
+            <div class="item-aside">
+                <p class="genero">COMEDIA</p>
+                <h3>NOVOCAINE</h3>
+                <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 4 -->
+            <div class="item-aside">
+                <p class="genero">CIENCIA FICCIÓN</p>
+                <h3>DUNE: PART 2</h3>
+                <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+            </div>
+
+            <hr>
+
+            <!-- ITEM 5 -->
+            <div class="item-aside">
+                <p class="genero">ANIMACIÓN</p>
+                <h3>FLOW</h3>
+                <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+            </div>
+        </aside>
+
+    </div>
+  <!-- FOOTER -->
+    <footer class="footer">
+
+        <p class="titulo-footer">
+            Desarrollado por:
+        </p>
+
+        <p class="nombres-footer">
+            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
+            Alan Walker - Gisella Jara - Brenda Pavez
+        </p>
+
+    </footer>
+ 
+</body>
+</html>
+
+

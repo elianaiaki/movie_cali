@@ -23,10 +23,14 @@
     color: white;
 }
 
-.video-container video{
+/* .video-container video{
     width:100%;
     max-width:600px;
     border-radius:15px;
+} */
+ .video-conteiner video{
+    width: 600px;
+    border-radius: 15px;
 }
 
 .card-detalle{
