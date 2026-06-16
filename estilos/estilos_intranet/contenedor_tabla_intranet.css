@@ -1,3 +1,7 @@
+/* ======================================
+   TARJETAS DE CARGAS/ 
+====================================== */
+
 /* Contenedor Principal */
 .contenedorFormulario {
     background-color: #1a3a5c; /*color de fondo de tarjetas para todos*/
@@ -9,8 +13,10 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* ======================================
+   DISEÑO EN CUADRICULA / COLUMNA
+====================================== */
 
-/* Diseño en cuadrícula */
 #formAgregar {
     display: grid;
     grid-template-columns: repeat(4,1fr); /* Divide el formulario en 3 columnas */
@@ -22,13 +28,17 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-
-/* Campos individuales */
+/* ======================================
+   CAMPOS INDIVIDUALES
+====================================== */
 .grupoCampo, .grupoCampoArchivo {
     display: flex;
     flex-direction: column;
 }
-/* Campos anchos o bloques especiales que deben tomar el doble de espacio (2 columnas) */
+/* ======================================
+    CAMPOS ANCHOS 
+====================================== */
+/* bloques especiales que deben tomar el doble de espacio (2 columnas) */
 .campoDoble {
     grid-column: span 2 !important;
 }
@@ -38,8 +48,10 @@
     display: flex;
     flex-direction: column;
 }
+/* ======================================
+   ESTILOS DE ETIQUETAS
+====================================== */
 
-/* Estilos de las etiquetas */
 label {
     font-size: 14px;
     font-weight: 600;
@@ -47,7 +59,9 @@ label {
     color: #d8d3d3;
 }
 
-/* Entradas de texto, Selects y Textareas */
+/* ======================================
+   ESTILOS EN ENTRADAS DE TEXTO, SELECTS, TEXTAREAS
+====================================== */
 .inputTexto, select, textarea {
     background-color: #2a2a2a;
     border: 1px solid #444;
@@ -59,15 +73,17 @@ label {
     width: 100%;
     box-sizing: border-box;
 }
-
-/* Contenedores juntos para el Reparto  */
+/* ======================================
+   CONTENEDORES JUNTOS PARA EL REPARTO
+====================================== */
 .repartoContenedor {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-
-/* Inputs de tipo archivo */
+/* ======================================
+   ESTILO DE INPUT TIPO ARCHIVO
+====================================== */
 input[type="file"] {
     color: #bbb;
     font-size: 14px;

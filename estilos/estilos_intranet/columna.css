@@ -1,3 +1,6 @@
+/* ======================================
+   TARJETAS
+====================================== */
 .contenedor-principal {
     display: flex;
     gap: 30px;                 /* Espacio de separacion entre reportes y el aside */

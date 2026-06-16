@@ -1,3 +1,6 @@
+/* ======================================
+   ESTILO CONTENEDOR GENERAL
+====================================== */
 .contenedorGeneral{
     background-color: #1a3a5c; /*color de fondo de tarjetas para todos*/
     color: #ffffff;
@@ -8,12 +11,18 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-
+/* ======================================
+   ESTRUCTURA DE CONTENEDOR GENERAL
+====================================== */
 .contenedorEditarPerfil {
     display:flex;
     gap:50px;
     align-items:flex-start;
 }
+
+/* ======================================
+   IMAGENES
+====================================== */
 
 .contenedorImg {
     text-align: center;
@@ -23,16 +32,22 @@
 .contenedorImg img{
     width: 250px;
 }
-
+/* ======================================
+   FORMULARIOS
+====================================== */
 .contenedorForm{
     display:grid;
     grid-template-columns:320px 320px;
     gap:20px 40px;
 }
+
+/*ESTRUCTURA DE CADA DIV DENTRO DEL FORM*/
 .grupoCampo {
     display: flex;
     flex-direction: column;
 }
+
+/*ESTILOS PARA LOS INPUTS*/
 .inputTexto {
     background-color: #2a2a2a;
     border: 1px solid #444;
@@ -44,8 +59,9 @@
     width: 100%;
     box-sizing: border-box;
 }
-
-
+/* ======================================
+   BOTON
+====================================== */
 .contenedorBtn {
     grid-column:1 / -1;
     display:flex;

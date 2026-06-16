@@ -1,4 +1,6 @@
-/* Título */
+/* ======================================
+   TITULOS
+====================================== */
 .contenedor-formulario h2, h2 {
     color: #fff;
     font-size: 26px;
@@ -7,7 +9,9 @@
     border-bottom: 1px solid #333;
     padding-bottom: 10px;
 }
-/* Bloque que contiene el encabezado y el grupo de tarjetas */
+/* =========================================================
+   BLOQUE QUE CONTIENE EL ENCABEZADO Y EL GRUPO DE TARJETAS
+============================================================ */
 .categoria-bloque {
     margin-bottom: 40px;
     
@@ -45,7 +49,7 @@
     background-color: #ffffff;
     border: 2px solid #000000;
     padding: 6px 15px;
-    border-radius: 20px; /* Forma de píldora como la maqueta */
+    border-radius: 20px; 
     display: flex;
     align-items: center;
     gap: 10px;

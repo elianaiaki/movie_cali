@@ -1,13 +1,15 @@
-/*------------Botones superiores----------------*/
-
+/* ======================================
+    CONTENEDOR BOTONES SUPERIORES
+====================================== */
 .Contenedor-Botones-superior {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-/*------ Estilos de botones -------*/
+/* ======================================
+   ESTILOS BOTONES SUPERIORES
+====================================== */
 .boton-superior {
     box-sizing: border-box;
     text-decoration: none;
@@ -33,8 +35,9 @@
     color: #ffffff;
 }
 
-/*---------------------BOTONES INFERIORES----------------------------------------------*/
-
+/* ======================================
+    CONTENEDOR BOTONES INFERIORES
+====================================== */
 .botones-inferiores {
     display: flex;            /* Activa Flexbox */
     flex-direction: column;      /* coloca uno al lado del otro */
@@ -44,6 +47,9 @@
     gap: 15px;
 
 }
+/* ======================================
+   TAMAÑOS DE BOTONES
+====================================== */
 .guardar_accion, 
 .modificables, 
 .accion_publicar {
@@ -53,7 +59,9 @@
     gap: 15px;                /* Espacio de separación entre botones de la misma fila */
 }
 
-/* -------LOS BOTONES:-----------------*/
+/* ======================================
+   ESTILOS DE BOTONES INFERIORES
+====================================== */
 .btn-gris {
     box-sizing: border-box;
     text-decoration: none;
@@ -74,8 +82,10 @@
 .btn-gris:hover {
     background-color: #003366;
 }
-/*---------INTERRUPTOR PARA LA ACCION PUBLICAR -----------*/
 
+/* ======================================
+   INTERRUPTOR PARA LA ACCION PUBLICAR
+====================================== */
 .accion_publicar {
     background-color: #444;
     padding: 12px 24px;
@@ -87,15 +97,19 @@
     font-weight: bold;
     font-family: sans-serif;
 }
-
-/* Contenedor del switch (el tamaño total del botón) */
+/* ======================================
+   CONTENEDOR DEL INTERRUPTOR
+====================================== */
+/*  (el tamaño total del botón) */
 .switch {
     position: relative;
     display: inline-block;
     width: 44px;
     height: 24px;
 }
-
+/* ======================================
+   ESTILOS AL INTERRUPTOR
+====================================== */
 /* Escondemos el checkbox original del navegador */
 .switch input {
     opacity: 0;
@@ -141,8 +155,9 @@
     transform: translateX(20px);
 }
 
-/*-------------------------------------------------*/
-
+/* ==============================================
+   CONTENEDOR DE BOTONES INFERIORES MAS PEQUEÑOS 
+================================================= */
 /* Contenedor inferior de botones */
 .botones-contenedor {
     margin: 10px;
@@ -153,7 +168,9 @@
     flex-grow: 1;
 }
 
-
+/* ======================================
+   ESTILOS BOTONES 
+====================================== */
 .btn {
     display: inline-block; /*  etiquetas <a> actuan como botones */
     background-color: #444;

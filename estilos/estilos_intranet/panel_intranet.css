@@ -1,4 +1,6 @@
-/* --- BOTÓN SUPERIOR PANEL--- */
+/* ======================================
+   BOTON PANEL
+====================================== */
 
 .contenedor-panel {
     display: flex; /*para poder alinear*/
