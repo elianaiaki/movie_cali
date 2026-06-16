@@ -1,5 +1,4 @@
-/* SECCION DEL USUARIO  ---------------------------------------------------------------*/
-.perfil {
+.miperfil-usuario {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -8,33 +7,33 @@
 }
 
 /* foto de perfil --*/
-.perfil-foto img {
+.miperfil-foto img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
 /* informacion de perfil --*/
-.perfil-info {
+.miperfil-info {
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
 
-.perfil-info h2 {
+.miperfil-info h2 {
     color: #7aafd4;
     font-size: 13px;
     margin: 0;
 }
 
-.perfil-info h1 {
+.miperfil-info h1 {
     font-size: 22px;
     margin: 4px 0;
     color: white;
 }
 
 /* enlance-boton: Editar perfil--*/
-.perfil-info a {
+.miperfil-info a {
     color: white;
     font-size: 12px;
     border: 1px solid #4a8abf;
@@ -45,103 +44,57 @@
     background: transparent;
 }
 
-.perfil-info a:hover {
+.miperfil-info a:hover {
     background: #2a4f7a;
 }
 
 /* parrafo --*/
-.perfil-info p {
+.miperfil-info p {
     font-size: 12px;
     color: #ccc;
     margin: 4px 0 0 0;
 }
 
 /* tabla de resumen --*/
-.perfil-resumen {
+.miperfil-resumen {
     margin-left: auto;
     border-collapse: collapse;
     color: white;
     border: none;
 }
 
-.perfil-resumen td {
+.miperfil-resumen td {
     padding: 6px 20px;
     text-align: center;
     border: none;
 }
 
-.perfil-resumen h2 {
+.miperfil-resumen h2 {
     font-size: 30px;
     margin: 0;
     color: white;
 }
 
-.perfil-resumen p {
+.miperfil-resumen p {
     font-size: 15px;
     color: #ccc;
     margin: 0;
 }
 
 
-/* fila de main + aside ---------------------------------------------------------------*/
+/*para adaptar pantallas */
 
-.fila {
-    display: flex;
-    align-items: flex-start;
-}
+@media (max-width: 768px) {
 
-/* primer fila MAIN */
-main {
-    flex: 1;
-    padding: 16px 70px;
-}
+    .miperfil-usuario {
+        flex-direction: column;
+    }
 
-/* cada sección apila el header y el carrusel verticalmente */
-.seccion {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
+    .miperfil-resumen {
+        margin-left: 0;
+    }
 
-/* titulo de la seccion: (mis calificaciones)(mis peliculas favoritas)(mis reseñas favoritas)(mis reseñas)*/
-.titulo-seccion {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-/* titulo(mis calificaciones), etc y subtitulo*/
-.titulo-seccion div {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-/* titulo (mis calificaciones)etc*/
-.titulo-seccion h2 {
-    font-size: 30px;
-    margin: 0;
-    padding-left: 10px;
-    border-left: 3px solid #4a90d9;
-    color: #e6edf3;
-}
-
-/* subtítulo en azul */
-.titulo-seccion h4 {
-    font-size: 15px;
-    font-weight: normal;
-    color: #4a90d9;
-    margin: 0;
-    padding-left: 14px;
-}
-
-/* link "Ver todas" */
-.titulo-seccion a {
-    font-size: 20px;
-    color: #58a6ff;
-    text-decoration: none;
-}
-
-.titulo-seccion a:hover {
-    text-decoration: underline;
+    main {
+        padding: 16px;
+    }
 }

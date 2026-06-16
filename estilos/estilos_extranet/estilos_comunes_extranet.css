@@ -1,0 +1,68 @@
+main {
+    padding: 16px 70px;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.titulo-seccion div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.titulo-seccion h2 {
+    font-size: 30px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 3px solid #4a90d9;
+    color: #e6edf3;
+}
+
+.titulo-seccion h4 {
+    font-size: 15px;
+    font-weight: normal;
+    color: #4a90d9;
+    margin: 0;
+    padding-left: 14px;
+}
+
+.titulo-seccion a {
+    font-size: 20px;
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.titulo-seccion a:hover {
+    text-decoration: underline;
+}
+
+section h3 {
+    color: #e6edf3;
+    margin: 20px 0 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    .titulo-seccion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 24px;
+    }
+}

@@ -3,18 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis películas favoritas</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/body.css">
     <link rel="stylesheet" href="../estilos/header.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/estilos_extranet/aside_extranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_extranet/estilos_mi_perfil.css">
+    <link rel="stylesheet"href="../estilos/estilos_extranet/estilos_comunes_extranet.css">
+
 
     <script src="../scripts/header.js" defer></script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
         </nav>
 
         <!-- PERFIL -->
-        <div class="perfil" id="perfilBtn">
+        <div class="perfil-usuario" id="perfilBtn">
 
             <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
 
@@ -81,307 +82,306 @@
     <!-- CONTENEDOR GENERAL -->
     <br>
 
-    <div class="fila">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MAIN -->
+            <main class="col-12 col-lg-9"
 
-        <!-- MAIN -->
-        <main>
+                <!-- TÍTULO -->
+                <section class="seccion">
 
-            <!-- TÍTULO -->
-            <section class="seccion">
+                    <div class="titulo-seccion">
+                        <div>
+                            <h2>Mis Películas Favoritas ▶</h2>
+                        </div>
+                    </div>
 
-                <div class="titulo-seccion">
+                    <!-- FILTROS -->
                     <div>
-                        <h2>Mis Películas Favoritas ▶</h2>
-                    </div>
-                </div>
-
-                <!-- FILTROS -->
-                <div>
-                    <a href="./catalogo_peliculas_usser.html">
-                        Explorar mas peliculas
-                    </a>
-
-                    <label>Ordenar por:</label>
-
-                    <select>
-                        <option>Más reciente</option>
-                        <option>Mejor calificacion</option>
-                        <option>Título</option>
-                    </select>
-                </div>
-            </section>
-
-
-            <!-- GRILLA DE PELÍCULAS -->
-            <section>
-
-                <div class="d-flex flex-wrap gap-3">
-
-                    <!-- PELÍCULA 1 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/elGuardian.jpg" class="card-img-top" alt="El Guardián" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL GUARDIÁN</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 09/2026</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 2 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/supermario.jpg" class="card-img-top" alt="Super Mario Galaxy" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">SUPER MARIO GALAXY</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 01/2026</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 3 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" class="card-img-top" alt="Batman Inicia" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BATMAN INICIA</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 13/2025</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 4 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/elJuego.jpg" class="card-img-top" alt="Juego de Asesinos" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">JUEGO DE ASESINOS</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 12/2025</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 5 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/juegoDeCriminales.jpg" class="card-img-top" alt="Juego de Criminales" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">JUEGO DE CRIMINALES</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 09/2025</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 6 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/pulpFiction.jpg" class="card-img-top" alt="Pulp Fiction" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">PULP FICTION</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 03/2026</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 7 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/interstellar.jpg" class="card-img-top" alt="Interstellar" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">INTERSTELLAR</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 10/2024</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 8 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/elExtraño.jpg" class="card-img-top" alt="El extraño mundo de Jack" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL EXTRAÑO MUNDO DE JACK</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 12/2025</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 9 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/laPrincesaYElSapo.jpg" class="card-img-top" alt="La princesa y el sapo" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">LA PRINCESA Y EL SAPO</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 02/2021</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- PELÍCULA 10 -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
-                        <img src="../recursos/imagenes/peliculas/halloween.jpg" class="card-img-top" alt="Halloween" style="height:220px; object-fit:cover;">
-
-                        <div class="card-body p-2">
-                            <p class="card-title text-white fw-bold" style="font-size:0.75rem;">HALLOWEEN</p>
-                            <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
-                            <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 05/2025</p>
-                            <a href="#">Ver más</a>
-                            <br><br>
-                            <button class="btn btn-danger btn-sm">ELIMINAR</button>
-                        </div>
-                    </div>
-
-                    <!-- AGREGAR NUEVA PELÍCULA -->
-                    <div class="card" style="width: 150px; background:#1e3060; border:none;">
                         <a href="./catalogo_peliculas_usser.html">
-                            <img src="../recursos/imagenes/iconos/agregarNuevaPelicula.jpg" class="card-img-top" alt="Agregar película" style="height:220px; object-fit:cover;">
+                            Explorar mas peliculas
+                        </a>
+
+                        <label>Ordenar por:</label>
+
+                        <select>
+                            <option>Más reciente</option>
+                            <option>Mejor calificacion</option>
+                            <option>Título</option>
+                        </select>
+                    </div>
+                </section>
+
+
+                <!-- GRILLA DE PELÍCULAS -->
+                <section>
+                    <div class="d-flex flex-wrap gap-3">
+
+                        <!-- PELÍCULA 1 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/elGuardian.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
 
                             <div class="card-body p-2">
-                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">AGREGAR NUEVA PELÍCULA</p>
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL GUARDIÁN</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 09/2026</p>
+                                <a href="#">Ver más</a>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
                             </div>
-                        </a>
+                        </div>
+                    
+
+                        <!-- PELÍCULA 2 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/supermario.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">SUPER MARIO GALAXY</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 01/2026</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- PELÍCULA 3 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/batmanInicia.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">BATMAN INICIA</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 13/2025</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- PELÍCULA 4 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/elJuego.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">JUEGO DE ASESINOS</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 12/2025</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- PELÍCULA 5 -->
+                       <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/juegoDeCriminales.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">JUEGO DE CRIMINALES</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 09/2025</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- PELÍCULA 6 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/pulpFiction.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">PULP FICTION</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 03/2026</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- PELÍCULA 7 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/interstellar.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">INTERSTELLAR</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 10/2024</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- PELÍCULA 8 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/elExtraño.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">EL EXTRAÑO MUNDO DE JACK</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 12/2025</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- PELÍCULA 9 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/laPrincesaYElSapo.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">LA PRINCESA Y EL SAPO</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 02/2021</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- PELÍCULA 10 -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <img src="../recursos/imagenes/peliculas/halloween.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                            <div class="card-body p-2">
+                                <p class="card-title text-white fw-bold" style="font-size:0.75rem;">HALLOWEEN</p>
+                                <p class="card-text" style="font-size:0.7rem; color:#8ab4f8;">Calificación: 7.10 / 10</p>
+                                <p class="card-text text-white" style="font-size:0.65rem;"><b>Agregado:</b> 05/2025</p>
+                                <a href="#">Ver más</a>
+                                <br><br>
+                                <button class="btn btn-danger btn-sm">ELIMINAR</button>
+                            </div>
+                        </div>
+
+                        <!-- AGREGAR NUEVA PELÍCULA -->
+                        <div class="card" style="width:150px; background:#1e3060; border:none;">
+                            <a href="./catalogo_peliculas_usser.html">
+                                <img src="../recursos/imagenes/iconos/agregarNuevaPelicula.jpg" class="card-img-top" style="height:220px; object-fit:cover;">
+
+                                <div class="card-body p-2">
+                                    <p class="card-title text-white fw-bold" style="font-size:0.75rem;">AGREGAR NUEVA PELÍCULA</p>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
+                </section>
 
+            </main>
+
+            <!-- ASIDE -->
+            <aside class="col-12 col-lg-3">
+
+                <h2>SUGERENCIAS PARA TI</h2>
+
+                <!-- ITEM 1 -->
+                <div class="item-aside">
+                    <p class="genero">ROMANCE</p>
+
+                    <h3>CUMBRES BORRASCOSAS</h3>
+
+                    <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+
+                    <p class="descripcion">
+                        Amor tormentoso e inmortal entre personas lejanas
+                    </p>
+
+                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html">
+                        Ver mas
+                    </a>
                 </div>
-            </section>
 
-        </main>
+                <hr>
 
-        <!-- ASIDE -->
-        <aside>
+                <!-- ITEM 2 -->
+                <div class="item-aside">
+                    <p class="genero">TERROR</p>
 
-            <h2>SUGERENCIAS PARA TI</h2>
+                    <h3>WEAPONS</h3>
 
-            <!-- ITEM 1 -->
-            <div class="item-aside">
-                <p class="genero">ROMANCE</p>
+                    <img src="../recursos/imagenes/peliculas/weapons.jpg"
+                        width="80"
+                        height="100">
 
-                <h3>CUMBRES BORRASCOSAS</h3>
+                    <p class="descripcion">
+                        Horror perturbador sobre una familia y rituales desconocidos
+                    </p>
 
-                <img src="../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                    <a href="../extranet/detalles_aside/weapons.html">
+                        Ver mas
+                    </a>
+                </div>
 
-                <p class="descripcion">
-                    Amor tormentoso e inmortal entre personas lejanas
-                </p>
+                <hr>
 
-                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">
-                    Ver mas
-                </a>
-            </div>
+                <!-- ITEM 3 -->
+                <div class="item-aside">
+                    <p class="genero">COMEDIA</p>
 
-            <hr>
+                    <h3>NOVOCAINE</h3>
 
-            <!-- ITEM 2 -->
-            <div class="item-aside">
-                <p class="genero">TERROR</p>
+                    <img src="../recursos/imagenes/peliculas/novocaine.jpg"
+                        width="80"
+                        height="100">
 
-                <h3>WEAPONS</h3>
+                    <p class="descripcion">
+                        Un tipo bueno se salva que limita su umbral de acción
+                    </p>
 
-                <img src="../recursos/imagenes/peliculas/weapons.jpg"
-                    width="80"
-                    height="100">
+                    <a href="../extranet/detalles_aside/novocaine.html">
+                        Ver mas
+                    </a>
+                </div>
 
-                <p class="descripcion">
-                    Horror perturbador sobre una familia y rituales desconocidos
-                </p>
+                <hr>
 
-                <a href="../extranet/detalles_aside/weapons.html">
-                    Ver mas
-                </a>
-            </div>
+                <!-- ITEM 4 -->
+                <div class="item-aside">
+                    <p class="genero">CIENCIA FICCIÓN</p>
 
-            <hr>
+                    <h3>DUNE: PART 2</h3>
 
-            <!-- ITEM 3 -->
-            <div class="item-aside">
-                <p class="genero">COMEDIA</p>
+                    <img src="../recursos/imagenes/peliculas/dune.jpg"
+                        width="80"
+                        height="100">
 
-                <h3>NOVOCAINE</h3>
+                    <p class="descripcion">
+                        Paul Atreides lidera la revolución en el planeta de la arena
+                    </p>
 
-                <img src="../recursos/imagenes/peliculas/novocaine.jpg"
-                    width="80"
-                    height="100">
+                    <a href="../extranet/detalles_aside/dune_parte2.html">
+                        Ver mas
+                    </a>
+                </div>
 
-                <p class="descripcion">
-                    Un tipo bueno se salva que limita su umbral de acción
-                </p>
+                <hr>
 
-                <a href="../extranet/detalles_aside/novocaine.html">
-                    Ver mas
-                </a>
-            </div>
+                <!-- ITEM 5 -->
+                <div class="item-aside">
 
-            <hr>
+                    <p class="genero">ANIMACIÓN</p>
 
-            <!-- ITEM 4 -->
-            <div class="item-aside">
-                <p class="genero">CIENCIA FICCIÓN</p>
+                    <h3>FLOW</h3>
 
-                <h3>DUNE: PART 2</h3>
+                    <img src="../recursos/imagenes/peliculas/flow.jpg"
+                        width="80"
+                        height="100">
 
-                <img src="../recursos/imagenes/peliculas/dune.jpg"
-                    width="80"
-                    height="100">
+                    <p class="descripcion">
+                        Un gato sobrevive a una inundación en un mundo sin humanos
+                    </p>
 
-                <p class="descripcion">
-                    Paul Atreides lidera la revolución en el planeta de la arena
-                </p>
+                    <a href="../extranet/detalles_aside/flow.html">
+                        Ver mas
+                    </a>
+                </div>
 
-                <a href="../extranet/detalles_aside/dune_parte2.html">
-                    Ver mas
-                </a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 5 -->
-            <div class="item-aside">
-
-                <p class="genero">ANIMACIÓN</p>
-
-                <h3>FLOW</h3>
-
-                <img src="../recursos/imagenes/peliculas/flow.jpg"
-                    width="80"
-                    height="100">
-
-                <p class="descripcion">
-                    Un gato sobrevive a una inundación en un mundo sin humanos
-                </p>
-
-                <a href="../extranet/detalles_aside/flow.html">
-                    Ver mas
-                </a>
-            </div>
-
-        </aside>
-
+            </aside>
+        </div>
     </div>
 
     <!------------------------------------------------------------------------------------------->

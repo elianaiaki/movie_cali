@@ -1,3 +1,4 @@
+
 /* header -------------------------------------------------------------------------------------------------------------------------------*/
 
 .header{
@@ -6,7 +7,9 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 5px 10px;
+    min-height: 120px;
+
+    padding: 5px 20px;
 
     background: linear-gradient(
         90deg,
@@ -23,9 +26,9 @@
 } */
 
 .logo img{
-    max-width: 450px;
-    width: 100%;
+    width: 320px;
     height: auto;
+    display: block;
 }
 
 /* BUSCADOR --------------------------------------------------------*/
@@ -36,6 +39,7 @@
     align-items: center;
 
     width: 300px;
+    min-width: 300px;
 
     border-radius: 40px;
     overflow: hidden;
@@ -81,6 +85,10 @@
 
 .menu a{
 
+    min-width: 110px;
+
+    text-align: center;
+
     text-decoration: none;
 
     color: white;
@@ -96,7 +104,7 @@
 /* PERFIL DESPLEGABLE ------------------------------------------------------------------------*/
 
 /* PERFIL */
-.perfil {
+.perfil-usuario {
     position: relative;
     display: flex;
     align-items: center;
@@ -105,7 +113,7 @@
     color: white;
 }
 
-.perfil img {
+.perfil-usuario img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -117,7 +125,7 @@
     transition: transform 0.3s ease;
 }
 
-.perfil.abierto .flecha {
+.perfil-usuario.abierto .flecha {
     transform: rotate(180deg);
 }
 
@@ -147,7 +155,7 @@
     background: #2a4f7a;
 }
 
-.perfil.abierto .dropdown {
+.perfil-usuario.abierto .dropdown {
     display: block;
 }
 

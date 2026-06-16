@@ -1,23 +1,19 @@
 .card-detalle{
     background:#222934;
-    padding:40px;
+    padding:20px;
     border-radius:20px;
-    margin:40px;
+    margin:0 5px 20px 20px;
     color:white;
 }
 
-/* CONTENEDOR DE PELÍCULAS */
-
 .catalogo-container{
+    width:100%;
     display:flex;
     gap:15px;
-
     overflow-x:auto;
     overflow-y:hidden;
-
-    padding:10px 0;
-
     scroll-behavior:smooth;
+    padding-bottom:10px;
 }
 
 .catalogo-container::-webkit-scrollbar{
@@ -29,11 +25,8 @@
     border-radius:10px;
 }
 
-/* CARD DE PELÍCULA */
-
 .pelicula-card{
-    flex:0 0 calc((100% - 60px) / 5);
-
+    flex: 0 0 calc((100% - 60px) / 5);
     background:#0f5db8;
     color:white;
 
@@ -46,101 +39,43 @@
 
 .pelicula-card img{
     width:100%;
-    height:300px;
+    height:350px;
     object-fit:cover;
 }
 
 .pelicula-info{
-    padding:12px;
+    padding:8px;
 }
 
 .pelicula-info a{
     display:block;
-
     color:white;
     text-decoration:none;
-
     font-weight:bold;
-    font-size:14px;
-
-    margin-bottom:10px;
+    font-size:12px;
+    margin-bottom:6px;
 }
 
 .pelicula-info p{
-    margin:5px 0;
-    font-size:12px;
+    margin:3px 0;
+    font-size:10px;
     color:#d9e6ff;
 }
 
-.card-detalle{
-    background:#222934;
-    padding:40px;
-    border-radius:20px;
-    margin:20px;
-    color:white;
+@media (max-width: 992px){
+    .pelicula-card{
+        flex: 0 0 calc((100% - 45px) / 4);
+    }
 }
 
-/* CONTENEDOR DE PELÍCULAS */
-.catalogo-container{
-    display:flex;
-    gap:15px;
-
-    overflow-x:auto;
-    overflow-y:hidden;
-
-    padding:10px 0;
-
-    scroll-behavior:smooth;
+@media (max-width: 768px){
+    .pelicula-card{
+        flex: 0 0 calc((100% - 30px) / 3);
+    }
 }
 
-.catalogo-container::-webkit-scrollbar{
-    height:8px;
-}
-
-.catalogo-container::-webkit-scrollbar-thumb{
-    background:#3a6fa0;
-    border-radius:10px;
-}
-
-/* CARD DE PELÍCULA */
-
-.pelicula-card{
-    flex:0 0 calc((100% - 60px) / 5);
-
-    background:#0f5db8;
-    color:white;
-
-    display:flex;
-    flex-direction:column;
-
-    border-radius:8px;
-    overflow:hidden;
-}
-
-.pelicula-card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
-.pelicula-info{
-    padding:12px;
-}
-
-.pelicula-info a{
-    display:block;
-
-    color:white;
-    text-decoration:none;
-
-    font-weight:bold;
-    font-size:14px;
-
-    margin-bottom:10px;
-}
-
-.pelicula-info p{
-    margin:5px 0;
-    font-size:12px;
-    color:#d9e6ff;
+@media (max-width: 576px){
+    .pelicula-card{
+        flex: 0 0 calc((100% - 15px) / 2);
+    }
 }
