@@ -1,5 +1,4 @@
 /* PERFIL DESPLEGABLE -------------------------------------------------- */
-
 .perfil{
     position: relative;
     display: flex;
@@ -8,73 +7,53 @@
     cursor: pointer;
     color: white;
 }
-
 .perfil img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 2px solid #4a90d9;
 }
-
 .perfil-info{
     display: flex;
     align-items: center;
     gap: 5px;
 }
-
 .flecha{
     font-size: 10px;
     transition: transform .3s;
 }
-
 .perfil.abierto .flecha{
     transform: rotate(180deg);
 }
 
 /* MENÚ DESPLEGABLE */
-
 .menu-perfil{
     position: absolute;
-
     top: 100%;
     right: 0;
-
     margin-top: 10px;
-
     min-width: 250px;
-
     display: none;
     flex-direction: column;
-
     background: #1a3a5c;
-
     border-radius: 10px;
-
     box-shadow: 0 5px 15px rgba(0,0,0,.3);
-
     overflow: hidden;
-
     z-index: 9999;
 }
 
 .menu-perfil a{
     display: block;
-
     padding: 12px 16px;
-
     color: white;
     text-decoration: none;
-
     font-size: 13px;
     text-transform: uppercase;
-
     transition: background .2s;
 }
-
 .menu-perfil a:hover{
     background: #2a4f7a;
 }
-
 .perfil.abierto .menu-perfil{
     display: flex;
 }
