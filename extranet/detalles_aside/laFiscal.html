@@ -1,144 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Catalogo de peliculas</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>LA FISCAL</title>
         <link rel="stylesheet" href="../../estilos/body.css">
-    <link rel="stylesheet" href="../../estilos/footer.css">
-    <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
-    <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
-    <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
-    <script src="../scripts/header.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+        <link rel="stylesheet" href="../../estilos/footer.css">
+        <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
+        <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
+        <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
+        <script src="../../scripts/header.js" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
 
 
-<body>
-
-        <header class="header container-fluid py-2">
-        <div class="row align-items-center w-100">
-            <!-- LOGO -->
-            <div class="col-lg-3 text-center text-lg-start">
-                <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" class="img-fluid">
-            </div>
-
-            <!-- BUSCADOR -->
-            <div class="col-lg-3 my-2 my-lg-0">
-                <form class="buscador d-flex">
-                    <input type="text" class="form-control" placeholder="Buscar películas, series...">
-                    <button class="btn btn-primary ms-2">🔍</button>
-                </form>
-            </div>
-
-            <!-- MENÚ -->
-            <nav class="col-lg-3">
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="./index_usser.html" class="btn btn-outline-light">Inicio</a>
-                    <a href="./catalogo_peliculas_usser.html" class="btn btn-outline-light">Películas</a>
-                    <a href="./catalogo_series_usser.html" class="btn btn-outline-light">Series</a>
+    <body>
+    <header class="header container-fluid py-2">
+            <div class="row align-items-center w-100">
+                <!-- LOGO -->
+                <div class="col-lg-3 text-center text-lg-start">
+                    <img src="../../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" class="img-fluid">
                 </div>
-            </nav>
 
-            <!-- PERFIL -->
-            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
-                <div class="perfil" id="perfilBtn">
-                    <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
-                    <div class="perfil-info">
-                        <span>USUARIO - 12345</span>
-                        <span class="flecha">▼</span>
-                    </div>
-                    <div class="menu-perfil">
-                        <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span>MI PERFIL</a>
-                        <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span>MIS CALIFICACIONES</a>
-                        <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span>MIS RESEÑAS</a>
-                        <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span>MIS PELÍCULAS FAVORITAS</a>
-                        <a href="../resenas_favoritas.html"><span class="icono-dropdown">▶</span>RESEÑAS FAVORITAS</a>
-                        <a href="../index.html"><span class="icono-dropdown">▶</span>CERRAR SESIÓN</a>
-                    </div>
+                <!-- BUSCADOR -->
+                <div class="col-lg-3 my-2 my-lg-0">
+                    <form class="buscador d-flex">
+                        <input type="text" class="form-control" placeholder="Buscar películas, series...">
+                        <button class="btn btn-primary ms-2">🔍</button>
+                    </form>
                 </div>
-            </div>
-        </div>
-    </header>
-    <hr>
-    <!-- FIN DE HEADER-->
 
-<!------------------------------------------------------------------------------------------->
+                <!-- MENÚ -->
+                <nav class="col-lg-3">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="../index_usser.html" class="btn btn-outline-light">Inicio</a>
+                        <a href="../catalogo_peliculas_usser.html" class="btn btn-outline-light">Películas</a>
+                        <a href="../catalogo_series_usser.html" class="btn btn-outline-light">Series</a>
+                    </div>
+                </nav>
 
-<!-- CONTENEDOR GENERAL -->
-     <div class="fila">
-        <!-- MAIN -->
-        <main>
-             <section class="detalle-principal">
-                <div class="poster">
-                    <img src="../../recursos/imagenes/series/lafiscal.jpg" alt="LA FISCAL">
-                </div>
-                <div class="info-serie"> 
-                    <h1>LA FISCAL</h1>
-                    <p>Esta serie documental sigue a la primera Fiscal de Feminicidios de la Ciudad de México,
-                        una oficina creada para investigar y erradicar la violencia contra las mujeres.
-                    </p>
-                    <ul>
-                        <li><strong>Género:</strong> Crimen, Documental</li>
-                        <li><strong>Año:</strong> 2026</li>
-                        <li><strong>Duración:</strong> 1 Temporada</li>
-                        <li><strong>Director:</strong> Paula Mónaco, Felipe Miguel Tovar</li>
-                        <li><strong>Productores/as:</strong> Juan Farré, Paula Mónaco Felipe</li>
-                        <li><strong>Calificación general:</strong> 6.5/10</li>
-                        <li><strong>Clasificación por edad:</strong> +18</li>
-                        <li><strong>Plataformas:</strong> Netflix</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="card-detalle">
-                <div class="video-conteiner">
-                    <h2>Tráiler</h2>
-                    <video controls>
-                        <source src="../../recursos/videos/laFiscal.webm" type="video/webm">
-                        Tu navegador no soporta este video. Probá con otro navegador.
-                    </video>
-                </div>
-            </section>
-            <!-- REPARTO-->
-            <section class="card-detalle">
-                <h2>REPARTO</h2>
-                <div class="reparto-vertical"> 
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/sakuryHerrera.jpg" alt="SAKURY HERRERA">
-                        <h3>SAKURY HERRERA</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/ernestinaGodoyRamos.jpg" alt="ERNESTINA GODOY RAMOS">
-                        <h3>ERNESTINA GODOY RAMOS</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/brendaCelinaBazánVarela.jpg" alt="BRENDA CELINA BAZÁN VARELA">
-                        <h3>BRENDA CELINA BAZÁN VARELA</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/héctorMiguelOrtizAcosta.jpg" alt="HÉCTOR MIGUEL ORTIZ ACOSTA">
-                        <h3>HÉCTOR MIGUEL ORTIZ ACOSTA</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/lucíaHerrera.jpg" alt="LUCÍA HERRERA">
-                        <h3>LUCÍA HERRERA</h3>
-                    </div>
-                </div>
-            </section>
-            <!-- RESEÑA DE USUARIOS-->
-            <section class="card-detalle">
-                <h2>RESEÑAS DESTACADAS</h2>
-                <div class="resenas-container">
-                    <!--USUARIO 1-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 9.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png">
-                            <p><b>capataz-sa dice:</b></p>
+                <!-- PERFIL -->
+                <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                    <div class="perfil" id="perfilBtn">
+                        <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+                        <div class="perfil-info">
+                            <span>USUARIO - 12345</span>
+                            <span class="flecha">▼</span>
                         </div>
-                            <!-- contenido -->
+                        <div class="menu-perfil">
+                            <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span>MI PERFIL</a>
+                            <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span>MIS CALIFICACIONES</a>
+                            <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span>MIS RESEÑAS</a>
+                            <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span>MIS PELÍCULAS FAVORITAS</a>
+                            <a href="../resenas_favoritas.html"><span class="icono-dropdown">▶</span>RESEÑAS FAVORITAS</a>
+                            <a href="../index.html"><span class="icono-dropdown">▶</span>CERRAR SESIÓN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!-------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <hr>
+<!-------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="fila">
+            <main>
+                <section class="detalle-principal">
+                    <div class="poster">
+                        <img src="../../recursos/imagenes/series/lafiscal.jpg" alt="LA FISCAL">
+                    </div>
+                    <div class="info-serie"> 
+                        <h1>LA FISCAL</h1>
+                        <p>Esta serie documental sigue a la primera Fiscal de Feminicidios de la Ciudad de México,
+                            una oficina creada para investigar y erradicar la violencia contra las mujeres.
+                        </p>
+                        <ul>
+                            <li><strong>Género:</strong> Crimen, Documental</li>
+                            <li><strong>Año:</strong> 2026</li>
+                            <li><strong>Duración:</strong> 1 Temporada</li>
+                            <li><strong>Director:</strong> Paula Mónaco, Felipe Miguel Tovar</li>
+                            <li><strong>Productores/as:</strong> Juan Farré, Paula Mónaco Felipe</li>
+                            <li><strong>Calificación general:</strong> 6.5/10</li>
+                            <li><strong>Clasificación por edad:</strong> +18</li>
+                            <li><strong>Plataformas:</strong> Netflix</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="card-detalle">
+                    <div class="video-conteiner">
+                        <h2>Tráiler</h2>
+                        <video controls>
+                            <source src="../../recursos/videos/laFiscal.webm" type="video/webm">
+                            Tu navegador no soporta este video. Probá con otro navegador.
+                        </video>
+                    </div>
+                </section>
+
+                <section class="card-detalle">
+                    <h2>REPARTO</h2>
+                    <div class="reparto-vertical"> 
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/sakuryHerrera.jpg" alt="SAKURY HERRERA">
+                            <h3>SAKURY HERRERA</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/ernestinaGodoyRamos.jpg" alt="ERNESTINA GODOY RAMOS">
+                            <h3>ERNESTINA GODOY RAMOS</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/brendaCelinaBazánVarela.jpg" alt="BRENDA CELINA BAZÁN VARELA">
+                            <h3>BRENDA CELINA BAZÁN VARELA</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/héctorMiguelOrtizAcosta.jpg" alt="HÉCTOR MIGUEL ORTIZ ACOSTA">
+                            <h3>HÉCTOR MIGUEL ORTIZ ACOSTA</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/lucíaHerrera.jpg" alt="LUCÍA HERRERA">
+                            <h3>LUCÍA HERRERA</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card-detalle">
+                    <h2>RESEÑAS DESTACADAS</h2>
+                    <div class="resenas-container">
+                        <!--USUARIO 1-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 9.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>capataz-sa dice:</b></p>
+                            </div>
                             <h3>Un documental precioso sobre la complicada vida de un fiscal mexicano</h3>
                             <p>
                                 “Es un documental increíble que conecta un homicidio real  
@@ -152,16 +147,16 @@
                                 Si quieres hacerte una idea de dónde está la sociedad mexicana en relación con los derechos 
                                 de las mujeres, no te pierdas este.”
                             </p>
-                    </div>
-                    <!--USUARIO 2-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ★</span>
-                        <div>
-                            <p><b>Calificación:</b> 10.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png">
-                            <p><b>Christopherwhitty-30355 dice:</b></p>
                         </div>
-                            <!-- contenido -->
+
+                        <!--USUARIO 2-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ★</span>
+                            <div>
+                                <p><b>Calificación:</b> 10.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>Christopherwhitty-30355 dice:</b></p>
+                            </div>
                             <h3>Excelente</h3>
                             <p>
                                 "Excelente serie de documentales sobre la terrible cantidad de víctimas de feminicidio  
@@ -170,165 +165,146 @@
                                 fortaleza de carácter y aportan esperanza ante un contexto de corrupción institucionalizada 
                                 y misoginia horribles."
                             </p> 
-                    </div>
-                    <!--USUARIO 3-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 5.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png">
-                            <p><b>Roki24 dice: </b></p>
                         </div>
-                            <!-- contenido -->
+
+                        <!--USUARIO 3-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 5.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>Roki24 dice: </b></p>
+                            </div>
                             <h3>Genial</h3>
                             <p>
                                 "Muy buen documental que habla sobre víctimas de feminicidio."
                             </p>
-                    </div>
-                    <!--USUARIO 4-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 4.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png">
-                            <p><b>Derk12 dice: </b></p>
                         </div>
-                            <!-- contenido -->
+
+                        <!--USUARIO 4-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 4.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>Derk12 dice: </b></p>
+                            </div>
                             <h3>Bien</h3>
                             <p>
                                 "Genial documental que trata sobre hechos reales."
                             </p>
-                    </div>
-                    <!--USUARIO 5-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 4.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png">
-                            <p><b>Ulis_9 dice: </b></p>
                         </div>
-                            <!-- contenido -->
+
+                        <!--USUARIO 5-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 4.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>Ulis_9 dice: </b></p>
+                            </div>
                             <h3>Bien</h3>
                             <p>
                                 "Buena serie documental sobre el femicidio y la justicia"
                             </p>    
+                        </div>
+
+                        <div class="contenedor-boton">
+                                <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                        </div>
+
                     </div>
-                    <div class="contenedor-boton">
-                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                </section>
+
+                <section class="card-detalle">
+                    <h2>RELACIONADOS</h2>
+                    <div class="relacionados-container">
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/thepredatorofseville.jpg" alt="THE PREDATOR OF SEVILLE">
+                            <h3>THE PREDATOR OF SEVILLE</h3>
+                            <h3>Calificación: 6.5/10</h3>
+                            <h3>DURACION: 1 Temporada</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/YiyaMuranoMuertealahoradelté.jpg" alt="YIYA MURANO: MUERTE A LA HORA DEL TÉ">
+                            <h3>YIYA MURANO: MUERTE A LA HORA DEL TÉ</h3>
+                            <h3>Calificación: 5.9/10</h3>
+                            <h3>DURACION: 1 Temporada</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/TheTruthandTragedyofMoriahWilson.jpg" alt="THE TRUTH AND TRAGEDY OF MORIAH WILSON">
+                            <h3>THE TRUTH AND TRAGEDY OF MORIAH WILSON</h3>
+                            <h3>Calificación: 6.6/10</h3>
+                            <h3>DURACION: 1 Temporada</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/AlguienTieneQueSaber.jpg" alt="ALGUIEN TIENE QUE SABER">
+                            <h3>ALGUIEN TIENE QUE SABER</h3>
+                            <h3>Calificación: 5.5/10</h3>
+                            <h3>DURACION: 1 Temporada</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/peliculas/casoColmenares.jpg" alt="EL CASO COLMENARES">
+                            <h3>EL CASO COLMENARES</h3>
+                            <h3>Calificación: 6.0/10</h3>
+                            <h3>DURACION: 1 Temporada</h3>
+                        </div>
                     </div>
+                </section>
+            </main>
+            <aside>
+                <h2>SUGERENCIAS PARA TI</h2>
+                <!-- ITEM 1 -->
+                <div class="item-aside">
+                    <p class="genero">ROMANCE</p>
+                    <h3>CUMBRES BORRASCOSAS</h3>
+                    <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                    <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
                 </div>
-            </section>
-
-            <!-- RELACIONADOS-->
-            <section class="card-detalle">
-                <h2>RELACIONADOS</h2>
-                <div class="relacionados-container">
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/thepredatorofseville.jpg" alt="THE PREDATOR OF SEVILLE">
-                        <h3>THE PREDATOR OF SEVILLE</h3>
-                        <h3>Calificación: 6.5/10</h3>
-                        <h3>DURACION: 1 Temporada</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/YiyaMuranoMuertealahoradelté.jpg" alt="YIYA MURANO: MUERTE A LA HORA DEL TÉ">
-                        <h3>YIYA MURANO: MUERTE A LA HORA DEL TÉ</h3>
-                        <h3>Calificación: 5.9/10</h3>
-                        <h3>DURACION: 1 Temporada</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/TheTruthandTragedyofMoriahWilson.jpg" alt="THE TRUTH AND TRAGEDY OF MORIAH WILSON">
-                        <h3>THE TRUTH AND TRAGEDY OF MORIAH WILSON</h3>
-                        <h3>Calificación: 6.6/10</h3>
-                        <h3>DURACION: 1 Temporada</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/AlguienTieneQueSaber.jpg" alt="ALGUIEN TIENE QUE SABER">
-                        <h3>ALGUIEN TIENE QUE SABER</h3>
-                        <h3>Calificación: 5.5/10</h3>
-                        <h3>DURACION: 1 Temporada</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/casoColmenares.jpg" alt="EL CASO COLMENARES">
-                        <h3>EL CASO COLMENARES</h3>
-                        <h3>Calificación: 6.0/10</h3>
-                        <h3>DURACION: 1 Temporada</h3>
-                    </div>
+                <hr>
+                <!-- ITEM 2 -->
+                <div class="item-aside">
+                    <p class="genero">TERROR</p>
+                    <h3>WEAPONS</h3>
+                    <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                    <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                    <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
                 </div>
-            </section>
-        </main>
-        <aside>
-            <h2>SUGERENCIAS PARA TI</h2>
-
-            <!-- ITEM 1 -->
-            <div class="item-aside">
-                <p class="genero">ROMANCE</p>
-                <h3>CUMBRES BORRASCOSAS</h3>
-                <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
-                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
-                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 2 -->
-            <div class="item-aside">
-                <p class="genero">TERROR</p>
-                <h3>WEAPONS</h3>
-                <img src="../../recursos/imagenes/peliculas/weapons.jpg">
-                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
-                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 3 -->
-            <div class="item-aside">
-                <p class="genero">COMEDIA</p>
-                <h3>NOVOCAINE</h3>
-                <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
-                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
-                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 4 -->
-            <div class="item-aside">
-                <p class="genero">CIENCIA FICCIÓN</p>
-                <h3>DUNE: PART 2</h3>
-                <img src="../../recursos/imagenes/peliculas/dune.jpg">
-                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
-                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 5 -->
-            <div class="item-aside">
-                <p class="genero">ANIMACIÓN</p>
-                <h3>FLOW</h3>
-                <img src="../../recursos/imagenes/peliculas/flow.jpg">
-                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
-                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
-            </div>
-        </aside>
-
-    </div>
-  <!-- FOOTER -->
-    <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
-        <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
-        </p>
-
-    </footer>
- 
-</body>
+                <hr>
+                <!-- ITEM 3 -->
+                <div class="item-aside">
+                    <p class="genero">COMEDIA</p>
+                    <h3>NOVOCAINE</h3>
+                    <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                    <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                    <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+                </div>
+                <hr>
+                <!-- ITEM 4 -->
+                <div class="item-aside">
+                    <p class="genero">CIENCIA FICCIÓN</p>
+                    <h3>DUNE: PART 2</h3>
+                    <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                    <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                    <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+                </div>
+                <hr>
+                <!-- ITEM 5 -->
+                <div class="item-aside">
+                    <p class="genero">ANIMACIÓN</p>
+                    <h3>FLOW</h3>
+                    <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                    <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                    <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+                </div>
+            </aside>
+        </div>
+        <footer class="footer">
+            <p class="titulo-footer">Desarrollado por:</p>
+            <p class="nombres-footer"> Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez</p>
+        </footer>
+    </body>
 </html>
 
 

@@ -1,72 +1,144 @@
-        /* .carousel-img{
+/* =========================
+   CARRUSEL
+========================= */
 
-            width: 100%;
-            height: 7vh;
+.carousel-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(35%);
+}
 
-            object-fit: cover;
+/* Caja de texto */
+.carousel-caption{
+    position: absolute !important;
+    right: 12% !important;
+    left: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
 
-            display: block;
+    width: 40%;
 
-            filter: brightness(50%);
-        } */
+    min-height: 350px;
+    padding: 30px;
 
-        .carousel-img{
+    background: rgba(0,0,0,.45);
 
-            width: 100%;
+    text-align: left;
+    border-radius: 5px;
+}
 
-            height: 100vh;
+/* Título */
 
-            object-fit: cover;
+.carousel-caption h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
 
-            display: block;
+/* Descripción */
 
-            filter: brightness(50%);
-        }
+.carousel-caption p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
 
-        .carousel-caption{
+/* Botón trailer */
 
-            bottom: 15%;
+.trailer-btn{
+    background: #2a4f7a;
+    color: white;
+    border: none;
+    text-decoration: none;
 
-            text-align: left;
-        }
+    padding: 14px 28px;
+    font-size: 18px;
 
-        .carousel-caption h2{
+    border-radius: 10px;
 
-            font-size: 3rem;
+    display: inline-block;
+}
 
-            font-weight: bold;
-        }
+.trailer-btn:hover{
+    background: #3a6fa0;
+    color: white;
+}
 
-        .carousel-caption p{
+/* Flechas */
 
-            max-width: 700px;
+.carousel-control-prev,
+.carousel-control-next{
+    width: 5%;
+}
 
-            font-size: 1.1rem;
-        }
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 50%;
+    padding: 20px;
+}
 
-        .btn{
+/* Indicadores */
 
-            background: #2a4f7a;
+.carousel-indicators button{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+}
 
-            color: white;
+/* Responsive */
 
-            border: none;
+@media (max-width: 992px){
 
-            text-decoration: none;
-        }
+    .carousel-img{
+        height: 70vh;
+    }
 
-        .btn:hover{
+   .carousel-caption{
+        left: 10% !important;
+        right: auto !important;
+        width: 80%;
+    }
 
-            background: #3a6fa0;
-        }
+    .carousel-caption h2{
+        font-size: 1.6rem;
+    }
 
-        .trailer-btn{
+    .carousel-caption p{
+        font-size: 1rem;
+    }
 
-            padding: 14px 28px;
+    .trailer-btn{
+        font-size: 16px;
+        padding: 12px 22px;
+    }
+}
 
-            font-size: 18px;
+@media (max-width: 576px){
 
-            border-radius: 10px;
+    .carousel-img{
+        height: 60vh;
+    }
 
-            display: inline-block;
-        }
+    .carousel-caption{
+        width: 85%;
+        left: 7.5%;
+        padding: 15px;
+    }
+
+    .carousel-caption h2{
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p{
+        font-size: 0.9rem;
+    }
+
+    .trailer-btn{
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}

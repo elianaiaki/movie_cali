@@ -1,146 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Catalogo de peliculas</title>
-       <link rel="stylesheet" href="../../estilos/body.css">
-    <link rel="stylesheet" href="../../estilos/footer.css">
-    <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
-    <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
-    <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
-    <script src="../scripts/header.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>LOS COLORADOS</title>
+        <link rel="stylesheet" href="../../estilos/body.css">
+        <link rel="stylesheet" href="../../estilos/footer.css">
+        <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
+        <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
+        <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
+        <script src="../../scripts/header.js" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
 
 
-<body>
-
-        <header class="header container-fluid py-2">
-        <div class="row align-items-center w-100">
-            <!-- LOGO -->
-            <div class="col-lg-3 text-center text-lg-start">
-                <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" class="img-fluid">
-            </div>
-
-            <!-- BUSCADOR -->
-            <div class="col-lg-3 my-2 my-lg-0">
-                <form class="buscador d-flex">
-                    <input type="text" class="form-control" placeholder="Buscar películas, series...">
-                    <button class="btn btn-primary ms-2">🔍</button>
-                </form>
-            </div>
-
-            <!-- MENÚ -->
-            <nav class="col-lg-3">
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="./index_usser.html" class="btn btn-outline-light">Inicio</a>
-                    <a href="./catalogo_peliculas_usser.html" class="btn btn-outline-light">Películas</a>
-                    <a href="./catalogo_series_usser.html" class="btn btn-outline-light">Series</a>
+    <body>
+    <header class="header container-fluid py-2">
+            <div class="row align-items-center w-100">
+                <!-- LOGO -->
+                <div class="col-lg-3 text-center text-lg-start">
+                    <img src="../../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" class="img-fluid">
                 </div>
-            </nav>
 
-            <!-- PERFIL -->
-            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
-                <div class="perfil" id="perfilBtn">
-                    <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
-                    <div class="perfil-info">
-                        <span>USUARIO - 12345</span>
-                        <span class="flecha">▼</span>
-                    </div>
-                    <div class="menu-perfil">
-                        <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span>MI PERFIL</a>
-                        <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span>MIS CALIFICACIONES</a>
-                        <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span>MIS RESEÑAS</a>
-                        <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span>MIS PELÍCULAS FAVORITAS</a>
-                        <a href="../resenas_favoritas.html"><span class="icono-dropdown">▶</span>RESEÑAS FAVORITAS</a>
-                        <a href="../index.html"><span class="icono-dropdown">▶</span>CERRAR SESIÓN</a>
-                    </div>
+                <!-- BUSCADOR -->
+                <div class="col-lg-3 my-2 my-lg-0">
+                    <form class="buscador d-flex">
+                        <input type="text" class="form-control" placeholder="Buscar películas, series...">
+                        <button class="btn btn-primary ms-2">🔍</button>
+                    </form>
                 </div>
-            </div>
-        </div>
-    </header>
 
-    <hr>
-    <!-- FIN DE HEADER-->
+                <!-- MENÚ -->
+                <nav class="col-lg-3">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="../index_usser.html" class="btn btn-outline-light">Inicio</a>
+                        <a href="../catalogo_peliculas_usser.html" class="btn btn-outline-light">Películas</a>
+                        <a href="../catalogo_series_usser.html" class="btn btn-outline-light">Series</a>
+                    </div>
+                </nav>
 
-<!------------------------------------------------------------------------------------------->
-
-<!-- CONTENEDOR GENERAL -->
-     <div class="fila">
-                <main>
-            <section class="detalle-principal">
-                <div class="poster">
-                    <img src="../../recursos/imagenes/series/loscolorados.jpg" alt="LOS COLORADOS">
-                </div>
-                <div class="info-serie">
-                    <h1>LOS COLORADOS</h1>
-                    <p>Chapulín Colorado y su familia abordan a los villanos y las tareas diarias con humor y corazón,
-                        demostrando cómo el ingenio y la compasión pueden superar cualquier desafío.
-                    </p>
-                    <ul>
-                        <li><strong>Género:</strong> Animación</li>
-                        <li><strong>Año:</strong> 2025</li>
-                        <li><strong>Duración:</strong> 1 temporada</li>
-                        <li><strong>Director:</strong> Gabriel Riva Palacio Alatriste y Rodolfo Riva Palacio Alatriste</li>
-                        <li><strong>Productores/as:</strong> Roberto Gómez</li>
-                        <li><strong>Calificación general:</strong> 7.9/10</li>
-                        <li><strong>Clasificación por edad:</strong> +10</li>
-                        <li><strong>Plataformas:</strong> HBO MAX </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="card-detalle">
-                <div class="video-conteiner">
-                    <h2>Tráiler</h2>
-                    <video controls>
-                        <source src="../../recursos/videos/LosColorado.webm" type="video/webm">
-                        Tu navegador no soporta este video. Probá con otro navegador.
-                    </video>
-                </div>
-            </section>
-
-            <!-- REPARTO-->
-            <section class="card-detalle">
-                <h2>REPARTO</h2>
-                <div class="reparto-vertical">
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/jesusGuzman.jpg" alt="JESUS GUZMAN">
-                        <h3>JESUS GUZMAN</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/veronicaBravo.jpg" alt="VERONICA BRAVO">
-                        <h3>VERONICA BRAVO</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/reginaCarrillo.jpg" alt= "REGINA CARRILLO">
-                        <h3>REGINA CARRILLO</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/jorgeLemus.jpg" alt="JORGE LEMUS">
-                        <h3>JORGE LEMUS</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/gabrielRiva.jpg" alt="GABRIEL RIVA">
-                        <h3>GABRIEL RIVA</h3>
-                    </div>
-                </div>
-            </section>
-
-           <!--RESEÑA DE USUARIOS-->
-            <section class="card-detalle">
-                <h2>RESEÑAS DESTACADAS</h2>
-                <div class="resenas-container">
-                    <!--USUARIO 1-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 9.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png">
-                            <p><b>HumorLatino dice:</b></p>
+                <!-- PERFIL -->
+                <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                    <div class="perfil" id="perfilBtn">
+                        <img src="../../recursos/imagenes/iconos/usuario.png" alt="usuario">
+                        <div class="perfil-info">
+                            <span>USUARIO - 12345</span>
+                            <span class="flecha">▼</span>
                         </div>
-                            <!-- contenido -->
+                        <div class="menu-perfil">
+                            <a href="../mi_perfil.html"><span class="icono-dropdown">▶</span>MI PERFIL</a>
+                            <a href="../mis_calificaciones.html"><span class="icono-dropdown">▶</span>MIS CALIFICACIONES</a>
+                            <a href="../mis_resenas.html"><span class="icono-dropdown">▶</span>MIS RESEÑAS</a>
+                            <a href="../mis_peliculas_favoritas.html"><span class="icono-dropdown">▶</span>MIS PELÍCULAS FAVORITAS</a>
+                            <a href="../resenas_favoritas.html"><span class="icono-dropdown">▶</span>RESEÑAS FAVORITAS</a>
+                            <a href="../index.html"><span class="icono-dropdown">▶</span>CERRAR SESIÓN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!------------------------------------------------------------------------------------------->   
+        <hr>
+<!------------------------------------------------------------------------------------------->
+        <div class="fila">
+            <main>
+                <section class="detalle-principal">
+                    <div class="poster">
+                        <img src="../../recursos/imagenes/series/loscolorados.jpg" alt="LOS COLORADOS">
+                    </div>
+                    <div class="info-serie">
+                        <h1>LOS COLORADOS</h1>
+                        <p>Chapulín Colorado y su familia abordan a los villanos y las tareas diarias con humor y corazón,
+                            demostrando cómo el ingenio y la compasión pueden superar cualquier desafío.
+                        </p>
+                        <ul>
+                            <li><strong>Género:</strong> Animación</li>
+                            <li><strong>Año:</strong> 2025</li>
+                            <li><strong>Duración:</strong> 1 temporada</li>
+                            <li><strong>Director:</strong> Gabriel Riva Palacio Alatriste y Rodolfo Riva Palacio Alatriste</li>
+                            <li><strong>Productores/as:</strong> Roberto Gómez</li>
+                            <li><strong>Calificación general:</strong> 7.9/10</li>
+                            <li><strong>Clasificación por edad:</strong> +10</li>
+                            <li><strong>Plataformas:</strong> HBO MAX </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="card-detalle">
+                    <div class="video-conteiner">
+                        <h2>Tráiler</h2>
+                        <video controls>
+                            <source src="../../recursos/videos/LosColorado.webm" type="video/webm">
+                            Tu navegador no soporta este video. Probá con otro navegador.
+                        </video>
+                    </div>
+                </section>
+
+                <section class="card-detalle">
+                    <h2>REPARTO</h2>
+                    <div class="reparto-vertical">
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/jesusGuzman.jpg" alt="JESUS GUZMAN">
+                            <h3>JESUS GUZMAN</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/veronicaBravo.jpg" alt="VERONICA BRAVO">
+                            <h3>VERONICA BRAVO</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/reginaCarrillo.jpg" alt= "REGINA CARRILLO">
+                            <h3>REGINA CARRILLO</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/jorgeLemus.jpg" alt="JORGE LEMUS">
+                            <h3>JORGE LEMUS</h3>
+                        </div>
+                        <div class="actor-card">
+                            <img src="../../recursos/imagenes/Reparto/gabrielRiva.jpg" alt="GABRIEL RIVA">
+                            <h3>GABRIEL RIVA</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card-detalle">
+                    <h2>RESEÑAS DESTACADAS</h2>
+                    <div class="resenas-container">
+                        <!--USUARIO 1-->
+                        <div class="resena-card">
+                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                            <div>
+                                <p><b>Calificación:</b> 9.0 / 10</p>
+                                <img src="../../recursos/imagenes/iconos/usuario.png">
+                                <p><b>HumorLatino dice:</b></p>
+                            </div>
                             <h3>Un regreso lleno de nostalgia.</h3>
                             <p>
                                 "La serie logra capturar el espíritu del Chapulín Colorado con un aire renovado.
@@ -148,6 +141,7 @@
                                 conexión con los fans de toda la vida."
                             </p>
                         </div>
+
                         <!--USUARIO 2-->
                         <div class="resena-card">
                             <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
@@ -156,14 +150,13 @@
                                 <img src="../../recursos/imagenes/iconos/usuario.png">
                                 <p><b>CriticoTV dice:</b></p>
                             </div>
-                                <!-- contenido -->
-                                <h3>Entretenida, pero con altibajos.</h3>
-                                <p>
-                                    "El humor sigue siendo efectivo, pero algunos episodios caen en fórmulas repetitivas.
-                                    Aun así, es un placer ver cómo se actualiza un personaje tan icónico para nuevas generaciones."
-                                </p>
-                        
+                            <h3>Entretenida, pero con altibajos.</h3>
+                            <p>
+                                "El humor sigue siendo efectivo, pero algunos episodios caen en fórmulas repetitivas.
+                                Aun así, es un placer ver cómo se actualiza un personaje tan icónico para nuevas generaciones."
+                            </p>
                         </div>
+
                         <!--USUARIO 3-->
                         <div class="resena-card">
                             <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
@@ -172,14 +165,14 @@
                                 <img src="../../recursos/imagenes/iconos/usuario.png">
                                 <p><b>FanDelChapulin dice:</b></p>
                             </div>
-                                <!-- contenido -->
-                                <h3>El espíritu original sigue vivo.</h3>
-                                <p>
-                                    "La serie conserva el estilo irreverente y las frases clásicas del Chapulín.
-                                    El ritmo es ágil y las actuaciones transmiten autenticidad.
-                                    ¡No contaban con mi astucia!"
-                                </p>
+                            <h3>El espíritu original sigue vivo.</h3>
+                            <p>
+                                "La serie conserva el estilo irreverente y las frases clásicas del Chapulín.
+                                El ritmo es ágil y las actuaciones transmiten autenticidad.
+                                ¡No contaban con mi astucia!"
+                            </p>
                         </div>
+                        
                         <!--USUARIO 4-->
                         <div class="resena-card">
                             <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
@@ -188,14 +181,14 @@
                                 <img src="../../recursos/imagenes/iconos/usuario.png">
                                 <p><b>CineGeek dice:</b></p>
                             </div>
-                                <!-- contenido -->
-                                <h3>Gran homenaje, pero ritmo irregular.</h3>
-                                <p>
-                                    "Algunos episodios son brillantes, pero otros se sienten más flojos.
-                                    El humor absurdo sigue funcionando, aunque la narrativa a veces pierde fuerza.
-                                    Aun así, es un homenaje digno."
-                                </p>
+                            <h3>Gran homenaje, pero ritmo irregular.</h3>
+                            <p>
+                                "Algunos episodios son brillantes, pero otros se sienten más flojos.
+                                El humor absurdo sigue funcionando, aunque la narrativa a veces pierde fuerza.
+                                Aun así, es un homenaje digno."
+                            </p>
                         </div>
+
                         <!--USUARIO 5-->
                         <div class="resena-card">
                             <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
@@ -204,130 +197,108 @@
                                 <img src="../../recursos/imagenes/iconos/usuario.png">
                                 <p><b>TeleFan dice:</b></p>
                             </div>
-                            <!-- contenido -->
-                                <h3>Un regreso que pudo ser más sólido.</h3>
-                                <p>
-                                    "Aunque es agradable ver de nuevo al Chapulín, la trama principal se siente algo forzada.
-                                    El humor está presente, pero esperaba un guion más fresco y arriesgado."
-                                </p>
+                            <h3>Un regreso que pudo ser más sólido.</h3>
+                            <p>
+                                "Aunque es agradable ver de nuevo al Chapulín, la trama principal se siente algo forzada.
+                                El humor está presente, pero esperaba un guion más fresco y arriesgado."
+                            </p>
                         </div>
+
                         <div class="contenedor-boton">
                             <a href="#" class="btn-resenia">Ver todas las reseñas</a>
                         </div>
+                    </div>
+                </section>
+
+                <section class="card-detalle">
+                    <h2>RELACIONADOS</h2>
+                    <div class="relacionados-container">
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/elChapulinColorado.jpg" alt="EL CHAPULIN COLORADO">
+                            <h3>EL CHAPULÍN COLORADO</h3>
+                            <h3>Calificación: 8.2/10</h3>
+                            <h3>DURACION: 8 temporadas</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/elChavo.jpg" alt="EL CHAVO DEL 8">
+                            <h3>EL CHAVO DEL 8</h3>
+                            <h3>Calificación: 8.5/10</h3>
+                            <h3>DURACION: 9 temporadas</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/laFamiliaPeluche.jpg" alt="LA FAMILIA PELUCHE">
+                            <h3>LA FAMILIA PELUCHE</h3>
+                            <h3>Calificación: 7.9/10</h3>
+                            <h3>DURACION: 3 temporadas</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/vecinos.jpg" alt="VECINOS">
+                            <h3>VECINOS</h3>
+                            <h3>Calificación: 7.4/10</h3>
+                            <h3>DURACION: 10 temporadas</h3>
+                        </div>
+                        <div class="relacionado-card">
+                            <img src="../../recursos/imagenes/series/elChanfle.jpg" alt="EL CHANFLE">
+                            <h3>EL CHANFLE</h3>
+                            <h3>Calificación: 7.0/10</h3>
+                            <h3>DURACION: 3 temporadas</h3>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <aside>
+                <h2>SUGERENCIAS PARA TI</h2>
+                <!-- ITEM 1 -->
+                <div class="item-aside">
+                    <p class="genero">ROMANCE</p>
+                    <h3>CUMBRES BORRASCOSAS</h3>
+                    <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                    <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
                 </div>
-            </section>
-
-
-            <!-- RELACIONADOS-->
-            <section class="card-detalle">
-                <h2>RELACIONADOS</h2>
-                <div class="relacionados-container">
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/elChapulinColorado.jpg" alt="EL CHAPULIN COLORADO">
-                        <h3>EL CHAPULÍN COLORADO</h3>
-                        <h3>Calificación: 8.2/10</h3>
-                        <h3>DURACION: 8 temporadas</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/elChavo.jpg" alt="EL CHAVO DEL 8">
-                        <h3>EL CHAVO DEL 8</h3>
-                        <h3>Calificación: 8.5/10</h3>
-                        <h3>DURACION: 9 temporadas</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/laFamiliaPeluche.jpg" alt="LA FAMILIA PELUCHE">
-                        <h3>LA FAMILIA PELUCHE</h3>
-                        <h3>Calificación: 7.9/10</h3>
-                        <h3>DURACION: 3 temporadas</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/vecinos.jpg" alt="VECINOS">
-                        <h3>VECINOS</h3>
-                        <h3>Calificación: 7.4/10</h3>
-                        <h3>DURACION: 10 temporadas</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/elChanfle.jpg" alt="EL CHANFLE">
-                        <h3>EL CHANFLE</h3>
-                        <h3>Calificación: 7.0/10</h3>
-                        <h3>DURACION: 3 temporadas</h3>
-                    </div>
+                <hr>
+                <!-- ITEM 2 -->
+                <div class="item-aside">
+                    <p class="genero">TERROR</p>
+                    <h3>WEAPONS</h3>
+                    <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                    <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                    <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
                 </div>
-            </section>
-        </main>
-        <aside>
-            <h2>SUGERENCIAS PARA TI</h2>
-
-            <!-- ITEM 1 -->
-            <div class="item-aside">
-                <p class="genero">ROMANCE</p>
-                <h3>CUMBRES BORRASCOSAS</h3>
-                <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
-                <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
-                <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 2 -->
-            <div class="item-aside">
-                <p class="genero">TERROR</p>
-                <h3>WEAPONS</h3>
-                <img src="../../recursos/imagenes/peliculas/weapons.jpg">
-                <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
-                <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 3 -->
-            <div class="item-aside">
-                <p class="genero">COMEDIA</p>
-                <h3>NOVOCAINE</h3>
-                <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
-                <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
-                <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 4 -->
-            <div class="item-aside">
-                <p class="genero">CIENCIA FICCIÓN</p>
-                <h3>DUNE: PART 2</h3>
-                <img src="../../recursos/imagenes/peliculas/dune.jpg">
-                <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
-                <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
-            </div>
-
-            <hr>
-
-            <!-- ITEM 5 -->
-            <div class="item-aside">
-                <p class="genero">ANIMACIÓN</p>
-                <h3>FLOW</h3>
-                <img src="../../recursos/imagenes/peliculas/flow.jpg">
-                <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
-                <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
-            </div>
-        </aside>
-
-    </div>
-  <!-- FOOTER -->
-    <footer class="footer">
-
-        <p class="titulo-footer">
-            Desarrollado por:
-        </p>
-
-        <p class="nombres-footer">
-            Gabriel Mayor - Eliana Salvo - Gabriel Ponce -
-            Alan Walker - Gisella Jara - Brenda Pavez
-        </p>
-
-    </footer>
- 
-</body>
+                <hr>
+                <!-- ITEM 3 -->
+                <div class="item-aside">
+                    <p class="genero">COMEDIA</p>
+                    <h3>NOVOCAINE</h3>
+                    <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                    <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                    <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+                </div>
+                <hr>
+                <!-- ITEM 4 -->
+                <div class="item-aside">
+                    <p class="genero">CIENCIA FICCIÓN</p>
+                    <h3>DUNE: PART 2</h3>
+                    <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                    <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                    <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+                </div>
+                <hr>
+                <!-- ITEM 5 -->
+                <div class="item-aside">
+                    <p class="genero">ANIMACIÓN</p>
+                    <h3>FLOW</h3>
+                    <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                    <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                    <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+                </div>
+            </aside>
+        </div>
+        <footer class="footer">
+            <p class="titulo-footer">Desarrollado por:</p>
+            <p class="nombres-footer"> Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez</p>
+        </footer>
+    </body>
 </html>
 
 
