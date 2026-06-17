@@ -1,4 +1,4 @@
-alert("JS conectado");
+
 
 /* ==========================
    ASOCIAR EVENTOS

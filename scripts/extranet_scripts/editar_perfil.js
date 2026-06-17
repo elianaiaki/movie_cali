@@ -1,4 +1,4 @@
-alert("JS conectado");
+
 
 document.addEventListener("DOMContentLoaded",function(){
 
