@@ -1,6 +1,6 @@
 /* footer ---------------------------------------------------------------*/
 
-.footer{
+.footer {
 
     width: 100%;
     padding: 20px;
@@ -15,22 +15,50 @@
     color: white;
 
     font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box; /* evita desbordes */
 }
+
 
 /* TITULO */
 
-.titulo-footer{
+.titulo-footer {
 
-    font-size: 22px;
+    font-size: clamp(18px, 3vw, 22px);
     font-weight: bold;
 
     margin-bottom: 10px;
 }
 
+
 /* NOMBRES */
 
-.nombres-footer{
+.nombres-footer {
 
-    font-size: 18px;
+    font-size: clamp(14px, 2.5vw, 18px);
     font-weight: bold;
+
+    max-width: 900px;
+    margin: 0 auto;
+
+    line-height: 1.5;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 576px) {
+
+    .footer {
+        padding: 15px 10px;
+    }
+
+
+    .nombres-footer {
+
+        max-width: 100%;
+
+        /* permite que se acomode si una palabra es muy larga */
+        overflow-wrap: break-word;
+    }
 }
