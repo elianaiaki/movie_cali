@@ -1,0 +1,37 @@
+/* El contenedor principal para centrar el login */
+.contenedor-main {
+    min-height: 75vh;
+}
+
+/* tarjeta blanca personalizada */
+.tarjeta-inicio {
+    max-width: 450px;
+    border-radius: 15px;
+}
+/*titulo principal*/
+.tarjeta-inicio h2 {
+    color: #000;
+}
+/*imagenes*/
+.iconos {
+    width: 18px;
+}
+
+/* El botones */
+.btn-accion {
+    background-color: #001d3d;
+    border-radius: 6px;
+}
+.btn-accion:hover {
+    background-color: #001124 ; 
+}
+
+/* enlace de recuperar contraseña */
+.enlace-recuperar {
+    color: #0b2545;
+}
+
+.btn-cancelar{
+    text-decoration: none;
+    border-top: 10px;
+}
