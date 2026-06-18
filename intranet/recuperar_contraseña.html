@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>RECUPERAR CONTRASEÑA - Intranet</title>
-    <link rel="stylesheet" href="../estilos/estilos_intranet/body_intranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_intranet/header_intranet.css">
-    <link rel="stylesheet" href="../estilos/estilos_intranet/inicio_intranet.css">
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/headerBoostrapIntranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/inicioDeSesion.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <!--Scrip-->
     <script src="../scripts/validaciones.js"></script>
@@ -14,50 +14,60 @@
 </head>
 <!------------------------------------------------------------------------------------------->
 <body onload="asociarValidacion()">
-    <!-- HEADER -->
-    <header class="header">
-        <!--LOGO-->
-        <div class="logo">
-            <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali">
-        </div>  
+    <!--Header-->
+    <header class="header container-fluid py-2">
+        <div class="row align-items-center w-100">  
+            <!--Logo-->
+            <div class="col-lg-3 text-center text-lg-start">
+                <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" style="max-width: 500px;" class="img-fluid">
+            </div>
+        </div>
+        
     </header>
 <!------------------------------------------------------------------------------------------->
     <main class="diseno-login"> 
-        <section class="carta-login">
+        <section class="card-inicio">
             <h2>RECUPERAR CONTRASEÑA</h2>
-            <form id="recuperar_contrasenia" action="../intranet/inicio_de_sesion.html" method="get">
-                <div>
-                    <label>USUARIO / CORREO ELECTRONICO</label><br>
-                    <img class="iconosVarios" src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario" >
-                    <input type="text" id="usuario" name="usuario" placeholder="Ingrese usuario o correo" required>
+            <form id="recuperar_contrasenia" action="../intranet/inicio_sesion.html" method="get">
+                <div class="form-group">
+                    <label>USUARIO / CORREO ELECTRÓNICO</label>
+                    <div class="input-contenedor">
+                        <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario">
+                        <input id="usuario" name="usuario" type="text" required>
+                    </div>
                 </div>
                 
             
-                <div>
+                <div class="form-group">
                     <label>CONTRASEÑA</label><br>
-                    <img class="iconosVarios" src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" >
-                    <input type="password" id="contrasenia" name="password" placeholder="Ingrese contraseña" required >
-                    <img class="iconosVarios" src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver">
+                    <div class="input-contenedor">
+                        <img class="iconosVarios" src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" >
+                        <input type="password" id="contrasenia" name="password" placeholder="Ingrese contraseña" required >
+                        <img class="iconosVarios" src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver">
+                    </div>    
                 </div>
                                 
-                <div> 
-                    <label>REPETIR CONTRASEÑA</label><br>
-                    <img class="iconosVarios" src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" >
-                    <input type="password" id="repetirContrasenia" name="repetir-password" placeholder="Ingrese de nuevo la contraseña" required>
-                    <img class="iconosVarios" src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver">
+                <div class="form-group"> 
+                    <label>REPETIR CONTRASEÑA</label>
+                    <div class="input-contenedor">
+                        <img class="iconosVarios" src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña" >
+                        <input type="password" id="repetirContrasenia" name="repetir-password" placeholder="Ingrese de nuevo la contraseña" required>
+                        <img class="iconosVarios" src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver">
+                    </div>
                 </div>
 
                 <div class="contenedor-boton">
                     <button type="submit" class="boton-inicio">GUARDAR</button>
-                    <a href="../intranet/inicio_de_sesion.html" class = "boton-cancelar">CANCELAR</a>
+                    <a href="../intranet/inicio_sesion.html" class="cancelar">CANCELAR</a>
                 </div>
             </form>
         </section>
     </main>
 <!-------------FOOTER------------------------------------------------------------------------------>
     <footer class="footer">
-        <p class="titulo-footer">Desarrollado por:</p>
-        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
+        <p>Desarrollado por: Gabriel Mayor · Eliana Salvo · Gabriel Ponce · Alan Walker · Gisella Jara · Brenda Pavez</p>
+        <p>2026 MovieCali. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>

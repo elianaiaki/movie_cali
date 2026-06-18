@@ -83,7 +83,7 @@
     margin-bottom: 10px;
 }
 
-.boton-inicio, .boton-google {
+.boton-inicio, .boton-google, .cancelar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +92,7 @@
     padding: 12px;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 20px;
     font-size: 14px;
     font-weight: bold;
     border: none;
@@ -99,9 +100,11 @@
 }
 
 /* Botón Normal */
-.boton-inicio {
+.boton-inicio , .cancelar{
     background-color: #001f3f; 
     color: white;
+    
+    text-decoration: none;
 }
 
 .boton-inicio:hover {
