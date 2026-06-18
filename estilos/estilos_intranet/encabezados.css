@@ -39,3 +39,12 @@
     text-decoration: underline small;
     
 }
+
+/* Ajuste específico para que las tarjetas resalten de manera idéntica al catálogo */
+.subtitulo-tarjeta {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+   
+    letter-spacing: 0.5px;
+}

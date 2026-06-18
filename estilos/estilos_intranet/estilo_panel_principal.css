@@ -1,0 +1,38 @@
+/* ==========================================================================
+   ESTILOS PARA LAS TARJETAS DEL PANEL 
+   ========================================================================== */
+
+
+/* Estilo para los bloques de datos */
+.datos-informacion {
+    background-color: #e9ecef;
+    padding: 10px 15px;
+    border-left: 4px solid #000000;
+    border-radius: 2px;
+    font-size: 0.95rem;
+}
+
+/* Formato para las listas de viñetas internas */
+.lista-acciones ul {
+    padding-left: 20px;
+}
+
+.lista-acciones li {
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 4px;
+}
+
+/* tamaño para los iconos */
+.icono-tarjeta {
+    width: 75px;
+    
+}
+/*Estilo para las dos tarjetas*/
+.card-detalle{
+    background:#222934;
+    padding:20px;
+    border-radius:20px;
+    margin:0 5px 20px 20px;
+}
+
