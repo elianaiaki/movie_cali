@@ -1,0 +1,35 @@
+
+/* ==========================================================================
+   ENCABEZADOS, TITULOS, SUBTITULOS Y MARCOS
+   ========================================================================== */
+/*titulo*/
+.titulo-principal {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Subtítulo rectangular gris superior dentro de revisión */
+.banner-interno {
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Títulos con forma de óvalo blanco y borde negro */
+.badge-maqueta-titulo {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.85rem;
+}

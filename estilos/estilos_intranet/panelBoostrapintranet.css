@@ -1,0 +1,28 @@
+/* ==========================================================================
+   BOTÓN VOLVER / PANEL
+   ========================================================================== */
+
+
+/* Botón PANEL posicionado abajo a la izquierda */
+.boton-panel {
+    display: inline-block;
+    background: #1a3a5c;
+    color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 10;
+    
+}
+
+.boton-panel:hover {
+    background-color: #2a4f7a;
+    color: #ffffff;
+}
+
+.icon-home {
+    width: 16px; 
+    margin-right: 5px; 
+    filter: invert(1);
+}
