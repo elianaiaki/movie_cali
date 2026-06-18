@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-   ENCABEZADOS, TITULOS, SUBTITULOS Y MARCOS
+   ENCABEZADOS, TITULOS, SUBTITULOS Y MARCOS 
    ========================================================================== */
 /*titulo*/
 .titulo-principal {
@@ -22,7 +22,7 @@
 }
 
 /* Títulos con forma de óvalo blanco y borde negro */
-.badge-maqueta-titulo {
+.titulo-destacable {
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #000000;
@@ -32,4 +32,10 @@
     display: inline-flex;
     align-items: center;
     font-size: 0.85rem;
+}
+
+.enlace-ver-todo{
+    color:white ;
+    text-decoration: underline small;
+    
 }

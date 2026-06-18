@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../estilos/body.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/panelBoostrapintranet.css">
     <link rel="stylesheet" href="../estilos/footer.css">
-    <link rel="stylesheet" href="../estilos/estilo_internet/catalogoBostrap.css">
+    <link rel="stylesheet" href="../estilos/estilo_internet/catalogo.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/encabezados.css">
     <link rel="stylesheet" href="../estilos/estilos_intranet/botonera.css">
     <!-- Scripts -->
@@ -89,13 +89,13 @@
                     <!-- SECCIÓN: PELÍCULAS PENDIENTES DE REVISIÓN -->
                     <div class="card-detalle">
                         <div class="d-flex justify-content-between align-items-center mb-3 px-1">
-                            <div class="badge-maqueta-titulo">
-                                PELÍCULAS PENDIENTES DE REVISIÓN &nbsp; <span style="font-size: 0.75rem;">▶</span>
+                            <div class="titulo-destacable">
+                                PELÍCULAS PENDIENTES DE REVISIÓN <span> ▶</span>
                             </div>
-                            <a href="../intranet/peliculas_pendientes_de_revision.html" class="text-white text-decoration-underline small">Ver Todo</a>
+                            <a href="../intranet/peliculas_pendientes_de_revision.html" class="enlace-ver-todo">Ver Todo</a>
                         </div>
                         
-                        <!-- Banner gris interno superior solicitado por la maqueta -->
+
                         <div class="banner-interno mb-3">
                             Películas con cambios recientes que requieren revisión.
                         </div>
@@ -105,35 +105,35 @@
                                 <img src="../recursos/imagenes/peliculas/eldiablovistealamoda.jpeg" alt="EL DIABLO VISTE A LA MODA">
                                 <div class="pelicula-info">
                                     <a href="#">EL DIABLO VISTE A LA MODA</a>
-                                    <button class="btn btn-primary w-100 mt-2 btn-maqueta-accion">VER</button>
+                                    <button class="btn btn-primary w-100 mt-2 ">VER</button>
                                 </div>
                             </div>
                             <div class="pelicula-card">
                                 <img src="../recursos/imagenes/peliculas/Mercy.jpg" alt="MERCY">
                                 <div class="pelicula-info">
                                     <a href="#">MERCY</a>
-                                    <button class="btn btn-primary w-100 mt-2 btn-maqueta-accion">VER</button>
+                                    <button class="btn btn-primary w-100 mt-2">VER</button>
                                 </div>
                             </div>
                             <div class="pelicula-card">
                                 <img src="../recursos/imagenes/peliculas/Ayuda.jpeg" alt="AYUDA">
                                 <div class="pelicula-info">
                                     <a href="#">AYUDA</a>
-                                    <button class="btn btn-primary w-100 mt-2 btn-maqueta-accion">VER</button>
+                                    <button class="btn btn-primary w-100 mt-2">VER</button>
                                 </div>
                             </div>
                             <div class="pelicula-card">
                                 <img src="../recursos/imagenes/peliculas/hoppers.jpg" alt="HOPPERS">
                                 <div class="pelicula-info">
                                     <a href="#">HOPPERS</a>
-                                    <button class="btn btn-primary w-100 mt-2 btn-maqueta-accion">VER</button>
+                                    <button class="btn btn-primary w-100 mt-2 ">VER</button>
                                 </div>
                             </div>
                             <div class="pelicula-card">
                                 <img src="../recursos/imagenes/peliculas/elDrama.jpg" alt="EL DRAMA">
                                 <div class="pelicula-info">
                                     <a href="#">EL DRAMA</a>
-                                    <button class="btn btn-primary w-100 mt-2 btn-maqueta-accion">VER</button>
+                                    <button class="btn btn-primary w-100 mt-2 ">VER</button>
                                 </div>
                             </div>
                         </div>
@@ -142,10 +142,10 @@
                     <!-- SECCIÓN: NUEVAS SOLICITUDES DE ALTA PELÍCULAS -->
                     <div class="card-detalle mb-5 ">
                         <div class="d-flex justify-content-between align-items-center mb-3 px-1">
-                            <div class="badge-maqueta-titulo">
-                                NUEVAS SOLICITUDES DE ALTA (PELÍCULAS) &nbsp; <span style="font-size: 0.75rem;">▶</span>
+                            <div class="titulo-destacable">
+                                NUEVAS SOLICITUDES DE ALTA (PELÍCULAS) <span> ▶</span>
                             </div>
-                            <a href="../intranet/nuevas_solicitudes_de_alta_peliculas.html" class="text-white text-decoration-underline small">Ver Todo</a>
+                            <a href="../intranet/nuevas_solicitudes_de_alta_peliculas.html" class="enlace-ver-todo">Ver Todo</a>
                         </div>
                         
                         <div class="catalogo-container">
@@ -154,8 +154,8 @@
                                 <div class="pelicula-info">
                                     <a href="#">53 DOMINGOS</a>
                                     <div class="d-flex flex-column gap-1 mt-2">
-                                        <button class="btn btn-success btn-sm btn-maqueta-accion" onclick="darAlta()">Aprobar Alta</button>
-                                        <button class="btn btn-warning btn-sm text-white btn-maqueta-accion">Revisar Alta</button>
+                                        <button class="btn btn-success btn-sm " onclick="darAlta()">Aprobar Alta</button>
+                                        <button class="btn btn-warning btn-sm ">Revisar Alta</button>
                                     </div>
                                 </div>
                             </div>
@@ -164,8 +164,8 @@
                                 <div class="pelicula-info">
                                     <a href="#">ALERTA EXTINCIÓN</a>
                                     <div class="d-flex flex-column gap-1 mt-2">
-                                        <button class="btn btn-success btn-sm btn-maqueta-accion" onclick="darAlta()">Aprobar Alta</button>
-                                        <button class="btn btn-warning btn-sm text-white btn-maqueta-accion">Revisar Alta</button>
+                                        <button class="btn btn-success btn-sm " onclick="darAlta()">Aprobar Alta</button>
+                                        <button class="btn btn-warning btn-sm ">Revisar Alta</button>
                                     </div>
                                 </div>
                             </div>
@@ -174,8 +174,8 @@
                                 <div class="pelicula-info">
                                     <a href="#">ANACONDA</a>
                                     <div class="d-flex flex-column gap-1 mt-2">
-                                        <button class="btn btn-success btn-sm btn-maqueta-accion" onclick="darAlta()">Aprobar Alta</button>
-                                        <button class="btn btn-warning btn-sm text-white btn-maqueta-accion">Revisar Alta</button>
+                                        <button class="btn btn-success btn-sm " onclick="darAlta()">Aprobar Alta</button>
+                                        <button class="btn btn-warning btn-sm ">Revisar Alta</button>
                                     </div>
                                 </div>
                             </div>
@@ -184,8 +184,8 @@
                                 <div class="pelicula-info">
                                     <a href="#">OBEX</a>
                                     <div class="d-flex flex-column gap-1 mt-2">
-                                        <button class="btn btn-success btn-sm btn-maqueta-accion" onclick="darAlta()">Aprobar Alta</button>
-                                        <button class="btn btn-warning btn-sm text-white btn-maqueta-accion">Revisar Alta</button>
+                                        <button class="btn btn-success btn-sm" onclick="darAlta()">Aprobar Alta</button>
+                                        <button class="btn btn-warning btn-sm">Revisar Alta</button>
                                     </div>
                                 </div>
                             </div>
@@ -194,8 +194,8 @@
                                 <div class="pelicula-info">
                                     <a href="#">AVATAR FUEGO Y CENIZA</a>
                                     <div class="d-flex flex-column gap-1 mt-2">
-                                        <button class="btn btn-success btn-sm btn-maqueta-accion" onclick="darAlta()">Aprobar Alta</button>
-                                        <button class="btn btn-warning btn-sm text-white btn-maqueta-accion">Revisar Alta</button>
+                                        <button class="btn btn-success btn-sm" onclick="darAlta()">Aprobar Alta</button>
+                                        <button class="btn btn-warning btn-sm">Revisar Alta</button>
                                     </div>
                                 </div>
                             </div>
@@ -205,10 +205,10 @@
                     <!-- SECCIÓN: SERIES PENDIENTES DE REVISIÓN -->
                     <div class="card-detalle mb-5">
                         <div class="d-flex justify-content-between align-items-center mb-3 px-1">
-                            <div class="badge-maqueta-titulo">
-                                SERIES PENDIENTES DE REVISIÓN &nbsp; <span style="font-size: 0.75rem;">▶</span>
+                            <div class="titulo-destacable">
+                                SERIES PENDIENTES DE REVISIÓN <span> ▶</span>
                             </div>
-                            <a href="../intranet/series_pendientes_de_revision_intra.html" class="text-white text-decoration-underline small">Ver Todo</a>
+                            <a href="../intranet/series_pendientes_de_revision_intra.html" class="enlace-ver-todo">Ver Todo</a>
                         </div>
                         
                         <div class="catalogo-container">
@@ -216,21 +216,21 @@
                                 <img src="../recursos/imagenes/series/vladimirr.jpg" alt="VLADIMIR">
                                 <div class="pelicula-info">
                                     <a href="#">VLADIMIR</a>
-                                    <button class="btn btn-primary w-100 mt-2 btn-maqueta-accion">VER</button>
+                                    <button class="btn btn-primary w-100 mt-2">VER</button>
                                 </div>
                             </div>
                             <div class="pelicula-card">
                                 <img src="../recursos/imagenes/series/memorias_de_un_asesino.jpg" alt="MEMORIAS DE UN ASESINO">
                                 <div class="pelicula-info">
                                     <a href="#">MEMORIAS DE UN ASESINO</a>
-                                    <button class="btn btn-primary w-100 mt-2 btn-maqueta-accion">VER</button>
+                                    <button class="btn btn-primary w-100 mt-2">VER</button>
                                 </div>
                             </div>
                             <div class="pelicula-card">
-                                <img src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpg" alt="LA CASA DE LOS ESPÍRITUS">
+                                <img src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpeg" alt="LA CASA DE LOS ESPÍRITUS">
                                 <div class="pelicula-info">
                                     <a href="#">LA CASA DE LOS ESPÍRITUS</a>
-                                    <button class="btn btn-primary w-100 mt-2 btn-maqueta-accion">VER</button>
+                                    <button class="btn btn-primary w-100 mt-2">VER</button>
                                 </div>
                             </div>
                         </div>
@@ -239,10 +239,10 @@
                     <!-- SECCIÓN: NUEVAS SOLICITUDES DE ALTA SERIES -->
                     <div class="card-detalle mb-5">
                         <div class="d-flex justify-content-between align-items-center mb-3 px-1">
-                            <div class="badge-maqueta-titulo">
-                                NUEVAS SOLICITUDES DE ALTA (SERIES) &nbsp; <span style="font-size: 0.75rem;">▶</span>
+                            <div class="titulo-destacable">
+                                NUEVAS SOLICITUDES DE ALTA (SERIES) <span> ▶</span>
                             </div>
-                            <a href="../intranet/nuevas_solicitudes_de_alta_series.html" class="text-white text-decoration-underline small">Ver Todo</a>
+                            <a href="../intranet/nuevas_solicitudes_de_alta_series.html" class="enlace-ver-todo">Ver Todo</a>
                         </div>
                         
                         <div class="catalogo-container">
@@ -251,8 +251,8 @@
                                 <div class="pelicula-info">
                                     <a href="#">911</a>
                                     <div class="d-flex flex-column gap-1 mt-2">
-                                        <button class="btn btn-success btn-sm btn-maqueta-accion" onclick="darAlta()">Aprobar Alta</button>
-                                        <button class="btn btn-warning btn-sm text-white btn-maqueta-accion">Revisar Alta</button>
+                                        <button class="btn btn-success btn-sm" onclick="darAlta()">Aprobar Alta</button>
+                                        <button class="btn btn-warning btn-sm">Revisar Alta</button>
                                     </div>
                                 </div>
                             </div>
@@ -261,8 +261,8 @@
                                 <div class="pelicula-info">
                                     <a href="#">BELLEZA PERFECTA</a>
                                     <div class="d-flex flex-column gap-1 mt-2">
-                                        <button class="btn btn-success btn-sm btn-maqueta-accion" onclick="darAlta()">Aprobar Alta</button>
-                                        <button class="btn btn-warning btn-sm text-white btn-maqueta-accion">Revisar Alta</button>
+                                        <button class="btn btn-success btn-sm" onclick="darAlta()">Aprobar Alta</button>
+                                        <button class="btn btn-warning btn-sm">Revisar Alta</button>
                                     </div>
                                 </div>
                             </div>
@@ -271,8 +271,8 @@
                                 <div class="pelicula-info">
                                     <a href="#">ASESINA A SUELDO</a>
                                     <div class="d-flex flex-column gap-1 mt-2">
-                                        <button class="btn btn-success btn-sm btn-maqueta-accion" onclick="darAlta()">Aprobar Alta</button>
-                                        <button class="btn btn-warning btn-sm text-white btn-maqueta-accion">Revisar Alta</button>
+                                        <button class="btn btn-success btn-sm" onclick="darAlta()">Aprobar Alta</button>
+                                        <button class="btn btn-warning btn-sm">Revisar Alta</button>
                                     </div>
                                 </div>
                             </div>
