@@ -4,18 +4,20 @@
     <head>
         <meta charset="UTF-8">
         <title>EL GUARDIAN</title>
+        <!-- HOJAS DE ESTILO -->
         <link rel="stylesheet" href="../../estilos/body.css">
         <link rel="stylesheet" href="../../estilos/footer.css">
         <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
         <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
         <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
+        <!-- SCRIPTS -->
         <script src="../../scripts/header.js" defer></script>
+        <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-
-
     <body>
+        <!-- HEADER -->
         <header class="header container-fluid py-2">
             <div class="row align-items-center w-100">
                 <!-- LOGO -->
@@ -63,76 +65,84 @@
 <!------------------------------------------------------------------------------------------->
         <hr>
 <!------------------------------------------------------------------------------------------->
-        <div class="fila">
-            <main>
-                <section class="detalle-principal">
-                    <div class="poster">
-                        <img src="../../recursos/imagenes/peliculas/elguardian.jpg" alt="EL GUARDIAN" width="200"> 
-                    </div>
-                    
-                    <div class="info-serie">
-                        <br>
-                        <h1>El Guardián: Último refugio</h1>
-                        <p>Un exasesino del gobierno británico vive aislado frente 
-                            a la costa de Escocia, intentando dejar atrás su pasado.
-                            Sin embargo, todo cambia cuando una joven llega a su vida
-                            y queda atrapada en la isla tras una tormenta.
-                            Obligado a protegerla, deberá enfrentarse nuevamente a
-                            su antigua agencia y a peligrosos enemigos que buscan
-                            eliminarlo, desatando una violenta lucha por sobrevivir.
-                        </p>
-                        <ul>
-                            <li><strong>Género:</strong> Acción</li>
-                            <li><strong>Año:</strong> 2026</li>
-                            <li><strong>Duración:</strong> 1h 47min</li>
-                            <li><strong>Director:</strong> Ric Roman Waugh</li>
-                            <li><strong>Productores/as:</strong> Jason Statham, John Friedberg, Brendon Boyea</li>
-                            <li><strong>Calificación general:</strong> 6.5/10</li>
-                            <li><strong>Clasificación por edad:</strong> +18</li>
-                            <li><strong>Plataformas:</strong> NETFLIX</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="card-detalle">
-                    <div class="video-conteiner">
-                        <h2>Tráiler</h2>
-                        <video controls>
-                            <source src="../../recursos/videos/elGuardian.webm" type="video/webm">
-                            Tu navegador no soporta este video. Probá con otro navegador.
-                        </video>
-                    </div>
-                </section>
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="container-fluid">
+            <div class="row">
+                <main class="col-lg-9">
 
-                <section class="card-detalle">
-                    <h2>REPARTO</h2>
-                        <div class="reparto-vertical"> 
-                            <div class="actor-card">
-                                <img src="../../recursos/imagenes/Reparto/jasonStatham.jpg" alt="JASON STATHAM" ><br>
-                                <h3>JASON STATHAM</h3>
-                            </div>
-                            <div class="actor-card">
-                                <img src="../../recursos/imagenes/Reparto/bodhiBreathnach.jpg" alt="BODHI RAE BREATHNACH" ><br>
-                                <h3>BODHI RAE BREATHNACH</h3>
-                            </div>
-                            <div class="actor-card">
-                                <img src="../../recursos/imagenes/Reparto/billNighy.jpg" alt="BILL NIGHY" ><br>
-                                <h3>BILL NIGHY</h3>
-                            </div>
-                            <div class="actor-card">
-                                <img src="../../recursos/imagenes/Reparto/naomiAckie.jpg" alt="NAOMI ACKIE" ><br>
-                                <h3>NAOMI ACKIE</h3>
-                            </div>
-                            <div class="actor-card">
-                                <img src="../../recursos/imagenes/Reparto/danielMays.jpg" alt="DANIEL MAYS" ><br>
-                                <h3>DANIEL MAYS</h3>
-                            </div>
+                    <!-- INFORMACIÓN PRINCIPAL-->
+                    <section class="detalle-principal">
+                        <div class="poster">
+                            <img src="../../recursos/imagenes/peliculas/elguardian.jpg" alt="EL GUARDIAN" width="200"> 
                         </div>
-                </section>
+                        
+                        <div class="info-serie">
+                            
+                            <h1>El Guardián: Último refugio</h1>
+                            <p>Un exasesino del gobierno británico vive aislado frente 
+                                a la costa de Escocia, intentando dejar atrás su pasado.
+                                Sin embargo, todo cambia cuando una joven llega a su vida
+                                y queda atrapada en la isla tras una tormenta.
+                                Obligado a protegerla, deberá enfrentarse nuevamente a
+                                su antigua agencia y a peligrosos enemigos que buscan
+                                eliminarlo, desatando una violenta lucha por sobrevivir.
+                            </p>
+                            <ul>
+                                <li><strong>Género:</strong> Acción</li>
+                                <li><strong>Año:</strong> 2026</li>
+                                <li><strong>Duración:</strong> 1h 47min</li>
+                                <li><strong>Director:</strong> Ric Roman Waugh</li>
+                                <li><strong>Productores/as:</strong> Jason Statham, John Friedberg, Brendon Boyea</li>
+                                <li><strong>Calificación general:</strong> 6.5/10</li>
+                                <li><strong>Clasificación por edad:</strong> +18</li>
+                                <li><strong>Plataformas:</strong> NETFLIX</li>
+                            </ul>
+                        </div>
+                    </section>
 
-                <section class="card-detalle">
-                    <h2>RESEÑAS DESTACADAS</h2>
+                    <!-- TRÁILER -->
+                    <section class="card-detalle">
+                        <div class="video-conteiner">
+                            <h2>Tráiler</h2>
+                            <video controls>
+                                <source src="../../recursos/videos/elGuardian.webm" type="video/webm">
+                                Tu navegador no soporta este video. Probá con otro navegador.
+                            </video>
+                        </div>
+                    </section>
+
+                    <!-- REPARTO -->
+                    <section class="card-detalle">
+                        <h2>REPARTO</h2>
+                            <div class="reparto-vertical"> 
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/jasonStatham.jpg" alt="JASON STATHAM" >
+                                    <h3>JASON STATHAM</h3>
+                                </div>
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/bodhiBreathnach.jpg" alt="BODHI RAE BREATHNACH" >
+                                    <h3>BODHI RAE BREATHNACH</h3>
+                                </div>
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/billNighy.jpg" alt="BILL NIGHY" >
+                                    <h3>BILL NIGHY</h3>
+                                </div>
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/naomiAckie.jpg" alt="NAOMI ACKIE" >
+                                    <h3>NAOMI ACKIE</h3>
+                                </div>
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/danielMays.jpg" alt="DANIEL MAYS" >
+                                    <h3>DANIEL MAYS</h3>
+                                </div>
+                            </div>
+                    </section>
+
+                    <!-- RESEÑAS DESTACADAS -->
+                    <section class="card-detalle">
+                        <h2>RESEÑAS DESTACADAS</h2>
                         <div class="resenas-container">
-                            <!--USUARIO 1-->
+                            <!-- RESEÑA USUARIO 1 -->
                             <div class="resena-card">
                                 <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
                                 <div>
@@ -148,7 +158,7 @@
                                 </p>
                             </div>
 
-                            <!--USUARIO 2-->
+                            <!-- RESEÑA USUARIO 2 -->
                             <div class="resena-card">
                                 <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                                 <div>
@@ -164,7 +174,7 @@
                                 </p>
                             </div>
 
-                            <!--USUARIO 3-->
+                            <!-- RESEÑA USUARIO 3 -->
                             <div class="resena-card">
                                 <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
                                 <div>
@@ -180,7 +190,7 @@
                                 </p>
                             </div>
 
-                            <!--USUARIO 4-->
+                            <!-- RESEÑA USUARIO 4 -->
                             <div class="resena-card">
                                 <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
                                 <div>
@@ -193,12 +203,10 @@
                                     "La relación entre Statham y Bodhi Rae Breathnach es el corazón de la película.
                                     La acción es intensa, pero lo que destaca es la emotividad y química entre ambos.
                                     Una grata sorpresa dentro del género."
-                                </p>
-                                <br>
+                                </p>  
                             </div>
-                            <br>
-
-                            <!--USUARIO 5-->
+                            
+                            <!-- RESEÑA USUARIO 5 -->
                             <div class="resena-card">
                                 <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
                                 <div>
@@ -216,109 +224,103 @@
                             <div class="contenedor-boton">
                                 <a href="#" class="btn-resenia">Ver todas las reseñas</a>
                             </div>
+                        </div>
+                    </section>
+
+                    <!-- RELACIONADOS -->
+                    <section class="card-detalle">
+                        <h2>RELACIONADOS</h2>
+                        <div class="relacionados-container">
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/johnWick.jpg" alt="JOHN WICK">
+                                <h3>JOHN WICK</h3>
+                                <h3>Calificación: 8.0/10</h3>
+                                <h3>DURACION: 1h 41min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/bonekeeper.jpg" alt="THE BONEKEEPER" >
+                                <h3>THE BONEKEEPER</h3>
+                                <h3>Calificación: 6.5/10</h3>
+                                <h3>DURACION: 1h 45min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/extraction.jpg" alt="EXTRACTION">
+                                <h3>EXTRACTION</h3>
+                                <h3>Calificación: 7.0/10</h3>
+                                <h3>DURACION: 1h 56min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/nobody.jpg" alt="NOBODY">
+                                <h3>NOBODY</h3>
+                                <h3>Calificación: 7.4/10</h3>
+                                <h3>DURACION: 1h 32min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/beekepper.png" alt="BEEKEPPER">
+                                <h3>BEEKEPPER</h3>
+                                <h3>Calificacion: 8.0/10</h3>
+                                <h3>DURACION: 2h 10min</h3>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <!-- SUGERENCIAS -->
+                <aside class="col-lg-3">
+                    <h2>SUGERENCIAS PARA TI</h2>
+                    <!-- ITEM 1 -->
+                    <div class="item-aside">
+                        <p class="genero">ROMANCE</p>
+                        <h3>CUMBRES BORRASCOSAS</h3>
+                        <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                        <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                        <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
                     </div>
-                </section>
-
-                <section class="card-detalle">
-                    <h2>RELACIONADOS</h2>
-                    <div class="relacionados-container">
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/johnWick.jpg" alt="JOHN WICK">
-                            <h3>JOHN WICK</h3>
-                            <h3>Calificación: 8.0/10</h3>
-                            <h3>DURACION: 1h 41min</h3>
-                        </div>
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/bonekeeper.jpg" alt="THE BONEKEEPER" >
-                            <h3>THE BONEKEEPER</h3>
-                            <h3>Calificación: 6.5/10</h3>
-                            <h3>DURACION: 1h 45min</h3>
-                        </div>
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/extraction.jpg" alt="EXTRACTION">
-                            <h3>EXTRACTION</h3>
-                            <h3>Calificación: 7.0/10</h3>
-                            <h3>DURACION: 1h 56min</h3>
-                        </div>
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/nobody.jpg" alt="NOBODY">
-                            <h3>NOBODY</h3>
-                            <h3>Calificación: 7.4/10</h3>
-                            <h3>DURACION: 1h 32min</h3>
-                        </div>
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/beekepper.png" alt="BEEKEPPER">
-                            <h3>BEEKEPPER</h3>
-                            <h3>Calificacion: 8.0/10</h3>
-                            <h3>DURACION: 2h 10min</h3>
-                        </div>
+                    <hr>
+                    <!-- ITEM 2 -->
+                    <div class="item-aside">
+                        <p class="genero">TERROR</p>
+                        <h3>WEAPONS</h3>
+                        <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                        <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                        <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
                     </div>
-                </section>
-            </main>
-            <aside>
-                <h2>SUGERENCIAS PARA TI</h2>
-
-                <!-- ITEM 1 -->
-                <div class="item-aside">
-                    <p class="genero">ROMANCE</p>
-                    <h3>CUMBRES BORRASCOSAS</h3>
-                    <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
-                    <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
-                    <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
-                </div>
-
-                <hr>
-
-                <!-- ITEM 2 -->
-                <div class="item-aside">
-                    <p class="genero">TERROR</p>
-                    <h3>WEAPONS</h3>
-                    <img src="../../recursos/imagenes/peliculas/weapons.jpg">
-                    <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
-                    <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
-                </div>
-
-                <hr>
-
-                <!-- ITEM 3 -->
-                <div class="item-aside">
-                    <p class="genero">COMEDIA</p>
-                    <h3>NOVOCAINE</h3>
-                    <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
-                    <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
-                    <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
-                </div>
-
-                <hr>
-
-                <!-- ITEM 4 -->
-                <div class="item-aside">
-                    <p class="genero">CIENCIA FICCIÓN</p>
-                    <h3>DUNE: PART 2</h3>
-                    <img src="../../recursos/imagenes/peliculas/dune.jpg">
-                    <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
-                    <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
-                </div>
-
-                <hr>
-
-                <!-- ITEM 5 -->
-                <div class="item-aside">
-                    <p class="genero">ANIMACIÓN</p>
-                    <h3>FLOW</h3>
-                    <img src="../../recursos/imagenes/peliculas/flow.jpg">
-                    <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
-                    <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
-                </div>
-            </aside>
-
+                    <hr>
+                    <!-- ITEM 3 -->
+                    <div class="item-aside">
+                        <p class="genero">COMEDIA</p>
+                        <h3>NOVOCAINE</h3>
+                        <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                        <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                        <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
+                    </div>
+                    <hr>
+                    <!-- ITEM 4 -->
+                    <div class="item-aside">
+                        <p class="genero">CIENCIA FICCIÓN</p>
+                        <h3>DUNE: PART 2</h3>
+                        <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                        <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                        <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
+                    </div>
+                    <hr>
+                    <!-- ITEM 5 -->
+                    <div class="item-aside">
+                        <p class="genero">ANIMACIÓN</p>
+                        <h3>FLOW</h3>
+                        <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                        <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                        <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+                    </div>
+                </aside>
+            </div>
         </div>
+
         <!-- footer -->
         <footer class="footer">
             <p class="titulo-footer">Desarrollado por:</p>
             <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
         </footer>
-    
     </body>
 </html>
 

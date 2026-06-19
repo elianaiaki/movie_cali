@@ -4,18 +4,21 @@
     <head>
         <meta charset="UTF-8">
         <title>NOVOCAISE</title>
+         <!-- HOJAS DE ESTILO -->
         <link rel="stylesheet" href="../../estilos/body.css">
         <link rel="stylesheet" href="../../estilos/footer.css">
         <link rel="stylesheet" href="../../estilos/estilos_extranet/aside_extranet.css">
         <link rel="stylesheet" href="../../estilos/estilos_extranet/detalles.css">
         <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
+        <!-- SCRIPTS -->
         <script src="../../scripts/header.js" defer></script>
+        <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-
     <body>
-    <header class="header container-fluid py-2">
+        <!-- HEADER -->
+        <header class="header container-fluid py-2">
             <div class="row align-items-center w-100">
                 <!-- LOGO -->
                 <div class="col-lg-3 text-center text-lg-start">
@@ -62,142 +65,262 @@
 <!------------------------------------------------------------------------------------------------------->   
         <hr>
 <!------------------------------------------------------------------------------------------------------->
-        <div class="fila">
-            <main>
-                <section class="detalle-principal">                
-                    <div class="poster">
-                        <img src="../../recursos/imagenes/peliculas/novocaine.jpg" alt="NOVOCAINE">
-                    </div>
-                    <div class="info-serie">  
-                        <h1>NOVOCAINE</h1>
-                        <p>
-                            Un hombre común con una rara condición que le impide sentir dolor
-                            se ve envuelto en una situación peligrosa cuando su vida da un giro
-                            inesperado. Lo que parecía una ventaja se convierte en un problema
-                            cuando el peligro aumenta y las decisiones se vuelven críticas.
-                        </p>
-                        <ul>
-                            <li><strong>Género:</strong> COMEDIA / ACCIÓN</li>
-                            <li><strong>Año:</strong> 2025</li>
-                            <li><strong>Duración:</strong> 1h 50min</li>
-                            <li><strong>Director:</strong> Dan Berk y Robert Olsen</li>
-                            <li><strong>Productores/as:</strong> Joby Harold, Tory Tunnell</li>
-                            <li><strong>Calificación general:</strong> 7.0/10</li>
-                            <li><strong>Clasificación por edad:</strong> +16</li>
-                            <li><strong>Plataformas:</strong> Netflix y Prime Video</li>
-                        </ul>
-                    </div>
-                </section>
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="container-fluid">
+            <div class="row">
+                <main class="col-lg-9">
 
-                <section class="card-detalle">
-                    <div class="video-conteiner">
-                        <h1>Tráiler</h1>
-                        <video controls>
-                            <source src="../../recursos/videos/novocaine.webm" type="video/webm">
-                            Tu navegador no soporta este video. Probá con otro navegador.
-                        </video>
+                    <!-- INFORMACIÓN PRINCIPAL-->
+                    <section class="detalle-principal">                
+                        <div class="poster">
+                            <img src="../../recursos/imagenes/peliculas/novocaine.jpg" alt="NOVOCAINE">
+                        </div>
+                        <div class="info-serie">  
+                            <h1>NOVOCAINE</h1>
+                            <p>
+                                Un hombre común con una rara condición que le impide sentir dolor
+                                se ve envuelto en una situación peligrosa cuando su vida da un giro
+                                inesperado. Lo que parecía una ventaja se convierte en un problema
+                                cuando el peligro aumenta y las decisiones se vuelven críticas.
+                            </p>
+                            <ul>
+                                <li><strong>Género:</strong> COMEDIA / ACCIÓN</li>
+                                <li><strong>Año:</strong> 2025</li>
+                                <li><strong>Duración:</strong> 1h 50min</li>
+                                <li><strong>Director:</strong> Dan Berk y Robert Olsen</li>
+                                <li><strong>Productores/as:</strong> Joby Harold, Tory Tunnell</li>
+                                <li><strong>Calificación general:</strong> 7.0/10</li>
+                                <li><strong>Clasificación por edad:</strong> +16</li>
+                                <li><strong>Plataformas:</strong> Netflix y Prime Video</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- TRÁILER -->
+                    <section class="card-detalle">
+                        <div class="video-conteiner">
+                            <h1>Tráiler</h1>
+                            <video controls>
+                                <source src="../../recursos/videos/novocaine.webm" type="video/webm">
+                                Tu navegador no soporta este video. Probá con otro navegador.
+                            </video>
+                        </div>
+                    </section>
+
+                    <!-- REPARTO -->
+                    <section class="card-detalle">
+                        <h2>REPARTO</h2>
+                        <div class="reparto-vertical"> 
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/jackQuaid.jpg">
+                                <h3>JACK QUAID</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/amberMidthunder.jpg">
+                                <h3>AMBER MIDTHUNDER</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/rayNicholson.jpg">
+                                <h3>RAY NICHOLSON</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/jacobBatalon.jpg">
+                                <h3>JACOB BATALON</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/bettyGabriel.jpg">
+                                <h3>BETTY GABRIEL</h3>
+                            </div>
+                    </section>
+
+                    <!-- RESEÑAS DESTACADAS -->
+                    <section class="card-detalle">
+                        <h2>RESEÑAS DESTACADAS</h2>
+                        <div class="resenas-container">
+                            <!-- RESEÑA USUARIO 1 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 9.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>SciFiMaster dice:</b></p>
+                                </div>
+                                <h3>Una experiencia cinematográfica enorme.</h3>
+                                <p>
+                                    "Dune: Part Two es exactamente el tipo de película que merece verse en la pantalla más grande
+                                    posible. Desde los efectos visuales hasta la banda sonora, todo transmite una sensación de escala
+                                    impresionante. La historia avanza con más fuerza que la primera parte y los personajes reciben
+                                    un desarrollo mucho más interesante. Aunque algunas escenas son largas, nunca sentí que la película
+                                    perdiera el rumbo. Es una de las producciones de ciencia ficción más ambiciosas que he visto en años."
+                                </p> 
+                            </div>
+
+                            <!-- RESEÑA USUARIO 2 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 7.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>CineVisual dice:</b></p>
+                                </div>
+                                <h3>Visualmente perfecta, emocionalmente distante.</h3>
+                                <p>
+                                    "No puedo negar que la película es espectacular desde el punto de vista técnico. Cada plano parece
+                                    una obra de arte y el trabajo de sonido es extraordinario. Sin embargo, me costó conectar con varios
+                                    personajes y sus conflictos. Admiraba constantemente lo que estaba viendo, pero rara vez me sentía
+                                    involucrado emocionalmente. Es una película que respeto muchísimo, aunque no logró entusiasmarme tanto
+                                    como esperaba."
+                                </p> 
+                            </div>
+
+                            <!-- RESEÑA USUARIO 3 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 8.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>CineVisual dice:</b></p>
+                                </div>
+                                <h3>Mucho mejor que la primera parte.</h3>
+                                <p>
+                                    "La primera película me gustó, pero sentí que dedicaba demasiado tiempo a preparar el terreno para la
+                                    continuación. Aquí finalmente vemos las consecuencias de todo lo que se había construido. Las escenas
+                                    de acción son impactantes, los conflictos políticos resultan interesantes y los personajes toman
+                                    decisiones que realmente cambian el rumbo de la historia. Salí del cine con la sensación de haber visto
+                                    algo épico y muy poco común en el cine actual."
+                                </p>
+                            </div>
+
+                            <!-- RESEÑA USUARIO 4 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 6.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>CineVisual dice:</b></p>
+                                </div>
+                                <h3>Demasiado lenta para algunos espectadores.</h3>
+                                <p>
+                                    "Entiendo perfectamente por qué tantas personas la consideran una obra maestra, pero personalmente me
+                                    costó mantener el interés durante ciertos tramos. La película dedica mucho tiempo a desarrollar su mundo
+                                    y sus personajes, algo que algunos apreciarán y otros encontrarán excesivo. Las actuaciones son excelentes
+                                    y la producción es impecable, pero el ritmo pausado hizo que la experiencia se sintiera más larga de lo
+                                    necesario para mí."
+                                </p>
+                            </div>
+
+                            <!-- RESEÑA USUARIO 5 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ★</span>
+                                <div>
+                                    <p><b>Calificación:</b> 10 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>CineVisual dice:</b></p>
+                                </div>
+                                <h3>La mejor ciencia ficción de los últimos años.</h3>
+                                <p>
+                                    "Pocas veces una película consigue combinar espectáculo visual, grandes actuaciones y una historia tan
+                                    compleja de forma tan efectiva. Todo en Dune: Part Two parece realizado con enorme cuidado y atención al
+                                    detalle. Los actores ofrecen algunas de sus mejores interpretaciones y la dirección logra transmitir la
+                                    importancia de cada acontecimiento. Es una película que demuestra que todavía es posible hacer cine de gran
+                                    presupuesto con verdadera personalidad y ambición artística."
+                                </p>
+                            </div>
+
+                            <div class="contenedor-boton">
+                                <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- RELACIONADOS -->
+                    <section class="card-detalle">
+                        <h2>RELACIONADOS</h2>
+                        <div class="relacionados-container">
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/deadpool.jpg">
+                                <h3>DEADPOOL</h3>
+                                <h3>Calificación: 8.0/10</h3>
+                                <h3>DURACION: 1h 48min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/kickass.jpg">
+                                <h3>KICK-ASS</h3>
+                                <h3>Calificación: 7.6/10</h3>
+                                <h3>DURACION: 1h 57min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/theNiceGuys.jpg">
+                                <h3>THE NICE GUYS</h3>
+                                <h3>Calificación: 7.4/10</h3>
+                                <h3>DURACION: 1h 56min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/gameNight.jpg">
+                                <h3>GAME NIGHT</h3>
+                                <h3>Calificación: 7.0/10</h3>
+                                <h3>DURACION: 1h 40min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/zombieland.jpg">
+                                <h3>ZOMBIELAND</h3>
+                                <h3>Calificación: 7.6/10</h3>
+                                <h3>DURACION: 1h 28min</h3>
+                            </div>
+                    </section>
+                </main>
+
+                <!-- SUGERENCIAS -->
+                <aside class="col-lg-3">
+                    <h2>SUGERENCIAS PARA TI</h2>
+                    <!-- ITEM 1 -->
+                    <div class="item-aside">
+                        <p class="genero">ROMANCE</p>
+                        <h3>CUMBRES BORRASCOSAS</h3>
+                        <img src="../../recursos/imagenes/peliculas/cumbresBorrascosas.jpg">
+                        <p class="descripcion">Amor tormentoso e inmortal entre personas lejanas</p>
+                        <a href="../extranet/detalles_aside/cumbres_barrascosas.html">Ver mas</a>
                     </div>
-                </section>
-
-                <section class="card-detalle">
-                    <h2>REPARTO</h2>
-                    <div class="reparto-vertical"> 
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/jackQuaid.jpg">
-                            <h3>JACK QUAID</h3>
-                        </div>
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/amberMidthunder.jpg">
-                            <h3>AMBER MIDTHUNDER</h3>
-                        </div>
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/rayNicholson.jpg">
-                            <h3>RAY NICHOLSON</h3>
-                        </div>
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/jacobBatalon.jpg">
-                            <h3>JACOB BATALON</h3>
-                        </div>
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/bettyGabriel.jpg">
-                            <h3>BETTY GABRIEL</h3>
-                        </div>
-                </section>
-
-                <section class="card-detalle">
-                    <h2>RESEÑAS DESTACADAS</h2>
-                    <div class="resenas-container">
-                        <!--USUARIO 1-->
-                        <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 8.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png">
-                            <p><b>MovieFan dice:</b></p>
-                        </div>
-                        <h3>Divertida y diferente.</h3>
-                        <p>
-                            La idea del protagonista que no siente dolor está muy bien aprovechada.
-                            Mucha acción y momentos muy graciosos.
-                        </p>
+                    <hr>
+                    <!-- ITEM 2 -->
+                    <div class="item-aside">
+                        <p class="genero">TERROR</p>
+                        <h3>WEAPONS</h3>
+                        <img src="../../recursos/imagenes/peliculas/weapons.jpg">
+                        <p class="descripcion">Horror perturbador sobre una familia y rituales desconocidos</p>
+                        <a href="../extranet/detalles_aside/weapons.html">Ver mas</a>
                     </div>
-
-                    <!--USUARIO 2-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 7.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png">
-                            <p><b>AccionLover dice:</b></p>
-                        </div>
-                        <h3>Entretenida pero simple.</h3>
-                        <p>
-                            No reinventa nada, pero cumple. Ideal para pasar el rato
-                            con acción ligera y humor.
-                        </p>
+                    <hr>
+                    <!-- ITEM 3 -->
+                    <div class="item-aside">
+                        <p class="genero">COMEDIA</p>
+                        <h3>NOVOCAINE</h3>
+                        <img src="../../recursos/imagenes/peliculas/novocaine.jpg">
+                        <p class="descripcion">Un tipo bueno se salva que limita su umbral de acción</p>
+                        <a href="../extranet/detalles_aside/novocaine.html">Ver mas</a>
                     </div>
-
-                    <div class="contenedor-boton">
-                        <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                    <hr>
+                    <!-- ITEM 4 -->
+                    <div class="item-aside">
+                        <p class="genero">CIENCIA FICCIÓN</p>
+                        <h3>DUNE: PART 2</h3>
+                        <img src="../../recursos/imagenes/peliculas/dune.jpg">
+                        <p class="descripcion">Paul Atreides lidera la revolución en el planeta de la arena</p>
+                        <a href="../extranet/detalles_aside/dune_parte2.html">Ver mas</a>
                     </div>
-                </section>
-
-                <section class="card-detalle">
-                    <h2>RELACIONADOS</h2>
-                    <div class="relacionados-container">
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/deadpool.jpg">
-                            <h3>DEADPOOL</h3>
-                            <h3>Calificación: 8.0/10</h3>
-                            <h3>DURACION: 1h 48min</h3>
-                        </div>
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/kickass.jpg">
-                            <h3>KICK-ASS</h3>
-                            <h3>Calificación: 7.6/10</h3>
-                            <h3>DURACION: 1h 57min</h3>
-                        </div>
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/theNiceGuys.jpg">
-                            <h3>THE NICE GUYS</h3>
-                            <h3>Calificación: 7.4/10</h3>
-                            <h3>DURACION: 1h 56min</h3>
-                        </div>
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/gameNight.jpg">
-                            <h3>GAME NIGHT</h3>
-                            <h3>Calificación: 7.0/10</h3>
-                            <h3>DURACION: 1h 40min</h3>
-                        </div>
-                        <div class="relacionado-card">
-                            <img src="../../recursos/imagenes/peliculas/zombieland.jpg">
-                            <h3>ZOMBIELAND</h3>
-                            <h3>Calificación: 7.6/10</h3>
-                            <h3>DURACION: 1h 28min</h3>
-                        </div>
-                </section>
-            </main>
+                    <hr>
+                    <!-- ITEM 5 -->
+                    <div class="item-aside">
+                        <p class="genero">ANIMACIÓN</p>
+                        <h3>FLOW</h3>
+                        <img src="../../recursos/imagenes/peliculas/flow.jpg">
+                        <p class="descripcion">Un gato sobrevive a una inundación en un mundo sin humanos</p>
+                        <a href="../extranet/detalles_aside/flow.html">Ver mas</a>
+                    </div>
+                </aside>
+            </div>
         </div>
+
         <!-- footer -->
         <footer class="footer">
             <p class="titulo-footer">Desarrollado por:</p>
