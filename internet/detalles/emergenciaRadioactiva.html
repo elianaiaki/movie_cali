@@ -1,282 +1,291 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>EMERGENCIA RADIOACTIVA</title>
-    <link rel="stylesheet" href="../../estilos/body.css">
-    <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
-    <link rel="stylesheet" href="../../estilos/footer.css">
-    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
-    <script src="../../scripts/header.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-     <header class="header container-fluid py-2">
-        <div class="row align-items-center w-100">
-            <!-- LOGO -->
-            <div class="col-lg-3 text-center text-lg-start">
-                <img src="../../recursos/imagenes/logo/logo.png"
-                    alt="Logo MovieCali"
-                    class="img-fluid">
+    <head>
+        <meta charset="UTF-8">
+        <title>EMERGENCIA RADIOACTIVA</title>
+        <!-- HOJAS DE ESTILO -->
+        <link rel="stylesheet" href="../../estilos/body.css">
+        <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
+        <link rel="stylesheet" href="../../estilos/footer.css">
+        <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+        <!-- SCRIPTS -->
+        <script src="../../scripts/header.js" defer></script>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header container-fluid py-2">
+            <div class="row align-items-center w-100">
+                <!-- LOGO -->
+                <div class="col-lg-3 text-center text-lg-start">
+                    <img src="../../recursos/imagenes/logo/logo.png"
+                        alt="Logo MovieCali"
+                        class="img-fluid">
+                </div>
+
+                <!-- BUSCADOR -->
+                <div class="col-lg-3 my-2 my-lg-0">
+                    <form class="buscador d-flex">
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Buscar películas, series...">
+                        <button class="btn btn-primary ms-2">
+                            🔍
+                        </button>
+                    </form>
+                </div>
+
+                <!-- MENÚ -->
+                <nav class="col-lg-3">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="../../index.html" class="btn btn-outline-light">Inicio</a>
+                        <a href="../../internet/catalogo_peliculas.html" class="btn btn-outline-light">Películas</a>
+                        <a href="../../internet/catalogo_series.html" class="btn btn-outline-light">Series</a>
+                    </div>
+                </nav>
+
+                <!-- PERFIL -->
+                <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                    <div class="perfil" id="perfilBtn">
+
+                        <img src="../../recursos/imagenes/iconos/usuario.png"
+                            alt="usuario">
+
+                        <div class="perfil-info">
+                            <span>MENU</span>
+                            <span class="flecha">▼</span>
+                        </div>
+
+                        <div class="menu-perfil">
+                            <a href="..../internet/inicioSesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                            <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-
-            <!-- BUSCADOR -->
-            <div class="col-lg-3 my-2 my-lg-0">
-                <form class="buscador d-flex">
-                    <input type="text"
-                        class="form-control"
-                        placeholder="Buscar películas, series...">
-                    <button class="btn btn-primary ms-2">
-                        🔍
-                    </button>
-                </form>
-            </div>
-
-            <!-- MENÚ -->
-            <nav class="col-lg-3">
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="../../index.html" class="btn btn-outline-light">Inicio</a>
-                    <a href="../../internet/catalogo_peliculas.html" class="btn btn-outline-light">Películas</a>
-                    <a href="../../internet/catalogo_series.html" class="btn btn-outline-light">Series</a>
-                </div>
-            </nav>
-
-            <!-- PERFIL -->
-            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
-                <div class="perfil" id="perfilBtn">
-
-                    <img src="../../recursos/imagenes/iconos/usuario.png"
-                        alt="usuario">
-
-                    <div class="perfil-info">
-                        <span>MENU</span>
-                        <span class="flecha">▼</span>
-                    </div>
-
-                    <div class="menu-perfil">
-                        <a href="..../internet/inicioSesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
-                        <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </header>
-
-    <hr>
-    <!-- FIN DE HEADER-->
-
-    <div>
-        <!-- MAIN -->
-        <main>
-            <section class="detalle-principal">
-                <div class="poster">
-                    <img src="../../recursos/imagenes/series/emergenciaradioactiva.jpg" alt="EMERGENCIA RADIOACTIVA">
-                </div>
-                <div class="info-serie">
-                    <h1>EMERGENCIA RADIOACTIVA</h1>
-                    <p>En Brasil en 1987, chatareros encuentran una sustancia luminosa en un hospital abandonado. Mientras cambia de  
-                    manos, científicos y médicos intentan evitar que una catástrofe radiactiva cobre muchas vidas.
-                    </p>
-                    <ul>
-                        <li><strong>Género:</strong> Aventura</li>
-                        <li><strong>Año:</strong> 2026</li>
-                        <li><strong>Duración:</strong> 1 TEMPORADA</li>
-                        <li><strong>Director:</strong> Fernando Coimbra, Iberê Carvalho</li>
-                        <li><strong>Productores/as:</strong> Fernando Coimbra, Toti Gennari</li>
-                        <li><strong>Calificación general:</strong> 5.1/10</li>
-                        <li><strong>Clasificación por edad:</strong> +18</li>
-                        <li><strong>Plataformas:</strong> Netflix</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="card-detalle">
-                <div class="video-container">
-                    <h2>Tráiler</h2>
-                    <video width="600" controls>
-                        <source src="../../recursos/videos/EmergenciaRadioactiva.mp4" type="video/mp4">
-                        Tu navegador no soporta este video. Probá con otro navegador.
-                    </video>
-                </div>
-            </section>
-            <!-- REPARTO-->
-            <section class="card-detalle">
-                <h2>REPARTO</h2>
-                <div class="reparto-vertical">
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/PauloGorgulho.jpg" alt="PAULO GORGULHO">
-                        <h3>PAULO GORGULHO</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/BukassaKabengele.jpg" alt="BUKASSA KABENGELE">
-                        <h3>BUKASSA KABENGELE</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/TucaAndrada.jpg" alt="TUCA ANDRADA">
-                        <h3>TUCA ANDRADA</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/ClarissaKiste.jpg" alt="CLARISSA KISTE">
-                        <h3>CLARISSA KISTE</h3>
-                    </div>
-                    <div class="actor-card" >
-                        <img src="../../recursos/imagenes/Reparto/AntonioSaboia.jpg" alt="ANTONIO SABOIA">
-                        <h3>ANTONIO SABOIA</h3>
-                    </div>
-                </div>       
-            </section>
-            <!--RESEÑA DE USUARIOS-->
-            <section class="card-detalle">
-                <h2>RESEÑAS DESTACADAS</h2>
-                <div class="resenas-container">
-                    <!--USUARIO 1-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 8.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                            <p><b>UltraNeptuneCat dice:</b></p>
+        </header>
+    <!------------------------------------------------------------------------------------------->
+            <hr>
+    <!------------------------------------------------------------------------------------------->
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <!-- INFORMACIÓN PRINCIPAL-->
+                    <section class="detalle-principal">
+                        <div class="poster">
+                            <img src="../../recursos/imagenes/series/emergenciaradioactiva.jpg" alt="EMERGENCIA RADIOACTIVA">
                         </div>
-                            <!-- contenido -->
-                            <h3>Entretenimiento informativo y constante</h3>
-                            <p>
-                                “Esto es muy informativo e interesante sobre cómo se investigan y resuelven los incidentes radiactivos. 
-                                Y cómo empeora sin previo aviso. Es un buen drama médico, realmente recrea un desastre de pueblo 
-                                pequeño y habla de los efectos secundarios tanto para el pueblo como para la gente, y puedes entender  
-                                ambos lados: la gente, la policía y las personas que están siendo tratadas.”
+                        <div class="info-serie">
+                            <h1>EMERGENCIA RADIOACTIVA</h1>
+                            <p>En Brasil en 1987, chatareros encuentran una sustancia luminosa en un hospital abandonado. Mientras cambia de  
+                            manos, científicos y médicos intentan evitar que una catástrofe radiactiva cobre muchas vidas.
                             </p>
-                    </div>
-                    <!--USUARIO 2-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 8.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                            <p><b>Lads99 dice:</b></p>
+                            <ul>
+                                <li><strong>Género:</strong> Aventura</li>
+                                <li><strong>Año:</strong> 2026</li>
+                                <li><strong>Duración:</strong> 1 TEMPORADA</li>
+                                <li><strong>Director:</strong> Fernando Coimbra, Iberê Carvalho</li>
+                                <li><strong>Productores/as:</strong> Fernando Coimbra, Toti Gennari</li>
+                                <li><strong>Calificación general:</strong> 5.1/10</li>
+                                <li><strong>Clasificación por edad:</strong> +18</li>
+                                <li><strong>Plataformas:</strong> Netflix</li>
+                            </ul>
                         </div>
-                            <!-- contenido -->
-                            <h3>El horror de lo invisible y la curiosidad humana</h3>
-                            <p>
-                                "La miniserie desempeña un papel vital en la memoria colectiva de Brasil, 
-                                transformando uno de los peores accidentes radiológicos del mundo en una 
-                                narrativa de horror real y negligencia estatal. 
-                                Es una obra indispensable para entender que el peligro nuclear no proviene solo 
-                                de bombas o centrales eléctricas, sino también de la gestión irresponsable de 
-                                los residuos tecnológicos. Recomendado."
-                            </p>
-                    </div>
-                    <!--USUARIO 3-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 9.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                            <p><b>AFS-91478 dice: </b></p>
-                        </div>
-                            <!-- contenido -->
-                            <h3>Me encantó esto</h3>
-                            <p>
-                                "Fue una gran serie que trató un tema del mundo real. Muy original. Por favor, 
-                                encarga más cosas como esta. El reparto es realmente bueno. Fue una gran 
-                                serie que trató un tema del mundo real. Muy original. Por favor, encarga más 
-                                cosas como esta. El reparto es realmente bueno. Volvería a verlo. Lo recomiendo 
-                                a todo el mundo."
-                            </p>
-                    </div>
-                    <!--USUARIO 4-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 5.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                            <p><b>Dennesey dice: </b></p>
-                        </div>
-                            <!-- contenido -->
-                            <h3>Evento importante mal escrito</h3>
-                            <p>
-                                "No podía seguir el ritmo de la cantidad de diálogos absurdos. Cada vez que se 
-                                planteaba una preocupación válida, las reacciones o respuestas desafiaban la 
-                                realidad. A los 20 minutos, estaba claro que la escritura iba a condenar todo el 
-                                espectáculo para mí. No hace falta decir que el tema mantuvo mi interés lo 
-                                suficiente como para seguir adelante. Algunos actores ayudaron a que el sitio 
-                                fuera creíble y actuaron admirablemente. Tema importante que merecía tiempo 
-                                en pantalla, pero el guion me impidió llevar las estrellas más alto."
-                            </p>
-                    </div>
-                    <!--USUARIO 5-->
-                    <div class="resena-card">
-                        <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                        <div>
-                            <p><b>Calificación:</b> 9.0 / 10</p>
-                            <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
-                            <p><b>GloryBZZZ-92812 dice: </b></p>
-                        </div>
-                            <!-- contenido -->
-                            <h3>INFORMATIVO Y QUE INVITA A LA REFLEXIÓN</h3>
-                            <p>
-                                "Una muy buena representación ficticia de una posibilidad que conlleva el uso de 
-                                herramientas médicas diagnósticas. Aunque es ficción, hace que se conciencian 
-                                sobre una situación demasiado plausible, especialmente ahora que nos 
-                                enfrentamos a una guerra en la que todos los jugadores podrían tener armas 
-                                nucleares "escondidas en su armario" — envenenamiento por radiación a la 
-                                mano. Imagina un evento como este hoy; Cómo sobreviviríamos desnudos, 
-                                desnudos, con ignorancia y obstáculos para tu supervivencia personal en cada 
-                                paso. Puede que no sea la "mejor película" del año, pero sin duda es una de las 
-                                más provocadoras que he visto en muchos años."
-                            </p>
-                    </div>
-                    <div class="contenedor-boton">
-                        <a href="#" class="btn-resenia">Ver todas las reseñas</a>
-                    </div>
-                </div>
-            </section>
+                    </section>
 
-            <!-- RELACIONADOS-->
-            <section class="card-detalle">
-             <h2>RELACIONADOS</h2>
-                <div class="relacionados-container">
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/Losdías.jpg" alt="LOS DIAS">
-                        <h3>LOS DÍAS</h3>
-                        <h3>Calificación: 7.2/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/TodoslosDíaslaMismaNoche.jpg" alt="TODOS LOS DÍAS LA MISMA NOCHE">
-                        <h3>TODOS LOS DÍAS LA MISMA NOCHE</h3>
-                        <h3>Calificación: 7.6/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/Niñosdeplomo.jpg" alt="NIÑOS DE PLOMO">
-                        <h3>NIÑOS DE PLOMO</h3>
-                        <h3>Calificación: 7.5/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/HarryHole.jpg" alt="HARRY HOLE">
-                        <h3>HARRY HOLE</h3>
-                        <h3>Calificación: 7.7/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/series/Lagraninundación.jpg" alt="LA GRAN INUNDACIÓN">
-                        <h3>LA GRAN INUNDACIÓN</h3>
-                        <h3>Calificación: 7.1/10</h3>
-                        <h3>DURACION: 1 TEMPORADA</h3>
-                    </div>
+                    <!-- TRÁILER -->
+                    <section class="card-detalle">
+                        <div class="video-container">
+                            <h2>Tráiler</h2>
+                            <video width="600" controls>
+                                <source src="../../recursos/videos/EmergenciaRadioactiva.mp4" type="video/mp4">
+                                Tu navegador no soporta este video. Probá con otro navegador.
+                            </video>
+                        </div>
+                    </section>
+
+                    <!-- REPARTO -->
+                    <section class="card-detalle">
+                        <h2>REPARTO</h2>
+                        <div class="reparto-vertical">
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/PauloGorgulho.jpg" alt="PAULO GORGULHO">
+                                <h3>PAULO GORGULHO</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/BukassaKabengele.jpg" alt="BUKASSA KABENGELE">
+                                <h3>BUKASSA KABENGELE</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/TucaAndrada.jpg" alt="TUCA ANDRADA">
+                                <h3>TUCA ANDRADA</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/ClarissaKiste.jpg" alt="CLARISSA KISTE">
+                                <h3>CLARISSA KISTE</h3>
+                            </div>
+                            <div class="actor-card" >
+                                <img src="../../recursos/imagenes/Reparto/AntonioSaboia.jpg" alt="ANTONIO SABOIA">
+                                <h3>ANTONIO SABOIA</h3>
+                            </div>
+                        </div>       
+                    </section>
+
+                    <!-- RESEÑAS DESTACADAS -->
+                    <section class="card-detalle">
+                        <h2>RESEÑAS DESTACADAS</h2>
+                        <div class="resenas-container">
+                            <!-- RESEÑA USUARIO 1 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 8.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                    <p><b>UltraNeptuneCat dice:</b></p>
+                                </div>
+                                <h3>Entretenimiento informativo y constante</h3>
+                                <p>
+                                    “Esto es muy informativo e interesante sobre cómo se investigan y resuelven los incidentes radiactivos. 
+                                    Y cómo empeora sin previo aviso. Es un buen drama médico, realmente recrea un desastre de pueblo 
+                                    pequeño y habla de los efectos secundarios tanto para el pueblo como para la gente, y puedes entender  
+                                    ambos lados: la gente, la policía y las personas que están siendo tratadas.”
+                                </p>
+                            </div>
+                            <!-- RESEÑA USUARIO 2 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 8.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                    <p><b>Lads99 dice:</b></p>
+                                </div>
+                                <h3>El horror de lo invisible y la curiosidad humana</h3>
+                                <p>
+                                    "La miniserie desempeña un papel vital en la memoria colectiva de Brasil, 
+                                    transformando uno de los peores accidentes radiológicos del mundo en una 
+                                    narrativa de horror real y negligencia estatal. 
+                                    Es una obra indispensable para entender que el peligro nuclear no proviene solo 
+                                    de bombas o centrales eléctricas, sino también de la gestión irresponsable de 
+                                    los residuos tecnológicos. Recomendado."
+                                </p>
+                            </div>
+
+                            <!-- RESEÑA USUARIO 3 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 9.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                    <p><b>AFS-91478 dice: </b></p>
+                                </div>
+                                <h3>Me encantó esto</h3>
+                                <p>
+                                    "Fue una gran serie que trató un tema del mundo real. Muy original. Por favor, 
+                                    encarga más cosas como esta. El reparto es realmente bueno. Fue una gran 
+                                    serie que trató un tema del mundo real. Muy original. Por favor, encarga más 
+                                    cosas como esta. El reparto es realmente bueno. Volvería a verlo. Lo recomiendo 
+                                    a todo el mundo."
+                                </p>
+                            </div>
+
+                            <!-- RESEÑA USUARIO 4 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 5.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                    <p><b>Dennesey dice: </b></p>
+                                </div>
+                                <h3>Evento importante mal escrito</h3>
+                                <p>
+                                    "No podía seguir el ritmo de la cantidad de diálogos absurdos. Cada vez que se 
+                                    planteaba una preocupación válida, las reacciones o respuestas desafiaban la 
+                                    realidad. A los 20 minutos, estaba claro que la escritura iba a condenar todo el 
+                                    espectáculo para mí. No hace falta decir que el tema mantuvo mi interés lo 
+                                    suficiente como para seguir adelante. Algunos actores ayudaron a que el sitio 
+                                    fuera creíble y actuaron admirablemente. Tema importante que merecía tiempo 
+                                    en pantalla, pero el guion me impidió llevar las estrellas más alto."
+                                </p>
+                            </div>
+
+                            <!-- RESEÑA USUARIO 5 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 9.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png" width="40">
+                                    <p><b>GloryBZZZ-92812 dice: </b></p>
+                                </div>
+                                <h3>INFORMATIVO Y QUE INVITA A LA REFLEXIÓN</h3>
+                                <p>
+                                    "Una muy buena representación ficticia de una posibilidad que conlleva el uso de 
+                                    herramientas médicas diagnósticas. Aunque es ficción, hace que se conciencian 
+                                    sobre una situación demasiado plausible, especialmente ahora que nos 
+                                    enfrentamos a una guerra en la que todos los jugadores podrían tener armas 
+                                    nucleares "escondidas en su armario" — envenenamiento por radiación a la 
+                                    mano. Imagina un evento como este hoy; Cómo sobreviviríamos desnudos, 
+                                    desnudos, con ignorancia y obstáculos para tu supervivencia personal en cada 
+                                    paso. Puede que no sea la "mejor película" del año, pero sin duda es una de las 
+                                    más provocadoras que he visto en muchos años."
+                                </p>
+                            </div>
+
+                            <div class="contenedor-boton">
+                                <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- RELACIONADOS -->
+                    <section class="card-detalle">
+                    <h2>RELACIONADOS</h2>
+                        <div class="relacionados-container">
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/series/Losdías.jpg" alt="LOS DIAS">
+                                <h3>LOS DÍAS</h3>
+                                <h3>Calificación: 7.2/10</h3>
+                                <h3>DURACION: 1 TEMPORADA</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/series/TodoslosDíaslaMismaNoche.jpg" alt="TODOS LOS DÍAS LA MISMA NOCHE">
+                                <h3>TODOS LOS DÍAS LA MISMA NOCHE</h3>
+                                <h3>Calificación: 7.6/10</h3>
+                                <h3>DURACION: 1 TEMPORADA</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/series/Niñosdeplomo.jpg" alt="NIÑOS DE PLOMO">
+                                <h3>NIÑOS DE PLOMO</h3>
+                                <h3>Calificación: 7.5/10</h3>
+                                <h3>DURACION: 1 TEMPORADA</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/series/HarryHole.jpg" alt="HARRY HOLE">
+                                <h3>HARRY HOLE</h3>
+                                <h3>Calificación: 7.7/10</h3>
+                                <h3>DURACION: 1 TEMPORADA</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/series/Lagraninundación.jpg" alt="LA GRAN INUNDACIÓN">
+                                <h3>LA GRAN INUNDACIÓN</h3>
+                                <h3>Calificación: 7.1/10</h3>
+                                <h3>DURACION: 1 TEMPORADA</h3>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </div> 
         </main> 
-    </div>
-<!-------------FOOTER------------------------------------------------------------------------------>
-    <footer class="footer">
-        <p class="titulo-footer">Desarrollado por:</p>
-        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
-    </footer>
- 
-</body>
+    <!-------------FOOTER------------------------------------------------------------------------------>
+        <footer class="footer">
+            <p class="titulo-footer">Desarrollado por:</p>
+            <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
+        </footer>
+    
+    </body>
 </html>

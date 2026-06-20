@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>CAJA AZUL</title>
-    <link rel="stylesheet" href="../../estilos/body.css">
-    <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
-    <link rel="stylesheet" href="../../estilos/footer.css">
-    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
-    <script src="../../scripts/header.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-     <header class="header container-fluid py-2">
+    <head>
+        <meta charset="UTF-8">
+        <title>CAJA AZUL</title>
+        <!-- HOJAS DE ESTILO -->
+        <link rel="stylesheet" href="../../estilos/body.css">
+        <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
+        <link rel="stylesheet" href="../../estilos/footer.css">
+        <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+        <!-- SCRIPTS -->
+        <script src="../../scripts/header.js" defer></script>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <header class="header container-fluid py-2">
         <div class="row align-items-center w-100">
             <!-- LOGO -->
             <div class="col-lg-3 text-center text-lg-start">
@@ -65,216 +68,209 @@
 
         </div>
     </header>
+<!------------------------------------------------------------------------------------------->
+        <hr>
+<!------------------------------------------------------------------------------------------->
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                <!-- INFORMACIÓN PRINCIPAL -->
+                    <section class="detalle-principal">
+                        <div class="poster">
+                            <img src="../../recursos/imagenes/peliculas/cajaAzul.jpg" alt="CAJA AZUL">
+                        </div>
+                        <div class="info-serie">
+                            <h1>CAJA AZUL</h1>
+                            <p>Un millonario solitario de la Patagonia atormentado por la   
+                                tragedia conoce a Lara a través de una aplicación de citas   
+                                con una misteriosa «caja azul». Ella lo saca del aislamiento,   
+                                pero una advertencia anónima sobre ella convierte su   
+                                romance en una manipulación psicológica.
+                            </p>
+                            <ul>
+                                <li><strong>Género:</strong> Romance, Suspenso, Drama</li>
+                                <li><strong>Año:</strong> 2026</li>
+                                <li><strong>Duración:</strong> 1h 48min</li>
+                                <li><strong>Director:</strong> Martín Hodara</li>
+                                <li><strong>Productores/as:</strong> Juan JC Acosta, Gonzalo Arias, Gustavo Bassani</li>
+                                <li><strong>Calificación general:</strong> 7.0/10</li>
+                                <li><strong>Clasificación por edad:</strong> +16</li>
+                                <li><strong>Plataformas:</strong> Prime Video</li>
+                            </ul>
+                        </div>
+                    </section>
 
-    <hr>
-    <!-- FIN DE HEADER-->
+                    <!-- TRÁILER -->
+                    <section class="card-detalle">
+                        <div class="video-conteiner">
+                            <h2>Tráiler</h2>
+                            <video controls>
+                                <source src="../../recursos/videos/LaCajaAzul.webm" type="video/webm">
+                                Tu navegador no soporta este video. Probá con otro navegador.
+                            </video>
+                        </div>
+                    </section>
 
-    <div>
-        <!-- MAIN -->
-        <main>
-            <!-- TITULO, DETALLES Y TRAILER-->
-            <section class="detalle-principal">
-                <div class="poster">
-                    <img src="../../recursos/imagenes/peliculas/cajaAzul.jpg" alt="CAJA AZUL">
-                </div>
-                <div class="info-serie">
-                    <h1>CAJA AZUL</h1>
-                    <p>Un millonario solitario de la Patagonia atormentado por la   
-                        tragedia conoce a Lara a través de una aplicación de citas   
-                        con una misteriosa «caja azul». Ella lo saca del aislamiento,   
-                        pero una advertencia anónima sobre ella convierte su   
-                        romance en una manipulación psicológica.
-                    </p>
-                    <ul>
-                        <li><strong>Género:</strong> Romance, Suspenso, Drama</li>
-                        <li><strong>Año:</strong> 2026</li>
-                        <li><strong>Duración:</strong> 1h 48min</li>
-                        <li><strong>Director:</strong> Martín Hodara</li>
-                        <li><strong>Productores/as:</strong> Juan JC Acosta, Gonzalo Arias, Gustavo Bassani</li>
-                        <li><strong>Calificación general:</strong> 7.0/10</li>
-                        <li><strong>Clasificación por edad:</strong> +16</li>
-                        <li><strong>Plataformas:</strong> Prime Video</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="card-detalle">
-                <div class="video-conteiner">
-                    <h2>Tráiler</h2>
-                    <video controls>
-                        <source src="../../recursos/videos/LaCajaAzul.webm" type="video/webm">
-                        Tu navegador no soporta este video. Probá con otro navegador.
-                    </video>
-                </div>
-            </section>
-
-            <!-- REPARTO-->
-            <section class="card-detalle">
-                <h2>REPARTO</h2>
-                <div class="reparto-vertical"> 
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/LuisanaLopilato.jpg" alt="LUISANA LOPILATO">  
-                        <h3>LUISANA LOPILATO</h3>
-                     </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/JeanPierreNoher.jpg" alt="JEAN PIERRE NOHER">  
-                        <h3>JEAN PIERRE NOHER</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/PedroMerlo.jpg" alt="PEDRO MERLO">  
-                        <h3>PEDRO MERLO</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/FabianNovell.jpg" alt="FABIAN NOVELL">  
-                        <h3>FABIAN NOVELL</h3>
-                    </div>
-                    <div class="actor-card">
-                        <img src="../../recursos/imagenes/Reparto/TiniGoyogana.jpg" alt="TINI GOYOGANA">  
-                        <h3>TINI GOYOGANA</h3>
-                    </div>
-                </div>
-            </section>
-
-            <!--RESEÑA DE USUARIOS-->
-            <section class="card-detalle">
-                <h2>RESEÑAS DESTACADAS</h2>
-                    <div class="resenas-container">
-                        <!--USUARIO 1-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 7.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>ThrillFan23 dice:</b></p>
+                    <!-- REPARTO -->
+                    <section class="card-detalle">
+                        <h2>REPARTO</h2>
+                        <div class="reparto-vertical"> 
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/LuisanaLopilato.jpg" alt="LUISANA LOPILATO">  
+                                <h3>LUISANA LOPILATO</h3>
                             </div>
-                                <!-- contenido -->
-                                <h3>Suspenso bien logrado</h3>
-                                <p>
-                                "Me mantuvo enganchado, aunque algunas decisiones de los personajes no   
-                                convencen." 
-                                </p>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/JeanPierreNoher.jpg" alt="JEAN PIERRE NOHER">  
+                                <h3>JEAN PIERRE NOHER</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/PedroMerlo.jpg" alt="PEDRO MERLO">  
+                                <h3>PEDRO MERLO</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/FabianNovell.jpg" alt="FABIAN NOVELL">  
+                                <h3>FABIAN NOVELL</h3>
+                            </div>
+                            <div class="actor-card">
+                                <img src="../../recursos/imagenes/Reparto/TiniGoyogana.jpg" alt="TINI GOYOGANA">  
+                                <h3>TINI GOYOGANA</h3>
+                            </div>
                         </div>
+                    </section>
 
-                        <!--USUARIO 2-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 5.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>Dluan33 dice:</b></p>
-                            </div>
-                            <!-- contenido -->
-                                <h3>Prometía más</h3>
-                                <p>
-                                "La trama es interesante, pero el desarrollo se siente predecible hacia el   
-                                final."
-                                </p>
-                        </div>
-                        
-                        <!--USUARIO 3-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 9.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>LopilatoFan dice: </b></p>
-                            </div>
-                            <!-- contenido -->
-                                <h3>Gran actuación</h3>
-                                <p>
-                                    "Luisana Lopilato entrega una actuación muy convincente y emocional. Se   
-                                    nota el compromiso con el personaje y eso eleva muchísimo la calidad de   
-                                    la película. Sin dudas, uno de los puntos más fuertes."
-                                </p>
-                        </div>
-                        
-                        <!--USUARIO 4-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 8.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>Marcs76 dice: </b></p>
-                            </div>
-                            <!-- contenido -->
-                                <h3>Una propuesta diferente</h3>
-                                <p>
-                                    "Se agradece ver una producción que apuesta por un suspenso más   
-                                    psicológico y menos convencional. La fotografía, los paisajes y el tono   
-                                    general logran una experiencia distinta y muy interesante."
-                                </p>
-                        </div>
-                        
+                    <!-- RESEÑAS DESTACADAS -->
+                    <section class="card-detalle">
+                        <h2>RESEÑAS DESTACADAS</h2>
+                            <div class="resenas-container">
+                                <!-- RESEÑA USUARIO 1 -->
+                                <div class="resena-card">
+                                    <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                                    <div>
+                                        <p><b>Calificación:</b> 7.0 / 10</p>
+                                        <img src="../../recursos/imagenes/iconos/usuario.png">
+                                        <p><b>ThrillFan23 dice:</b></p>
+                                    </div>
+                                    <h3>Suspenso bien logrado</h3>
+                                    <p>
+                                    "Me mantuvo enganchado, aunque algunas decisiones de los personajes no   
+                                    convencen." 
+                                    </p>
+                                </div>
 
-                        <!--USUARIO 5-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 8.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>Luis_11 dice: </b></p>
-                            </div>
-                            <!-- contenido -->
-                                <h3>Intriga bien manejada</h3>
-                                <p>
-                                    "La narrativa mantiene un buen equilibrio entre misterio y   
-                                    desarrollo de personajes. No es una película rápida, pero justamente   
-                                    eso permite que la historia se desarrolle de forma más profunda y   
-                                    atrapante."
-                                </p>
-                        </div>
-                        <div class="contenedor-boton">
-                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
-                        </div>
-                    </div>
-            </section>
+                                <!-- RESEÑA USUARIO 2 -->
+                                <div class="resena-card">
+                                    <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
+                                    <div>
+                                        <p><b>Calificación:</b> 5.0 / 10</p>
+                                        <img src="../../recursos/imagenes/iconos/usuario.png">
+                                        <p><b>Dluan33 dice:</b></p>
+                                    </div>
+                                    <h3>Prometía más</h3>
+                                    <p>
+                                    "La trama es interesante, pero el desarrollo se siente predecible hacia el   
+                                    final."
+                                    </p>
+                                </div>
+                                
+                                <!-- RESEÑA USUARIO 3 -->
+                                <div class="resena-card">
+                                    <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                                    <div>
+                                        <p><b>Calificación:</b> 9.0 / 10</p>
+                                        <img src="../../recursos/imagenes/iconos/usuario.png">
+                                        <p><b>LopilatoFan dice: </b></p>
+                                    </div>
+                                    <h3>Gran actuación</h3>
+                                    <p>
+                                        "Luisana Lopilato entrega una actuación muy convincente y emocional. Se   
+                                        nota el compromiso con el personaje y eso eleva muchísimo la calidad de   
+                                        la película. Sin dudas, uno de los puntos más fuertes."
+                                    </p>
+                                </div>
+                                
+                                <!-- RESEÑA USUARIO 4 -->
+                                <div class="resena-card">
+                                    <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                                    <div>
+                                        <p><b>Calificación:</b> 8.0 / 10</p>
+                                        <img src="../../recursos/imagenes/iconos/usuario.png">
+                                        <p><b>Marcs76 dice: </b></p>
+                                    </div>
+                                    <h3>Una propuesta diferente</h3>
+                                    <p>
+                                        "Se agradece ver una producción que apuesta por un suspenso más   
+                                        psicológico y menos convencional. La fotografía, los paisajes y el tono   
+                                        general logran una experiencia distinta y muy interesante."
+                                    </p>
+                                </div>
 
-            <!-- RELACIONADOS-->
-             <section class="card-detalle">
-                <h2>RELACIONADOS</h2>
-                <div class=" relacionados-container">
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/Lamujerdelafila.jpg" alt="LA MUJER DE LA FILA">  
-                        <h3>LA MUJER DE LA FILA</h3>
-                        <h3>Calificación: 6.5/10</h3>
-                        <h3>DURACION: 1h 45min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/Gatillero.jpg" alt="GATILLERO">  
-                        <h3>GATILLERO</h3>
-                        <h3>Calificación: 6.8/10</h3>
-                        <h3>DURACION: 1h 20min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/Lavirgendelatosquera.jpg" alt="LA VIRGEN DE LA TOSQUERA">  
-                        <h3>LA VIRGEN DE LA TOSQUERA</h3>
-                        <h3>Calificación: 6.3/10</h3>
-                        <h3>DURACION: 1h 33min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/HomoArgentum.jpg" alt="HOMO ARGENTUM">  
-                        <h3>HOMO ARGENTUM</h3>
-                        <h3>Calificación: 5.7/10</h3>
-                        <h3>DURACION: 1h 38min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/Algosalvaje.jpg" alt="ALGO SALVAJE">  
-                        <h3>ALGO SALVAJE</h3>
-                        <h3>Calificación: 6.9/10</h3>
-                        <h3>DURACION: 1h 54min</h3>
-                    </div>
+                                <!-- RESEÑA USUARIO 5 -->
+                                <div class="resena-card">
+                                    <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                                    <div>
+                                        <p><b>Calificación:</b> 8.0 / 10</p>
+                                        <img src="../../recursos/imagenes/iconos/usuario.png">
+                                        <p><b>Luis_11 dice: </b></p>
+                                    </div>
+                                    <h3>Intriga bien manejada</h3>
+                                    <p>
+                                        "La narrativa mantiene un buen equilibrio entre misterio y   
+                                        desarrollo de personajes. No es una película rápida, pero justamente   
+                                        eso permite que la historia se desarrolle de forma más profunda y   
+                                        atrapante."
+                                    </p>
+                                </div>
+
+                                <div class="contenedor-boton">
+                                    <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                                </div>
+                            </div>
+                    </section>
+
+                    <!-- RELACIONADOS -->
+                    <section class="card-detalle">
+                        <h2>RELACIONADOS</h2>
+                        <div class=" relacionados-container">
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/Lamujerdelafila.jpg" alt="LA MUJER DE LA FILA">  
+                                <h3>LA MUJER DE LA FILA</h3>
+                                <h3>Calificación: 6.5/10</h3>
+                                <h3>DURACION: 1h 45min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/Gatillero.jpg" alt="GATILLERO">  
+                                <h3>GATILLERO</h3>
+                                <h3>Calificación: 6.8/10</h3>
+                                <h3>DURACION: 1h 20min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/Lavirgendelatosquera.jpg" alt="LA VIRGEN DE LA TOSQUERA">  
+                                <h3>LA VIRGEN DE LA TOSQUERA</h3>
+                                <h3>Calificación: 6.3/10</h3>
+                                <h3>DURACION: 1h 33min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/HomoArgentum.jpg" alt="HOMO ARGENTUM">  
+                                <h3>HOMO ARGENTUM</h3>
+                                <h3>Calificación: 5.7/10</h3>
+                                <h3>DURACION: 1h 38min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/Algosalvaje.jpg" alt="ALGO SALVAJE">  
+                                <h3>ALGO SALVAJE</h3>
+                                <h3>Calificación: 6.9/10</h3>
+                                <h3>DURACION: 1h 54min</h3>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </div>
         </main>
-    </div>
-<!-------------FOOTER------------------------------------------------------------------------------>
-    <footer class="footer">
-        <p class="titulo-footer">Desarrollado por:</p>
-        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
-    </footer>
-</body>
+        <!-- footer -->
+        <footer class="footer">
+            <p class="titulo-footer">Desarrollado por:</p>
+            <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
+        </footer>
+    </body>
 </html>

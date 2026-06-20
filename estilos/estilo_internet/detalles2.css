@@ -19,9 +19,8 @@
 }
 
 .info-serie{
-    flex:1;
-    max-width:none;
-    color:white;
+    max-width:800px;
+    color: white;
 }
 
 /* .video-container video{
@@ -30,29 +29,18 @@
     border-radius:15px;
 } */
  .video-conteiner video{
-    width:100%;
-    max-width:600px;
-    border-radius:15px;
+    width: 600px;
+    border-radius: 15px;
 }
-
-/* .card-detalle{
-    background:#222934;
-    padding:40px;
-    border-radius:20px;
-    margin:40px 20px; 
-    color:white;
-} */
 
 .card-detalle{
-    background:#222934;
-    padding:40px;
-    border-radius:20px;
-    color:white;
-
-    width:95%;
-    max-width:1600px; /* ajustá este valor */
-    margin:40px auto;
+    background: #222934;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 40px;
+    color: white;
 }
+
 .actor-card{
     display:flex;
     flex-direction:column;
@@ -147,8 +135,8 @@
 .resena-card{
     background:#1b1b1b;
     border-radius:15px;
-    padding:20px;
-    flex:0 0 280px;
+    padding:40px;
+    flex:0 0 300px;
 }
 
 .resena-card img{
@@ -189,7 +177,7 @@
 } */
 
 .relacionado-card{
-    flex:0 0 220px;
+    flex:0 0 260px;
     text-align:center;
     color:white;
 
@@ -263,9 +251,29 @@
     white-space:nowrap;
 }
 
-/* ==========================================
+.fila{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.contenido-detalle{
+    flex:1;
+}
+
+/* main{
+    flex:1;
+    min-width:0;
+} */
+
+main{
+    flex:1;
+    max-width:1040px;
+}
+
+/* --------------------------------------- 
    TABLETS
-========================================== */
+--------------------------------------- */
 @media (max-width: 992px){
 
     .detalle-principal{
@@ -285,6 +293,7 @@
     .video-conteiner video{
         width:100%;
         max-width:600px;
+        border-radius:15px;
     }
 
     .card-detalle{
@@ -292,6 +301,20 @@
         padding:25px;
     }
 
+    .contenedor-boton{
+        flex:none;
+        width:100%;
+        margin-top:15px;
+    }
+
+    .btn-resenia{
+        display:block;
+        text-align:center;
+    }
+
+    main{
+        max-width:100%;
+    }
 }
 
 /* ==========================================
@@ -305,6 +328,7 @@
     }
 
     .poster{
+        width:100%;
         display:flex;
         justify-content:center;
     }
@@ -316,6 +340,10 @@
 
     .info-serie{
         width:100%;
+    }
+
+    .info-serie ul{
+        padding-left:20px;
     }
 
     .video-conteiner video{
@@ -352,6 +380,10 @@
     .relacionado-card img{
         width:180px;
         height:270px;
+    }
+
+    .contenedor-boton{
+        flex:0 0 150px;
     }
 
     h1{

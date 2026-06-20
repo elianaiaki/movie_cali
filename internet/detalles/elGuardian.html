@@ -1,276 +1,281 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>EL GUARDIAN</title>
-    <link rel="stylesheet" href="../../estilos/body.css">
-    <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
-    <link rel="stylesheet" href="../../estilos/footer.css">
-    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
-    <script src="../../scripts/header.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-     <header class="header container-fluid py-2">
-        <div class="row align-items-center w-100">
-            <!-- LOGO -->
-            <div class="col-lg-3 text-center text-lg-start">
-                <img src="../../recursos/imagenes/logo/logo.png"
-                    alt="Logo MovieCali"
-                    class="img-fluid">
+    <head>
+        <meta charset="UTF-8">
+        <title>EL GUARDIAN</title>
+        <!-- HOJAS DE ESTILO -->
+        <link rel="stylesheet" href="../../estilos/body.css">
+        <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
+        <link rel="stylesheet" href="../../estilos/footer.css">
+        <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+        <!-- SCRIPTS -->
+        <script src="../../scripts/header.js" defer></script>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header container-fluid py-2">
+            <div class="row align-items-center w-100">
+                <!-- LOGO -->
+                <div class="col-lg-3 text-center text-lg-start">
+                    <img src="../../recursos/imagenes/logo/logo.png"
+                        alt="Logo MovieCali"
+                        class="img-fluid">
+                </div>
+
+                <!-- BUSCADOR -->
+                <div class="col-lg-3 my-2 my-lg-0">
+                    <form class="buscador d-flex">
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Buscar películas, series...">
+                        <button class="btn btn-primary ms-2">
+                            🔍
+                        </button>
+                    </form>
+                </div>
+
+                <!-- MENÚ -->
+                <nav class="col-lg-3">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="../../index.html" class="btn btn-outline-light">Inicio</a>
+                        <a href="../../internet/catalogo_peliculas.html" class="btn btn-outline-light">Películas</a>
+                        <a href="../../internet/catalogo_series.html" class="btn btn-outline-light">Series</a>
+                    </div>
+                </nav>
+
+                <!-- PERFIL -->
+                <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                    <div class="perfil" id="perfilBtn">
+
+                        <img src="../../recursos/imagenes/iconos/usuario.png"
+                            alt="usuario">
+
+                        <div class="perfil-info">
+                            <span>MENU</span>
+                            <span class="flecha">▼</span>
+                        </div>
+
+                        <div class="menu-perfil">
+                            <a href="..../internet/inicioSesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                            <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+        </header>
+    <!------------------------------------------------------------------------------------------->
+            <hr>
+    <!------------------------------------------------------------------------------------------->
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <!-- INFORMACIÓN PRINCIPAL -->
+                    <section class="detalle-principal">
+                        <div class="poster">
+                            <img src="../../recursos/imagenes/peliculas/elguardian.jpg" alt="EL GUARDIAN" width="200"> 
+                        </div>
+                        
+                        <div class="info-serie">
+                            
+                            <h1>El Guardián: Último refugio</h1>
+                            <p>Un exasesino del gobierno británico vive aislado frente 
+                                a la costa de Escocia, intentando dejar atrás su pasado.
+                                Sin embargo, todo cambia cuando una joven llega a su vida
+                                y queda atrapada en la isla tras una tormenta.
+                                Obligado a protegerla, deberá enfrentarse nuevamente a
+                                su antigua agencia y a peligrosos enemigos que buscan
+                                eliminarlo, desatando una violenta lucha por sobrevivir.
+                            </p>
+                            <ul>
+                                <li><strong>Género:</strong> Acción</li>
+                                <li><strong>Año:</strong> 2026</li>
+                                <li><strong>Duración:</strong> 1h 47min</li>
+                                <li><strong>Director:</strong> Ric Roman Waugh</li>
+                                <li><strong>Productores/as:</strong> Jason Statham, John Friedberg, Brendon Boyea</li>
+                                <li><strong>Calificación general:</strong> 6.5/10</li>
+                                <li><strong>Clasificación por edad:</strong> +18</li>
+                                <li><strong>Plataformas:</strong> NETFLIX</li>
+                            </ul>
+                        </div>
+                    </section>
 
-            <!-- BUSCADOR -->
-            <div class="col-lg-3 my-2 my-lg-0">
-                <form class="buscador d-flex">
-                    <input type="text"
-                        class="form-control"
-                        placeholder="Buscar películas, series...">
-                    <button class="btn btn-primary ms-2">
-                        🔍
-                    </button>
-                </form>
+                    <!-- TRÁILER -->
+                    <section class="card-detalle">
+                        <div class="video-conteiner">
+                            <h2>Tráiler</h2>
+                            <video controls>
+                                <source src="../../recursos/videos/elGuardian.webm" type="video/webm">
+                                Tu navegador no soporta este video. Probá con otro navegador.
+                            </video>
+                        </div>
+                    </section>
+
+                    <!-- REPARTO -->
+                    <section class="card-detalle">
+                        <h2>REPARTO</h2>
+                            <div class="reparto-vertical"> 
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/jasonStatham.jpg" alt="JASON STATHAM" >
+                                    <h3>JASON STATHAM</h3>
+                                </div>
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/bodhiBreathnach.jpg" alt="BODHI RAE BREATHNACH" >
+                                    <h3>BODHI RAE BREATHNACH</h3>
+                                </div>
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/billNighy.jpg" alt="BILL NIGHY" >
+                                    <h3>BILL NIGHY</h3>
+                                </div>
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/naomiAckie.jpg" alt="NAOMI ACKIE" >
+                                    <h3>NAOMI ACKIE</h3>
+                                </div>
+                                <div class="actor-card">
+                                    <img src="../../recursos/imagenes/Reparto/danielMays.jpg" alt="DANIEL MAYS" >
+                                    <h3>DANIEL MAYS</h3>
+                                </div>
+                            </div>
+                    </section>
+
+                    <!-- RESEÑAS DESTACADAS -->
+                    <section class="card-detalle">
+                        <h2>RESEÑAS DESTACADAS</h2>
+                        <div class="resenas-container">
+                            <!-- RESEÑA USUARIO 1 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 8.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/perfil.png">
+                                    <p><b>JohnDeSando dice:</b></p>
+                                </div>
+                                <h3>Refugio - Acción retro de Statham.</h3>
+                                <p>
+                                    "Ofrece acción clásica y realista, con peleas sólidas y escenarios atractivos.
+                                    Aunque la historia es familiar, el drama de personajes añade peso y emoción.
+                                    Una sólida película de nivel medio dentro de su filmografía."
+                                </p>
+                            </div>
+
+                            <!-- RESEÑA USUARIO 2 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 7.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/perfil.png">
+                                    <p><b>AK1991 dice:</b></p>
+                                </div>
+                                <h3>Diversión desechable con Statham.</h3>
+                                <p>
+                                    "Una historia genérica pero entretenida, con suficiente acción y emoción.
+                                    Statham sostiene la película, mientras Bodhi Rae Breathnach aporta frescura
+                                    en su vínculo con el protagonista."
+                                </p>
+                            </div>
+
+                            <!-- RESEÑA USUARIO 3 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 7.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/perfil.png"  >
+                                    <p><b>masonesaul dice:</b></p>
+                                </div>
+                                <h3>Fórmula conocida, entretenimiento confiable.</h3>
+                                <p>
+                                    "La trama es estándar y predecible, pero el ritmo mantiene el interés.
+                                    Statham entrega intensidad y carisma, con secuencias de acción sólidas
+                                    que satisfacen a los fans del género."
+                                </p>
+                            </div>
+
+                            <!-- RESEÑA USUARIO 4 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 8.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/perfil.png">
+                                    <p><b>David Hock dice:</b></p>
+                                </div>
+                                <h3>Una película de acción sorprendentemente conmovedora.</h3>
+                                <p>
+                                    "La relación entre Statham y Bodhi Rae Breathnach es el corazón de la película.
+                                    La acción es intensa, pero lo que destaca es la emotividad y química entre ambos.
+                                    Una grata sorpresa dentro del género."
+                                </p>  
+                            </div>
+                            
+                            <!-- RESEÑA USUARIO 5 -->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 9.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/perfil.png"  >
+                                    <p><b>UrbanG dice:</b></p>
+                                </div>
+                                <h3>Una de las mejores películas de acción de Statham.</h3>
+                                <p>
+                                    "La atmósfera sombría inicial y el rescate de Jessie marcan un inicio potente.
+                                    La acción posterior es sólida y emocionante, convirtiéndola en un título
+                                    imprescindible para los fans del actor."
+                                </p>
+                            </div>
+                            <div class="contenedor-boton">
+                                <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- RELACIONADOS -->
+                    <section class="card-detalle">
+                        <h2>RELACIONADOS</h2>
+                        <div class="relacionados-container">
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/johnWick.jpg" alt="JOHN WICK">
+                                <h3>JOHN WICK</h3>
+                                <h3>Calificación: 8.0/10</h3>
+                                <h3>DURACION: 1h 41min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/bonekeeper.jpg" alt="THE BONEKEEPER" >
+                                <h3>THE BONEKEEPER</h3>
+                                <h3>Calificación: 6.5/10</h3>
+                                <h3>DURACION: 1h 45min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/extraction.jpg" alt="EXTRACTION">
+                                <h3>EXTRACTION</h3>
+                                <h3>Calificación: 7.0/10</h3>
+                                <h3>DURACION: 1h 56min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/nobody.jpg" alt="NOBODY">
+                                <h3>NOBODY</h3>
+                                <h3>Calificación: 7.4/10</h3>
+                                <h3>DURACION: 1h 32min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/beekepper.png" alt="BEEKEPPER">
+                                <h3>BEEKEPPER</h3>
+                                <h3>Calificacion: 8.0/10</h3>
+                                <h3>DURACION: 2h 10min</h3>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-
-            <!-- MENÚ -->
-            <nav class="col-lg-3">
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="../../index.html" class="btn btn-outline-light">Inicio</a>
-                    <a href="../../internet/catalogo_peliculas.html" class="btn btn-outline-light">Películas</a>
-                    <a href="../../internet/catalogo_series.html" class="btn btn-outline-light">Series</a>
-                </div>
-            </nav>
-
-            <!-- PERFIL -->
-            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
-                <div class="perfil" id="perfilBtn">
-
-                    <img src="../../recursos/imagenes/iconos/usuario.png"
-                        alt="usuario">
-
-                    <div class="perfil-info">
-                        <span>MENU</span>
-                        <span class="flecha">▼</span>
-                    </div>
-
-                    <div class="menu-perfil">
-                        <a href="..../internet/inicioSesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
-                        <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </header>
-
-    <hr>
-    <!-- FIN DE HEADER-->
-
-    <div>
-        <!-- MAIN -->
-        <main>
-            <!-- TITULO, DETALLES Y TRAILER-->
-            <section class="detalle-principal">
-               
-                <div class="poster">
-                    <img src="../../recursos/imagenes/peliculas/elguardian.jpg" alt="EL GUARDIAN" width="200"> 
-                </div>
-                
-                <div class="info-serie">
-                    <h1>El Guardián: Último refugio</h1>
-                    <p>Un exasesino del gobierno británico vive aislado frente 
-                        a la costa de Escocia, intentando dejar atrás su pasado.
-                        Sin embargo, todo cambia cuando una joven llega a su vida
-                        y queda atrapada en la isla tras una tormenta.
-                        Obligado a protegerla, deberá enfrentarse nuevamente a
-                        su antigua agencia y a peligrosos enemigos que buscan
-                        eliminarlo, desatando una violenta lucha por sobrevivir.
-                    </p>
-                    <ul>
-                        <li><strong>Género:</strong> Acción</li>
-                        <li><strong>Año:</strong> 2026</li>
-                        <li><strong>Duración:</strong> 1h 47min</li>
-                        <li><strong>Director:</strong> Ric Roman Waugh</li>
-                        <li><strong>Productores/as:</strong> Jason Statham, John Friedberg, Brendon Boyea</li>
-                        <li><strong>Calificación general:</strong> 6.5/10</li>
-                        <li><strong>Clasificación por edad:</strong> +18</li>
-                        <li><strong>Plataformas:</strong> NETFLIX</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="card-detalle">
-                <div class="video-conteiner">
-                    <h2>Tráiler</h2>
-                    <video controls>
-                        <source src="../../recursos/videos/elGuardian.webm" type="video/webm">
-                        Tu navegador no soporta este video. Probá con otro navegador.
-                    </video>
-                </div>
-            </section>
-
-            <!-- REPARTO-->
-            <section class="card-detalle">
-                <h2>REPARTO</h2>
-                    <div class="reparto-vertical"> 
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/jasonStatham.jpg" alt="JASON STATHAM" ><br>
-                            <h3>JASON STATHAM</h3>
-                        </div>
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/bodhiBreathnach.jpg" alt="BODHI RAE BREATHNACH" ><br>
-                            <h3>BODHI RAE BREATHNACH</h3>
-                        </div>
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/billNighy.jpg" alt="BILL NIGHY" ><br>
-                            <h3>BILL NIGHY</h3>
-                        </div>
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/naomiAckie.jpg" alt="NAOMI ACKIE" ><br>
-                            <h3>NAOMI ACKIE</h3>
-                        </div>
-                        <div class="actor-card">
-                            <img src="../../recursos/imagenes/Reparto/danielMays.jpg" alt="DANIEL MAYS" ><br>
-                            <h3>DANIEL MAYS</h3>
-                        </div>
-                    </div>
-            </section>
-
-            <section class="card-detalle">
-                <h2>RESEÑAS DESTACADAS</h2>
-                    <div class="resenas-container">
-                        <!--USUARIO 1-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                            <div>
-                                <p><b>Calificación:</b> 8.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/perfil.png">
-                                <p><b>JohnDeSando dice:</b></p>
-                            </div>
-                            <h3>Refugio - Acción retro de Statham.</h3>
-                            <p>
-                                "Ofrece acción clásica y realista, con peleas sólidas y escenarios atractivos.
-                                Aunque la historia es familiar, el drama de personajes añade peso y emoción.
-                                Una sólida película de nivel medio dentro de su filmografía."
-                            </p>
-                        </div>
-
-                        <!--USUARIO 2-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
-                            <div>
-                                <p><b>Calificación:</b> 7.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/perfil.png">
-                                <p><b>AK1991 dice:</b></p>
-                            </div>
-                            <h3>Diversión desechable con Statham.</h3>
-                            <p>
-                                "Una historia genérica pero entretenida, con suficiente acción y emoción.
-                                Statham sostiene la película, mientras Bodhi Rae Breathnach aporta frescura
-                                en su vínculo con el protagonista."
-                            </p>
-                        </div>
-
-                        <!--USUARIO 3-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆</span>
-                            <div>
-                                <p><b>Calificación:</b> 7.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/perfil.png"  >
-                                <p><b>masonesaul dice:</b></p>
-                            </div>
-                            <h3>Fórmula conocida, entretenimiento confiable.</h3>
-                            <p>
-                                "La trama es estándar y predecible, pero el ritmo mantiene el interés.
-                                Statham entrega intensidad y carisma, con secuencias de acción sólidas
-                                que satisfacen a los fans del género."
-                            </p>
-                        </div>
-
-                        <!--USUARIO 4-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆</span>
-                            <div>
-                                <p><b>Calificación:</b> 8.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/perfil.png">
-                                <p><b>David Hock dice:</b></p>
-                            </div>
-                            <h3>Una película de acción sorprendentemente conmovedora.</h3>
-                            <p>
-                                "La relación entre Statham y Bodhi Rae Breathnach es el corazón de la película.
-                                La acción es intensa, pero lo que destaca es la emotividad y química entre ambos.
-                                Una grata sorpresa dentro del género."
-                            </p>
-                            <br>
-                        </div>
-                        <br>
-
-                        <!--USUARIO 5-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                            <div>
-                                <p><b>Calificación:</b> 9.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/perfil.png"  >
-                                <p><b>UrbanG dice:</b></p>
-                            </div>
-                            <h3>Una de las mejores películas de acción de Statham.</h3>
-                            <p>
-                                "La atmósfera sombría inicial y el rescate de Jessie marcan un inicio potente.
-                                La acción posterior es sólida y emocionante, convirtiéndola en un título
-                                imprescindible para los fans del actor."
-                            </p>
-                        </div>
-                         <div class="contenedor-boton">
-                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
-                        </div>
-                </div>
-            </section>
-
-
-          <!-- RELACIONADOS-->
-           <section class="card-detalle">
-                <h2>RELACIONADOS</h2>
-                <div class="relacionados-container">
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/johnWick.jpg" alt="JOHN WICK">
-                        <h3>JOHN WICK</h3>
-                        <h3>Calificación: 8.0/10</h3>
-                        <h3>DURACION: 1h 41min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/bonekeeper.jpg" alt="THE BONEKEEPER" >
-                        <h3>THE BONEKEEPER</h3>
-                        <h3>Calificación: 6.5/10</h3>
-                        <h3>DURACION: 1h 45min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/extraction.jpg" alt="EXTRACTION">
-                        <h3>EXTRACTION</h3>
-                        <h3>Calificación: 7.0/10</h3>
-                        <h3>DURACION: 1h 56min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/nobody.jpg" alt="NOBODY">
-                        <h3>NOBODY</h3>
-                        <h3>Calificación: 7.4/10</h3>
-                        <h3>DURACION: 1h 32min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/beekepper.png" alt="BEEKEPPER">
-                        <h3>BEEKEPPER</h3>
-                        <h3>Calificacion: 8.0/10</h3>
-                        <h3>DURACION: 2h 10min</h3>
-                    </div>
-                </div>
-            </section>
         </main>
-    </div>
-<!-------------FOOTER------------------------------------------------------------------------------>
-    <footer class="footer">
-        <p class="titulo-footer">Desarrollado por:</p>
-        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
-    </footer>
-</body>
+    <!-------------FOOTER------------------------------------------------------------------------------>
+        <footer class="footer">
+            <p class="titulo-footer">Desarrollado por:</p>
+            <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
+        </footer>
+    </body>
 </html>

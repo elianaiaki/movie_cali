@@ -1,164 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Crear cuenta</title>
-    <link rel="stylesheet" href="../estilos/body.css">
-    <link rel="stylesheet" href="../estilos/headerBoostrap.css">
-    <link rel="stylesheet" href="../estilos/estilo_internet/inicioInternet.css">
-    <link rel="stylesheet" href="../estilos/footer.css">
-    <script src="../scripts/header.js" defer></script>
-    <script src="../scripts/validaciones.js"></script>
-    <script src="../scripts/crearCuenta.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>INICIAR SESIÓN - Internet</title>
+        <!-- HOJAS DE ESTILO -->
+        <link rel="stylesheet" href="../estilos/body.css">
+        <link rel="stylesheet" href="../estilos/headerBoostrap.css">
+        <link rel="stylesheet" href="../estilos/estilo_internet/inicioInternet.css">
+        <link rel="stylesheet" href="../estilos/footer.css">
+        <!-- SCRIPTS -->
+        <script src="../scripts/header.js" defer></script>
+        <script src="../scripts/validaciones.js"></script>
+        <script src="../scripts/inicioSesionInternet.js"></script>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
 
-<body class="body" onload="asociarValidacion()">
-     <!-- HEADER -->
-    <header class="header container-fluid py-2">
-        <div class="row align-items-center w-100">
-            <!-- LOGO -->
-            <div class="col-lg-3 text-center text-lg-start">
-                <img src="../recursos/imagenes/logo/logo.png"
-                    alt="Logo MovieCali"
-                    class="img-fluid">
+    <body class="body" onload="asociarValidacion()">
+        <!-- HEADER -->
+        <header class="header container-fluid py-2">
+            <div class="row align-items-center w-100">
+                <!-- LOGO -->
+                <div class="col-lg-3 text-center text-lg-start">
+                    <img src="../recursos/imagenes/logo/logo.png"
+                        alt="Logo MovieCali"
+                        class="img-fluid">
+                </div>
+
+                <!-- BUSCADOR -->
+                <div class="col-lg-3 my-2 my-lg-0">
+                    <form class="buscador d-flex">
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Buscar películas, series...">
+                        <button class="btn btn-primary ms-2">
+                            🔍
+                        </button>
+                    </form>
+                </div>
+
+                <!-- MENÚ -->
+                <nav class="col-lg-3">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="../index.html" class="btn btn-outline-light">Inicio</a>
+                        <a href="../internet/catalogo_peliculas.html" class="btn btn-outline-light">Películas</a>
+                        <a href="../internet/catalogo_series.html" class="btn btn-outline-light">Series</a>
+                    </div>
+                </nav>
+
+                <!-- PERFIL -->
+                <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                    <div class="perfil" id="perfilBtn">
+
+                        <img src="../recursos/imagenes/iconos/usuario.png"
+                            alt="usuario">
+
+                        <div class="perfil-info">
+                            <span>MENU</span>
+                            <span class="flecha">▼</span>
+                        </div>
+
+                        <div class="menu-perfil">
+                            <a href="../internet/inicioSesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                            <a href="./crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+        </header>
+<!------------------------------------------------------------------------------------------->
+        <hr>
+<!------------------------------------------------------------------------------------------->
+        <main class="diseno-login container">
+            <div class="row justify-content-center w-100">
+                <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+                     <!-- FORMULARIO PARA CREAR CUENTA -->
+                    <section class="card-inicio">
+                        <h2>CREAR UNA CUENTA</h2>
+                        <form id="crear_cuenta" action="../extranet/funcionalidades_resenas/editar_mi_perfil.html" method="get">
+                            <!-- Usuario -->
+                            <div class="form-group">
+                                <label>USUARIO</label>
+                                <div class="input-contenedor">
+                                    <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario">
+                                    <input id="usuario" name="usuario" type="text" required>
+                                </div>
+                            </div>
 
-            <!-- BUSCADOR -->
-            <div class="col-lg-3 my-2 my-lg-0">
-                <form class="buscador d-flex">
-                    <input type="text"
-                        class="form-control"
-                        placeholder="Buscar películas, series...">
-                    <button class="btn btn-primary ms-2">
-                        🔍
-                    </button>
-                </form>
+                            <!-- Correo -->
+                            <div class="form-group">
+                                <label>CORREO ELECTRÓNICO</label>
+                                <div class="input-contenedor">
+                                    <img src="../recursos/imagenes/iconos/correo.png" alt="icono correo">
+                                    <input id="correo" name="correo" type="email" required>
+                                </div>
+                            </div>
+
+                            <!-- Contraseña -->
+                            <div class="form-group">
+                                <label>CONTRASEÑA</label>
+                                <div class="input-contenedor">
+                                    <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña">
+                                    <input id="contrasenia" name="contrasenia" type="password" required>
+                                    <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver">
+                                </div>
+                            </div>
+
+                            <!-- Confirmar -->
+                            <div class="form-group">
+                                <label>CONFIRMAR CONTRASEÑA</label>
+                                <div class="input-contenedor">
+                                    <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña">
+                                    <input id="confirmarContrasenia" name="confirmarContrasenia" type="password" required>
+                                    <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver">
+                                </div>
+                            </div>
+
+                            <!-- Términos -->
+                            <div class="contenedor-enlace">
+                                <span>
+                                    Al registrarte, aceptas nuestros
+                                    <a href="#" class="enlace">TÉRMINOS</a> y
+                                    <a href="#" class="enlace">POLÍTICA DE PRIVACIDAD</a>.
+                                </span>
+                            </div>
+
+                            <!-- Botón registro -->
+                            <div class="contenedor-boton">
+                                <button type="submit" class="boton-inicio">
+                                    REGISTRARSE
+                                </button>
+                            </div>
+
+                            <!-- Google -->
+                            <div class="contenedor-boton">
+                                <button type="button" class="boton-google">
+                                    <img src="../recursos/imagenes/iconos/google-icon-1.png" alt="icono google">
+                                    CONTINUAR CON GOOGLE
+                                </button>
+                            </div>
+
+                            <!-- Login -->
+                            <div class="contenedor-enlace registro">
+                                <a href="./inicioSesion.html" class="enlace">
+                                    ¿YA TIENES CUENTA? INICIÁ SESIÓN
+                                </a>
+                            </div>
+
+                        </form>
+
+                    </section>
+                </div>
             </div>
+        </main>
 
-            <!-- MENÚ -->
-            <nav class="col-lg-3">
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="../index.html" class="btn btn-outline-light">Inicio</a>
-                    <a href="../internet/catalogo_peliculas.html" class="btn btn-outline-light">Películas</a>
-                    <a href="../internet/catalogo_series.html" class="btn btn-outline-light">Series</a>
-                </div>
-            </nav>
-
-            <!-- PERFIL -->
-            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
-                <div class="perfil" id="perfilBtn">
-
-                    <img src="../recursos/imagenes/iconos/usuario.png"
-                        alt="usuario">
-
-                    <div class="perfil-info">
-                        <span>MENU</span>
-                        <span class="flecha">▼</span>
-                    </div>
-
-                    <div class="menu-perfil">
-                        <a href="../internet/inicioSesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
-                        <a href="./crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </header>
-
-    <hr>
-    <!-- FIN DE HEADER-->
- 
-    <!------------------------------------------------------------------------------------------->
-
-   <main class="diseno-login">
-        <section class="card-inicio">
-
-            <h2>CREAR UNA CUENTA</h2>
-
-            <form id="crear_cuenta" action="../extranet/funcionalidades_resenas/editar_mi_perfil.html" method="get">
-
-                <!-- Usuario -->
-                <div class="form-group">
-                    <label>USUARIO</label>
-                    <div class="input-contenedor">
-                        <img src="../recursos/imagenes/iconos/usuario.png" alt="icono usuario">
-                        <input id="usuario" name="usuario" type="text" required>
-                    </div>
-                </div>
-
-                <!-- Correo -->
-                <div class="form-group">
-                    <label>CORREO ELECTRÓNICO</label>
-                    <div class="input-contenedor">
-                        <img src="../recursos/imagenes/iconos/correo.png" alt="icono correo">
-                        <input id="correo" name="correo" type="email" required>
-                    </div>
-                </div>
-
-                <!-- Contraseña -->
-                <div class="form-group">
-                    <label>CONTRASEÑA</label>
-                    <div class="input-contenedor">
-                        <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña">
-                        <input id="contrasenia" name="contrasenia" type="password" required>
-                        <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver">
-                    </div>
-                </div>
-
-                <!-- Confirmar contraseña -->
-                <div class="form-group">
-                    <label>CONFIRMAR CONTRASEÑA</label>
-                    <div class="input-contenedor">
-                        <img src="../recursos/imagenes/iconos/contraseña.webp" alt="icono contraseña">
-                        <input id="confirmarContrasenia" name="confirmarContrasenia" type="password" required>
-                        <img src="../recursos/imagenes/iconos/mostrar_contraseña.png" alt="ver">
-                    </div>
-                </div>
-
-                <!-- Términos -->
-                <div class="contenedor-enlace">
-                    <span>
-                        Al registrarte, aceptas nuestros
-                        <a href="#" class="enlace">TÉRMINOS</a> y
-                        <a href="#" class="enlace">POLÍTICA DE PRIVACIDAD</a>.
-                    </span>
-                </div>
-
-                <!-- Botón registro -->
-                <div class="contenedor-boton">
-                    <button type="submit" class="boton-inicio">
-                        REGISTRARSE
-                    </button>
-                </div>
-
-                <!-- Google -->
-                <div class="contenedor-boton">
-                    <button type="button" class="boton-google">
-                        <img src="../recursos/imagenes/iconos/google-icon-1.png" alt="icono google">
-                        CONTINUAR CON GOOGLE
-                    </button>
-                </div>
-
-                <!-- Iniciar sesión -->
-                <div class="contenedor-enlace registro">
-                    <a href="./inicioSesion.html" class="enlace">
-                        ¿YA TIENES CUENTA? INICIÁ SESIÓN
-                    </a>
-                </div>
-
-            </form>
-
-        </section>
-    </main>
-<!-------------FOOTER------------------------------------------------------------------------------>
-    <footer class="footer">
-        <p class="titulo-footer">Desarrollado por:</p>
-        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
-    </footer>  
-</body>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p class="titulo-footer">Desarrollado por:</p>
+            <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
+        </footer>  
+    </body>
 </html>

@@ -1,114 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Proyecto salvación</title>
-       <link rel="stylesheet" href="../../estilos/body.css">
-    <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
-    <link rel="stylesheet" href="../../estilos/footer.css">
-    <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
-    <script src="../../scripts/header.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-     <header class="header container-fluid py-2">
-        <div class="row align-items-center w-100">
-            <!-- LOGO -->
-            <div class="col-lg-3 text-center text-lg-start">
-                <img src="../../recursos/imagenes/logo/logo.png"
-                    alt="Logo MovieCali"
-                    class="img-fluid">
-            </div>
-
-            <!-- BUSCADOR -->
-            <div class="col-lg-3 my-2 my-lg-0">
-                <form class="buscador d-flex">
-                    <input type="text"
-                        class="form-control"
-                        placeholder="Buscar películas, series...">
-                    <button class="btn btn-primary ms-2">
-                        🔍
-                    </button>
-                </form>
-            </div>
-
-            <!-- MENÚ -->
-            <nav class="col-lg-3">
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="../../index.html" class="btn btn-outline-light">Inicio</a>
-                    <a href="../../internet/catalogo_peliculas.html" class="btn btn-outline-light">Películas</a>
-                    <a href="../../internet/catalogo_series.html" class="btn btn-outline-light">Series</a>
+    <head>
+        <meta charset="UTF-8">
+        <title>Proyecto salvación</title>
+        <!-- HOJAS DE ESTILO -->
+        <link rel="stylesheet" href="../../estilos/body.css">
+        <link rel="stylesheet" href="../../estilos/headerBoostrap.css">
+        <link rel="stylesheet" href="../../estilos/footer.css">
+        <link rel="stylesheet" href="../../estilos/estilo_internet/detalles.css">
+        <!-- SCRIPTS -->
+        <script src="../../scripts/header.js" defer></script>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <header class="header container-fluid py-2">
+            <div class="row align-items-center w-100">
+                <!-- LOGO -->
+                <div class="col-lg-3 text-center text-lg-start">
+                    <img src="../../recursos/imagenes/logo/logo.png"
+                        alt="Logo MovieCali"
+                        class="img-fluid">
                 </div>
-            </nav>
 
-            <!-- PERFIL -->
-            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
-                <div class="perfil" id="perfilBtn">
+                <!-- BUSCADOR -->
+                <div class="col-lg-3 my-2 my-lg-0">
+                    <form class="buscador d-flex">
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Buscar películas, series...">
+                        <button class="btn btn-primary ms-2">
+                            🔍
+                        </button>
+                    </form>
+                </div>
 
-                    <img src="../../recursos/imagenes/iconos/usuario.png"
-                        alt="usuario">
-
-                    <div class="perfil-info">
-                        <span>MENU</span>
-                        <span class="flecha">▼</span>
+                <!-- MENÚ -->
+                <nav class="col-lg-3">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="../../index.html" class="btn btn-outline-light">Inicio</a>
+                        <a href="../../internet/catalogo_peliculas.html" class="btn btn-outline-light">Películas</a>
+                        <a href="../../internet/catalogo_series.html" class="btn btn-outline-light">Series</a>
                     </div>
+                </nav>
 
-                    <div class="menu-perfil">
-                        <a href="..../internet/inicioSesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
-                        <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+                <!-- PERFIL -->
+                <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                    <div class="perfil" id="perfilBtn">
+
+                        <img src="../../recursos/imagenes/iconos/usuario.png"
+                            alt="usuario">
+
+                        <div class="perfil-info">
+                            <span>MENU</span>
+                            <span class="flecha">▼</span>
+                        </div>
+
+                        <div class="menu-perfil">
+                            <a href="..../internet/inicioSesion.html"><span class="icono-dropdown">▶</span>INICIAR SESION</a>
+                            <a href="../../internet/crear_cuenta.html"><span class="icono-dropdown">▶</span> CREAR CUENTA</a>
+                        </div>
+
                     </div>
-
                 </div>
+
             </div>
+        </header>
+<!------------------------------------------------------------------------------------------->
+        <hr>
+<!------------------------------------------------------------------------------------------->
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <!-- INFORMACIÓN PRINCIPAL-->
+                    <section class="detalle-principal">
+                        <div class="poster">
+                            <img src="../../recursos/imagenes/peliculas/proyectosalvacion.jpg" alt="PROYECTO SALVACION"> 
+                        </div>
+                        <div class="info-serie">
+                            <h1>PROYECTO SALVACIÓN</h1>
+                            <p>Un astronauta intenta salvar la Tierra desde su nave en el espacio exterior.
+                            </p>
+                            <ul>
+                                <li><strong>Género:</strong> Aventuras</li>
+                                <li><strong>Año:</strong> 2026</li>
+                                <li><strong>Duración:</strong>  2h 36min</li>
+                                <li><strong>Director:</strong> Phil Lord, Christopher Miller</li>
+                                <li><strong>Productores/as:</strong> Nikki Baida, Sarah Esberg, Drew Goddard</li>
+                                <li><strong>Calificación general:</strong> 8.2/10</li>
+                                <li><strong>Clasificación por edad:</strong> +13</li>
+                                <li><strong>Plataformas:</strong> Amazon</li>
+                            </ul>
+                        </div>
+                    </section>
 
-        </div>
-    </header>
-    <hr>
-    <!-- FIN DE HEADER-->
-    <div>
-   
-        <!-- MAIN -->
-        <main>
-            <!-- TITULO, DETALLES Y TRAILER-->
-            <section class="detalle-principal">
-               
-                <div class="poster">
-                    <img src="../../recursos/imagenes/peliculas/proyectosalvacion.jpg" alt="PROYECTO SALVACION"> 
-                </div>
-                
-                <div class="info-serie">
-                    <h1>PROYECTO SALVACIÓN</h1>
-                    <p>Un astronauta intenta salvar la Tierra desde su nave en el espacio exterior.
-                    </p>
-                    <ul>
-                        <li><strong>Género:</strong> Aventuras</li>
-                        <li><strong>Año:</strong> 2026</li>
-                        <li><strong>Duración:</strong>  2h 36min</li>
-                        <li><strong>Director:</strong> Phil Lord, Christopher Miller</li>
-                        <li><strong>Productores/as:</strong> Nikki Baida, Sarah Esberg, Drew Goddard</li>
-                        <li><strong>Calificación general:</strong> 8.2/10</li>
-                        <li><strong>Clasificación por edad:</strong> +13</li>
-                        <li><strong>Plataformas:</strong> Amazon</li>
-                    </ul>
-                </div>
-            </section>
-            <!-- TRAILER -->
-            <section class="card-detalle">
-                <div class="video-conteiner">
-                    <h2>Tráiler</h2>
-                    <video controls>
-                        <source src="../../recursos/videos/proyectoFinDelMundo.webm" type="video/webm">
-                        Tu navegador no soporta el elemento de video.
-                    </video>
-                </div>
-            </section>
+                    <!-- TRÁILER -->
+                    <section class="card-detalle">
+                        <div class="video-conteiner">
+                            <h2>Tráiler</h2>
+                            <video controls>
+                                <source src="../../recursos/videos/proyectoFinDelMundo.webm" type="video/webm">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                    </section>
 
-            <!-- REPARTO-->
-            <section class="card-detalle">
-                <h2>REPARTO</h2>
-                    <div class="reparto-vertical"> 
+                    <!-- REPARTO -->
+                    <section class="card-detalle">
+                        <h2>REPARTO</h2>
+                        <div class="reparto-vertical"> 
                             <div class="actor-card">
                                 <img src="../../recursos/imagenes/Reparto/RyanGosling.jpg" alt="RYAN GOSLING"> 
                                 <h3>RYAN GOSLING</h3>
@@ -129,180 +132,164 @@
                                 <img src="../../recursos/imagenes/Reparto/MilanaVayntrub.jpg" alt="MILANA VAYNTRUB"> 
                                 <h3>MILANA VAYNTRUB</h3>
                             </div>
-                    </div>
-            </section>
+                        </div>
+                    </section>
 
-            <!--RESEÑA DE USUARIOS-->
-            <section class="card-detalle">
-                <h2>RESEÑAS DESTACADAS</h2>
-                    <div class="resenas-container">
-                        <!--USUARIO 1-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 9.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>MorfenZ dice:</b></p>
+                    <!-- RESEÑAS DESTACADAS -->
+                    <section class="card-detalle">
+                        <h2>RESEÑAS DESTACADAS</h2>
+                        <div class="resenas-container">
+                            <!--USUARIO 1-->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 9.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>MorfenZ dice:</b></p>
+                                </div>
+                                <h3>La humanidad necesita este tipo de películas</h3>
+                                <p>
+                                "Project Hail Mary es el tipo de película que te recuerda por qué amas el cine.  
+                                Hace mucho que no sentía emociones tan encontradas al ver una película:  
+                                felicidad, tristeza, amor, esperanza—todo está ahí. Me metí completamente a  
+                                ciegas. No vi ningún tráiler; Solo sabía que Ryan Gosling protagonizaba y que  
+                                estaba dirigida por Phil Lord y Christopher Miller, y eso por sí solo me hizo creer  
+                                que sería algo especial.  
+                                Y realmente fue algo especial.  
+                                La dirección es fantástica, los visuales son preciosos y la música es enorme: se  
+                                funde perfectamente con la escritura y la historia. Todo funciona junto para crear  
+                                algo cálido, emotivo e increíblemente humano." 
+                                </p>
                             </div>
-                            <!-- contenido -->
-                            <h3>La humanidad necesita este tipo de películas</h3>
-                            <p>
-                            "Project Hail Mary es el tipo de película que te recuerda por qué amas el cine.  
-                            Hace mucho que no sentía emociones tan encontradas al ver una película:  
-                            felicidad, tristeza, amor, esperanza—todo está ahí. Me metí completamente a  
-                            ciegas. No vi ningún tráiler; Solo sabía que Ryan Gosling protagonizaba y que  
-                            estaba dirigida por Phil Lord y Christopher Miller, y eso por sí solo me hizo creer  
-                            que sería algo especial.  
-                            Y realmente fue algo especial.  
-                            La dirección es fantástica, los visuales son preciosos y la música es enorme: se  
-                            funde perfectamente con la escritura y la historia. Todo funciona junto para crear  
-                            algo cálido, emotivo e increíblemente humano." 
-                            </p>
-                           
-                        </div>
-                        
 
-                        <!--USUARIO 2-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 9.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>4170123W dice:</b></p>
+                            <!--USUARIO 2-->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 9.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>4170123W dice:</b></p>
+                                </div>
+                                <h3> La ciencia nunca me habia parecido tan saludable</h3>
+                                <p>
+                                "Nunca pensé que estaría tan emocionalmente involucrado con un "tío flotante" y  
+                                una "roca andante", pero aquí estamos.  
+                                Visualmente, es impresionante, y la música y la banda sonora son increíbles,  
+                                pero el corazón de la historia es lo que realmente me impactó. Lo pasé por todo.  
+                                Riendo, llorando y, sinceramente, sintiéndome muy estresado por ellos. ¡Sciene  
+                                nunca se había sentido tan sana!  
+                                Increíble. Increíble. Increíble."
+                                </p>
                             </div>
-                            <!-- contenido -->
-                            <h3>LA CIENCIA NUNCA ME HABÍA PARECIDO TAN SALUDABLE</h3>
-                            <p>
-                            "Nunca pensé que estaría tan emocionalmente involucrado con un "tío flotante" y  
-                            una "roca andante", pero aquí estamos.  
-                            Visualmente, es impresionante, y la música y la banda sonora son increíbles,  
-                            pero el corazón de la historia es lo que realmente me impactó. Lo pasé por todo.  
-                            Riendo, llorando y, sinceramente, sintiéndome muy estresado por ellos. ¡Sciene  
-                            nunca se había sentido tan sana!  
-                            Increíble. Increíble. Increíble."
-                            </p>
-                           
-                        </div>
-                       
-
-                        <!--USUARIO 3-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 5.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>ultraultra dice: </b></p>
+                            
+                            <!--USUARIO 3-->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 5.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>ultraultra dice: </b></p>
+                                </div>
+                                <h3>Demasiado largo y infantil</h3>
+                                <p>
+                                    "Esperaba que esta película tuviera un tono más serio, pero cada escena está  
+                                    diseñada con algún final ligeramente cómico. No es realmente gracioso, solo un  
+                                    poco meh. La película también es muy predecible, ineficaz para crear cualquier  
+                                    nivel de suspense y está llena de demasiadas escenas innecesarias que  
+                                    aumentan su tono ligero."
+                                </p>
                             </div>
-                            <!-- contenido -->
-                            <h3>Demasiado largo y infantil</h3>
-                            <p>
-                                "Esperaba que esta película tuviera un tono más serio, pero cada escena está  
-                                diseñada con algún final ligeramente cómico. No es realmente gracioso, solo un  
-                                poco meh. La película también es muy predecible, ineficaz para crear cualquier  
-                                nivel de suspense y está llena de demasiadas escenas innecesarias que  
-                                aumentan su tono ligero."
-                            </p>
-                           
-                        </div>
-                       
+                            
 
-                        <!--USUARIO 4-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 4.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>Tweetienator dice: </b></p>
+                            <!--USUARIO 4-->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆</span>
+                                <div>
+                                    <p><b>Calificación:</b> 4.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>Tweetienator dice: </b></p>
+                                </div>
+                                <h3>Proyecto Braindead</h3>
+                                <p>
+                                    "Sobrevalorado al máximo. Solo si te gusta Grogu y crees que es una  
+                                    incorporación genial al universo de Star Wars esta serie podría ser justo para ti, y  
+                                    si E. T. sigue siendo tu película favorita de todos los tiempos... Para mí, Project  
+                                    Hail Mary es en su mayoría aburrido, y los problemas lógicos son tan grandes  
+                                    como la Vía Láctea —y más allá. En fin, puede que funcione bien con los niños,  
+                                    así que si no tienes mejores ideas, puedes pasar un rato en familia con él. Pero  
+                                    el tiempo de calidad es otra cosa, en mi opinión. En fin, la producción es sólida,  
+                                    Gosling también."
+                                </p>
                             </div>
-                            <!-- contenido -->
-                            <h3>Proyecto Braindead</h3>
-                            <p>
-                                "Sobrevalorado al máximo. Solo si te gusta Grogu y crees que es una  
-                                incorporación genial al universo de Star Wars esta serie podría ser justo para ti, y  
-                                si E. T. sigue siendo tu película favorita de todos los tiempos... Para mí, Project  
-                                Hail Mary es en su mayoría aburrido, y los problemas lógicos son tan grandes  
-                                como la Vía Láctea —y más allá. En fin, puede que funcione bien con los niños,  
-                                así que si no tienes mejores ideas, puedes pasar un rato en familia con él. Pero  
-                                el tiempo de calidad es otra cosa, en mi opinión. En fin, la producción es sólida,  
-                                Gosling también."
-                            </p>
-                           
-                        </div>
-                       
 
-                        <!--USUARIO 5-->
-                        <div class="resena-card">
-                            <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ★</span>
-                            <!-- Usuario -->
-                            <div>
-                                <p><b>Calificación:</b> 10.0 / 10</p>
-                                <img src="../../recursos/imagenes/iconos/usuario.png">
-                                <p><b>Scottzee dice: </b></p>
+                            <!--USUARIO 5-->
+                            <div class="resena-card">
+                                <span>★ ★ ★ ★ ★ ★ ★ ★ ★ ★</span>
+                                <div>
+                                    <p><b>Calificación:</b> 10.0 / 10</p>
+                                    <img src="../../recursos/imagenes/iconos/usuario.png">
+                                    <p><b>Scottzee dice: </b></p>
+                                </div>
+                                <h3>Una obra maestra que mezcla Arrival, Interstellar y The Martian</h3>
+                                <p>
+                                    "Vi una proyección previa al estreno en Dolby Cinema. Fue increíble. Aunque tuvo  
+                                    que simplificar gran parte de la ciencia del libro, esta es una de las mejores  
+                                    adaptaciones que uno podría esperar. La impresionante fotografía de Greig  
+                                    Fraser y la fantástica interpretación de Ryan Gosling lo consolidan como uno de  
+                                    los grandes de la ciencia ficción."
+                                </p>
                             </div>
-                            <!-- contenido -->
-                            <h3>Una obra maestra que mezcla Arrival, Interstellar y The Martian</h3>
-                            <p>
-                                "Vi una proyección previa al estreno en Dolby Cinema. Fue increíble. Aunque tuvo  
-                                que simplificar gran parte de la ciencia del libro, esta es una de las mejores  
-                                adaptaciones que uno podría esperar. La impresionante fotografía de Greig  
-                                Fraser y la fantástica interpretación de Ryan Gosling lo consolidan como uno de  
-                                los grandes de la ciencia ficción."
-                            </p>
-                           
-                        </div>
 
-                         <div class="contenedor-boton">
-                            <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                            <div class="contenedor-boton">
+                                <a href="#" class="btn-resenia">Ver todas las reseñas</a>
+                            </div>
                         </div>
-                    </div>
-            </section>
+                    </section>
 
-            <!-- RELACIONADOS-->
-            <section class="card-detalle">
-                <h2>RELACIONADOS</h2>
-                <div class=" relacionados-container">
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/Lospecadores.jpg" alt="LOS PESCADORES">
-                        <h3>LOS PESCADORES</h3>
-                        <h3>Calificación: 7.5/10</h3>
-                        <h3>DURACION: 2h 17min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/Unabatallatrasotra.jpg"  alt="UNA BATALLA TRAS OTRA"> 
-                        <h3>UNA BATALLA TRAS OTRA</h3>
-                        <h3>Calificación: 7.7/10</h3>
-                        <h3>DURACION: 2h 41min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/Origen.jpg" alt="ORIGEN"> 
-                        <h3>ORIGEN</h3>
-                        <h3>Calificación: 8.8/10</h3>
-                        <h3>DURACION: 2h 28min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/MartySupreme.jpg" alt="MARTY SUPREME"> 
-                        <h3>MARTY SUPREME</h3>
-                        <h3>Calificación: 7.7/10</h3>
-                        <h3>DURACION: 2h 29min</h3>
-                    </div>
-                    <div class="relacionado-card">
-                        <img src="../../recursos/imagenes/peliculas/Superman.jpg" alt="SUPERMAN"> 
-                        <h3>SUPERMAN</h3>
-                        <h3>Calificación: 7.0/10</h3>
-                        <h3>DURACION: 2h 9min</h3>
-                    </div>
+                    <!-- RELACIONADOS-->
+                    <section class="card-detalle">
+                        <h2>RELACIONADOS</h2>
+                        <div class=" relacionados-container">
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/Lospecadores.jpg" alt="LOS PESCADORES">
+                                <h3>LOS PESCADORES</h3>
+                                <h3>Calificación: 7.5/10</h3>
+                                <h3>DURACION: 2h 17min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/Unabatallatrasotra.jpg"  alt="UNA BATALLA TRAS OTRA"> 
+                                <h3>UNA BATALLA TRAS OTRA</h3>
+                                <h3>Calificación: 7.7/10</h3>
+                                <h3>DURACION: 2h 41min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/Origen.jpg" alt="ORIGEN"> 
+                                <h3>ORIGEN</h3>
+                                <h3>Calificación: 8.8/10</h3>
+                                <h3>DURACION: 2h 28min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/MartySupreme.jpg" alt="MARTY SUPREME"> 
+                                <h3>MARTY SUPREME</h3>
+                                <h3>Calificación: 7.7/10</h3>
+                                <h3>DURACION: 2h 29min</h3>
+                            </div>
+                            <div class="relacionado-card">
+                                <img src="../../recursos/imagenes/peliculas/Superman.jpg" alt="SUPERMAN"> 
+                                <h3>SUPERMAN</h3>
+                                <h3>Calificación: 7.0/10</h3>
+                                <h3>DURACION: 2h 9min</h3>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </div>
         </main>
-     </div>
-<!-------------FOOTER------------------------------------------------------------------------------>
-    <footer class="footer">
-        <p class="titulo-footer">Desarrollado por:</p>
-        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
-    </footer>
-</body>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p class="titulo-footer">Desarrollado por:</p>
+            <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
+        </footer>
+    </body>
 </html>

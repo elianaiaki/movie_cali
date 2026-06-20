@@ -1,21 +1,19 @@
 /* ---- CONTENEDOR PRINCIPAL (MAIN) ---- */
+/* Bootstrap ahora maneja el centrado */
 .diseno-login {
-    display: flex;           
-    justify-content: center; 
-    align-items: center;     
-    min-height: 70vh;        
-    padding: 40px;
+    min-height: 70vh;
+    padding: 40px 0;
     box-sizing: border-box;
+    display: block; /* quitamos flex para evitar conflicto con Bootstrap */
 }
 
-/* ---- TARJETA DE INICIO DE SESIÓN ---- */
+/* ---- TARJETA ---- */
 .card-inicio {
     background: #00aeff;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
     color: rgb(0, 0, 0);
     box-sizing: border-box;
 }
@@ -25,7 +23,7 @@
     margin-bottom: 25px;
 }
 
-/* ---- CAMPOS DE ENTRADA (Form Grupos) ---- */
+/* ---- CAMPOS ---- */
 .form-group {
     margin-bottom: 20px;
 }
@@ -37,7 +35,7 @@
     margin-bottom: 5px;
 }
 
-/* Alineación de iconos e inputs */
+/* INPUTS */
 .input-contenedor {
     display: flex;
     align-items: center;
@@ -63,17 +61,16 @@
 /* ---- ENLACES ---- */
 .contenedor-enlace {
     margin-bottom: 20px;
-    text-align:center;
+    text-align: center;
 }
 
 .contenedor-enlace.registro {
-    text-align: center;
     margin-top: 15px;
 }
 
 .enlace {
-    text-decoration: underline; 
-    color: #063568;        
+    text-decoration: underline;
+    color: #063568;
     font-size: 0.85em;
 }
 
@@ -82,11 +79,13 @@
     margin-bottom: 10px;
 }
 
-.boton-inicio, .boton-google {
+/* Botones base */
+.boton-inicio,
+.boton-google {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;               /* Espacio entre el icono de Google y el texto */
+    gap: 10px;
     width: 100%;
     padding: 12px;
     cursor: pointer;
@@ -97,14 +96,14 @@
     transition: background 0.3s ease;
 }
 
-/* Botón Normal */
+/* Botón principal */
 .boton-inicio {
-    background-color: #001f3f; 
+    background-color: #001f3f;
     color: white;
 }
 
 .boton-inicio:hover {
-    background-color: #003366; 
+    background-color: #003366;
 }
 
 /* Botón Google */
