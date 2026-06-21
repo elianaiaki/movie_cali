@@ -1,0 +1,98 @@
+/* ==========================================================================
+   ESTILOS PELICULAS EN REVISION y SERIES EN REVISION
+   ========================================================================== */
+/*TARJETAS PARALELAS*/
+.Tarjeta {
+    background:#222934;
+    color:white;
+    border:none;
+}
+.Tarjeta p{
+    color:white;
+}
+
+/* contenedor Aside  */
+.contenedor-aside , .item-aside{
+    background-color: #222934 !important;
+    background-image: none !important;
+    border: 2px solid #2d3748 !important; 
+}
+
+
+.contenedor-aside h2 , .item-aside, .item-aside p{
+    color: #ffffff !important;
+}
+
+.imagen-reparto img{
+    width: 45px;
+    height: 50px;
+}
+.item-aside img{
+    width: 50px;
+    height: 60px;
+}
+
+/*Ventana Emergente para boton ELIMINAR */
+.modal-content {
+    background-color: #222934;
+    border: 1px solid #3771a8;
+}
+
+/* ==========================================================================
+   AGREGAR ACTOR,AGREGAR PELICULA,AGREGAR SERIE,EDITAR PELICULA, EDITAR SERIE
+   ========================================================================== */
+.categoria-bloque {
+    background-color: #222934; 
+    color: white;
+}
+
+.form-label {
+    color:white;
+}
+
+.form-select {
+    max-width: 250px;
+}
+
+/* ==========================================================================
+   ALTAS PERFILES
+   ========================================================================== */
+.filtros { /* se agrego en gestion de reportes de reseñas*/
+    max-width: 200px;
+}
+
+.icono-varios { /*este era img-fluid pero modificaba el logo del header .*/
+    max-width: 45px; 
+    background-color: #1a1f26; 
+    padding: 4px;
+}
+
+.A-a-p {
+    background-color: #1a1f26;
+}
+
+.seccion-aside {
+    background-color: #222934;
+}
+
+/*editar perfil*/
+
+.img-perfil{
+   max-width: 150px; 
+   background-color: #1a1f26;
+}
+
+.img-eliminar {
+    max-width: 100px;
+}
+
+/*Gestion de reportes de reseñas*/
+
+.iconos-chicos{
+    max-width: 18px;
+}
+
+/*MI PERFIL*/
+.tamaño-img {
+    max-width: 45px
+}

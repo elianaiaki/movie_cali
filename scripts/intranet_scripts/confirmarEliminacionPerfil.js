@@ -3,6 +3,6 @@
             
             if(confirmar){
                 alert("Perfil eliminado correctamente");
-                window.location.href = "../intranet/gestion_de_perfil_roles.html";
+                window.location.href = "../intranet/gestion_perfil_rol.html";
             }
         }

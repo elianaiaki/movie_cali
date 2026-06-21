@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Pendientes de Revision</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Estilos-->
+    <link rel="stylesheet" href="../estilos/estilos_intranet/headerBoostrapIntranet.css">
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/panelBoostrapintranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/encabezados.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botonera.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/peliculasenrevisionBoostrap.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <!--Script-->
+    <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+    <script src="../scripts/intranet_scripts/confirmarEliminacionSerie.js"></script>
+    <!--Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<!------------------------------------------------------------------------------------------->
+<body>
+    <!--Header-->
+    <header class="header container-fluid py-2">
+        <div class="row align-items-center w-100">  
+            <!--Logo-->
+            <div class="col-lg-3 text-center text-lg-start">
+                <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" class="img-fluid">
+            </div>
+            <!--Buscador-->
+            <div class="col-lg-6 my-2 my-lg-0 d-flex justify-content-center justify-content-lg-start">
+                <form class="buscador d-flex w-100" style="max-width: 500px;">
+                    <input type="text" class="form-control" placeholder="Buscar películas, series...">
+                    <button class="btn btn-primary ms-2">🔍</button>
+                </form>
+            </div>
+            <!--Perfil-->
+            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                <div class="perfil d-flex align-items-center gap-2" id="perfilBtn">
+                    <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+                    <!--Desplegable-->
+                    <div class="desplegable-contenedor">
+                        <select name="desplegable" id="desplegable" class="desplegable" onchange="navegarMenu(this)">
+                            <option value="" selected disabled> MENU </option>
+                            <option value="../intranet/mi_perfil.html">Mi perfil</option>
+                            
+                            <optgroup label="Gestión de Películas">
+                                <option value="../intranet/peliculas_en_revision.html"> Películas pendientes de revisión</option>
+                                <option value="../intranet/nueva_alta_pelicula.html"> Nuevas solicitudes de alta </option>
+                            </optgroup> 
+                            
+                            <optgroup label="Administración Usuarios">
+                                <option value="../intranet/gestion_de_perfil_roles.html">Gestión de perfil y roles</option>
+                                <option value="../intranet/nuevo_perfil.html">Crear nuevo perfil</option>
+                            </optgroup>  
+                            
+                            <option value="../intranet/inicio_sesion.html">Cerrar Sesión</option>     
+                        </select>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+<!---------------------------------------------------------------------------------->
+    <div class="container-fluid mt-3 px-4">
+        <div class="row w-100">
+            <div class="col-12 text-start ps-4">
+                <a href="../intranet/panel.html" class="boton-panel">
+                    <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" class="icon-home"> PANEL</a>
+            </div>
+        </div>
+        <hr class="my-3"> </div>
+<!---------------------------------------------------------------------------------->
+    <main class="container-fluid my-4 px-4">
+        <div class="row justify-content-center">
+            <div class="col-12 text-start mb-4">
+                <h1 class="titulo-principal">SERIES PENDIENTES DE REVISION</h1>
+            </div>
+            <!--Botones Superiores-->
+            <div class="Contenedor-Botones-superior d-flex flex-wrap gap-3 mb-4 justify-content-start align-items-center">
+                <a class="boton-superior btn" href="../intranet/agregarSerieBootstrap.html"> + AGREGAR NUEVA SERIE </a>
+                <select class="boton-superior form-select w-auto">
+                    <option>FILTROS AVANZADOS</option>
+                    <option>pendientes</option>
+                    <option>aprobados</option>
+                    <option>rechazados</option>
+                </select>
+            </div>
+        
+        <div class="row g-4">
+                <div class="col-xl-9 col-lg-8">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 g-4">
+                        
+                        <div class="col">
+                            <section class="Tarjeta h-100 p-3 card border shadow-sm">
+                                <div class="imagen-contenedor text-center mb-3">
+                                    <img class="img-principal img-fluid rounded" src="../recursos/imagenes/series/vladimirr.jpg">
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Titulo:</h3>
+                                <p id="001" class="text-muted mb-2">Vladimir</p>
+                                <h3 class="fs-6 fw-bold mb-1">Sinopsis</h3>
+                                <p class="small mb-2">La vida de una mujer se agita a medida
+                                que desarrolla una obsesión con su seductora
+                                compañera de trabajo. Su determinación por
+                                hacer realidad sus fantasías conduce a
+                                situaciones oscuras, humorísticas y complicadas.
+                                </p>
+                                <h3 class="fs-6 fw-bold mb-1">Calificación:</h3>
+                                <p class="small mb-2">6.1 / 10</p> 
+                                <h3 class="fs-6 fw-bold mb-1">Director:</h3>
+                                <p class="small mb-2">por Shari Springer Berman,Francesca Gregorini,Robert Pulcini,Josephine Bornebusch</p>
+                                <h3 class="fs-6 fw-bold mb-1">Reparto:</h3>
+                                <p class="small mb-2">Rachel Weisz, Leo Woodall,Jessica Henwich</p>
+                                <div class="imagen-reparto d-flex gap-1 mb-3">
+                                    <img src="../recursos/imagenes/Reparto/Rachel_Weisz.jpg" class="rounded-circle">
+                                    <img src="../recursos/imagenes/Reparto/leo_Woodall.jpg" class="rounded-circle">
+                                    <img src="../recursos/imagenes/Reparto/jessica_henwick.jpg" class="rounded-circle">
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Trailer</h3>
+                                <div class="ratio ratio-16x9 mb-3">
+                                    <video class="trailers" controls>
+                                        <source src="../recursos/Videos/vladimir.mp4" type="video/mp4">      
+                                    </video>
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Genero:</h3>
+                                <p class="small mb-2">Comedia, Romance</p>
+                                <h3 class="fs-6 fw-bold mb-1">Duracion:</h3>
+                                <p class="small mb-2">30 min</p>
+                                <h3 class="fs-6 fw-bold mb-1">Año de Estreno:</h3>
+                                <p class="small mb-2">05 de Marzo 2026</p>
+                                <h3 class="fs-6 fw-bold mb-1">Temporadas:</h3>
+                                <p class="small mb-2"> 1 Temporada</p>
+                                <h3 class="fs-6 fw-bold mb-2">Plataformas:</h3>
+                                <img class="icons mb-3" src="../recursos/imagenes/iconos/netflix.png" width="40" height="40">
+                                
+                                <div class="botones-inferiores d-grid gap-2 mt-auto">
+                                    <div class="guardar_accion">
+                                        <button type="button" class="btn btn-secondary btn-sm w-100">GUARDAR CAMBIOS</button>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <button type="button" class="btn btn-outline-danger btn-sm w-50" data-bs-toggle="modal" data-bs-target="#modalEliminar">ELIMINAR</button>
+                                        <a href="../intranet/editarserieBootstrap.html" class="btn btn-outline-secondary btn-sm w-50">EDITAR</a>
+                                    </div>
+                                    <div class="accion_publicar d-flex justify-content-between align-items-center mt-2">
+                                        <span class="texto-publicar fw-bold">PUBLICA</span>
+                                        <label class="switch">
+                                            <input type="checkbox" id="publicar-check">
+                                            <span class="deslizador"></span>
+                                        </label>
+                                    </div>
+                                </div>    
+                            </section> 
+                        </div>
+
+                        <div class="col">
+                            <section class="Tarjeta h-100 p-3 card border shadow-sm">
+                                <div class="imagen-contenedor text-center mb-3">
+                                    <img class="img-principal img-fluid rounded" src="../recursos/imagenes/series/memorias_de_un_asesino.jpg">
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Titulo:</h3>
+                                <p id="001" class="text-muted mb-2">Memorias de un Asesino</p>
+                                <h3 class="fs-6 fw-bold mb-1">Sinopsis</h3>
+                                <p class="small mb-2">Cuando el sicario Angelo es golpeado
+                                con Alzheimer de inicio temprano, sus mundos
+                                chocan, poniendo en peligro a su familia.
+                                </p>
+                                <h3 class="fs-6 fw-bold mb-1">Calificación:</h3>
+                                <p class="small mb-2">6.9 / 10</p> 
+                                <h3 class="fs-6 fw-bold mb-1">Director:</h3>
+                                <p class="small mb-2">Tracey Malone, Ed Whitmore</p>
+                                <h3 class="fs-6 fw-bold mb-1">Reparto:</h3>
+                                <p class="small mb-2">Patrick Dempsey, Richard Harmon, Odeya Rush</p>
+                                <div class="imagen-reparto d-flex gap-1 mb-3">
+                                    <img src="../recursos/imagenes/Reparto/patrickDempsey.jpg" class="rounded-circle">
+                                    <img src="../recursos/imagenes/Reparto/richardHarmon.jpg" class="rounded-circle">
+                                    <img src="../recursos/imagenes/Reparto/odeyaRush.jpg" class="rounded-circle">
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Trailer</h3>
+                                <div class="ratio ratio-16x9 mb-3">
+                                    <video class="trailers" controls>
+                                        <source src="../recursos/Videos/MemoriaDeUnAsesino.mp4" type="video/mp4">      
+                                    </video>
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Genero:</h3>
+                                <p class="small mb-2">Crimen, Drama</p>
+                                <h3 class="fs-6 fw-bold mb-1">Duracion:</h3>
+                                <p class="small mb-2">45 min</p>
+                                <h3 class="fs-6 fw-bold mb-1">Año de Estreno:</h3>
+                                <p class="small mb-2">25 de Enero 2026</p>
+                                <h3 class="fs-6 fw-bold mb-1">Temporadas:</h3>
+                                <p class="small mb-2"> 1 Temporada</p>
+                                <h3 class="fs-6 fw-bold mb-2">Plataformas:</h3>
+                                <img class="icons mb-3" src="../recursos/imagenes/iconos/netflix.png" width="40" height="40">
+                                
+                                <div class="botones-inferiores d-grid gap-2 mt-auto">
+                                    <div class="guardar_accion">
+                                        <button type="button" class="btn btn-secondary btn-sm w-100">GUARDAR CAMBIOS</button>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <button type="button" class="btn btn-outline-danger btn-sm w-50" data-bs-toggle="modal" data-bs-target="#modalEliminar">ELIMINAR</button>
+                                        <a href="../intranet/editar_serie.html" class="btn btn-outline-secondary btn-sm w-50">EDITAR</a>
+                                    </div>
+                                    <div class="accion_publicar d-flex justify-content-between align-items-center mt-2">
+                                        <span class="texto-publicar fw-bold">PUBLICA</span>
+                                        <label class="switch">
+                                            <input type="checkbox" id="publicar-check">
+                                            <span class="deslizador"></span>
+                                        </label>
+                                    </div>
+                                </div>    
+                            </section> 
+                        </div>
+
+                        <div class="col">
+                            <section class="Tarjeta h-100 p-3 card border shadow-sm">
+                                <div class="imagen-contenedor text-center mb-3">
+                                    <img class="img-principal img-fluid rounded" src="../recursos/imagenes/series/la_casa_de_los_espiritus.jpeg">
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Titulo:</h3>
+                                <p id="001" class="text-muted mb-2">La Casa de los Espiritus</p>
+                                <h3 class="fs-6 fw-bold mb-1">Sinopsis</h3>
+                                <p class="small mb-2">La Casa de los Espíritus es una saga<br>
+                                familiar de ocho episodios que sigue las<br>
+                                vidas de tres mujeres revolucionarias y<br>
+                                resilientes - Clara, la abuela; Blanca,<br>
+                                la hija; y Alba, la nieta - a lo largo de<br>
+                                medio siglo, en un país sudamericano remoto<br>
+                                y conservador, marcado por desastres naturales,<br>
+                                la lucha de clases y la magia..
+                                </p>
+                                <h3 class="fs-6 fw-bold mb-1">Calificación:</h3>
+                                <p class="small mb-2">7.5 / 10</p> 
+                                <h3 class="fs-6 fw-bold mb-1">Director:</h3>
+                                <p class="small mb-2">Francisca Alegría, Andrés Wood</p>
+                                <h3 class="fs-6 fw-bold mb-1">Reparto:</h3>
+                                <p class="small mb-2">Alfonso Herrera, Dolores Fonzi, Nicole Wallace, Fernanda Castillo,</p>
+                                <div class="imagen-reparto d-flex gap-1 mb-3">
+                                    <img src="../recursos/imagenes/Reparto/alfonso-herrera.jpg" class="rounded-circle">
+                                    <img src="../recursos/imagenes/Reparto/dolores-fonzi.jpg" class="rounded-circle">
+                                    <img src="../recursos/imagenes/Reparto/nicole wallace.jpg" class="rounded-circle">
+                                    <img src="../recursos/imagenes/Reparto/fernanda-castillo.jpg" class="rounded-circle">
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Trailer</h3>
+                                <div class="ratio ratio-16x9 mb-3">
+                                    <video class="trailers" controls>
+                                        <source src="../recursos/Videos/LaCasaDelosEspiritus.webm" type="video/mp4">      
+                                    </video>
+                                </div>
+                                <h3 class="fs-6 fw-bold mb-1">Genero:</h3>
+                                <p class="small mb-2">Drama, Romance</p>
+                                <h3 class="fs-6 fw-bold mb-1">Duracion:</h3>
+                                <p class="small mb-2">46 min</p>
+                                <h3 class="fs-6 fw-bold mb-1">Año de Estreno:</h3>
+                                <p class="small mb-2">25 de Enero 2026</p>
+                                <h3 class="fs-6 fw-bold mb-1">Temporadas:</h3>
+                                <p class="small mb-2"> 1 Temporada</p>
+                                <h3 class="fs-6 fw-bold mb-2">Plataformas:</h3>
+                                <img class="icons mb-3" src="../recursos/imagenes/iconos/amazon-prime-video.png" width="40" height="40">
+                                
+                                <div class="botones-inferiores d-grid gap-2 mt-auto">
+                                    <div class="guardar_accion">
+                                        <button type="button" class="btn btn-secondary btn-sm w-100">GUARDAR CAMBIOS</button>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <button type="button" class="btn btn-outline-danger btn-sm w-50" data-bs-toggle="modal" data-bs-target="#modalEliminar">ELIMINAR</button>
+                                        <a href="../intranet/editar_serie.html" class="btn btn-outline-secondary btn-sm w-50">EDITAR</a>
+                                    </div>
+                                    <div class="accion_publicar d-flex justify-content-between align-items-center mt-2">
+                                        <span class="texto-publicar fw-bold">PUBLICA</span>
+                                        <label class="switch">
+                                            <input type="checkbox" id="publicar-check">
+                                            <span class="deslizador"></span>
+                                        </label>
+                                    </div>
+                                </div>    
+                            </section> 
+                        </div>
+                    </div>
+                </div> <div class="col-xl-3 col-lg-4">
+                    <aside class="p-3 bg-secondary-subtle border shadow-sm contenedor-aside">
+                        <h2 class="fs-5 fw-bold mb-3 text-center text-lg-start"> ACTIVIDADES RECIENTES</h2>
+                        <div class="item-aside mb-3 p-2 bg-white rounded border-start border-primary border-4 shadow-sm">
+                            <p class="Rol badge bg-primary mb-1">Desarrollador</p>
+                            <h3 class="fs-6 fw-bold my-1">Usuario_24 Elimino Gladiadores</h3>
+                            <div class="d-flex align-items-center gap-2 mt-2">
+                                <img src="../recursos/imagenes/usuarios/usuario_1.jpg" class="rounded-circle">
+                                <p class="descripcion small text-muted m-0">Lunes 19 de mayo 18:35hs</p>
+                            </div>
+                        </div>
+                        <div class="item-aside mb-3 p-2 bg-white rounded border-start border-success border-4 shadow-sm">
+                            <p class="Rol badge bg-success mb-1">Administrador</p>
+                            <h3 class="fs-6 fw-bold my-1">Usuario_92 Aprobo Proyecto Salvacion correctamente</h3>
+                            <div class="d-flex align-items-center gap-2 mt-2">
+                                <img src="../recursos/imagenes/usuarios/usuario_2.jpg" class="rounded-circle">
+                                <p class="descripcion small text-muted m-0">Jueves 21 de mayo 18:35hs</p>
+                            </div>
+                        </div>
+                        <div class="item-aside p-2 bg-white rounded border-start border-warning border-4 shadow-sm">
+                            <p class="Rol badge bg-warning text-dark mb-1">Testing</p>
+                            <h3 class="fs-6 fw-bold my-1">Usuario_74 solicito revision de Parque Lezama</h3>
+                            <div class="d-flex align-items-center gap-2 mt-2">
+                                <img src="../recursos/imagenes/usuarios/usuario_3.jpg" class="rounded-circle">
+                                <p class="descripcion small text-muted m-0">Miercoles 27 de mayo 18:35hs</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div> </div> </div>
+
+                <!-- VENTANA EMERGENTE (MODAL) DE CONFIRMACIÓN -->
+                <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    
+                    <div class="modal-content text-white" >
+                    
+                    <!-- Encabezado -->
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold" id="modalEliminarLabel">⚠️ Confirmar Acción</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <!-- Cuerpo del mensaje -->
+                    <div class="modal-body text-center py-4">
+                        <p class="fs-5 m-0">¿Estás seguro de que deseas eliminar esta serie de la revisión?</p>
+                        <small class="text-muted">Esta acción no se puede deshacer.</small>
+                    </div>
+                    
+                    <!-- Botones de Acción -->
+                    <div class="modal-footer border-0 d-flex justify-content-center gap-3">
+                        <!-- Botón Cancelar (Cierra el modal) -->
+                        <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Cancelar</button>
+                        
+                        <!-- Botón Confirmar (envia alerta) -->
+                        <a href="#" class="btn btn-danger px-4" onclick="confirmarEliminacionSerie()">Sí, Eliminar</a>
+                    </div>
+
+                    </div>
+                </div>
+                </div>
+    </main>
+    <footer class="footer">
+        <p class="titulo-footer">Desarrollado por:</p>
+        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez</p>
+    </footer>
+</body>
+</html>

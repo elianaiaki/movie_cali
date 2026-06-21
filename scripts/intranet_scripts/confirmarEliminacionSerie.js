@@ -1,8 +1,8 @@
         function confirmarEliminacionSerie(){
-            const confirmar = confirm("¿Está seguro que desea eliminar esta serie?");
+            const confirmar = confirm("Confirme para Eliminar definitivamente");
             
             if(confirmar){
                 alert("Serie eliminada correctamente");
-                window.location.href = "../intranet/series_pendientes_de_revision_intra.html";
+                window.location.href = "../intranet/seriesenRevisionBootstrap.html";
             }
         }

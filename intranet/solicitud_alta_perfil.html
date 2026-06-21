@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLICITUD DE ALTA DE PERFILES</title>
+    
+    <!-- BOOTSTRAP 5 CORE CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlaces de Estilos Actualizados -->
+    <link rel="stylesheet" href="../estilos/estilos_intranet/headerBoostrapIntranet.css">
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/panelBoostrapintranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/encabezados.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botonera.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/peliculasenrevisionBoostrap.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+</head>
+<!------------------------------------------------------------------------------------------->
+<body>
+    <!--Header-->
+    <header class="header container-fluid py-2">
+        <div class="row align-items-center w-100">  
+            <!--Logo-->
+            <div class="col-lg-3 text-center text-lg-start">
+                <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" class="img-fluid">
+            </div>
+            <!--Buscador-->
+            <div class="col-lg-6 my-2 my-lg-0 d-flex justify-content-center justify-content-lg-start">
+                <form class="buscador d-flex w-100" style="max-width: 500px;">
+                    <input type="text" class="form-control" placeholder="Buscar películas, series...">
+                    <button class="btn btn-primary ms-2">🔍</button>
+                </form>
+            </div>
+            <!--Perfil-->
+            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                <div class="perfil d-flex align-items-center gap-2" id="perfilBtn">
+                    <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+                    <!--Desplegable-->
+                    <div class="desplegable-contenedor">
+                        <select name="desplegable" id="desplegable" class="desplegable" onchange="navegarMenu(this)">
+                            <option value="" selected disabled> MENU </option>
+                            <option value="../intranet/mi_perfil.html">Mi perfil</option>
+                            
+                            <optgroup label="Gestión de Películas">
+                                <option value="../intranet/peliculas_en_revision.html"> Películas pendientes de revisión</option>
+                                <option value="../intranet/nueva_alta_pelicula.html"> Nuevas solicitudes de alta </option>
+                            </optgroup> 
+                            
+                            <optgroup label="Administración Usuarios">
+                                <option value="../intranet/gestion_perfil_rol.html">Gestión de perfil y roles</option>
+                                <option value="../intranet/nuevo_perfil.html">Crear nuevo perfil</option>
+                            </optgroup>  
+                            
+                            <option value="../intranet/inicio_sesion.html">Cerrar Sesión</option>     
+                        </select>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+<!---------------------------------------------------------------------------------->
+    <div class="container-fluid mt-3 px-4">
+        <div class="row w-100">
+            <div class="col-12 text-start ps-4">
+                <a href="../intranet/panel.html" class="boton-panel">
+                    <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" class="icon-home"> PANEL
+                </a>
+            </div>
+        </div>
+        <hr class="my-3"> </div>
+<!----------------------------------------------------------------------------------> 
+    <main class="container my-4 px-3 px-md-5">
+        
+        <!-- FILTROS -->
+        <div class="d-flex flex-wrap gap-2 mb-4 justify-content-start">
+            <select class="form-select form-select-sm text-white border-secondary boton-superior filtros">
+                <option>FECHA: </option>
+                <option>Hace un día</option>
+                <option>Hace una semana</option>
+                <option>Fecha personalizada</option>
+            </select>
+
+            <select class="form-select form-select-sm text-white border-secondary boton-superior filtros">
+                <option>ESTADO: </option>
+                <option>Pendiente</option>
+                <option>En revisión</option>
+                <option>Resueltos</option>
+            </select>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-lg-8">
+                <div class="border-bottom pb-2 mb-3">
+                    <h3 class="fs-5 fw-bold titulo-azul">PANEL DE SOLICITUDES ACTUALES</h3>
+                </div>
+            
+                <div class="d-flex flex-column gap-3 mb-4">
+                    
+                    <!-- Tarjeta1 -->
+                    <div class="card p-3 shadow border-0 text-white">
+                        <div class="row align-items-center g-3">
+                            <div class="col-auto">
+                                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="img-fluid rounded-circle icono-varios">
+                            </div>
+                            <div class="col">
+                                <p class="mb-0 fw-bold">USUARIO_12345</p>
+                                <p class="mb-0 text-secondary small">Email: 123us@gmail.com</p>
+                            </div>
+                            <div class="col-12 col-md-auto d-flex gap-2 justify-content-md-end">
+                                <a href="../intranet/ver_perfil_usuario.html" class="btn btn-sm btn-outline-light">Ver Perfil</a>
+                                <button type="button" class="btn btn-sm btn-success" onclick="darAlta()">Dar Alta</button>
+                                <button type="button" class="btn btn-sm btn-danger" onclick="denegarSolicitud()">Denegar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta2 -->
+                    <div class="card p-3 shadow border-0 text-white" >
+                        <div class="row align-items-center g-3">
+                            <div class="col-auto">
+                                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="img-fluid rounded-circle icono-varios">
+                            </div>
+                            <div class="col">
+                                <p class="mb-0 fw-bold">USUARIO_6789</p>
+                                <p class="mb-0 text-secondary small">Email: msicjs@gmail.com</p>
+                            </div>
+                            <div class="col-12 col-md-auto d-flex gap-2 justify-content-md-end">
+                                <a href="../intranet/ver_perfil_usuario.html" class="btn btn-sm btn-outline-light">Ver Perfil</a>
+                                <button type="button" class="btn btn-sm btn-success" onclick="darAlta()">Dar Alta</button>
+                                <button type="button" class="btn btn-sm btn-danger" onclick="denegarSolicitud()">Denegar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-secondary my-4">
+
+                <!-- PERFILES APROBADOS -->
+                <div class="mt-2">
+                    <div class="border-bottom pb-2 mb-3">
+                        <h3 class="fs-5 fw-bold titulo-azul">PANEL DE PERFIL APROBADOS</h3>
+                    </div>
+                    
+                    <!-- Tarjeta Perfil Aprobado -->
+                    <div class="card p-3 shadow border-0 text-white">
+                        <div class="row align-items-center g-3">
+                            <div class="col-auto">
+                                <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="img-fluid rounded-circle icono-varios">
+                            </div>
+                            <div class="col">
+                                <p class="mb-0 fw-bold">USUARIO_12076</p>
+                                <p class="mb-0 text-secondary small">Email: mjgcos@gmail.com</p>
+                            </div>
+                            <div class="col-12 col-md-auto d-flex gap-2 justify-content-md-end">
+                                <a href="../intranet/mi_perfil.html" class="btn btn-sm btn-outline-light">Ver Perfil</a>
+                                <button type="button" class="btn btn-sm btn-danger" onclick="darBaja()">Dar Baja</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ASIDE -->
+            <div class="col-12 col-lg-4">
+                <aside class="card p-4 shadow border-0 text-white h-100 seccion-aside">
+                    <h3 class="fs-5 fw-bold border-bottom border-secondary pb-2 mb-3 text-center text-lg-start titulo-azul">PANEL DE SOLICITUDES PENDIENTES</h3>
+                    
+                    <div class="d-flex flex-column gap-3">
+                        
+                        <!-- Item Pendiente 1 -->
+                        <div class="p-3 rounded text-center text-sm-start A-a-p">
+                            <div class="row align-items-center g-2">
+                                <div class="col-12 col-sm-auto text-center">
+                                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="img-fluid rounded-circle icono-varios">
+                                </div>
+                                <div class="col">
+                                    <p class="mb-0 fw-bold text-white">Usuario_1212</p>
+                                    <p class="mb-0 text-secondary small text-truncate">qmxxxnd@gmail.com</p>
+                                </div>
+                                <div class="col-12 col-sm-auto text-center mt-2 mt-sm-0">
+                                    <button type="button" class="btn btn-xs btn-primary py-1 px-2 fs-7">Ver Solicitud</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item Pendiente 2 -->
+                        <div class="p-3 rounded text-center text-sm-start A-a-p">
+                            <div class="row align-items-center g-2">
+                                <div class="col-12 col-sm-auto text-center">
+                                    <img src="../recursos/imagenes/iconos/perfil.png" alt="Usuario" class="img-fluid rounded-circle icono-varios">
+                                </div>
+                                <div class="col">
+                                    <p class="mb-0 fw-bold text-white">Usuario_1112</p>
+                                    <p class="mb-0 text-secondary small text-truncate">mhtrfvbi@gmail.com</p>
+                                </div>
+                                <div class="col-12 col-sm-auto text-center mt-2 mt-sm-0">
+                                    <button type="button" class="btn btn-xs btn-primary py-1 px-2 fs-7">Ver Solicitud</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
+            
+        </div>
+    </main>
+<!-------------FOOTER------------------------------------------------------------------------------>
+    <footer class="footer">
+        <p class="titulo-footer">Desarrollado por:</p>
+        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce - Alan Walker - Gisella Jara - Brenda Pavez</p>
+    </footer>
+</body>
+</html>

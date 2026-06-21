@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGREGAR NUEVA SERIE</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Estilos-->
+    <link rel="stylesheet" href="../estilos/estilos_intranet/headerBoostrapIntranet.css">
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/panelBoostrapintranet.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/encabezados.css">
+    <link rel="stylesheet" href="../estilos/estilos_intranet/botonera.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../scripts/intranet_scripts/desplegable.js" defer></script>
+    <script src="../scripts/validaciones.js" defer></script>
+    <script src="../scripts/intranet_scripts/validacionSeries.js" defer></script> 
+</head>
+<!-------------------------------------------------------------------------------------->
+<body onload="asociarValidacion()">
+    <!--Header-->
+    <header class="header container-fluid py-2">
+        <div class="row align-items-center w-100">  
+            <!--Logo-->
+            <div class="col-lg-3 text-center text-lg-start">
+                <img src="../recursos/imagenes/logo/logo.png" alt="Logo MovieCali" class="img-fluid">
+            </div>
+            <!--Buscador-->
+            <div class="col-lg-6 my-2 my-lg-0 d-flex justify-content-center justify-content-lg-start">
+                <form class="buscador d-flex w-100" style="max-width: 500px;">
+                    <input type="text" class="form-control" placeholder="Buscar películas, series...">
+                    <button class="btn btn-primary ms-2">🔍</button>
+                </form>
+            </div>
+            <!--Perfil-->
+            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
+                <div class="perfil d-flex align-items-center gap-2" id="perfilBtn">
+                    <img src="../recursos/imagenes/iconos/usuario.png" alt="usuario">
+                    <!--Desplegable-->
+                    <div class="desplegable-contenedor">
+                        <select name="desplegable" id="desplegable" class="desplegable" onchange="navegarMenu(this)">
+                            <option value="" selected disabled> MENU </option>
+                            <option value="../intranet/mi_perfil.html">Mi perfil</option>
+                            
+                            <optgroup label="Gestión de Películas">
+                                <option value="../intranet/peliculas_en_revision.html"> Películas pendientes de revisión</option>
+                                <option value="../intranet/nueva_alta_peliculas.html"> Nuevas solicitudes de alta </option>
+                            </optgroup> 
+                            
+                            <optgroup label="Administración Usuarios">
+                                <option value="../intranet/gestion_de_perfil_roles.html">Gestión de perfil y roles</option>
+                                <option value="../intranet/nuevo_perfil.html">Crear nuevo perfil</option>
+                            </optgroup>  
+                            
+                            <option value="../intranet/inicio_sesion.html">Cerrar Sesión</option>     
+                        </select>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+<!---------------------------------------------------------------------------------->
+    <div class="container-fluid mt-3 px-4">
+        <div class="row w-100">
+            <div class="col-12 text-start ps-4">
+                <a href="../intranet/panel.html" class="boton-panel">
+                    <img src="../recursos/imagenes/iconos/Home.png" alt="Inicio" class="icon-home"> PANEL
+                </a>
+            </div>
+        </div>
+        <hr class="my-3"> </div>
+<!---------------------------------------------------------------------------------->
+    <main class="container my-4 px-3 px-md-5">
+
+        <div class="categoria-bloque card p-4 shadow border-0">
+            <h3 class="fs-4 fw-bold mb-4 border-bottom pb-2">Agregar Serie</h3>
+            
+            <form id="formAgregar" action="../intranet/series_en_revision_intra.html" method="get">
+                
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="titulo_serie" class="form-label fw-bold">Título:</label>
+                        <input type="text" id="titulo_serie" class="form-control bg-dark text-white border-secondary" placeholder="Título de la serie" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="genero_serie" class="form-label fw-bold">Género:</label>
+                        <input type="text" id="genero_serie" class="form-control bg-dark text-white border-secondary" placeholder="Comedia, Drama" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="anio_estreno" class="form-label fw-bold">Año de Estreno:</label>
+                        <input type="text" id="anio_estreno" class="form-control bg-dark text-white border-secondary" placeholder="2026" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="duracion_serie" class="form-label fw-bold">Duración:</label>
+                        <input type="text" id="duracion_serie" class="form-control bg-dark text-white border-secondary" placeholder="30 min" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="director" class="form-label fw-bold">Director:</label>
+                        <input type="text" id="director" class="form-control bg-dark text-white border-secondary" placeholder="Shari Springer Berman" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="productor_serie" class="form-label fw-bold">Productor:</label>
+                        <input type="text" id="productor_serie" class="form-control bg-dark text-white border-secondary" placeholder="Ingrese nombre y apellido" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="calificacion_serie" class="form-label fw-bold">Calificación General:</label>
+                        <input type="text" id="calificacion_serie" class="form-control bg-dark text-white border-secondary" placeholder="10" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="cantidad_temporadas" class="form-label fw-bold">Temporadas:</label>
+                        <input type="text" id="cantidad_temporadas" class="form-control bg-dark text-white border-secondary" placeholder="Cant_temporadas" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="clasificacion_edad" class="form-label fw-bold">Clasificación por Edad:</label>
+                        <input type="text" id="clasificacion_edad" class="form-control bg-dark text-white border-secondary" placeholder="+18" required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="icons_plataforma" class="form-label fw-bold">Plataformas (Icono):</label>
+                        <input type="file" id="icons_plataforma" class="form-control bg-dark text-white border-secondary" name="icons_plataforma" accept="image/*" required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="Reparto" class="form-label fw-bold">Reparto:</label>
+                        <div class="input-group">
+                            <select name="reparto" id="Reparto" class="form-select bg-dark text-white border-secondary">
+                                <optgroup label="Listados">
+                                    <option value="Rachel Weisz">Rachel Weisz</option>
+                                </optgroup>
+                            </select>
+                            <input type="text" id="nuevos_actores" class="form-control bg-dark text-white border-secondary" placeholder="Agregar nuevos actores">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="sinopsis" class="form-label fw-bold">Sinopsis:</label>
+                        <textarea id="sinopsis" class="form-control bg-dark text-white border-secondary" name="sinopsis_serie" rows="4" placeholder="Escribe aquí el resumen de la trama..." required></textarea>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="video-upload" class="form-label fw-bold">Tráiler:</label>
+                        <input type="file" id="video-upload" class="form-control bg-dark text-white border-secondary" name="video_numero" accept="video/*" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="poster" class="form-label fw-bold">Cargar Póster:</label>
+                        <input type="file" id="poster" class="form-control bg-dark text-white border-secondary" name="poster_image" accept="image/*" required>
+                    </div>
+                </div>
+
+                <div class="mt-4 pt-3 border-top border-secondary">
+                    <div class="d-flex flex-wrap gap-2 justify-content-end">
+                        <button type="submit" class="btn btn-primary px-4">Guardar Cambios</button>
+                        <button type="button" class="btn btn-secondary px-4" onclick="limpiarFormulario()">Restablecer</button>
+                        <a href="../intranet/series_en_revision.html" class="btn btn-outline-light px-4">Volver</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="titulo-footer">Desarrollado por:</p>
+        <p class="nombres-footer">Gabriel Mayor - Eliana Salvo - Gabriel Ponce -Alan Walker - Gisella Jara - Brenda Pavez</p>
+    </footer>
+</body>
+</html>

@@ -48,3 +48,40 @@
    
     letter-spacing: 0.5px;
 }
+
+/* ==========================================================================
+   NUEVA SOLICITUD DE ALTA, AGREGAR ACTOR,AGREGAR PELICULA,
+   ========================================================================== */
+.categoria-bloque h3{
+    color:#3771a8;
+}
+
+.card {
+    background-color: #222934;
+}
+
+.card img{
+    max-height: 300px; 
+    object-fit: cover;
+}
+
+/*titulo alta de perfiles*/
+
+.A-a-p h3{
+    color: #3771a8;
+}
+
+/*eliminar perfil*/
+
+.text-rojo{
+   color: #ff4d4d;
+}
+/* ==========================
+    GESTION REPORTES RESEÑAS
+   ========================== */
+
+.titulo-azul{
+    color: #3771a8;
+   }
+
+   /*style="background-color: #222934;"*/
