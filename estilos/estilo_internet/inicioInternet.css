@@ -1,13 +1,13 @@
 /* ---- CONTENEDOR PRINCIPAL (MAIN) ---- */
-/* Bootstrap ahora maneja el centrado */
 .diseno-login {
     min-height: 70vh;
     padding: 40px 0;
     box-sizing: border-box;
-    display: block; /* quitamos flex para evitar conflicto con Bootstrap */
+    display: block;
 }
 
 /* ---- TARJETA ---- */
+
 .card-inicio {
     background: #00aeff;
     padding: 40px;
@@ -24,6 +24,7 @@
 }
 
 /* ---- CAMPOS ---- */
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -35,7 +36,8 @@
     margin-bottom: 5px;
 }
 
-/* INPUTS */
+/* ---- INPUTS ---- */
+
 .input-contenedor {
     display: flex;
     align-items: center;
@@ -52,13 +54,14 @@
 }
 
 .input-contenedor input {
-    border: none;
-    outline: none;
     width: 100%;
     padding: 5px;
+    border: none;
+    outline: none;
 }
 
 /* ---- ENLACES ---- */
+
 .contenedor-enlace {
     margin-bottom: 20px;
     text-align: center;
@@ -75,28 +78,33 @@
 }
 
 /* ---- BOTONES ---- */
+
 .contenedor-boton {
     margin-bottom: 10px;
 }
 
-/* Botones base */
 .boton-inicio,
 .boton-google {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
     width: 100%;
     padding: 12px;
+
     cursor: pointer;
     border-radius: 5px;
+
     font-size: 14px;
     font-weight: bold;
+
     border: none;
     transition: background 0.3s ease;
 }
 
-/* Botón principal */
+/* ---- BOTÓN PRINCIPAL ---- */
+
 .boton-inicio {
     background-color: #001f3f;
     color: white;
@@ -106,7 +114,8 @@
     background-color: #003366;
 }
 
-/* Botón Google */
+/* ---- BOTÓN GOOGLE ---- */
+
 .boton-google {
     background-color: #f1f1f1;
     color: #333;
