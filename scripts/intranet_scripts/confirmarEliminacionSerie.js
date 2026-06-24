@@ -3,6 +3,6 @@
             
             if(confirmar){
                 alert("Serie eliminada correctamente");
-                window.location.href = "../intranet/seriesenRevisionBootstrap.html";
+                window.location.href = "../intranet/series_en_revision.html";
             }
         }
