@@ -1,74 +1,86 @@
+
+/* Contenedor lateral de sugerencias */
 aside {
-    background: #1a3a5c;
-    padding: 16px;
-    width: 280px !important;
-    flex-shrink: 0;
-    min-width: 280px !important;
-    max-width: 280px !important;
-    margin-right: 0;
-    padding-right: 0;
+    background: #1a3a5c; /* Color de fondo del aside */
+    padding: 16px; /* Espacio interno */
+    width: 280px !important; /* Ancho fijo */
+    flex-shrink: 0; /* Evita que se reduzca al achicar la pantalla */
+    min-width: 280px !important; /* Ancho mínimo */
+    max-width: 280px !important; /* Ancho máximo */
+    margin-right: 0; /* Sin margen derecho */
+    padding-right: 0; /* Sin padding derecho */
 }
 
+/* Título principal del aside */
 aside h2 {
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 16px;
-    letter-spacing: 1px;
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de letra */
+    text-align: center; /* Centrado horizontal */
+    margin-bottom: 16px; /* Separación inferior */
+    letter-spacing: 1px; /* Espaciado entre letras */
 }
 
+/* Contenedor de cada sugerencia */
 .item-aside {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 4px 10px;
+    display: grid; /* Usa Grid para organizar contenido */
+    grid-template-columns: 80px 1fr; /* Columna para imagen y otra para texto */
+    gap: 4px 10px; /* Espaciado entre filas y columnas */
 }
 
+/* Imagen de la película o serie */
 .item-aside img {
-    grid-row: 1 / 5;
-    width: 80px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 4px;
+    grid-row: 1 / 5; /* Ocupa varias filas dentro del grid */
+    width: 80px; /* Ancho fijo */
+    height: 100px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-radius: 4px; /* Bordes redondeados */
 }
 
+/* Género de la película o serie */
 .genero {
-    color: #e05a5a;
-    font-size: 11px;
-    font-weight: bold;
-    margin: 0;
+    color: #e05a5a; /* Color destacado */
+    font-size: 11px; /* Tamaño pequeño */
+    font-weight: bold; /* Texto en negrita */
+    margin: 0; /* Sin márgenes */
 }
 
+/* Nombre de la película o serie */
 .item-aside h3 {
-    color: white;
-    font-size: 14px;
-    margin: 0;
-    line-height: 1.2;
+    color: white; /* Texto blanco */
+    font-size: 14px; /* Tamaño del título */
+    margin: 0; /* Sin márgenes */
+    line-height: 1.2; /* Altura entre líneas */
 }
 
+/* Descripción breve */
 .descripcion {
-    color: #ccc;
-    font-size: 11px;
-    margin: 0;
+    color: #ccc; /* Gris claro */
+    font-size: 11px; /* Texto pequeño */
+    margin: 0; /* Sin márgenes */
 }
 
+/* Botón o enlace "Ver más" */
 .item-aside a {
-    grid-column: 1 / 3;
-    text-align: center;
-    background: #2a4f7a;
-    color: white;
-    text-decoration: none;
-    padding: 6px;
-    border-radius: 4px;
-    font-size: 12px;
+    grid-column: 1 / 3; /* Ocupa todo el ancho del grid */
+    text-align: center; /* Texto centrado */
+    background: #2a4f7a; /* Color de fondo */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Quita el subrayado */
+    padding: 6px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 12px; /* Tamaño de letra */
 }
 
+/* Efecto al pasar el mouse sobre el enlace */
 .item-aside a:hover {
-    background: #3a6fa0;
+    background: #3a6fa0; /* Cambia el color de fondo */
 }
 
+/* Línea divisoria entre sugerencias */
 aside hr {
-    border: none;
-    border-top: 1px solid #2a4f7a;
-    margin: 12px 0;
+    border: none; /* Elimina el borde por defecto */
+    border-top: 1px solid #2a4f7a; /* Línea superior */
+    margin: 12px 0; /* Espaciado arriba y abajo */
 }
-/*-- fin--7*
+
+/* ---------- FIN DEL ASIDE ---------- */

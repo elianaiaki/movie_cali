@@ -1,101 +1,107 @@
+/* Contenedor principal del perfil */
 .miperfil-usuario {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 40px 60px;
+    display: flex; /* Coloca la foto, información y resumen en fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 40px 60px; /* Espaciado interno */
     color: white;
 }
 
-/* foto de perfil --*/
+/* Foto de perfil */
 .miperfil-foto img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 50%; /* Convierte la imagen en un círculo */
 }
 
-/* informacion de perfil --*/
+/* Información del usuario */
 .miperfil-info {
     display: flex;
-    flex-direction: column;
-    gap: 9px;
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 9px; /* Espacio entre los elementos */
 }
 
+/* Texto "Mi perfil" o categoría */
 .miperfil-info h2 {
     color: #7aafd4;
     font-size: 13px;
     margin: 0;
 }
 
+/* Nombre del usuario */
 .miperfil-info h1 {
     font-size: 22px;
     margin: 4px 0;
     color: white;
 }
 
-/* enlance-boton: Editar perfil--*/
+/* Botón o enlace para editar perfil */
 .miperfil-info a {
     color: white;
     font-size: 12px;
     border: 1px solid #4a8abf;
     padding: 4px 12px;
-    border-radius: 20px;
-    text-decoration: none;
-    width: fit-content;
+    border-radius: 20px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado */
+    width: fit-content; /* Ajusta el ancho al contenido */
     background: transparent;
 }
 
+/* Efecto al pasar el mouse */
 .miperfil-info a:hover {
     background: #2a4f7a;
 }
 
-/* parrafo --*/
+/* Descripción o información adicional */
 .miperfil-info p {
     font-size: 12px;
     color: #ccc;
     margin: 4px 0 0 0;
 }
 
-/* tabla de resumen --*/
+/* Tabla de estadísticas o resumen */
 .miperfil-resumen {
-    margin-left: auto;
-    border-collapse: collapse;
+    margin-left: auto; /* Empuja la tabla hacia la derecha */
+    border-collapse: collapse; /* Une los bordes de la tabla */
     color: white;
     border: none;
 }
 
+/* Celdas de la tabla */
 .miperfil-resumen td {
     padding: 6px 20px;
-    text-align: center;
+    text-align: center; /* Centra el contenido */
     border: none;
 }
 
+/* Números o datos destacados */
 .miperfil-resumen h2 {
     font-size: 30px;
     margin: 0;
     color: white;
 }
 
+/* Texto descriptivo debajo de cada dato */
 .miperfil-resumen p {
     font-size: 15px;
     color: #ccc;
     margin: 0;
 }
 
-
-/*para adaptar pantallas */
-
+/* Ajustar pantallas*/
 @media (max-width: 768px) {
 
     .miperfil-usuario {
-        flex-direction: column;
+        flex-direction: column; /* Apila los elementos verticalmente */
     }
 
     .miperfil-resumen {
-        margin-left: 0;
+        margin-left: 0; /* Elimina el desplazamiento hacia la derecha */
     }
 
     main {
-        padding: 16px;
+        padding: 16px; /* Reduce el padding del contenido principal */
     }
 }
-/*-- fin--7*
+
+/* ---------- FIN ---------- */

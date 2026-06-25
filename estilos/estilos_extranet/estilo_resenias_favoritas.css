@@ -1,17 +1,21 @@
+/* Contenedor del texto de la reseña */
 .reseña {
-    height: 120px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-right: 5px;
+    height: 120px; /* Altura fija para todas las reseñas */
+    overflow-y: auto; /* Agrega scroll vertical si el texto es muy largo */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    padding-right: 5px; /* Evita que el texto quede pegado al scroll */
 }
 
+/* Tarjeta de la película o serie */
 .card {
-    max-width: 220px;
-    margin: auto;
+    max-width: 220px; /* Limita el ancho máximo de la tarjeta */
+    margin: auto; /* Centra la tarjeta horizontalmente */
 }
 
+/* Imagen principal de la tarjeta */
 .card-img-top {
-    height: 320px;
-    object-fit: cover;
+    height: 320px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
-/*-- fin--7*
+
+/* ---------- FIN ---------- */

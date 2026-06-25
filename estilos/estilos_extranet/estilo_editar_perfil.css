@@ -1,59 +1,59 @@
-/*----------login internet-----------*/
+/*---------- LOGIN ----------*/
 
-/* CONTENEDOR PRINCIPAL ---------------------------------------------------*/
-
+/* CONTENEDOR PRINCIPAL
+   Centra la tarjeta de login en la pantalla */
 .diseno-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 60px 20px; /* Espaciado interno */
 }
 
 
-/* CARTA LOGIN ------------------------------------------------------------*/
-
+/* CARTA LOGIN
+   Contenedor principal del formulario */
 .carta-login{
-    background: #111827;
-    border: 1px solid #22304a;
-    border-radius: 18px;
+    background: #111827; /* Color de fondo */
+    border: 1px solid #22304a; /* Borde de la tarjeta */
+    border-radius: 18px; /* Bordes redondeados */
 
-    width: 850px;
-    max-width: 95%;
+    width: 850px; /* Ancho principal */
+    max-width: 95%; /* Evita que se salga en pantallas pequeñas */
 
-    padding: 40px;
+    padding: 40px; /* Espaciado interno */
 
-    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5); /* Sombra alrededor */
 }
 
 
-/* TITULO -----------------------------------------------------------------*/
-
+/* TITULO
+   Encabezado principal del formulario */
 .carta-login h2{
     color: #e6edf3;
     font-size: 30px;
 
     margin-bottom: 20px;
 
-    border-left: 4px solid #4a90d9;
-    padding-left: 12px;
+    border-left: 4px solid #4a90d9; /* Línea decorativa lateral */
+    padding-left: 12px; /* Separación entre texto y línea */
 }
 
 
-/* LABELS -----------------------------------------------------------------*/
-
+/* LABELS
+   Etiquetas de los campos */
 .carta-login label{
     color: #7aafd4;
     font-size: 13px;
     font-weight: bold;
 
-    display: block;
+    display: block; /* Ocupa toda la línea */
 
     margin-bottom: 10px;
 }
 
 
-/* INPUTS -----------------------------------------------------------------*/
-
+/* INPUTS
+   Estilo para todos los inputs excepto checkbox */
 .carta-login input:not([type="checkbox"]){
     background: #0b1220;
     border: 1px solid #2d4d74;
@@ -62,132 +62,137 @@
     padding: 12px;
     margin-top: 6px;
     margin-bottom: 25px;
-    width: 100%;
-    outline: none;
-    transition: 0.2s;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    outline: none; /* Quita el borde por defecto del navegador */
+    transition: 0.2s; /* Suaviza cambios visuales */
 }
 
+/* Checkbox */
 .carta-login input[type="checkbox"]{
-    width: auto;
+    width: auto; /* Mantiene el tamaño normal */
     margin-right: 5px;
 }
 
 
-/* EFECTO HOVER INPUT -----------------------------------------------------*/
-
+/* EFECTO AL SELECCIONAR INPUT
+   Se aplica cuando el usuario hace clic */
 .carta-login input:focus{
     border: 1px solid #58a6ff;
 
-    box-shadow: 0px 0px 10px rgba(88,166,255,0.3);
+    box-shadow: 0px 0px 10px rgba(88,166,255,0.3); /* Resalta el campo */
 }
 
 
-/* CONTENEDORES DE CAMPOS -------------------------------------------------*/
-
+/* CONTENEDORES DE CAMPOS
+   Espaciado entre grupos del formulario */
 .carta-login form div{
     margin-bottom: 10px;
 }
 
 
-/* ICONOS -----------------------------------------------------------------*/
-
+/* ICONOS O IMÁGENES
+   Centra las imágenes dentro del formulario */
 .carta-login img{
     display: block;
     margin: 0 auto;
 }
 
 
-/* OLVIDASTE CONTRASEÑA ---------------------------------------------------*/
-
+/* OLVIDASTE CONTRASEÑA
+   Contenedor del enlace */
 .contenedor-olvido{
-    text-align: center;
+    text-align: center; /* Centra el texto */
 
     margin-top: -10px;
     margin-bottom: 25px;
 }
 
+/* Enlace para recuperar contraseña */
 .enlace-olvido{
     color: #58a6ff;
 
-    text-decoration: none;
+    text-decoration: none; /* Quita el subrayado */
 
     font-size: 13px;
 }
 
+/* Efecto al pasar el mouse */
 .enlace-olvido:hover{
     text-decoration: underline;
 }
 
 
-/* BOTON ------------------------------------------------------------------*/
-
+/* BOTÓN
+   Contenedor que centra el botón */
 .contenedor-boton{
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra horizontalmente */
     margin-top: 10px;
 }
 
 
+/* Botón de inicio de sesión */
 .boton-inicio{
     background: #1d4f91;
 
     color: white;
 
-    border: none;
+    border: none; /* Elimina el borde */
 
     padding: 14px 28px;
 
-    border-radius: 30px;
+    border-radius: 30px; /* Bordes redondeados */
 
     font-size: 14px;
     font-weight: bold;
 
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar encima */
 
-    transition: 0.2s;
+    transition: 0.2s; /* Suaviza la animación */
 }
 
 
-/* HOVER BOTON ------------------------------------------------------------*/
-
+/* EFECTO HOVER BOTÓN
+   Se activa al pasar el mouse */
 .boton-inicio:hover{
     background: #3472c2;
 
-    transform: scale(1.03);
+    transform: scale(1.03); /* Agranda ligeramente el botón */
 }
 
 
-/* RESPONSIVE -------------------------------------------------------------*/
-
+/* Ajustar pantallas*/
 @media(max-width: 500px){
 
     .carta-login{
-        width: 100%;
+        width: 100%; /* Ocupa todo el ancho disponible */
         padding: 25px;
     }
 
     .carta-login h2{
-        font-size: 24px;
+        font-size: 24px; /* Reduce el tamaño del título */
     }
 
 }
 
-/* TEXTAREA --------------------------------------------------------------*/
 
+/* TEXTAREA
+   Campo de texto largo */
 .carta-login textarea{
     background: #0b1220;
     border: 1px solid #2d4d74;
     border-radius: 10px;
     color: white;
     padding: 12px;
-    width: 100%;
-    min-height: 120px;
-    resize: vertical;
+    width: 100%; /* Ocupa todo el ancho */
+    min-height: 120px; /* Altura mínima */
+    resize: vertical; /* Solo permite redimensionar verticalmente */
 }
 
-/* CENTRAR BOTON -------------------------------------------------------- */
 
+/* CENTRAR BOTÓN
+   Centra botones de tipo button */
 .carta-login button[type="button"]{
     display: block;
-    margin: 15px auto 35px auto;
+    margin: 15px auto 35px auto; /* Centrado horizontal automático */
 }

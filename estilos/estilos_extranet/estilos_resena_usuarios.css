@@ -1,29 +1,24 @@
+/* ---------- MODAL - AGREGAR RESEÑA ---------- */
 
-
-
-
-
-
-
-
-/* ----------FUNCIONALIDADESSSSSSSSS ------------------------------------*/
-/* ----------MODAL - AGREGAR RESEÑA ------------------------------------*/
+/* Capa que oscurece el fondo y centra el modal */
 .overlay{
-    position: fixed;
+    position: fixed; /* Permanece fija en la pantalla */
     top: 0;
     left: 0;
 
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa todo el alto */
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra horizontalmente el modal */
+    align-items: center; /* Centra verticalmente el modal */
 
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.6); /* Oscurece el fondo */
 
-    z-index: 1000;
+    z-index: 1000; /* Se muestra por encima del contenido */
 }
+
+/* Ventana principal del modal */
 .modal{
     width: 800px;
     padding: 20px;
@@ -34,14 +29,18 @@
     border-radius: 10px;
 }
 
+
 /* ==========================
-(imagen + información)
+   CABECERA DEL MODAL
+   (imagen + información)
 ========================== */
+
+/* Contenedor de la imagen y datos de la película */
 .modal-header{
-    display: flex;
+    display: flex; /* Coloca imagen e información en fila */
     gap: 15px;
 
-    position: relative;
+    position: relative; /* Referencia para el botón cerrar */
     margin-bottom: 20px;
 }
 
@@ -51,12 +50,12 @@
     border-radius: 8px;
 }
 
-/* Título */
+/* Título de la película */
 .info h3{
     margin: 0;
 }
 
-/* Información de año y duración */
+/* Año, duración u otros datos */
 .meta{
     margin: 5px 0;
     color: lightgray;
@@ -73,22 +72,25 @@
     margin-bottom: 5px;
 }
 
-/* Estrellas */
+/* Estrellas seleccionadas */
 .estrellas{
     color: #4f6cff;
     font-size: 25px;
 }
 
-/* Estrellas vacías */
+/* Estrellas sin seleccionar */
 .vacia{
     color: #34495e;
 }
 
+
 /* ==========================
    BOTÓN CERRAR
 ========================== */
+
+/* Botón para cerrar el modal */
 .boton-cerrar{
-    position: absolute;
+    position: absolute; /* Posicionado respecto al modal-header */
     top: 10px;
     right: 10px;
 
@@ -96,23 +98,27 @@
     height: 35px;
 
     border: none;
-    border-radius: 50%;
+    border-radius: 50%; /* Forma circular */
 
     background-color: #1c3147;
     color: white;
 
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar encima */
 }
+
 
 /* ==========================
    FORMULARIO
 ========================== */
+
+/* Formulario de la reseña */
 .modal form{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Organiza los campos verticalmente */
     gap: 15px;
 }
 
+/* Campos de texto */
 .modal form input{
     padding: 10px;
 
@@ -123,7 +129,7 @@
     color: white;
 }
 
-/* Área de texto */
+/* Área para escribir la reseña */
 form textarea{
     height: 250px;
     padding: 15px;
@@ -137,14 +143,17 @@ form textarea{
 
 /* Contador de caracteres */
 .contador{
-    text-align: right;
+    text-align: right; /* Alinea el texto a la derecha */
     color: gray;
     margin: 0;
 }
 
+
 /* ==========================
    BOTÓN PUBLICAR
 ========================== */
+
+/* Botón para publicar la reseña */
 .boton-publicar{
     padding: 10px;
 
@@ -157,9 +166,12 @@ form textarea{
     cursor: pointer;
 }
 
+
 /* ==========================
    BOTÓN CANCELAR
 ========================== */
+
+/* Botón para cancelar la operación */
 .boton-cancelar{
     padding: 10px;
 
@@ -172,8 +184,10 @@ form textarea{
     cursor: pointer;
 }
 
-/* modal de comentarios----------------------------------------------------------------------------------------*/
 
+/* ---------- MODAL DE COMENTARIOS ---------- */
+
+/* Contenedor de comentarios */
 .comentarios {
     margin-top: 15px;
     padding: 15px;
@@ -181,6 +195,7 @@ form textarea{
     background-color: #132946;
 }
 
+/* Campo para escribir comentarios */
 .comentarios input {
     width: 70%;
     padding: 10px;
@@ -188,6 +203,7 @@ form textarea{
     border: none;
 }
 
+/* Botones comentar y cancelar */
 .cancelar,
 .comentar {
     margin-left: 10px;
@@ -196,31 +212,35 @@ form textarea{
     cursor: pointer;
 }
 
-/*------------------------------------------------------MAIN--------------------------------------------*/
 
-/* main principal----------------------------------------*/
+/* ---------- MAIN ---------- */
 
+/* Contenido principal de la página */
 main{
-    flex: 1;
+    flex: 1; /* Ocupa el espacio disponible */
+
     padding: 20px;
 
     background: linear-gradient(
         90deg,
         #0b1020,
         #1d3c78
-    );
+    ); /* Fondo con degradado */
 
     color: white;
 }
 
-/* Cabecera de la pelicula--------------------------------*/
 
+/* ---------- CABECERA DE LA PELÍCULA ---------- */
+
+/* Contenedor del poster e información */
 .cabecera-pelicula{
-    display: flex;
+    display: flex; /* Muestra imagen y datos en fila */
     align-items: flex-start;
     gap: 20px;
 }
 
+/* Información de la película */
 .info-pelicula{
     margin-top: 15px;
 }
@@ -235,8 +255,8 @@ main{
     color: white;
 }
 
-/* Encabezado de la película---------------------------------------------------------*/
 
+/* Encabezado principal */
 section:first-child{
     background-color: #081726;
 
@@ -247,12 +267,14 @@ section:first-child{
     margin-bottom: 20px;
 }
 
-/* Filtros ------------------------------------------------------------------------*/
 
+/* ---------- FILTROS ---------- */
+
+/* Barra de filtros y ordenamiento */
 .barra-filtros{
     display: flex;
 
-    justify-content: space-between;
+    justify-content: space-between; /* Separa los elementos */
     align-items: center;
 
     margin-top: 20px;
@@ -265,6 +287,7 @@ section:first-child{
     border-radius: 10px;
 }
 
+/* Enlaces de filtros */
 .barra-filtros a{
     color: white;
     text-decoration: none;
@@ -276,6 +299,7 @@ section:first-child{
     color: #8ba7ff;
 }
 
+/* Lista desplegable */
 .barra-filtros select{
     background-color: #10263f;
 
@@ -289,14 +313,14 @@ section:first-child{
 }
 
 
+/* ---------- IMAGEN PRINCIPAL ---------- */
 
-/* Imagen principal ---------------------------------------------------------------*/
-
+/* Poster de la película */
 section:first-child img{
     width: 220px;
     height: 320px;
 
-    object-fit: cover;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
 
     border: 3px solid #9c4dff;
     border-radius: 5px;
@@ -305,8 +329,9 @@ section:first-child img{
 }
 
 
-/* Tarjetas de reseñas ---------------------------------------------------------------*/
+/* ---------- TARJETAS DE RESEÑAS ---------- */
 
+/* Tarjeta individual de reseña */
 .resena{
     background-color: #07192b;
 
@@ -316,22 +341,20 @@ section:first-child img{
 
     margin-bottom: 25px;
 
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    box-shadow: 0 0 10px rgba(0,0,0,.3); /* Agrega sombra */
 }
 
-/* avatar circular ---------------------------------------------------------------*/
-
+/* Avatar del usuario */
 .resena img{
     width: 50px;
     height: 50px;
 
-    border-radius: 50%;
+    border-radius: 50%; /* Imagen circular */
 
     object-fit: cover;
 }
 
-/* titulos de reseñas ---------------------------------------------------------------*/
-
+/* Título de la reseña */
 .resena h3{
     color: white;
 
@@ -341,15 +364,13 @@ section:first-child img{
     font-size: 28px;
 }
 
-/* Texto de la reseña ---------------------------------------------------------------*/
-
+/* Texto de la reseña */
 .resena p{
     color: #d6d6d6;
-    line-height: 1.6;
+    line-height: 1.6; /* Espaciado entre líneas */
 }
 
-/* Botón Guardar reseña ---------------------------------------------------------------*/
-
+/* Botón guardar reseña */
 .resena button{
     border: none;
 
@@ -364,8 +385,7 @@ section:first-child img{
     cursor: pointer;
 }
 
-/* Botones de likes ---------------------------------------------------------------*/
-
+/* Botones de acciones (likes, dislikes, etc.) */
 .resena .acciones button{
     background-color: transparent;
 
@@ -376,11 +396,10 @@ section:first-child img{
     color: #bbb;
 }
 
-/* Enlace comentarios ---------------------------------------------------------------*/
-
+/* Enlace para abrir comentarios */
 .abrir-comentarios{
     color: #8ba7ff;
     text-decoration: none;
 }
 
-<!-- fin-->
+/* ---------- FIN ---------- */

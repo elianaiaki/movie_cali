@@ -1,73 +1,86 @@
+/* Contenedor principal del contenido */
 main {
-    padding: 16px 70px;
+    padding: 16px 70px; /* Espaciado interno de la página */
 }
 
+/* Sección general */
 .seccion {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    flex-direction: column; /* Organiza los elementos en columna */
+    margin-bottom: 20px; /* Separación entre secciones */
 }
 
+/* Encabezado de cada sección */
 .titulo-seccion {
     display: flex;
-    align-items: center;
+    align-items: center; /* Alinea los elementos verticalmente */
     margin-bottom: 10px;
 }
 
+/* Contenedor de los títulos */
 .titulo-seccion div {
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    flex-direction: column; /* Coloca h2 y h4 uno debajo del otro */
+    flex: 1; /* Ocupa el espacio disponible */
 }
 
+/* Título principal */
 .titulo-seccion h2 {
     font-size: 30px;
     margin: 0;
-    padding-left: 10px;
-    border-left: 3px solid #4a90d9;
+    padding-left: 10px; /* Espacio entre el texto y la línea lateral */
+    border-left: 3px solid #4a90d9; /* Línea decorativa */
     color: #e6edf3;
 }
 
+/* Subtítulo */
 .titulo-seccion h4 {
     font-size: 15px;
-    font-weight: normal;
+    font-weight: normal; /* Quita la negrita */
     color: #4a90d9;
     margin: 0;
     padding-left: 14px;
 }
 
+/* Enlace "ver más" o similar */
 .titulo-seccion a {
     font-size: 20px;
     color: #58a6ff;
-    text-decoration: none;
+    text-decoration: none; /* Quita el subrayado */
 }
 
+/* Efecto al pasar el mouse sobre el enlace */
 .titulo-seccion a:hover {
     text-decoration: underline;
 }
 
+/* Títulos dentro de las secciones */
 section h3 {
     color: #e6edf3;
     margin: 20px 0 10px;
 }
 
+/* Ajustar pantallas*/
 @media (max-width: 768px) {
+
     main {
-        padding: 15px;
+        padding: 15px; /* Reduce los márgenes laterales */
     }
 
     .titulo-seccion {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: flex-start; /* Alinea a la izquierda */
+        gap: 10px; /* Espacio entre elementos */
     }
 
     .titulo-seccion h2 {
-        font-size: 24px;
+        font-size: 24px; /* Reduce el tamaño del título */
     }
 }
 
+/* Clase auxiliar para texto blanco */
 .texto-blanco{
     color: white;
 }
-/* <!-- fin--> */
+
+/* ---------- FIN ---------- */

@@ -1,3 +1,4 @@
+/* Tarjeta que contiene cada sección del catálogo */
 .card-detalle {
     background: #222934;
     padding: 20px;
@@ -6,25 +7,29 @@
     color: white;
 }
 
+/* Contenedor donde se muestran las películas o series */
 .catalogo-container {
     width: 100%;
     display: flex;
     gap: 15px;
-    overflow-x: auto;
+    overflow-x: auto; /* Permite desplazarse horizontalmente */
     overflow-y: hidden;
     scroll-behavior: smooth;
     padding-bottom: 10px;
 }
 
+/* Personalización de la barra de desplazamiento */
 .catalogo-container::-webkit-scrollbar {
     height: 8px;
 }
 
+/* Color y forma del scroll */
 .catalogo-container::-webkit-scrollbar-thumb {
     background: #3a6fa0;
     border-radius: 10px;
 }
 
+/* Tarjeta individual de cada película o serie */
 .media-card {
     flex: 0 0 calc((100% - 60px) / 5);
 
@@ -38,16 +43,19 @@
     overflow: hidden;
 }
 
+/* Imagen de la portada */
 .media-card img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
 
+/* Información de la película o serie */
 .media-info {
     padding: 8px;
 }
 
+/* Título con enlace al detalle */
 .media-info a {
     display: block;
     color: white;
@@ -57,11 +65,14 @@
     margin-bottom: 6px;
 }
 
+/* Datos como duración y calificación */
 .media-info p {
     margin: 3px 0;
     font-size: 10px;
     color: #d9e6ff;
 }
+
+/* Ajustar pantallas*/
 
 @media (max-width: 992px) {
     .media-card {
@@ -69,12 +80,14 @@
     }
 }
 
+/* En tablets se muestran 3 tarjetas */
 @media (max-width: 768px) {
     .media-card {
         flex: 0 0 calc((100% - 30px) / 3);
     }
 }
 
+/* En celulares se muestran 2 tarjetas */
 @media (max-width: 576px) {
     .media-card {
         flex: 0 0 calc((100% - 15px) / 2);

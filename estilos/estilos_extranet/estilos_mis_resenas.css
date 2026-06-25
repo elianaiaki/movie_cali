@@ -3,20 +3,23 @@
 /* ==========================
    MODAL
 ========================== */
+
+/* Contenedor del modal */
 .overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    position: fixed; /* Permanece fija aunque se haga scroll */
+    top: 0; /* Se posiciona desde la parte superior */
+    left: 0; /* Se posiciona desde la izquierda */
+    z-index: 1000; /* Hace que se muestre por encima del resto del contenido */
 }
 
 
 /* ----------------------------------------------------------------------------------------------
    MODAL DE DETALLE DE RESEÑAS */
 
+/* Ventana que muestra el detalle completo de una reseña */
 .modal-detalle{
     width: 600px;
-    max-width: 95vw;
+    max-width: 95vw; /* Evita que se salga de pantallas pequeñas */
 
     padding: 20px;
 
@@ -33,9 +36,9 @@
     font-size: 1.3rem;
 }
 
-/* Botón editar */
+/* Botón para editar la reseña */
 .btn-editar{
-    float: right;
+    float: right; /* Lo posiciona a la derecha */
 
     padding: 7px 14px;
 
@@ -47,23 +50,24 @@
     font-weight: bold;
 }
 
-/* Usuario que escribió la reseña */
+/* Información del usuario */
 .fila-usuario{
-    display: flex;
+    display: flex; /* Coloca foto y datos en fila */
     align-items: center;
     gap: 12px;
 
     margin: 16px 0;
-    clear: both;
+    clear: both; /* Evita conflictos con elementos flotantes */
 }
 
+/* Foto del usuario */
 .fila-usuario img{
-
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 50%; /* Imagen circular */
 }
 
+/* Nombre del usuario */
 .fila-usuario h3{
     margin: 0;
     color: #8ab4f8;
@@ -74,16 +78,16 @@
     margin-bottom: 10px;
 
     font-size: 1.2rem;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
 }
 
-/* Texto de la reseña */
+/* Texto principal de la reseña */
 .texto-resena{
     color: #cdd8ea;
-    line-height: 1.6;
+    line-height: 1.6; /* Espaciado entre líneas */
 }
 
-/* Acciones de la reseña */
+/* Barra de acciones */
 .acciones{
     display: flex;
     align-items: center;
@@ -98,6 +102,7 @@
     border-bottom: 1px solid #1e3a5f;
 }
 
+/* Enlaces de acciones */
 .acciones a{
     color: #8ab4f8;
     text-decoration: none;
@@ -107,11 +112,12 @@
 /* ----------------------------------------------------------------------------------------------
    MODAL EDITAR RESEÑA */
 
+/* Ventana para editar una reseña */
 .modal-editar{
     width: 400px;
     padding: 20px;
 
-    position: relative;
+    position: relative; /* Referencia para posicionar elementos internos */
 
     background-color: #0f1e35;
     border: 1px solid #1e3a5f;
@@ -122,7 +128,7 @@
 
 /* Información de la película */
 .modal-header-info{
-    display: flex;
+    display: flex; /* Imagen y datos en fila */
     gap: 12px;
 
     margin-bottom: 16px;
@@ -131,6 +137,7 @@
     border-bottom: 1px solid #1e3a5f;
 }
 
+/* Poster de la película */
 .modal-header-info img{
     width: 55px;
     height: 80px;
@@ -138,6 +145,7 @@
     border-radius: 4px;
 }
 
+/* Datos de la película */
 .modal-header-info h4,
 .modal-header-info p{
     margin: 3px 0;
@@ -152,7 +160,7 @@
     color: #8ab4f8;
 }
 
-/* Estrellas */
+/* Estrellas para puntuar */
 .estrellas-container span{
     color: #f5c518;
 }
@@ -160,7 +168,7 @@
 /* Campos del formulario */
 .modal-editar input,
 .modal-editar textarea{
-    width: 100%;
+    width: 100%; /* Ocupan todo el ancho disponible */
 
     padding: 10px;
     margin-bottom: 10px;
@@ -171,17 +179,18 @@
     border: 1px solid #1e3a5f;
     border-radius: 4px;
 
-    box-sizing: border-box;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho */
 }
 
+/* Campo de texto largo */
 .modal-editar textarea{
     height: 100px;
-    resize: none;
+    resize: none; /* Impide redimensionar el textarea */
 }
 
 /* Contador de caracteres */
 .char-counter{
-    text-align: right;
+    text-align: right; /* Alinea el texto a la derecha */
     color: #4a6080;
 }
 
@@ -190,9 +199,9 @@
    BOTONES
 =================================== */
 
-/* Botón cerrar */
+/* Botón para cerrar el modal */
 .btn-cerrar{
-    position: absolute;
+    position: absolute; /* Posición relativa al modal */
     top: 10px;
     right: 14px;
 
@@ -200,12 +209,12 @@
     border: none;
 
     color: #aaa;
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar encima */
 }
 
-/* Botón guardar */
+/* Botón para guardar cambios */
 .btn-guardar{
-    width: 100%;
+    width: 100%; /* Ocupa todo el ancho */
 
     padding: 10px;
     margin-bottom: 10px;
@@ -220,10 +229,10 @@
     cursor: pointer;
 }
 
-/* Contenedor de cancelar y eliminar */
+/* Contenedor de botones inferiores */
 .acciones-inferiores{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Separa los botones a los extremos */
 }
 
 /* Botón cancelar */
@@ -244,4 +253,5 @@
     font-weight: bold;
     cursor: pointer;
 }
-/*-- fin--7*
+
+/* ---------- FIN ---------- */
