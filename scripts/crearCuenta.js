@@ -1,5 +1,5 @@
 function asociarValidacion(){
-    const formulario = document.getElementById("crear_cuenta");
+    const formulario = document.getElementById("crearCuenta");
 
     formulario.addEventListener("submit", function(event){
         event.preventDefault();
@@ -32,7 +32,7 @@ function asociarValidacion(){
             return;
         }
 
-        alert("Cuenta creada correctamente");
+        alert("Registro correcto");
         formulario.submit();
     });
 }
